@@ -1,0 +1,104 @@
+---
+import Layout from '../../../layouts/PageLayout.astro'
+import productsData from '../../../data/products.json'
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const category of productsData) {
+    for (const product of category.products) {
+      paths.push({
+        params: {
+          kategoria: category.slug,
+          slug: product.slug,
+        },
+      });
+    }
+  }
+  return paths;
+}
+
+const { params } = Astro;
+
+const category = productsData.find((c) => c.slug === params.kategoria);
+if (!category) throw new Error(`Nincs ilyen kategória: ${params.kategoria}`);
+
+const product = category.products.find((p) => p.slug === params.slug);
+if (!product) throw new Error(`Nincs ilyen termék: ${params.slug}`);
+
+const metadata = {
+  title: product.meta.title,
+  description: product.meta.description,
+  openGraph: {
+    images: [product.image],
+  },
+  twitter: {
+    image: product.image,
+  },
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="py-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <!-- Breadcrumb -->
+      <nav class="text-sm mb-6 text-gray-500 dark:text-gray-400">
+        <a href="/" class="hover:underline">Főoldal</a> /
+        <a href="/termekek" class="hover:underline">Termékek</a> /
+        <a href={`/termekek/${category.slug}`} class="hover:underline">{category.category}</a> /
+        <span class="font-medium text-gray-800 dark:text-gray-200">{product.name}</span>
+      </nav>
+
+      <!-- Vissza gomb -->
+      <div class="mb-4">
+        <a href={`/termekek/${category.slug}`} class="text-sm text-blue-600 hover:underline">
+          ← Vissza a(z) {category.category} kategóriához
+        </a>
+      </div>
+
+      <!-- Termék adatblokk -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+        <div>
+          <img src={product.image} alt={product.name} class="rounded shadow w-full object-cover" />
+        </div>
+        <div>
+          <h1 class="text-3xl font-bold mb-2">{product.name}</h1>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">{product.description}</p>
+          <p class="text-lg font-semibold mb-4">
+            {product.stock > 0
+              ? `Raktáron – ${product.price.toLocaleString()} Ft`
+              : `Nincs raktáron – Előrendelés / Ajánlatkérés`}
+          </p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Cikkszám: {product.sku}</p>
+        </div>
+      </div>
+
+      <!-- Leírás + Táblázat flex elrendezésben -->
+      <div class="mt-10 flex flex-col md:flex-row gap-8">
+        <!-- Hosszú leírás -->
+        {product.longDescription && (
+          <div class="md:w-1/2">
+            <h2 class="text-xl font-bold mb-2">Termékleírás</h2>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">{product.longDescription}</p>
+          </div>
+        )}
+
+        <!-- Műszaki adatok táblázat -->
+        {product.specs && (
+          <div class="md:w-1/2">
+            <h2 class="text-xl font-bold mb-2">További információk</h2>
+            <table class="w-full text-sm text-left border border-gray-300 dark:border-gray-600 overflow-hidden rounded-lg">
+              <tbody>
+                {Object.entries(product.specs).map(([label, value], index) => (
+                  <tr class={`border-b ${index % 2 === 0 ? 'bg-gray-50 dark:bg-gray-800' : 'bg-white dark:bg-gray-700'}`}>
+                    <th class="py-2 px-4 font-medium w-1/3 text-gray-700 dark:text-gray-200">{label}</th>
+                    <td class="py-2 px-4 text-gray-600 dark:text-gray-300">{value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+    </div>
+  </section>
+</Layout>

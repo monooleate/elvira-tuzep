@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/PageLayout.astro'
+import productsData from '../../data/products.json'
+
+const categories = productsData;
+---
+
+<Layout title="Termékek – Gigawood" description="Fűrészáru, gyalult fa, ragasztott fa és egyéb termékek kategóriák szerint – Gigawood.">
+  <section class="py-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-3xl font-bold mb-8">Termékkategóriák</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {categories.map((cat) => (
+          <a href={`/termekek/${cat.slug}`} class="block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white">
+            <img src={cat.meta.image} alt={cat.category} class="w-full h-48 object-cover" loading="lazy" />
+            <div class="p-4">
+              <h2 class="text-xl font-semibold">{cat.category}</h2>
+              <p class="text-sm text-gray-600 mt-2">{cat.meta.description}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

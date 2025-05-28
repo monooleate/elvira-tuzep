@@ -1,0 +1,52 @@
+---
+import Layout from '../../../layouts/PageLayout.astro'
+import productsData from '../../../data/products.json'
+
+export async function getStaticPaths() {
+  return productsData.map((cat) => ({
+    params: { kategoria: cat.slug }
+  }));
+}
+
+const { params } = Astro;
+const currentCategory = productsData.find((cat) => cat.slug === params.kategoria);
+
+if (!currentCategory) {
+  throw new Error(`A(z) "${params.kategoria}" kategória nem található.`);
+}
+
+const products = currentCategory.products;
+const showDescription = !!currentCategory.description;
+---
+
+<Layout title={currentCategory.meta.title} description={currentCategory.meta.description}>
+  <section class="py-12">
+    <div class="container max-w-4xl mx-auto px-4">
+      <h1 class="text-3xl font-bold mb-8">{currentCategory.category}</h1>
+
+      {showDescription ? (
+        <p class="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
+          {currentCategory.description}
+        </p>
+      ) : null}
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {products.map((product) => (
+          <a href={`/termekek/${currentCategory.slug}/${product.slug}`} class="block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800 dark:border-gray-700">
+            <img src={product.image} alt={product.name} class="w-full h-48 object-cover" loading="lazy" />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold text-gray-900 dark:text-white">{product.name}</h2>
+              <p class="text-sm text-gray-600 dark:text-gray-400">{product.description}</p>
+              <p class="text-sm mt-2 font-medium text-gray-800 dark:text-gray-300">
+                {product.stock > 0 
+                  ? `Raktáron – ${product.price.toLocaleString()} Ft`
+                  : `Előrendelés – Ajánlatot kérek`
+                }
+              </p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
