@@ -1,6 +1,9 @@
 ---
 import Layout from '../../../layouts/PageLayout.astro'
 import productsData from '../../../data/products.json'
+import ModalWrapper from '~/components/ui/ModalWrapper.jsx';
+import QuantitySelector from '~/components/common/QuantitySelector.tsx';
+import ProductInteractiveBlock from '~/components/common/ProductInteractiveBlock.jsx';
 
 export async function getStaticPaths() {
   const paths = [];
@@ -25,6 +28,16 @@ if (!category) throw new Error(`Nincs ilyen kategória: ${params.kategoria}`);
 const product = category.products.find((p) => p.slug === params.slug);
 if (!product) throw new Error(`Nincs ilyen termék: ${params.slug}`);
 
+const hasPercent = typeof product.discountPercent === 'number' && product.discountPercent > 0;
+const hasValidDiscountPrice = typeof product.discountPrice === 'number' && product.discountPrice > 0;
+const hasDiscount = hasPercent || hasValidDiscountPrice;
+const discountPrice = hasValidDiscountPrice
+  ? product.discountPrice
+  : (hasPercent ? Math.round(product.price * (1 - product.discountPercent / 100)) : null);
+const discountPercent = hasPercent
+  ? product.discountPercent
+  : (hasValidDiscountPrice ? Math.round((1 - discountPrice / product.price) * 100) : null);
+
 const metadata = {
   title: product.meta.title,
   description: product.meta.description,
@@ -35,6 +48,7 @@ const metadata = {
     image: product.image,
   },
 };
+
 ---
 
 <Layout metadata={metadata}>
@@ -57,30 +71,57 @@ const metadata = {
 
       <!-- Termék adatblokk -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-        <div>
+        <div class="relative">
           <img src={product.image} alt={product.name} class="rounded shadow w-full object-cover" />
+          {hasDiscount && discountPercent !== null && (
+            <>
+              <div class="absolute top-2 left-2 bg-red-600 text-white px-3 py-1 text-xs font-bold rounded shadow">
+                Akció
+              </div>
+              <div class="absolute top-2 right-2 bg-red-600 text-white px-3 py-1 text-xs font-bold rounded shadow">
+                -{discountPercent}%
+              </div>
+            </>
+          )}
         </div>
         <div>
           <h1 class="text-3xl font-bold mb-2">{product.name}</h1>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Cikkszám: {product.sku}</p></br>
           <p class="text-gray-600 dark:text-gray-400 mb-4">{product.description}</p>
-          <p class="text-lg font-semibold mb-4">
-            {product.stock > 0
-              ? `Raktáron – ${product.price.toLocaleString()} Ft`
-              : `Nincs raktáron – Előrendelés / Ajánlatkérés`}
-          </p>
-          <p class="text-sm text-gray-500 dark:text-gray-400">Cikkszám: {product.sku}</p>
+          <div class="text-lg font-semibold mb-4">
+            {
+              hasDiscount && discountPrice !== null ? (
+                <>
+                  Nettó ár: <span class="line-through text-gray-500 mr-2">{product.price.toLocaleString()} Ft</span>
+                  <span class="text-red-600 font-bold">{discountPrice.toLocaleString()} Ft</span>
+                </>
+              ) : (
+                `Nettó ár: ${product.price.toLocaleString()} Ft`
+              )
+           }
+          </div>
+          <div>
+  {product.stock > 0 ? (
+    <span class="text-green-600">Raktáron</span>
+  ) : (
+    <span class="text-red-600">Nincs raktáron</span>
+  )}
+</div>
+          
+
+      
+
+          
+            <ProductInteractiveBlock product={product} client:load />
+          
+
+          
         </div>
       </div>
 
       <!-- Leírás + Táblázat flex elrendezésben -->
       <div class="mt-10 flex flex-col md:flex-row gap-8">
-        <!-- Hosszú leírás -->
-        {product.longDescription && (
-          <div class="md:w-1/2">
-            <h2 class="text-xl font-bold mb-2">Termékleírás</h2>
-            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">{product.longDescription}</p>
-          </div>
-        )}
+        
 
         <!-- Műszaki adatok táblázat -->
         {product.specs && (
@@ -96,6 +137,14 @@ const metadata = {
                 ))}
               </tbody>
             </table>
+          </div>
+        )}
+
+        <!-- Hosszú leírás -->
+        {product.longDescription && (
+          <div class="md:w-1/2">
+            <h2 class="text-xl font-bold mb-2">Termékleírás</h2>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">{product.longDescription}</p>
           </div>
         )}
       </div>

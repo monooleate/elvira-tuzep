@@ -1,21 +1,45 @@
 ---
-import Layout from '../../layouts/PageLayout.astro'
-import productsData from '../../data/products.json'
+import Layout from '../../layouts/PageLayout.astro';
+import productsData from '../../data/products.json';
+import Metadata from '~/components/common/Metadata.astro';
 
-const categories = productsData;
+const metadata = {
+  title: 'Termékek – Gigawood',
+  description: 'Fedezd fel faipari termékeink teljes kínálatát: gyalult fa, ragasztott gerendák, rétegelt lemezek és még sok más!',
+  openGraph: {
+    title: 'Termékek – Gigawood',
+    description: 'Fedezd fel faipari termékeink teljes kínálatát: gyalult fa, ragasztott gerendák, rétegelt lemezek és még sok más!',
+    image: '/kategoriak/termekek_cover.jpg'
+  },
+  twitter: {
+    title: 'Termékek – Gigawood',
+    description: 'Fedezd fel faipari termékeink teljes kínálatát: gyalult fa, ragasztott gerendák, rétegelt lemezek és még sok más!',
+    image: '/kategoriak/termekek_cover.jpg'
+  }
+};
 ---
 
-<Layout title="Termékek – Gigawood" description="Fűrészáru, gyalult fa, ragasztott fa és egyéb termékek kategóriák szerint – Gigawood.">
+<Metadata {...metadata} />
+
+<Layout title="Termékek" description="Fedezd fel teljes kínálatunkat!">
   <section class="py-12">
-    <div class="max-w-4xl mx-auto px-4">
-      <h1 class="text-3xl font-bold mb-8">Termékkategóriák</h1>
+    <div class="container max-w-4xl mx-auto px-4">
+
+      <!-- Breadcrumb -->
+      <nav class="text-sm mb-6 text-gray-500 dark:text-gray-400">
+        <a href="/" class="hover:underline">Főoldal</a> /
+        <span class="font-medium text-gray-800 dark:text-gray-200">Termékek</span>
+      </nav>
+
+      <h1 class="text-3xl font-bold mb-10">Termékkategóriák</h1>
+
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {categories.map((cat) => (
-          <a href={`/termekek/${cat.slug}`} class="block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white">
-            <img src={cat.meta.image} alt={cat.category} class="w-full h-48 object-cover" loading="lazy" />
+        {productsData.map((category) => (
+          <a href={`/termekek/${category.slug}`} class="block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800 dark:border-gray-700">
+            <img src={category.meta.image} alt={category.category} class="w-full h-48 object-cover" loading="lazy" />
             <div class="p-4">
-              <h2 class="text-xl font-semibold">{cat.category}</h2>
-              <p class="text-sm text-gray-600 mt-2">{cat.meta.description}</p>
+              <h2 class="text-lg font-semibold text-gray-900 dark:text-white">{category.category}</h2>
+              <p class="text-sm text-gray-600 dark:text-gray-400">{category.meta.description}</p>
             </div>
           </a>
         ))}

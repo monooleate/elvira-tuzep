@@ -58,6 +58,8 @@
     {
   "name": "BSH 100x120 mm",
   "slug": "bsh-100x120",
+  "discountPrice": 5000,
+  "discountPercent": 0,
   "sku": "BSH-100x120",
   "size": "100x120 mm",
   "length": "13 méterig",
@@ -89,11 +91,22 @@
       "size": "120x160 mm",
       "length": "13 méterig",
       "description": "Erős, nagy fesztáv áthidalására is alkalmas BSH fa gerenda.",
+      "longDescription": "Ez a BSH gerenda kiváló választás tetőszerkezetekhez, áthidalókhoz vagy egyéb teherhordó faelemekhez. A nagy szilárdságú GL24h ragasztott lucfenyő stabil mérettartást és esztétikus megjelenést biztosít. Szárított, gyalult, élfázott kivitelben rendelhető, így akár látszó szerkezeti elemként is alkalmazható.",
+  "specs": {
+    "Keresztmetszet": "100x120 mm",
+    "Hossz": "13500 mm",
+    "Fa típusa": "Lucfenyő",
+    "Szilárdsági osztály": "GL24h",
+    "Felület": "Gyalult, élfázott",
+    "Nedvességtartalom": "kb. 12%",
+    "Felhasználás": "Tetőszerkezet, látszó gerenda, áthidaló",
+    "Gyártási eljárás": "Több rétegben ragasztott lamellák"
+  },
       "sku": "BSH-120x160",
       "stock": 0,
       "price": 61000,
       "currency": "HUF",
-      "image": "/termekek/bsh-120x160.jpg",
+      "image": "/termekek/bsh-100x120.jpg",
       "meta": {
         "title": "BSH 120x160 mm – Gigawood",
         "description": "BSH ragasztott gerenda 120x160 mm méretben, kiváló esztétikummal és szilárdsággal."

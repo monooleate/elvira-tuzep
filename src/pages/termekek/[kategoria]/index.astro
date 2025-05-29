@@ -1,10 +1,11 @@
 ---
-import Layout from '../../../layouts/PageLayout.astro'
-import productsData from '../../../data/products.json'
+import Layout from '../../../layouts/PageLayout.astro';
+import productsData from '../../../data/products.json';
+import Metadata from '~/components/common/Metadata.astro';
 
 export async function getStaticPaths() {
   return productsData.map((cat) => ({
-    params: { kategoria: cat.slug }
+    params: { kategoria: cat.slug },
   }));
 }
 
@@ -19,34 +20,118 @@ const products = currentCategory.products;
 const showDescription = !!currentCategory.description;
 ---
 
+<Metadata 
+  title={currentCategory.meta?.title} 
+  description={currentCategory.meta?.description} 
+  openGraph={{
+    title: currentCategory.meta?.title,
+    description: currentCategory.meta?.description,
+    image: currentCategory.meta?.image,
+  }}
+  twitter={{
+    title: currentCategory.meta?.title,
+    description: currentCategory.meta?.description,
+    image: currentCategory.meta?.image,
+  }}
+/>
+
 <Layout title={currentCategory.meta.title} description={currentCategory.meta.description}>
   <section class="py-12">
     <div class="container max-w-4xl mx-auto px-4">
-      <h1 class="text-3xl font-bold mb-8">{currentCategory.category}</h1>
 
-      {showDescription ? (
-        <p class="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
+      <!-- Breadcrumb -->
+      <nav class="text-sm mb-6 text-gray-500 dark:text-gray-400">
+        <a href="/" class="hover:underline">Főoldal</a> /
+        <a href="/termekek" class="hover:underline">Termékek</a> /
+        <span class="font-medium text-gray-800 dark:text-gray-200">{currentCategory.category}</span>
+      </nav>
+
+      <!-- Vissza gomb -->
+      <div class="mb-4">
+        <a href="/termekek" class="text-sm text-blue-600 hover:underline">
+          ← Vissza a termékkategóriákhoz
+        </a>
+      </div>
+
+      <h1 class="text-3xl font-bold mb-6">{currentCategory.category}</h1>
+
+      {showDescription && (
+        <p class="text-gray-700 dark:text-gray-300 mb-10 leading-relaxed max-w-2xl">
           {currentCategory.description}
         </p>
-      ) : null}
+      )}
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {products.map((product) => (
-          <a href={`/termekek/${currentCategory.slug}/${product.slug}`} class="block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800 dark:border-gray-700">
-            <img src={product.image} alt={product.name} class="w-full h-48 object-cover" loading="lazy" />
-            <div class="p-4">
-              <h2 class="text-lg font-semibold text-gray-900 dark:text-white">{product.name}</h2>
-              <p class="text-sm text-gray-600 dark:text-gray-400">{product.description}</p>
+{products.map((product) => {
+  const hasPercent = typeof product.discountPercent === 'number' && product.discountPercent > 0;
+  const hasValidDiscountPrice = typeof product.discountPrice === 'number' && product.discountPrice > 0;
+
+  const hasDiscount = hasPercent || hasValidDiscountPrice;
+
+  const discountPrice = hasValidDiscountPrice
+    ? product.discountPrice
+    : (hasPercent
+        ? Math.round(product.price * (1 - product.discountPercent / 100))
+        : null);
+
+  const discountPercent = hasPercent
+    ? product.discountPercent
+    : (hasValidDiscountPrice
+        ? Math.round((1 - discountPrice / product.price) * 100)
+        : null);
+
+    return (
+      <a href={`/termekek/${currentCategory.slug}/${product.slug}`} class="relative block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800 dark:border-gray-700">
+
+        {/* Akció badge - BAL FELSŐ SAROK */}
+        {hasDiscount && (
+          <div class="absolute top-2 left-2 bg-red-600 text-white text-sm font-bold px-2 py-1 rounded z-10 shadow">
+            Akció
+          </div>
+        )}
+
+        {/* Százalék badge - JOBB FELSŐ SAROK */}
+        {hasDiscount && discountPercent !== null && (
+          <div class="absolute top-2 right-2 bg-red-600 text-white text-sm font-extrabold px-3 py-1 rounded z-10 shadow">
+            -{discountPercent}%
+          </div>
+        )}
+
+        <img src={product.image} alt={product.name} class="w-full h-48 object-cover" loading="lazy" />
+
+        <div class="p-4">
+          <h2 class="text-lg font-semibold text-gray-900 dark:text-white">{product.name}</h2>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{product.description}</p>
+
+          {product.stock > 0 ? (
+            hasDiscount ? (
+              <>
+                <p class="text-sm text-gray-500 line-through mt-2">
+                  {product.price.toLocaleString()} Ft
+                </p>
+                <p class="text-sm text-red-600 font-bold">
+                  {discountPrice.toLocaleString()} Ft
+                </p>
+              </>
+            ) : (
               <p class="text-sm mt-2 font-medium text-gray-800 dark:text-gray-300">
-                {product.stock > 0 
-                  ? `Raktáron – ${product.price.toLocaleString()} Ft`
-                  : `Előrendelés – Ajánlatot kérek`
-                }
+                {product.price.toLocaleString()} Ft
               </p>
-            </div>
-          </a>
-        ))}
-      </div>
+            )
+          ) : (
+            <p class="text-sm mt-2 font-medium text-gray-800 dark:text-gray-300">
+              Előrendelés – Ajánlatot kérek
+            </p>
+          )}
+        </div>
+      </a>
+    );
+  })}
+</div>
+
+
+
+
     </div>
   </section>
 </Layout>

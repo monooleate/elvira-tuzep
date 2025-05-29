@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Mészáros János",
+    "email": "taskony@gmail.com",
+    "phone": "06703734949",
+    "message": "asd",
+    "product": {
+      "name": "BSH 120x160 mm",
+      "slug": "bsh-120x160",
+      "price": 61000
+    },
+    "receivedAt": "2025-05-29T12:25:26.271Z"
+  },
+  {
+    "name": "df",
+    "email": "taskony@gmail.com",
+    "phone": "sdf",
+    "message": "sdf",
+    "quantity": 1,
+    "product": {
+      "name": "BSH 120x160 mm",
+      "slug": "bsh-120x160",
+      "price": 61000,
+      "sku": "BSH-120x160"
+    },
+    "receivedAt": "2025-05-29T15:03:52.297Z"
+  },
+  {
+    "name": "dfg",
+    "email": "taskony@gmail.com",
+    "phone": "sdfg",
+    "message": "sdf",
+    "quantity": 4,
+    "product": {
+      "name": "BSH 120x160 mm",
+      "slug": "bsh-120x160",
+      "price": 61000,
+      "sku": "BSH-120x160"
+    },
+    "receivedAt": "2025-05-29T15:04:19.422Z"
+  },
+  {
+    "name": "sdg",
+    "email": "dfg@sg.sdf",
+    "phone": "asdf",
+    "message": "",
+    "quantity": 4,
+    "product": {
+      "name": "BSH 160x200 mm",
+      "slug": "bsh-160x200",
+      "price": 89000,
+      "sku": "BSH-160x200"
+    },
+    "receivedAt": "2025-05-29T15:08:18.877Z"
+  }
+]
