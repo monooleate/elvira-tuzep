@@ -5,73 +5,73 @@ import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Kapcsolat',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <HeroText tagline="Kapcsolat" title="Vedd fel velünk a kapcsolatot!" />
 
   <ContactUs
     id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    title="Írj nekünk üzenetet!"
+    subtitle="Gyors válaszokért nézd meg GYIK szekciónkat, ahol számos kérdésre megtalálhatod a választ. Ha nem, fordulj hozzánk bizalommal!"
     inputs={[
       {
         type: 'text',
         name: 'name',
-        label: 'Name',
+        label: 'Név',
       },
       {
         type: 'email',
         name: 'email',
-        label: 'Email',
+        label: 'Email cím',
       },
     ]}
     textarea={{
-      label: 'Message',
+      label: 'Üzenet',
     }}
     disclaimer={{
       label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+        'Az űrlap elküldésével hozzájárulsz ahhoz, hogy személyes adataidat a kapcsolatfelvétel céljából kezeljük.',
     }}
-    description="Our support team typically responds within 24 business hours."
+    description="Általában 1 munkanapon belül válaszolunk."
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="We are here to help!"
+    title="Elérhetőségeink"
     items={[
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
+        title: 'Általános információk',
+        description: `Írj nekünk faipari termékekkel, tüzelőanyaggal, elérhetőséggel vagy megrendeléssel kapcsolatos kérdéseiddel.`,
       },
       {
-        title: 'Contact sales',
+        title: 'Értékesítés',
         description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+          'Ajánlatkérés, rendelés leadás, nagykereskedelmi érdeklődés vagy projektárak egyeztetése kapcsán is várjuk üzeneted.',
       },
       {
-        title: 'Technical support',
+        title: 'Technikai kérdések',
         description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
+          'Weboldal használatával, rendelési folyamattal vagy ajánlatkérő űrlappal kapcsolatos hibák esetén fordulj hozzánk.',
       },
       {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
-        icon: 'tabler:headset',
+        title: 'Telefon',
+        description: '+36 20 123 4567',
+        icon: 'tabler:phone',
       },
       {
         title: 'Email',
-        description: 'contact@support.com',
+        description: 'info@elvirabau.hu',
         icon: 'tabler:mail',
       },
       {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        title: 'Telephely',
+        description: 'Gigawood telephely, 2890 Tata, Elvira út 12.',
         icon: 'tabler:map-pin',
       },
     ]}

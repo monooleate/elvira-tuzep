@@ -71,19 +71,27 @@ export default function OfferModal({ product, quantity, onClose }) {
       <div class="bg-white dark:bg-gray-900 p-6 rounded shadow-lg max-w-md w-full relative">
         <button onClick={onClose} class="absolute top-2 right-2 text-gray-500 hover:text-black dark:hover:text-white">✖</button>
 
-        {submitted ? (
-          <div class="text-green-600 text-center font-semibold">
-            Köszönjük, az ajánlatkérés elküldve!
-          </div>
-        ) : (
+{submitted ? (
+  <div class="text-center space-y-4">
+    <p class="text-green-600 dark:text-green-400 font-semibold">
+      Köszönjük, az ajánlatkérés elküldve!
+    </p>
+    <button
+      class="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white px-4 py-2 rounded"
+      onClick={onClose}
+    >
+      OK
+    </button>
+  </div>
+) : (
           <>
             {serverError && (
-              <div class="mb-4 p-3 bg-red-100 text-red-700 rounded border border-red-400">
+              <div class="mb-4 p-3 bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 rounded border border-red-400 dark:border-red-600">
                 {serverError}
               </div>
             )}
             <form onSubmit={handleSubmit} class="space-y-4" noValidate>
-              <h2 class="text-lg font-bold mb-2">Ajánlatot kérek</h2>
+              <h2 class="text-lg font-bold mb-2 text-gray-800 dark:text-gray-100">Ajánlatot kérek</h2>
 
               <div class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm text-gray-800 dark:text-gray-200 mb-3">
                 <div><strong>Termék:</strong> {product.name}</div>
@@ -95,7 +103,7 @@ export default function OfferModal({ product, quantity, onClose }) {
                 <input
                   type="text"
                   placeholder="Név"
-                  class="w-full p-2 border rounded"
+                  class="w-full p-2 border rounded bg-white text-black dark:bg-gray-800 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={name}
                   onInput={(e) => setName(e.target.value)}
                 />
@@ -106,7 +114,7 @@ export default function OfferModal({ product, quantity, onClose }) {
                 <input
                   type="email"
                   placeholder="Email"
-                  class="w-full p-2 border rounded"
+                  class="w-full p-2 border rounded bg-white text-black dark:bg-gray-800 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={email}
                   onInput={(e) => setEmail(e.target.value)}
                 />
@@ -117,7 +125,7 @@ export default function OfferModal({ product, quantity, onClose }) {
                 <input
                   type="tel"
                   placeholder="Telefonszám"
-                  class="w-full p-2 border rounded"
+                  class="w-full p-2 border rounded bg-white text-black dark:bg-gray-800 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={phone}
                   onInput={(e) => setPhone(e.target.value)}
                 />
@@ -127,7 +135,7 @@ export default function OfferModal({ product, quantity, onClose }) {
               <div>
                 <textarea
                   placeholder="Megjegyzés"
-                  class="w-full p-2 border rounded"
+                  class="w-full p-2 border rounded bg-white text-black dark:bg-gray-800 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   rows="3"
                   value={message}
                   onInput={(e) => setMessage(e.target.value)}
@@ -135,7 +143,7 @@ export default function OfferModal({ product, quantity, onClose }) {
                 {errors.message && <p class="text-red-600 text-sm mt-1">{errors.message}</p>}
               </div>
 
-              <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded">
+              <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white py-2 rounded transition">
                 Küldés
               </button>
             </form>
