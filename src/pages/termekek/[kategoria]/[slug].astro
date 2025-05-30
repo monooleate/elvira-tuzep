@@ -54,23 +54,27 @@ const metadata = {
 <Layout metadata={metadata}>
   <section class="py-12">
     <div class="max-w-4xl mx-auto px-4">
-      <!-- Breadcrumb -->
-      <nav class="text-sm mb-6 text-gray-500 dark:text-gray-400">
-        <a href="/" class="hover:underline">Főoldal</a> /
-        <a href="/termekek" class="hover:underline">Termékek</a> /
-        <a href={`/termekek/${category.slug}`} class="hover:underline">{category.category}</a> /
-        <span class="font-medium text-gray-800 dark:text-gray-200">{product.name}</span>
-      </nav>
+<!-- Breadcrumb -->
+<div class="sticky top-[70px] 2xl:top-[90px] z-20 bg-white dark:bg-gray-900 px-4 py-2 shadow-sm">
+  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-sm text-gray-500 dark:text-gray-400 mb-0">
+    
+    <nav class="mb-2 sm:mb-0" aria-label="Breadcrumb">
+      <a href="/" class="hover:underline">Főoldal</a> /
+      <a href="/termekek" class="hover:underline">Termékek</a> /
+      <a href={`/termekek/${category.slug}`} class="hover:underline">{category.category}</a> /
+      <span class="font-medium text-gray-800 dark:text-gray-200">{product.name}</span>
+    </nav>
 
-      <!-- Vissza gomb -->
-      <div class="mb-4">
-        <a href={`/termekek/${category.slug}`} class="text-sm text-blue-600 hover:underline">
-          ← Vissza a(z) {category.category} kategóriához
-        </a>
-      </div>
+    <a href={`/termekek/${category.slug}`} class="text-blue-600 hover:underline dark:text-blue-400">
+      ← Vissza a(z) {category.category} kategóriához
+    </a>
+  </div>
+</div>
+
+
 
       <!-- Termék adatblokk -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 pt-10">
         <div class="relative">
           <img src={product.image} alt={product.name} class="rounded shadow w-full object-cover" />
           {hasDiscount && discountPercent !== null && (

@@ -3,12 +3,13 @@ export const prerender = false;
 
 import fs from 'fs/promises';
 import { parse } from 'cookie';
+import AdminOffersTable from '../../components/admin/AdminOffersTable.jsx';
 
 const cookies = Astro.request.headers.get("cookie") ?? "";
 const parsedCookies = parse(cookies);
 const isLoggedIn = parsedCookies.session === "valid";
 
-let ajanlatok: any[] = [];
+let ajanlatok = [];
 
 if (isLoggedIn) {
   try {
@@ -22,7 +23,6 @@ if (isLoggedIn) {
 }
 ---
 
-<!DOCTYPE html>
 <html lang="hu">
   <head>
     <meta charset="UTF-8" />
@@ -40,34 +40,7 @@ if (isLoggedIn) {
           </div>
 
           {ajanlatok.length > 0 ? (
-            <div class="overflow-x-auto">
-              <table class="min-w-full table-auto border border-gray-300">
-                <thead class="bg-blue-100">
-                  <tr>
-                    <th class="border px-4 py-2 text-left">Név</th>
-                    <th class="border px-4 py-2 text-left">Email</th>
-                    <th class="border px-4 py-2 text-left">Telefon</th>
-                    <th class="border px-4 py-2 text-left">Termék</th>
-                    <th class="border px-4 py-2 text-left">Ár (Ft)</th>
-                    <th class="border px-4 py-2 text-left">Üzenet</th>
-                    <th class="border px-4 py-2 text-left">Beküldve</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {ajanlatok.map((item, index) => (
-                    <tr key={index} class="even:bg-gray-50">
-                      <td class="border px-4 py-2">{item.name}</td>
-                      <td class="border px-4 py-2">{item.email}</td>
-                      <td class="border px-4 py-2">{item.phone}</td>
-                      <td class="border px-4 py-2">{item.product.name}</td>
-                      <td class="border px-4 py-2">{item.product.price.toLocaleString("hu-HU")} Ft</td>
-                      <td class="border px-4 py-2">{item.message}</td>
-                      <td class="border px-4 py-2">{new Date(item.receivedAt).toLocaleString("hu-HU")}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <AdminOffersTable client:load ajanlatok={ajanlatok} />
           ) : (
             <p>Nincs egyetlen ajánlatkérés sem.</p>
           )}

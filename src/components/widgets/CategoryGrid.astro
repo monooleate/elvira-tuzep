@@ -1,0 +1,43 @@
+---
+interface Category {
+  slug: string;
+  category: string;
+  description: string;
+  meta: {
+    image: string;
+    description: string;
+  };
+}
+
+const { categories }: { categories: Category[] } = Astro.props;
+---
+
+<section class="py-16 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">Termékkategóriáink</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {categories.map((category) => (
+        <a
+          href={`/termekek/${category.slug}`}
+          class="block border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800"
+        >
+          <img
+            src={category.meta.image}
+            alt={category.category}
+            class="w-full h-48 object-cover"
+            loading="lazy"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              {category.category}
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              {category.meta.description || category.description}
+            </p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

@@ -5,10 +5,33 @@ export default function OfferModal({ product, quantity, onClose }) {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+  const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [serverError, setServerError] = useState(null);
+
+  const validate = () => {
+    const newErrors = {};
+    if (!name.trim()) newErrors.name = 'A név megadása kötelező.';
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email.trim()) newErrors.email = 'Az email megadása kötelező.';
+    else if (!emailRegex.test(email)) newErrors.email = 'Érvénytelen email cím.';
+
+    const phoneRegex = /^[+0-9\s-]*$/;
+    if (phone.trim() && !phoneRegex.test(phone)) newErrors.phone = 'Csak számokat, szóközt, kötőjelet és + jelet tartalmazhat.';
+
+    if (message.trim().length > 0 && message.trim().length < 5)
+      newErrors.message = 'A megjegyzés legalább 5 karakter legyen.';
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setServerError(null);
+
+    if (!validate()) return;
 
     const payload = {
       name,
@@ -21,15 +44,13 @@ export default function OfferModal({ product, quantity, onClose }) {
         slug: product.slug,
         price: product.discountPrice || product.price,
         sku: product.sku,
-      }
+      },
     };
 
     try {
       const response = await fetch('/api/offer', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
 
@@ -38,10 +59,10 @@ export default function OfferModal({ product, quantity, onClose }) {
       if (response.ok && result.success) {
         setSubmitted(true);
       } else {
-        alert("Hiba történt: " + (result.error || "Ismeretlen hiba"));
+        setServerError(result.error || 'Ismeretlen hiba történt.');
       }
     } catch (err) {
-      alert("Hiba a kérés közben: " + err.message);
+      setServerError('Hálózati hiba: ' + err.message);
     }
   };
 
@@ -55,29 +76,70 @@ export default function OfferModal({ product, quantity, onClose }) {
             Köszönjük, az ajánlatkérés elküldve!
           </div>
         ) : (
-          <form onSubmit={handleSubmit} class="space-y-4">
-            <h2 class="text-lg font-bold mb-2">Ajánlatot kérek</h2>
+          <>
+            {serverError && (
+              <div class="mb-4 p-3 bg-red-100 text-red-700 rounded border border-red-400">
+                {serverError}
+              </div>
+            )}
+            <form onSubmit={handleSubmit} class="space-y-4" noValidate>
+              <h2 class="text-lg font-bold mb-2">Ajánlatot kérek</h2>
 
-            <div class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm text-gray-800 dark:text-gray-200 mb-3">
-              <div><strong>Termék:</strong> {product.name}</div>
-              <div><strong>Cikkszám:</strong> {product.sku}</div>
-              <div><strong>Darabszám:</strong> {quantity} db</div>
-              <div><strong>Egységár:</strong> {product.price} Ft</div>
+              <div class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm text-gray-800 dark:text-gray-200 mb-3">
+                <div><strong>Termék:</strong> {product.name}</div>
+                <div><strong>Cikkszám:</strong> {product.sku}</div>
+                <div><strong>Darabszám:</strong> {quantity} db</div>
+              </div>
+
               <div>
-  <strong>Ajánlat ára:</strong> {(quantity * product.price).toLocaleString()} Ft
-</div>
-            </div>
+                <input
+                  type="text"
+                  placeholder="Név"
+                  class="w-full p-2 border rounded"
+                  value={name}
+                  onInput={(e) => setName(e.target.value)}
+                />
+                {errors.name && <p class="text-red-600 text-sm mt-1">{errors.name}</p>}
+              </div>
 
-            <input type="text" required placeholder="Név" class="w-full p-2 border rounded"
-              value={name} onInput={(e) => setName(e.target.value)} />
-            <input type="email" required placeholder="Email" class="w-full p-2 border rounded"
-              value={email} onInput={(e) => setEmail(e.target.value)} />
-            <input type="tel" placeholder="Telefonszám" class="w-full p-2 border rounded"
-              value={phone} onInput={(e) => setPhone(e.target.value)} />
-            <textarea placeholder="Megjegyzés" class="w-full p-2 border rounded" rows="3"
-              value={message} onInput={(e) => setMessage(e.target.value)} />
-            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded">Küldés</button>
-          </form>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="w-full p-2 border rounded"
+                  value={email}
+                  onInput={(e) => setEmail(e.target.value)}
+                />
+                {errors.email && <p class="text-red-600 text-sm mt-1">{errors.email}</p>}
+              </div>
+
+              <div>
+                <input
+                  type="tel"
+                  placeholder="Telefonszám"
+                  class="w-full p-2 border rounded"
+                  value={phone}
+                  onInput={(e) => setPhone(e.target.value)}
+                />
+                {errors.phone && <p class="text-red-600 text-sm mt-1">{errors.phone}</p>}
+              </div>
+
+              <div>
+                <textarea
+                  placeholder="Megjegyzés"
+                  class="w-full p-2 border rounded"
+                  rows="3"
+                  value={message}
+                  onInput={(e) => setMessage(e.target.value)}
+                />
+                {errors.message && <p class="text-red-600 text-sm mt-1">{errors.message}</p>}
+              </div>
+
+              <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded">
+                Küldés
+              </button>
+            </form>
+          </>
         )}
       </div>
     </div>

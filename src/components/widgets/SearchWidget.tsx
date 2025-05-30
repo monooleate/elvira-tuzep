@@ -73,16 +73,29 @@ export default function SearchWidget() {
 
   return (
     <div class="relative">
-      <button
-        class="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
-        onClick={() => {
-          setIsOpen(true);
-          setTimeout(() => inputRef.current?.focus(), 50);
-        }}
-        aria-label="Keresés"
-      >
-        🔍
-      </button>
+<button
+  class="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+  onClick={() => {
+    setIsOpen(true);
+    setTimeout(() => inputRef.current?.focus(), 50);
+  }}
+  aria-label="Keresés"
+>
+  <div class="p-2 rounded-full bg-white hover:bg-gray-100 shadow dark:bg-gray-800 dark:hover:bg-gray-700 transition">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-7 h-7 text-gray-600 dark:text-gray-300"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2"
+    >
+      <circle cx="11" cy="11" r="8" />
+      <line x1="21" y1="21" x2="16.65" y2="16.65" />
+    </svg>
+  </div>
+</button>
+
 
       {isOpen && (
         <div class="fixed inset-0 z-50 bg-black/40 flex items-center justify-center p-4">

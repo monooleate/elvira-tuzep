@@ -40,20 +40,22 @@ const showDescription = !!currentCategory.description;
     <div class="container max-w-4xl mx-auto px-4">
 
       <!-- Breadcrumb -->
-      <nav class="text-sm mb-6 text-gray-500 dark:text-gray-400">
-        <a href="/" class="hover:underline">Főoldal</a> /
-        <a href="/termekek" class="hover:underline">Termékek</a> /
-        <span class="font-medium text-gray-800 dark:text-gray-200">{currentCategory.category}</span>
-      </nav>
+<div class="sticky top-[70px] 2xl:top-[90px] z-20 bg-white dark:bg-gray-900 px-4 py-2 shadow-sm">
+  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-sm text-gray-500 dark:text-gray-400 mb-0">
+    
+    <nav class="mb-2 sm:mb-0" aria-label="Breadcrumb">
+      <a href="/" class="hover:underline">Főoldal</a> /
+      <a href="/termekek" class="hover:underline">Termékek</a> /
+      <span class="font-medium text-gray-800 dark:text-gray-200">{currentCategory.category}</span>
+    </nav>
 
-      <!-- Vissza gomb -->
-      <div class="mb-4">
-        <a href="/termekek" class="text-sm text-blue-600 hover:underline">
-          ← Vissza a termékkategóriákhoz
-        </a>
-      </div>
+    <a href="/termekek" class="text-blue-600 hover:underline dark:text-blue-400">
+      ← Vissza a termékkategóriákhoz
+    </a>
+  </div>
+</div>
 
-      <h1 class="text-3xl font-bold mb-6">{currentCategory.category}</h1>
+      <h1 class="text-3xl font-bold mb-6 pt-10">{currentCategory.category}</h1>
 
       {showDescription && (
         <p class="text-gray-700 dark:text-gray-300 mb-10 leading-relaxed max-w-2xl">

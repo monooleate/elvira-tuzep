@@ -1,0 +1,30 @@
+[
+  {
+    "name": "asd",
+    "email": "asd@sdf.df",
+    "phone": "3234",
+    "message": "234er",
+    "quantity": 1,
+    "product": {
+      "name": "BSH 100x120 mm",
+      "slug": "bsh-100x120",
+      "price": 5000,
+      "sku": "BSH-100x120"
+    },
+    "receivedAt": "2025-05-30T11:35:23.733Z"
+  },
+  {
+    "name": "Janika",
+    "email": "jsdf@sdg.sdf",
+    "phone": "14234",
+    "message": "wdsfdgdfg",
+    "quantity": 1,
+    "product": {
+      "name": "BSH 100x120 mm",
+      "slug": "bsh-100x120",
+      "price": 5000,
+      "sku": "BSH-100x120"
+    },
+    "receivedAt": "2025-05-30T11:35:59.834Z"
+  }
+]
