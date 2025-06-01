@@ -1,13 +1,29 @@
-import { useState } from 'preact/hooks';
+import { useState, useEffect, useRef } from 'preact/hooks';
+import Button from '../ui/button';
 
 export default function OfferModal({ product, quantity, onClose }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+  const [acceptedDisclaimer, setAcceptedDisclaimer] = useState(false);
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [serverError, setServerError] = useState(null);
+
+  const modalRef = useRef(null);
+
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('keydown', handleEsc);
+    return () => document.removeEventListener('keydown', handleEsc);
+  }, [onClose]);
+
+  const handleBackdropClick = (e) => {
+    if (e.target === modalRef.current) onClose();
+  };
 
   const validate = () => {
     const newErrors = {};
@@ -22,6 +38,8 @@ export default function OfferModal({ product, quantity, onClose }) {
 
     if (message.trim().length > 0 && message.trim().length < 5)
       newErrors.message = 'A megjegyzés legalább 5 karakter legyen.';
+
+    if (!acceptedDisclaimer) newErrors.disclaimer = 'A hozzájárulás kötelező.';
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -67,23 +85,27 @@ export default function OfferModal({ product, quantity, onClose }) {
   };
 
   return (
-    <div class="fixed inset-0 bg-black/50 flex justify-center items-center z-50">
-      <div class="bg-white dark:bg-gray-900 p-6 rounded shadow-lg max-w-md w-full relative">
-        <button onClick={onClose} class="absolute top-2 right-2 text-gray-500 hover:text-black dark:hover:text-white">✖</button>
-
-{submitted ? (
-  <div class="text-center space-y-4">
-    <p class="text-green-600 dark:text-green-400 font-semibold">
-      Köszönjük, az ajánlatkérés elküldve!
-    </p>
-    <button
-      class="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white px-4 py-2 rounded"
-      onClick={onClose}
+    <div
+      ref={modalRef}
+      onClick={handleBackdropClick}
+      class="fixed inset-0 z-50 bg-black/50 flex items-center justify-center"
     >
-      OK
-    </button>
-  </div>
-) : (
+      <div class="bg-white dark:bg-gray-900 p-6 rounded shadow-lg max-w-md w-full relative max-h-[90vh] overflow-y-auto">
+        <button
+          onClick={onClose}
+          class="absolute top-2 right-2 text-gray-500 hover:text-black dark:hover:text-white"
+        >
+          ✖
+        </button>
+
+        {submitted ? (
+          <div class="text-center space-y-4">
+            <p class="text-green-600 dark:text-green-400 font-semibold">
+              Köszönjük, az ajánlatkérés elküldve!
+            </p>
+            <Button text="OK" onClick={onClose} variant="primary" />
+          </div>
+        ) : (
           <>
             {serverError && (
               <div class="mb-4 p-3 bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 rounded border border-red-400 dark:border-red-600">
@@ -143,9 +165,23 @@ export default function OfferModal({ product, quantity, onClose }) {
                 {errors.message && <p class="text-red-600 text-sm mt-1">{errors.message}</p>}
               </div>
 
-              <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white py-2 rounded transition">
-                Küldés
-              </button>
+              <div class="flex items-start space-x-2 text-sm text-gray-700 dark:text-gray-300">
+                <input
+                  type="checkbox"
+                  id="disclaimer"
+                  checked={acceptedDisclaimer}
+                  onChange={(e) => setAcceptedDisclaimer(e.target.checked)}
+                  class="mt-1"
+                />
+                <label for="disclaimer" class="select-none">
+                  Az űrlap elküldésével hozzájárulsz ahhoz, hogy személyes adataidat a kapcsolatfelvétel céljából kezeljük.
+                </label>
+              </div>
+              {errors.disclaimer && <p class="text-red-600 text-sm mt-1">{errors.disclaimer}</p>}
+
+              <div class="flex justify-center mt-4">
+                <Button variant="primary" type="submit" class="mx-auto" text="Küldés" />
+              </div>
             </form>
           </>
         )}

@@ -12,7 +12,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Kapcsolat" title="Vedd fel velünk a kapcsolatot!" />
+  <HeroText tagline="" title="Vedd fel velünk a kapcsolatot!" />
 
   <ContactUs
     id="form"
@@ -29,6 +29,11 @@ const metadata = {
         name: 'email',
         label: 'Email cím',
       },
+            {
+        type: 'phone',
+        name: 'phone',
+        label: 'Telefonszám',
+      },
     ]}
     textarea={{
       label: 'Üzenet',
@@ -37,13 +42,13 @@ const metadata = {
       label:
         'Az űrlap elküldésével hozzájárulsz ahhoz, hogy személyes adataidat a kapcsolatfelvétel céljából kezeljük.',
     }}
-    description="Általában 1 munkanapon belül válaszolunk."
+    description="Általában 2 munkanapon belül válaszolunk."
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Elérhetőségeink"
+    title="Egyéb elérhetőségeink"
     items={[
       {
         title: 'Általános információk',

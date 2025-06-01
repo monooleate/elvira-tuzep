@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import DocumentationLayout from '../../layouts/DocumentationLayout.astro';
+import sidebarLinks from '../../data/docsSidebar.json';
+
+export async function getStaticPaths() {
+  const docs = await getCollection('dokumentumok');
+  return docs.map((doc) => ({
+    params: { slug: doc.slug.split('/') },
+    props: { slug: doc.slug },
+  }));
+}
+
+const docs = await getCollection('dokumentumok');
+const slug = Astro.params.slug?.join('/') || 'bevezetes';
+const docIndex = docs.findIndex(d => d.slug === slug);
+const doc = docs[docIndex];
+
+if (!doc) throw new Error(`Nem található dokumentum: ${slug}`);
+
+const prevDoc = docs[docIndex - 1] || null;
+const nextDoc = docs[docIndex + 1] || null;
+---
+
+<DocumentationLayout title={doc.data.title}>
+  <h1>{doc.data.title}</h1>
+  {doc.body}
+
+  <hr class="my-8" />
+
+  <nav class="flex justify-between text-sm mt-8">
+    {prevDoc && <a href={`/dokumentumok/${prevDoc.slug}`} class="text-blue-500 hover:underline">← {prevDoc.data.title}</a>}
+    {nextDoc && <a href={`/dokumentumok/${nextDoc.slug}`} class="text-blue-500 hover:underline ml-auto">{nextDoc.data.title} →</a>}
+  </nav>
+</DocumentationLayout>

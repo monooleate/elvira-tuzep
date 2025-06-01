@@ -49,9 +49,67 @@ const metadata = {
   },
 };
 
----
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": product.name,
+  "image": product.image,
+  "description": product.description,
+  "sku": product.sku,
+  "brand": {
+    "@type": "Brand",
+    "name": "Elvira Tüzép"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "HUF",
+    "price": hasDiscount && discountPrice ? discountPrice : product.price,
+    "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+    "url": `https://elvirabau.hu/termekek/${category.slug}/${product.slug}`,
+    "itemCondition": "https://schema.org/NewCondition"
+  }
+};
 
+const schemaBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Főoldal",
+      "item": "https://elvirabau.hu/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Termékek",
+      "item": "https://elvirabau.hu/termekek"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": category.category,
+      "item": `https://elvirabau.hu/termekek/${category.slug}`
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": product.name,
+      "item": `https://elvirabau.hu/termekek/${category.slug}/${product.slug}`
+    }
+  ]
+};
+
+---
+    <head>
+
+  <script type="application/ld+json" set:html={JSON.stringify(schemaProduct)} />
+  <script type="application/ld+json" set:html={JSON.stringify(schemaBreadcrumb)} />
+
+</head>
 <Layout metadata={metadata}>
+
   <section class="py-12">
     <div class="max-w-4xl mx-auto px-4">
 <!-- Breadcrumb -->
@@ -116,7 +174,7 @@ const metadata = {
       
 
           
-            <ProductInteractiveBlock client:load product={product} client:load />
+            <ProductInteractiveBlock product={product} client:load />
           
 
           

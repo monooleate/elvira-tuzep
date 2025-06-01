@@ -2,6 +2,7 @@
 import FormContainer from '~/components/ui/Form.astro';
 import Headline from '~/components/ui/Headline.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import ContactFormHandler from '~/components/widgets/ContactFormHandler.jsx';
 import type { Contact as Props } from '~/types';
 
 const {
@@ -38,3 +39,4 @@ const {
     )
   }
 </WidgetWrapper>
+<ContactFormHandler client:load />

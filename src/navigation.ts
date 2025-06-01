@@ -27,7 +27,7 @@ export const headerData = {
     },
     {
       text: 'Kapcsolat',
-      href: 'kapcsolat',
+      href: '/kapcsolat',
     },
   ],
   actions: [{ text: 'Árlista', href: '', target: '_blank' }],
@@ -58,13 +58,12 @@ export const footerData = {
       ],
     },
     {
-      title: 'Support',
+      title: 'Kapcsolat',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Online Űrlap', href: '/kapcsolat'},
+        { text: '+36 70 xxx xx xx'},
+        { text: 'info@elviratuzep.hu'},
+        { text: '2030 Érd, Elvira utca 33.'},
       ],
     },
     {
