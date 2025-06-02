@@ -1,7 +1,6 @@
 ---
 import Layout from '../../layouts/PageLayout.astro';
 import productsData from '../../data/products.json';
-import Metadata from '~/components/common/Metadata.astro';
 
 const metadata = {
   title: 'Termékek – Gigawood',
@@ -17,11 +16,28 @@ const metadata = {
     image: '/kategoriak/termekek_cover.jpg'
   }
 };
+
+const schemaCategoryList = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Termékkategóriák",
+  "itemListElement": productsData.map((cat, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: cat.category,
+    item: `https://elvirabau.hu/termekek/${cat.slug}`
+  }))
+};
 ---
 
-<Metadata {...metadata} />
-
-<Layout title="Termékek" description="Fedezd fel teljes kínálatunkat!">
+<Layout metadata={metadata}>
+    {schemaCategoryList && (
+        <script
+            type="application/ld+json"
+            set:html={JSON.stringify(schemaCategoryList)}
+            slot="head"
+        />
+    )}
   <section class="py-12">
     <div class="container max-w-4xl mx-auto px-4">
 

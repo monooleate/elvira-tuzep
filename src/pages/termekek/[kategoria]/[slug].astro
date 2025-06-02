@@ -1,8 +1,6 @@
 ---
 import Layout from '../../../layouts/PageLayout.astro'
 import productsData from '../../../data/products.json'
-import ModalWrapper from '~/components/ui/ModalWrapper.jsx';
-import QuantitySelector from '~/components/common/QuantitySelector.tsx';
 import ProductInteractiveBlock from '~/components/common/ProductInteractiveBlock.jsx';
 
 export async function getStaticPaths() {
@@ -49,6 +47,10 @@ const metadata = {
   },
 };
 
+const relatedProducts = category.products
+  .filter((p) => p.slug !== product.slug)
+  .slice(0, 3);
+
 const schemaProduct = {
   "@context": "https://schema.org",
   "@type": "Product",
@@ -56,15 +58,25 @@ const schemaProduct = {
   "image": product.image,
   "description": product.description,
   "sku": product.sku,
+  "mpn": product.sku,
   "brand": {
     "@type": "Brand",
     "name": "Elvira Tüzép"
   },
+  ...(product.aggregateRating && {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": product.aggregateRating.ratingValue.toString(),
+      "reviewCount": product.aggregateRating.reviewCount.toString()
+    }
+  }),
   "offers": {
     "@type": "Offer",
     "priceCurrency": "HUF",
     "price": hasDiscount && discountPrice ? discountPrice : product.price,
-    "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+    "availability": product.stock > 0
+      ? "https://schema.org/InStock"
+      : "https://schema.org/PreOrder",
     "url": `https://elvirabau.hu/termekek/${category.slug}/${product.slug}`,
     "itemCondition": "https://schema.org/NewCondition"
   }
@@ -102,13 +114,23 @@ const schemaBreadcrumb = {
 };
 
 ---
-    <head>
-
-  <script type="application/ld+json" set:html={JSON.stringify(schemaProduct)} />
-  <script type="application/ld+json" set:html={JSON.stringify(schemaBreadcrumb)} />
-
-</head>
 <Layout metadata={metadata}>
+
+{schemaProduct && (
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(schemaProduct)}
+    slot="head"
+  />
+)}
+
+{schemaBreadcrumb && (
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(schemaBreadcrumb)}
+    slot="head"
+  />
+)}
 
   <section class="py-12">
     <div class="max-w-4xl mx-auto px-4">
@@ -123,7 +145,7 @@ const schemaBreadcrumb = {
       <span class="font-medium text-gray-800 dark:text-gray-200">{product.name}</span>
     </nav>
 
-    <a href={`/termekek/${category.slug}`} class="text-blue-600 hover:underline dark:text-blue-400">
+    <a href={`/termekek/${category.slug}`} class="text-orange-500 hover:underline dark:text-blue-400">
       ← Vissza a(z) {category.category} kategóriához
     </a>
   </div>
@@ -212,4 +234,76 @@ const schemaBreadcrumb = {
       </div>
     </div>
   </section>
+       <!-- Kapcsolódó termékek blokk -->
+{relatedProducts.length > 0 && (
+  <section class="py-12 bg-white dark:bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6 text-center">Kapcsolódó termékek</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {relatedProducts.map((product) => {
+          const hasPercent = typeof product.discountPercent === 'number' && product.discountPercent > 0;
+          const hasValidDiscountPrice = typeof product.discountPrice === 'number' && product.discountPrice > 0;
+
+          const hasDiscount = hasPercent || hasValidDiscountPrice;
+
+          const discountPrice = hasValidDiscountPrice
+            ? product.discountPrice
+            : (hasPercent
+                ? Math.round(product.price * (1 - product.discountPercent / 100))
+                : null);
+
+          const discountPercent = hasPercent
+            ? product.discountPercent
+            : (hasValidDiscountPrice
+                ? Math.round((1 - discountPrice / product.price) * 100)
+                : null);
+
+          return (
+            <a href={`/termekek/${category.slug}/${product.slug}`} class="relative block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800 dark:border-gray-700">
+              {hasDiscount && (
+                <div class="absolute top-2 left-2 bg-red-600 text-white text-sm font-bold px-2 py-1 rounded z-10 shadow">
+                  Akció
+                </div>
+              )}
+              {hasDiscount && discountPercent !== null && (
+                <div class="absolute top-2 right-2 bg-red-600 text-white text-sm font-extrabold px-3 py-1 rounded z-10 shadow">
+                  -{discountPercent}%
+                </div>
+              )}
+
+              <img src={product.image} alt={product.name} class="w-full h-48 object-cover" loading="lazy" />
+
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-900 dark:text-white">{product.name}</h2>
+                <p class="text-sm text-gray-600 dark:text-gray-400">{product.description}</p>
+
+                {product.stock > 0 ? (
+                  hasDiscount ? (
+                    <>
+                      <p class="text-sm text-gray-500 line-through mt-2">
+                        {product.price.toLocaleString()} Ft
+                      </p>
+                      <p class="text-sm text-red-600 font-bold">
+                        {discountPrice.toLocaleString()} Ft
+                      </p>
+                    </>
+                  ) : (
+                    <p class="text-sm mt-2 font-medium text-gray-800 dark:text-gray-300">
+                      {product.price.toLocaleString()} Ft
+                    </p>
+                  )
+                ) : (
+                  <p class="text-sm mt-2 font-medium text-gray-800 dark:text-gray-300">
+                    Előrendelés – Ajánlatot kérek
+                  </p>
+                )}
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+)}
+
 </Layout>

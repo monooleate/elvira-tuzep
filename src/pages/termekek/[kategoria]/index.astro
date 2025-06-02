@@ -16,26 +16,46 @@ if (!currentCategory) {
   throw new Error(`A(z) "${params.kategoria}" kategória nem található.`);
 }
 
+const schemaCategoryList = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": currentCategory.category,
+  "itemListElement": currentCategory.products.map((product, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "name": product.name,
+    "item": `https://elvirabau.hu/termekek/${currentCategory.slug}/${product.slug}`
+  }))
+};
+
 const products = currentCategory.products;
 const showDescription = !!currentCategory.description;
+
+const metadata = {
+  title: currentCategory.meta?.title ?? 'Termékek – Gigawood',
+  description: currentCategory.meta?.description ?? 'Fedezd fel faipari termékeink teljes kínálatát: gyalult fa, ragasztott gerendák, rétegelt lemezek és még sok más!',
+  openGraph: {
+    title: currentCategory.meta?.title ?? 'Termékek – Gigawood',
+    description: currentCategory.meta?.description ?? 'Fedezd fel faipari termékeink teljes kínálatát: gyalult fa, ragasztott gerendák, rétegelt lemezek és még sok más!',
+    image: currentCategory.meta?.image ?? '/kategoriak/termekek_cover.jpg',
+  },
+  twitter: {
+    title: currentCategory.meta?.title ?? 'Termékek – Gigawood',
+    description: currentCategory.meta?.description ?? 'Fedezd fel faipari termékeink teljes kínálatát: gyalult fa, ragasztott gerendák, rétegelt lemezek és még sok más!',
+    image: currentCategory.meta?.image ?? '/kategoriak/termekek_cover.jpg',
+  }
+};
 ---
 
-<Metadata 
-  title={currentCategory.meta?.title} 
-  description={currentCategory.meta?.description} 
-  openGraph={{
-    title: currentCategory.meta?.title,
-    description: currentCategory.meta?.description,
-    image: currentCategory.meta?.image,
-  }}
-  twitter={{
-    title: currentCategory.meta?.title,
-    description: currentCategory.meta?.description,
-    image: currentCategory.meta?.image,
-  }}
-/>
+<Layout metadata={metadata}>
+    {schemaCategoryList && (
+    <script
+        type="application/ld+json"
+        slot="head"
+        set:html={JSON.stringify(schemaCategoryList)}
+    />
+    )}
 
-<Layout title={currentCategory.meta.title} description={currentCategory.meta.description}>
   <section class="py-12">
     <div class="container max-w-4xl mx-auto px-4">
 
@@ -49,7 +69,7 @@ const showDescription = !!currentCategory.description;
       <span class="font-medium text-gray-800 dark:text-gray-200">{currentCategory.category}</span>
     </nav>
 
-    <a href="/termekek" class="text-blue-600 hover:underline dark:text-blue-400">
+    <a href="/termekek" class="text-orange-500 hover:underline dark:text-blue-400">
       ← Vissza a termékkategóriákhoz
     </a>
   </div>

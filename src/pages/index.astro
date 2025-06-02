@@ -20,9 +20,66 @@ const metadata = {
   title: 'ElviraTüzép | Tartós Szerkezeti Fa és Minőségi Tüzelőanyag',
   ignoreTitleTemplate: true,
 };
+
+const schemaHome = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Elvira Tüzép",
+    "url": "https://elvirabau.hu/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Gigawood Kft.",
+    "url": "https://elvirabau.hu/",
+    "logo": "https://elvirabau.hu/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+36 30 123 4567",
+      "contactType": "customer service",
+      "email": "info@elvirabau.hu",
+      "areaServed": "HU",
+      "availableLanguage": "Hungarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Elvira Tüzép",
+    "image": "https://elvirabau.hu/logo.png",
+    "telephone": "+36 30 123 4567",
+    "email": "info@elvirabau.hu",
+    "url": "https://elvirabau.hu/",
+    "priceRange": "Ft",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Elvira utca 33.",
+      "addressLocality": "Érd",
+      "postalCode": "2030",
+      "addressCountry": "HU"
+    },
+    "openingHours": "Mo-Fr 07:00-17:00",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 47.388,
+      "longitude": 18.905
+    }
+  }
+];
+
 ---
 
 <Layout metadata={metadata}>
+
+    {schemaHome && (
+    <script
+        type="application/ld+json"
+        slot="head"
+        set:html={JSON.stringify(schemaHome)}
+    />
+    )}
+
   <!-- Hero Widget ******************* -->
 
   <Hero

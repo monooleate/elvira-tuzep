@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: "ElviraTüzép | Tartós Szerkezeti Fa és Minőségi Tüzelőanyag"
-    template: '%s — AstroWind'
+    template: ''
   description: 'Tartós fa, meleg otthon. Az ElviraBau BSH gerendák, ragasztott faanyagok és minőségi brikettek forgalmazója. Fűtésre és építésre egy helyen.'
   robots:
     index: true
