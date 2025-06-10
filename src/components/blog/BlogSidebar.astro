@@ -1,0 +1,33 @@
+---
+type BlogSidebarItem = {
+  title: string;
+  slug: string;
+};
+
+type BlogSidebarSection = {
+  category: string;
+  items: BlogSidebarItem[];
+};
+
+import sidebarData from '~/data/blogSidebar.json' assert { type: "json" };
+const blogSidebar = sidebarData as BlogSidebarSection[];
+---
+
+<aside class="bg-white dark:bg-gray-900 shadow-md border border-gray-200 dark:border-gray-700 rounded-xl p-4 w-full md:w-64 
+  lg:sticky lg:top-28 lg:self-start">
+  <h2 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">Tartalomjegyzék</h2>
+  {blogSidebar.map((section) => (
+    <div class="mb-6">
+      <h3 class="font-semibold text-gray-800 dark:text-gray-100 mb-2">{section.category}</h3>
+      <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-300 space-y-1">
+        {section.items.map((item) => (
+          <li>
+            <a href={item.slug} class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+              {item.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</aside>

@@ -15,7 +15,7 @@ export default function QuantitySelector({ unitPrice, quantity, setQuantity }) {
   const total = quantity * unitPrice;
 
   return (
-    <div class="mt-6 bg-gray-100 dark:bg-gray-800 p-4 rounded-lg max-w-xs">
+    <div class="mt-6 bg-gray-100 dark:bg-gray-800 p-4 rounded-lg max-w-sm">
       <div class="flex items-center justify-start gap-3">
         <button
           onClick={decrement}

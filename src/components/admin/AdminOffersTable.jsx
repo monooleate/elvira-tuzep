@@ -4,7 +4,7 @@ export default function AdminOffersTable({ ajanlatok }) {
   return (
     <div class="overflow-x-auto">
       <table class="min-w-full table-auto border border-gray-300">
-        <thead class="bg-blue-100">
+        <thead class="sticky top-0 z-20 bg-blue-100 shadow-sm">
           <tr>
             <th class="border px-4 py-2 text-left">Név</th>
             <th class="border px-4 py-2 text-left">Email</th>
@@ -30,6 +30,7 @@ export default function AdminOffersTable({ ajanlatok }) {
     </div>
   );
 }
+
 
 function OfferRow({ item }) {
   const [contacted, setContacted] = useState(item.contacted || false);

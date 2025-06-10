@@ -1,0 +1,16 @@
+[
+  {
+    "category": "Építőanyagok",
+    "items": [
+      { "title": "BSH ragasztott gerenda", "slug": "/bsh" },
+      { "title": "KVH szerkezeti fa", "slug": "/blog/epitoanyagok/kvh" }
+    ]
+  },
+  {
+    "category": "Tüzelőanyagok",
+    "items": [
+      { "title": "RUF brikett típusok", "slug": "/ruf-brikett" },
+      { "title": "Tűzifa fajták összehasonlítása", "slug": "/blog/tuzeloanyagok/tuzifa" }
+    ]
+  }
+]

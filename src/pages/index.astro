@@ -26,19 +26,19 @@ const schemaHome = [
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Elvira Tüzép",
-    "url": "https://elvirabau.hu/"
+    "url": "https://elviratuzep.hu/"
   },
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Gigawood Kft.",
-    "url": "https://elvirabau.hu/",
-    "logo": "https://elvirabau.hu/logo.png",
+    "url": "https://elviratuzep.hu/",
+    "logo": "https://elviratuzep.hu/logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+36 30 123 4567",
+      "telephone": "+36 x0 xxx xxxx",
       "contactType": "customer service",
-      "email": "info@elvirabau.hu",
+      "email": "info@gigawood.hu",
       "areaServed": "HU",
       "availableLanguage": "Hungarian"
     }
@@ -47,10 +47,10 @@ const schemaHome = [
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Elvira Tüzép",
-    "image": "https://elvirabau.hu/logo.png",
-    "telephone": "+36 30 123 4567",
-    "email": "info@elvirabau.hu",
-    "url": "https://elvirabau.hu/",
+    "image": "https://elviratuzep.hu/logo.png",
+    "telephone": "+36 x0 xxx xxxx",
+    "email": "info@gigawood.hu",
+    "url": "https://elviratuzep.hu/",
     "priceRange": "Ft",
     "address": {
       "@type": "PostalAddress",
@@ -95,7 +95,7 @@ const schemaHome = [
       href: '/kapcsolat',
     },
   ]}
-  image={{ src: '~/assets/images/hero-image.png', alt: 'Elvira Bau termékek' }}
+  image={{ src: '~/assets/images/hero-image.png', alt: 'Elvira Tüzép termékek' }}
 >
   <Fragment slot="title">
     <span class="text-orange-500 text-5xl md:text-6xl">Elvira Tüzép</span><br />
@@ -114,12 +114,31 @@ const schemaHome = [
 
   <CategoryGrid categories={productsData} />
 
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Termék ajánlataink',
+        href: '/termekek',
+        target: '_blank',
+        icon: 'tabler:shopping-cart',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Elvira&nbsp;Tüzép&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Pabst&nbsp;Holz</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Cégünk elkötelezett <strong>a kiváló minőségű építési faáru </strong> mellett, ezért kizárólag osztrák forrásból, a megbízható <strong>Pabst-Holz</strong> gyártótól szerezzük be termékeinket. Fenntartható erdőgazdálkodásból származó, precízen feldolgozott faanyagot kínálunk, amely tartósságával és méretpontosságával is kiemelkedik.</Fragment>
+  </CallToAction>
+
   <!-- Features Widget *************** -->
 
   <Features
   id="features"
   tagline="Előnyeink"
-  title="Amit az Elvira Bau kínál"
+  title="Amit az Elvira Tüzép kínál"
   subtitle="Több mint építőanyag – megbízható partner vagyunk a kivitelezés és fűtés terén, magánszemélyeknek és cégeknek egyaránt."
   items={[
     {
@@ -161,35 +180,12 @@ const schemaHome = [
   ]}
 />
 
-<MapWidget />
+<!-- <MapWidget /> -->
 
 <BlogLatestPosts
-  title="Böngéssz az Elvira Bau infótárában"
+  title="Böngéssz az Elvira Tüzép infótárában"
   information={`Cikkeink és tudástárunk segítenek eligazodni az építő- és tüzelőanyagok világában.
   Legyen szó BSH gerendákról, brikettekről vagy gyalult fenyőről – mindenről közérthető útmutatót és hasznos tanácsokat kínálunk.
   Olvasd el legújabb bejegyzéseinket, és hozd meg a legjobb döntést vásárlás előtt.`}
 />
-
-
-  
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-    ]}
-  >
-    <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
-  </CallToAction>
 </Layout>

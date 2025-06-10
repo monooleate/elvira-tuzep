@@ -24,7 +24,7 @@ const schemaCategoryList = {
     "@type": "ListItem",
     "position": index + 1,
     "name": product.name,
-    "item": `https://elvirabau.hu/termekek/${currentCategory.slug}/${product.slug}`
+    "item": `https://elviratuzep.hu/termekek/${currentCategory.slug}/${product.slug}`
   }))
 };
 
@@ -78,7 +78,7 @@ const metadata = {
       <h1 class="text-3xl font-bold mb-6 pt-10">{currentCategory.category}</h1>
 
       {showDescription && (
-        <p class="text-gray-700 dark:text-gray-300 mb-10 leading-relaxed max-w-2xl">
+        <p class="text-gray-700 dark:text-gray-300 mb-10 leading-relaxed max-w-3xl">
           {currentCategory.description}
         </p>
       )}

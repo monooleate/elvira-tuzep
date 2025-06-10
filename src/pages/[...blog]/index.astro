@@ -12,6 +12,7 @@ import { getStaticPathsBlogPost, blogPostRobots } from '~/utils/blog';
 import { findImage } from '~/utils/images';
 import type { MetaData } from '~/types';
 import RelatedPosts from '~/components/blog/RelatedPosts.astro';
+import BlogSidebar from '~/components/blog/BlogSidebar.astro';
 
 export const prerender = true;
 
@@ -46,9 +47,22 @@ const metadata = merge(
 ---
 
 <Layout metadata={metadata}>
-  <SinglePost post={{ ...post, image: image }} url={url}>
-    {post.Content ? <post.Content /> : <Fragment set:html={post.content || ''} />}
-  </SinglePost>
-  <ToBlogLink />
-  <RelatedPosts post={post} />
+  <div class="flex flex-col lg:flex-row gap-8 px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-7xl">
+
+    <!-- Sidebar bal oldalon (sticky, dark mode kompatibilis, mobilon felül) -->
+    <div class="w-full lg:w-1/4 order-first lg:order-none">
+      <BlogSidebar />
+    </div>
+
+    <!-- Főtartalom jobb oldalon -->
+    <section class="w-full lg:w-3/4">
+      <SinglePost post={{ ...post, image: image }} url={url}>
+        {post.Content ? <post.Content /> : <Fragment set:html={post.content || ''} />}
+      </SinglePost>
+      <ToBlogLink />
+      <RelatedPosts post={post} />
+    </section>
+
+  </div>
 </Layout>
+

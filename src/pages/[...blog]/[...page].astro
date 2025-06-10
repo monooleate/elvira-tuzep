@@ -6,6 +6,7 @@ import BlogList from '~/components/blog/List.astro';
 import Headline from '~/components/blog/Headline.astro';
 import Pagination from '~/components/blog/Pagination.astro';
 // import PostTags from "~/components/blog/Tags.astro";
+import BlogSidebar from '~/components/blog/BlogSidebar.astro';
 
 import { blogListRobots, getStaticPathsBlogList } from '~/utils/blog';
 
@@ -36,17 +37,24 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
-    <Headline
-      subtitle="A statically generated blog example with news, tutorials, resources and other interesting content related to AstroWind"
-    >
-      The Blog
-    </Headline>
-    <BlogList posts={page.data} />
-    <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
-    <!--
-      <PostTags tags={allCategories} class="mb-2" title="Search by Categories:" isCategory />
-      <PostTags tags={allTags}  title="Search by Tags:" />
-    -->
-  </section>
+  <div class="flex flex-col lg:flex-row gap-8 px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-7xl">
+
+    <!-- Sidebar bal oldalon -->
+    <div class="w-full lg:w-1/4 order-first lg:order-none">
+      <BlogSidebar />
+    </div>
+
+    <!-- Fő tartalom jobb oldalon -->
+    <section class="w-full lg:w-3/4">
+      <Headline
+        subtitle="Információ bázis az általunk forgalmazott termékekről."
+      >
+        Tudástár
+      </Headline>
+      <BlogList posts={page.data} />
+      <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
+    </section>
+
+  </div>
 </Layout>
+

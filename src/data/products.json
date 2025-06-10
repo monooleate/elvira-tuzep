@@ -1,50 +1,357 @@
 [
-  {
-    "category": "Gyalult fenyő",
-    "slug": "gyalult-fenyo",
-    "description": "BSH (Brettschichtholz) ragasztott fa gerendák tetőszerkezetekhez és egyéb teherhordó felhasználásokhoz, széles méretválasztékban.",
+    {
+    "category": "Faház építő profil",
+    "slug": "fahaz-epito-profil",
     "meta": {
-      "title": "Gyalult fenyő termékek – Gigawood",
-      "description": "Gyalult fenyő szerkezetfa különböző méretekben és hosszban, ideális belsőépítészethez és szerkezetépítéshez.",
-      "image": "/kategoriak/gyalult_fenyo.jpg"
+      "title": "Faház építő profil | Elvira tüzép",
+      "description": "Rönkházprofil és zsindelyprofil luc- és borovi fenyőből, osztrák Pabst-Holz gyártótól – tartós burkolatok faházakhoz, belső terekhez.",
+      "image": "/kategoriak/fahaz-epito-profil.jpg"
     },
+    "description": "Prémium minőségű osztrák rönkházprofil (D-profil) és zsindelyprofil lucfenyőből és borovi fenyőből, közvetlenül a Pabst-Holz gyártótól. Tartós, esztétikus burkolatok faházakhoz, homlokzatokhoz, belső terekhez – készletről, kiváló árakon!",
     "products": [
       {
-        "name": "Gyalult fenyő 45x95 mm",
-        "slug": "gyalult-fenyo-45x95",
-        "sku": "GYF-45x95", 
-        "size": "45x95 mm",
-        "length": "4 vagy 5 méter",
-        "description": "Belső szerkezetekhez ideális, sima felületű, gyalult faanyag.",
-        "image": "/termekek/45x95.jpg",
-        "price": 4250,
-        "currency": "HUF",
-        "stock": 12,
-        "brand": "Gigawood",
+        "name": "Luc rönkház profil /D/ 19x116mmx4m A-B minőség",
+        "slug": "luc-ronkhaz-profil-19x116-abveh",
         "meta": {
-          "title": "Gyalult fenyő 45x95 mm – Gigawood",
-          "description": "Kiváló minőségű gyalult fenyő faanyag 45x95 mm méretben, belső szerkezetekhez ideális."
+          "title": "Luc rönkház profil 19x116mm 4m abveh",
+          "description": "Luc fenyő rönkházprofil (19×116 mm), gyalult, sima felület. Belső/külső burkolathoz ideális, 4 m hosszban, osztrák gyártótól.",
+          "image": "/termekek/luc-ronkhaz-19x116.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.7,
+          "reviewCount": 20
+        },
+        "sku": "luc-rh-d-19x116-4m", 
+        "price": 0,
+        "m2price": 7190,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/luc-ronkhaz-19x116.jpg",
+        "description": "Belső vagy külső burkolatokhoz ideális, sima felületű, gyalult rönkházprofil lucfenyőből.",
+        "longDescription": "A lucfenyő rönkházprofil (más néven D-profil) kiváló választás minden olyan faházhoz, melléképülethez, vagy belső burkolathoz, ahol természetes, esztétikus és időtálló megoldásra van szükség. A gyalult, sima felület és a félköríves homlokzat utánozza a valódi gerendaházak megjelenését, miközben könnyen szerelhető és kezelhető. Alkalmas belső terek hangulatos burkolására, valamint homlokzatképzésre is. A lucfenyő faanyag kedvező tulajdonságai – jó megmunkálhatóság, kellemes színárnyalat és stabilitás – teszik ideálissá ezt a profilt. A termék ausztriai, fenntartható erdőgazdálkodásból származik, megbízható minőséget képviselve.",
+        "longDescription2": "Ideális választás lehet kerítéshez is, amennyiben teljesen zárt, belátás biztos kerítést szeretne, ugyanis a nút-féderes kötésnek köszönhetően az elemek teljesen zártak maradnak, a faanyag száradását követően is, szemben a hagyományos deszkázattal. Kültéri alkalmazás esetén, vékonylazúrral történő felületkezelés javasolt.",
+        "specs": {
+          "Méret": "19 x 116 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Luc fenyő",
+          "Profil": "D-profil (rönkházprofil)",
+          "Felület": "Gyalult, sima",
+          "Származás": "Ausztria",
+          "Minőség": "AB-VEH (válogatott, építőipari)",
+          "Felhasználás": "Belső terek, homlokzatburkolás, melléképületek",
+          "Kezelés": "Kezeletlen, igény szerint felületkezelhető"
+        }
+      },
+
+      {
+        "name": "Borovi rönkház profil /D/ 19x116mmx4m A-B minőség",
+        "slug": "borovi-ronkhaz-profil-19x116-aben",
+        "meta": {
+          "title": "Borovi rönkház profil 19x116mm 4m aben",
+          "description": "Borovi fenyő rönkházprofil (19×116 mm), gyalult, sima felület. Belső/külső burkolathoz ideális, 4 m hosszban, osztrák gyártótól.",
+          "image": "/termekek/borovi-ronkhaz-19x116.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.75,
+          "reviewCount": 8
+        },
+        "sku": "borovi-rh-d-19x116-4m", 
+        "price": 0,
+        "m2price": 6390,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/borovi-ronkhaz-19x116.webp",
+        "description": "Masszív, időtálló borovi rönkházprofil kültérre és beltérre – gyalult, sima felület, D-profil kialakítás.",
+        "longDescription": "A borovi fenyő rönkházprofil (D-profil) ideális választás minden olyan építkezéshez, ahol fontos a természetes, meleg megjelenés és a hosszú élettartam. Sűrűbb, gyantásabb szerkezete révén időjárásállóbb, mint a lucfenyő, így különösen ajánlott kültéri alkalmazásokhoz, például homlokzatburkolatokhoz, nyaralókhoz, melléképületekhez. A gyalult, félköríves kialakítás a klasszikus rönkház-hatást kelti, miközben könnyen kezelhető és esztétikus. A termék közvetlenül az osztrák Pabst-Holz gyártótól származik, megbízható AB-EN minőséggel, fenntartható erdőgazdálkodásból.",
+        "longDescription2": "Kiválóan alkalmas kerti faházak burkolására, amennyiben szeretne az épületnek alpesi hangulatot kölcsönözni.",
+        "specs": {
+          "Méret": "19 x 116 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Borovi fenyő",
+          "Profil": "D-profil (rönkházprofil)",
+          "Felület": "Gyalult, sima",
+          "Származás": "Ausztria",
+          "Minőség": "AB-EN",
+          "Felhasználás": "Homlokzatburkolás, belső burkolatok, melléképületek",
+          "Kezelés": "Kezeletlen, felületkezelés ajánlott"
         }
       },
       {
-        "name": "Gyalult fenyő 60x120 mm",
-        "slug": "gyalult-fenyo-60x120",
-        "sku": "GYF-60x120",
-        "size": "60x120 mm",
-        "length": "13 méterig",
-        "description": "Szerkezetépítéshez ajánlott, prémium minőségű faanyag.",
-        "image": "/termekek/60x120.jpg",
-        "price": 6890,
-        "currency": "HUF",
-        "stock": 0,
-        "brand": "Gigawood",
+        "name": "Borovi rönkház profil /D/ 24x146mmx4m A-B minőség",
+        "slug": "borovi-ronkhaz-profil-24x146-aben",
         "meta": {
-          "title": "Gyalult fenyő 60x120 mm – Gigawood",
-          "description": "Tartós és esztétikus gyalult fenyő 60x120 mm-es kivitelben, szerkezetépítési célra."
+          "title": "Borovi rönkház profil 24x146mm 4m aben",
+          "description": "Borovi rönkházprofil 24x146 mm – időtálló, esztétikus D-profil kültérre és beltérre, AB-EN minőség, osztrák gyártótól.",
+          "image": "/termekek/borovi-ronkhaz-24x146.webp"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.65,
+          "reviewCount": 7
+        },
+        "sku": "borovi-rh-d-24x146-4m", 
+        "price": 0,
+        "m2price": 8290,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/borovi-ronkhaz-24x146.webp",
+        "description": "Időtálló borovi rönkházprofil 24x146 mm méretben – kültéri és beltéri burkolatokhoz, természetes D-profil kialakítással.",
+        "longDescription": "A 24x146 mm méretű borovi fenyő rönkházprofil (D-profil) ideális választás nagyobb falfelületek burkolására, ahol fontos a vastagabb, masszív megjelenés és a fokozott időjárásállóság. A gyantás borovi szerkezet kiválóan ellenáll a külső hatásoknak, így homlokzatburkolatokhoz, faházakhoz, melléképületekhez is tökéletes megoldás. Sima, gyalult felületű kialakítása és félköríves homlokzata klasszikus faház-hatást nyújt. A termék közvetlenül az osztrák Pabst-Holz gyártótól érkezik, AB-EN minőségben, fenntartható forrásból.",
+        "longDescription2": "Kiválóan alkalmas kerti faházak burkolására, amennyiben szeretne az épületnek alpesi hangulatot kölcsönözni.",
+        "specs": {
+          "Méret": "24 x 146 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Borovi fenyő",
+          "Profil": "D-profil (rönkházprofil)",
+          "Felület": "Gyalult, sima",
+          "Származás": "Ausztria",
+          "Minőség": "AB-EN",
+          "Felhasználás": "Homlokzatburkolás, belső burkolatok, melléképületek",
+          "Kezelés": "Kezeletlen, felületkezelés ajánlott"
+        }
+      },
+      {
+        "name": "Luc zsindely profil 24x146mmx4m A-B minőség",
+        "slug": "luc-zsindely-profil-24x146-ab",
+        "meta": {
+          "title": "Luc zsindely profil 24x146mm 4m ab",
+          "description": "Luc zsindelyprofil 24x146 mm – esztétikus burkolat homlokzathoz és belső terekhez, A-B minőségben, osztrák gyártótól, 4 m-es kivitelben.",
+          "image": "/termekek/luc-zsindely-24x146.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.73,
+          "reviewCount": 5
+        },
+        "sku": "luc-rh-zsindely-24x146-4m", 
+        "price": 0,
+        "m2price": 8290,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/luc-zsindely-24x146.jpg",
+        "description": "Lucfenyő zsindelyprofil 24x146 mm-es méretben, kültéri és beltéri burkolatokhoz, A-B minőségben.",
+        "longDescription": "A 24x146 mm-es lucfenyő zsindelyprofil kiváló választás homlokzatok és belső falfelületek burkolására. A profil vízszintes eresztékes kialakítása zsindelyhatású megjelenést biztosít, ami esztétikusan illeszkedik faházakhoz, melléképületekhez és rusztikus belső terekhez. A lucfenyő jól megmunkálható, kellemes színárnyalatú, és tartós megoldást kínál. A gyalult, sima felület könnyen kezelhető és festhető. A termék osztrák gyártású, A-B minőségben, fenntartható erdőgazdálkodásból származik, így megbízható minőséget és hosszú élettartamot kínál.",
+        "longDescription2": "Ideális választás lehet kerítéshez is, amennyiben teljesen zárt, belátás biztos kerítést szeretne, ugyanis a nút-féderes kötésnek köszönhetően az elemek teljesen zártak maradnak, a faanyag száradását követően is, szemben a hagyományos deszkázattal. Kültéri alkalmazás esetén, vékonylazúrral történő felületkezelés ajánlott.",
+        "specs": {
+          "Méret": "24 x 146 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Luc fenyő",
+          "Profil": "Zsindelyprofil",
+          "Felület": "Gyalult, sima",
+          "Származás": "Ausztria",
+          "Minőség": "A-B",
+          "Felhasználás": "Homlokzatburkolás, belső falfelületek, melléképületek",
+          "Kezelés": "Kezeletlen, felületkezelés javasolt"
         }
       }
     ]
   },
+  {
+    "category": "Gyalult deszka",
+    "slug": "gyalult-deszka",
+    "meta": {
+      "title": "Gyalult deszka | Elvira tüzép",
+      "description": "Minőségi gyalult deszkák luc fenyőből, több méretben. Beltéri és kültéri felhasználásra, kiváló árakon!",
+      "image": "/kategoriak/gyalult-deszka.jpg"
+    },
+    "description": "Prémium minőségű gyalult deszkák bel- és kültéri felhasználásra. Kínálatunkban megtalálhatóak különböző vastagságú és szélességű lucfenyő gyalult deszkák, amelyek ideálisak falburkoláshoz, mennyezethez, lambériázáshoz vagy bútorok készítéséhez. Az osztrák gyártásból származó faanyagok sima felületűek, precízen megmunkáltak és könnyen kezelhetők. Készletről, több méretben és kivitelben – rendeljen megbízható minőségű faanyagot otthoni vagy professzionális munkáihoz!",
+    "products": [
+      {
+        "name": "Gyalult deszka /AF profil/ 19x96mmx4m AB-VEH minőség",
+        "slug": "luc-gyalult-deszka-19x96-abveh",
+        "meta": {
+          "title": "Luc gyalult deszka /AF profil/ 19x96mm 4m abveh",
+          "description": "Luc gyalult deszka (19×96 mm) osztrák származású lucfenyőből AB-VEH minőségben, 4 oldalon gyalult és fózolt kivitelben. Kerítéshez, fafödémhez, polclaphoz.",
+          "image": "/termekek/luc-ronkhaz-19x96.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.64,
+          "reviewCount": 25
+        },
+        "sku": "luc-gyd-19x96-4m", 
+        "price": 0,
+        "m2price": 6890,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/luc-gyalult-deszka-19x96.jpg",
+        "description": "Osztrák gyártású, 4 oldalon gyalult, fózolt lucfenyő deszka – sokoldalú felhasználásra.",
+        "longDescription": "A lucfenyő gyalult deszka /AF profil/ egy prémium minőségű, 4 oldalon gyalult és fózolt faanyag, amely osztrák importból származik. AB-VEH minősége, esztétikus felülete és pontos megmunkálása révén ideális választás oromszegélyek, fafödémek, kerítéselemek vagy akár polclapok készítéséhez. A fózolt éleknek és sima felületnek köszönhetően további csiszolás vagy utómunka nélkül is dekoratív megjelenést biztosít. Kültéri felhasználás esetén javasolt vékonylazúros felületkezelés a hosszabb élettartam érdekében.",
+        "longDescription2": "",
+        "specs": {
+          "Méret": "19 x 96 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Luc fenyő",
+          "Profil": "AF profil (gyalult, fózolt deszka)",
+          "Felület": "4 oldalon gyalult, fózolt",
+          "Származás": "Ausztria",
+          "Minőség": "AB-VEH (válogatott, építőipari)",
+          "Felhasználás": "Fafödémek, oromszegély, polclap, kerítésléc",
+          "Kezelés": "Kültéri használat esetén vékonylazúrral kezelendő"
+        }
+      },
+      {
+        "name": "Gyalult deszka /AF profil/ 19x116mmx4m AB-VEH minőség",
+        "slug": "luc-gyalult-deszka-19x116-abveh",
+        "meta": {
+          "title": "Luc gyalult deszka /AF profil/ 19x116mm 4m abveh",
+          "description": "Szélesebb, 19×116 mm-es osztrák lucfenyő gyalult deszka AB-VEH minőségben, 4 oldalon gyalult és fózolt kivitelben. Kerítéshez, fafödémhez, polclaphoz.",
+          "image": "/termekek/luc-ronkhaz-19x116.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.65,
+          "reviewCount": 27
+        },
+        "sku": "luc-gyd-19x116-4m", 
+        "price": 0,
+        "m2price": 6890,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/luc-gyalult-deszka-19x116.jpg",
+        "description": "Osztrák gyártású, 4 oldalon gyalult, fózolt lucfenyő deszka – sokoldalú felhasználásra.",
+        "longDescription": "A lucfenyő gyalult deszka /AF profil/ 19x116 mm méretben kiváló választás, ha nagyobb fedésre van szükség. A simára gyalult és fózolt élekkel rendelkező termék ideális kerítések, oromszegélyek és fafödémek készítésére. AB-VEH minőségének köszönhetően esztétikus és pontos kivitelű, kültérre is ajánlott – megfelelő vékonylazúros kezeléssel.",
+        "longDescription2": "",
+        "specs": {
+          "Méret": "19 x 116 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Luc fenyő",
+          "Profil": "AF profil (gyalult, fózolt deszka)",
+          "Felület": "4 oldalon gyalult, fózolt",
+          "Származás": "Ausztria",
+          "Minőség": "AB-VEH (válogatott, építőipari)",
+          "Felhasználás": "Fafödémek, oromszegély, polclap, kerítésléc",
+          "Kezelés": "Kültéri használat esetén vékonylazúrral kezelendő"
+        }
+      },
+      {
+        "name": "Gyalult deszka /AF profil/ 19x146mmx4m AB-VEH minőség",
+        "slug": "luc-gyalult-deszka-19x146-abveh",
+        "meta": {
+          "title": "Luc gyalult deszka /AF profil/ 19x146mm 4m abveh",
+          "description": "Széles, 4 oldalon gyalult és fózolt luc deszka (19×146 mm) osztrák importból, AB-VEH minőségben. Kiváló választás kerítésekhez, fafödémhez, bútorlaphoz.",
+          "image": "/termekek/luc-ronkhaz-19x146.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.68,
+          "reviewCount": 12
+        },
+        "sku": "luc-gyd-19x146-4m", 
+        "price": 0,
+        "m2price": 6890,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/luc-gyalult-deszka-19x146.jpg",
+        "description": "Széles, gyalult, 4 oldalon fózolt lucfenyő deszka – kiváló megoldás kültérre és beltérre egyaránt.",
+        "longDescription": "A 19x146 mm-es lucfenyő gyalult deszka /AF profil/ prémium minőségű, osztrák importból származó faanyag. Négy oldalon gyalult és fózolt kivitele révén esztétikus és pontos illesztésű megoldást kínál kerítések, fafödémek, bútorlapok vagy egyéb belső burkolatok kivitelezésére. A fózolt élek elegáns megjelenést biztosítanak, így a termék további csiszolást vagy megmunkálást nem igényel. Kültéri használat esetén ajánlott vékonylazúros kezelést alkalmazni a hosszabb élettartam érdekében.",
+        "longDescription2": "",
+        "specs": {
+          "Méret": "19 x 146 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Luc fenyő",
+          "Profil": "AF profil (gyalult, fózolt deszka)",
+          "Felület": "4 oldalon gyalult, fózolt",
+          "Származás": "Ausztria",
+          "Minőség": "AB-VEH (válogatott, építőipari)",
+          "Felhasználás": "Fafödémek, oromszegély, polclap, kerítésléc",
+          "Kezelés": "Kültéri használat esetén vékonylazúrral kezelendő"
+        }
+      },
+      {
+        "name": "Gyalult deszka /AF profil/ 19x190mmx4m AB-VEH minőség",
+        "slug": "luc-gyalult-deszka-19x190-abveh",
+        "meta": {
+          "title": "Luc gyalult deszka /AF profil/ 19x190mm 4m abveh",
+          "description": "Extra széles gyalult luc deszka (19×190 mm) osztrák importból, AB-VEH minőségben. Tökéletes választás belső burkolatokhoz, mennyezethez, bútorlaphoz.",
+          "image": "/termekek/luc-ronkhaz-19x190.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.8,
+          "reviewCount": 8
+        },
+        "sku": "luc-gyd-19x190-4m", 
+        "price": 0,
+        "m2price": 7190,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/luc-gyalult-deszka-19x190.jpg",
+        "description": "Extra széles, esztétikusan gyalult, 4 oldalon fózolt lucfenyő deszka beltérre és kültérre",
+        "longDescription": "A 19x190 mm-es lucfenyő gyalult deszka /AF profil/ ideális választás minden olyan felhasználásra, ahol a nagyobb fedőszélesség előnyt jelent. Osztrák gyártású, AB-VEH minőségű faanyag, amely 4 oldalon gyalult és fózolt, így esztétikus, kész felületet biztosít. Kiválóan használható mennyezetek, oldalfalak, polcok, bútorlapok vagy kerítések kialakításához. Kültéri használat esetén ajánlott vékonylazúros kezeléssel növelni az élettartamot.",
+        "longDescription2": "",
+        "specs": {
+          "Méret": "19 x 190 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Luc fenyő",
+          "Profil": "AF profil (gyalult, fózolt deszka)",
+          "Felület": "4 oldalon gyalult, fózolt",
+          "Származás": "Ausztria",
+          "Minőség": "AB-VEH (válogatott, építőipari)",
+          "Felhasználás": "Fafödémek, oromszegély, polclap, kerítésléc",
+          "Kezelés": "Kültéri használat esetén vékonylazúrral kezelendő"
+        }
+      }
+    ]
+  },
+  {
+    "category": "Lambéria",
+    "slug": "lamberia",
+    "meta": {
+      "title": "Lambéria | Elvira tüzép",
+      "description": "Luc és borovi lambéria falra, mennyezetre – osztrák prémium minőség, több méret és profil, bel- és kültérre is, kedvező áron!",
+      "image": "/kategoriak/lamberia.jpg"
+    },
+    "description": "Prémium minőségű lambéria kínálat lucfenyőből és borovi fenyőből, többféle profilban és méretben. A gondosan gyalult, illesztett lambéria elemek ideálisak fal- és mennyezetburkolatokhoz, belső terek meleg, természetes hangulatának megteremtéséhez, valamint külső homlokzatburkolatok kialakításához. Osztrák származású, AB minőségű termékeink esztétikus felületet, könnyű szerelhetőséget és hosszú élettartamot biztosítanak. Válasszon készletről elérhető méreteink közül kedvező áron, igény esetén egyedi megoldásokkal!",
+    "products": [
+      {
+        "name": "Lambéria /Trapéz - F profil/ 12,5x96mmx4m AB minőség",
+        "slug": "lamberia-12_5x96-ab",
+        "meta": {
+          "title": "Lambéria /Trapéz - F profil/ 12,5x96mm 4m ab",
+          "description": "Trapéz profilú lambéria 12,5×96 mm-es méretben, osztrák AB minőségben. Beltéri fal- és mennyezetburkolathoz ajánlott, esztétikus gyalult felülettel.",
+          "image": "/termekek/lamberia-f-12_5x96.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.8,
+          "reviewCount": 32
+        },
+        "sku": "luc-lam-12_5x96-4m", 
+        "price": 0,
+        "m2price": 6890,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/lamberia-f-12_5x96.jpg",
+        "description": "Esztétikus, sima felületű trapéz profilú lambéria, kiváló beltéri burkoláshoz.",
+        "longDescription": "A 12x96 mm-es méretű trapéz profilú (F profil) lambéria ideális választás beltéri falak és mennyezetek burkolására. Az osztrák gyártású, AB minőségű lucfenyő alapanyag esztétikus, simára gyalult felülettel rendelkezik, így további csiszolást nem igényel. A precíz illesztés és a profilkialakítás könnyű szerelhetőséget biztosít, míg a természetes fenyő színvilág meleg, otthonos hangulatot teremt. Tökéletes választás faházakba, nappalikba, tetőterekbe vagy akár irodai burkolatokhoz is.",
+        "longDescription2": "",
+        "specs": {
+          "Méret": "12,5 x 96 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Luc fenyő",
+          "Profil": "F profil (trapéz formájú lambéria)",
+          "Felület": "Gyalult, sima",
+          "Származás": "Ausztria",
+          "Minőség": "AB (válogatott, burkolati minőség)",
+          "Felhasználás": "Belső fal- és mennyezetburkolat",
+          "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        }
+      }
+    ]
+  },
+
   {
   "category": "BSH ragasztott gerenda",
   "slug": "bsh-ragasztott-gerenda",
@@ -56,14 +363,14 @@
   },
   "products": [
     {
-  "name": "BSH 100x120 mm",
-  "slug": "bsh-100x120",
-  "discountPrice": 5000,
+  "name": "BSH ragasztott gerenda 10x10x1350 cm",
+  "slug": "bsh-10x10x1350",
+  "discountPrice": 10000,
   "discountPercent": 0,
-  "sku": "BSH-100x120",
+  "sku": "BSH-10x10x1350mm",
   "size": "100x120 mm",
   "length": "13 méterig",
-  "description": "Stabil, nagy teherbírású BSH gerenda 100x120 mm keresztmetszettel.",
+  "description": "Stabil, GL24h látszó minőségű, nagy teherbírású BSH gerenda 100x100 mm keresztmetszettel. Gerendáink: 4,5m 6,75m 9m és 13,5m hosszban kaphatóak.",
   "longDescription": "Ez a BSH gerenda kiváló választás tetőszerkezetekhez, áthidalókhoz vagy egyéb teherhordó faelemekhez. A nagy szilárdságú GL24h ragasztott lucfenyő stabil mérettartást és esztétikus megjelenést biztosít. Szárított, gyalult, élfázott kivitelben rendelhető, így akár látszó szerkezeti elemként is alkalmazható.",
   "specs": {
     "Keresztmetszet": "100x120 mm",
@@ -80,7 +387,8 @@
     "reviewCount": 23
   },
   "stock": 8,
-  "price": 42000,
+  "price": 100000,
+  "m3price": 20000,
   "currency": "HUF",
   "brand": "Gigawood",
   "image": "/termekek/bsh-100x120.jpg",
@@ -133,5 +441,55 @@
       }
     }
   ]
+},
+
+
+
+  {
+  "category": "Keményfa brikett",
+  "slug": "kemenyfa-brikett",
+  "description": "Fedezze fel keményfa brikett kínálatunkat, amely ideális választás kandallókhoz, kályhákhoz és vegyestüzelésű kazánokhoz. A tölgyből, bükkből és más keményfákból készült brikettek kiváló fűtőértékkel rendelkeznek, alacsony nedvességtartalmuknak és nagy sűrűségüknek köszönhetően hosszan égnek, egyenletes hőt biztosítva. Ragasztóanyag nélkül, tisztán préselt faforgácsból készülnek – környezetbarát, praktikus és tiszta megoldás az otthoni fűtéshez. Vásároljon közvetlenül raktárról, raklapos tételben kedvező áron!",
+  "meta": {
+    "title": "Pini-Kay keményfa brikett – Gigawood",
+    "description": "Magas fűtőértékű, préselt keményfa brikett kandallóba, kályhába vagy kazánba. Rendeljen raklapos tételben kedvező áron!",
+    "image": "/kategoriak/pini-kay.jpg"
+  },
+  "products": [
+    {
+      "name": "Pini-Kay keményfa brikett 960 kg (1 raklap)",
+      "slug": "pini-kay-brikett-960kg",
+      "discountPrice": "",
+      "discountPercent": "",
+      "sku": "PINIKAY-960KG",
+      "size": "15x6.5x6.5 cm brikett / 96 csomag",
+      "length": "960 kg (1 raklap)",
+      "description": "Magas fűtőértékű keményfa brikett, alacsony nedvességtartalommal, 1 raklapos kiszerelésben.",
+      "longDescription": "A Pini-Kay keményfa brikett kiváló alternatíva a hagyományos tűzifával szemben. Magas nyomáson préselt, ragasztóanyag nélküli gyártása eredményeként rendkívül tömör, így hosszan tartó, intenzív hőleadást biztosít. Égése stabil, egyenletes, miközben alacsony a hamuképződés – ezáltal kevesebb tisztítást igényel és kényelmesebb használatot nyújt. Kifejezetten ajánlott kandallókhoz, kályhákhoz és vegyes tüzelésű kazánokhoz, ahol fontos a megbízható parázstartás és a tiszta égés. Környezetbarát megoldás, hiszen 100%-ban természetes keményfából készül, adalékanyagok nélkül. A Pini-Kay brikett kompakt formája révén jól rakodható, tárolása egyszerű, szállítása gazdaságos.",
+      "specs": {
+        "Tömeg": "960 kg / raklap",
+        "Brikett méret": "15 x 6,5 x 6,5 cm",
+        "Csomagolás": "96 csomag / raklap",
+        "Alapanyag": "Keményfa (tölgy, bükk)",
+        "Nedvességtartalom": "< 10%",
+        "Fűtőérték": "4.8 – 5.0 kWh/kg",
+        "Használat": "Kandalló, kályha, kazán",
+        "Kötőanyag": "Nincs (ragasztómentes préselés)"
+      },
+      "aggregateRating": {
+        "ratingValue": 4.9,
+        "reviewCount": 18
+      },
+      "stock": 12,
+      "price": 114900,
+      "currency": "HUF",
+      "brand": "Gigawood",
+      "image": "/termekek/pini-kay-brikett.jpg",
+      "meta": {
+        "title": "Pini-Kay keményfa brikett 960 kg – Gigawood",
+        "description": "1 raklapos kiszerelésű Pini-Kay keményfa brikett, kiváló fűtőértékkel és alacsony nedvességtartalommal."
+      }
+    }
+  ]
 }
+
 ]

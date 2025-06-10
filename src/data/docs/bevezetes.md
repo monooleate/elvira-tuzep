@@ -1,8 +1,8 @@
 ---
 title: Bevezetés
-description: Az ElviraBau dokumentációs rendszerének bevezetője.
+description: Az Elvira Tüzép dokumentációs rendszerének bevezetője.
 ---
 
 # Bevezetés
 
-Ez az oldal bemutatja az ElviraBau dokumentáció célját és használatát.
+Ez az oldal bemutatja az Elvira Tüzép dokumentáció célját és használatát.
