@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero2.astro';
 import Note from '~/components/widgets/Note.astro';
+import Note2 from '~/components/widgets/Note2.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features3.astro';
 import Steps from '~/components/widgets/Steps.astro';
@@ -111,9 +112,20 @@ const schemaHome = [
 
   <Note title="Filozófiánk:" description="Minőség, megbízhatóság és a fa iránti tisztelet vezérel." />
 
-
   <CategoryGrid categories={productsData} />
 
+  <Note2   
+    action={{
+    variant: 'primary',
+    text: 'Gigawood.hu',
+    href: 'https://gigawood.hu',
+    target: '_blank',
+    icon: 'tabler:shopping-cart',
+  }}
+    title="Játszótornyokat és kertészeti fa termékeket forgalmazó oldalunk:" 
+    description="" 
+  />
+  
   <CallToAction
     actions={[
       {

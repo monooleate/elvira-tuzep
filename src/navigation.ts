@@ -38,6 +38,7 @@ export const footerData = {
     {
       title: 'Információk',
       links: [
+        { text: 'Partnereink', href: '/partnereink' },
         { text: 'Adatvédelem', href: '/adatkezelesi-tajekoztato' },
         { text: 'Impresszum', href: '/impresszum' },
       ],

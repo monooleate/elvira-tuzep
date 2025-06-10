@@ -41,7 +41,7 @@ export default function SearchWidget() {
 
   useEffect(() => {
     if (query.trim().length > 1) {
-      setResults(fuse.search(query).slice(0, 6));
+      setResults(fuse.search(query));
     } else {
       setResults([]);
     }
@@ -72,7 +72,7 @@ export default function SearchWidget() {
   }, []);
 
   return (
-    <div class="relative">
+    <div class="relative max-h-[90vh] overflow-y-auto">
 <button
   class="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
   onClick={() => {
@@ -101,7 +101,7 @@ export default function SearchWidget() {
         <div class="fixed inset-0 z-50 bg-black/40 flex items-center justify-center p-4">
           <div
             ref={containerRef}
-            class="bg-white dark:bg-gray-900 w-full max-w-xl rounded-lg shadow-lg p-6 relative"
+            class="bg-white dark:bg-gray-900 w-full max-w-xl rounded-lg shadow-lg p-6 relative max-h-[90vh] overflow-y-auto"
           >
             <button
               class="absolute top-2 right-2 text-gray-500 hover:text-black dark:hover:text-white"

@@ -1,0 +1,32 @@
+---
+import { Icon } from 'astro-icon/components';
+import Button from '~/components/ui/Button.astro';
+import type { CallToAction } from '~/types';
+
+export interface Props {
+  icon?: string;
+  title?: string;
+  description?: string;
+  action?: CallToAction;
+}
+
+const {
+  icon = 'tabler:info-square',
+  title = await Astro.slots.render('title'),
+  description = await Astro.slots.render('description'),
+  action,
+} = Astro.props;
+---
+
+<section class="bg-green-50 dark:bg-green-800 not-prose flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-6 py-4 text-md font-medium">
+  <div class="flex items-center gap-2 text-center sm:text-left">
+    <Icon name={icon} class="w-5 h-5 inline-block align-text-bottom font-bold" />
+    <span class="font-bold" set:html={title} />
+    <span set:html={description} />
+  </div>
+
+  {action && (
+    <Button {...action} class="bg-green-600 dark:bg-green-500 py-2 sm:w-auto" />
+  )}
+</section>
+
