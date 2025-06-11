@@ -4,7 +4,32 @@ import { appendOfferToSheet } from '../../lib/googleSheets';
 
 export const prerender = false;
 
-// ... rate limiting, sanitizeInput, validateEmail, validatePhone – ezek maradhatnak
+// Rate limiting beállítások
+const requestTimestamps = new Map<string, number[]>();
+const RATE_LIMIT_MAX = 5;
+const RATE_LIMIT_WINDOW_MS = 60000;
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  if (!requestTimestamps.has(ip)) requestTimestamps.set(ip, []);
+  const timestamps = requestTimestamps.get(ip)!.filter(t => now - t < RATE_LIMIT_WINDOW_MS);
+  timestamps.push(now);
+  requestTimestamps.set(ip, timestamps);
+  return timestamps.length > RATE_LIMIT_MAX;
+}
+
+// Bemenet tisztítása
+function sanitizeInput(input: string): string {
+  return escape(input.trim());
+}
+
+function validateEmail(email: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function validatePhone(phone: string): boolean {
+  return /^[+0-9\s-]*$/.test(phone);
+}
 
 export const POST: APIRoute = async ({ request }) => {
   try {
@@ -26,6 +51,14 @@ export const POST: APIRoute = async ({ request }) => {
 
     if (!validateEmail(email)) {
       return new Response(JSON.stringify({ success: false, error: 'Érvénytelen email.' }), { status: 400 });
+    }
+
+    if (phone && !validatePhone(phone)) {
+      return new Response(JSON.stringify({ success: false, error: 'Érvénytelen telefonszám.' }), { status: 400 });
+    }
+
+    if (message && message.length < 5) {
+      return new Response(JSON.stringify({ success: false, error: 'A megjegyzés túl rövid.' }), { status: 400 });
     }
 
     const offer = {
