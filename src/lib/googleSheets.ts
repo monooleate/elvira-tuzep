@@ -12,7 +12,7 @@ export async function appendOfferToSheet(offer: any) {
   const sheets = google.sheets({ version: 'v4', auth });
 
   const sheetId = process.env.GOOGLE_SHEET_ID!;
-  const sheetName = 'Elvira_Ajánlatkérések'; // lapfül neve, ha más, módosítsd
+  const sheetName = 'Ajánlatok'; // lapfül neve, ha más, módosítsd
 
   await sheets.spreadsheets.values.append({
     spreadsheetId: sheetId,
