@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'preact/hooks';
-import Button from '../ui/button';
+import Button from '../ui/Button.tsx';
 
 export default function OfferModal({ product, quantity, onClose }) {
   const [name, setName] = useState('');
