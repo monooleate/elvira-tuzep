@@ -480,5 +480,23 @@
     "orderRecorded": false,
     "orderCompleted": false,
     "receivedAt": "2025-06-10T21:58:08.634Z"
+  },
+  {
+    "id": "2025-06-11T12:20:25.567Z",
+    "name": "Most",
+    "email": "taskony@gmail.com",
+    "phone": "2342134",
+    "message": "12352135",
+    "quantity": 1,
+    "product": {
+      "name": "Lambéria Trapéz F-profil 12,5x96mmx4m BC minőség",
+      "slug": "lamberia-12_5x96-bc",
+      "price": 0,
+      "sku": "luc-lam-12_5x96-4m-bc"
+    },
+    "contacted": false,
+    "orderRecorded": false,
+    "orderCompleted": false,
+    "receivedAt": "2025-06-11T12:20:25.567Z"
   }
 ]

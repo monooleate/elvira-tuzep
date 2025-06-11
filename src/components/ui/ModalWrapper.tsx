@@ -1,6 +1,6 @@
 import { useState } from 'preact/hooks';
 import OfferModal from '../widgets/OfferModal';
-import Button from '../ui/button.tsx';
+import Button from './Button.tsx';
 
 
 export default function ModalWrapper({ product, quantity }) {
