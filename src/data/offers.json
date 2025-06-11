@@ -462,5 +462,23 @@
     "orderRecorded": false,
     "orderCompleted": true,
     "receivedAt": "2025-06-05T15:03:04.202Z"
+  },
+  {
+    "id": "2025-06-10T21:58:08.634Z",
+    "name": "kiss elemér",
+    "email": "taskony@gmail.com",
+    "phone": "234234",
+    "message": "2523452",
+    "quantity": 3,
+    "product": {
+      "name": "Pini‑Kay keményfa brikett I. osztály",
+      "slug": "pini-kay-brikett-tolgy",
+      "price": 159900,
+      "sku": "brikett-pini-kay-tolgy"
+    },
+    "contacted": false,
+    "orderRecorded": false,
+    "orderCompleted": false,
+    "receivedAt": "2025-06-10T21:58:08.634Z"
   }
 ]

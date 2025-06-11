@@ -17,6 +17,8 @@ import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin, lazyImagesRehype
 
 import preact from '@astrojs/preact';
 
+import netlify from '@astrojs/netlify';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const hasExternalScripts = false;
@@ -78,4 +80,6 @@ export default defineConfig({
       },
     },
   },
+
+  adapter: netlify(),
 });

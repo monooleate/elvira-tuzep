@@ -14,7 +14,7 @@ export const POST: APIRoute = async ({ request, redirect }) => {
   const username = form.get("username");
   const password = form.get("password");
 
- if (username === process.env.ADMIN_USERNAME && password === process.env.ADMIN_PASSWORD) {
+ if (username === adminUsername && password === adminPassword) {
     return new Response(null, {
       status: 302,
       headers: {
