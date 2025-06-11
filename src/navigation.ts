@@ -12,7 +12,7 @@ export const headerData = {
       href: getPermalink('/termekek'),
       
     },
-    {
+/*     {
       text: 'Tudástár',
       links: [
         {
@@ -24,7 +24,7 @@ export const headerData = {
           href: getPermalink('janos_post', 'post'),
         },
       ],
-    },
+    }, */
     {
       text: 'Kapcsolat',
       href: '/kapcsolat',
@@ -69,12 +69,7 @@ export const footerData = {
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
-  socialLinks: [
-    /* { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' }, */
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    /* { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') }, */
-  ],
+
   footNote: `
     
 `,
@@ -85,4 +80,5 @@ export const footerData = {
     ☕️
   </span>
   Készítette: <a class="text-blue-600 underline dark:text-muted ml-1" href="https://jmeszaros.dev" target="_blank" rel="noopener noreferrer">jmeszaros.dev</a>  <span> . Minden jog fenntartva </span>.
-</span> */
+</span>
+*/
