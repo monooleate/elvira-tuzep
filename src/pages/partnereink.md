@@ -1,5 +1,6 @@
 ---
-title: 'Partnereink'
+title: 'Partnereink | Elvira Tüzép'
+description: 'Ismerje meg az Elvira Tüzép megbízható partnereit! Olyan beszállítókkal dolgozunk együtt, akik garantálják a minőségi fűrészáru, brikett és szerkezeti fa folyamatos elérhetőségét.'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 

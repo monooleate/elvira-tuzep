@@ -30,7 +30,7 @@ export const headerData = {
       href: '/kapcsolat',
     },
   ],
-  actions: [{ text: 'Árlista', href: '', target: '_blank' }],
+  actions: [{ text: 'Infó', href: '/kapcsolat' }],
 };
 
 export const footerData = {

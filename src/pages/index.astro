@@ -18,7 +18,8 @@ import productsData from '../data/products.json';
 import MapWidget from '../components/widgets/MapWidget.astro';
 
 const metadata = {
-  title: 'ElviraTüzép | Tartós Szerkezeti Fa és Minőségi Tüzelőanyag',
+  title: 'Elvira Tüzép | Fűrészáru, Brikett és Szerkezeti Fa Érden',
+  description: 'Fűrészáru, brikett és szerkezeti fa Érden. Elvira Tüzép – a Gigawood Kft. telephelye. Megbízható kiszolgálás és kedvező árak lakosságnak és kivitelezőknek.',
   ignoreTitleTemplate: true,
 };
 
@@ -33,11 +34,15 @@ const schemaHome = [
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Gigawood Kft.",
-    "url": "https://elviratuzep.hu/",
-    "logo": "https://elviratuzep.hu/logo.png",
+    "url": "https://gigawood.hu/",
+    "logo": "https://gigawood.hu/custom/megawood/image/cache/w220h100m00/GigaWood_logo_3_Vasvari_Design.png",
+    "sameAs": [
+      "https://www.facebook.com/kertifajatszoter",
+      "https://www.instagram.com/gigawoodkft"
+    ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+36 x0 xxx xxxx",
+      "telephone": "+36 70 368 7809",
       "contactType": "customer service",
       "email": "info@gigawood.hu",
       "areaServed": "HU",
@@ -48,9 +53,9 @@ const schemaHome = [
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Elvira Tüzép",
-    "image": "https://elviratuzep.hu/logo.png",
-    "telephone": "+36 x0 xxx xxxx",
-    "email": "info@gigawood.hu",
+    "image": "https://elviratuzep.hu/favicon.png",
+    "telephone": "+36 70 368 7809",
+    "email": "info@elviratuzep.hu",
     "url": "https://elviratuzep.hu/",
     "priceRange": "Ft",
     "address": {
@@ -60,11 +65,27 @@ const schemaHome = [
       "postalCode": "2030",
       "addressCountry": "HU"
     },
-    "openingHours": "Mo-Fr 07:00-17:00",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "07:00",
+      "closes": "17:00"
+    },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 47.388,
-      "longitude": 18.905
+      "latitude": 47.375516,
+      "longitude": 18.932424
+    },
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Gigawood Kft.",
+      "url": "https://gigawood.hu/"
     }
   }
 ];
@@ -104,7 +125,7 @@ const schemaHome = [
   </Fragment>
 
   <Fragment slot="subtitle">
-    Megbízható szállítás építkezésekhez és fűtéshez. Faanyag, brikett, betonacél, pellet – mindent megtalálsz nálunk.
+    Építkezel vagy fűtenél? Nálunk mindent megtalálsz az osztrák minőségi faanyagtól a brikettig.
   </Fragment>
 </Hero>
 
@@ -122,7 +143,7 @@ const schemaHome = [
     target: '_blank',
     icon: 'tabler:shopping-cart',
   }}
-    title="Játszótornyokat és kertészeti fa termékeket forgalmazó oldalunk:" 
+    title="Játszótornyokat és kertészeti fa termékeink:" 
     description="" 
   />
   
