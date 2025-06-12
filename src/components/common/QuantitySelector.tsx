@@ -41,7 +41,7 @@ export default function QuantitySelector({ unitPrice, quantity, setQuantity }) {
         </button>
 
         <span class="text-sm text-gray-700 dark:text-gray-300 ml-2">
-          darab <span class="text-gray-500 dark:text-gray-400">({total.toLocaleString()} Ft)</span>
+          darab <span class="text-gray-500 dark:text-gray-400">({total.toLocaleString('hu-HU')} Ft)</span>
         </span>
       </div>
     </div>

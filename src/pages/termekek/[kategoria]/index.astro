@@ -138,11 +138,11 @@ const discountM3Price = hasM3Price && hasDiscount
   {hasPrice && (
     hasDiscount && discountPrice !== null ? (
       <>
-        <p class="text-sm text-gray-500 line-through">{product.price.toLocaleString()} Ft / db</p>
-        <p class="text-sm text-red-600 font-bold">{discountPrice.toLocaleString()} Ft / db</p>
+        <p class="text-sm text-gray-500 line-through">{product.price.toLocaleString('hu-HU')} Ft / db</p>
+        <p class="text-sm text-red-600 font-bold">{discountPrice.toLocaleString('hu-HU')} Ft / db</p>
       </>
     ) : (
-      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.price.toLocaleString()} Ft / db</p>
+      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.price.toLocaleString('hu-HU')} Ft / db</p>
     )
   )}
 
@@ -150,11 +150,11 @@ const discountM3Price = hasM3Price && hasDiscount
   {hasM2Price && (
     hasDiscount && discountM2Price !== null ? (
       <>
-        <p class="text-sm text-gray-500 line-through">{product.m2price.toLocaleString()} Ft / m²</p>
-        <p class="text-sm text-red-600 font-bold">{discountM2Price.toLocaleString()} Ft / m²</p>
+        <p class="text-sm text-gray-500 line-through">{product.m2price.toLocaleString('hu-HU')} Ft / m²</p>
+        <p class="text-sm text-red-600 font-bold">{discountM2Price.toLocaleString('hu-HU')} Ft / m²</p>
       </>
     ) : (
-      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.m2price.toLocaleString()} Ft / m²</p>
+      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.m2price.toLocaleString('hu-HU')} Ft / m²</p>
     )
   )}
 
@@ -162,11 +162,11 @@ const discountM3Price = hasM3Price && hasDiscount
   {hasM3Price && (
     hasDiscount && discountM3Price !== null ? (
       <>
-        <p class="text-sm text-gray-500 line-through">{product.m3price.toLocaleString()} Ft / m³</p>
-        <p class="text-sm text-red-600 font-bold">{discountM3Price.toLocaleString()} Ft / m³</p>
+        <p class="text-sm text-gray-500 line-through">{product.m3price.toLocaleString('hu-HU')} Ft / m³</p>
+        <p class="text-sm text-red-600 font-bold">{discountM3Price.toLocaleString('hu-HU')} Ft / m³</p>
       </>
     ) : (
-      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.m3price.toLocaleString()} Ft / m³</p>
+      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.m3price.toLocaleString('hu-HU')} Ft / m³</p>
     )
   )}
 </div>

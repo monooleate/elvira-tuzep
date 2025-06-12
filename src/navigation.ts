@@ -47,7 +47,7 @@ export const footerData = {
       title: 'Kapcsolat',
       links: [
         { text: 'Online Űrlap', href: '/kapcsolat'},
-        { text: '+36 70 xxx xx xx'},
+        { text: '+36 70 368 7809'},
         { text: 'info@elviratuzep.hu'},
         { text: '2030 Érd, Elvira utca 33.'},
       ],

@@ -1,5 +1,5 @@
 [
-    {
+  {
     "category": "Faház építő profil",
     "slug": "fahaz-epito-profil",
     "meta": {
@@ -23,7 +23,7 @@
         },
         "sku": "luc-rh-d-19x116-4m", 
         "price": 0,
-        "m2price": 7190,
+        "m2price": 6890,
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
@@ -59,7 +59,7 @@
         },
         "sku": "borovi-rh-d-19x116-4m", 
         "price": 0,
-        "m2price": 6390,
+        "m2price": 6090,
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
@@ -94,7 +94,7 @@
         },
         "sku": "borovi-rh-d-24x146-4m", 
         "price": 0,
-        "m2price": 8290,
+        "m2price": 7990,
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
@@ -129,7 +129,7 @@
         },
         "sku": "luc-rh-zsindely-24x146-4m", 
         "price": 0,
-        "m2price": 8290,
+        "m2price": 9190,
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
@@ -176,7 +176,7 @@
         },
         "sku": "luc-gyd-19x96-4m", 
         "price": 0,
-        "m2price": 6890,
+        "m2price": 6590,
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
@@ -211,7 +211,7 @@
         },
         "sku": "luc-gyd-19x116-4m", 
         "price": 0,
-        "m2price": 6890,
+        "m2price": 6590,
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
@@ -246,7 +246,7 @@
         },
         "sku": "luc-gyd-19x146-4m", 
         "price": 0,
-        "m2price": 6890,
+        "m2price": 6590,
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
@@ -281,7 +281,7 @@
         },
         "sku": "luc-gyd-19x190-4m", 
         "price": 0,
-        "m2price": 7190,
+        "m2price": 6890,
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
@@ -315,7 +315,7 @@
     "description": "Prémium minőségű lambéria kínálat lucfenyőből és borovi fenyőből, többféle profilban és méretben. A gondosan gyalult, illesztett lambéria elemek ideálisak fal- és mennyezetburkolatokhoz, belső terek meleg, természetes hangulatának megteremtéséhez, valamint külső homlokzatburkolatok kialakításához. Osztrák származású, AB minőségű termékeink esztétikus felületet, könnyű szerelhetőséget és hosszú élettartamot biztosítanak. Válasszon készletről elérhető méreteink közül kedvező áron, igény esetén egyedi megoldásokkal!",
     "products": [
       {
-        "name": "Lambéria Trapéz F-profil 12,5x96mmx4m AB minőség",
+        "name": "Lambéria Luc Trapéz F-profil 12,5x96mmx4m AB minőség",
         "slug": "lamberia-12_5x96-ab",
         "meta": {
           "title": "Lambéria F-profil 12,5x96mm 4m ab",
@@ -398,7 +398,7 @@
         },
         "sku": "luc-lam-f-15x116-4m-abveh", 
         "price": 0,
-        "m2price": 4690,
+        "m2price": 5690,
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
@@ -433,7 +433,7 @@
         },
         "sku": "luc-lam-sl-14x121-4m-ab", 
         "price": 0,
-        "m2price": 5190,
+        "m2price": 4990,
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
@@ -468,7 +468,7 @@
         },
         "sku": "luc-lam-sl-14x121-4m-bc", 
         "price": 0,
-        "m2price": 4290,
+        "m2price": 4090,
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
@@ -490,10 +490,10 @@
         }
       },
       {
-        "name": "Lambéria /Fózolt - C profil/ 15x116mmx4m AB-VEH minőség",
+        "name": "Lambéria - Borovi Fózolt /C profil/ 15x116mmx4m AB-VEH minőség",
         "slug": "lamberia-fozolt-15x116-abveh",
         "meta": {
-          "title": "Lambéria /Fózolt - C profil/ 15x116mm 4m AB-VEH",
+          "title": "Lambéria - Borovi Fózolt /C profil/ 15x116mm 4m AB-VEH",
           "description": "Fózolt (C profilú) borovi lambéria 15×116 mm-es méretben, AB-VEH minőségben. Erősebb, tartósabb fafajta beltéri falburkolathoz.",
           "image": "/termekek/lamberia-c-15x116-abveh.png"
         },
@@ -503,7 +503,7 @@
         },
         "sku": "borovi-lam-c-15x116-4m-abveh", 
         "price": 0,
-        "m2price": 5690,
+        "m2price": 5390,
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
@@ -522,6 +522,410 @@
           "Minőség": "AB-VEH (válogatott burkolati minőség)",
           "Felhasználás": "Belső fal- és mennyezetburkolat",
           "Kezelés": "Kezeletlen, lakkozásra, pácolásra vagy lazúrozásra előkészítve"
+        }
+      },
+      {
+        "name": "Lambéria /Fózolt - C profil/ 15x116mmx4m AB-VEH minőség",
+        "slug": "lamberia-fozolt-15x116-abveh",
+        "meta": {
+          "title": "Lambéria /Fózolt - C profil/ 15x116mm 4m AB-VEH",
+          "description": "Fózolt (C profilú) luc lambéria 15×116 mm-es méretben, AB-VEH minőségben. Erősebb, tartósabb fafajta beltéri falburkolathoz.",
+          "image": "/termekek/lamberia-c-15x116-abveh.png"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.54,
+          "reviewCount": 10
+        },
+        "sku": "luc-lam-c-15x116-4m-abveh", 
+        "price": 0,
+        "m2price": 5390,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/lamberia-c-15x116-abveh.png",
+        "description": "Erős, fózolt profilú luc lambéria belső falburkolatokhoz, válogatott AB-VEH minőségben.",
+        "longDescription": "A 15x116 mm-es fózolt (C profil) borovi lambéria különösen tartós és időtálló megoldást kínál belső fal- és mennyezetburkolatokhoz. A precízen gyalult felület, a profil kialakítása és a természetes színvilág elegáns, meleg hatást kelt. Az AB-VEH minőség garantálja az esztétikus megjelenést és a könnyű felhasználást.",
+        "longDescription2": "",
+        "specs": {
+          "Méret": "15 x 116 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Luc fenyő",
+          "Profil": "C profil (fózolt élű lambéria)",
+          "Felület": "Gyalult, sima",
+          "Származás": "Ausztria",
+          "Minőség": "AB-VEH (válogatott burkolati minőség)",
+          "Felhasználás": "Belső fal- és mennyezetburkolat",
+          "Kezelés": "Kezeletlen, lakkozásra, pácolásra vagy lazúrozásra előkészítve"
+        }
+      }
+    ]
+  },
+
+  {
+    "category": "Hajópadló",
+    "slug": "hajopadlo",
+    "meta": {
+      "title": "Hajópadló | Elvira tüzép",
+      "description": "Luc és borovi hajópadló falra és mennyezetre – osztrák prémium minőség, több méret és profil, bel- és kültérre is, kedvező áron!",
+      "image": "/kategoriak/hajopadlo.jpg"
+    },
+    "description": "Prémium minőségű hajópadló kínálat lucfenyőből és borovi fenyőből, többféle profillal és méretben. A gondosan gyalult, illesztett hajópadló elemek ideálisak fal- és mennyezetburkolatokhoz, belső terek természetes és meleg hangulatának kialakításához. Kültéri használatra is alkalmas, megfelelő kezeléssel. Osztrák gyártású, AB-VEH, AB-EN és C minőségű faanyagaink tartósak, esztétikus felületűek és könnyen szerelhetők. Fedezze fel készleten lévő hajópadló típusainkat, kedvező áron!",
+    "products": [
+      {
+        "name": "Hajópadló - Luc Softline /E profil/ 19x116mmx4m AB-VEH minőség",
+        "slug": "hajopadlo-luc-softline-eprofil-19x116-abveh",
+        "meta": {
+          "title": "Hajópadló Softline E profil 19x116mm 4m ab-veh",
+          "description": "19x116mm-es Softline hajópadló E profillal, AB-VEH minőségben. Precízen gyalult felület, ideális falburkolatnak és mennyezetre. Minőségi faanyag beltéri burkolatokhoz.",
+          "image": "/termekek/hajopadlo-softline-19x116.png"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.72,
+          "reviewCount": 35
+        },
+        "sku": "luc-hp-e-190x116-4m", 
+        "price": 0,
+        "m2price": 6890,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/hajopadlo-softline-19x116.png",
+        "description": "Softline hajópadló E profil, 19x116mm-es méretben. AB-VEH minőség, gyalult felület, könnyen szerelhető beltéri burkolatként.",
+        "longDescription": "A Softline hajópadló E profillal ideális választás falak vagy mennyezetek burkolásához. Ez a 19x116mm méretű, 4 méteres hosszúságú burkolóelem AB-VEH minőségű faanyagból készül, amely sima gyalult felületet és esztétikus megjelenést biztosít. A Softline (E profil) lekerekített élkialakítása elegáns vizuális hatást nyújt, valamint megkönnyíti a tisztítást. A hajópadló illesztése rejtett, nút-féderes, így szoros és stabil illesztést garantál. Kiválóan alkalmas lakások, nyaralók vagy irodák belső tereinek meleg, természetes hangulatú burkolására.",
+        "longDescription2": "",
+        "specs": {
+          "Terméktípus": "Hajópadló",
+          "Méret": "19 x 116 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Luc fenyő",
+          "Profil": "Softline / E profil",
+          "Profil kialakítás": "Nút-féderes, lekerekített él",
+          "Felület": "Simára gyalult",
+          "Származás": "Ausztria",
+          "Minőség": "AB-VEH (válogatott burkolati minőség)",
+          "Felhasználás": "Beltéri falburkolat, mennyezeti burkolat",
+          "Rögzítés": "Szegelés vagy klipszes rögzítés",
+          "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
+          "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        }
+      },
+      {
+        "name": "Hajópadló - Luc Fózolt /C profil/ 19x116mmx4m AB-VEH minőség",
+        "slug": "hajopadlo-luc-fozolt-cprofil-19x116-abveh",
+        "meta": {
+          "title": "Hajópadló Luc Fózolt C profil – 19x116mm AB-VEH | Elvira Tüzép",
+          "description": "Lucfenyő hajópadló C profillal, 19x116mm-es méretben, AB-VEH minőségben. Fózolt élkialakítás, kiváló választás falra vagy mennyezetre, kedvező áron.",
+          "image": "/termekek/hajopadlo-c-19x116.webp"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.65,
+          "reviewCount": 45
+        },
+        "sku": "luc-hp-c-19x116-4m", 
+        "price": 0,
+        "m2price": 6090,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/hajopadlo-c-19x116.webp",
+        "description": "Lucfenyő hajópadló C profillal, fózolt élkialakítással. 19x116mm méret, AB-VEH minőség. Belső falra vagy mennyezetre kiváló választás.",
+        "longDescription": "Ez a fózolt, C profilú lucfenyő hajópadló ideális választás azok számára, akik természetes fa burkolatot keresnek belső terekhez. A 19x116mm-es méret és 4 méteres hosszúság lehetővé teszi a gyors, gazdaságos burkolást. A nút-féderes rendszerű csatlakozás szoros illeszkedést biztosít, míg a fózolt profil (lecsapott él) látványos, tagolt felületet eredményez. Az AB-VEH minőségű faanyag garantálja a hosszú élettartamot, a gondos megmunkálás pedig könnyű szerelést és esztétikus megjelenést biztosít. Ajánlott lakások, nyaralók, irodák fal- vagy mennyezetburkolataként.",
+        "longDescription2": "",
+        "specs": {
+          "Terméktípus": "Hajópadló",
+          "Méret": "19 x 116 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Luc fenyő",
+          "Profil": "Fózolt / C profil",
+          "Profil kialakítás": "Nút-féderes, fózolt él (lecsapott él)",
+          "Felület": "Simára gyalult",
+          "Származás": "Ausztria",
+          "Minőség": "AB-VEH (válogatott burkolati minőség)",
+          "Felhasználás": "Beltéri falburkolat, mennyezeti burkolat",
+          "Rögzítés": "Szegelés vagy klipszes rögzítés",
+          "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
+          "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        }
+      },
+      {
+        "name": "Hajópadló - Luc Fózolt /C profil/ 19x116mmx4m AB-EN minőség",
+        "slug": "hajopadlo-luc-fozolt-cprofil-19x116-aben",
+        "meta": {
+          "title": "Hajópadló Luc Fózolt C profil – 19x116mm AB-EN minőség | Elvira Tüzép",
+          "description": "Lucfenyő hajópadló C profillal, 19x116mm-es méretben, AB-EN minőségben. Természetes fa burkolat falra és mennyezetre, kedvező áron, kiváló ár-érték aránnyal.",
+          "image": "/termekek/hajopadlo-c-19x116.webp"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.4,
+          "reviewCount": 36
+        },
+        "sku": "luc-hp-c-19x116-4m-aben",
+        "price": 0,
+        "m2price": 5690,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/hajopadlo-c-19x116.webp",
+        "description": "Lucfenyő hajópadló fózolt C profillal, 19x116mm méretben. AB-EN minőség, kiváló választás falra vagy mennyezetre belső térbe.",
+        "longDescription": "Ez a C profilú, fózolt lucfenyő hajópadló ideális belső burkolat lakások, nyaralók, irodák számára. A 19x116mm-es méret és 4 méteres hossz egyszerre biztosít gazdaságos felhasználást és könnyű szerelhetőséget. A nút-féderes illesztés stabil, szoros csatlakozást eredményez, míg a fózolt (lecsapott) élek esztétikus, tagolt megjelenést adnak a falnak vagy mennyezetnek. Az AB minőségű faanyag természetes erezetű, kevés hibával, igény szerint kezelhető vagy festhető.",
+        "longDescription2": "",
+        "specs": {
+          "Terméktípus": "Hajópadló",
+          "Méret": "19 x 116 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Lucfenyő",
+          "Profil": "Fózolt / C profil",
+          "Profil kialakítás": "Nút-féderes, fózolt él (lecsapott él)",
+          "Felület": "Simára gyalult",
+          "Származás": "Ausztria",
+          "Minőség": "AB-EN (válogatott, kevésbé hibás burkolati minőség)",
+          "Felhasználás": "Beltéri falburkolat, mennyezeti burkolat",
+          "Rögzítés": "Szegelés vagy klipszes rögzítés",
+          "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
+          "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        }
+      },
+
+      {
+        "name": "Hajópadló - Luc Fózolt /C profil/ 19x146mmx4m AB-VEH minőség",
+        "slug": "hajopadlo-luc-fozolt-cprofil-19x146-abveh",
+        "meta": {
+          "title": "Hajópadló Luc Fózolt C profil – 19x146mm AB-VEH | Elvira Tüzép",
+          "description": "Lucfenyő hajópadló C profillal, 19x146mm-es méretben, AB-VEH minőségben. Széles burkolóléc falra és mennyezetre – világos, természetes megjelenés, könnyű szerelhetőség.",
+          "image": "/termekek/hajopadlo-c-19x146.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.68,
+          "reviewCount": 45
+        },
+        "sku": "luc-hp-c-19x146-4m-abveh",
+        "price": 0,
+        "m2price": 6090,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/hajopadlo-c-19x146.jpg",
+        "description": "Lucfenyő hajópadló, széles 19x146mm-es kivitelben, fózolt C profillal. AB-VEH minőség, ideális fal- és mennyezetburkolathoz világos tónusban.",
+        "longDescription": "Ez a lucfenyőből készült, C profilú hajópadló remek választás, ha természetes, világos színű beltéri burkolatot keresel. A 19x146mm-es széles kivitel gyors burkolást tesz lehetővé nagyobb falfelületeken vagy mennyezeten is. A fózolt él (lecsapott profil) látványos tagoltságot ad, míg a nút-féderes illesztés biztosítja a stabil rögzítést. A lucfenyő könnyű fa, világos árnyalattal és finom erezettel, így kiválóan harmonizál modern és klasszikus terekben is. Az AB-VEH minőség pedig garantálja a válogatott, homogén megjelenést és a hosszú élettartamot.",
+        "longDescription2": "",
+        "specs": {
+          "Terméktípus": "Hajópadló",
+          "Méret": "19 x 146 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Lucfenyő",
+          "Profil": "Fózolt / C profil",
+          "Profil kialakítás": "Nút-féderes, fózolt él (lecsapott él)",
+          "Felület": "Simára gyalult",
+          "Származás": "Ausztria",
+          "Minőség": "AB-VEH (válogatott burkolati minőség)",
+          "Felhasználás": "Beltéri falburkolat, mennyezeti burkolat",
+          "Rögzítés": "Szegelés vagy klipszes rögzítés",
+          "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
+          "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        }
+      },
+
+      {
+        "name": "Hajópadló - Borovi Fózolt /C profil/ 19x146mmx4m AB-VEH minőség",
+        "slug": "hajopadlo-borovi-fozolt-cprofil-19x146-abveh",
+        "meta": {
+          "title": "Hajópadló Borovi Fózolt C profil – 19x146mm AB-VEH | Elvira Tüzép",
+          "description": "Borovi fenyő hajópadló C profillal, 19x146mm-es méretben, AB-VEH minőségben. Széles burkolóléc falra és mennyezetre – esztétikus, tartós, könnyen szerelhető.",
+          "image": "/termekek/hajopadlo-c-19x146.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.74,
+          "reviewCount": 42
+        },
+        "sku": "borovi-hp-c-19x146-4m-abveh",
+        "price": 0,
+        "m2price": 6090,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/hajopadlo-c-19x146.jpg",
+        "description": "Borovi fenyő hajópadló, széles 19x146mm-es kivitelben, fózolt C profillal. AB-VEH minőség, ideális fal- és mennyezetburkolathoz.",
+        "longDescription": "Ez a borovi fenyőből készült, C profilú hajópadló ideális választás azoknak, akik szélesebb burkolólapokkal szeretnének természetes, meleg hatású belső tereket kialakítani. A 19x146mm-es méret és a 4 méteres hossz gyors haladást tesz lehetővé nagyobb felületeken is. A fózolt élek (lecsapott profil) karakteres, tagolt megjelenést biztosítanak, míg a nút-féderes illesztés szoros, stabil csatlakozást garantál. Az AB-VEH minőségű borovi fenyő faanyag sűrűbb szerkezetű, tartósabb, markáns erezetű, esztétikus megoldás bármely beltéri fal- vagy mennyezeti burkolathoz.",
+        "longDescription2": "",
+        "specs": {
+          "Terméktípus": "Hajópadló",
+          "Méret": "19 x 146 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Borovi fenyő",
+          "Profil": "Fózolt / C profil",
+          "Profil kialakítás": "Nút-féderes, fózolt él (lecsapott él)",
+          "Felület": "Simára gyalult",
+          "Származás": "Ausztria",
+          "Minőség": "AB-VEH (válogatott burkolati minőség)",
+          "Felhasználás": "Beltéri falburkolat, mennyezeti burkolat",
+          "Rögzítés": "Szegelés vagy klipszes rögzítés",
+          "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
+          "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        }
+      },
+
+      {
+        "name": "Hajópadló - Luc Fózolt /C profil/ 19x146mmx4m AB-EN minőség",
+        "slug": "hajopadlo-luc-fozolt-cprofil-19x146-aben",
+        "meta": {
+          "title": "Hajópadló Luc Fózolt C profil – 19x146mm AB-EN minőség | Elvira Tüzép",
+          "description": "Lucfenyő hajópadló széles, 19x146mm-es C profillal, AB-EN minőségben. Világos, természetes fa burkolat falra és mennyezetre, kiváló ár-érték arányban.",
+          "image": "/termekek/hajopadlo-c-19x146.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.6,
+          "reviewCount": 29
+        },
+        "sku": "luc-hp-c-19x146-4m-aben",
+        "price": 0,
+        "m2price": 5690,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/hajopadlo-c-19x146.jpg",
+        "description": "Lucfenyő hajópadló 19x146mm-es C profillal, AB-EN minőségben. Széles kialakítás, természetes megjelenés és egyszerű szerelés falra vagy mennyezetre.",
+        "longDescription": "Ez a C profilú lucfenyő hajópadló széles, 19x146mm-es kialakítással kiválóan alkalmas otthoni belső terek burkolására. A világos, természetes árnyalatú lucfenyő letisztult, skandináv hangulatot kölcsönöz a helyiségnek. A nút-féderes csatlakozás szoros illesztést biztosít, a fózolt élek pedig karakteres, tagolt megjelenést adnak. Az AB minőségű faanyag kedvező ár-érték arányt kínál, miközben szép megjelenést és megbízható burkolati megoldást biztosít. Ajánlott lakásokba, nyaralókba vagy irodákba, belső falra és mennyezetre.",
+        "longDescription2": "",
+        "specs": {
+          "Terméktípus": "Hajópadló",
+          "Méret": "19 x 146 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Lucfenyő",
+          "Profil": "Fózolt / C profil",
+          "Profil kialakítás": "Nút-féderes, fózolt él (lecsapott él)",
+          "Felület": "Simára gyalult",
+          "Származás": "Ausztria",
+          "Minőség": "AB-EN (válogatott, kedvező ár-érték arány)",
+          "Felhasználás": "Beltéri falburkolat, mennyezeti burkolat",
+          "Rögzítés": "Szegelés vagy klipszes rögzítés",
+          "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
+          "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        }
+      },
+
+      {
+        "name": "Hajópadló - Borovi Fózolt /C profil/ 19x146mmx4m AB-EN minőség",
+        "slug": "hajopadlo-borovi-fozolt-cprofil-19x146-aben",
+        "meta": {
+          "title": "Hajópadló Borovi Fózolt C profil – 19x146mm AB-EN minőség | Elvira Tüzép",
+          "description": "Borovi fenyő hajópadló széles, 19x146mm-es C profillal, AB-EN minőségben. Tartós, természetes megjelenésű burkolat falra és mennyezetre, kedvező áron.",
+          "image": "/termekek/hajopadlo-c-19x146.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.6,
+          "reviewCount": 29
+        },
+        "sku": "borovi-hp-c-19x146-4m-aben",
+        "price": 0,
+        "m2price": 5690,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/hajopadlo-c-19x146.jpg",
+        "description": "Borovi fenyő hajópadló 19x146mm-es C profillal, AB-EN minőségben. Természetes erezet, széles kialakítás, kiváló belső burkolatokhoz.",
+        "longDescription": "Ez a széles, 19x146mm-es hajópadló borovi fenyőből készül, fózolt C profillal. A borovi markánsabb erezetű és keményebb, mint a luc, ezért időtállóbb, tartósabb megoldás belső burkolatokhoz. A nút-féderes illesztés gyors és stabil szerelést biztosít, míg a fózolt élek elegáns, tagolt látványt eredményeznek. AB minőségben kínáljuk, amely megfelelően válogatott, jó esztétikájú, kevés hibával rendelkező faanyagot jelent. Ajánlott lakások, nyaralók, irodák falaira, mennyezeteire természetes, meleg hangulat megteremtéséhez.",
+        "longDescription2": "",
+        "specs": {
+          "Terméktípus": "Hajópadló",
+          "Méret": "19 x 146 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Borovi fenyő",
+          "Profil": "Fózolt / C profil",
+          "Profil kialakítás": "Nút-féderes, fózolt él (lecsapott él)",
+          "Felület": "Simára gyalult",
+          "Származás": "Ausztria",
+          "Minőség": "AB-EN (válogatott, kedvező ár-érték arány)",
+          "Felhasználás": "Beltéri falburkolat, mennyezeti burkolat",
+          "Rögzítés": "Szegelés vagy klipszes rögzítés",
+          "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
+          "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        }
+      },
+      {
+        "name": "Hajópadló - Luc Fózolt /C profil/ 19x146mmx4m C minőség",
+        "slug": "hajopadlo-luc-fozolt-cprofil-19x146-c",
+        "meta": {
+          "title": "Hajópadló Luc Fózolt C profil – 19x146mm C minőség | Elvira Tüzép",
+          "description": "Lucfenyő hajópadló C profillal, 19x146mm-es méretben, C minőségben. Gazdaságos megoldás műszaki vagy kevésbé látszó burkolatokhoz, melléképületekbe, tárolókba.",
+          "image": "/termekek/hajopadlo-c-19x146.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.3,
+          "reviewCount": 18
+        },
+        "sku": "luc-hp-c-19x146-4m-c",
+        "price": 0,
+        "m2price": 4290,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/hajopadlo-c-19x146.jpg",
+        "description": "Lucfenyő hajópadló 19x146mm méretben, fózolt C profillal, C minőségben. Kedvező árú burkolat kevésbé igényes felhasználásra.",
+        "longDescription": "Ez a lucfenyő hajópadló 19x146mm-es méretben, fózolt C profillal, C minőségű faanyagból készült. A C minőségű hajópadló természetes csomókkal, színeltérésekkel, esetleges repedésekkel rendelkezik, ezért elsősorban olyan helyekre ajánljuk, ahol az esztétika kevésbé lényeges szempont. Ideális például melléképületekbe, nyaralókba, tárolókba, garázsokba, műszaki célokra vagy alépítményekhez. A nút-féderes csatlakozás révén ennek ellenére stabilan szerelhető. Gazdaságos választás, ha fontos a természetes faanyag, de nem szükséges a hibátlan megjelenés.",
+        "longDescription2": "",
+        "specs": {
+          "Terméktípus": "Hajópadló",
+          "Méret": "19 x 146 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Lucfenyő",
+          "Profil": "Fózolt / C profil",
+          "Profil kialakítás": "Nút-féderes, fózolt él (lecsapott él)",
+          "Felület": "Simára gyalult",
+          "Származás": "Ausztria",
+          "Minőség": "C (műszaki minőség, hibákkal, esztétikai kompromisszumokkal)",
+          "Felhasználás": "Garázs, tároló, melléképület, alépítmény, kevésbé látható beltéri burkolat",
+          "Rögzítés": "Szegelés vagy csavarozás",
+          "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
+          "Kezelés": "Kezeletlen, szükség esetén csiszolható vagy felületkezelhető"
+        }
+      },
+
+      {
+        "name": "Hajópadló - Borovi Fózolt /C profil/ 19x146mmx4m C minőség",
+        "slug": "hajopadlo-borovi-fozolt-cprofil-19x146-c",
+        "meta": {
+          "title": "Hajópadló Borovi Fózolt C profil – 19x146mm C minőség | Elvira Tüzép",
+          "description": "Borovi fenyő hajópadló C profillal, 19x146mm-es méretben, C minőségben. Masszív, természetes fa burkolat műszaki célokra és melléképületekbe.",
+          "image": "/termekek/hajopadlo-c-19x146.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.34,
+          "reviewCount": 28
+        },
+        "sku": "borovi-hp-c-19x146-4m-c",
+        "price": 0,
+        "m2price": 4290,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "stock": 0,
+        "image": "/termekek/hajopadlo-c-19x146.jpg",
+        "description": "Borovi fenyő hajópadló 19x146mm méretben, C profil és C minőség – költséghatékony megoldás kevésbé igényes beltéri vagy műszaki felhasználásra.",
+        "longDescription": "Ez a borovi fenyőből készült hajópadló széles, 19x146mm-es méretű, C profillal és C minőségű besorolással. A borovi fenyő masszívabb, mint a luc, így a hibás, csomós, repedezett darabok is jól használhatók műszaki célra. A C minőségű hajópadlót olyan helyekre ajánljuk, ahol az esztétikai szempont nem elsődleges – például melléképületekbe, tárolókba, garázsba, alépítményekhez. A nút-féderes illesztés segíti a könnyű szerelést, míg a fózolt élkialakítás tagolt, rusztikus megjelenést biztosít. Gazdaságos választás természetes faalapú burkolathoz.",
+        "longDescription2": "",
+        "specs": {
+          "Terméktípus": "Hajópadló",
+          "Méret": "19 x 146 mm",
+          "Hossz": "4 m",
+          "Fa fajta": "Borovi fenyő",
+          "Profil": "Fózolt / C profil",
+          "Profil kialakítás": "Nút-féderes, fózolt él (lecsapott él)",
+          "Felület": "Simára gyalult",
+          "Származás": "Ausztria",
+          "Minőség": "C (műszaki minőség, esztétikai hibákkal, szerkezeti felhasználásra is alkalmas)",
+          "Felhasználás": "Garázs, melléképület, tároló, alépítmény, kevésbé látható burkolat",
+          "Rögzítés": "Szegelés vagy csavarozás",
+          "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
+          "Kezelés": "Kezeletlen, szükség esetén csiszolható vagy felületkezelhető"
         }
       }
     ]
@@ -602,6 +1006,7 @@
           "Szilárdsági osztály": "GL24h",
           "Származás": "Ausztria",
           "Méret": "8 × 10 cm",
+          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőség",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -639,6 +1044,7 @@
           "Szilárdsági osztály": "GL24h",
           "Származás": "Ausztria",
           "Méret": "8 × 16 cm",
+          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőség",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -676,6 +1082,7 @@
           "Szilárdsági osztály": "GL24h",
           "Származás": "Ausztria",
           "Méret": "10 × 10 cm",
+          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőség",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -713,6 +1120,7 @@
           "Szilárdsági osztály": "GL24h",
           "Származás": "Ausztria",
           "Méret": "10 × 16 cm",
+          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőség",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -750,6 +1158,7 @@
           "Szilárdsági osztály": "GL24h",
           "Származás": "Ausztria",
           "Méret": "10 × 20 cm",
+          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőség",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -787,6 +1196,7 @@
           "Szilárdsági osztály": "GL24h",
           "Származás": "Ausztria",
           "Méret": "12 × 12 cm",
+          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőség",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -824,6 +1234,7 @@
           "Szilárdsági osztály": "GL24h",
           "Származás": "Ausztria",
           "Méret": "12 × 16 cm",
+          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőség",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -898,6 +1309,7 @@
           "Szilárdsági osztály": "GL24h",
           "Származás": "Ausztria",
           "Méret": "14 × 14 cm",
+          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőség",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -935,6 +1347,7 @@
           "Szilárdsági osztály": "GL24h",
           "Származás": "Ausztria",
           "Méret": "14 × 20 cm",
+          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőség",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -972,6 +1385,7 @@
           "Szilárdsági osztály": "GL24h",
           "Származás": "Ausztria",
           "Méret": "16 × 16 cm",
+          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőség",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -1009,6 +1423,7 @@
           "Szilárdsági osztály": "GL24h",
           "Származás": "Ausztria",
           "Méret": "16 × 24 cm",
+          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőség",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -1046,6 +1461,7 @@
         "Szilárdsági osztály": "GL24h",
         "Származás": "Ausztria",
         "Méret": "20 × 20 cm",
+        "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
         "Felület": "Gyalult, fózolt, látszó minőség",
         "Nedvességtartalom": "kb. 12% ±2%",
         "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -1057,7 +1473,7 @@
     }
   ]
 },
-  {
+{
   "category": "Keményfa brikett",
   "slug": "kemenyfa-brikett",
   "description": "Fedezze fel keményfa brikett kínálatunkat, amely ideális választás kandallókhoz, kályhákhoz és vegyestüzelésű kazánokhoz. A tölgyből, bükkből és más keményfákból készült brikettek kiváló fűtőértékkel rendelkeznek, alacsony nedvességtartalmuknak és nagy sűrűségüknek köszönhetően hosszan égnek, egyenletes hőt biztosítva. Ragasztóanyag nélkül, tisztán préselt faforgácsból készülnek – környezetbarát, praktikus és tiszta megoldás az otthoni fűtéshez. Vásároljon közvetlenül raktárról, raklapos tételben kedvező áron!",

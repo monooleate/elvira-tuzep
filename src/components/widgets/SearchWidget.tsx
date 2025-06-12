@@ -130,7 +130,7 @@ export default function SearchWidget() {
                       <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{item.name}</h3>
                       <p class="text-sm text-gray-600 dark:text-gray-400">{item.description}</p>
                       <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">
-                        {item.stock > 0 ? `Raktáron – ${item.price.toLocaleString()} Ft` : 'Előrendelés / Ajánlatkérés'}
+                        {item.stock > 0 ? `Raktáron – ${item.price.toLocaleString('hu-HU')} Ft` : 'Előrendelés / Ajánlatkérés'}
                       </p>
                     </div>
                   </a>
