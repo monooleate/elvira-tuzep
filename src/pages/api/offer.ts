@@ -67,6 +67,7 @@ export const POST: APIRoute = async ({ request }) => {
       phone,
       message,
       quantity: body.quantity || 1,
+      unit: body.unit,
       product: body.product,
       contacted: false,
       orderRecorded: false,
