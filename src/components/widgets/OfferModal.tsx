@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'preact/hooks';
 import Button from '../ui/Button.tsx';
 
-export default function OfferModal({ product, quantity, onClose }) {
+export default function OfferModal({ product, unit, quantity, onClose }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -57,6 +57,7 @@ export default function OfferModal({ product, quantity, onClose }) {
       phone,
       message,
       quantity,
+      unit,
       product: {
         name: product.name,
         slug: product.slug,
@@ -118,7 +119,7 @@ export default function OfferModal({ product, quantity, onClose }) {
               <div class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm text-gray-800 dark:text-gray-200 mb-3">
                 <div><strong>Termék:</strong> {product.name}</div>
                 <div><strong>Cikkszám:</strong> {product.sku}</div>
-                <div><strong>Darabszám:</strong> {quantity} db</div>
+                <div><strong>Mennyiség:</strong> {quantity} {unit}</div>
               </div>
 
               <div>

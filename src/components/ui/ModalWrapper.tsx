@@ -3,7 +3,7 @@ import OfferModal from '../widgets/OfferModal';
 import Button from './Button.tsx';
 
 
-export default function ModalWrapper({ product, quantity }) {
+export default function ModalWrapper({ product, unit, quantity }) {
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -16,6 +16,7 @@ export default function ModalWrapper({ product, quantity }) {
         <OfferModal
           product={product}
           quantity={quantity}
+          unit={unit}
           onClose={() => setShowModal(false)}
         />
       )}
