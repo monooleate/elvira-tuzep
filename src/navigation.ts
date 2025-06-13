@@ -41,6 +41,7 @@ export const footerData = {
         { text: 'Partnereink', href: '/partnereink' },
         { text: 'Adatvédelem', href: '/adatkezelesi-tajekoztato' },
         { text: 'Impresszum', href: '/impresszum' },
+        { text: 'Gigawood.hu', href: 'https://gigawood.hu/', target: '_blank' }
       ],
     },
     {
