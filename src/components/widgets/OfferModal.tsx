@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'preact/hooks';
 import Button from '../ui/Button.tsx';
 
-export default function OfferModal({ product, unit, quantity, onClose }) {
+export default function OfferModal({ product, unit, price, quantity, onClose }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -61,7 +61,8 @@ export default function OfferModal({ product, unit, quantity, onClose }) {
       product: {
         name: product.name,
         slug: product.slug,
-        price: product.discountPrice || product.price,
+        price: price,
+        unit: unit,
         sku: product.sku,
       },
     };

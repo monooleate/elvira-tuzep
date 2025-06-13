@@ -36,6 +36,7 @@ export default function ProductInteractiveBlock({ product }) {
       
       <ModalWrapper
         product={product}
+        price={price}
         quantity={quantity}
         unit={unit}
       />
