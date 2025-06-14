@@ -33,6 +33,11 @@ export default function ProductInteractiveBlock({ product }) {
         unit={unit}
         setQuantity={setQuantity}
       />
+
+    <p class="text-xs text-gray-500 mt-4">
+      Az árváltozás jogát fenntartjuk. Az ajánlatkéréskori ár nem garantált.
+    </p>
+
       
       <ModalWrapper
         product={product}

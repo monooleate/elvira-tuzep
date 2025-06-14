@@ -1248,7 +1248,7 @@
           "reviewCount": 36
         },
         "sku": "bsh-egyedi-gl24h",
-        "price": 0,
+        "price": null,
         "m2price": null,
         "m3price": 399990,
         "discountPrice": null,
@@ -1273,33 +1273,33 @@
         }
       },
       {
-        "name": "BSH ragasztott gerenda 8x10cm",
-        "slug": "bsh-ragasztott-gerenda-8x10",
+        "name": "BSH ragasztott gerenda 8x12cm",
+        "slug": "bsh-ragasztott-gerenda-8x12",
         "meta": {
-          "title": "BSH ragasztott gerenda 8x10cm – Osztrák GL24h minőség",
-          "description": "BSH gerenda 8×10 cm-es méretben, GL24h osztályban, osztrák gyártásból. Esztétikus, mérettartó fa szerkezet kisebb faszerkezeti feladatokra.",
-          "image": "/termekek/bsh-gerenda-8x10.jpg"
+          "title": "BSH ragasztott gerenda 8x12cm – Osztrák GL24h minőség",
+          "description": "BSH gerenda 8×12 cm-es méretben, GL24h osztályban, osztrák gyártásból. Esztétikus, mérettartó fa szerkezet kisebb faszerkezeti feladatokra.",
+          "image": "/termekek/bsh-gerenda-8x12.jpg"
         },
         "aggregateRating": {
           "ratingValue": 4.9,
           "reviewCount": 22
         },
-        "sku": "bsh-8x10-gl24h",
-        "price": 0,
+        "sku": "bsh-8x12-gl24h",
+        "price": 51839,
         "m2price": null,
         "m3price": 399990,
         "discountPrice": null,
         "discountPercent": null,
         "stock": 0,
-        "image": "/termekek/bsh-gerenda-8x10.jpg",
-        "description": "BSH gerenda 8×10 cm-es méretben, GL24h osztályban. Tartós, esztétikus, precíz faanyag látszó és szerkezeti célokra.",
-        "longDescription": "A 8×10 cm-es keresztmetszetű BSH (Brettschichtholz) ragasztott gerenda osztrák gyártásból származik, és GL24h szilárdsági osztályban készül. Kompakt mérete ellenére kiváló statikai tulajdonságokkal bír, így ideális kisebb szerkezeti vagy esztétikai célokra, például keretekhez, látszó belső elemekhez vagy pergolák díszítő tartóelemeként. A rétegragasztott faanyag kiváló mérettartással és időtállósággal rendelkezik, repedés- és vetemedésmentes.",
+        "image": "/termekek/bsh-gerenda-8x12.jpg",
+        "description": "BSH gerenda 8×12 cm-es méretben, GL24h osztályban. Tartós, esztétikus, precíz faanyag látszó és szerkezeti célokra.",
+        "longDescription": "A 8×12 cm-es keresztmetszetű BSH (Brettschichtholz) ragasztott gerenda osztrák gyártásból származik, és GL24h szilárdsági osztályban készül. Kompakt mérete ellenére kiváló statikai tulajdonságokkal bír, így ideális kisebb szerkezeti vagy esztétikai célokra, például keretekhez, látszó belső elemekhez vagy pergolák díszítő tartóelemeként. A rétegragasztott faanyag kiváló mérettartással és időtállósággal rendelkezik, repedés- és vetemedésmentes.",
         "longDescription2": "A gyalult, fózolt felület magas esztétikai értéket képvisel, és közvetlenül alkalmas lazúrozásra vagy pácolásra. A BSH 8×10 cm-es gerenda kis súlya miatt könnyen kezelhető, szállítható és beépíthető. Olyan helyzetekben ajánlott, ahol kisebb keresztmetszet is elegendő, de nem mondanánk le a tartósságról és a homogén, repedésmentes szerkezetről. A termék egyedileg fóliázva érkezik, kültéri és beltéri használatra is alkalmas.",
         "specs": {
           "Típus": "BSH ragasztott gerenda",
           "Szilárdsági osztály": "GL24h",
           "Származás": "Ausztria",
-          "Méret": "8 × 10 cm",
+          "Méret": "8 × 12 cm",
           "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőség",
           "Nedvességtartalom": "kb. 12% ±2%",
@@ -1323,7 +1323,7 @@
           "reviewCount": 26
         },
         "sku": "bsh-8x16-gl24h",
-        "price": 0,
+        "price": 69118,
         "m2price": null,
         "m3price": 399990,
         "discountPrice": null,
@@ -1361,7 +1361,7 @@
           "reviewCount": 34
         },
         "sku": "bsh-10x10-gl24h",
-        "price": 0,
+        "price": 53999,
         "m2price": null,
         "m3price": 399990,
         "discountPrice": null,
@@ -1399,7 +1399,7 @@
           "reviewCount": 31
         },
         "sku": "bsh-10x16-gl24h",
-        "price": 0,
+        "price": 86398,
         "m2price": null,
         "m3price": 399990,
         "discountPrice": null,
@@ -1437,7 +1437,7 @@
           "reviewCount": 37
         },
         "sku": "bsh-10x20-gl24h",
-        "price": 0,
+        "price": 107997,
         "m2price": null,
         "m3price": 399990,
         "discountPrice": null,
@@ -1475,7 +1475,7 @@
           "reviewCount": 33
         },
         "sku": "bsh-12x12-gl24h",
-        "price": 0,
+        "price": 77758,
         "m2price": null,
         "m3price": 399990,
         "discountPrice": null,
@@ -1513,7 +1513,7 @@
           "reviewCount": 33
         },
         "sku": "bsh-12x16-gl24h",
-        "price": 0,
+        "price": 103677,
         "m2price": null,
         "m3price": 399990,
         "discountPrice": null,
@@ -1551,7 +1551,7 @@
           "reviewCount": 35
         },
         "sku": "bsh-12x20-gl24h",
-        "price": 0,
+        "price": 129597,
         "m2price": null,
         "m3price": 399990,
         "discountPrice": null,
@@ -1588,7 +1588,7 @@
           "reviewCount": 41
         },
         "sku": "bsh-14x14-gl24h",
-        "price": 0,
+        "price": 103191,
         "m2price": null,
         "m3price": 389990,
         "discountPrice": null,
@@ -1626,7 +1626,7 @@
           "reviewCount": 41
         },
         "sku": "bsh-14x20-gl24h",
-        "price": 0,
+        "price": 147416,
         "m2price": null,
         "m3price": 389990,
         "discountPrice": null,
@@ -1664,7 +1664,7 @@
           "reviewCount": 44
         },
         "sku": "bsh-16x16-gl24h",
-        "price": 0,
+        "price": 134781,
         "m2price": null,
         "m3price": 389990,
         "discountPrice": null,
@@ -1702,7 +1702,7 @@
           "reviewCount": 47
         },
         "sku": "bsh-16x24-gl24h",
-        "price": 0,
+        "price": 202171,
         "m2price": null,
         "m3price": 389990,
         "discountPrice": null,
@@ -1740,7 +1740,7 @@
         "reviewCount": 42
       },
       "sku": "bsh-20x20-gl24h",
-      "price": 0,
+      "price": 210595,
       "m2price": null,
       "m3price": 389990,
       "discountPrice": null,
