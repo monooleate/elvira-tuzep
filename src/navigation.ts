@@ -26,6 +26,16 @@ export const headerData = {
       ],
     }, */
     {
+      text: 'Kalkulátorok',
+      links: [
+        {
+          text: 'Térfogat Ár Kalkulátor',
+          href: '/faanyag-térfogat-kalkulátor'
+        }
+      ]
+      
+    },
+    {
       text: 'Kapcsolat',
       href: '/kapcsolat',
     },
