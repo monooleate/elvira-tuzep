@@ -45,11 +45,15 @@ export default defineConfig({
         'database',
       ],
     },
-  }), ...whenExternalScripts(() =>
-    partytown({
-      config: { forward: ['dataLayer.push'] },
-    })
-  ), compress({
+  }), 
+  
+  partytown({
+      config: {
+        forward: ['dataLayer.push'],
+      },
+    }),
+  
+  compress({
     CSS: true,
     HTML: {
       'html-minifier-terser': {
@@ -60,9 +64,14 @@ export default defineConfig({
     JavaScript: true,
     SVG: false,
     Logger: 1,
-  }), astrowind({
+  }), 
+  
+  astrowind({
     config: './src/config.yaml',
-  }), preact()],
+  }), 
+  
+  preact()
+],
 
   image: {
     domains: ['cdn.pixabay.com'],
