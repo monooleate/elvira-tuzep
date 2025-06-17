@@ -27,10 +27,11 @@ export const headerData = {
     }, */
     {
       text: 'Kalkulátorok',
+      href: '/faanyag-terfogat-kalkulator',
       links: [
         {
           text: 'Térfogat Ár Kalkulátor',
-          href: '/faanyag-térfogat-kalkulátor'
+          href: '/faanyag-terfogat-kalkulator'
         }
       ]
       
