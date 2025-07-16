@@ -85,105 +85,122 @@ const metadata = {
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 {products.map((product) => {
-const hasPrice = typeof product.price === 'number' && product.price > 0;
-const hasPercent = typeof product.discountPercent === 'number' && product.discountPercent > 0;
-const hasValidDiscountPrice = typeof product.discountPrice === 'number' && product.discountPrice > 0;
+  const now = new Date();
+  const discountUntil = product.discountValidUntil ? new Date(product.discountValidUntil) : null;
+  const hasTimeValid = discountUntil && discountUntil > now;
 
-const hasDiscount = hasPercent || hasValidDiscountPrice;
+  const hasPrice = typeof product.price === 'number' && product.price > 0;
 
-const discountPrice = hasValidDiscountPrice
-  ? product.discountPrice
-  : (hasPercent ? Math.round(product.price * (1 - product.discountPercent / 100)) : null);
+  const hasValidDiscountPrice =
+    typeof product.discountPrice === 'number' &&
+    product.discountPrice > 0 &&
+    product.discountPrice < product.price &&
+    hasTimeValid;
 
-const discountPercent = hasPercent
-  ? product.discountPercent
-  : (hasValidDiscountPrice ? Math.round((1 - discountPrice / product.price) * 100) : null);
+  const hasValidDiscountPercent =
+    typeof product.discountPercent === 'number' &&
+    product.discountPercent > 0 &&
+    product.discountPercent < 100 &&
+    hasTimeValid;
 
-const hasM2Price = typeof product.m2price === 'number' && product.m2price > 0;
-const hasM3Price = typeof product.m3price === 'number' && product.m3price > 0;
+  const hasDiscount = hasValidDiscountPrice || hasValidDiscountPercent;
 
-const discountM2Price = hasM2Price && hasDiscount
-  ? Math.round(product.m2price * (1 - (discountPercent ?? 0) / 100))
-  : product.m2price;
+  const discountPrice = hasValidDiscountPrice
+    ? product.discountPrice
+    : (hasValidDiscountPercent
+        ? Math.round(product.price * (1 - product.discountPercent / 100))
+        : null);
 
-const discountM3Price = hasM3Price && hasDiscount
-  ? Math.round(product.m3price * (1 - (discountPercent ?? 0) / 100))
-  : product.m3price;
+  const discountPercent = hasValidDiscountPercent
+    ? product.discountPercent
+    : (hasValidDiscountPrice && discountPrice
+        ? Math.round((1 - discountPrice / product.price) * 100)
+        : null);
 
-    return (
-      <a href={`/termekek/${currentCategory.slug}/${product.slug}`} class="relative block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800 dark:border-gray-700">
+  const hasM2Price = typeof product.m2price === 'number' && product.m2price > 0;
+  const hasM3Price = typeof product.m3price === 'number' && product.m3price > 0;
 
-        {/* Akció badge - BAL FELSŐ SAROK */}
-        {hasDiscount && (
-          <div class="absolute top-2 left-2 bg-red-600 text-white text-sm font-bold px-2 py-1 rounded z-10 shadow">
-            Akció
-          </div>
-        )}
+  const discountM2Price = hasM2Price && hasValidDiscountPercent
+    ? Math.round(product.m2price * (1 - product.discountPercent / 100))
+    : product.m2price;
 
-        {/* Százalék badge - JOBB FELSŐ SAROK */}
-        {hasDiscount && discountPercent !== null && (
-          <div class="absolute top-2 right-2 bg-red-600 text-white text-sm font-extrabold px-3 py-1 rounded z-10 shadow">
-            -{discountPercent}%
-          </div>
-        )}
+  const discountM3Price = hasM3Price && hasValidDiscountPercent
+    ? Math.round(product.m3price * (1 - product.discountPercent / 100))
+    : product.m3price;
 
-        <img src={product.image} alt={product.name} class="w-full h-48 object-cover" loading="lazy" />
+  return (
+    <a href={`/termekek/${currentCategory.slug}/${product.slug}`} class="relative block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800 dark:border-gray-700">
 
-        <div class="p-4">
-          <h2 class="text-lg font-semibold text-gray-900 dark:text-white">{product.name}</h2>
-          <p class="text-sm text-gray-600 dark:text-gray-400">{product.description}</p>
-
-          <div class="mt-2 space-y-1">
-  {/* Darabár */}
-  {hasPrice && (
-    hasDiscount && discountPrice !== null ? (
-      <>
-        <p class="text-sm text-gray-500 line-through">{product.price.toLocaleString('hu-HU')} Ft / db</p>
-        <p class="text-sm text-red-600 font-bold">{discountPrice.toLocaleString('hu-HU')} Ft / db</p>
-      </>
-    ) : (
-      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.price.toLocaleString('hu-HU')} Ft / db</p>
-    )
-  )}
-
-  {/* m² ár */}
-  {hasM2Price && (
-    hasDiscount && discountM2Price !== null ? (
-      <>
-        <p class="text-sm text-gray-500 line-through">{product.m2price.toLocaleString('hu-HU')} Ft / m²</p>
-        <p class="text-sm text-red-600 font-bold">{discountM2Price.toLocaleString('hu-HU')} Ft / m²</p>
-      </>
-    ) : (
-      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.m2price.toLocaleString('hu-HU')} Ft / m²</p>
-    )
-  )}
-
-  {/* m³ ár */}
-  {hasM3Price && (
-    hasDiscount && discountM3Price !== null ? (
-      <>
-        <p class="text-sm text-gray-500 line-through">{product.m3price.toLocaleString('hu-HU')} Ft / m³</p>
-        <p class="text-sm text-red-600 font-bold">{discountM3Price.toLocaleString('hu-HU')} Ft / m³</p>
-      </>
-    ) : (
-      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.m3price.toLocaleString('hu-HU')} Ft / m³</p>
-    )
-  )}
-</div>
-
-<div class="mt-1">
-  {product.stock > 0 ? (
-    <span class="text-green-600">Raktáron</span>
-  ) : (
-    <span class="text-orange-500">Rendelhető</span>
-  )}
-</div>
-
-
+      {/* Akció badge - BAL FELSŐ SAROK */}
+      {hasDiscount && (
+        <div class="absolute top-2 left-2 bg-red-600 text-white text-sm font-bold px-2 py-1 rounded z-10 shadow">
+          Akció
         </div>
-      </a>
-    );
-  })}
+      )}
+
+      {/* Százalék badge - JOBB FELSŐ SAROK */}
+      {hasDiscount && discountPercent !== null && (
+        <div class="absolute top-2 right-2 bg-red-600 text-white text-sm font-extrabold px-3 py-1 rounded z-10 shadow">
+          -{discountPercent}%
+        </div>
+      )}
+
+      <img src={product.image} alt={product.name} class="w-full h-48 object-cover" loading="lazy" />
+
+      <div class="p-4">
+        <h2 class="text-lg font-semibold text-gray-900 dark:text-white">{product.name}</h2>
+        <p class="text-sm text-gray-600 dark:text-gray-400">{product.description}</p>
+
+        <div class="mt-2 space-y-1">
+          {/* Darabár */}
+          {hasPrice && (
+            hasDiscount && discountPrice !== null ? (
+              <>
+                <p class="text-sm text-gray-500 line-through">{product.price.toLocaleString('hu-HU')} Ft / db</p>
+                <p class="text-sm text-red-600 font-bold">{discountPrice.toLocaleString('hu-HU')} Ft / db</p>
+              </>
+            ) : (
+              <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.price.toLocaleString('hu-HU')} Ft / db</p>
+            )
+          )}
+
+          {/* m² ár */}
+          {hasM2Price && (
+            hasValidDiscountPercent ? (
+              <>
+                <p class="text-sm text-gray-500 line-through">{product.m2price.toLocaleString('hu-HU')} Ft / m²</p>
+                <p class="text-sm text-red-600 font-bold">{discountM2Price.toLocaleString('hu-HU')} Ft / m²</p>
+              </>
+            ) : (
+              <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.m2price.toLocaleString('hu-HU')} Ft / m²</p>
+            )
+          )}
+
+          {/* m³ ár */}
+          {hasM3Price && (
+            hasValidDiscountPercent ? (
+              <>
+                <p class="text-sm text-gray-500 line-through">{product.m3price.toLocaleString('hu-HU')} Ft / m³</p>
+                <p class="text-sm text-red-600 font-bold">{discountM3Price.toLocaleString('hu-HU')} Ft / m³</p>
+              </>
+            ) : (
+              <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.m3price.toLocaleString('hu-HU')} Ft / m³</p>
+            )
+          )}
+        </div>
+
+        <div class="mt-1">
+          {product.stock > 0 ? (
+            <span class="text-green-600">Raktáron</span>
+          ) : (
+            <span class="text-orange-500">Rendelhető</span>
+          )}
+        </div>
+      </div>
+    </a>
+  );
+})}
+
 </div>
 
 

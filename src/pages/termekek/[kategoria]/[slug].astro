@@ -30,26 +30,49 @@ if (!category) throw new Error(`Nincs ilyen kategória: ${params.kategoria}`);
 const product = category.products.find((p) => p.slug === params.slug);
 if (!product) throw new Error(`Nincs ilyen termék: ${params.slug}`);
 
+const now = new Date();
 const hasPrice = typeof product.price === 'number' && product.price > 0;
-const hasPercent = typeof product.discountPercent === 'number' && product.discountPercent > 0;
-const hasValidDiscountPrice = typeof product.discountPrice === 'number' && product.discountPrice > 0;
-const hasDiscount = hasPercent || hasValidDiscountPrice;
 
+const discountUntil = product.discountValidUntil ? new Date(product.discountValidUntil) : null;
+const hasTimeValid = discountUntil && discountUntil > now;
+
+const hasValidDiscountPrice =
+  typeof product.discountPrice === 'number' &&
+  product.discountPrice > 0 &&
+  product.discountPrice < product.price &&
+  hasTimeValid;
+
+const hasValidDiscountPercent =
+  typeof product.discountPercent === 'number' &&
+  product.discountPercent > 0 &&
+  product.discountPercent < 100 &&
+  hasTimeValid;
+
+const hasDiscount = (hasValidDiscountPrice || hasValidDiscountPercent) && hasTimeValid;
+
+// Ár számítás
 const discountPrice = hasValidDiscountPrice
   ? product.discountPrice
-  : (hasPercent ? Math.round(product.price * (1 - product.discountPercent / 100)) : null);
-const discountPercent = hasPercent
-  ? product.discountPercent
-  : (hasValidDiscountPrice ? Math.round((1 - discountPrice / product.price) * 100) : null);
+  : (hasValidDiscountPercent
+      ? Math.round(product.price * (1 - product.discountPercent / 100))
+      : null);
 
+const discountPercent = hasValidDiscountPercent
+  ? product.discountPercent
+  : (hasValidDiscountPrice && discountPrice
+      ? Math.round((1 - discountPrice / product.price) * 100)
+      : null);
+
+// m3 ár csak akkor változik, ha van érvényes százalékos kedvezmény
 const hasM3Price = typeof product.m3price === 'number' && product.m3price > 0;
-const discountM3Price = hasM3Price && hasDiscount
-  ? Math.round(product.m3price * (1 - (discountPercent ?? 0) / 100))
+const discountM3Price = hasM3Price && hasValidDiscountPercent
+  ? Math.round(product.m3price * (1 - product.discountPercent / 100))
   : product.m3price;
 
+// m2 ár is csak akkor változik, ha van érvényes százalékos kedvezmény
 const hasM2Price = typeof product.m2price === 'number' && product.m2price > 0;
-const discountM2Price = hasM2Price && hasDiscount
-  ? Math.round(product.m2price * (1 - (discountPercent ?? 0) / 100))
+const discountM2Price = hasM2Price && hasValidDiscountPercent
+  ? Math.round(product.m2price * (1 - product.discountPercent / 100))
   : product.m2price;
 
 const metadata = {
@@ -66,6 +89,56 @@ const metadata = {
 const relatedProducts = category.products
   .filter((p) => p.slug !== product.slug)
   .slice(0, 3);
+
+
+function getShippingDetails(product) {
+  const sd = product.shippingDetails;
+  if (!sd) return undefined;
+
+  const hasAny =
+    typeof sd.shippingWeight === 'number' ||
+    typeof sd.depth === 'number' ||
+    typeof sd.width === 'number' ||
+    typeof sd.height === 'number';
+
+  if (!hasAny) return undefined;
+
+  return {
+    "@type": "OfferShippingDetails",
+    ...(typeof sd.shippingWeight === 'number' && {
+      shippingWeight: {
+        "@type": "QuantitativeValue",
+        value: sd.shippingWeight,
+        unitText: "KG"
+      }
+    }),
+    ...(typeof sd.depth === 'number' && {
+      depth: {
+        "@type": "QuantitativeValue",
+        value: sd.depth,
+        unitText: "CM"
+      }
+    }),
+    ...(typeof sd.width === 'number' && {
+      width: {
+        "@type": "QuantitativeValue",
+        value: sd.width,
+        unitText: "CM"
+      }
+    }),
+    ...(typeof sd.height === 'number' && {
+      height: {
+        "@type": "QuantitativeValue",
+        value: sd.height,
+        unitText: "CM"
+      }
+    })
+  };
+}
+
+const shipping = getShippingDetails(product);
+
+
 
 const schemaProduct = {
   "@context": "https://schema.org",
@@ -101,7 +174,11 @@ const schemaProduct = {
           "seller": {
             "@type": "Organization",
             "name": "Elvira Tüzép"
-          }
+          },
+          ...(hasDiscount && product.discountValidUntil
+            ? { validThrough: product.discountValidUntil }
+            : {}),
+          ...(shipping && { shippingDetails: shipping })
         }]
       : []),
 
@@ -121,7 +198,11 @@ const schemaProduct = {
           "seller": {
             "@type": "Organization",
             "name": "Elvira Tüzép"
-          }
+          },
+          ...(hasDiscount && product.discountValidUntil
+            ? { validThrough: product.discountValidUntil }
+            : {}),
+          ...(shipping && { shippingDetails: shipping })
         }]
       : []),
 
@@ -141,7 +222,11 @@ const schemaProduct = {
           "seller": {
             "@type": "Organization",
             "name": "Elvira Tüzép"
-          }
+          },
+          ...(hasDiscount && product.discountValidUntil
+            ? { validThrough: product.discountValidUntil }
+            : {}),
+          ...(shipping && { shippingDetails: shipping })
         }]
       : [])
   ]

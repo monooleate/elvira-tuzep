@@ -27,6 +27,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/luc-ronkhaz-19x116.jpg",
         "description": "Belső vagy külső burkolatokhoz ideális, sima felületű, gyalult rönkházprofil lucfenyőből.",
@@ -42,6 +43,12 @@
           "Minőség": "AB-VEH (válogatott, építőipari)",
           "Felhasználás": "Belső terek, homlokzatburkolás, melléképületek",
           "Kezelés": "Kezeletlen, igény szerint felületkezelhető"
+        },
+        "shippingDetails": {
+          "shippingWeight": 4.0,
+          "depth": 400,
+          "width": 11.6,
+          "height": 1.9
         }
       },
 
@@ -63,6 +70,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/borovi-ronkhaz-19x116.webp",
         "description": "Masszív, időtálló borovi rönkházprofil kültérre és beltérre – gyalult, sima felület, D-profil kialakítás.",
@@ -78,6 +86,12 @@
           "Minőség": "AB-EN",
           "Felhasználás": "Homlokzatburkolás, belső burkolatok, melléképületek",
           "Kezelés": "Kezeletlen, felületkezelés ajánlott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 4.0,
+          "depth": 400,
+          "width": 11.6,
+          "height": 1.9
         }
       },
       {
@@ -98,6 +112,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/borovi-ronkhaz-24x146.webp",
         "description": "Időtálló borovi rönkházprofil 24x146 mm méretben – kültéri és beltéri burkolatokhoz, természetes D-profil kialakítással.",
@@ -113,6 +128,12 @@
           "Minőség": "AB-EN",
           "Felhasználás": "Homlokzatburkolás, belső burkolatok, melléképületek",
           "Kezelés": "Kezeletlen, felületkezelés ajánlott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 7.4,
+          "depth": 400,
+          "width": 14.6,
+          "height": 2.4
         }
       },
       {
@@ -133,6 +154,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/luc-zsindely-24x146.webp",
         "description": "Lucfenyő zsindelyprofil 24x146 mm-es méretben, kültéri és beltéri burkolatokhoz, A-B minőségben.",
@@ -148,6 +170,12 @@
           "Minőség": "A-B",
           "Felhasználás": "Homlokzatburkolás, belső falfelületek, melléképületek",
           "Kezelés": "Kezeletlen, felületkezelés javasolt"
+        },
+        "shippingDetails": {
+          "shippingWeight": 7.4,
+          "depth": 400,
+          "width": 14.6,
+          "height": 2.4
         }
       }
     ]
@@ -180,6 +208,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/luc-gyalult-deszka-19x96.png",
         "description": "Osztrák gyártású, 4 oldalon gyalult, fózolt lucfenyő deszka – sokoldalú felhasználásra.",
@@ -195,6 +224,12 @@
           "Minőség": "AB-VEH (válogatott, építőipari)",
           "Felhasználás": "Fafödémek, oromszegély, polclap, kerítésléc",
           "Kezelés": "Kültéri használat esetén vékonylazúrral kezelendő"
+        },
+        "shippingDetails": {
+          "shippingWeight": 3.3,
+          "depth": 400,
+          "width": 9.6,
+          "height": 1.9
         }
       },
       {
@@ -215,6 +250,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/luc-gyalult-deszka-19x116.png",
         "description": "Osztrák gyártású, 4 oldalon gyalult, fózolt lucfenyő deszka – sokoldalú felhasználásra.",
@@ -230,6 +266,12 @@
           "Minőség": "AB-VEH (válogatott, építőipari)",
           "Felhasználás": "Fafödémek, oromszegély, polclap, kerítésléc",
           "Kezelés": "Kültéri használat esetén vékonylazúrral kezelendő"
+        },
+        "shippingDetails": {
+          "shippingWeight": 4.0,
+          "depth": 400,
+          "width": 11.6,
+          "height": 1.9
         }
       },
       {
@@ -250,6 +292,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/luc-gyalult-deszka-19x146.png",
         "description": "Széles, gyalult, 4 oldalon fózolt lucfenyő deszka – kiváló megoldás kültérre és beltérre egyaránt.",
@@ -265,6 +308,12 @@
           "Minőség": "AB-VEH (válogatott, építőipari)",
           "Felhasználás": "Fafödémek, oromszegély, polclap, kerítésléc",
           "Kezelés": "Kültéri használat esetén vékonylazúrral kezelendő"
+        },
+        "shippingDetails": {
+          "shippingWeight": 5.0,
+          "depth": 400,
+          "width": 14.6,
+          "height": 1.9
         }
       },
       {
@@ -285,6 +334,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/luc-gyalult-deszka-19x190.jpg",
         "description": "Extra széles, esztétikusan gyalult, 4 oldalon fózolt lucfenyő deszka beltérre és kültérre",
@@ -300,6 +350,12 @@
           "Minőség": "AB-VEH (válogatott, építőipari)",
           "Felhasználás": "Fafödémek, oromszegély, polclap, kerítésléc",
           "Kezelés": "Kültéri használat esetén vékonylazúrral kezelendő"
+        },
+        "shippingDetails": {
+          "shippingWeight": 6.5,
+          "depth": 400,
+          "width": 19.0,
+          "height": 1.9
         }
       }
     ]
@@ -332,10 +388,11 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/lamberia-f-12_5x96.png",
         "description": "Esztétikus, sima felületű trapéz profilú lambéria, kiváló beltéri burkoláshoz.",
-        "longDescription": "A 12x96 mm-es méretű trapéz profilú (F profil) lambéria ideális választás beltéri falak és mennyezetek burkolására. Az osztrák gyártású, AB minőségű lucfenyő alapanyag esztétikus, simára gyalult felülettel rendelkezik, így további csiszolást nem igényel. A precíz illesztés és a profilkialakítás könnyű szerelhetőséget biztosít, míg a természetes fenyő színvilág meleg, otthonos hangulatot teremt. Tökéletes választás faházakba, nappalikba, tetőterekbe vagy akár irodai burkolatokhoz is.",
+        "longDescription": "A 12,5x96 mm-es méretű trapéz profilú (F profil) lambéria ideális választás beltéri falak és mennyezetek burkolására. Az osztrák gyártású, AB minőségű lucfenyő alapanyag esztétikus, simára gyalult felülettel rendelkezik, így további csiszolást nem igényel. A precíz illesztés és a profilkialakítás könnyű szerelhetőséget biztosít, míg a természetes fenyő színvilág meleg, otthonos hangulatot teremt. Tökéletes választás faházakba, nappalikba, tetőterekbe vagy akár irodai burkolatokhoz is.",
         "longDescription2": "",
         "specs": {
           "Méret": "12,5 x 96 mm",
@@ -347,6 +404,12 @@
           "Minőség": "AB (válogatott, burkolati minőség)",
           "Felhasználás": "Belső fal- és mennyezetburkolat",
           "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        },
+        "shippingDetails": {
+          "shippingWeight": 2.2,
+          "depth": 400,
+          "width": 9.6,
+          "height": 1.25
         }
       },
       {
@@ -367,6 +430,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/lamberia-f-12_5x96-bc.png",
         "description": "Kedvező árú, trapéz profilú lambéria beltéri burkolatokhoz.",
@@ -382,6 +446,12 @@
           "Minőség": "BC (gazdaságos, burkolati célra alkalmas)",
           "Felhasználás": "Belső falak, hétvégi házak, garázsburkolat, dobozolt ereszalj",
           "Kezelés": "Kezeletlen, felületkezelés ajánlott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 2.2,
+          "depth": 400,
+          "width": 9.6,
+          "height": 1.25
         }
       },
       {
@@ -402,6 +472,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/lamberia-f-12_5x96.png",
         "description": "Válogatott minőségű trapéz profilú lambéria, tökéletes beltéri falburkolatokhoz.",
@@ -417,6 +488,12 @@
           "Minőség": "AB-VEH (válogatott burkolati minőség)",
           "Felhasználás": "Belső fal- és mennyezetburkolat",
           "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        },
+        "shippingDetails": {
+          "shippingWeight": 3.2,
+          "depth": 400,
+          "width": 11.6,
+          "height": 1.5
         }
       },
       {
@@ -437,6 +514,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/lamberia-softline-14x121.png",
         "description": "Elegáns, gyalult felületű Softline profilú lambéria, ideális belső burkolatokhoz.",
@@ -452,6 +530,12 @@
           "Minőség": "AB-VEH (válogatott, burkolati minőség)",
           "Felhasználás": "Belső fal- és mennyezetburkolat",
           "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        },
+        "shippingDetails": {
+          "shippingWeight": 3.1,
+          "depth": 400,
+          "width": 12.1,
+          "height": 1.4
         }
       },
       {
@@ -472,6 +556,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/lamberia-softline-14x121-bc.png",
         "description": "Gazdaságos megoldás belső burkolatokhoz, Softline profilú lucfenyő lambéria BC minőségben.",
@@ -487,6 +572,12 @@
           "Minőség": "BC (gazdaságos, szerkezeti minőség esztétikai hibákkal)",
           "Felhasználás": "Belső fal- és mennyezetburkolat",
           "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        },
+        "shippingDetails": {
+          "shippingWeight": 3.1,
+          "depth": 400,
+          "width": 12.1,
+          "height": 1.4
         }
       },
       {
@@ -507,6 +598,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/lamberia-c-15x116-abveh.png",
         "description": "Erős, fózolt profilú borovi lambéria belső falburkolatokhoz, válogatott AB-VEH minőségben.",
@@ -522,6 +614,12 @@
           "Minőség": "AB-VEH (válogatott burkolati minőség)",
           "Felhasználás": "Belső fal- és mennyezetburkolat",
           "Kezelés": "Kezeletlen, lakkozásra, pácolásra vagy lazúrozásra előkészítve"
+        },
+        "shippingDetails": {
+          "shippingWeight": 3.7,
+          "depth": 400,
+          "width": 11.6,
+          "height": 1.5
         }
       },
       {
@@ -542,6 +640,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/lamberia-c-15x116-abveh.png",
         "description": "Erős, fózolt profilú luc lambéria belső falburkolatokhoz, válogatott AB-VEH minőségben.",
@@ -557,6 +656,12 @@
           "Minőség": "AB-VEH (válogatott burkolati minőség)",
           "Felhasználás": "Belső fal- és mennyezetburkolat",
           "Kezelés": "Kezeletlen, lakkozásra, pácolásra vagy lazúrozásra előkészítve"
+        },
+        "shippingDetails": {
+          "shippingWeight": 3.7,
+          "depth": 400,
+          "width": 11.6,
+          "height": 1.5
         }
       }
     ]
@@ -590,6 +695,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/hajopadlo-softline-19x116.png",
         "description": "Softline hajópadló E profil, 19x116mm-es méretben. AB-VEH minőség, gyalult felület, könnyen szerelhető beltéri burkolatként.",
@@ -609,6 +715,12 @@
           "Rögzítés": "Szegelés vagy klipszes rögzítés",
           "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
           "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        },
+        "shippingDetails": {
+          "shippingWeight": 4.0,
+          "depth": 400,
+          "width": 11.6,
+          "height": 1.9
         }
       },
       {
@@ -629,6 +741,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/hajopadlo-c-19x116.webp",
         "description": "Lucfenyő hajópadló C profillal, fózolt élkialakítással. 19x116mm méret, AB-VEH minőség. Belső falra vagy mennyezetre kiváló választás.",
@@ -648,6 +761,12 @@
           "Rögzítés": "Szegelés vagy klipszes rögzítés",
           "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
           "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        },
+        "shippingDetails": {
+          "shippingWeight": 4.0,
+          "depth": 400,
+          "width": 11.6,
+          "height": 1.9
         }
       },
       {
@@ -668,6 +787,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/hajopadlo-c-19x116.webp",
         "description": "Lucfenyő hajópadló fózolt C profillal, 19x116mm méretben. AB-EN minőség, kiváló választás falra vagy mennyezetre belső térbe.",
@@ -687,6 +807,12 @@
           "Rögzítés": "Szegelés vagy klipszes rögzítés",
           "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
           "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        },
+        "shippingDetails": {
+          "shippingWeight": 4.0,
+          "depth": 400,
+          "width": 11.6,
+          "height": 1.9
         }
       },
 
@@ -708,6 +834,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/hajopadlo-c-19x146.jpg",
         "description": "Lucfenyő hajópadló, széles 19x146mm-es kivitelben, fózolt C profillal. AB-VEH minőség, ideális fal- és mennyezetburkolathoz világos tónusban.",
@@ -727,6 +854,12 @@
           "Rögzítés": "Szegelés vagy klipszes rögzítés",
           "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
           "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        },
+        "shippingDetails": {
+          "shippingWeight": 5.0,
+          "depth": 400,
+          "width": 14.6,
+          "height": 1.9
         }
       },
 
@@ -748,6 +881,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/hajopadlo-c-19x146.jpg",
         "description": "Borovi fenyő hajópadló, széles 19x146mm-es kivitelben, fózolt C profillal. AB-VEH minőség, ideális fal- és mennyezetburkolathoz.",
@@ -767,6 +901,12 @@
           "Rögzítés": "Szegelés vagy klipszes rögzítés",
           "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
           "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        },
+        "shippingDetails": {
+          "shippingWeight": 5.0,
+          "depth": 400,
+          "width": 14.6,
+          "height": 1.9
         }
       },
 
@@ -788,6 +928,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/hajopadlo-c-19x146.jpg",
         "description": "Lucfenyő hajópadló 19x146mm-es C profillal, AB-EN minőségben. Széles kialakítás, természetes megjelenés és egyszerű szerelés falra vagy mennyezetre.",
@@ -807,6 +948,12 @@
           "Rögzítés": "Szegelés vagy klipszes rögzítés",
           "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
           "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        },
+        "shippingDetails": {
+          "shippingWeight": 5.0,
+          "depth": 400,
+          "width": 14.6,
+          "height": 1.9
         }
       },
 
@@ -828,6 +975,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/hajopadlo-c-19x146.jpg",
         "description": "Borovi fenyő hajópadló 19x146mm-es C profillal, AB-EN minőségben. Természetes erezet, széles kialakítás, kiváló belső burkolatokhoz.",
@@ -847,6 +995,12 @@
           "Rögzítés": "Szegelés vagy klipszes rögzítés",
           "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
           "Kezelés": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+        },
+        "shippingDetails": {
+          "shippingWeight": 5.0,
+          "depth": 400,
+          "width": 14.6,
+          "height": 1.9
         }
       },
       {
@@ -867,6 +1021,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/hajopadlo-c-19x146.jpg",
         "description": "Lucfenyő hajópadló 19x146mm méretben, fózolt C profillal, C minőségben. Kedvező árú burkolat kevésbé igényes felhasználásra.",
@@ -886,6 +1041,12 @@
           "Rögzítés": "Szegelés vagy csavarozás",
           "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
           "Kezelés": "Kezeletlen, szükség esetén csiszolható vagy felületkezelhető"
+        },
+        "shippingDetails": {
+          "shippingWeight": 5.0,
+          "depth": 400,
+          "width": 14.6,
+          "height": 1.9
         }
       },
 
@@ -907,6 +1068,7 @@
         "m3price": 0,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/hajopadlo-c-19x146.jpg",
         "description": "Borovi fenyő hajópadló 19x146mm méretben, C profil és C minőség – költséghatékony megoldás kevésbé igényes beltéri vagy műszaki felhasználásra.",
@@ -926,6 +1088,12 @@
           "Rögzítés": "Szegelés vagy csavarozás",
           "Tárolás": "Száraz, jól szellőző helyen, nedvességtől védve",
           "Kezelés": "Kezeletlen, szükség esetén csiszolható vagy felületkezelhető"
+        },
+        "shippingDetails": {
+          "shippingWeight": 5.0,
+          "depth": 400,
+          "width": 14.6,
+          "height": 1.9
         }
       }
     ]
@@ -959,6 +1127,7 @@
         "m3price": null,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/egalizalt-csereplec-luc-23x48.jpg",
         "description": "Szárított, egalizált lucfenyő cserépléc 23x48 mm méretben, 4 m-es hosszban – I-II. osztály, osztrák minőség tetőszerkezethez.",
@@ -974,6 +1143,12 @@
           "Származás": "Ausztria",
           "Felhasználás": "Tetőszerkezet, lécezés, alátétszerkezet",
           "Mérettűrés": "Maximum ±0,3 mm"
+        },
+        "shippingDetails": {
+          "shippingWeight": 2.0,
+          "depth": 400,
+          "width": 4.8,
+          "height": 2.3
         }
       },
       {
@@ -994,6 +1169,7 @@
         "m3price": null,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/egalizalt-csereplec-luc-28x48.jpg",
         "description": "Szárított, egalizált lucfenyő cserépléc 28x48 mm méretben, 3 m hosszban – I-II. osztályú, osztrák minőségű tetőléc.",
@@ -1009,6 +1185,12 @@
           "Származás": "Ausztria",
           "Felhasználás": "Tetőszerkezet, lécezés, ellenléc, alátétszerkezet",
           "Mérettűrés": "Maximálisan ±0,3 mm eltérés lehetséges"
+        },
+        "shippingDetails": {
+          "shippingWeight": 1.9,
+          "depth": 300,
+          "width": 4.8,
+          "height": 2.8
         }
       },
       {
@@ -1029,6 +1211,7 @@
         "m3price": null,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/egalizalt-csereplec-luc-28x48.jpg",
         "description": "Szárított, egalizált lucfenyő cserépléc 28x48 mm méretben, 4 méter hosszban – osztrák I-II. osztályú faanyag tetőkhöz.",
@@ -1044,6 +1227,12 @@
           "Származás": "Ausztria",
           "Felhasználás": "Tetőszerkezet, lécezés, ellenléc, alátétszerkezet",
           "Mérettűrés": "Maximálisan ±0,3 mm eltérés lehetséges a megadott mérethez képest"
+        },
+        "shippingDetails": {
+          "shippingWeight": 2.5,
+          "depth": 400,
+          "width": 4.8,
+          "height": 2.8
         }
       },
       {
@@ -1064,6 +1253,7 @@
         "m3price": null,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/ellenlec-luc-38x58.webp",
         "description": "Fűrészelt lucfenyő ellenléc 38x58 mm méretben, 4 méteres hosszban – osztrák I-II. osztály, kiváló választás szellőző tetőszerkezethez.",
@@ -1078,6 +1268,12 @@
           "Minőség": "I-II. osztály",
           "Származás": "Ausztria",
           "Felhasználás": "Ellenléc, tetőszellőzés, alátétszerkezet kialakítása"
+        },
+        "shippingDetails": {
+          "shippingWeight": 4.0,
+          "depth": 400,
+          "width": 5.8,
+          "height": 3.8
         }
       },
       {
@@ -1098,6 +1294,7 @@
         "m3price": null,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/egalizalt-ellenlec-luc-48x48-4m.png",
         "description": "Egalizált, szárított lucfenyő ellenléc 48x48 mm méretben, 4 m-es hosszban – osztrák I-II. osztályú faanyag szellőző légréshez és lécezéshez.",
@@ -1113,6 +1310,12 @@
           "Származás": "Ausztria",
           "Felhasználás": "Tetőszellőzés, ellenléc, vázszerkezet, lécezés",
           "Mérettűrés": "Maximálisan ±0,3 mm eltérés"
+        },
+        "shippingDetails": {
+          "shippingWeight": 4.2,
+          "depth": 400,
+          "width": 4.8,
+          "height": 4.8
         }
       },
       {
@@ -1133,6 +1336,7 @@
         "m3price": null,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/egalizalt-ellenlec-luc-48x78.jpg",
         "description": "Terran Generon-kompatibilis, egalizált lucfenyő ellenléc 48x78 mm-es méretben, 4 m hosszúságban – szárított, I-II. osztályú osztrák faanyag.",
@@ -1149,6 +1353,12 @@
           "Felhasználás": "Tetőszellőzés, ellenléc, Terran Generon tetőrendszerhez kompatibilis",
           "Mérettűrés": "Maximálisan ±0,3 mm eltérés lehetséges",
           "Kompatibilitás": "Terran Generon napelemes tetőcserép rendszerrel"
+        },
+        "shippingDetails": {
+          "shippingWeight": 6.8,
+          "depth": 400,
+          "width": 7.8,
+          "height": 4.8
         }
       },
       {
@@ -1169,6 +1379,7 @@
         "m3price": null,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/ellenlec-luc-58x78-4m.jpg",
         "description": "Fűrészelt lucfenyő ellenléc 58x78 mm méretben, 4 m-es hosszban – osztrák I-II. osztályú faanyag nagyobb légréshez és szerkezeti stabilitáshoz.",
@@ -1184,6 +1395,12 @@
           "Származás": "Ausztria",
           "Felhasználás": "Ellenléc, nagy szellőzőmagasságú tetőszerkezet, napelemes rendszerek alá",
           "Mérettűrés": "Maximálisan ±0,3 mm eltérés lehetséges a megadott mérethez képest"
+        },
+        "shippingDetails": {
+          "shippingWeight": 8.2,
+          "depth": 400,
+          "width": 7.8,
+          "height": 5.8
         }
       },
       {
@@ -1204,6 +1421,7 @@
         "m3price": null,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/egalizalt-ellenlec-luc-78x78-4m.jpg",
         "description": "Szárított, egalizált lucfenyő ellenléc 78x78 mm-es méretben, 4 m-es hosszban – nagy szellőzőmagassághoz, vázakhoz és tetőszerkezethez.",
@@ -1219,9 +1437,14 @@
           "Származás": "Ausztria",
           "Felhasználás": "Ellenléc, tetőszellőzés, vázszerkezet, napelemes rendszerek alá, könnyűtartó",
           "Mérettűrés": "Maximálisan ±0,3 mm eltérés lehetséges a megadott mérethez képest"
+        },
+        "shippingDetails": {
+          "shippingWeight": 11.0,
+          "depth": 400,
+          "width": 7.8,
+          "height": 7.8
         }
       }
-
     ]
   },
 
@@ -1253,6 +1476,7 @@
         "m3price": 399990,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-egyedi.jpg",
         "description": "Egyedi méretű BSH gerendák osztrák gyártásból, GL24h szilárdsági osztályban és látszó minőségben. Rugalmas gyártás, pontos méretezés, prémium esztétika.",
@@ -1291,6 +1515,7 @@
         "m3price": 399990,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-8x12.jpg",
         "description": "BSH gerenda 8×12 cm-es méretben, GL24h osztályban. Tartós, esztétikus, precíz faanyag látszó és szerkezeti célokra.",
@@ -1310,6 +1535,12 @@
           "Előnyök": "Kompakt méret, könnyű kezelhetőség, homogén szerkezet",
           "Kezelés": "Pácolásra, lazúrozásra előkészítve",
           "Csomagolás": "Egyedileg fóliázott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 19.2,
+          "depth": 400,
+          "width": 12.0,
+          "height": 8.0
         }
       },
       {
@@ -1330,6 +1561,7 @@
         "m3price": 399990,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-8x16.jpg",
         "description": "BSH gerenda 8×16 cm-es méretben, GL24h osztályban. Nagyobb fesztávokhoz és látszó szerkezetekhez ajánlott precíz és tartós faanyag.",
@@ -1349,6 +1581,12 @@
           "Előnyök": "Nagyobb fesztáv áthidalása, elegáns megjelenés, homogén szerkezet",
           "Kezelés": "Pácolásra, lazúrozásra előkészítve",
           "Csomagolás": "Egyedileg fóliázott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 25.6,
+          "depth": 400,
+          "width": 16.0,
+          "height": 8.0
         }
       },
       {
@@ -1369,6 +1607,7 @@
         "m3price": 399990,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-10x10.jpg",
         "description": "BSH gerenda 10×10 cm-es méretben, GL24h osztályban. Kompakt, mégis erős és látványos megoldás kisebb faszerkezetekhez.",
@@ -1388,6 +1627,12 @@
           "Előnyök": "Kompakt méret, esztétikus megjelenés, hosszú élettartam",
           "Kezelés": "Pácolásra, lazúrozásra előkészítve",
           "Csomagolás": "Egyedileg fóliázott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 20.0,
+          "depth": 400,
+          "width": 10.0,
+          "height": 10.0
         }
       },
       {
@@ -1408,6 +1653,7 @@
         "m3price": 399990,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-10x16.jpg",
         "description": "BSH gerenda 10×16 cm-es méretben, GL24h minőségben. Kiváló választás erősebb faszerkezetekhez, látszó elemekhez, tetőalátámasztáshoz.",
@@ -1427,6 +1673,12 @@
           "Előnyök": "Megbízható teherbírás, elegáns megjelenés, nagyobb fesztávokhoz is alkalmas",
           "Kezelés": "Pácolásra, lazúrozásra előkészítve",
           "Csomagolás": "Egyedileg fóliázott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 32.0,
+          "depth": 400,
+          "width": 16.0,
+          "height": 10.0
         }
       },
       {
@@ -1447,6 +1699,7 @@
         "m3price": 399990,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-10x20.jpg",
         "description": "BSH gerenda 10×20 cm-es keresztmetszettel, GL24h osztályban. Ideális nagyobb fesztávokhoz, teherhordó látszó szerkezetekhez, csarnokokhoz.",
@@ -1466,6 +1719,12 @@
           "Előnyök": "Nagy teherbírás, esztétikus megjelenés, statikai biztonság",
           "Kezelés": "Pácolásra, lazúrozásra előkészítve",
           "Csomagolás": "Egyedileg fóliázott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 40.0,
+          "depth": 400,
+          "width": 20.0,
+          "height": 10.0
         }
       },
       {
@@ -1486,6 +1745,7 @@
         "m3price": 399990,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-12x12.jpg",
         "description": "BSH gerenda 12×12 cm keresztmetszettel, GL24h osztályban. Stabil és esztétikus faanyag látszó tartószerkezetekhez.",
@@ -1505,6 +1765,12 @@
           "Előnyök": "Kiemelkedő stabilitás, esztétikus megjelenés, hosszú élettartam",
           "Kezelés": "Pácolásra, lazúrozásra előkészítve",
           "Csomagolás": "Egyedileg fóliázott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 28.8,
+          "depth": 400,
+          "width": 12.0,
+          "height": 12.0
         }
       },
       {
@@ -1525,6 +1791,7 @@
         "m3price": 399990,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-12x16.jpg",
         "description": "BSH gerenda 12×16 cm keresztmetszettel, GL24h osztályban. Tartós, mérettartó faanyag látszó és teherhordó szerkezetekhez.",
@@ -1544,6 +1811,12 @@
           "Előnyök": "Nagy teherbírás, kiemelkedő esztétikum, hosszú élettartam",
           "Kezelés": "Pácolásra, lazúrozásra előkészítve",
           "Csomagolás": "Egyedileg fóliázott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 38.4,
+          "depth": 400,
+          "width": 16.0,
+          "height": 12.0
         }
       },
       {
@@ -1564,6 +1837,7 @@
         "m3price": 399990,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-12x20.jpg",
         "description": "BSH gerenda 12×20 cm keresztmetszettel, GL24h minőségben. Erős, mérettartó faanyag látszó és teherhordó szerkezetekhez.",
@@ -1582,6 +1856,12 @@
           "Előnyök": "Nagy teherbírás, kiemelkedő esztétikum, hosszú élettartam",
           "Kezelés": "Pácolásra, lazúrozásra előkészítve",
           "Csomagolás": "Egyedileg fóliázott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 48.0,
+          "depth": 400,
+          "width": 20.0,
+          "height": 12.0
         }
       },
       {
@@ -1602,6 +1882,7 @@
         "m3price": 389990,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-14x14.jpg",
         "description": "BSH gerenda 14×14 cm keresztmetszettel, GL24h minőségben. Erős, esztétikus faanyag látszó és tartószerkezetekhez.",
@@ -1621,6 +1902,12 @@
           "Előnyök": "Kiemelkedő statikai teljesítmény, dekoratív kivitel, hosszú élettartam",
           "Kezelés": "Pácolásra, lazúrozásra előkészítve",
           "Csomagolás": "Egyedileg fóliázott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 39.2,
+          "depth": 400,
+          "width": 14.0,
+          "height": 14.0
         }
       },
       {
@@ -1641,6 +1928,7 @@
         "m3price": 389990,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-14x20.jpg",
         "description": "BSH gerenda 14×20 cm keresztmetszettel, GL24h minőségben. Strapabíró, esztétikus és mérettartó megoldás igényes faszerkezetekhez.",
@@ -1660,6 +1948,12 @@
           "Előnyök": "Kiemelkedő statikai teljesítmény, dekoratív kivitel, hosszú élettartam",
           "Kezelés": "Pácolásra, lazúrozásra előkészítve",
           "Csomagolás": "Egyedileg fóliázott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 56.0,
+          "depth": 400,
+          "width": 20.0,
+          "height": 14.0
         }
       },
       {
@@ -1680,6 +1974,7 @@
         "m3price": 389990,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-16x16.jpg",
         "description": "BSH gerenda 16×16 cm keresztmetszettel, GL24h minőségben. Nagy teherbírás, dekoratív megjelenés, hosszú élettartam kültéren és beltéren is.",
@@ -1699,6 +1994,12 @@
           "Előnyök": "Kiemelkedő statikai teljesítmény, dekoratív kivitel, hosszú élettartam",
           "Kezelés": "Pácolásra, lazúrozásra előkészítve",
           "Csomagolás": "Egyedileg fóliázott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 51.2,
+          "depth": 400,
+          "width": 16.0,
+          "height": 16.0
         }
       },
       {
@@ -1719,6 +2020,7 @@
         "m3price": 389990,
         "discountPrice": null,
         "discountPercent": null,
+        "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-16x24.jpg",
         "description": "BSH gerenda 16×24 cm keresztmetszettel, GL24h osztályban. Maximális teherbírás és prémium megjelenés nagy méretű faszerkezetekhez.",
@@ -1738,6 +2040,12 @@
           "Előnyök": "Magas statikai teljesítmény, esztétikus megjelenés, hosszú élettartam",
           "Kezelés": "Pácolásra, lazúrozásra előkészítve",
           "Csomagolás": "Egyedileg fóliázott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 76.8,
+          "depth": 400,
+          "width": 24.0,
+          "height": 16.0
         }
       },
       {
@@ -1758,6 +2066,7 @@
       "m3price": 389990,
       "discountPrice": null,
       "discountPercent": null,
+      "discountValidUntil": null,
       "stock": 0,
       "image": "/termekek/bsh-gerenda-20x20.jpg",
       "description": "BSH gerenda 20×20 cm keresztmetszettel, osztrák GL24h minőségben. Megbízható szerkezeti elem nagy igénybevételű faszerkezetekhez.",
@@ -1777,7 +2086,13 @@
         "Előnyök": "Magas teherbírás, tartósság, esztétikus megjelenés",
         "Kezelés": "Lazúrozásra, pácolásra előkészítve",
         "Csomagolás": "Egyedileg fóliázott"
-      }
+      },
+        "shippingDetails": {
+          "shippingWeight": 80.0,
+          "depth": 400,
+          "width": 20.0,
+          "height": 20.0
+        }
     }
   ]
 },
@@ -1809,17 +2124,18 @@
       "m3price": 0,
       "discountPrice": null,
       "discountPercent": null,
+      "discountValidUntil": null,
       "stock": 0,
       "image": "/termekek/pini-kay-brikett.jpg",
       "description": "Lyukas, hengeres keményfa brikett kizárólag tölgyfából, I. osztályú minőségben. Hosszú égés, magas hőérték, minimális hamu.",
       "longDescription": "A Pini‑Kay brikett 100% tölgyfából készül, I. osztályú minőségben. Lyukas, szellőzést biztosító szerkezete hatékony égést tesz lehetővé akár kandallóban, kályhában vagy kazánban is. A rendkívül alacsony, kb. 2–6% nedvességtartalom, a 4 800–5 000 kcal/kg (~20 MJ/kg) fűtőérték és a kb. 1,0–1,2% hamutartalom ideálissá teszik hosszú égésű, környezetbarát tüzelőként. A brikett nem tartalmaz adalékot vagy ragasztót, kizárólag természetes faőrleményből készül magas nyomáson préselve.",
       "longDescription2": "",
       "specs": {
-          "Alapanyag": "100% tölgyfa (keményfa)",
-          "Forma": "Lyukas henger (ventilált profil)",
-          "Méretek egy darabként": "Kb. 53 × 53 × 300–330 mm",
-          "Csomagolás": "10 kg fóliacsomag, 12 csomag/raklap",
-          "Raklap": "Kb. 960 kg (96 × 10 kg csomag)",
+          "Alapanyag": "100% keményfa (főként tölgy)",
+          "Forma": "Lyukkal ellátott henger (ventilált Pini-Kay profil)",
+          "Méretek egy darabra": "Kb. 53 × 53 mm keresztmetszet, 300–330 mm hossz",
+          "Csomagolás": "10 kg-os zsugorfóliázott csomag, 12 brikett/csomag",
+          "Raklapos kiszerelés": "960 kg (96 csomag × 10 kg/csomag, EUR raklapon)",
           "Nedvességtartalom": "2–6 %",
           "Fűtőérték": "4800–5000 kcal/kg (~20 MJ/kg)",
           "Hamutartalom": "1,0–1,2 %",
@@ -1828,7 +2144,13 @@
           "Környezet": "100% természetes, vegyszermentes",
           "Felhasználás": "Kályha, kandalló, kazán, grillezés",
           "Tárolás": "Száraz, fedett helyen, közvetlen nedvességtől védve"
-        }
+        },
+      "shippingDetails": {
+        "shippingWeight": 960.0,
+        "depth": 120,
+        "width": 80,
+        "height": 100
+      }
     }
   ]
 }
