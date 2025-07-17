@@ -1,0 +1,161 @@
+---
+title: Faanyag Négyzetméter és Ár Kalkulátor
+description: Számítsd ki egyszerűen a faanyag négyzetméterét és árát m² alapján. Hasznos kalkulátor burkoláshoz, lambéria és hajópadló vásárlásához.
+calcSchema: >
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Faanyag Négyzetméter- és Ár kalkulátor",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "browserRequirements": "Requires JavaScript",
+    "description": "Webes kalkulátor, amellyel egyszerűen kiszámítható lambéria, hajópadló és egyéb burkoló faanyagok négyzetmétere, valamint azok ára m² ár alapján. Hasznos eszköz építkezők, burkolók, kereskedők és tüzép vásárlók számára. Az ár és mennyiség valós időben frissül, mobilra is optimalizált felülettel.",
+    "softwareVersion": "1.0",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Elvira Tüzép",
+      "url": "https://elviratuzep.hu"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "HUF",
+      "availability": "https://schema.org/InStock"
+    },
+    "featureList": "A kalkulátor automatikusan kiszámolja: (1) a faanyag fedett területét (m²) a megadott méretek és darabszám alapján, (2) az árát m² ár alapján, (3) valós idejű eredményt ad, mobilon és asztali gépen is gyorsan működik, (4) támogatja a leggyakoribb burkoló faanyagokat, mint lambéria, hajópadló, falburkolat.",
+    "url": "https://elviratuzep.hu/faanyag-negyzetmeter-kalkulator",
+    "datePublished": "2025-07-17T00:00:00.000Z",
+    "dateModified": "2025-07-17T00:00:00.000Z",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.85",
+      "reviewCount": "42"
+    }
+  }
+layout: '~/layouts/MarkdownLayout.astro'
+---
+
+import NegyzetmeterKalkulator from '~/components/NegyzetmeterKalk.jsx'
+
+Használja az alábbi kalkulátort, hogy megtudja, mekkora négyzetmétert fed le a kiválasztott burkoló faanyag (pl. lambéria, hajópadló) a méretei alapján. Adja meg a méreteket, darabszámot és a m² árat, és azonnal megkapja a pontos négyzetmétert és az ehhez tartozó teljes árat forintban.
+
+<NegyzetmeterKalkulator client:load />
+
+---
+
+## Faanyag Négyzetméter Kalkulátor funkciói
+
+- Egy darab faanyag fedett felületének kiszámítása m²-ben
+- Teljes darabszám alapján összesített négyzetméter
+- Megmutatja, hogy 1 m²-ből hány darab fér ki adott méretekkel
+- Kiszámolja az adott négyzetméter **árát a megadott m² ár alapján**
+- Egyszerűen kezelhető űrlap, azonnali eredmények
+- Világos és sötét mód támogatás
+
+---
+
+## Kalkulátor használati útmutató
+
+1. Adja meg a faanyag **hosszát méterben** (pl. 4 m)
+2. Írja be a **szélességet centiméterben** (pl. 14.6 cm)
+3. Adja meg a kívánt **darabszámot**
+4. Adja meg a **m² árat forintban**
+5. A kalkulátor automatikusan megjeleníti a számított négyzetmétert és annak teljes árát
+
+---
+
+## Példa számítás
+
+Ha egy darab fa 4 méter hosszú és 14.6 cm széles, akkor a fedett területe:
+(14.6 × 400) / 10,000 = 0.584 m²
+
+20 darab esetén:
+0.584 × 20 = 11.68 m²
+
+Ha a m² ár 6 000 Ft:
+11.68 × 6 000 = 70 080 Ft
+
+---
+
+## Kinek ajánljuk a kalkulátort?
+
+Ez a kalkulátor különösen hasznos lehet:
+
+- **burkolóknak**, akik gyorsan szeretnék kiszámolni a szükséges anyagmennyiséget
+- **kereskedőknek**, akik m² ár alapján adják a burkolóanyagokat
+- **építkezőknek**, akik lambériát, hajópadlót, falburkolatot vásárolnak
+- **lakossági vásárlóknak**, akik nem tudják pontosan mennyi anyag fedi le a kívánt felületet
+
+---
+
+## Érvényességi tartomány
+
+A kalkulátor a következő matematikai és technikai feltételek között működik pontosan:
+
+- A szélesség **centiméterben**, a hossz **méterben** adható meg
+- Maximális értékek: hossz ≤ 50 m, szélesség ≤ 150 cm, darabszám ≤ 10 000 db
+- A kalkulátor **lapos, sík burkoló** faanyagokra alkalmas
+- A számítás nem veszi figyelembe az illesztési veszteségeket, hulladékot, horony-féder kialakítást
+
+---
+
+## Matematikai háttér
+
+A négyzetméter számítás alapképlete:
+
+felület (m²) = (szélesség cm × hossz cm) / 10,000
+
+A teljes fedett felület:
+teljes felület = egy darab felület × darabszám
+
+A teljes ár:
+teljes ár = teljes négyzetméter × m² ár
+
+---
+
+## Tipikus értékek táblázata
+
+| Szélesség (cm) | Hossz (m) | 1 db fedett terület (m²) | 20 db összesen (m²) |
+|----------------|-----------|---------------------------|----------------------|
+| 9.6            | 4         | 0.384                     | 7.68                 |
+| 12.1           | 4         | 0.484                     | 9.68                 |
+| 14.6           | 4         | 0.584                     | 11.68                |
+| 19.0           | 4         | 0.760                     | 15.20                |
+
+---
+
+## Gyakorlati tanácsok vásárláshoz
+
+- Vásárlás előtt mindig kérdezze meg, hogy az ár négyzetméter vagy darabszám alapján értendő.
+- Illesztési veszteséggel mindig számoljon, különösen horony-féderes termékeknél (lambéria, hajópadló).
+- Kérjen írásos ajánlatot, amely tartalmazza a m² árat és a darabszámot – így pontosan ellenőrizheti a kalkulátor segítségével.
+
+---
+
+## Négyzetméterszámítás a mindennapokban
+
+A m² alapú számítás fontos:
+
+- ha burkoló faanyagot vásárolsz és négyzetméterben árazzák
+- ha pontosan meg akarod határozni, mennyi anyagra van szükség
+- ha árajánlatot adsz vagy kapsz és ellenőrizni szeretnéd a számokat
+
+---
+
+## Gyakran ismételt kérdések
+
+### Mennyi lambéria kell 20 m² fal burkolásához?
+
+Használja a kalkulátort, hogy pontosan kiszámolja a szükséges darabszámot a választott méret alapján.
+
+### Négyzetméterben vagy darabszámban rendeljek?
+
+Ha az ár m²-ben van megadva, célszerű négyzetméter alapon számolni, de mindig érdemes ellenőrizni a darabszámot is.
+
+### Mi történik, ha milliméterben adom meg az értéket?
+
+A kalkulátor **centiméter** alapú, kérjük, váltsd át mm-ről cm-re (pl. 146 mm → 14.6 cm).
+
+---
+
+Ha szeretnél még pontosabb kalkulációt vagy árajánlatot, vedd fel velünk a kapcsolatot az [Elvira Tüzép kapcsolatfelvételi oldalán](/kapcsolat).

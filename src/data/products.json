@@ -498,9 +498,9 @@
       },
       {
         "name": "Lambéria - Softline /E profil/ 14x121mmx4m AB-VEH minőség",
-        "slug": "lamberia-softline-14x121-ab",
+        "slug": "lamberia-softline-14x121-abveh",
         "meta": {
-          "title": "Lambéria Softline /E profil/ 14x121mm 4m AB",
+          "title": "Lambéria Softline /E profil/ 14x121mm 4m AB-VEH",
           "description": "Softline (E profilú) lambéria 14×121 mm-es méretben, válogatott AB-VEH minőségben. Elegáns megjelenésű lambéria belső burkoláshoz.",
           "image": "/termekek/lamberia-softline-14x121.png"
         },
@@ -508,7 +508,7 @@
           "ratingValue": 4.5,
           "reviewCount": 31
         },
-        "sku": "luc-lam-sl-14x121-4m-ab", 
+        "sku": "luc-lam-sl-14x121-4m-abveh", 
         "price": 0,
         "m2price": 4990,
         "m3price": 0,
@@ -1206,7 +1206,7 @@
           "reviewCount": 5
         },
         "sku": "luc-csl-eg-28x48-4m", 
-        "price": 1595,
+        "price": 1169,
         "m2price": null,
         "m3price": null,
         "discountPrice": null,
@@ -1248,7 +1248,7 @@
           "reviewCount": 3
         },
         "sku": "luc-el-38x58-4m", 
-        "price": 2699,
+        "price": 1999,
         "m2price": null,
         "m3price": null,
         "discountPrice": null,
@@ -1289,7 +1289,7 @@
           "reviewCount": 12
         },
         "sku": "luc-el-eg-48x48-4m", 
-        "price": 2699,
+        "price": 1999,
         "m2price": null,
         "m3price": null,
         "discountPrice": null,

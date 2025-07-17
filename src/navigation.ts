@@ -27,12 +27,17 @@ export const headerData = {
     }, */
     {
       text: 'Kalkulátorok',
-      href: '/faanyag-terfogat-kalkulator',
+      href: getPermalink('/kalkulatorok'),
       links: [
         {
           text: 'Térfogat Ár Kalkulátor',
-          href: '/faanyag-terfogat-kalkulator'
+          href: getPermalink('/faanyag-terfogat-kalkulator')
+        },
+        {
+          text: 'Felület Ár Kalkulátor',
+          href: getPermalink('/faanyag-negyzetmeter-kalkulator')
         }
+        
       ]
       
     },
