@@ -203,7 +203,7 @@
           "reviewCount": 25
         },
         "sku": "luc-gyd-19x96-4m", 
-        "price": 0,
+        "price": 2529,
         "m2price": 6590,
         "m3price": 0,
         "discountPrice": null,
@@ -245,7 +245,7 @@
           "reviewCount": 27
         },
         "sku": "luc-gyd-19x116-4m", 
-        "price": 0,
+        "price": 3059,
         "m2price": 6590,
         "m3price": 0,
         "discountPrice": null,
@@ -287,7 +287,7 @@
           "reviewCount": 12
         },
         "sku": "luc-gyd-19x146-4m", 
-        "price": 0,
+        "price": 3849,
         "m2price": 6590,
         "m3price": 0,
         "discountPrice": null,
@@ -329,7 +329,7 @@
           "reviewCount": 8
         },
         "sku": "luc-gyd-19x190-4m", 
-        "price": 0,
+        "price": 5239,
         "m2price": 6890,
         "m3price": 0,
         "discountPrice": null,
@@ -383,7 +383,7 @@
           "reviewCount": 32
         },
         "sku": "luc-lam-12_5x96-4m", 
-        "price": 0,
+        "price": 1799,
         "m2price": 4690,
         "m3price": 0,
         "discountPrice": null,
@@ -425,7 +425,7 @@
           "reviewCount": 31
         },
         "sku": "luc-lam-12_5x96-4m-bc", 
-        "price": 0,
+        "price": 1499,
         "m2price": 3890,
         "m3price": 0,
         "discountPrice": null,
@@ -467,7 +467,7 @@
           "reviewCount": 28
         },
         "sku": "luc-lam-f-15x116-4m-abveh", 
-        "price": 0,
+        "price": 2639,
         "m2price": 5690,
         "m3price": 0,
         "discountPrice": null,
@@ -509,7 +509,7 @@
           "reviewCount": 31
         },
         "sku": "luc-lam-sl-14x121-4m-abveh", 
-        "price": 0,
+        "price": 2415,
         "m2price": 4990,
         "m3price": 0,
         "discountPrice": null,
@@ -551,7 +551,7 @@
           "reviewCount": 18
         },
         "sku": "luc-lam-sl-14x121-4m-bc", 
-        "price": 0,
+        "price": 1979,
         "m2price": 4090,
         "m3price": 0,
         "discountPrice": null,
@@ -593,7 +593,7 @@
           "reviewCount": 17
         },
         "sku": "borovi-lam-c-15x116-4m-abveh", 
-        "price": 0,
+        "price": 2500,
         "m2price": 5390,
         "m3price": 0,
         "discountPrice": null,
@@ -635,7 +635,7 @@
           "reviewCount": 10
         },
         "sku": "luc-lam-c-15x116-4m-abveh", 
-        "price": 0,
+        "price": 2500,
         "m2price": 5390,
         "m3price": 0,
         "discountPrice": null,
@@ -689,8 +689,8 @@
           "ratingValue": 4.72,
           "reviewCount": 35
         },
-        "sku": "luc-hp-e-190x116-4m", 
-        "price": 0,
+        "sku": "luc-hp-e-19x116-4m", 
+        "price": 3199,
         "m2price": 6890,
         "m3price": 0,
         "discountPrice": null,
@@ -736,7 +736,7 @@
           "reviewCount": 45
         },
         "sku": "luc-hp-c-19x116-4m", 
-        "price": 0,
+        "price": 2825,
         "m2price": 6090,
         "m3price": 0,
         "discountPrice": null,
@@ -782,7 +782,7 @@
           "reviewCount": 36
         },
         "sku": "luc-hp-c-19x116-4m-aben",
-        "price": 0,
+        "price": 2640,
         "m2price": 5690,
         "m3price": 0,
         "discountPrice": null,
@@ -829,7 +829,7 @@
           "reviewCount": 45
         },
         "sku": "luc-hp-c-19x146-4m-abveh",
-        "price": 0,
+        "price": 3556,
         "m2price": 6090,
         "m3price": 0,
         "discountPrice": null,
@@ -876,7 +876,7 @@
           "reviewCount": 42
         },
         "sku": "borovi-hp-c-19x146-4m-abveh",
-        "price": 0,
+        "price": 3556,
         "m2price": 6090,
         "m3price": 0,
         "discountPrice": null,
@@ -923,7 +923,7 @@
           "reviewCount": 29
         },
         "sku": "luc-hp-c-19x146-4m-aben",
-        "price": 0,
+        "price": 3323,
         "m2price": 5690,
         "m3price": 0,
         "discountPrice": null,
@@ -970,7 +970,7 @@
           "reviewCount": 29
         },
         "sku": "borovi-hp-c-19x146-4m-aben",
-        "price": 0,
+        "price": 3323,
         "m2price": 5690,
         "m3price": 0,
         "discountPrice": null,
@@ -1016,7 +1016,7 @@
           "reviewCount": 18
         },
         "sku": "luc-hp-c-19x146-4m-c",
-        "price": 0,
+        "price": 2505,
         "m2price": 4290,
         "m3price": 0,
         "discountPrice": null,
@@ -1063,7 +1063,7 @@
           "reviewCount": 28
         },
         "sku": "borovi-hp-c-19x146-4m-c",
-        "price": 0,
+        "price": 2505,
         "m2price": 4290,
         "m3price": 0,
         "discountPrice": null,
@@ -1518,7 +1518,7 @@
         "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-8x12.jpg",
-        "description": "BSH gerenda 8×12 cm-es méretben, GL24h osztályban. Tartós, esztétikus, precíz faanyag látszó és szerkezeti célokra.",
+        "description": "BSH gerenda 8×12 cm-es méretben, 13,5 méteres hosszban, GL24h osztályban. Tartós, esztétikus, precíz faanyag látszó és szerkezeti célokra.",
         "longDescription": "A 8×12 cm-es keresztmetszetű BSH (Brettschichtholz) ragasztott gerenda osztrák gyártásból származik, és GL24h szilárdsági osztályban készül. Kompakt mérete ellenére kiváló statikai tulajdonságokkal bír, így ideális kisebb szerkezeti vagy esztétikai célokra, például keretekhez, látszó belső elemekhez vagy pergolák díszítő tartóelemeként. A rétegragasztott faanyag kiváló mérettartással és időtállósággal rendelkezik, repedés- és vetemedésmentes.",
         "longDescription2": "A gyalult, fózolt felület magas esztétikai értéket képvisel, és közvetlenül alkalmas lazúrozásra vagy pácolásra. A BSH 8×10 cm-es gerenda kis súlya miatt könnyen kezelhető, szállítható és beépíthető. Olyan helyzetekben ajánlott, ahol kisebb keresztmetszet is elegendő, de nem mondanánk le a tartósságról és a homogén, repedésmentes szerkezetről. A termék egyedileg fóliázva érkezik, kültéri és beltéri használatra is alkalmas.",
         "specs": {
@@ -1564,7 +1564,7 @@
         "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-8x16.jpg",
-        "description": "BSH gerenda 8×16 cm-es méretben, GL24h osztályban. Nagyobb fesztávokhoz és látszó szerkezetekhez ajánlott precíz és tartós faanyag.",
+        "description": "BSH gerenda 8×16 cm-es méretben, 13,5 méteres hosszban, GL24h osztályban. Nagyobb fesztávokhoz és látszó szerkezetekhez ajánlott precíz és tartós faanyag.",
         "longDescription": "A 8×16 cm-es BSH (Brettschichtholz) ragasztott gerenda osztrák gyártású, GL24h szilárdsági osztályú, homogén szerkezetű faanyag, amely kiváló választás olyan szerkezetekhez, ahol nemcsak tartósság, hanem esztétika is fontos. A nagyobb keresztmetszet lehetővé teszi hosszabb fesztávok áthidalását, így alkalmas terasztetők, előtetők, pergolák és kisebb melléképületek vázszerkezeteinek kialakítására is.",
         "longDescription2": "A precízen gyalult, fózolt felület lazúrozásra és pácolásra előkészített, így a termék látszó szerkezeti elemként is kiváló. A BSH gerendák előnye a hagyományos fűrészárukkal szemben, hogy mérettartóak, repedésmentesek és kiszámítható statikai tulajdonságokat nyújtanak. A 8×16 cm-es méret ideális választás, ha a kisebb keresztmetszet már nem elegendő, de a nagyobb tömeg vagy költség még nem indokolt.",
         "specs": {
@@ -1610,7 +1610,7 @@
         "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-10x10.jpg",
-        "description": "BSH gerenda 10×10 cm-es méretben, GL24h osztályban. Kompakt, mégis erős és látványos megoldás kisebb faszerkezetekhez.",
+        "description": "BSH gerenda 10×10 cm-es méretben, 13,5 méteres hosszban, GL24h osztályban. Kompakt, mégis erős és látványos megoldás kisebb faszerkezetekhez.",
         "longDescription": "A 10×10 cm-es BSH (Brettschichtholz) ragasztott gerenda kompakt, de szerkezetileg megbízható megoldás kisebb faszerkezetekhez. Osztrák gyártású, GL24h osztályú homogén faanyagból készül, amely nem reped, nem vetemedik, és hosszú távon is megőrzi formáját. Ideális választás pergolákhoz, kocsibeállókhoz, kisebb áthidalókhoz, belső tartóoszlopként vagy díszítő látszó elemként is.",
         "longDescription2": "A gyalult, fózolt felület kiváló alapot biztosít lazúrozáshoz vagy pácoláshoz. A GL24h minősítésű ragasztott gerenda nemcsak szilárdságot, hanem kiemelkedő esztétikai megjelenést is garantál. A 10×10 cm-es keresztmetszet különösen hasznos ott, ahol kis helyen kell teherbíró, mégis dekoratív fa szerkezeti elemet elhelyezni. A termék egyedileg fóliázva, kültéri és beltéri használatra előkészítve kerül forgalomba.",
         "specs": {
@@ -1656,7 +1656,7 @@
         "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-10x16.jpg",
-        "description": "BSH gerenda 10×16 cm-es méretben, GL24h minőségben. Kiváló választás erősebb faszerkezetekhez, látszó elemekhez, tetőalátámasztáshoz.",
+        "description": "BSH gerenda 10×16 cm-es méretben, 13,5 méteres hosszban, GL24h minőségben. Kiváló választás erősebb faszerkezetekhez, látszó elemekhez, tetőalátámasztáshoz.",
         "longDescription": "A 10×16 cm-es BSH ragasztott gerenda ideális választás olyan szerkezeti megoldásokhoz, ahol a nagyobb terhelhetőség és az esztétikus megjelenés egyaránt fontos. Az osztrák gyártású GL24h minőségű homogén szerkezet garantálja a tartósságot, a vetemedésmentes viselkedést és a hosszú élettartamot. Különösen ajánlott fedett teraszokhoz, tetőtartó gerendákhoz, kerti építményekhez, valamint belső látszó tartóelemként.",
         "longDescription2": "A gyalult, fózolt felület közvetlenül alkalmas lazúrozásra vagy pácolásra, így dekoratív elemként is használható. A GL24h szabvány szerinti gyártás statikai megbízhatóságot biztosít. A 10×16 cm-es keresztmetszet már nagyobb fesztávok áthidalására is képes, így tökéletes választás, ha a kisebb méret már nem elég, de fontos a könnyű kezelhetőség és a magas esztétikai szint. A termék egyedileg fóliázva, szárazon, kültéri és beltéri beépítésre kész állapotban kapható.",
         "specs": {
@@ -1686,7 +1686,7 @@
         "slug": "bsh-ragasztott-gerenda-10x20",
         "meta": {
           "title": "BSH ragasztott gerenda 10x20cm - GL24h, osztrák gyártás",
-          "description": "BSH gerenda 10×20 cm méretben, GL24h osztályban. Erős, mérettartó ragasztott fa kültéri és beltéri szerkezetekhez, látszó kivitelben is.",
+          "description": "BSH gerenda 10×20 cm méretben, 13,5 méteres hosszban, GL24h osztályban. Erős, mérettartó ragasztott fa kültéri és beltéri szerkezetekhez, látszó kivitelben is.",
           "image": "/termekek/bsh-gerenda-10x20.jpg"
         },
         "aggregateRating": {
@@ -1748,7 +1748,7 @@
         "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-12x12.jpg",
-        "description": "BSH gerenda 12×12 cm keresztmetszettel, GL24h osztályban. Stabil és esztétikus faanyag látszó tartószerkezetekhez.",
+        "description": "BSH gerenda 12×12 cm keresztmetszettel, 13,5 méteres hosszal, GL24h osztályban. Stabil és esztétikus faanyag látszó tartószerkezetekhez.",
         "longDescription": "A 12×12 cm-es BSH ragasztott gerenda kiváló megoldás, ha egyszerre van szükség esztétikus megjelenésre és nagyfokú teherbírásra. Az osztrák gyártású, GL24h minősítésű termék kimagasló stabilitással rendelkezik, nem vetemedik, nem reped, így alkalmas látszó és teherhordó faszerkezetekhez egyaránt. A gyalult, fózolt élű kivitel beltéri és kültéri alkalmazásra is ideálissá teszi.",
         "longDescription2": "A 12x12 cm-es BSH keresztmetszet ideális kerti építményekhez, fedett teraszokhoz, pergolákhoz, és olyan szerkezetekhez, ahol a statikai stabilitás mellett fontos a dekoratív megjelenés. A GL24h osztályozású fa szerkezetileg méretezhető, így tervezhető áthidalásokat is lehetővé tesz. A termék lazúrozásra vagy pácolásra kész felületet kínál, egyedileg fóliázott csomagolással érkezik.",
         "specs": {
@@ -1794,7 +1794,7 @@
         "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-12x16.jpg",
-        "description": "BSH gerenda 12×16 cm keresztmetszettel, GL24h osztályban. Tartós, mérettartó faanyag látszó és teherhordó szerkezetekhez.",
+        "description": "BSH gerenda 12×16 cm keresztmetszettel, 13,5 méteres hosszal, GL24h osztályban. Tartós, mérettartó faanyag látszó és teherhordó szerkezetekhez.",
         "longDescription": "A 12×16 cm-es keresztmetszetű BSH gerenda megnövelt teherbírása miatt ideális választás nagyobb szerkezeti igénybevételű faépítményekhez. Az osztrák GL24h minőségű, rétegragasztott gerenda precízen megmunkált, gyalult és fózolt kivitelben készül, így nemcsak szerkezetileg erős, de esztétikailag is kifogástalan. Alkalmazható tetőszerkezetek, áthidalók, pergolák vagy akár beltéri látszó elemek esetén is.",
         "longDescription2": "Ez a méret remek választás, ha nagy fesztávokat kell áthidalni vagy erősebb alátámasztás szükséges. A ragasztott technológia révén a gerenda formatartó, ellenáll a vetemedésnek és repedésnek, miközben a természetes fa meleg megjelenését kínálja. A GL24h szabványnak megfelelő gerenda szerkezetileg méretezhető, így biztonságosan alkalmazható statikai tervezés mellett. A termék előkészített felülettel érkezik, lazúrozásra vagy pácolásra készen, fóliázva.",
         "specs": {
@@ -1840,7 +1840,7 @@
         "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-12x20.jpg",
-        "description": "BSH gerenda 12×20 cm keresztmetszettel, GL24h minőségben. Erős, mérettartó faanyag látszó és teherhordó szerkezetekhez.",
+        "description": "BSH gerenda 12×20 cm keresztmetszettel, 13,5 méteres hosszal, GL24h minőségben. Erős, mérettartó faanyag látszó és teherhordó szerkezetekhez.",
         "longDescription": "A 12×20 cm-es méretű BSH (Brettschichtholz) ragasztott gerenda ideális választás nagyobb terhelésű faépítményekhez, például áthidalókhoz, tetőszerkezetekhez vagy kocsibeállókhoz. Az osztrák gyártású GL24h minősítésű termék kiváló statikai tulajdonságokkal rendelkezik, miközben a gyalult, fózolt felület lehetővé teszi a látszó felhasználást is. A gerenda formatartó, nem vetemedik, és hosszú élettartamot biztosít bármilyen környezetben.",
         "longDescription2": "Ez a keresztmetszet akkor ajánlott, ha a szerkezet nagy fesztávokat vagy jelentős terhelést igényel. A BSH technológia biztosítja a repedés- és csavarodásmentes stabilitást, amely különösen fontos esztétikai és tartószerkezeti alkalmazásoknál. A termék előkészített felülettel érkezik, pácolásra vagy lazúrozásra készen. Kiválóan alkalmas pergolák, lakóházak tetőszerkezeteinek és modern faépületek fő tartóelemeinek kialakításához.",
         "specs": {
@@ -1885,7 +1885,7 @@
         "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-14x14.jpg",
-        "description": "BSH gerenda 14×14 cm keresztmetszettel, GL24h minőségben. Erős, esztétikus faanyag látszó és tartószerkezetekhez.",
+        "description": "BSH gerenda 14×14 cm keresztmetszettel, 13,5 méteres hosszal, GL24h minőségben. Erős, esztétikus faanyag látszó és tartószerkezetekhez.",
         "longDescription": "A 14×14 cm-es méretű BSH (Brettschichtholz) ragasztott gerenda ideális választás igényes, esztétikus faszerkezetekhez. GL24h szilárdsági osztályának és osztrák gyártásának köszönhetően magas teherbírást, méretpontosságot és hosszan tartó stabilitást kínál. A gyalult és fózolt felület beltéren és kültéren is tökéletes látványt nyújt, ideális választás például látszó oszlopokhoz, pergolákhoz, áthidalókhoz.",
         "longDescription2": "A 14x14 cm keresztmetszetű gerenda kiválóan alkalmazható ott, ahol nemcsak a terhelhetőség, hanem az esztétikai megjelenés is kiemelt szerepet kap. A termék előkészített felülettel rendelkezik lazúrozáshoz vagy pácoláshoz, egyedileg fóliázott kivitelben érkezik. A BSH technológia garantálja a csavarodás- és repedésmentességet, ami különösen fontos a nagyobb fesztávú, látszó szerkezetek esetében.",
         "specs": {
@@ -1931,7 +1931,7 @@
         "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-14x20.jpg",
-        "description": "BSH gerenda 14×20 cm keresztmetszettel, GL24h minőségben. Strapabíró, esztétikus és mérettartó megoldás igényes faszerkezetekhez.",
+        "description": "BSH gerenda 14×20 cm keresztmetszettel, 13,5 méteres hosszal, GL24h minőségben. Strapabíró, esztétikus és mérettartó megoldás igényes faszerkezetekhez.",
         "longDescription": "A 14×20 cm-es méretű BSH (Brettschichtholz) ragasztott gerenda tökéletes választás olyan építkezésekhez, ahol a magas statikai követelmények mellett az esztétikai megjelenés is kulcsfontosságú. Az osztrák gyártású, GL24h minőségű rétegragasztott gerenda kimagasló teherbírással és formastabilitással rendelkezik. Gyalult, fózolt felülete miatt látszó szerkezeti elemként is kitűnően használható.",
         "longDescription2": "A BSH technológiával készített gerendák előnye a szabványos fűrészáruhoz képest a vetemedés- és repedésmentes viselkedés, valamint a precíz mérettartás. A 14x20 cm-es keresztmetszet ideális nagyobb teherhordó szerkezetekhez, például gerendaként tetőszerkezetekhez, áthidalókhoz, kocsibeállókhoz. A termék előkészített felülettel érkezik, lazúrozásra vagy pácolásra alkalmas, és fóliázott kivitelben szállítjuk.",
         "specs": {
@@ -1977,7 +1977,7 @@
         "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-16x16.jpg",
-        "description": "BSH gerenda 16×16 cm keresztmetszettel, GL24h minőségben. Nagy teherbírás, dekoratív megjelenés, hosszú élettartam kültéren és beltéren is.",
+        "description": "BSH gerenda 16×16 cm keresztmetszettel, 13,5 méteres hosszal, GL24h minőségben. Nagy teherbírás, dekoratív megjelenés, hosszú élettartam kültéren és beltéren is.",
         "longDescription": "A 16×16 cm-es méretű BSH (Brettschichtholz) ragasztott gerenda kimagasló statikai teherbírást nyújt, miközben megőrzi esztétikus és mérettartó jellegét. Az osztrák gyártású GL24h osztályú rétegragasztott faanyag ideális választás azoknak, akik megbízható és dekoratív megoldást keresnek nagyobb szerkezeti igénybevételhez, legyen szó áthidalóról, tartógerendáról vagy kültéri faszerkezetről.",
         "longDescription2": "A BSH gerendák homogén rétegszerkezetük révén kiválóan ellenállnak a csavarodásnak, repedésnek, vetemedésnek. A gyalult, fózolt élű, látszó minőségű felület kiváló megjelenést biztosít – akár pácolható, lazúrozható is. A 16x16 cm-es méret már komolyabb fesztávokhoz, tetőszerkezetekhez, nyitott kocsibeállókhoz, teraszfedésekhez is alkalmas. Egyedileg fóliázva, esztétikus és tartós kivitelben szállítjuk.",
         "specs": {
@@ -2023,7 +2023,7 @@
         "discountValidUntil": null,
         "stock": 0,
         "image": "/termekek/bsh-gerenda-16x24.jpg",
-        "description": "BSH gerenda 16×24 cm keresztmetszettel, GL24h osztályban. Maximális teherbírás és prémium megjelenés nagy méretű faszerkezetekhez.",
+        "description": "BSH gerenda 16×24 cm keresztmetszettel, 13,5 méteres hosszal, GL24h osztályban. Maximális teherbírás és prémium megjelenés nagy méretű faszerkezetekhez.",
         "longDescription": "A 16×24 cm-es BSH (Brettschichtholz) ragasztott gerenda kiválóan alkalmazható olyan építészeti megoldásokhoz, ahol nagy fesztávok áthidalása, magas teherbírás és vizuális esztétika egyszerre elvárás. Az osztrák gyártású GL24h osztályú anyag nagy pontossággal gyalult, fózolt élű, így látszó felületekhez is ideális.",
         "longDescription2": "A BSH gerendák többrétegű ragasztási technológiával készülnek, amely garantálja az alacsony vetemedési hajlamot, a stabil méretmegtartást és a hosszú élettartamot. A 16x24 cm-es gerenda kiválóan alkalmas teraszfedésekhez, kocsibeállókhoz, csarnokokhoz, valamint más nagy igénybevételű faszerkezeti célokra. Előkezelt, pácolásra alkalmas felületű, fóliázva kerül szállításra.",
         "specs": {
@@ -2069,7 +2069,7 @@
       "discountValidUntil": null,
       "stock": 0,
       "image": "/termekek/bsh-gerenda-20x20.jpg",
-      "description": "BSH gerenda 20×20 cm keresztmetszettel, osztrák GL24h minőségben. Megbízható szerkezeti elem nagy igénybevételű faszerkezetekhez.",
+      "description": "BSH gerenda 20×20 cm keresztmetszettel, 13,5 méteres hosszal, osztrák GL24h minőségben. Megbízható szerkezeti elem nagy igénybevételű faszerkezetekhez.",
       "longDescription": "A 20×20 cm-es BSH (rétegragasztott) gerenda rendkívül nagy szilárdsággal és formatartósággal rendelkezik. A GL24h minősítésű, homogén, osztrák gyártású faanyag garantálja a hosszú távú stabilitást és repedésmentes működést. A méretes keresztmetszet miatt ideális választás nagy teherbírású szerkezeti megoldásokhoz, mint például csarnokok, nagy méretű pergolák, tornácok vagy teraszfedések fő tartóelemei.",
       "longDescription2": "A látszó minőségű, gyalult és fózolt felület azonnal beépíthetővé teszi a terméket esztétikai kompromisszum nélkül. A BSH technológia előnye, hogy a termék stabil, jól méretezhető, nem vetemedik, és nagyobb hosszakban is elérhető, mint a hagyományos fűrészáruk. A 20x20 cm-es kivitel különösen alkalmas olyan helyeken, ahol nagy teherbírás mellett kiemelten fontos a vizuális megjelenés is.",
       "specs": {
@@ -2096,63 +2096,158 @@
     }
   ]
 },
-{
-  "category": "Keményfa brikett",
-  "slug": "kemenyfa-brikett",
-  "description": "Fedezze fel keményfa brikett kínálatunkat, amely ideális választás kandallókhoz, kályhákhoz és vegyestüzelésű kazánokhoz. A tölgyből, bükkből és más keményfákból készült brikettek kiváló fűtőértékkel rendelkeznek, alacsony nedvességtartalmuknak és nagy sűrűségüknek köszönhetően hosszan égnek, egyenletes hőt biztosítva. Ragasztóanyag nélkül, tisztán préselt faforgácsból készülnek – környezetbarát, praktikus és tiszta megoldás az otthoni fűtéshez. Vásároljon közvetlenül raktárról, raklapos tételben kedvező áron!",
-  "meta": {
-    "title": "Keményfa brikett",
-    "description": "Magas fűtőértékű, préselt keményfa brikett kandallóba, kályhába vagy kazánba. Rendeljen raklapos tételben kedvező áron!",
-    "image": "/kategoriak/brikett.jpg"
-  },
-  "products": [
-    {
-      "name": "Pini‑Kay keményfa brikett I. osztály",
-      "slug": "pini-kay-brikett-tolgy",
-      "meta": {
-          "title": "Pini‑Kay keményfa brikett I. osztály – 100% tölgy",
-          "description": "100% tölgyfából készült Pini‑Kay brikett, alacsony nedvességtartalommal és kiemelkedő fűtőértékkel. Prémium minőség, lyukas szerkezet a hatékony égésért.",
-          "image": "/termekek/pini-kay-brikett.jpg"
+  {
+    "category": "Palló",
+    "slug": "pallo",
+    "description": "Fedezze fel kiváló minőségű fenyő palló kínálatunkat építkezéshez, tetőszerkezetekhez és asztalosmunkákhoz! A gondosan megmunkált luc- és borovi fenyőből készült pallók ideálisak födémek, zsaluzatok és ácsszerkezetek kialakításához. Széles méretválaszték, szárított és gyalult kivitel is elérhető. Strapabíró, időtálló megoldás minden építőipari és barkácsprojekthez. Vásároljon közvetlenül raktárról, kedvező áron, akár raklapos tételben is!",
+    "meta": {
+      "title": "Fenyő Palló Építkezéshez és Ácsmunkákhoz – Elvira Tüzép",
+      "description": "Minőségi luc- és borovi fenyő pallók széles méretválasztékban, födémekhez, zsaluzathoz és tetőszerkezethez. Vásároljon raktárról, kedvező áron!",
+      "image": "/kategoriak/pallo.jpg"
+    },
+    "products": [
+      {
+        "name": "Palló - Luc 38x240mmx4m – I-II. osztály",
+        "slug": "luc-pallo-38x240-4m",
+        "meta": {
+          "title": "Luc palló 38x240 mm 4m | Elvira Tüzép",
+          "description": "Masszív lucfenyő palló 38x240 mm méretben, 4 méteres hosszban. Ideális födémekhez, ácsszerkezetekhez és zsaluzáshoz. Kedvező ár raktárról!",
+          "image": "/termekek/luc-pallo-38x240.webp"
         },
-      "aggregateRating": {
-        "ratingValue": 4.8,
-        "reviewCount": 52
+        "aggregateRating": {
+          "ratingValue": 4.7,
+          "reviewCount": 34
+        },
+        "sku": "luc-pallo-38x240-4m",
+        "price": 8694,
+        "m2price": 0,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "discountValidUntil": null,
+        "stock": 0,
+        "image": "/termekek/luc-pallo-38x240.webp",
+        "description": "Lucfenyő palló 38×240 mm keresztmetszettel, 4 méter hosszúságban, I./II. osztályú minőségben. Erős és sokoldalú építőanyag.",
+        "longDescription": "A 38x240 mm-es lucfenyő palló ideális választás ácsszerkezetekhez, zsaluzáshoz, födémek kialakításához vagy egyéb szerkezeti faanyagként. A 4 méter hosszú palló I. és II. osztályú minőségben érhető el, így ár-érték arányban kiváló választás kisebb és nagyobb építkezésekhez is. A lucfenyő szerkezeti fa előnye a könnyű megmunkálhatóság, a kedvező szilárdsági tulajdonságok, valamint a jó tartósság beltéri felhasználás esetén. Raktárról, kedvező áron vásárolható meg, raklapos tételben is rendelhető.",
+        "longDescription2": "",
+        "specs": {
+          "Anyag": "Lucfenyő",
+          "Minőség": "I./II. osztály",
+          "Profil": "Palló",
+          "Méretek": "38x240 mm",
+          "Hosszúság": "4 méter",
+          "Felület": "Nyers, gyalulatlan",
+          "Súly (kb.)": "28–32 kg/darab",
+          "Felhasználás": "Födém, zsaluzat, ácsszerkezet, barkácsprojektek",
+          "Tárolás": "Száraz, fedett helyen ajánlott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 30.0,
+          "depth": 400,
+          "width": 24,
+          "height": 3.8
+        }
       },
-      "sku": "brikett-pini-kay-tolgy", 
-      "price": 159900,
-      "m2price": 0,
-      "m3price": 0,
-      "discountPrice": null,
-      "discountPercent": null,
-      "discountValidUntil": null,
-      "stock": 0,
-      "image": "/termekek/pini-kay-brikett.jpg",
-      "description": "Lyukas, hengeres keményfa brikett kizárólag tölgyfából, I. osztályú minőségben. Hosszú égés, magas hőérték, minimális hamu.",
-      "longDescription": "A Pini‑Kay brikett 100% tölgyfából készül, I. osztályú minőségben. Lyukas, szellőzést biztosító szerkezete hatékony égést tesz lehetővé akár kandallóban, kályhában vagy kazánban is. A rendkívül alacsony, kb. 2–6% nedvességtartalom, a 4 800–5 000 kcal/kg (~20 MJ/kg) fűtőérték és a kb. 1,0–1,2% hamutartalom ideálissá teszik hosszú égésű, környezetbarát tüzelőként. A brikett nem tartalmaz adalékot vagy ragasztót, kizárólag természetes faőrleményből készül magas nyomáson préselve.",
-      "longDescription2": "",
-      "specs": {
-          "Alapanyag": "100% keményfa (főként tölgy)",
-          "Forma": "Lyukkal ellátott henger (ventilált Pini-Kay profil)",
-          "Méretek egy darabra": "Kb. 53 × 53 mm keresztmetszet, 300–330 mm hossz",
-          "Csomagolás": "10 kg-os zsugorfóliázott csomag, 12 brikett/csomag",
-          "Raklapos kiszerelés": "960 kg (96 csomag × 10 kg/csomag, EUR raklapon)",
-          "Nedvességtartalom": "2–6 %",
-          "Fűtőérték": "4800–5000 kcal/kg (~20 MJ/kg)",
-          "Hamutartalom": "1,0–1,2 %",
-          "Előállítás": "Adalékmentes, nagy nyomáson préselt",
-          "Égési tulajdonságok": "Hosszú égés (~2 óra/db), stabil szerkezet, tiszta égés",
-          "Környezet": "100% természetes, vegyszermentes",
-          "Felhasználás": "Kályha, kandalló, kazán, grillezés",
-          "Tárolás": "Száraz, fedett helyen, közvetlen nedvességtől védve"
+      {
+        "name": "Palló - Luc 48x98 mm 4 méter – I./II. osztály",
+        "slug": "luc-pallo-48x98-4m",
+        "meta": {
+          "title": "Luc palló 48x98 mm 4m | Elvira Tüzép",
+          "description": "Lucfenyő palló 48x98 mm méretben, 4 méter hosszúságban. Ideális tetőszerkezetekhez, ácsmunkákhoz és zsaluzáshoz. Kedvező ár raktárról!",
+          "image": "/termekek/luc-pallo-48x98.avif"
         },
-      "shippingDetails": {
-        "shippingWeight": 960.0,
-        "depth": 120,
-        "width": 80,
-        "height": 100
+        "aggregateRating": {
+          "ratingValue": 4.67,
+          "reviewCount": 39
+        },
+        "sku": "luc-pallo-48x98-4m",
+        "price": 4194,
+        "m2price": 0,
+        "m3price": 0,
+        "discountPrice": null,
+        "discountPercent": null,
+        "discountValidUntil": null,
+        "stock": 0,
+        "image": "/termekek/luc-pallo-48x98.avif",
+        "description": "Lucfenyő palló 48×98 mm keresztmetszettel, 4 méteres hosszúságban. Kiválóan használható tetőszerkezetekhez és általános építkezési célokra.",
+        "longDescription": "A 48x98 mm-es lucfenyő palló tartós és megbízható szerkezeti faanyag, amely ideális választás ácsszerkezetekhez, zsaluzatokhoz, gerendázáshoz vagy akár kisebb barkácsprojektekhez. A 4 méteres hossz lehetővé teszi a nagyobb fesztávolságok áthidalását. I./II. osztályú minőségének köszönhetően ár-érték arányban remek választás, akár ipari, akár lakossági felhasználásra. A lucfenyő jól megmunkálható, kedvező sűrűségű fa, melynek szilárdsági tulajdonságai megfelelnek a szerkezeti követelményeknek.",
+        "longDescription2": "",
+        "specs": {
+          "Anyag": "Lucfenyő",
+          "Minőség": "I./II. osztály",
+          "Profil": "Palló",
+          "Méretek": "48x98 mm",
+          "Hosszúság": "4 méter",
+          "Felület": "Nyers, gyalulatlan",
+          "Súly (kb.)": "16–18 kg/darab",
+          "Felhasználás": "Tetőszerkezet, zsaluzat, gerenda, barkácsprojektek",
+          "Tárolás": "Száraz, fedett helyen ajánlott"
+        },
+        "shippingDetails": {
+          "shippingWeight": 17.0,
+          "depth": 400,
+          "width": 9.8,
+          "height": 4.8
+        }
       }
-    }
-  ]
-}
-
+    ]
+  },
+  {
+    "category": "Keményfa brikett",
+    "slug": "kemenyfa-brikett",
+    "description": "Fedezze fel keményfa brikett kínálatunkat, amely ideális választás kandallókhoz, kályhákhoz és vegyestüzelésű kazánokhoz. A tölgyből, bükkből és más keményfákból készült brikettek kiváló fűtőértékkel rendelkeznek, alacsony nedvességtartalmuknak és nagy sűrűségüknek köszönhetően hosszan égnek, egyenletes hőt biztosítva. Ragasztóanyag nélkül, tisztán préselt faforgácsból készülnek – környezetbarát, praktikus és tiszta megoldás az otthoni fűtéshez. Vásároljon közvetlenül raktárról, raklapos tételben kedvező áron!",
+    "meta": {
+      "title": "Keményfa brikett",
+      "description": "Magas fűtőértékű, préselt keményfa brikett kandallóba, kályhába vagy kazánba. Rendeljen raklapos tételben kedvező áron!",
+      "image": "/kategoriak/brikett.jpg"
+    },
+    "products": [
+      {
+        "name": "Pini‑Kay keményfa brikett I. osztály",
+        "slug": "pini-kay-brikett-tolgy",
+        "meta": {
+            "title": "Pini‑Kay keményfa brikett I. osztály – 100% tölgy",
+            "description": "100% tölgyfából készült Pini‑Kay brikett, alacsony nedvességtartalommal és kiemelkedő fűtőértékkel. Prémium minőség, lyukas szerkezet a hatékony égésért.",
+            "image": "/termekek/pini-kay-brikett.jpg"
+          },
+        "aggregateRating": {
+          "ratingValue": 4.8,
+          "reviewCount": 52
+        },
+        "sku": "brikett-pini-kay-tolgy", 
+        "price": 159900,
+        "m2price": 0,
+        "m3price": 0,
+        "discountPrice": null,
+          "discountPercent": null,
+          "discountValidUntil": null,
+        "stock": 0,
+        "image": "/termekek/pini-kay-brikett.jpg",
+        "description": "Lyukas, hengeres keményfa brikett kizárólag tölgyfából, I. osztályú minőségben. Hosszú égés, magas hőérték, minimális hamu.",
+        "longDescription": "A Pini‑Kay brikett 100% tölgyfából készül, I. osztályú minőségben. Lyukas, szellőzést biztosító szerkezete hatékony égést tesz lehetővé akár kandallóban, kályhában vagy kazánban is. A rendkívül alacsony, kb. 2–6% nedvességtartalom, a 4 800–5 000 kcal/kg (~20 MJ/kg) fűtőérték és a kb. 1,0–1,2% hamutartalom ideálissá teszik hosszú égésű, környezetbarát tüzelőként. A brikett nem tartalmaz adalékot vagy ragasztót, kizárólag természetes faőrleményből készül magas nyomáson préselve.",
+        "longDescription2": "",
+        "specs": {
+            "Alapanyag": "100% keményfa (főként tölgy)",
+            "Forma": "Lyukkal ellátott henger (ventilált Pini-Kay profil)",
+            "Méretek egy darabra": "Kb. 53 × 53 mm keresztmetszet, 300–330 mm hossz",
+            "Csomagolás": "10 kg-os zsugorfóliázott csomag, 12 brikett/csomag",
+            "Raklapos kiszerelés": "960 kg (96 csomag × 10 kg/csomag, EUR raklapon)",
+            "Nedvességtartalom": "2–6 %",
+            "Fűtőérték": "4800–5000 kcal/kg (~20 MJ/kg)",
+            "Hamutartalom": "1,0–1,2 %",
+            "Előállítás": "Adalékmentes, nagy nyomáson préselt",
+            "Égési tulajdonságok": "Hosszú égés (~2 óra/db), stabil szerkezet, tiszta égés",
+            "Környezet": "100% természetes, vegyszermentes",
+            "Felhasználás": "Kályha, kandalló, kazán, grillezés",
+            "Tárolás": "Száraz, fedett helyen, közvetlen nedvességtől védve"
+          },
+        "shippingDetails": {
+          "shippingWeight": 960.0,
+          "depth": 120,
+          "width": 80,
+          "height": 100
+        }
+      }
+    ]
+  }
 ]

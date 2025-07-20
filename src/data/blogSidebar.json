@@ -2,7 +2,14 @@
   {
     "category": "Építőanyagok",
     "items": [
-      { "title": "BSH ragasztott gerenda", "slug": "/tudastar/bsh" }
+      { "title": "BSH ragasztott gerenda", "slug": "/tudastar/mi-az-a-bsh-fa" },
+      { "title": "Minőségi jelölések", "slug": "/tudastar/fa_minosegi_jelolesek" }
+    ]
+  },
+    {
+    "category": "Tüzelőanyagok",
+    "items": [
+      { "title": "Környezetbarát fabrikett", "slug": "/tudastar/kornyezetbarat-brikett" }
     ]
   }
 ]

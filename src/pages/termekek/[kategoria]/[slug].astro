@@ -370,21 +370,14 @@ const schemaBreadcrumb = {
           )}
 
           <div>
-  {product.stock > 0 ? (
-    <span class="text-green-600">Raktáron</span>
-  ) : (
-    <span class="text-green-600">Rendelhető</span>
-  )}
-</div>
+            {product.stock > 0 ? (
+              <span class="text-green-600">Raktáron</span>
+            ) : (
+              <span class="text-green-600">Rendelhető</span>
+            )}
+          </div>
           
-
-      
-
-          
-            <ProductInteractiveBlock product={product} client:load />
-          
-
-          
+          <ProductInteractiveBlock product={product} client:load />
         </div>
       </div>
 

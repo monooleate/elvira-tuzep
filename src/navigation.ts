@@ -12,19 +12,30 @@ export const headerData = {
       href: getPermalink('/termekek'),
       
     },
-/*     {
-      text: 'Tudástár',
+    {
+      text: 'Szolgáltatásaink',
+      href: getPermalink('/szolgaltatasok'),
       links: [
         {
-          text: 'Bejegyzések',
-          href: getBlogPermalink(),
+          text: 'Vágás',
+          href: getPermalink('/szolgaltatasok/vagas')
         },
         {
-          text: 'Mi az a BSH?',
-          href: getPermalink('janos_post', 'post'),
+          text: 'Csiszolás',
+          href: getPermalink('/szolgaltatasok/csiszolas')
         },
-      ],
-    }, */
+               {
+          text: 'Festés',
+          href: getPermalink('/szolgaltatasok/festes')
+        }
+      ]
+      
+    },
+    {
+      text: 'Tudástár',
+      href: getPermalink('/tudastar'),
+      
+    },
     {
       text: 'Kalkulátorok',
       href: getPermalink('/kalkulatorok'),

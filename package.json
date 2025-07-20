@@ -39,6 +39,7 @@
     "limax": "4.1.0",
     "lodash.merge": "^4.6.2",
     "lucide-preact": "^0.511.0",
+    "mermaid": "^11.9.0",
     "preact": "^10.26.8",
     "unpic": "^4.1.2"
   },

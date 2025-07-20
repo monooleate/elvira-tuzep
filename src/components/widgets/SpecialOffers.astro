@@ -1,0 +1,141 @@
+---
+import productsData from '~/data/products.json';
+
+const now = new Date();
+
+const allProducts = productsData.flatMap((category) => category.products);
+
+const discounted = productsData.flatMap((category) => {
+  return category.products
+    .map((product) => {
+      const price = product.price;
+      const discountPrice = product.discountPrice;
+      const discountPercent = product.discountPercent;
+      const discountUntil = product.discountValidUntil ? new Date(product.discountValidUntil) : null;
+
+      const hasValidUntil = discountUntil instanceof Date && !isNaN(discountUntil);
+      const hasTimeValid = hasValidUntil && discountUntil > now;
+
+      const hasValidDiscountPrice =
+        typeof discountPrice === 'number' &&
+        discountPrice > 0 &&
+        discountPrice < price &&
+        hasTimeValid;
+
+      const hasValidDiscountPercent =
+        typeof discountPercent === 'number' &&
+        discountPercent > 0 &&
+        discountPercent < 100 &&
+        hasTimeValid;
+
+      const isDiscounted = (hasValidDiscountPrice || hasValidDiscountPercent) && hasTimeValid;
+
+      const finalDiscountPrice = hasValidDiscountPrice
+        ? discountPrice
+        : hasValidDiscountPercent
+        ? Math.round(price * (1 - discountPercent / 100))
+        : null;
+
+      const finalDiscountPercent = hasValidDiscountPercent
+        ? discountPercent
+        : hasValidDiscountPrice && finalDiscountPrice
+        ? Math.round((1 - finalDiscountPrice / price) * 100)
+        : null;
+
+      return isDiscounted
+        ? {
+            ...product,
+            finalDiscountPrice,
+            finalDiscountPercent,
+            categorySlug: category.slug, // ⬅️ fontos!
+          }
+        : null;
+    })
+    .filter(Boolean);
+});
+
+---
+{discounted.length > 0 && (
+<section class="py-16 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-10 text-center">
+      Akciós termékeink
+    </h2>
+
+    {discounted.length <= 3 && (
+      <div class={`grid gap-6 ${
+        discounted.length === 1 ? 'grid-cols-1 justify-items-center' :
+        discounted.length === 2 ? 'grid-cols-2' :
+        'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
+      }`}>
+        {discounted.map((product) => (
+          <a 
+            href={`/termekek/${product.categorySlug}/${product.slug}`}
+            class="block border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800 w-full max-w-[380px]"
+          >
+            <div class="relative">
+              <img
+                src={product.image}
+                alt={product.name}
+                class="w-full h-48 object-cover"
+                loading="lazy"
+              />
+              <div class="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded shadow">
+                -{product.finalDiscountPercent}%
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{product.name}</h3>
+              <div class="text-sm text-gray-700 dark:text-gray-300 mt-2">
+                <span class="line-through text-gray-400 mr-2">
+                  {product.price.toLocaleString('hu-HU')} Ft
+                </span>
+                <span class="text-red-600 font-bold">
+                  {product.finalDiscountPrice.toLocaleString('hu-HU')} Ft
+                </span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
+
+    {discounted.length > 3 && (
+  <div class="overflow-x-auto scroll-smooth max-w-4xl">
+    <div class="inline-flex min-w-[1100px] gap-4 px-1">
+      {discounted.map((product) => (
+        <a
+          href={`/termekek/${product.categorySlug}/${product.slug}`}
+          class="shrink-0 w-[260px] border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800"
+        >
+          <div class="relative">
+            <img
+              src={product.image}
+              alt={product.name}
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
+            <div class="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded shadow">
+              -{product.finalDiscountPercent}%
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{product.name}</h3>
+            <div class="text-sm text-gray-700 dark:text-gray-300 mt-2">
+              <span class="line-through text-gray-400 mr-2">
+                {product.price.toLocaleString('hu-HU')} Ft
+              </span>
+              <span class="text-red-600 font-bold">
+                {product.finalDiscountPrice.toLocaleString('hu-HU')} Ft
+              </span>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+)}
+
+  </div>
+</section>
+)}
