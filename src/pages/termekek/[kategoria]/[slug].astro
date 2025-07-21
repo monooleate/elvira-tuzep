@@ -90,10 +90,13 @@ const relatedProducts = category.products
   .filter((p) => p.slug !== product.slug)
   .slice(0, 3);
 
+let calc_shippingWeight = null
 
 function getShippingDetails(product) {
   const sd = product.shippingDetails;
   if (!sd) return undefined;
+
+  calc_shippingWeight=sd.shippingWeight
 
   const hasAny =
     typeof sd.shippingWeight === 'number' ||
@@ -105,13 +108,6 @@ function getShippingDetails(product) {
 
   return {
     "@type": "OfferShippingDetails",
-    ...(typeof sd.shippingWeight === 'number' && {
-      shippingWeight: {
-        "@type": "QuantitativeValue",
-        value: sd.shippingWeight,
-        unitText: "KG"
-      }
-    }),
     ...(typeof sd.depth === 'number' && {
       depth: {
         "@type": "QuantitativeValue",
@@ -175,9 +171,16 @@ const schemaProduct = {
             "@type": "Organization",
             "name": "Elvira Tüzép"
           },
-          "unitPricingMeasure": "1 pcs",
+          "unitCode": "C62",
+          ...(typeof calc_shippingWeight === 'number' && {
+              weight: {
+                "@type": "QuantitativeValue",
+                value: calc_shippingWeight,
+                unitText: "KG"
+              }
+            }),
           ...(hasDiscount && product.discountValidUntil
-            ? { validThrough: product.discountValidUntil }
+            ? { priceValidUntil: product.discountValidUntil }
             : {}),
           ...(shipping && { shippingDetails: shipping })
         }]
@@ -200,7 +203,14 @@ const schemaProduct = {
             "@type": "Organization",
             "name": "Elvira Tüzép"
           },
-          "unitPricingMeasure": "1 cbm",
+          "unitCode": "MTQ",
+            ...(typeof calc_shippingWeight === 'number' && {
+              weight: {
+                "@type": "QuantitativeValue",
+                value: calc_shippingWeight,
+                unitText: "KG"
+              }
+            }),
           ...(hasDiscount && product.discountValidUntil
             ? { validThrough: product.discountValidUntil }
             : {}),
@@ -225,7 +235,14 @@ const schemaProduct = {
             "@type": "Organization",
             "name": "Elvira Tüzép"
           },
-          "unitPricingMeasure": "1 sqm",
+          "unitCode": "MTK",
+            ...(typeof calc_shippingWeight === 'number' && {
+              weight: {
+                "@type": "QuantitativeValue",
+                value: calc_shippingWeight,
+                unitText: "KG"
+              }
+            }),
           ...(hasDiscount && product.discountValidUntil
             ? { validThrough: product.discountValidUntil }
             : {}),
