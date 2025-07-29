@@ -9,7 +9,8 @@
     {
     "category": "Tüzelőanyagok",
     "items": [
-      { "title": "Környezetbarát fabrikett", "slug": "/tudastar/kornyezetbarat-brikett" }
+      { "title": "Környezetbarát fabrikett", "slug": "/tudastar/kornyezetbarat-brikett" },
+      { "title": "Tüzifa mértékegységek", "slug": "/tudastar/tuzifa-mertekegysegek" }
     ]
   }
 ]

@@ -115,20 +115,20 @@ const getStyle = ({
   height,
   aspectRatio,
   layout,
-  objectFit = 'cover',
+/*   objectFit = 'cover', */
   objectPosition = 'center',
   background,
 }: {
   width?: number;
   height?: number;
   aspectRatio?: number;
-  objectFit?: string;
+/*   objectFit?: string; */
   objectPosition?: string;
   layout?: string;
   background?: string;
 }) => {
   const styleEntries: Array<[prop: string, value: string | undefined]> = [
-    ['object-fit', objectFit],
+/*     ['object-fit', objectFit], */
     ['object-position', objectPosition],
   ];
 

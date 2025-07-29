@@ -15,6 +15,12 @@ export default function ProductInteractiveBlock({ product }) {
     } else if (product.m3price && product.m3price > 0) {
       basePrice = product.m3price;
       unit = 'm³';
+    } else if (product.mprice && product.mprice > 0) {
+      basePrice = product.mprice;
+      unit = 'm';
+    } else if (product.palprice && product.palprice > 0) {
+      basePrice = product.palprice;
+      unit = 'raklap';
     }
   }
 

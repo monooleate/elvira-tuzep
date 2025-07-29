@@ -63,17 +63,29 @@ const discountPercent = hasValidDiscountPercent
       ? Math.round((1 - discountPrice / product.price) * 100)
       : null);
 
-// m3 ár csak akkor változik, ha van érvényes százalékos kedvezmény
-const hasM3Price = typeof product.m3price === 'number' && product.m3price > 0;
-const discountM3Price = hasM3Price && hasValidDiscountPercent
-  ? Math.round(product.m3price * (1 - product.discountPercent / 100))
-  : product.m3price;
+// m ár csak akkor változik, ha van érvényes százalékos kedvezmény
+const hasMPrice = typeof product.mprice === 'number' && product.mprice > 0;
+const discountMPrice = hasMPrice && hasValidDiscountPercent
+  ? Math.round(product.mprice * (1 - product.discountPercent / 100))
+  : product.mprice;
 
 // m2 ár is csak akkor változik, ha van érvényes százalékos kedvezmény
 const hasM2Price = typeof product.m2price === 'number' && product.m2price > 0;
 const discountM2Price = hasM2Price && hasValidDiscountPercent
   ? Math.round(product.m2price * (1 - product.discountPercent / 100))
   : product.m2price;
+
+// m3 ár csak akkor változik, ha van érvényes százalékos kedvezmény
+const hasM3Price = typeof product.m3price === 'number' && product.m3price > 0;
+const discountM3Price = hasM3Price && hasValidDiscountPercent
+  ? Math.round(product.m3price * (1 - product.discountPercent / 100))
+  : product.m3price;
+
+// raklap ár is csak akkor változik, ha van érvényes százalékos kedvezmény
+const hasPalPrice = typeof product.palprice === 'number' && product.palprice > 0;
+const discountPalPrice = hasPalPrice && hasValidDiscountPercent
+  ? Math.round(product.palprice * (1 - product.discountPercent / 100))
+  : product.palprice;
 
 const metadata = {
   title: product.meta.title,
@@ -112,21 +124,21 @@ function getShippingDetails(product) {
       depth: {
         "@type": "QuantitativeValue",
         value: sd.depth,
-        unitText: "CM"
+        unitText: "cm"
       }
     }),
     ...(typeof sd.width === 'number' && {
       width: {
         "@type": "QuantitativeValue",
         value: sd.width,
-        unitText: "CM"
+        unitText: "cm"
       }
     }),
     ...(typeof sd.height === 'number' && {
       height: {
         "@type": "QuantitativeValue",
         value: sd.height,
-        unitText: "CM"
+        unitText: "cm"
       }
     })
   };
@@ -151,8 +163,8 @@ const schemaProduct = {
   ...(product.aggregateRating && {
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": product.aggregateRating.ratingValue.toString(),
-      "reviewCount": product.aggregateRating.reviewCount.toString()
+      "ratingValue": product.aggregateRating.ratingValue,
+      "reviewCount": product.aggregateRating.reviewCount
     }
   }),
    "offers": [
@@ -172,6 +184,14 @@ const schemaProduct = {
             "name": "Elvira Tüzép"
           },
           "unitCode": "C62",
+
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": hasDiscount && discountPrice ? discountPrice : product.price,
+            "priceCurrency": "HUF",
+            "unitCode": "C62"
+          },
+
           ...(typeof calc_shippingWeight === 'number' && {
               weight: {
                 "@type": "QuantitativeValue",
@@ -179,41 +199,62 @@ const schemaProduct = {
                 unitText: "KG"
               }
             }),
+
           ...(hasDiscount && product.discountValidUntil
-            ? { priceValidUntil: product.discountValidUntil }
+            ? { 
+              validThrough: product.discountValidUntil,
+              priceValidUntil: product.discountValidUntil 
+            }
             : {}),
+
           ...(shipping && { shippingDetails: shipping })
         }]
       : []),
 
-    ...(typeof product.m3price === "number" && product.m3price > 0
+    ...(typeof product.mprice === "number" && product.mprice > 0
       ? [{
           "@type": "Offer",
           "priceCurrency": "HUF",
           "price": hasDiscount
-            ? Math.round(product.m3price * (1 - (discountPercent ?? 0) / 100))
-            : product.m3price,
+            ? Math.round(product.mprice * (1 - (discountPercent ?? 0) / 100))
+            : product.mprice,
           "availability": product.stock > 0
             ? "https://schema.org/InStock"
             : "https://schema.org/PreOrder",
           "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
           "itemCondition": "https://schema.org/NewCondition",
-          "name": `${product.name} – köbméterár`,
+          "name": `${product.name} – méterár`,
           "seller": {
             "@type": "Organization",
             "name": "Elvira Tüzép"
           },
-          "unitCode": "MTQ",
-            ...(typeof calc_shippingWeight === 'number' && {
-              weight: {
-                "@type": "QuantitativeValue",
-                value: calc_shippingWeight,
-                unitText: "KG"
-              }
-            }),
+          "unitCode": "MTR",
+
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": hasDiscount
+              ? Math.round(product.mprice * (1 - (discountPercent ?? 0) / 100))
+              : product.mprice,
+            "priceCurrency": "HUF",
+            "unitCode": "MTR"
+          },
+
+
+          ...(typeof calc_shippingWeight === 'number' && {
+            weight: {
+              "@type": "QuantitativeValue",
+              value: calc_shippingWeight,
+              unitText: "KG"
+            }
+          }),
+
           ...(hasDiscount && product.discountValidUntil
-            ? { validThrough: product.discountValidUntil }
+            ? { 
+              validThrough: product.discountValidUntil,
+              priceValidUntil: product.discountValidUntil
+             }
             : {}),
+
           ...(shipping && { shippingDetails: shipping })
         }]
       : []),
@@ -236,15 +277,122 @@ const schemaProduct = {
             "name": "Elvira Tüzép"
           },
           "unitCode": "MTK",
-            ...(typeof calc_shippingWeight === 'number' && {
-              weight: {
-                "@type": "QuantitativeValue",
-                value: calc_shippingWeight,
-                unitText: "KG"
-              }
-            }),
+
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": hasDiscount
+              ? Math.round(product.m2price * (1 - (discountPercent ?? 0) / 100))
+              : product.m2price,
+            "priceCurrency": "HUF",
+            "unitCode": "MTK"
+          },
+
+          ...(typeof calc_shippingWeight === 'number' && {
+            weight: {
+              "@type": "QuantitativeValue",
+              value: calc_shippingWeight,
+              unitText: "KG"
+            }
+          }),
+
           ...(hasDiscount && product.discountValidUntil
-            ? { validThrough: product.discountValidUntil }
+            ? { 
+              validThrough: product.discountValidUntil,
+              priceValidUntil: product.discountValidUntil
+              }
+            : {}),
+
+          ...(shipping && { shippingDetails: shipping })
+        }]
+      : []),
+
+    ...(typeof product.m3price === "number" && product.m3price > 0
+      ? [{
+          "@type": "Offer",
+          "priceCurrency": "HUF",
+          "price": hasDiscount
+            ? Math.round(product.m3price * (1 - (discountPercent ?? 0) / 100))
+            : product.m3price,
+          "availability": product.stock > 0
+            ? "https://schema.org/InStock"
+            : "https://schema.org/PreOrder",
+          "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
+          "itemCondition": "https://schema.org/NewCondition",
+          "name": `${product.name} – köbméterár`,
+          "seller": {
+            "@type": "Organization",
+            "name": "Elvira Tüzép"
+          },
+          "unitCode": "MTQ",
+
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": hasDiscount
+              ? Math.round(product.m3price * (1 - (discountPercent ?? 0) / 100))
+              : product.m3price,
+            "priceCurrency": "HUF",
+            "unitCode": "MTQ"
+          },
+
+          ...(typeof calc_shippingWeight === 'number' && {
+            weight: {
+              "@type": "QuantitativeValue",
+              value: calc_shippingWeight,
+              unitText: "KG"
+            }
+          }),
+
+          ...(hasDiscount && product.discountValidUntil
+            ? { 
+                validThrough: product.discountValidUntil,
+                priceValidUntil: product.discountValidUntil
+              }
+            : {}),
+          ...(shipping && { shippingDetails: shipping })
+        }]
+      : []),
+
+      ...(typeof product.palprice === "number" && product.palprice > 0
+      ? [{
+          "@type": "Offer",
+          "priceCurrency": "HUF",
+          "price": hasDiscount
+            ? Math.round(product.palrice * (1 - (discountPercent ?? 0) / 100))
+            : product.palprice,
+          "availability": product.stock > 0
+            ? "https://schema.org/InStock"
+            : "https://schema.org/PreOrder",
+          "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
+          "itemCondition": "https://schema.org/NewCondition",
+          "name": `${product.name} – raklapár`,
+          "seller": {
+            "@type": "Organization",
+            "name": "Elvira Tüzép"
+          },
+          "unitCode": "PAL",
+
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": hasDiscount
+              ? Math.round(product.palprice * (1 - (discountPercent ?? 0) / 100))
+              : product.palprice,
+            "priceCurrency": "HUF",
+            "unitCode": "PAL"
+          },
+
+          ...(typeof calc_shippingWeight === 'number' && {
+            weight: {
+              "@type": "QuantitativeValue",
+              value: calc_shippingWeight,
+              unitText: "KG"
+            }
+          }),
+
+          ...(hasDiscount && product.discountValidUntil
+            ? { 
+                validThrough: product.discountValidUntil,
+                priceValidUntil: product.discountValidUntil
+              }
             : {}),
           ...(shipping && { shippingDetails: shipping })
         }]
@@ -356,7 +504,34 @@ const schemaBreadcrumb = {
               )}
             </div>
           )}
-          
+
+          {hasMPrice && (
+            <div class="font-semibold text-gray-700 dark:text-gray-300 mb-4">
+              {hasDiscount && discountMPrice !== null ? (
+                <>
+                  Bruttó ár:
+                  <span class="line-through text-gray-500 mr-2">{formatPrice(product.mprice)} Ft/m</span>
+                  <span class="text-red-600 font-bold">{formatPrice(discountMPrice)} Ft/m</span>
+                </>
+              ) : (
+                `Bruttó ár: ${formatPrice(product.mprice)} Ft/m`
+              )}
+            </div>
+          )}
+
+          {hasM2Price && (
+            <div class="font-semibold text-gray-700 dark:text-gray-300 mb-4">
+              Bruttó ár:
+              {hasDiscount && discountM2Price !== null ? (
+                <>
+                  <span class="line-through text-gray-500 mr-2">{formatPrice(product.m2price)} Ft/m²</span>
+                  <span class="ml-2 text-red-600 font-semibold">{formatPrice(discountM2Price)} Ft/m²</span>
+                </>
+              ) : (
+                <span class="ml-2">{formatPrice(product.m2price)} Ft/m²</span>
+              )}
+            </div>
+          )}
           
           {hasM3Price && (
             <div class="font-semibold text-gray-700 dark:text-gray-300 mb-4">
@@ -372,16 +547,16 @@ const schemaBreadcrumb = {
             </div>
           )}
 
-          {hasM2Price && (
+          {hasPalPrice && (
             <div class="font-semibold text-gray-700 dark:text-gray-300 mb-4">
               Bruttó ár:
-              {hasDiscount && discountM2Price !== null ? (
+              {hasDiscount && discountPalPrice !== null ? (
                 <>
-                  <span class="line-through text-gray-500 mr-2">{formatPrice(product.m2price)} Ft/m²</span>
-                  <span class="ml-2 text-red-600 font-semibold">{formatPrice(discountM2Price)} Ft/m²</span>
+                  <span class="line-through text-gray-500 mr-2">{formatPrice(product.palprice)} Ft/raklap</span>
+                  <span class="ml-2 text-red-600 font-semibold">{formatPrice(discountPalPrice)} Ft/raklap</span>
                 </>
               ) : (
-                <span class="ml-2">{formatPrice(product.m2price)} Ft/m²</span>
+                <span class="ml-2">{formatPrice(product.palprice)} Ft/raklap</span>
               )}
             </div>
           )}

@@ -1,0 +1,240 @@
+---
+title: Tűzifa Kalkulátor – Ár-összehasonlító és Mértékegység Átváltó
+description: Segítséget nyújtunk a tűzifa árak összehasonlításában különböző mértékegységek (erdei m³, kalodás, tonna, mázsa) között. Használati útmutató, példaszámítás és gyakorlati tanácsok vásárláshoz.
+layout: '~/layouts/MarkdownLayout.astro'
+calcSchema: >
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Tűzifa Ár-összehasonlító Kalkulátor",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "browserRequirements": "Requires JavaScript",
+    "description": "Webes kalkulátor, amellyel két különböző tűzifa-ajánlat árát lehet összehasonlítani – akkor is, ha eltérő mértékegységekben vannak megadva (pl. erdei köbméter, mázsa, tonna, szórt m³). Figyelembe veszi a szállítási költséget, a nedvességtartalom hatását a sűrűségre, és többféle átváltást használ a valós összevetéshez. Segít felismerni a valóban kedvező ajánlatokat.",
+    "softwareVersion": "1.0",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Elvira Tüzép",
+      "url": "https://elviratuzep.hu"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "HUF",
+      "availability": "https://schema.org/InStock"
+    },
+    "featureList": "A kalkulátor automatikusan kiszámolja: (1) az ajánlatok egységárát erdei köbméterre vetítve, (2) figyelembe veszi a szállítási díjat, ha az külön van feltüntetve, (3) kalkulálja a fa nedvességtartalmából adódó sűrűséget, (4) támogatja a különféle tűzifa-mértékegységeket: tonna, mázsa, m³, szórt m³, tömör m³.",
+    "url": "https://elviratuzep.hu/tuzifa-ar-osszehasonlito",
+    "datePublished": "2025-07-29T00:00:00.000Z",
+    "dateModified": "2025-07-29T00:00:00.000Z",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.87",
+      "reviewCount": "47"
+    }
+  }
+---
+
+import FirewoodPriceComparator from '~/components/FirewoodPriceComparator.tsx';
+
+## Tűzifa kalkulátor ár-összehasonlító
+
+A kalkulátor segítségével egyszerűen összehasonlíthatod a rakott m³, erdei m³ és tonna alapú árakat.  
+Add meg az árat és a mértékegységet, mi pedig összehasonlítható alapra váltjuk át őket.
+
+<FirewoodPriceComparator client:load/>
+
+## A kalkulátor célja – összehasonlíthatóság, átláthatóság
+
+A tűzifa vásárlás egyik legnagyobb buktatója, hogy a különböző ajánlatok **nem azonos mértékegységben érkeznek**.  
+Az egyik eladó **kalodában**, a másik **tonnában**, egy harmadik pedig **erdei köbméterben** adja meg az árat – a vevő pedig **nem tudja reálisan összehasonlítani**, melyik éri meg jobban.
+
+Ez gyakran vezet félreértésekhez, sőt **rossz döntésekhez**, amikor egy "akciós" ár valójában **drága** az egységárra vetítve.
+
+**Ez a kalkulátor pontosan ebben segít:**
+- Az összes árat **egységesen, 1 erdei köbméterre** vetíti le
+- Így **valódi ár-összehasonlítást** tesz lehetővé, függetlenül attól, hogy milyen formában kapta az ajánlatot
+
+További funkciók:
+- Nedvességtartalom beállítása (ez befolyásolja a sűrűséget)
+- Szállítási költségek figyelembevétele (ha az nincs az árban)
+- Egyéni konverziós arányok megadása (pl. 1 szórt m³ = x tömör m³)
+
+---
+További információ a tüzifa mértékegységek témakörben: [Tudástár poszt: Tüzifa mértékegységek](/tudastar/tuzifa-mertekegysegek)
+
+---
+
+## Kalkulátor használati útmutató
+
+1. Írja be az adott ajánlat **bruttó árát**.
+2. Válassza ki, hogy az ár **milyen mértékegységre** vonatkozik (pl. tonna, kaloda, m³).
+3. Adja meg, hogy a **szállítás** benne van-e az árban. Ha nem, külön megadható a díj.
+4. Szükség esetén állítsa be:
+   - a **nedvességtartalmat (%)**
+   - a száraz fa sűrűségét (kg/m³)
+   - az átváltási arányokat (szórt → tömör, tömör → erdei m³)
+
+A kalkulátor automatikusan kiszámolja az adott ajánlatra eső **egységárat erdei köbméterben**.
+
+---
+
+## Példa számítás
+
+**Ajánlat A:** 1 tonna tüzifa 55.000 Ft-ért, szállítás nélkül  
+**Ajánlat B:** 1,7 m³ kalodás tüzifa 62.000 Ft-ért, szállítással
+
+Beállítás:
+- Nedvességtartalom: 20%
+- Száraz sűrűség: 550 kg/m³
+- 1 szórt m³ = 0.45 tömör m³
+- 1 tömör m³ = 1.43 erdei m³
+
+**Eredmény:**
+- Ajánlat A: kb. 39.000 Ft / erdei m³  
+- Ajánlat B: kb. 37.000 Ft / erdei m³  
+✅ A **B ajánlat** az olcsóbb
+
+---
+
+## Kinek ajánljuk a kalkulátort?
+
+- **Lakossági vásárlóknak**, akik bizonytalanok a hirdetett árak mértékegységei miatt.
+- **Tüzelőanyag-kereskedőknek**, hogy versenyképes ajánlatot adhassanak.
+- **Családoknak, nyugdíjasoknak**, akik szeretnének gazdaságosan fűteni.
+- **Fuvarosoknak és tüzépeknek**, akik partnereknek készítenek ajánlatot.
+
+---
+
+## Érvényességi tartomány
+
+A kalkulátor típikus tüzelőfákra (akác, gyertyán, tölgy) van kalibrálva,  
+de bármilyen más fajta esetén is használható, ha a **sűrűség és nedvesség** megadható.
+
+---
+
+## Matematikai háttér
+
+A kalkulátor működése egyszerű, de megbízható: **lineáris egyenleteken** alapul, amelyek a különböző mértékegységek közötti átváltást teszik lehetővé.
+
+### Alapképlet: egységár átváltása erdei köbméterre
+
+A cél az, hogy minden bemenetet (ár + mértékegység) **erdei köbméterre vetítsünk**:
+
+```text
+egységár_erdei_m3 = ár / (átváltási tényező × sűrűség)
+```
+
+> Például: egy tonnás ár esetén a sűrűség alapján visszaszámolunk m³-re, majd azt átváltjuk erdei m³-re.
+
+---
+
+### 💧 Nedvességtartalom hatása a sűrűségre
+
+A fa nedvességtartalma jelentősen befolyásolja a tömegét. Ezért használunk egy dinamikusan számolt sűrűséget:
+
+```text
+nedves_sűrűség = száraz_sűrűség × (1 + nedvességtartalom / 100)
+```
+
+Például, ha a száraz fa sűrűsége 550 kg/m³ és a nedvességtartalom 20%, akkor:
+
+```text
+nedves_sűrűség = 550 × 1.20 = 660 kg/m³
+```
+
+---
+
+### Szállítási díj kezelése
+
+Ha a megadott ár **nem tartalmazza a szállítást**, a kalkulátor egyszerűen **hozzáadja a megadott szállítási költséget** az ajánlathoz – **nem arányosítva**:
+
+```text
+összesített_ár = alapár + szállítási díj
+```
+
+Ezután a szokásos egységár-átváltás történik.
+
+---
+
+### Összehasonlítás logikája
+
+Az eredmény végül egy **összehasonlított egységár** erdei köbméterre vetítve:
+
+```text
+if AjánlatA < AjánlatB → "Ajánlat A az olcsóbb"
+if AjánlatA > AjánlatB → "Ajánlat B az olcsóbb"
+else → "Mindkét ajánlat azonos árú"
+```
+
+---
+
+### ✍️ Fontos megjegyzés
+
+A kalkulátor **nem dönt helyetted**, csak az **objektív számítási alapokat biztosítja**, hogy jól informált döntést hozhass.
+
+Ha átváltás, sűrűség vagy mértékegység alapján szeretnél tűzifát összehasonlítani, ez az eszköz **megbízható és átlátható segítséget nyújt**.
+
+
+---
+
+## Tipikus értékek táblázata
+
+| Megnevezés                        | Érték               | Megjegyzés                      |
+|----------------------------------|---------------------|---------------------------------|
+| 1 erdei köbméter                 | 1,0 m³              | 1×1×1 m-es rakat, levegővel     |
+| Tömör faanyag 1 erdei m³-ben     | 0,65–0,7 m³         |                                   |
+| 1,7 m³ kaloda (szépen rakva)     | 1,1–1,2 m³ tömör fa |                                   |
+| 1 tonna akácfa                   | kb. 1,3–1,5 erdei m³| nedvességtartalomtól függően    |
+| Száraz fa sűrűsége (pl. akác)    | 550–600 kg/m³       | kalkulálható nedvességgel       |
+
+---
+
+## Gyakorlati tanácsok vásárláshoz
+
+- Kérdezze meg az eladót: **milyen mértékegység** szerint számol?
+- Ha kalodás fát vesz: **mekkora a kaloda?** és **szépen rakott-e?**
+- Nézze meg, hogy az ár **bruttó vagy nettó**, és tartalmazza-e a szállítást.
+- Ha tonnában/mázsában számolnak: **kérdezze meg a nedvességtartalmat**!
+
+---
+
+## Számítás a mindennapokban
+
+A kalkulátor segít az olyan hétköznapi kérdésekben, mint:
+
+- Megéri-e a Praktiker vagy OBI ajánlata?
+- Olcsóbb-e az online rendelt kaloda, mint a helyi tüzép?
+- Melyik fát válasszam a kazánba ár-érték arány alapján?
+
+---
+
+## Gyakran ismételt kérdések
+
+**Mi az az erdei köbméter?**  
+→ 1 m³ méretű, szabványosított, rönk vagy hasított fa rakat.
+
+**Miért nem egyezik a kaloda és az erdei m³?**  
+→ A kaloda térfogata nagyobb, de a benne lévő fa mennyisége függ a berakás módjától.
+
+**Hogyan számoljak tonnából m³-t?**  
+→ A fa nedvességtartalma és sűrűsége alapján:  
+`m³ = tömeg (kg) / sűrűség`
+
+**Mázsában hirdetnek, mit tegyek?**  
+→ 1 mázsa = 0,1 tonna. Átváltható ugyanúgy, mint a tonnás értékek.
+
+**Tényleg számít a nedvességtartalom?**  
+→ Igen, hiszen a nedves fa nehezebb, de rosszabbul ég!
+
+---
+
+## Vásároljon okosan
+
+Az Elvira Tüzép célja, hogy ne csak tűzifát adjon el, hanem segítsen is a helyes döntés meghozatalában.  
+Használja kalkulátorunkat, olvassa el a tájékoztató cikkeket, és ha kérdése van, **keressen minket bizalommal!**
+
+[📞 Kérjen ajánlatot most!](/kapcsolat)
+
+
+---

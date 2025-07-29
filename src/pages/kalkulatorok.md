@@ -32,4 +32,10 @@ Ideális megoldás fal- és mennyezetburkoláshoz, lakossági és ipari vásárl
 
 ---
 
+### [Tűzifa Ár-összehasonlító Kalkulátor](/tuzifa-ar-osszehasonlito)
+
+Segítségével egyszerűen összehasonlítható két különböző tűzifa-ajánlat egységára, még akkor is, ha más-más mértékegységben (pl. erdei köbméter, mázsa, tonna, szórt m³) adják meg őket.
+
+---
+
 *Az Elvira Tüzép kalkulátorai megkönnyítik a döntést és segítenek pontosan tervezni – próbálja ki Ön is!*  

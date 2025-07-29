@@ -12,11 +12,15 @@ const discountPercent = product.finalDiscountPercent;
 
 const hasDiscount = typeof discountPrice === 'number' && typeof discountPercent === 'number';
 
+const hasMPrice = typeof product.mprice === 'number' && product.mprice > 0;
 const hasM2Price = typeof product.m2price === 'number' && product.m2price > 0;
 const hasM3Price = typeof product.m3price === 'number' && product.m3price > 0;
+const hasPalPrice = typeof product.palprice === 'number' && product.palprice > 0;
 
+const discountMPrice = hasDiscount && hasMPrice ? Math.round(product.mprice * (1 - discountPercent / 100)) : null;
 const discountM2Price = hasDiscount && hasM2Price ? Math.round(product.m2price * (1 - discountPercent / 100)) : null;
 const discountM3Price = hasDiscount && hasM3Price ? Math.round(product.m3price * (1 - discountPercent / 100)) : null;
+const discountPalPrice = hasDiscount && hasPalPrice ? Math.round(product.palprice * (1 - discountPercent / 100)) : null;
 
 function formatPrice(price) {
   return new Intl.NumberFormat('hu-HU').format(price);
@@ -36,18 +40,33 @@ function formatPrice(price) {
   <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white">{product.name}</h3>
   <p class="text-sm text-gray-600 dark:text-gray-400">{product.description}</p>
 
-  <div class="text-sm text-gray-700 dark:text-gray-300">
+  {discountPrice !== 0 && (
+    <div class="text-sm text-gray-700 dark:text-gray-300">
+      {hasDiscount && discountPrice && discountPrice !== null && discountPrice !== 0 ? (
+        <>
+          <span class="line-through mr-2 text-gray-400">{formatPrice(product.price)} Ft/db</span>
+          <span class="text-red-600 font-bold">{formatPrice(discountPrice)} Ft/db</span>
+        </>
+      ) : (
+        <span>{formatPrice(product.price)} Ft/db</span>
+      )}
+    </div>
+  )}
 
-    {hasDiscount && discountPrice !== null ? (
-      <>
-        <span class="line-through mr-2 text-gray-400">{formatPrice(product.price)} Ft/db</span>
-        <span class="text-red-600 font-bold">{formatPrice(discountPrice)} Ft/db</span>
-      </>
-    ) : (
-      <span>{formatPrice(product.price)} Ft/db</span>
-    )}
-  </div>
-
+  {hasMPrice && (
+    <div class="text-xs mt-1 text-gray-600 dark:text-gray-400">
+      m ár:
+      {hasDiscount && discountMPrice !== null ? (
+        <>
+          <span class="line-through ml-1 mr-1">{formatPrice(product.mprice)} Ft/m</span>
+          <span class="text-red-600 font-semibold">{formatPrice(discountMPrice)} Ft/m</span>
+        </>
+      ) : (
+        <span class="ml-1">{formatPrice(product.mprice)} Ft/m</span>
+      )}
+    </div>
+  )}
+  
   {hasM2Price && (
     <div class="text-xs mt-1 text-gray-600 dark:text-gray-400">
       m² ár:
@@ -72,6 +91,20 @@ function formatPrice(price) {
         </>
       ) : (
         <span class="ml-1">{formatPrice(product.m3price)} Ft/m³</span>
+      )}
+    </div>
+  )}
+
+  {hasPalPrice && (
+    <div class="text-sm mt-1 text-gray-600 dark:text-gray-400">
+      Ár:
+      {hasDiscount && discountPalPrice !== null ? (
+        <>
+          <p class="line-through ml-1 mr-1">{formatPrice(product.palprice)} Ft/raklap</p>
+          <p class="text-red-600 font-semibold">{formatPrice(discountPalPrice)} Ft/raklap</p>
+        </>
+      ) : (
+        <span class="ml-1">{formatPrice(product.palprice)} Ft/raklap</span>
       )}
     </div>
   )}

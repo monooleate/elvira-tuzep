@@ -47,7 +47,12 @@ export const headerData = {
         {
           text: 'Felület Ár Kalkulátor',
           href: getPermalink('/faanyag-negyzetmeter-kalkulator')
+        },
+                {
+          text: 'Tüzifa Ár Összehasonlító',
+          href: getPermalink('/tuzifa-ar-osszehasonlito')
         }
+        
         
       ]
       
