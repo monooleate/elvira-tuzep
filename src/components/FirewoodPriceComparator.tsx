@@ -5,8 +5,9 @@ export default function FirewoodComparisonCalculator() {
   const [offerB, setOfferB] = useState({ price: '', unit: 'erdei_m3', deliveryIncluded: true, deliveryCost: '' });
   const [moisture, setMoisture] = useState(20);
   const [dryDensity, setDryDensity] = useState(550);
+  
   const [conversion, setConversion] = useState({
-    m3_to_erdei: '0.6',
+    m3_to_erdei: '1.67',
     erdei_to_ton: '1.4',
     szort_to_m3: '0.45',
     tomor_to_erdei: '1.43'
@@ -21,12 +22,14 @@ export default function FirewoodComparisonCalculator() {
     return Math.round(dryDensity * (1 + moistureFraction));
   };
 
+  const [calculatedDensity, setCalculatedDensity] = useState(getDensity());
+
   const convertToErdeiM3 = (price, unit, conv) => {
     const m3ToErdei = parseInput(conv.m3_to_erdei);
     const erdeiToTon = parseInput(conv.erdei_to_ton);
     const szortToTomor = parseInput(conv.szort_to_m3);
     const tomorToErdei = parseInput(conv.tomor_to_erdei);
-    const density = getDensity();
+    const density = calculatedDensity;
 
     switch (unit) {
       case 'm3':
@@ -34,11 +37,13 @@ export default function FirewoodComparisonCalculator() {
       case 'erdei_m3':
         return price;
       case 'tonna':
-        return (price * 1000) / density / tomorToErdei;
+        return price * density * tomorToErdei / 1000;
       case 'mazsa':
-        return ((price / 0.1) * 1000) / density / tomorToErdei;
+        return (price * 10) * density * tomorToErdei / 1000;
       case 'szort_m3':
         return price / (szortToTomor * tomorToErdei);
+      case 'rakott_m3':
+        return price / m3ToErdei;
       case 'tomor_m3':
         return price / tomorToErdei;
       default:
@@ -95,6 +100,10 @@ const compare = () => {
     { value: 'szort_m3', label: 'Szórt m³' },
     { value: 'tomor_m3', label: 'Tömör m³' }
   ];
+
+  useEffect(() => {
+    setCalculatedDensity(getDensity());
+    }, [moisture, dryDensity]);
 
   return (
     <section className="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-6 max-w-2xl mx-auto mt-8">
@@ -216,6 +225,25 @@ const compare = () => {
             className="w-full mt-1 p-2 border rounded bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white"
           />
         </div>
+
+        <div>
+          <label className="block text-sm text-gray-700 dark:text-gray-300">
+            1 rakott m³ hány erdei m³?
+          </label>
+          <input
+            type="number"
+            step="0.01"
+            value={conversion.m3_to_erdei}
+            onInput={(e) =>
+              setConversion((prev) => ({
+                ...prev,
+                m3_to_erdei: e.currentTarget.value,
+              }))
+            }
+            className="w-full mt-1 p-2 border rounded bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white"
+          />
+        </div>
+
       </div>
 
       <button
