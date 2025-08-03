@@ -117,6 +117,8 @@ const metadata = {
                 ? Math.round((1 - discountPrice / product.price) * 100)
                 : null);
 
+          const discountPercentView = parseFloat(Number(discountPercent).toFixed(1));
+
           const hasMPrice = typeof product.mprice === 'number' && product.mprice > 0;
           const hasM2Price = typeof product.m2price === 'number' && product.m2price > 0;
           const hasM3Price = typeof product.m3price === 'number' && product.m3price > 0;
@@ -151,7 +153,7 @@ const metadata = {
               {/* Százalék badge - JOBB FELSŐ SAROK */}
               {hasDiscount && discountPercent !== null && (
                 <div class="absolute top-2 right-2 bg-red-600 text-white text-sm font-extrabold px-3 py-1 rounded z-10 shadow">
-                  -{discountPercent}%
+                  -{discountPercentView}%
                 </div>
               )}
 

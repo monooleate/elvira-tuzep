@@ -63,6 +63,8 @@ const discountPercent = hasValidDiscountPercent
       ? Math.round((1 - discountPrice / product.price) * 100)
       : null);
 
+const discountPercentView = parseFloat(Number(discountPercent).toFixed(1));
+
 // m ár csak akkor változik, ha van érvényes százalékos kedvezmény
 const hasMPrice = typeof product.mprice === 'number' && product.mprice > 0;
 const discountMPrice = hasMPrice && hasValidDiscountPercent
@@ -477,11 +479,11 @@ const schemaBreadcrumb = {
           <img src={product.image} alt={product.name} class="rounded shadow w-full object-cover" />
           {hasDiscount && discountPercent !== null && (
             <>
-              <div class="absolute top-2 left-2 bg-red-600 text-white px-3 py-1 text-xs font-bold rounded shadow">
+              <div class="absolute top-2 left-2 bg-red-600 text-white px-3 py-1 font-bold rounded shadow">
                 Akció
               </div>
-              <div class="absolute top-2 right-2 bg-red-600 text-white px-3 py-1 text-xs font-bold rounded shadow">
-                -{discountPercent}%
+              <div class="absolute top-2 right-2 bg-red-600 text-white px-3 py-1 font-bold rounded shadow">
+                -{discountPercentView}%
               </div>
             </>
           )}
