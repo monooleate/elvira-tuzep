@@ -33,6 +33,8 @@
     "astro-embed": "^0.9.0",
     "astro-icon": "^1.1.5",
     "dotenv": "^16.5.0",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "fuse.js": "^7.1.0",
     "googleapis": "^150.0.1",
     "html-escaper": "^3.0.3",
@@ -40,8 +42,10 @@
     "lodash.merge": "^4.6.2",
     "lucide-preact": "^0.511.0",
     "mermaid": "^11.9.0",
+    "photoswipe": "^5.4.4",
     "preact": "^10.26.8",
-    "unpic": "^4.1.2"
+    "unpic": "^4.1.2",
+    "yet-another-react-lightbox": "^3.25.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",

@@ -1,0 +1,255 @@
+---
+
+
+interface Category {
+  slug: string;
+  category: string;
+  description?: string;
+  maincategory?: string; // <-- főkategória (pl. "Építőfa", "Tüzelőanyag"); hiány esetén "Egyéb"
+  meta?: {
+    image?: string;
+    description?: string;
+    title?: string;
+  };
+}
+
+const { categories = [] as Category[] }: { categories?: Category[] } = Astro.props;
+
+// slug biztonságos ID-hoz
+const slugify = (s: string) =>
+  s.normalize('NFD')
+   .replace(/[\u0300-\u036f]/g, '')
+   .toLowerCase()
+   .replace(/\s+/g, '-')
+   .replace(/[^a-z0-9\-]/g, '')
+   .replace(/\-+/g, '-')
+   .replace(/^\-|\-$/g, '');
+
+// 1) ha nincs maincategory → "Egyéb"
+// 2) minden elem biztosan kap maincategory-t
+const safeData = Array.isArray(categories)
+  ? categories.map((c) => ({ ...c, maincategory: c.maincategory?.trim() || 'Egyéb' }))
+  : [];
+
+// tabok listája
+let mainTabs = [...new Set(safeData.map((c) => c.maincategory!))];
+if (mainTabs.length === 0) mainTabs = ['Egyéb'];
+
+const initialTab = mainTabs[0];
+
+// csoportosítás
+const grouped = mainTabs.map((name) => ({
+  name,
+  items: safeData.filter((c) => c.maincategory === name),
+}));
+
+const toId = (s: string) => `tab-${slugify(s)}`;
+---
+
+<section class="py-8 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8" id="tabs-root" data-initial={initialTab}>
+    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+      Termékkategóriák
+    </h2>
+
+    <!-- Sticky tabs wrapper -->
+<!-- Sticky, középre igazított, több sorba törő tabs -->
+<div
+  id="tabs-bar"
+  class="sticky top-[calc(env(safe-area-inset-top)+72px)] md:static z-30
+         bg-gray-50/90 dark:bg-gray-900/80 backdrop-blur"
+  role="tablist"
+  aria-label="Főkategóriák"
+>
+  <div class="px-4">
+    <div class="flex flex-wrap justify-center gap-2 py-4">
+      {mainTabs.map((name) => (
+        <button
+          id={toId(name)}
+          type="button"
+          role="tab"
+          aria-selected={name === initialTab ? 'true' : 'false'}
+          aria-controls={`panel-${toId(name)}`}
+          data-tab={name}
+          class={`px-4 py-2 rounded-full text-base font-medium transition border
+            ${name === initialTab
+              ? 'bg-blue-600 text-white border-transparent shadow'
+              : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700'}`}
+        >
+          {name}
+        </button>
+      ))}
+    </div>
+  </div>
+</div>
+
+
+    <!-- Panlek (rács) -->
+    {grouped.map(({ name, items }) => (
+      <section
+        id={`panel-${toId(name)}`}
+        role="tabpanel"
+        aria-labelledby={toId(name)}
+        data-panel={name}
+        class={`${name === initialTab ? '' : 'hidden'} scroll-mt-[calc(env(safe-area-inset-top)+100px)]`}
+      >
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6
+                motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade
+                intersect-once intersect-quarter intercept-no-queue"
+        >
+          {items.length === 0 ? (
+            <div class="col-span-full text-sm text-gray-600 dark:text-gray-400">
+              Nincs megjeleníthető kategória ebben a fülben.
+            </div>
+          ) : (
+            items.map((category) => (
+              <a
+                href={`/termekek/${category.slug}`}
+                class="block border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800"
+              >
+                <img
+                  src={category.meta?.image || '/placeholder.svg'}
+                  alt={category.category}
+                  class="w-full h-48 object-cover"
+                  loading="lazy"
+                />
+                <div class="p-4">
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                    {category.category}
+                  </h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    {category.meta?.description || category.description || ''}
+                  </p>
+                </div>
+              </a>
+            ))
+          )}
+        </div>
+      </section>
+    ))}
+  </div>
+</section>
+
+<script is:inline>
+  const root = document.getElementById('tabs-root');
+  const bar  = document.getElementById('tabs-bar');
+  const OFFSET_TARGETS = ['#header', '#tabs-bar'];
+  const EXTRA_PADDING = 0;
+
+  function measureOffset() {
+    let total = 0;
+    for (const sel of OFFSET_TARGETS) {
+      const el = document.querySelector(sel);
+      if (!el) continue;
+      const rect  = el.getBoundingClientRect();
+      const style = getComputedStyle(el);
+      const pos   = style.position;
+      const topCss = parseFloat(style.top || '0') || 0;
+
+      const isFixed  = pos === 'fixed';
+      const isSticky = pos === 'sticky';
+      const isStuck  = isSticky ? Math.round(rect.top) <= Math.round(topCss) + 1 : false;
+
+      const visible  = rect.height > 0 && el.offsetParent !== null;
+      if (visible && (isFixed || isStuck)) {
+        total += rect.height;
+      }
+    }
+    return Math.round(total + EXTRA_PADDING);
+  }
+
+  const panels = root ? Array.from(root.querySelectorAll('[data-panel]')) : [];
+  const tabs   = root ? Array.from(root.querySelectorAll('[data-tab]'))   : [];
+  let active   = root?.getAttribute('data-initial') || '';
+
+  function applyScrollMarginTop(offset) {
+    panels.forEach((p) => { p.style.scrollMarginTop = offset + 'px'; });
+  }
+
+  function show(name) {
+    tabs.forEach((btn) => {
+      const on = btn.getAttribute('data-tab') === name;
+      btn.setAttribute('aria-selected', on ? 'true' : 'false');
+      btn.classList.toggle('bg-orange-600', on);
+      btn.classList.toggle('text-white', on);
+      btn.classList.toggle('shadow', on);
+      btn.classList.toggle('border-transparent', on);
+      btn.classList.toggle('bg-white', !on);
+      btn.classList.toggle('dark:bg-gray-800', !on);
+      btn.classList.toggle('text-gray-700', !on);
+      btn.classList.toggle('dark:text-gray-200', !on);
+      btn.classList.toggle('border-gray-200', !on);
+      btn.classList.toggle('dark:border-gray-700', !on);
+      btn.classList.toggle('hover:bg-gray-100', !on);
+      btn.classList.toggle('dark:hover:bg-gray-700', !on);
+    });
+    panels.forEach((p) => {
+      const on = p.getAttribute('data-panel') === name;
+      p.classList.toggle('hidden', !on);
+    });
+  }
+
+  // ÚJ: csak akkor scrollozzunk, ha tényleg kell
+  function scrollPanelTopIfNeeded() {
+    const visible = panels.find(p => !p.classList.contains('hidden'));
+    if (!visible) return;
+
+    const offset = measureOffset();
+    applyScrollMarginTop(offset);
+
+    const desiredTop = visible.getBoundingClientRect().top + window.scrollY - offset;
+
+    // Ha a tabs-bar nincs „stuck” (felül vagyunk), NE scrollozzunk
+    const barRect = bar?.getBoundingClientRect();
+    const barStyle = bar ? getComputedStyle(bar) : null;
+    const barTopCss = barStyle ? (parseFloat(barStyle.top || '0') || 0) : 0;
+    const barIsStuck = bar && barStyle?.position === 'sticky'
+      ? Math.round(barRect.top) <= Math.round(barTopCss) + 1
+      : false;
+
+    // Küszöb: csak akkor mozduljon, ha jelentős eltérés van (pl. > 12 px)
+    const THRESHOLD = 12;
+    const delta = Math.abs(window.scrollY - desiredTop);
+
+    if (barIsStuck && delta > THRESHOLD) {
+      window.scrollTo({ top: desiredTop, behavior: 'smooth' });
+    }
+    // ha nem „stuck” (felül vagy), vagy alig tér el, nem scrollozunk → nincs ugrálás
+  }
+
+  function activate(name) {
+    active = name;
+    show(name);
+    scrollPanelTopIfNeeded();
+  }
+
+  tabs.forEach((btn) => {
+    btn.addEventListener('click', () => activate(btn.getAttribute('data-tab')));
+  });
+
+  // Kezdeti állapot
+  if (!panels.some((p) => p.getAttribute('data-panel') === active)) {
+    const first = panels[0]?.getAttribute('data-panel');
+    if (first) activate(first);
+  } else {
+    show(active);
+    const offset = measureOffset();
+    applyScrollMarginTop(offset);
+  }
+
+  const ro = new ResizeObserver(() => {
+    const offset = measureOffset();
+    applyScrollMarginTop(offset);
+  });
+
+  ['#header', '#tabs-bar'].forEach((sel) => {
+    const el = document.querySelector(sel);
+    if (el) ro.observe(el);
+  });
+
+  window.addEventListener('resize', () => {
+    const offset = measureOffset();
+    applyScrollMarginTop(offset);
+  });
+</script>

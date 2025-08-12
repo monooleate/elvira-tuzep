@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/PageLayout.astro';
 import productsData from '../../data/products.json';
+import MainCategoryGrid from '../../components/widgets/Tabs.jsx';
 
 const metadata = {
   title: 'Termékek | Elvira Tüzép',
@@ -37,11 +38,12 @@ const schemaCategoryList = {
         <span class="font-medium text-gray-800 dark:text-gray-200">Termékek</span>
       </nav>
 
-      <h1 class="text-3xl font-bold mb-10">Termékkategóriák</h1>
+<!--       <h1 class="text-3xl font-bold mb-10">Termékkategóriák</h1> -->
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!--       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {productsData.map((category) => (
-          <a href={`/termekek/${category.slug}`} class="block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800 dark:border-gray-700">
+          <a href={`/termekek/${category.slug}`} class="block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800 dark:border-gray-700 motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade
+                intersect-once intersect-quarter intercept-no-queue">
             <img src={category.meta.image} alt={category.category} class="w-full h-48 object-cover" loading="lazy" />
             <div class="p-4">
               <h2 class="text-lg font-semibold text-gray-900 dark:text-white">{category.category}</h2>
@@ -49,7 +51,10 @@ const schemaCategoryList = {
             </div>
           </a>
         ))}
-      </div>
+      </div> -->
+
+      <MainCategoryGrid categories={productsData} client:visible headerSelectors={['#header']} />
+
     </div>
   </section>
 </Layout>

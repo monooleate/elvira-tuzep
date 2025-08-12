@@ -1,5 +1,6 @@
 [
   {
+    "maincategory": "Építőfa",
     "category": "Faház építő profil",
     "slug": "fahaz-epito-profil",
     "meta": {
@@ -185,6 +186,7 @@
     ]
   },
   {
+    "maincategory": "Építőfa",
     "category": "Gyalult deszka",
     "slug": "gyalult-deszka",
     "meta": {
@@ -369,6 +371,7 @@
     ]
   },
   {
+    "maincategory": "Építőfa",
     "category": "Lambéria",
     "slug": "lamberia",
     "meta": {
@@ -683,6 +686,7 @@
   },
 
   {
+    "maincategory": "Építőfa",
     "category": "Hajópadló",
     "slug": "hajopadlo",
     "meta": {
@@ -1124,6 +1128,7 @@
   },
 
   {
+    "maincategory": "Építőfa",
     "category": "Cserépléc - Ellenléc",
     "slug": "csereplec-ellenlec",
     "meta": {
@@ -1481,6 +1486,7 @@
   },
 
   {
+    "maincategory": "Építőfa",
     "category": "BSH ragasztott gerenda",
     "slug": "bsh-ragasztott-gerenda",
     "description": "Az osztrák gyártású BSH (Brettschichtholz) ragasztott gerendák megbízható és tartós megoldást kínálnak minden nagy teherbírást igénylő faszerkezethez – legyen szó tetőkről, áthidalókról, csarnokokról vagy pergolákról. A termékek GL24h szilárdsági osztály szerint, látszó minőségben, homogén szerkezetből készülnek, így nagyfokú méretstabilitást és egységes mechanikai viselkedést biztosítanak. A gyalult, fózolt élű felület nemcsak esztétikus, hanem kiválóan alkalmassá teszi a gerendát látszó szerkezeti elemként is. A BSH gerendák lazúrozásra és pácolásra előkészített felülettel, egyedileg fóliázva érkeznek, és beltéri és kültéri felhasználásra egyaránt alkalmasak.",
@@ -1502,7 +1508,19 @@
           "ratingValue": 4.8,
           "reviewCount": 36
         },
+        "brandName": "Elvira Tüzép",
+        "brandUrl": null,
+        "manufacturerName": null,
+        "manufacturerUrl": null,
+        "mpn": null,
         "sku": "bsh-egyedi-gl24h",
+        "gtin13": null,
+        "audience": { 
+          "@type": "Audience", 
+          "audienceType": ["kivitelezők","asztalosok","építtetők"]
+        },
+        "material": "Fa, ragasztott (BSH), GL24h",
+        "additionalType": ["https://en.wikipedia.org/wiki/Glued_laminated_timber"],
         "price": null,
         "mprice": null,
         "m2price": null,
@@ -1511,7 +1529,10 @@
         "discountPercent": null,
         "discountValidUntil": null,
         "stock": 0,
-        "image": "/termekek/bsh-gerenda-egyedi.jpg",
+        "video": null,
+        "images": [
+          {"src": "/termekek/bsh-gerenda-egyedi.jpg", "alt":"BSH ragasztott gerenda – Egyedi méretre gyártva"}
+        ],
         "description": "Egyedi méretű BSH gerendák osztrák gyártásból, GL24h szilárdsági osztályban és látszó minőségben. Rugalmas gyártás, pontos méretezés, prémium esztétika.",
         "longDescription": "Egyedi igényekre szabott BSH (Brettschichtholz) ragasztott gerendák rendelhetők osztrák gyártásból, GL24h szilárdsági osztályban. A szabványtól eltérő keresztmetszetek gyártási ideje jellemzően 2–3 hét. A gyártás 80×120 mm-es keresztmetszettől indul, a szélesség 2 cm-es, míg a magasság 4 cm-es lépcsővel növelhető. A maximális szélesség 280 mm, a magasság esetében nincs felső határ, csupán annyi, hogy 4-gyel oszthatónak kell lennie.",
         "longDescription2": "Amennyiben a megrendelt keresztmetszet legalább 100 mm széles és 160 mm magas, a gyártó centiméter pontos hosszúságban is vállalja a gyártást, például: 100×320×7,55 m vagy 100×200×6,1 m. Kisebb keresztmetszetek esetén, ahol nem éri el a 100×160 mm-es méretet, csak 13,5 méteres hosszúságban rendelhető. A gyártó nagyobb hosszúságokat is teljesít, például két darab 140×280×4 m helyett egy darab 140×280×8,01 m hosszú elem is készülhet, számolva a vágási veszteséggel. Ezek a termékek különösen ajánlottak egyedi faszerkezeti megoldásokhoz, ahol a pontos méretezhetőség, a stabilitás és a kiemelkedő esztétika elengedhetetlen.",
@@ -1542,26 +1563,36 @@
           "ratingValue": 4.9,
           "reviewCount": 22
         },
+        "brandName": "Elvira Tüzép",
+        "brandUrl": null,
+        "manufacturerName": null,
+        "manufacturerUrl": null,
+        "mpn": null,
         "sku": "bsh-8x12-gl24h",
+        "gtin13": null,
+        "audience": ["kivitelezők","tervezők","asztalosok"],
+        "material": "Fa, ragasztott (BSH), GL24h",
         "price": 51839,
-        "mprice": null,
+        "mprice": 3840,
         "m2price": null,
         "m3price": 399990,
         "discountPrice": null,
         "discountPercent": null,
         "discountValidUntil": null,
         "stock": 0,
+        "video": null,
         "image": "/termekek/bsh-gerenda-8x12.jpg",
         "description": "BSH gerenda 8×12 cm-es méretben, 13,5 méteres hosszban, GL24h osztályban. Tartós, esztétikus, precíz faanyag látszó és szerkezeti célokra.",
         "longDescription": "A 8×12 cm-es keresztmetszetű BSH (Brettschichtholz) ragasztott gerenda osztrák gyártásból származik, és GL24h szilárdsági osztályban készül. Kompakt mérete ellenére kiváló statikai tulajdonságokkal bír, így ideális kisebb szerkezeti vagy esztétikai célokra, például keretekhez, látszó belső elemekhez vagy pergolák díszítő tartóelemeként. A rétegragasztott faanyag kiváló mérettartással és időtállósággal rendelkezik, repedés- és vetemedésmentes.",
-        "longDescription2": "A gyalult, fózolt felület magas esztétikai értéket képvisel, és közvetlenül alkalmas lazúrozásra vagy pácolásra. A BSH 8×10 cm-es gerenda kis súlya miatt könnyen kezelhető, szállítható és beépíthető. Olyan helyzetekben ajánlott, ahol kisebb keresztmetszet is elegendő, de nem mondanánk le a tartósságról és a homogén, repedésmentes szerkezetről. A termék egyedileg fóliázva érkezik, kültéri és beltéri használatra is alkalmas.",
+        "longDescription2": "A gyalult, fózolt felület magas esztétikai értéket képvisel, és közvetlenül alkalmas lazúrozásra vagy pácolásra. A BSH 8×12 cm-es gerenda kis súlya miatt könnyen kezelhető, szállítható és beépíthető. Olyan helyzetekben ajánlott, ahol kisebb keresztmetszet is elegendő, de nem mondanánk le a tartósságról és a homogén, repedésmentes szerkezetről. A termék egyedileg fóliázva érkezik, kültéri és beltéri használatra is alkalmas.",
         "specs": {
           "Típus": "BSH ragasztott gerenda",
           "Szilárdsági osztály": "GL24h",
           "Minőség": "Látszó (esztétikai felhasználásra)",
           "Származás": "Ausztria",
-          "Méret": "8 × 12 cm",
-          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
+          "Keresztmetszet": "8 × 12 cm",
+          "Hossz": "13,5 m",
+          "Választható hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőségű",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -1571,10 +1602,10 @@
           "Csomagolás": "Egyedileg fóliázott"
         },
         "shippingDetails": {
-          "shippingWeight": 19.2,
-          "depth": 400,
-          "width": 12.0,
-          "height": 8.0
+          "shippingWeight": 64.8,
+          "depth": 1350,
+          "width": 8.0,
+          "height": 12.0
         }
       },
       {
@@ -1597,6 +1628,7 @@
         "discountPrice": null,
         "discountPercent": null,
         "discountValidUntil": null,
+        "material": "Fa, ragasztott (BSH), GL24h",
         "stock": 0,
         "image": "/termekek/bsh-gerenda-8x16.jpg",
         "description": "BSH gerenda 8×16 cm-es méretben, 13,5 méteres hosszban, GL24h osztályban. Nagyobb fesztávokhoz és látszó szerkezetekhez ajánlott precíz és tartós faanyag.",
@@ -1607,8 +1639,9 @@
           "Szilárdsági osztály": "GL24h",
           "Minőség": "Látszó (esztétikai felhasználásra)",
           "Származás": "Ausztria",
-          "Méret": "8 × 16 cm",
-          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
+          "Keresztmetszet": "8 × 16 cm",
+          "Hossz": "13,5 m",
+          "Választható hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőségű",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -1619,9 +1652,9 @@
         },
         "shippingDetails": {
           "shippingWeight": 25.6,
-          "depth": 400,
-          "width": 16.0,
-          "height": 8.0
+          "depth": 1350,
+          "width": 8.0,
+          "height": 16.0
         }
       },
       {
@@ -1654,8 +1687,9 @@
           "Szilárdsági osztály": "GL24h",
           "Minőség": "Látszó (esztétikai felhasználásra)",
           "Származás": "Ausztria",
-          "Méret": "10 × 10 cm",
-          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
+          "Keresztmetszet": "10 × 10 cm",
+          "Hossz": "13,5 m",
+          "Választható hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőségű",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -1701,8 +1735,9 @@
           "Szilárdsági osztály": "GL24h",
           "Minőség": "Látszó (esztétikai felhasználásra)",
           "Származás": "Ausztria",
-          "Méret": "10 × 16 cm",
-          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
+          "Keresztmetszet": "10 × 16 cm",
+          "Hossz": "13,5 m",
+          "Választható hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőségű",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -1713,9 +1748,9 @@
         },
         "shippingDetails": {
           "shippingWeight": 32.0,
-          "depth": 400,
-          "width": 16.0,
-          "height": 10.0
+          "depth": 1350,
+          "width": 10.0,
+          "height": 16.0
         }
       },
       {
@@ -1748,8 +1783,9 @@
           "Szilárdsági osztály": "GL24h",
           "Minőség": "Látszó (esztétikai felhasználásra)",
           "Származás": "Ausztria",
-          "Méret": "10 × 20 cm",
-          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
+          "Keresztmetszet": "10 × 20 cm",
+          "Hossz": "13,5 m",
+          "Választható hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőségű",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -1760,9 +1796,9 @@
         },
         "shippingDetails": {
           "shippingWeight": 40.0,
-          "depth": 400,
-          "width": 20.0,
-          "height": 10.0
+          "depth": 1350,
+          "width": 10.0,
+          "height": 20.0
         }
       },
       {
@@ -1795,8 +1831,9 @@
           "Szilárdsági osztály": "GL24h",
           "Minőség": "Látszó (esztétikai felhasználásra)",
           "Származás": "Ausztria",
-          "Méret": "12 × 12 cm",
-          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
+          "Keresztmetszet": "12 × 12 cm",
+          "Hossz": "13,5 m",
+          "Választható hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőségű",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -1807,7 +1844,7 @@
         },
         "shippingDetails": {
           "shippingWeight": 28.8,
-          "depth": 400,
+          "depth": 1350,
           "width": 12.0,
           "height": 12.0
         }
@@ -1842,8 +1879,9 @@
           "Szilárdsági osztály": "GL24h",
           "Minőség": "Látszó (esztétikai felhasználásra)",
           "Származás": "Ausztria",
-          "Méret": "12 × 16 cm",
-          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
+          "Keresztmetszet": "12 × 16 cm",
+          "Hossz": "13,5 m",
+          "Választható hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőségű",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -1854,9 +1892,9 @@
         },
         "shippingDetails": {
           "shippingWeight": 38.4,
-          "depth": 400,
-          "width": 16.0,
-          "height": 12.0
+          "depth": 1350,
+          "width": 12.0,
+          "height": 16.0
         }
       },
       {
@@ -1889,7 +1927,9 @@
           "Szilárdsági osztály": "GL24h",
           "Minőség": "Látszó (esztétikai felhasználásra)",
           "Származás": "Ausztria",
-          "Méret": "12 × 20 cm",
+          "Keresztmetszet": "12 × 20 cm",
+          "Hossz": "13,5 m",
+          "Választható hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőségű",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -1900,9 +1940,9 @@
         },
         "shippingDetails": {
           "shippingWeight": 48.0,
-          "depth": 400,
-          "width": 20.0,
-          "height": 12.0
+          "depth": 1350,
+          "width": 12.0,
+          "height": 20.0
         }
       },
       {
@@ -1935,8 +1975,9 @@
           "Szilárdsági osztály": "GL24h",
           "Minőség": "Látszó (esztétikai felhasználásra)",
           "Származás": "Ausztria",
-          "Méret": "14 × 14 cm",
-          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
+          "Keresztmetszet": "14 × 14 cm",
+          "Hossz": "13,5 m",
+          "Választható hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőségű",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -1947,7 +1988,7 @@
         },
         "shippingDetails": {
           "shippingWeight": 39.2,
-          "depth": 400,
+          "depth": 1350,
           "width": 14.0,
           "height": 14.0
         }
@@ -1982,8 +2023,9 @@
           "Szilárdsági osztály": "GL24h",
           "Minőség": "Látszó (esztétikai felhasználásra)",
           "Származás": "Ausztria",
-          "Méret": "14 × 20 cm",
-          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
+          "Keresztmetszet": "14 × 20 cm",
+          "Hossz": "13,5 m",
+          "Választható hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőségű",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -1994,9 +2036,9 @@
         },
         "shippingDetails": {
           "shippingWeight": 56.0,
-          "depth": 400,
-          "width": 20.0,
-          "height": 14.0
+          "depth": 1350,
+          "width": 14.0,
+          "height": 20.0
         }
       },
       {
@@ -2029,8 +2071,9 @@
           "Szilárdsági osztály": "GL24h",
           "Minőség": "Látszó (esztétikai felhasználásra)",
           "Származás": "Ausztria",
-          "Méret": "16 × 16 cm",
-          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
+          "Keresztmetszet": "16 × 16 cm",
+          "Hossz": "13,5 m",
+          "Választható hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőségű",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -2041,7 +2084,7 @@
         },
         "shippingDetails": {
           "shippingWeight": 51.2,
-          "depth": 400,
+          "depth": 1350,
           "width": 16.0,
           "height": 16.0
         }
@@ -2076,8 +2119,9 @@
           "Szilárdsági osztály": "GL24h",
           "Minőség": "Látszó (esztétikai felhasználásra)",
           "Származás": "Ausztria",
-          "Méret": "16 × 24 cm",
-          "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
+          "Keresztmetszet": "16 × 24 cm",
+          "Hossz": "13,5 m",
+          "Választható hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
           "Felület": "Gyalult, fózolt, látszó minőségű",
           "Nedvességtartalom": "kb. 12% ±2%",
           "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -2088,9 +2132,9 @@
         },
         "shippingDetails": {
           "shippingWeight": 76.8,
-          "depth": 400,
-          "width": 24.0,
-          "height": 16.0
+          "depth": 1350,
+          "width": 16.0,
+          "height": 24.0
         }
       },
       {
@@ -2123,8 +2167,9 @@
         "Szilárdsági osztály": "GL24h",
         "Minőség": "Látszó (esztétikai felhasználásra)",
         "Származás": "Ausztria",
-        "Méret": "20 × 20 cm",
-        "Hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
+        "Keresztmetszet": "20 × 20 cm",
+        "Hossz": "13,5 m",
+        "Választható hosszúságok": "4,5 m / 6,75 m / 9 m / 13,5 m",
         "Felület": "Gyalult, fózolt, látszó minőségű",
         "Nedvességtartalom": "kb. 12% ±2%",
         "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
@@ -2135,7 +2180,7 @@
       },
         "shippingDetails": {
           "shippingWeight": 80.0,
-          "depth": 400,
+          "depth": 1350,
           "width": 20.0,
           "height": 20.0
         }
@@ -2143,6 +2188,7 @@
   ]
 },
   {
+    "maincategory": "Építőfa",
     "category": "Palló",
     "slug": "pallo",
     "description": "Fedezze fel kiváló minőségű fenyő palló kínálatunkat építkezéshez, tetőszerkezetekhez és asztalosmunkákhoz! A gondosan megmunkált luc- és borovi fenyőből készült pallók ideálisak födémek, zsaluzatok és ácsszerkezetek kialakításához. Széles méretválaszték, szárított és gyalult kivitel is elérhető. Strapabíró, időtálló megoldás minden építőipari és barkácsprojekthez. Vásároljon közvetlenül raktárról, kedvező áron, akár raklapos tételben is!",
@@ -2241,6 +2287,7 @@
     ]
   },
   {
+    "maincategory": "Tüzelőanyag",
     "category": "Keményfa brikett",
     "slug": "kemenyfa-brikett",
     "description": "Fedezze fel keményfa brikett kínálatunkat, amely ideális választás kandallókhoz, kályhákhoz és vegyestüzelésű kazánokhoz. A tölgyből, bükkből és más keményfákból készült brikettek kiváló fűtőértékkel rendelkeznek, alacsony nedvességtartalmuknak és nagy sűrűségüknek köszönhetően hosszan égnek, egyenletes hőt biztosítva. Ragasztóanyag nélkül, tisztán préselt faforgácsból készülnek – környezetbarát, praktikus és tiszta megoldás az otthoni fűtéshez. Vásároljon közvetlenül raktárról, raklapos tételben kedvező áron!",
@@ -2263,6 +2310,11 @@
           "reviewCount": 52
         },
         "sku": "brikett-pini-kay-tolgy", 
+        "audience": { 
+          "@type": "Audience", 
+          "audienceType": ["háztartások, kandalló/kályha tulajok"]
+        },
+        "material": "Tölgy keményfa brikett (Pini-Kay), extrudált",
         "price": null,
         "mprice": null,
         "m2price": null,

@@ -14,6 +14,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import SpecialOffers from '~/components/widgets/SpecialOffers.astro';
 import CategoryGrid from '../components/widgets/CategoryGrid.astro';
+import MainCategoryGrid from '../components/widgets/Tabs.jsx';
 import productsData from '../data/products.json';
 import MapWidget from '../components/widgets/MapWidget.astro';
 
@@ -27,31 +28,49 @@ const schemaHome = [
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://elviratuzep.hu/#website",
     "name": "Elvira Tüzép",
-    "url": "https://elviratuzep.hu/"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Gigawood Kft.",
-    "url": "https://gigawood.hu/",
-    "logo": "https://gigawood.hu/custom/megawood/image/cache/w220h100m00/GigaWood_logo_3_Vasvari_Design.png",
-    "sameAs": [
-      "https://www.facebook.com/kertifajatszoter",
-      "https://www.instagram.com/gigawoodkft"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+36 70 368 7809",
-      "contactType": "customer service",
-      "email": "info@gigawood.hu",
-      "areaServed": "HU",
-      "availableLanguage": "Hungarian"
+    "url": "https://elviratuzep.hu/",
+    "publisher": { "@id": "https://gigawood.hu/#organization" },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://elviratuzep.hu/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
     }
   },
   {
     "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://gigawood.hu/#organization",
+    "name": "Gigawood Kft.",
+    "url": "https://gigawood.hu/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://gigawood.hu/custom/megawood/image/cache/w220h100m00/GigaWood_logo_3_Vasvari_Design.png"
+    },
+    "sameAs": [
+      "https://www.facebook.com/kertifajatszoter",
+      "https://www.instagram.com/gigawoodkft",
+      "https://www.google.com/maps?cid=4954816018312604745"
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+36 70 368 7809",
+        "contactType": "customer service",
+        "email": "info@gigawood.hu",
+        "areaServed": "HU",
+        "availableLanguage": ["hu"]
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://elviratuzep.hu/#store",
     "name": "Elvira Tüzép",
     "image": "https://elviratuzep.hu/favicon.png",
     "telephone": "+36 70 368 7809",
@@ -62,31 +81,31 @@ const schemaHome = [
       "@type": "PostalAddress",
       "streetAddress": "Elvira utca 33.",
       "addressLocality": "Érd",
+      "addressRegion": "Pest",
       "postalCode": "2030",
       "addressCountry": "HU"
     },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "07:00",
-      "closes": "17:00"
-    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "07:00",
+        "closes": "17:00"
+      }
+    ],
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": 47.375516,
       "longitude": 18.932424
     },
-    "parentOrganization": {
-      "@type": "Organization",
-      "name": "Gigawood Kft.",
-      "url": "https://gigawood.hu/"
-    }
+    "hasMap": "https://maps.google.com/?q=47.375516,18.932424",
+    "parentOrganization": { "@id": "https://gigawood.hu/#organization" },
+    "areaServed": ["Érd","Diósd","Tárnok","Budapest","Szigetszentmiklós","Százhalombatta"],
+    "currenciesAccepted": "HUF",
+    "paymentAccepted": "Cash, Card, BankTransfer",
+    "sameAs": [
+      "https://www.google.com/maps?cid=4954816018312604745"
+    ]
   }
 ];
 
@@ -133,7 +152,9 @@ const schemaHome = [
 
   <Note title="Filozófiánk:" description="Minőség, megbízhatóság és a fa iránti tisztelet vezérel." />
 
-  <CategoryGrid categories={productsData} />
+<!--   <CategoryGrid categories={productsData} /> -->
+
+  <MainCategoryGrid categories={productsData} client:visible headerSelectors={['#header']} />
 
   <Note2   
     action={{

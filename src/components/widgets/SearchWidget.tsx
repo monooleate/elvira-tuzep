@@ -39,6 +39,7 @@ export default function SearchWidget() {
     }
   );
 
+  // EREDMÉNYEK FRISSÍTÉSE LEKÉRDEZÉSRE
   useEffect(() => {
     if (query.trim().length > 1) {
       setResults(fuse.search(query));
@@ -46,6 +47,36 @@ export default function SearchWidget() {
       setResults([]);
     }
   }, [query]);
+
+  // 🔹 ÚJ: URL-ből ?q beolvasása és modál megnyitása
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    if (q && q.trim().length > 1) {
+      setQuery(q);
+      setIsOpen(true);
+      setTimeout(() => inputRef.current?.focus(), 50);
+    }
+  }, []);
+
+  // 🔹 ÚJ: URL szinkron (linkelhető keresés)
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    if (query && query.trim().length > 0) {
+      url.searchParams.set('q', query);
+    } else {
+      url.searchParams.delete('q');
+    }
+    window.history.replaceState({}, '', url.toString());
+  }, [query]);
+
+  // 🔹 ÚJ: egységes bezáró függvény (URL-ből is törli a ?q-t)
+  const closeModal = () => {
+    setIsOpen(false);
+    const url = new URL(window.location.href);
+    url.searchParams.delete('q');
+    window.history.replaceState({}, '', url.toString());
+  };
 
   // 🔸 ESC billentyűre és külső kattintásra figyelés
   useEffect(() => {
@@ -77,6 +108,12 @@ export default function SearchWidget() {
   class="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
   onClick={() => {
     setIsOpen(true);
+    // (opcionális) üres q param felvétele megoszthatósághoz
+    const url = new URL(window.location.href);
+    if (!url.searchParams.has('q')) {
+      url.searchParams.set('q', '');
+      window.history.replaceState({}, '', url.toString());
+    }
     setTimeout(() => inputRef.current?.focus(), 50);
   }}
   aria-label="Keresés"
@@ -125,7 +162,21 @@ export default function SearchWidget() {
                     class="flex items-center gap-4 hover:bg-gray-100 dark:hover:bg-gray-800 p-2 rounded"
                     onClick={() => setIsOpen(false)}
                   >
-                    <img src={item.image} alt={item.name} class="w-16 h-16 object-cover rounded" />
+                    <img   src={
+                        Array.isArray(item.images)
+                          ? item.images[0]?.src
+                          : typeof item.image === 'object'
+                          ? item.image?.src
+                          : item.image
+                      }
+                      alt={
+                        Array.isArray(item.images)
+                          ? item.images[0]?.alt || item.name
+                          : typeof item.image === 'object'
+                          ? item.image?.alt || item.name
+                          : item.name
+                      } class="w-16 h-16 object-cover rounded" 
+                    />
                     <div>
                       <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{item.name}</h3>
                       <p class="text-sm text-gray-600 dark:text-gray-400">{item.description}</p>
