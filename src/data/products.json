@@ -1,6 +1,6 @@
 [
   {
-    "maincategory": "Építőfa",
+    "maincategory": "Műszárított, gyalult építőfa",
     "category": "Faház építő profil",
     "slug": "fahaz-epito-profil",
     "meta": {
@@ -186,7 +186,7 @@
     ]
   },
   {
-    "maincategory": "Építőfa",
+    "maincategory": "Műszárított, gyalult építőfa",
     "category": "Gyalult deszka",
     "slug": "gyalult-deszka",
     "meta": {
@@ -371,7 +371,7 @@
     ]
   },
   {
-    "maincategory": "Építőfa",
+    "maincategory": "Műszárított, gyalult építőfa",
     "category": "Lambéria",
     "slug": "lamberia",
     "meta": {
@@ -686,7 +686,7 @@
   },
 
   {
-    "maincategory": "Építőfa",
+    "maincategory": "Műszárított, gyalult építőfa",
     "category": "Hajópadló",
     "slug": "hajopadlo",
     "meta": {
@@ -1128,7 +1128,7 @@
   },
 
   {
-    "maincategory": "Építőfa",
+    "maincategory": "Műszárított, gyalult építőfa",
     "category": "Cserépléc - Ellenléc",
     "slug": "csereplec-ellenlec",
     "meta": {
@@ -1486,7 +1486,7 @@
   },
 
   {
-    "maincategory": "Építőfa",
+    "maincategory": "Műszárított, gyalult építőfa",
     "category": "BSH ragasztott gerenda",
     "slug": "bsh-ragasztott-gerenda",
     "description": "Az osztrák gyártású BSH (Brettschichtholz) ragasztott gerendák megbízható és tartós megoldást kínálnak minden nagy teherbírást igénylő faszerkezethez – legyen szó tetőkről, áthidalókról, csarnokokról vagy pergolákról. A termékek GL24h szilárdsági osztály szerint, látszó minőségben, homogén szerkezetből készülnek, így nagyfokú méretstabilitást és egységes mechanikai viselkedést biztosítanak. A gyalult, fózolt élű felület nemcsak esztétikus, hanem kiválóan alkalmassá teszi a gerendát látszó szerkezeti elemként is. A BSH gerendák lazúrozásra és pácolásra előkészített felülettel, egyedileg fóliázva érkeznek, és beltéri és kültéri felhasználásra egyaránt alkalmasak.",
@@ -1515,10 +1515,7 @@
         "mpn": null,
         "sku": "bsh-egyedi-gl24h",
         "gtin13": null,
-        "audience": { 
-          "@type": "Audience", 
-          "audienceType": ["kivitelezők","asztalosok","építtetők"]
-        },
+        "audience": [],
         "material": "Fa, ragasztott (BSH), GL24h",
         "additionalType": ["https://en.wikipedia.org/wiki/Glued_laminated_timber"],
         "price": null,
@@ -1570,7 +1567,7 @@
         "mpn": null,
         "sku": "bsh-8x12-gl24h",
         "gtin13": null,
-        "audience": ["kivitelezők","tervezők","asztalosok"],
+        "audience": [],
         "material": "Fa, ragasztott (BSH), GL24h",
         "price": 51839,
         "mprice": 3840,
@@ -2188,7 +2185,7 @@
   ]
 },
   {
-    "maincategory": "Építőfa",
+    "maincategory": "Műszárított, gyalult építőfa",
     "category": "Palló",
     "slug": "pallo",
     "description": "Fedezze fel kiváló minőségű fenyő palló kínálatunkat építkezéshez, tetőszerkezetekhez és asztalosmunkákhoz! A gondosan megmunkált luc- és borovi fenyőből készült pallók ideálisak födémek, zsaluzatok és ácsszerkezetek kialakításához. Széles méretválaszték, szárított és gyalult kivitel is elérhető. Strapabíró, időtálló megoldás minden építőipari és barkácsprojekthez. Vásároljon közvetlenül raktárról, kedvező áron, akár raklapos tételben is!",
@@ -2310,10 +2307,10 @@
           "reviewCount": 52
         },
         "sku": "brikett-pini-kay-tolgy", 
-        "audience": { 
-          "@type": "Audience", 
-          "audienceType": ["háztartások, kandalló/kályha tulajok"]
-        },
+        "audience": [
+          "háztartások",
+          "kandalló/kályha tulajok"
+        ],
         "material": "Tölgy keményfa brikett (Pini-Kay), extrudált",
         "price": null,
         "mprice": null,
@@ -2323,7 +2320,7 @@
         "discountPrice": null,
         "discountPercent": 5.885815185,
         "discountValidUntil": "2025-09-01",
-        "stock": 0,
+        "stock": 1,
         "image": "/termekek/pini-kay-brikett.jpg",
         "description": "Lyukas, hengeres keményfa brikett kizárólag tölgyfából, I. osztályú minőségben. Hosszú égés, magas hőérték, minimális hamu.",
         "longDescription": "A Pini‑Kay brikett 100% tölgyfából készül, I. osztályú minőségben. Lyukas, szellőzést biztosító szerkezete hatékony égést tesz lehetővé akár kandallóban, kályhában vagy kazánban is. A rendkívül alacsony, kb. 2–6% nedvességtartalom, a 4 800–5 000 kcal/kg (~20 MJ/kg) fűtőérték és a kb. 1,0–1,2% hamutartalom ideálissá teszik hosszú égésű, környezetbarát tüzelőként. A brikett nem tartalmaz adalékot vagy ragasztót, kizárólag természetes faőrleményből készül magas nyomáson préselve.",

@@ -1,59 +1,33 @@
 ---
 import productsData from '~/data/products.json';
 import DiscountCard from '~/components/widgets/DiscountCard.astro'
+import { computeDiscounted } from '~/lib/discounts';
 
 const now = new Date();
 
-const allProducts = productsData.flatMap((category) => category.products);
+const discounted = computeDiscounted(productsData);
 
-const discounted = productsData.flatMap((category) => {
-  return category.products
-    .map((product) => {
-      const price = product.price;
-      const discountPrice = product.discountPrice;
-      const discountPercent = product.discountPercent;
-      const discountUntil = product.discountValidUntil ? new Date(product.discountValidUntil) : null;
+// ===== JSON-LD (ItemList) generálás az akciós termékekhez =====
 
-      const hasValidUntil = discountUntil instanceof Date && !isNaN(discountUntil);
-      const hasTimeValid = hasValidUntil && discountUntil > now;
+export function buildSpecialOffersItemList(discounted) {
+  if (!discounted || discounted.length === 0) return null;
 
-      const hasValidDiscountPrice =
-        typeof discountPrice === 'number' &&
-        discountPrice > 0 &&
-        discountPrice < price &&
-        hasTimeValid;
-
-      const hasValidDiscountPercent =
-        typeof discountPercent === 'number' &&
-        discountPercent > 0 &&
-        discountPercent < 100 &&
-        hasTimeValid;
-
-      const isDiscounted = (hasValidDiscountPrice || hasValidDiscountPercent) && hasTimeValid;
-
-      const finalDiscountPrice = hasValidDiscountPrice
-        ? discountPrice
-        : hasValidDiscountPercent
-        ? Math.round(price * (1 - discountPercent / 100))
-        : null;
-
-      const finalDiscountPercent = hasValidDiscountPercent
-        ? discountPercent
-        : hasValidDiscountPrice && finalDiscountPrice
-        ? Math.round((1 - finalDiscountPrice / price) * 100)
-        : null;
-
-      return isDiscounted
-        ? {
-            ...product,
-            finalDiscountPrice,
-            finalDiscountPercent,
-            categorySlug: category.slug, // ⬅️ fontos!
-          }
-        : null;
-    })
-    .filter(Boolean);
-});
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Akciós termékeink",
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "numberOfItems": discounted.length,
+    "itemListElement": discounted.map((p, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "item": {
+        "@type": "Product",
+        "@id": `https://elviratuzep.hu/termekek/${p.categorySlug}/${p.slug}#product`
+      }
+    }))
+  };
+}
 
 ---
 {discounted.length > 0 && (

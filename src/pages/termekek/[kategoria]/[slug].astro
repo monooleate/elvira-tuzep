@@ -136,9 +136,9 @@ function buildProductDimensions(p) {
   const sd = p?.shippingDetails;
   if (!sd) return undefined;
   const out = {};
-  if (typeof sd.depth === 'number') out.depth = { "@type":"QuantitativeValue", value: sd.depth, unitText:"cm" };
-  if (typeof sd.width === 'number') out.width = { "@type":"QuantitativeValue", value: sd.width, unitText:"cm" };
-  if (typeof sd.height === 'number') out.height = { "@type":"QuantitativeValue", value: sd.height, unitText:"cm" };
+  if (typeof sd.depth === 'number') out.depth = { "@type":"QuantitativeValue", value: sd.depth, unitText:"cm", unitCode:"CMT" };
+  if (typeof sd.width === 'number') out.width = { "@type":"QuantitativeValue", value: sd.width, unitText:"cm", unitCode:"CMT" };
+  if (typeof sd.height === 'number') out.height = { "@type":"QuantitativeValue", value: sd.height, unitText:"cm", unitCode:"CMT" };
   return Object.keys(out).length ? out : undefined;
 }
 
@@ -163,6 +163,13 @@ function buildPieceOfferName(baseName, p) {
 const productDims = buildProductDimensions(product);
 const offerShip = buildOfferShippingDetails(product);
 
+function endOfMonthISO(base = new Date()) {
+  const end = new Date(base.getFullYear(), base.getMonth() + 1, 0);
+  const yyyy = end.getFullYear();
+  const mm = String(end.getMonth() + 1).padStart(2, '0');
+  const dd = String(end.getDate()).padStart(2, '0');
+  return `${yyyy}-${mm}-${dd}`;
+}
 
 // --- helper: csak ha kell ---
 const isNonEmptyStr = (v) => typeof v === 'string' && v.trim().length > 0;
@@ -187,8 +194,72 @@ const brand =
     : { "@type": "Brand", "name": "Elvira Tüzép" };
 
 const audienceBlock = Array.isArray(product.audience) && product.audience.length
-  ? { "@type":"Audience", "audienceType": product.audience }
-  : { "@type":"Audience", "audienceType": ["kivitelezők","asztalosok","építtetők"] };
+  ? product.audience.map(aud => ({ "@type": "Audience", "audienceType": aud }))
+  : [
+      { "@type": "Audience", "audienceType": "kivitelezők" },
+      { "@type": "Audience", "audienceType": "asztalosok" },
+      { "@type": "Audience", "audienceType": "építtetők" }
+    ];
+
+const shippingDetailsHU = {
+  "@type": "OfferShippingDetails",
+  "shippingRate": {
+    "@type": "MonetaryAmount",
+    "value": 0,
+    "currency": "HUF"
+  },
+  "shippingDestination": {
+    "@type": "DefinedRegion",
+    "addressCountry": "HU"
+  },
+  "deliveryTime": {
+    "@type": "ShippingDeliveryTime",
+    "handlingTime": {
+      "@type": "QuantitativeValue",
+      "minValue": 0,
+      "maxValue": 0,
+      "unitCode": "d"
+    },
+    "transitTime": {
+      "@type": "QuantitativeValue",
+      "minValue": 0,
+      "maxValue": 4,
+      "unitCode": "d"
+    }
+  }
+};
+
+const merchantReturnPolicyHU = {
+  "@type": "MerchantReturnPolicy",
+  "applicableCountry": "HU",
+  "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", // mert van 14 nap
+  "merchantReturnLink": "https://elviratuzep.hu/visszakuldes",
+  "returnMethod": "https://schema.org/InStoreReturn",
+  "returnFees": "https://schema.org/FreeReturn",
+  "returnShippingFeesAmount": {
+    "@type": "MonetaryAmount",
+    "value": "0",
+    "currency": "HUF"
+  },
+  "returnPolicySeasonalOverride": [],
+  "returnWindow": {
+    "@type": "QuantitativeValue",
+    "value": 14,
+    "unitCode": "DAY"
+  },
+  "itemCondition": "https://schema.org/NewCondition",
+  "restockingFee": {
+    "@type": "MonetaryAmount",
+    "value": "0",
+    "currency": "HUF"
+  },
+  "refundType": "https://schema.org/FullRefund",
+  "refundProcessingTime": {
+    "@type": "QuantitativeValue",
+    "value": 2,
+    "unitCode": "DAY"
+  }
+};
 
 const sameAsClean = Array.isArray(product.sameAs)
   ? product.sameAs.filter(u => !/wikipedia\.org|wikidata\.org/i.test(u))
@@ -217,21 +288,24 @@ function getShippingDetails(product) {
       depth: {
         "@type": "QuantitativeValue",
         value: sd.depth,
-        unitText: "cm"
+        unitText: "cm",
+        unitCode: "CMT"
       }
     }),
     ...(typeof sd.width === 'number' && {
       width: {
         "@type": "QuantitativeValue",
         value: sd.width,
-        unitText: "cm"
+        unitText: "cm",
+        unitCode: "CMT"
       }
     }),
     ...(typeof sd.height === 'number' && {
       height: {
         "@type": "QuantitativeValue",
         value: sd.height,
-        unitText: "cm"
+        unitText: "cm",
+        unitCode: "CMT"
       }
     })
   };
@@ -284,6 +358,7 @@ const schemaProduct = pruneNulls({
   "offers": pruneNulls([
     (typeof product.price === "number" && product.price > 0) ? pruneNulls({
       "@type": "Offer",
+      "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-darab`,
       "priceCurrency": "HUF",
       "price": hasDiscount && discountPrice ? discountPrice : product.price,
       "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
@@ -291,21 +366,25 @@ const schemaProduct = pruneNulls({
       "itemCondition": "https://schema.org/NewCondition",
       "name": buildPieceOfferName(product.name, product),
       "seller": { "@id": STORE_ID },
-      "unitCode": "C62",
       "priceSpecification": {
         "@type": "UnitPriceSpecification",
         "price": hasDiscount && discountPrice ? discountPrice : product.price,
         "priceCurrency": "HUF",
         "unitCode": "C62"
       },
-      ...(hasDiscount && product.discountValidUntil ? {
+      ...(hasValidDiscountPercent && product.discountValidUntil ? {
         "validThrough": product.discountValidUntil,
         "priceValidUntil": product.discountValidUntil
-      } : {}),
+      } : {
+        "priceValidUntil": endOfMonthISO()
+      }),
+      "shippingDetails": shippingDetailsHU,
+      "hasMerchantReturnPolicy": merchantReturnPolicyHU
     }) : null,
 
     (typeof product.mprice === "number" && product.mprice > 0) ? pruneNulls({
       "@type": "Offer",
+      "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-meterar`,
       "priceCurrency": "HUF",
       "price": hasValidDiscountPercent
         ? Math.round(product.mprice * (1 - (discountPercent ?? 0) / 100))
@@ -315,7 +394,6 @@ const schemaProduct = pruneNulls({
       "itemCondition": "https://schema.org/NewCondition",
       "name": `${product.name} – méterár`,
       "seller": { "@id": STORE_ID },
-      "unitCode": "MTR",
       "priceSpecification": {
         "@type": "UnitPriceSpecification",
         "price": hasValidDiscountPercent
@@ -327,11 +405,16 @@ const schemaProduct = pruneNulls({
       ...(hasValidDiscountPercent && product.discountValidUntil ? {
         "validThrough": product.discountValidUntil,
         "priceValidUntil": product.discountValidUntil
-      } : {})
+      } : {
+        "priceValidUntil": endOfMonthISO()
+      }),
+      "shippingDetails": shippingDetailsHU,
+      "hasMerchantReturnPolicy": merchantReturnPolicyHU
     }) : null,
 
     (typeof product.m2price === "number" && product.m2price > 0) ? pruneNulls({
       "@type": "Offer",
+      "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-nm2ar`,
       "priceCurrency": "HUF",
       "price": hasValidDiscountPercent
         ? Math.round(product.m2price * (1 - (discountPercent ?? 0) / 100))
@@ -341,7 +424,6 @@ const schemaProduct = pruneNulls({
       "itemCondition": "https://schema.org/NewCondition",
       "name": `${product.name} – négyzetméterár`,
       "seller": { "@id": STORE_ID },
-      "unitCode": "MTK",
       "priceSpecification": {
         "@type": "UnitPriceSpecification",
         "price": hasValidDiscountPercent
@@ -353,11 +435,16 @@ const schemaProduct = pruneNulls({
       ...(hasValidDiscountPercent && product.discountValidUntil ? {
         "validThrough": product.discountValidUntil,
         "priceValidUntil": product.discountValidUntil
-      } : {})
+      } : {
+        "priceValidUntil": endOfMonthISO()
+      }),
+      "shippingDetails": shippingDetailsHU,
+      "hasMerchantReturnPolicy": merchantReturnPolicyHU
     }) : null,
 
     (typeof product.m3price === "number" && product.m3price > 0) ? pruneNulls({
       "@type": "Offer",
+      "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-m3ar`,
       "priceCurrency": "HUF",
       "price": hasValidDiscountPercent
         ? Math.round(product.m3price * (1 - (discountPercent ?? 0) / 100))
@@ -367,7 +454,6 @@ const schemaProduct = pruneNulls({
       "itemCondition": "https://schema.org/NewCondition",
       "name": `${product.name} – köbméterár`,
       "seller": { "@id": STORE_ID },
-      "unitCode": "MTQ",
       "priceSpecification": {
         "@type": "UnitPriceSpecification",
         "price": hasValidDiscountPercent
@@ -379,11 +465,16 @@ const schemaProduct = pruneNulls({
       ...(hasValidDiscountPercent && product.discountValidUntil ? {
         "validThrough": product.discountValidUntil,
         "priceValidUntil": product.discountValidUntil
-      } : {})
+      } : {
+        "priceValidUntil": endOfMonthISO()
+      }),
+      "shippingDetails": shippingDetailsHU,
+      "hasMerchantReturnPolicy": merchantReturnPolicyHU
     }) : null,
 
     (typeof product.palprice === "number" && product.palprice > 0) ? pruneNulls({
       "@type": "Offer",
+      "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-raklapar`,
       "priceCurrency": "HUF",
       "price": hasValidDiscountPercent
         ? Math.round(product.palprice * (1 - (discountPercent ?? 0) / 100))
@@ -393,7 +484,6 @@ const schemaProduct = pruneNulls({
       "itemCondition": "https://schema.org/NewCondition",
       "name": `${product.name} – raklapár`,
       "seller": { "@id": STORE_ID },
-      "unitCode": "C62",
       "priceSpecification": {
         "@type": "UnitPriceSpecification",
         "price": hasValidDiscountPercent
@@ -406,7 +496,11 @@ const schemaProduct = pruneNulls({
       ...(hasValidDiscountPercent && product.discountValidUntil ? {
         "validThrough": product.discountValidUntil,
         "priceValidUntil": product.discountValidUntil
-      } : {})
+      } : {
+        "priceValidUntil": endOfMonthISO()
+      }),
+      "shippingDetails": shippingDetailsHU,
+      "hasMerchantReturnPolicy": merchantReturnPolicyHU
     }) : null
   ])
 });
@@ -414,6 +508,7 @@ const schemaProduct = pruneNulls({
 const schemaBreadcrumb = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#breadcrumb`,
   "itemListElement": [
     {
       "@type": "ListItem",

@@ -13,6 +13,12 @@ type Category = {
   };
 };
 
+type TabIntro = {
+  title?: string;
+  body: string;
+  image?: string; // opcionális hero/thumbnail
+};
+
 type Props = {
   categories: Category[];
   /** Olyan fix/sticky fejlécek szelektorai, amik felül takarnak (pl. '#header') */
@@ -21,6 +27,8 @@ type Props = {
   stickyBarId?: string;
   /** Kezdő fül neve; ha nincs, az első főkategória */
   initialTabName?: string;
+  /** ÚJ: főkategória -> bevezető doboz (sticky alá) */
+  tabIntros?: Record<string, TabIntro>;
 };
 
 const slugify = (s: string) =>
@@ -38,6 +46,7 @@ export default function Tabs({
   headerSelectors = ['#header'],
   stickyBarId,
   initialTabName,
+  tabIntros = {},
 }: Props) {
   // biztonságos adat (hiányzó maincategory -> "Egyéb")
   const safeData = useMemo(
@@ -73,6 +82,7 @@ export default function Tabs({
   const barRef = useRef<HTMLDivElement | null>(null);
   const panelsRef = useRef<Map<string, HTMLElement>>(new Map());
   const isScrollingRef = useRef(false);
+  const introRef = useRef<HTMLDivElement | null>(null);
 
   // sticky bar referencia beállítás
   useEffect(() => {
@@ -103,6 +113,62 @@ export default function Tabs({
       /* barH = bar.getBoundingClientRect().height; */
     }
     return Math.round(headersHeight + stickyTop + barH - 30);
+  };
+
+  const scrollToIntro = () => {
+    const el = introRef.current;
+    if (!el) return;
+
+    const offset = getCombinedOffset();
+    const rect = el.getBoundingClientRect();
+    const absoluteTop = window.scrollY + rect.top - offset - 10;
+
+    window.scrollTo({
+      top: absoluteTop,
+      behavior: 'smooth',
+    });
+  };
+
+  // ÚJ: görgetés az intro doboz tetejére
+  const scrollToIntroIfNeeded = () => {
+    const el = introRef.current;
+    if (!el) return;
+
+    requestAnimationFrame(() => {
+      const offset = getCombinedOffset();
+      el.style.scrollMarginTop = `${offset}px`;
+
+      const THRESHOLD = 20;
+      const topInViewport = el.getBoundingClientRect().top;
+      if (Math.abs(topInViewport - offset) <= THRESHOLD) return;
+
+      if (isScrollingRef.current) return;
+      isScrollingRef.current = true;
+
+      el.scrollIntoView({ block: 'start', behavior: 'smooth' });
+
+      const clear = () => {
+        isScrollingRef.current = false;
+        window.removeEventListener('scrollend', clear);
+      };
+      if ('onscrollend' in window) {
+        window.addEventListener('scrollend', clear, { once: true } as any);
+      } else {
+        setTimeout(clear, 400);
+      }
+    });
+  };
+
+  // MÓDOSÍTOTT: először intro-ra próbál, ha nincs, panelre
+  const scrollToActiveStart = (name: string) => {
+    if (tabIntros[name]) {
+      // van intro ehhez a tabhoz → oda görgetünk
+      // fontos: az intro az állapotváltás után renderelődik, ezért várunk egy frame-et
+      requestAnimationFrame(() => scrollToIntro());
+    } else {
+      // nincs intro → visszaesünk a panel tetejére
+      scrollToPanelTopIfNeeded(name);
+    }
   };
 
   // Abszolút görgetés a panel tetejére, scrollIntoView + scrollMarginTop
@@ -142,13 +208,16 @@ export default function Tabs({
   useEffect(() => {
     const onResize = () => {
       const panel = panelsRef.current.get(active);
-      if (!panel) return;
       const offset = getCombinedOffset();
-      panel.style.scrollMarginTop = `${offset}px`;
+      if (panel) panel.style.scrollMarginTop = `${offset}px`;
+      if (introRef.current) introRef.current.style.scrollMarginTop = `${offset}px`;
     };
     window.addEventListener('resize', onResize);
     return () => window.removeEventListener('resize', onResize);
   }, [active, headerSelectors]);
+
+  // ---- ÚJ: bevezető doboz tartalom az aktív fülhöz
+  const activeIntro: TabIntro | undefined = tabIntros[active];
 
   return (
     <div ref={rootRef} class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -177,7 +246,7 @@ export default function Tabs({
                   data-tab={name}
                   onClick={() => {
                     setActive(name);
-                    scrollToPanelTopIfNeeded(name);
+                    requestAnimationFrame(() => scrollToActiveStart(name));
                   }}
                   class={`px-4 py-2 rounded-full text-sm font-medium transition border whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-orange-500
                     ${
@@ -193,6 +262,35 @@ export default function Tabs({
           </div>
         </div>
       </div>
+
+      {/* ÚJ: Sticky alatti bevezető doboz (ugyanaz a vizuális nyelv, mint a termékkártya) */}
+      {activeIntro && (
+        <div
+          ref={introRef}           // ← IDE a ref
+          class="mt-4 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm bg-white dark:bg-gray-800"
+          aria-live="polite"
+        >
+          {activeIntro.image && (
+            <img
+              src={activeIntro.image}
+              alt={activeIntro.title || active}
+              class="w-full h-40 object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          )}
+          <div class="p-4">
+            {activeIntro.title && (
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+                {activeIntro.title}
+              </h3>
+            )}
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              {activeIntro.body}
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* Panelek */}
       {grouped.map(({ name, items }) => (

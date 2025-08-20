@@ -12,11 +12,14 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import SpecialOffers from '~/components/widgets/SpecialOffers.astro';
+import SpecialOffers, { buildSpecialOffersItemList } from '~/components/widgets/SpecialOffers.astro';
+import { computeDiscounted } from '~/lib/discounts';
 import CategoryGrid from '../components/widgets/CategoryGrid.astro';
 import MainCategoryGrid from '../components/widgets/Tabs.jsx';
 import productsData from '../data/products.json';
 import MapWidget from '../components/widgets/MapWidget.astro';
+
+import heroImg from '../assets/images/elvira-tuzep-hero.png';
 
 const metadata = {
   title: 'Elvira Tüzép | Fűrészáru, Brikett és Szerkezeti Fa Érden',
@@ -109,6 +112,9 @@ const schemaHome = [
   }
 ];
 
+const discounted = computeDiscounted(productsData);
+const itemListJsonLd = buildSpecialOffersItemList(discounted);
+
 ---
 
 <Layout metadata={metadata}>
@@ -121,32 +127,45 @@ const schemaHome = [
     />
     )}
 
+    {itemListJsonLd && (
+      <script 
+        type="application/ld+json" 
+        slot="head" 
+        set:html={JSON.stringify(itemListJsonLd)} 
+      />
+    )}
+
   <!-- Hero Widget ******************* -->
 
   <Hero
-  actions={[
-    {
-      variant: 'primary',
-      text: 'Termékeink megtekintése',
-      href: '/termekek',
-      icon: 'tabler:shopping-cart',
-    },
-    {
-      text: 'Kapcsolat',
-      href: '/kapcsolat',
-    },
-  ]}
-  image={{ src: '~/assets/images/elvira-tuzep-hero.png', alt: 'Elvira Tüzép Hero képe. Egy árny, aki egy pajzsot tart ET felirattal, mely az Elvira Tüzepet rövidíti.' }}
->
-  <Fragment slot="title">
-    <span class="text-orange-600 text-5xl md:text-6xl">Elvira Tüzép</span><br />
-    <span class="text-2xl md:text-3xl">Építőanyag és tüzelőanyag egy helyen</span>
-  </Fragment>
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Termékeink megtekintése',
+        href: '/termekek',
+        icon: 'tabler:shopping-cart',
+      },
+  /*     {
+        text: 'Kapcsolat',
+        href: '/kapcsolat',
+      }, */
+    ]}
+    heroSlides={[
+      { image: heroImg.src, alt: 'Elvira Tüzép Hero képe. Egy árny, aki egy pajzsot tart ET felirattal, mely az Elvira Tüzepet rövidíti.', href: '', label: 'Prémium termékek', sublabel: '' },
+      { image: '/termekek/bsh-gerenda-8x16.jpg', alt: 'BSH gerendát ábrázoló kép', href: '/termekek/bsh-ragasztott-gerenda', label: 'BSH gerendák', sublabel: 'Osztrák minőség' },
+      { image: '/kategoriak/brikett.jpg', alt: 'Brikett termékkategória, izzó brikettet ábrázoló kép', href: '/termekek/kemenyfa-brikett', label: 'Keményfa brikett', sublabel: 'I.osztály - kiváló minőség' },
+      ]}
+    image={{ src: '~/assets/images/elvira-tuzep-hero.png', alt: 'Elvira Tüzép Hero képe. Egy árny, aki egy pajzsot tart ET felirattal, mely az Elvira Tüzepet rövidíti.' }}
+  >
+    <Fragment slot="title">
+      <span class="text-orange-600 text-5xl md:text-6xl">Elvira Tüzép</span><br />
+      <span class="text-2xl md:text-3xl">Építőanyag és tüzelőanyag egy helyen</span>
+    </Fragment>
 
-  <Fragment slot="subtitle">
-    Építkezel vagy fűtenél? Minőségi <strong>faanyagok</strong> és <strong>keményfa brikett</strong> Érden, közvetlenül a tüzéptől.
-  </Fragment>
-</Hero>
+    <Fragment slot="subtitle">
+      Építkezel vagy fűtenél? Minőségi <strong>faanyagok</strong> és <strong>keményfa brikett</strong> Érden, közvetlenül a tüzéptől.
+    </Fragment>
+  </Hero>
 
   <!-- Note Widget ******************* -->
 
@@ -154,7 +173,32 @@ const schemaHome = [
 
 <!--   <CategoryGrid categories={productsData} /> -->
 
-  <MainCategoryGrid categories={productsData} client:visible headerSelectors={['#header']} />
+  <MainCategoryGrid categories={productsData} client:visible headerSelectors={['#header']} tabIntros={{
+    'Fűrészelt építőfa': {
+      title: 'Fűrészelt építőfa – kedvező ár, masszív szerkezet',
+      body:
+        'Építkezéshez és zsaluzathoz ideális, érdes felületű, légszáraz vagy friss faanyag. Költséghatékony megoldás ott, ahol a teherbírás fontos, az esztétika kevésbé.',
+      //image: '/images/fureszelt-epitofa.jpg', // opcionális
+    },
+    'Műszárított, gyalult építőfa': {
+      title: 'Prémium szerkezeti fa – pontos méret és tartós kivitel',
+      body:
+        'Azonnal beépíthető, kamrában szárított gyalult faanyag valamint BSH gerenda a látszó és hosszú élettartamú szerkezetekhez. Stabil, mérettartó, esztétikus megoldás tetőszerkezetekhez vagy belső terekhez.',
+      //image: '/images/muszaritott-gyalult.jpg', // opcionális
+    },
+/*     'Tüzelőanyag': {
+      title: 'Tüzelőanyag – brikett és pellet raktárról',
+      body:
+        'Prémium brikett és pellet magas fűtőértékkel, alacsony nedvességtartalommal és tiszta égéssel az otthoni fűtéshez. Válassz gazdaságos, környezetkímélő megoldást gyors átvétellel és kiszállítási opcióval.',
+      //image: '/images/muszaritott-gyalult.jpg', // opcionális
+    }, */
+    'Tüzelőanyag': {
+      title: 'Tüzelőanyag – brikett',
+      body:
+        'Nagy préselési sűrűségű keményfa brikett stabil, egyenletes hőleadással és minimális hamutartalommal. Ideális kandallóhoz és vegyes tüzelésű kazánokhoz, csomagban és raklapon is elérhető.',
+      //image: '/images/muszaritott-gyalult.jpg', // opcionális ENplus minősítésű fa pellet magas fűtőértékkel és tiszta égéssel, automata adagolású kazánokhoz optimalizálva. Egységes szemcseméret, alacsony hamu, megbízható, kényelmes fűtés.
+    },
+  }} />
 
   <Note2   
     action={{
@@ -254,7 +298,7 @@ const schemaHome = [
   title="Teljes vásárlási élmény a faanyag kiválasztásától a házhozszállításig"
   items={[
     {
-      title: '1. lépés: <span class="font-medium">Kiválasztás</span>',
+      title: '1. lépés: <span class="font-medium">Termék kiválasztás</span>',
       description:
         'Válassza ki a kívánt faterméket kínálatunkból – pallók, deszkák, gerendák vagy lambériák. Segítünk a megfelelő méret és típus kiválasztásában is.',
       icon: 'tabler:layers-subtract',
@@ -325,4 +369,40 @@ const schemaHome = [
   Legyen szó BSH gerendákról, brikettekről vagy gyalult fenyőről – mindenről közérthető útmutatót és hasznos tanácsokat kínálunk.
   Olvasd el legújabb bejegyzéseinket, és hozd meg a legjobb döntést vásárlás előtt.`}
 />
+
+<FAQs
+  title="Építőfa – Gyakran Ismételt Kérdések"
+  subtitle="Ismerd meg a fűrészelt és a műszárított, gyalult építőfa közötti különbségeket, és tudd meg, melyik a legjobb választás a tetőszerkezethez vagy más építési feladathoz."
+  tagline="Építőfa FAQ"
+  classes={{ container: 'max-w-6xl' }}
+  items={[
+    {
+      title: 'Mi a különbség a fűrészelt és a műszárított, gyalult építőfa között?',
+      description:
+        'A fűrészelt építőfa érdes felületű, légszáraz vagy friss állapotban kerül forgalomba, és kedvezőbb árú. A műszárított, gyalult faanyag ezzel szemben kamrában szárított, sima felületű és mérettartó, így tartósabb és esztétikusabb szerkezetekhez ajánlott.',
+    },
+    {
+      title: 'Mekkora nedvességtartalommal kapható az építőfa?',
+      description:
+        'A fűrészelt építőfa általában 15–20%-os légszáraz nedvességtartalommal bír, frissen fűrészelve pedig akár 30% fölött is lehet. A műszárított, gyalult faanyag viszont 10–14%-ra szárított, ezért kevésbé vetemedik és jobban tartja a méretét.',
+    },
+    {
+      title: 'Melyik építőfa a legjobb tetőszerkezethez?',
+      description:
+        'Tetőszerkezethez és tartós szerkezeti elemekhez a műszárított, gyalult építőfa a legjobb választás, mert stabil és hosszú élettartamú. Ideiglenes szerkezetekhez, zsaluzathoz a kedvező árú fűrészelt fa is elegendő lehet.',
+    },
+    {
+      title: 'Melyik építőfa a kedvezőbb árban?',
+      description:
+        'A fűrészelt építőfa a legolcsóbb megoldás, mivel nem esik át ipari szárításon és gyaluláson. A műszárított, gyalult faanyag prémium minőséget képvisel, ezért magasabb árkategóriába tartozik, de hosszabb távon jobban megéri.',
+    },
+    {
+      title: 'A BSH rétegragasztott gerenda is építőfának számít?',
+      description:
+        'Igen, a BSH rétegragasztott gerendák a műszárított, gyalult építőfa kategóriába tartoznak. Kiemelkedő mérettartásuk és nagy teherbírásuk miatt nagy fesztávú szerkezetekhez és látszó gerendákhoz különösen ajánlottak.',
+    },
+  ]}
+/>
+
+
 </Layout>
