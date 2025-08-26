@@ -90,11 +90,19 @@ const discountPalPrice = hasPalPrice && hasValidDiscountPercent
   ? Math.round(product.palprice * (1 - product.discountPercent / 100))
   : product.palprice;
 
+function buildImageUrl(path) {
+  // ha már van kiterjesztés és méret, hagyjuk
+  if (/\-\d+\.(jpe?g|png|webp|avif)$/i.test(path)) {
+    return `https://elviratuzep.hu${path}`;
+  }
+  // ha nincs, adjuk hozzá a -1200.jpg-t
+  return `https://elviratuzep.hu${path}-1200.jpg`;
+}
 
 const images = Array.isArray(product.images)
-  ? product.images.map(img => `https://elviratuzep.hu${img.src}`)
+  ? product.images.map(img => buildImageUrl(img.src))
   : product.image
-  ? [`https://elviratuzep.hu${product.image}`]
+  ? [buildImageUrl(product.image)]
   : [];
 
 const metadata = {
@@ -234,13 +242,14 @@ const merchantReturnPolicyHU = {
   "applicableCountry": "HU",
   "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", // mert van 14 nap
   "merchantReturnLink": "https://elviratuzep.hu/visszakuldes",
-  "returnMethod": "https://schema.org/InStoreReturn",
+  "returnMethod": "https://schema.org/ReturnInStore",
   "returnFees": "https://schema.org/FreeReturn",
   "returnShippingFeesAmount": {
     "@type": "MonetaryAmount",
     "value": "0",
     "currency": "HUF"
   },
+  "merchantReturnDays": 14,
   "returnPolicySeasonalOverride": [],
   "returnWindow": {
     "@type": "QuantitativeValue",
@@ -264,7 +273,6 @@ const merchantReturnPolicyHU = {
 const sameAsClean = Array.isArray(product.sameAs)
   ? product.sameAs.filter(u => !/wikipedia\.org|wikidata\.org/i.test(u))
   : [];
-
 
 let calc_shippingWeight = null
 
@@ -584,7 +592,12 @@ const schemaBreadcrumb = {
           {Array.isArray(product.images) ? (
             <>
               {/* ProductGallery mint island */}
-              <ProductGallery client:visible product={product} />
+              <ProductGallery
+                client:visible
+                product={product}
+                hasDiscount={hasDiscount}
+                discountPercent={discountPercent}
+              />
 
               {/* Akció jelzők a galéria fölött */}
               {hasDiscount && discountPercent !== null && (

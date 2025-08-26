@@ -8,32 +8,70 @@ const metadata = {
   description: 'Fedezd fel az Elvira Tüzép teljes faanyag kínálatát: szárított fűrészáru, gyalult fa, brikett és további minőségi termékek egy helyen.'
 };
 
-const schemaCategoryList = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Termékkategóriák",
-  "itemListElement": productsData.map((cat, index) => ({
-    "@type": "ListItem",
-    position: index + 1,
-    name: cat.category,
-    item: `https://elviratuzep.hu/termekek/${cat.slug}`
-  }))
-};
+const base = 'https://elviratuzep.hu';
+const pageUrl = `${base}/termekek`;
+const pageId = `${pageUrl}#collection`;
+const listId = `${pageUrl}#itemlist`;
+const breadcrumbId = `${pageUrl}#breadcrumb`;
+
+const schema = [
+  // 1) Az oldal mint CollectionPage
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": pageId,
+    "url": pageUrl,
+    "name": "Termékkategóriák",
+    "description": metadata.description,
+    "inLanguage": "hu",
+    "isPartOf": { "@type": "WebSite", "@id": `${base}/#website`, "url": base, "name": "Elvira Tüzép" },
+    "publisher": { "@id": `${base}/#store` },
+    "mainEntity": { "@id": listId }
+  },
+
+  // 2) ItemList: a kategóriák listája
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": listId,
+    "name": "Termékkategóriák",
+    "itemListOrder": "ItemListOrderAscending",
+    "numberOfItems": productsData.length,
+    "itemListElement": productsData.map((cat, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": cat.category,
+      "url": `${base}/termekek/${cat.slug}`
+    }))
+  },
+
+  // 3) BreadcrumbList: Főoldal → Termékek
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": breadcrumbId,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Főoldal", "item": `${base}/` },
+      { "@type": "ListItem", "position": 2, "name": "Termékek", "item": pageUrl }
+    ]
+  }
+];
+
 ---
 
 <Layout metadata={metadata}>
-    {schemaCategoryList && (
+    {schema && (
         <script
             type="application/ld+json"
-            set:html={JSON.stringify(schemaCategoryList)}
+            set:html={JSON.stringify(schema)}
             slot="head"
         />
     )}
   <section class="py-12">
-    <div class="container max-w-4xl mx-auto px-4">
+    <div class="container max-w-4xl mx-auto">
 
       <!-- Breadcrumb -->
-      <nav class="text-sm mb-6 text-gray-500 dark:text-gray-400">
+      <nav class="text-sm mb-6 text-gray-500 dark:text-gray-400 px-4">
         <a href="/" class="hover:underline">Főoldal</a> /
         <span class="font-medium text-gray-800 dark:text-gray-200">Termékek</span>
       </nav>
@@ -55,7 +93,7 @@ const schemaCategoryList = {
 
       <!-- <MainCategoryGrid categories={productsData} client:visible headerSelectors={['#header']} /> -->
       <MainCategoryGrid categories={productsData} client:visible headerSelectors={['#header']} tabIntros={{
-        'Fűrészelt építőfa': {
+        'Műszárított, gyalult építőfa': {
           title: 'Fűrészelt építőfa – kedvező ár, masszív szerkezet',
           body:
             'Építkezéshez és zsaluzathoz ideális, érdes felületű, légszáraz vagy friss faanyag. Költséghatékony megoldás ott, ahol a teherbírás fontos, az esztétika kevésbé.',

@@ -26,30 +26,94 @@ const discountPalPrice = hasDiscount && hasPalPrice ? Math.round(product.palpric
 function formatPrice(price) {
   return new Intl.NumberFormat('hu-HU').format(price);
 }
+
+/* ---------- képes helper-ek a kártyához ---------- */
+function toBase(path) {
+  return typeof path === 'string' ? path.replace(/\.(jpe?g|png|webp|avif)$/i, '') : '';
+}
+function toCardSrc(src) {
+  if (!src) return '';
+  // ha már -500/-1200/-1600 és kiterjesztés van, hagyjuk
+  if (/\-\d+\.(jpe?g|png|webp|avif)$/i.test(src)) return src;
+  // különben -500.jpg-t használjunk kártyára (gyors)
+  return `${toBase(src)}-500.jpg`;
+}
+function pickPrimaryImage(product) {
+  if (Array.isArray(product?.images) && product.images.length >= 2) {
+    const it = product.images[0];
+    const src = typeof it === 'string' ? it : it.src;
+    const alt = typeof it === 'string' ? (product?.name ?? 'Termékkép') : (it.alt ?? product?.name ?? 'Termékkép');
+    return { src: toCardSrc(src), alt };
+  }
+  // fallback: egyképes logika
+  if (product?.image) {
+    if (typeof product.image === 'string') {
+      return { src: product.image, alt: product?.name ?? 'Termékkép' };
+    }
+    if (typeof product.image === 'object' && product.image.src) {
+      return { src: toCardSrc(product.image.src), alt: product.image.alt ?? product?.name ?? 'Termékkép' };
+    }
+  }
+  return null;
+}
+function pickSecondaryImage(product) {
+  if (Array.isArray(product?.images) && product.images.length > 1) {
+    const it = product.images[1];
+    const src = typeof it === 'string' ? it : it.src;
+    const alt = typeof it === 'string' ? (product?.name ?? 'Termékkép') : (it.alt ?? product?.name ?? 'Termékkép');
+    return { src: toCardSrc(src), alt };
+  }
+  return null;
+}
+
+const primary = pickPrimaryImage(product);
+const secondary = pickSecondaryImage(product);
 ---
 
-<a href={`/termekek/${product.categorySlug || 'egyeb'}/${product.slug}`} class="block bg-white dark:bg-neutral-800 rounded-lg shadow hover:shadow-lg transition p-4 w-full max-w-[400px]">
+<a href={`/termekek/${product.categorySlug || 'egyeb'}/${product.slug}`} class="group block bg-white dark:bg-neutral-800 rounded-lg shadow hover:shadow-lg transition p-4 w-full max-w-[400px]">
   <div class="relative">
-    <img src={product.image} alt={product.name} class="w-full h-48 object-cover rounded" loading="lazy" />
-    {hasDiscount && discountPercent !== null && (
-      <>
-        <div class="absolute top-2 left-2 bg-red-600 text-white px-3 py-1 text-s font-bold rounded shadow">
-          Akció
-        </div>
-        <div class="absolute top-2 right-2 bg-red-600 text-white px-3 py-1 text-s font-bold rounded shadow">
-          -{discountPercentView}%
-        </div>
-      </>
-    )}
+    {/* képtartó: fix arány, ne vágjon, ne ugráljon */}
+    <div class="relative w-full aspect-[4/3] overflow-hidden rounded bg-white dark:bg-neutral-900">
+      {primary && (
+        <img
+          src={primary.src}
+          alt={primary.alt}
+          class={`absolute inset-0 w-full h-full object-contain bg-white dark:bg-neutral-900 transition-opacity duration-200 ${secondary ? 'group-hover:opacity-0' : ''}`}
+          loading="lazy"
+          decoding="async"
+        />
+      )}
+      {secondary && (
+        <img
+          src={secondary.src}
+          alt={secondary.alt}
+          class="absolute inset-0 w-full h-full object-contain bg-white dark:bg-neutral-900 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        />
+      )}
+      {/* Akció jelzők a képen, ha van kedvezmény */}
+      {hasDiscount && (
+        <>
+          <div class="absolute top-2 left-2 bg-red-600 text-white px-3 py-1 text-s font-bold rounded shadow pointer-events-none">
+            Akció
+          </div>
+          {typeof discountPercent === 'number' && (
+            <div class="absolute top-2 right-2 bg-red-600 text-white px-3 py-1 text-s font-bold rounded shadow pointer-events-none">
+              -{discountPercentView}%
+            </div>
+          )}
+        </>
+      )}
+    </div>
   </div>
 
-
-
-  <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white">{product.name}</h3>
-  <p class="text-sm text-gray-600 dark:text-gray-400">{product.description}</p>
+  <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white line-clamp-2">{product.name}</h3>
+  <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">{product.description}</p>
 
   {discountPrice !== 0 && (
-    <div class="text-sm text-gray-700 dark:text-gray-300">
+    <div class="text-sm text-gray-700 dark:text-gray-300 mt-1">
       {hasDiscount && discountPrice && discountPrice !== null && discountPrice !== 0 ? (
         <>
           <span class="line-through mr-2 text-gray-400">{formatPrice(product.price)} Ft/db</span>

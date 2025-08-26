@@ -2293,6 +2293,33 @@
       "description": "Magas fűtőértékű, préselt keményfa brikett kandallóba, kályhába vagy kazánba. Rendeljen raklapos tételben kedvező áron!",
       "image": "/kategoriak/brikett.jpg"
     },
+    "faq": [
+      {
+        "question": "Mit jelent az, hogy Pini-Kay brikett?",
+        "answer": "A Pini-Kay elnevezés a brikettet gyártó présgéptípusról (Pini & Kay) kapta a nevét. Ma már nemcsak a gépet, hanem a jellegzetes brikettformát is így hívják. A Pini-Kay brikett préselt keményfából készül, hosszirányban lyukas, többnyire hatszögletű vagy négyzet keresztmetszetű formában. A lyuknak köszönhetően jobb a levegőáramlás, magasabb az égéshő és hosszabb a parázstartás. Gyakran zsugorfóliába csomagolva kerül forgalomba."
+      },
+      {
+        "question": "Mit jelent az, hogy RUF brikett?",
+        "answer": "A RUF brikett egy téglatest alakú, nagy nyomáson préselt keményfa brikett. Nevét a német RUF brikettáló présgépről kapta, amely a gyártásban szabványos formát biztosít. Előnye, hogy könnyen rakható, kompakt, alacsony nedvességtartalmú és egyenletes hőleadást biztosít."
+      },
+    
+      {
+        "question": "Milyen fából készülnek az itt forgalmazott brikettek?",
+        "answer": "Ezek a brikettek keményfából (tölgy, bükk, akác) vagy kevert fűrészporból készülnek, kötőanyag hozzáadása nélkül, tisztán mechanikus préseléssel. Ezért környezetbarát, hamutartalmuk alacsony."
+      },
+      {
+        "question": "Mennyi ideig ég egy brikett?",
+        "answer": "Ez a típustól és a tüzelőberendezéstől függ:\n\n- RUF brikett: 1,5–2 óra\n- Pini-Kay: 2–3 óra + hosszú parázstartás"
+      },
+      {
+        "question": "Hogyan kell tárolni a brikettet?",
+        "answer": "Száraz, fedett helyen, ahol nem éri közvetlen nedvesség. A fóliás csomagolást bontás után is védd a párától, mert a brikett könnyen visszanedvesedik."
+      },
+      {
+        "question": "Jobb a brikett, mint a tűzifa?",
+        "answer": "A brikett előnye, hogy mindig száraz (<10% nedvesség), nagyobb sűrűségű, így ugyanakkora térfogatban több energia van. Tűzifa olcsóbb lehet, de ha frissen vágott, akkor sokáig kell szárítani."
+      }
+    ],
     "products": [
       {
         "name": "Pini‑Kay keményfa brikett I. osztály",
@@ -2321,7 +2348,32 @@
         "discountPercent": 5.885815185,
         "discountValidUntil": "2025-09-01",
         "stock": 1,
-        "image": "/termekek/pini-kay-brikett.jpg",
+        "images": [
+            {
+              "src": "/images/products/pini-kay-brikett-csomag", 
+              "alt": "Pini-Kay keményfa brikett I. osztály – 10 kg-os csomag, 12 darab keményfa brikett"
+            },
+            {
+              "src": "/images/products/pini-kay-brikett-csomag_darab", 
+              "alt": "Pini-Kay keményfa brikett I. osztály – egy darab keményfa brikett és egy 10 kg-os csomag egymás mellett"              
+            },
+            {
+              "src": "/images/products/pini-kay-brikett-raklap", 
+              "alt": "Pini-Kay keményfa brikett I. osztály – raklapos kiszerelés, 96 csomag keményfa brikett"
+            },
+            {
+              "src": "/images/products/pini-kay-brikett-raklap-2", 
+              "alt": "Pini-Kay keményfa brikett I. osztály – teljes raklap, 960 kg keményfa brikett (96 csomag × 10 kg)"
+            },
+            {
+              "src": "/images/products/pini-kay-brikett-darab", 
+              "alt": "Pini-Kay keményfa brikett I. osztály – egy darab keményfa brikett közelről"
+            },
+            {
+              "src": "/images/products/pini-kay-brikett-darab-top", 
+              "alt": "Pini-Kay keményfa brikett I. osztály – felülnézetből, jól látható a lyukas (üreges) szerkezet"
+            }           
+          ],
         "description": "Lyukas, hengeres keményfa brikett kizárólag tölgyfából, I. osztályú minőségben. Hosszú égés, magas hőérték, minimális hamu.",
         "longDescription": "A Pini‑Kay brikett 100% tölgyfából készül, I. osztályú minőségben. Lyukas, szellőzést biztosító szerkezete hatékony égést tesz lehetővé akár kandallóban, kályhában vagy kazánban is. A rendkívül alacsony, kb. 2–6% nedvességtartalom, a 4 800–5 000 kcal/kg (~20 MJ/kg) fűtőérték és a kb. 1,0–1,2% hamutartalom ideálissá teszik hosszú égésű, környezetbarát tüzelőként. A brikett nem tartalmaz adalékot vagy ragasztót, kizárólag természetes faőrleményből készül magas nyomáson préselve.",
         "longDescription2": "",

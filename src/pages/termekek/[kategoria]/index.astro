@@ -16,17 +16,139 @@ if (!currentCategory) {
   throw new Error(`A(z) "${params.kategoria}" kategória nem található.`);
 }
 
-const schemaCategoryList = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": currentCategory.category,
-  "itemListElement": currentCategory.products.map((product, index) => ({
-    "@type": "ListItem",
-    "position": index + 1,
-    "name": product.name,
-    "item": `https://elviratuzep.hu/termekek/${currentCategory.slug}/${product.slug}`
-  }))
-};
+const base = 'https://elviratuzep.hu/';
+const catUrl = `${base}/termekek/${currentCategory.slug}`;
+const pageId = `${catUrl}#collection`;
+const listId = `${catUrl}#itemlist`;
+const breadcrumbId = `${catUrl}#breadcrumb`;
+const faqId = `${catUrl}#faq`;
+
+const schema = [
+  // 1) CollectionPage (oldal leírása)
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": pageId,
+    "url": catUrl,
+    "name": currentCategory.category,
+    "description": currentCategory.meta?.description || currentCategory.description || `${currentCategory.category} kategória – Elvira Tüzép`,
+    "inLanguage": "hu",
+    "isPartOf": { "@type": "WebSite", "@id": `${base}/#website`, "url": base, "name": "Elvira Tüzép" },
+    "publisher": { "@id": "https://elviratuzep.hu/#store" },
+    "mainEntity": { "@id": listId } // hivatkozunk az ItemList-re
+  },
+
+  // 2) ItemList (a termékek listája)
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": listId,
+    "name": currentCategory.category,
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "numberOfItems": currentCategory.products.length,
+    "itemListElement": currentCategory.products.map((product, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": product.name,
+      "url": `${base}/termekek/${currentCategory.slug}/${product.slug}`
+    }))
+  },
+
+  // 3) BreadcrumbList (morzsa)
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": breadcrumbId,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Főoldal",   "item": `${base}/` },
+      { "@type": "ListItem", "position": 2, "name": "Termékek",  "item": `${base}/termekek` },
+      { "@type": "ListItem", "position": 3, "name": currentCategory.category, "item": catUrl }
+    ]
+  }
+];
+
+const faqs = currentCategory?.faq?.filter(f => f?.question && f?.answer) ?? [];
+
+const faqSchema =
+  faqs.length === 0
+    ? null
+    : {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": faqId,
+        "inLanguage": "hu",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": `${base}/#website`,
+          "url": base,
+          "name": "Elvira Tüzép"
+        },
+        "publisher": { "@id": "https://elviratuzep.hu/#store" },
+        "mainEntity": faqs.map(f => ({
+          "@type": "Question",
+          "name": f.question,
+          "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+        }))
+      };
+
+
+
+function toBase(src: string) {
+  // kiterjesztés le, pl. /images/products/xyz-1200.jpg -> /images/products/xyz-1200 (ha már számozott, békén hagyjuk lent)
+  return src.replace(/\.(jpe?g|png|webp|avif)$/i, '');
+}
+
+function toCardSrc(src?: string) {
+  if (!src) return '';
+  // ha már -500.(ext) vagy -1200/-1600, hagyjuk (van kiterjesztés)
+  const alreadySized = /\-\d+\.(jpe?g|png|webp|avif)$/i.test(src);
+  if (alreadySized) return src;
+
+  // ha nincs kiterjesztés és méret: használjuk a -500.jpg kártyára
+  const base = toBase(src);
+  // ha a src már teljes URL, hagyjuk úgy; ha relatív, hagyd relatívnak (public-ból jó lesz)
+  return `${base}-500.jpg`;
+}
+
+function pickPrimaryImage(product: any): { src: string; alt: string } | null {
+  // ha van legalább 2 kép az images tömbben → azt használjuk
+  if (Array.isArray(product?.images) && product.images.length >= 2) {
+    const it = product.images[0];
+    const src = typeof it === 'string' ? it : it.src;
+    const alt =
+      typeof it === 'string'
+        ? (product?.name ?? 'Termékkép')
+        : (it.alt ?? product?.name ?? 'Termékkép');
+    return { src: toCardSrc(src), alt };
+  }
+
+  // fallback: product.image
+  if (product?.image) {
+    if (typeof product.image === 'string') {
+      return { src: product.image, alt: product?.name ?? 'Termékkép' };
+    }
+    if (typeof product.image === 'object' && product.image.src) {
+      return {
+        src: toCardSrc(product.image.src),
+        alt: product.image.alt ?? product?.name ?? 'Termékkép',
+      };
+    }
+  }
+
+  return null;
+}
+
+
+function pickSecondaryImage(product: any): { src: string; alt: string } | null {
+  if (Array.isArray(product?.images) && product.images.length > 1) {
+    const it = product.images[1];
+    const src = typeof it === 'string' ? it : it.src;
+    const alt = typeof it === 'string' ? (product?.name ?? 'Termékkép') : (it.alt ?? product?.name ?? 'Termékkép');
+    return { src: toCardSrc(src), alt };
+  }
+  return null;
+}
+
 
 const products = currentCategory.products;
 const showDescription = !!currentCategory.description;
@@ -45,14 +167,24 @@ const metadata = {
     image: currentCategory.meta?.image ?? '/kategoriak/termekek_cover.jpg',
   }
 };
+
+const title = 'Gyakran ismételt kérdések'
+const id = 'faq-section'
 ---
 
 <Layout metadata={metadata}>
-    {schemaCategoryList && (
+    {schema && (
     <script
         type="application/ld+json"
         slot="head"
-        set:html={JSON.stringify(schemaCategoryList)}
+        set:html={JSON.stringify(schema)}
+    />
+    )}
+    {faqs.length > 0 && (
+    <script
+        type="application/ld+json"
+        slot="head"
+        set:html={JSON.stringify(faqSchema)}
     />
     )}
 
@@ -88,6 +220,9 @@ const metadata = {
           const now = new Date();
           const discountUntil = product.discountValidUntil ? new Date(product.discountValidUntil) : null;
           const hasTimeValid = discountUntil && discountUntil > now;
+
+          const primary = pickPrimaryImage(product);
+          const secondary = pickSecondaryImage(product);
 
           const hasPrice = typeof product.price === 'number' && product.price > 0;
 
@@ -141,7 +276,7 @@ const metadata = {
             : product.palprice;
 
           return (
-            <a href={`/termekek/${currentCategory.slug}/${product.slug}`} class="relative block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800 dark:border-gray-700">
+            <a href={`/termekek/${currentCategory.slug}/${product.slug}`} class="py-2 group relative block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800 dark:border-gray-700">
 
               {/* Akció badge - BAL FELSŐ SAROK */}
               {hasDiscount && (
@@ -157,24 +292,36 @@ const metadata = {
                 </div>
               )}
 
-<img
-  src={
-    Array.isArray(product.images)
-      ? product.images[0]?.src
-      : typeof product.image === 'object'
-      ? product.image?.src
-      : product.image
-  }
-  alt={
-    Array.isArray(product.images)
-      ? product.images[0]?.alt || product.name
-      : typeof product.image === 'object'
-      ? product.image?.alt || product.name
-      : product.name
-  }
-  class="w-full h-48 object-cover"
-  loading="lazy"
-/>
+
+
+<div class="relative bg-white dark:bg-gray-900">
+  <div class="relative overflow-hidden bg-white dark:bg-gray-900">
+    <!-- fix arány, hogy ne ugorjon a layout -->
+    <div class="w-full aspect-[4/3] relative">
+      {primary && (
+        <img
+          src={primary.src}
+          alt={primary.alt}
+          class={`absolute inset-0 w-full h-full object-contain bg-white dark:bg-gray-900 transition-opacity duration-200 ${
+            secondary ? 'group-hover:opacity-0' : ''
+          }`}
+          loading="lazy"
+          decoding="async"
+        />
+      )}
+      {secondary && (
+        <img
+          src={secondary.src}
+          alt={secondary.alt}
+          class="absolute inset-0 w-full h-full object-contain bg-white dark:bg-gray-900 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        />
+      )}
+    </div>
+  </div>
+</div>
 
 
               <div class="p-4">
@@ -257,4 +404,39 @@ const metadata = {
       </div>
     </div>
   </section>
+  {faqs.length > 0 && (
+    <section aria-labelledby={id} class="my-10">
+      <div class="container max-w-4xl mx-auto px-4">
+        <h2 id={id} class="mb-4 text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
+          {title}
+        </h2>
+
+        <div class="space-y-3">
+          {currentCategory.faq.map((item, idx) => (
+            <details class="group rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white/70 dark:bg-zinc-900/60 backdrop-blur shadow-sm open:shadow-md transition-shadow">
+              <summary class="flex cursor-pointer items-center justify-between gap-3 p-4 text-left select-none
+                              font-medium text-zinc-900 dark:text-zinc-100
+                              marker:content-['']">
+                <span class="leading-snug">{item.question}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"
+                    class="shrink-0 transition-transform duration-200 group-open:rotate-180 text-zinc-600 dark:text-zinc-300">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+
+              <div class="px-4 pb-4 pt-0 text-zinc-700 dark:text-zinc-300 leading-relaxed">
+                {/* Ha az answer tartalmazhat HTML-t, engedélyezd így: */}
+                <div set:html={item.answer}></div>
+                {/* Ha biztosan plain text, helyette: */}
+                {/* <p>{item.answer}</p> */}
+              </div>
+            </details>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  )}
 </Layout>
