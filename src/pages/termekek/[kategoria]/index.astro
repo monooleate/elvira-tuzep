@@ -411,30 +411,52 @@ const id = 'faq-section'
           {title}
         </h2>
 
-        <div class="space-y-3">
-          {currentCategory.faq.map((item, idx) => (
-            <details class="group rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white/70 dark:bg-zinc-900/60 backdrop-blur shadow-sm open:shadow-md transition-shadow">
-              <summary class="flex cursor-pointer items-center justify-between gap-3 p-4 text-left select-none
-                              font-medium text-zinc-900 dark:text-zinc-100
-                              marker:content-['']">
-                <span class="leading-snug">{item.question}</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"
-                    class="shrink-0 transition-transform duration-200 group-open:rotate-180 text-zinc-600 dark:text-zinc-300">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </summary>
+        {currentCategory.faqdesc && (
+          <p class="mb-4 text-zinc-700 dark:text-zinc-300 leading-relaxed">
+            {currentCategory.faqdesc}
+          </p>
+        )}
 
-              <div class="px-4 pb-4 pt-0 text-zinc-700 dark:text-zinc-300 leading-relaxed">
-                {/* Ha az answer tartalmazhat HTML-t, engedélyezd így: */}
-                <div set:html={item.answer}></div>
-                {/* Ha biztosan plain text, helyette: */}
-                {/* <p>{item.answer}</p> */}
-              </div>
-            </details>
-          ))}
-        </div>
+        <div class="space-y-3">
+  {currentCategory.faq.map((item, idx) => (
+    <details
+      id={item.id ? item.id : `faq-${idx}`}
+      class="group rounded-xl border border-zinc-200 dark:border-zinc-700 
+             bg-white/70 dark:bg-zinc-900/60 backdrop-blur shadow-sm 
+             open:shadow-md transition-shadow"
+    >
+      <summary
+        class="flex cursor-pointer items-center justify-between gap-3 p-4 
+               text-left select-none font-medium text-zinc-900 dark:text-zinc-100 
+               marker:content-['']"
+      >
+        <h3 class="leading-snug text-base font-medium m-0">{item.question}</h3>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="shrink-0 transition-transform duration-200 group-open:rotate-180 text-zinc-600 dark:text-zinc-300"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </summary>
+
+      <div class="px-4 pb-4 pt-0 text-zinc-700 dark:text-zinc-300 leading-relaxed">
+        {/* Ha az answer tartalmazhat HTML-t, engedélyezd így: */}
+        <div set:html={item.answer}></div>
+        {/* Ha biztosan plain text, akkor: */}
+        {/* <p>{item.answer}</p> */}
+      </div>
+    </details>
+  ))}
+</div>
+
 
       </div>
     </section>

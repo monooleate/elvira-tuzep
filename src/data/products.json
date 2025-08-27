@@ -1137,6 +1137,35 @@
       "image": "/kategoriak/csereplec-ellenlec.jpg"
     },
     "description": "Cserépléc és ellenléc kínálatunk prémium osztrák minőségű lucfenyőből készül, amely kiváló választás tetőszerkezetekhez és héjazatok alátámasztásához. A lécek szárított állapotban, fűrészelt és egalizált kivitelben, különböző méretekben érhetők el. Az ellenlécek elengedhetetlenek a tető megfelelő szellőzéséhez, míg a cseréplécek biztosítják a cserepek rögzítését. Termékeink Ausztriából származnak, tartósak, formatartók és gyorsan beépíthetők – ideálisak új tetők építéséhez és régi tetők felújításához is. Készletről vagy rövid határidővel, kedvező áron kínáljuk.",
+    "faqdesc": "A tetőszerkezet kialakításánál gyakran felmerül a kérdés, milyen cseréplécet és ellenlécet érdemes használni. Az ellenléc biztosítja a szellőzést és a fólia védelmét, míg a cserépléc a cserepek felfekvését és teherelosztását adja. Az alábbiakban összegyűjtöttük a leggyakrabban feltett kérdéseket a cserépléccel és ellenléccel kapcsolatban, hogy könnyebb legyen a megfelelő anyag kiválasztása kültéri tetőfedéshez és beltéri szerkezetekhez.",
+    "faq": [
+      {
+        "id": "mi-az-ellenlec",
+        "question": "Mi az ellenléc, mi a szerepe a tetőn és mi a tipikus mérete?",
+        "answer": "Az ellenléc a szarufára fektetett függőleges léc, amely a fólia és a cserépléc között szellőző légrést hoz létre. Feladata a tető átszellőztetése és a csapadékbiztos rétegrend kialakítása. Ezáltal növeli a tető élettartamát. Az ellenléc tipikus mérete 5×5 cm (50×50 mm), vagyis négyzet keresztmetszetű. Ez biztosítja a megfelelő szellőző keresztmetszetet a fólia és a cserépléc között. Kisebb méretek, mint a 25×50 vagy 30×50 mm is előfordulnak, de nem minden tetőn elegendők a szellőzéshez."
+      },
+      {
+        "id": "mi-a-csereplec",
+        "question": "Mi a cserépléc és mi a tipikus mérete?",
+        "answer": "A cserépléc a tetőszerkezet egyik alapvető faanyaga: vízszintesen, az ellenlécekre merőlegesen kerül felrakásra, és ezekre fekszenek fel a tetőcserepek. Feladata a cserepek biztonságos rögzítése és a tetőfedés teherelosztása. A kültéri tetőfedéshez legelterjedtebb méret a 30×50 mm nedves („bramac”) cserépléc, míg beltérben jellemzően egalizált, méretpontos 23×48 mm vagy 28×48 mm léceket használnak."
+      },
+      {
+        "id": "milyen-csereplec-kulterre",
+        "question": "Milyen cseréplécet használjak kültéren?",
+        "answer": "Kültéri tetőszerkezethez a legelterjedtebb a 30×50 mm nedves („bramac”) cserépléc. Ez igazolt teherbírású, gyártói dokumentációval rendelkezik, és kifejezetten tetőfedés alá készült. Ha extra tartósság kell, válassz impregnálttal kezelt változatot."
+      },
+      {
+        "id": "milyen-csereplec-belterre",
+        "question": "Milyen cseréplécet használjak beltérben?",
+        "answer": "Beltéri szerkezetekhez, ahol fontos a pontos illeszkedés, az egalizált, méretpontos lécek a megfelelőek (23×48 mm vagy 28×48 mm). Ezek száraz, gyalult faanyagok, így nem vetemednek, és esztétikus megjelenést biztosítanak."
+      },
+      {
+        "id": "egalizalt-kulterre",
+        "question": "Használhatok egalizált (23×48; 28×48) lécet kültéri tetőn?",
+        "answer": "Nem ajánlott cserépfedés alá. Ezek beltéri, méretpontos lécek. Kültérre válassz 30×50 mm nedves cseréplécet vagy impregnálttal helyettesítsd, ha tartósság kell."
+      }
+    ],
+    
     "products": [
       {
         "name": "Egalizált cserépléc luc 23x48mmx4m I-II. osztály",
@@ -2293,29 +2322,35 @@
       "description": "Magas fűtőértékű, préselt keményfa brikett kandallóba, kályhába vagy kazánba. Rendeljen raklapos tételben kedvező áron!",
       "image": "/kategoriak/brikett.jpg"
     },
+    "faqdesc": "A keményfa brikett egy préselt tüzelőanyag, amely tölgyből, bükkből vagy akácból készül, kötőanyag nélkül. Előnye a magas fűtőérték, az alacsony nedvességtartalom és a tiszta égés. Az alábbi gyakori kérdések segítenek eligazodni a típusok (RUF, Pini-Kay), az égési idő és a tárolás kapcsán.",
     "faq": [
       {
+        "id": "pini-kay-brikett",
         "question": "Mit jelent az, hogy Pini-Kay brikett?",
         "answer": "A Pini-Kay elnevezés a brikettet gyártó présgéptípusról (Pini & Kay) kapta a nevét. Ma már nemcsak a gépet, hanem a jellegzetes brikettformát is így hívják. A Pini-Kay brikett préselt keményfából készül, hosszirányban lyukas, többnyire hatszögletű vagy négyzet keresztmetszetű formában. A lyuknak köszönhetően jobb a levegőáramlás, magasabb az égéshő és hosszabb a parázstartás. Gyakran zsugorfóliába csomagolva kerül forgalomba."
       },
       {
+        "id": "ruf-brikett",
         "question": "Mit jelent az, hogy RUF brikett?",
         "answer": "A RUF brikett egy téglatest alakú, nagy nyomáson préselt keményfa brikett. Nevét a német RUF brikettáló présgépről kapta, amely a gyártásban szabványos formát biztosít. Előnye, hogy könnyen rakható, kompakt, alacsony nedvességtartalmú és egyenletes hőleadást biztosít."
       },
-    
       {
+        "id": "brikett-alapanyag",
         "question": "Milyen fából készülnek az itt forgalmazott brikettek?",
         "answer": "Ezek a brikettek keményfából (tölgy, bükk, akác) vagy kevert fűrészporból készülnek, kötőanyag hozzáadása nélkül, tisztán mechanikus préseléssel. Ezért környezetbarát, hamutartalmuk alacsony."
       },
       {
+        "id": "brikett-egetesi-ido",
         "question": "Mennyi ideig ég egy brikett?",
         "answer": "Ez a típustól és a tüzelőberendezéstől függ:\n\n- RUF brikett: 1,5–2 óra\n- Pini-Kay: 2–3 óra + hosszú parázstartás"
       },
       {
+        "id": "brikett-tarolas",
         "question": "Hogyan kell tárolni a brikettet?",
         "answer": "Száraz, fedett helyen, ahol nem éri közvetlen nedvesség. A fóliás csomagolást bontás után is védd a párától, mert a brikett könnyen visszanedvesedik."
       },
       {
+        "id": "brikett-vs-tuzifa",
         "question": "Jobb a brikett, mint a tűzifa?",
         "answer": "A brikett előnye, hogy mindig száraz (<10% nedvesség), nagyobb sűrűségű, így ugyanakkora térfogatban több energia van. Tűzifa olcsóbb lehet, de ha frissen vágott, akkor sokáig kell szárítani."
       }
