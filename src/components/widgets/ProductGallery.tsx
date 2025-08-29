@@ -353,33 +353,34 @@ export default function ProductGallery({ product }: Props) {
         </div>
 
         {/* nav gombok */}
-        <div class="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-1 pointer-events-none md:hidden lg:flex">
-          <button
-            type="button"
-            aria-label="Előző kép"
-            onClick={(e) => prev(e as any)}
-            class="pointer-events-auto h-9 w-9 grid place-items-center rounded-full 
-                   bg-white/80 border border-gray-200 shadow hover:bg-white 
-                   active:scale-95 backdrop-blur 
-                   dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-800"
-          >
-            ‹
-          </button>
-          <button
-            type="button"
-            aria-label="Következő kép"
-            onClick={(e) => next(e as any)}
-            class="pointer-events-auto h-9 w-9 grid place-items-center rounded-full 
-                   bg-white/80 border border-gray-200 shadow hover:bg-white 
-                   active:scale-95 backdrop-blur
-                   dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-800"
-          >
-            ›
-          </button>
-        </div>
+        <div class="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-2 pointer-events-none md:hidden lg:flex">
+  <button
+    type="button"
+    aria-label="Előző kép"
+    onClick={(e) => prev(e as any)}
+    class="pointer-events-auto h-12 w-12 text-2xl grid place-items-center rounded-full 
+           bg-white/80 border border-gray-200 shadow hover:bg-white 
+           active:scale-95 backdrop-blur 
+           dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-800"
+  >
+    <span class="relative bottom-[2px]">‹</span>
+  </button>
+  <button
+    type="button"
+    aria-label="Következő kép"
+    onClick={(e) => next(e as any)}
+    class="pointer-events-auto h-12 w-12 text-2xl grid place-items-center rounded-full 
+           bg-white/80 border border-gray-200 shadow hover:bg-white 
+           active:scale-95 backdrop-blur
+           dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-800"
+  >
+    <span class="relative bottom-[2px]">›</span>
+  </button>
+</div>
+
 
         {/* pont indikátorok mobilon */}
-        <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-2 pointer-events-none z-[1] lg:hidden">
+        <div class="mt-2 flex justify-center gap-2 pointer-events-none z-[1] lg:hidden">
           {images.map((_, i) => {
             const isActive = i === selected;
             return (
@@ -393,7 +394,8 @@ export default function ProductGallery({ product }: Props) {
                   goTo(i);
                 }}
                 class={`pointer-events-auto h-2.5 w-2.5 rounded-full border transition
-                  ${isActive ? 'bg-orange-500 border-orange-500'
+                  ${isActive
+                    ? 'bg-orange-500 border-orange-500'
                     : 'bg-white/80 border-white hover:bg-white'}`}
               />
             );
