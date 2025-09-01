@@ -1133,10 +1133,11 @@
     "slug": "csereplec-ellenlec",
     "meta": {
       "title": "Cserépléc és ellenléc tetőhöz | Elvira Tüzép",
-      "description": "Szárított, fűrészelt cseréplécek és ellenlécek lucfenyőből – osztrák minőségű faanyag tetőszerkezetekhez, héjazathoz, alátétfólia alá, elérhető árakon.",
+      "description": "Bramac lécek, cseréplécek és ellenlécek lucfenyőből – prémium minőségű faanyag tetőszerkezetekhez, héjazathoz, alátétfólia alá, elérhető árakon.",
       "image": "/kategoriak/csereplec-ellenlec.jpg"
     },
-    "description": "Cserépléc és ellenléc kínálatunk prémium osztrák minőségű lucfenyőből készül, amely kiváló választás tetőszerkezetekhez és héjazatok alátámasztásához. A lécek szárított állapotban, fűrészelt és egalizált kivitelben, különböző méretekben érhetők el. Az ellenlécek elengedhetetlenek a tető megfelelő szellőzéséhez, míg a cseréplécek biztosítják a cserepek rögzítését. Termékeink Ausztriából származnak, tartósak, formatartók és gyorsan beépíthetők – ideálisak új tetők építéséhez és régi tetők felújításához is. Készletről vagy rövid határidővel, kedvező áron kínáljuk.",
+    "description": "Cserépléc és ellenléc kínálatunk prémium minőségű lucfenyőből készül. Az ellenléc biztosítja a tető szellőzését és az alátétfólia védelmét, míg a cserépléc a cserepek rögzítését és a teherelosztást. Elérhető a szabványos 30×50 mm Bramac cserépléc is, igazolt teherbírással és gyártói dokumentációval. Termékeink tartósak, gyorsan beépíthetők, új tetőkhöz és felújításhoz egyaránt ideálisak. Termékeinket készletről vagy rövid határidővel, kedvező áron kínáljuk.",
+
     "faqdesc": "A tetőszerkezet kialakításánál gyakran felmerül a kérdés, milyen cseréplécet és ellenlécet érdemes használni. Az ellenléc biztosítja a szellőzést és a fólia védelmét, míg a cserépléc a cserepek felfekvését és teherelosztását adja. Az alábbiakban összegyűjtöttük a leggyakrabban feltett kérdéseket a cserépléccel és ellenléccel kapcsolatban, hogy könnyebb legyen a megfelelő anyag kiválasztása kültéri tetőfedéshez és beltéri szerkezetekhez.",
     "faq": [
       {
@@ -1152,7 +1153,7 @@
       {
         "id": "milyen-csereplec-kulterre",
         "question": "Milyen cseréplécet használjak kültéren?",
-        "answer": "Kültéri tetőszerkezethez a legelterjedtebb a 30×50 mm nedves („bramac”) cserépléc. Ez igazolt teherbírású, gyártói dokumentációval rendelkezik, és kifejezetten tetőfedés alá készült. Ha extra tartósság kell, válassz impregnálttal kezelt változatot."
+        "answer": "Kültéri tetőszerkezethez a legelterjedtebb a 30×50 mm nedves Bramac cserépléc. Ez igazolt teherbírású, gyártói dokumentációval rendelkezik, és kifejezetten tetőfedés alá készült. Ha extra tartósság kell, válassz impregnálttal kezelt változatot."
       },
       {
         "id": "milyen-csereplec-belterre",
@@ -1160,9 +1161,14 @@
         "answer": "Beltéri szerkezetekhez, ahol fontos a pontos illeszkedés, az egalizált, méretpontos lécek a megfelelőek (23×48 mm vagy 28×48 mm). Ezek száraz, gyalult faanyagok, így nem vetemednek, és esztétikus megjelenést biztosítanak."
       },
       {
-        "id": "egalizalt-kulterre",
-        "question": "Használhatok egalizált (23×48; 28×48) lécet kültéri tetőn?",
-        "answer": "Nem ajánlott cserépfedés alá. Ezek beltéri, méretpontos lécek. Kültérre válassz 30×50 mm nedves cseréplécet vagy impregnálttal helyettesítsd, ha tartósság kell."
+        "id": "bramac-csereplec-meret-ar",
+        "question": "Milyen a Bramac cserépléc mérete és mennyibe kerül?",
+        "answer": "A Bramac cserépléc legelterjedtebb mérete 30×50 mm, amelyet kifejezetten tetőcserepek alátámasztására gyártanak. A „Bramac cserépléc” elnevezés onnan ered, hogy a Bramac (ma BMI Bramac) tetőrendszerhez szabványosított 30×50 mm-es luc- vagy borovi fenyő lécek váltak iparági etalonná. Ez a méret biztosítja a szükséges teherbírást és illeszkedést a Bramac tetőrendszerekhez. A Bramac cserépléc ár a választott mérettől, a faanyag minőségétől és a rendelt mennyiségtől függ. Az aktuális árakat mindig a termék oldalán találja."
+      },
+      {
+        "id": "csereplec-arak",
+        "question": "Hogyan alakulnak a cserépléc árak?",
+        "answer": "A cserépléc árak több tényezőtől függenek: a keresztmetszettől (például 25×50 mm, 30×50 mm), a faanyag minőségétől (nedves, szárított, impregnálttal kezelt), valamint a rendelt mennyiségtől. A Bramac cserépléc ár jellemzően nagyobb, mivel igazolt teherbírású, gyártói dokumentációval rendelkező termék. 2025-ben a cserépléc árak különösen a fenyő faanyag világpiaci árának alakulásától függenek, így szezonálisan változhatnak. Nagyobb mennyiség rendelésekor kedvezőbb egységár érhető el. Az aktuális cserépléc árakat mindig megtalálja az elviratuzep.hu weboldalunkon, a termékek részletes oldalán."
       }
     ],
     
@@ -1192,6 +1198,7 @@
         "description": "Szárított, egalizált lucfenyő cserépléc 23x48 mm méretben, 4 m-es hosszban – I-II. osztály, osztrák minőség tetőszerkezethez.",
         "longDescription": "Ez a 23x84 mm méretű, 4 méteres hosszúságú egalizált lucfenyő cserépléc kiválóan alkalmas tetőszerkezetek, lécezések, ellenlécek és burkolati alátétek kialakítására. Az egalizált, szárított kivitel garantálja a pontos méretet, a jobb teherbírást és a gyorsabb, pontosabb beépítést. A lucfenyő kiváló megmunkálhatóságot biztosít, természetes, világos árnyalatával és kiváló ár-érték arányával. I-II. osztályú osztrák minőség, raktárról vagy rövid határidővel rendelhető.",
         "longDescription2": "Az egalizált cseréplécek forma- és mérettartó kialakításuknak köszönhetően ideálisak átszellőztetett tetőszerkezetekhez és a cserépfedés biztonságos rögzítéséhez. Nedvességtartalmuk stabilizált, ezért a beépítés során nem vetemednek. Kiemelten ajánlott új építésekhez, felújításokhoz vagy tetőcseréhez.",
+        "blogtags": ["cserépléc", "ellenléc", "tetőszerkezet"],
         "specs": {
           "Méret": "23 x 48 mm",
           "Hossz": "4 m",
@@ -1235,6 +1242,7 @@
         "description": "Szárított, egalizált lucfenyő cserépléc 28x48 mm méretben, 3 m hosszban – I-II. osztályú, osztrák minőségű tetőléc.",
         "longDescription": "Ez a 28x48 mm-es, 3 méteres hosszúságú egalizált lucfenyő cserépléc ideális választás tetőszerkezetek kialakításához, különösen akkor, ha fontos a méretpontosság és a szilárdság. Az osztrák gyártású, szárított faanyag stabil formát és hosszú élettartamot biztosít, könnyen kezelhető és gyorsan beépíthető. I-II. osztályú minőségi besorolása jó ár-érték arányt képvisel új tetők építéséhez és meglévők felújításához.",
         "longDescription2": "Az egalizált felület garantálja az egységes vastagságot, ami különösen előnyös lécezési és szaruzathoz történő rögzítési munkák során. Alkalmas cserepek biztonságos rögzítésére, alátétszerkezetek kialakítására vagy ellenlécnek is, ahol a stabilitás és szellőzés kulcsfontosságú.",
+        "blogtags": ["cserépléc", "ellenléc", "tetőszerkezet"],
         "specs": {
           "Méret": "28 x 48 mm",
           "Hossz": "3 m",
@@ -1278,6 +1286,7 @@
         "description": "Szárított, egalizált lucfenyő cserépléc 28x48 mm méretben, 4 méter hosszban – osztrák I-II. osztályú faanyag tetőkhöz.",
         "longDescription": "A 28x48 mm-es, 4 m hosszúságú egalizált lucfenyő cserépléc ideális megoldás tetőszerkezetek lécezéséhez, ahol kiemelten fontos a stabil méret, teherbírás és hosszú élettartam. Az osztrák származású, szárított faanyag pontos mérettel és kiváló felületminőséggel rendelkezik, amely megkönnyíti a beépítést, és csökkenti az utómunkálatokat. I-II. osztályú minősége a legtöbb háztető építéséhez és felújításához megfelelő.",
         "longDescription2": "A pontos méretre egalizált kialakítás megkönnyíti a héjazat rögzítését és az alátétszerkezet kialakítását. A szárított lucfenyő stabil és jól megmunkálható, így garantáltan strapabíró megoldást kínál hosszú távra. Alkalmazható cserepek alá, ellenlécnek vagy tetőszellőztetés biztosítására is.",
+        "blogtags": ["cserépléc", "ellenléc", "tetőszerkezet"],
         "specs": {
           "Méret": "28 x 48 mm",
           "Hossz": "4 m",
@@ -1321,6 +1330,7 @@
         "description": "Fűrészelt lucfenyő ellenléc 38x58 mm méretben, 4 méteres hosszban – osztrák I-II. osztály, kiváló választás szellőző tetőszerkezethez.",
         "longDescription": "A 38x58 mm-es, 4 méteres fűrészelt lucfenyő ellenléc kifejezetten alkalmas tetőszerkezetek átszellőztetésének biztosítására. Az ellenléc szerepe, hogy megfelelő távolságot tartson a héjazat és az alátétszerkezet között, biztosítva ezzel a légáramlást. Az osztrák I-II. osztályú faanyag tartós, jól terhelhető, és könnyen rögzíthető.",
         "longDescription2": "Ez a fűrészelt, kezeletlen lucfa ellenléc ideális megoldás új építésű tetők esetén és felújításokhoz egyaránt. Szabványos méretének és stabil keresztmetszetének köszönhetően könnyen illeszthető a legtöbb tetőszerkezethez. Jó választás, ha fontos a szellőzés, a tartósság és a gazdaságos kivitelezés.",
+        "blogtags": ["cserépléc", "ellenléc", "tetőszerkezet"],
         "specs": {
           "Méret": "38 x 58 mm",
           "Hossz": "4 m",
@@ -1363,6 +1373,7 @@
         "description": "Egalizált, szárított lucfenyő ellenléc 48x48 mm méretben, 4 m-es hosszban – osztrák I-II. osztályú faanyag szellőző légréshez és lécezéshez.",
         "longDescription": "A 48x48 mm-es, 4 méteres egalizált lucfenyő ellenléc ideális választás tetőszerkezetek átszellőztetésének biztosításához. A precízen szárított lucfa stabil és mérettartó, így a tetőszerkezet hosszú távon is megbízható marad. A 48x48-as keresztmetszet különösen akkor előnyös, ha nagyobb szellőzőtávolság vagy extra szerkezeti stabilitás szükséges.",
         "longDescription2": "Az osztrák I-II. osztályú faanyag szabványosított, kiváló minőségű alapanyagot biztosít tetőépítési vagy felújítási projektekhez. Az egalizált kialakítás révén gyors és pontos beépítést tesz lehetővé. A termék ideális választás ellenlécnek, de akár vázszerkezetek vagy alátétek készítésére is alkalmas.",
+        "blogtags": ["cserépléc", "ellenléc", "tetőszerkezet"],
         "specs": {
           "Méret": "48 x 48 mm",
           "Hossz": "4 m",
@@ -1406,6 +1417,7 @@
         "description": "Terran Generon-kompatibilis, egalizált lucfenyő ellenléc 48x78 mm-es méretben, 4 m hosszúságban – szárított, I-II. osztályú osztrák faanyag.",
         "longDescription": "Ez a 48x78 mm méretű, 4 méteres egalizált lucfenyő ellenléc kifejezetten ajánlott a Terran Generon napelemes tetőcserép rendszerhez, ahol a megfelelő szellőzőmagasság és a pontos méret kulcsfontosságú. A precízen szárított lucfa stabil, tartós és jól megmunkálható. I-II. osztályú osztrák faanyagként hosszú távú megbízhatóságot kínál, akár új tető kialakításához, akár Generon rendszer utólagos beépítéséhez.",
         "longDescription2": "Az egalizált felület pontos illeszkedést tesz lehetővé a tartószerkezetben, míg a 78 mm-es magasság megfelelő szellőzőteret biztosít a napelemes tetőcserép alatt. A szárított luc ellenléc kiváló választás, ha fontos a minőség, mérettartás és a kompatibilitás innovatív tetőrendszerekkel, mint a Terran Generon.",
+        "blogtags": ["cserépléc", "ellenléc", "tetőszerkezet"],
         "specs": {
           "Méret": "48 x 78 mm",
           "Hossz": "4 m",
@@ -1450,6 +1462,7 @@
         "description": "Fűrészelt lucfenyő ellenléc 58x78 mm méretben, 4 m-es hosszban – osztrák I-II. osztályú faanyag nagyobb légréshez és szerkezeti stabilitáshoz.",
         "longDescription": "A 58x78 mm-es, 4 méteres ellenléc különösen alkalmas olyan tetőszerkezetekhez, ahol kiemelten fontos a megfelelő szellőzés, a teherbírás és a hosszú élettartam. A fűrészelt lucfenyő kivitel gazdaságos, jól megmunkálható és szerkezetileg is stabil. Osztrák I-II. osztályú minőségű faanyagból készül, így megbízható megoldást kínál akár új építésű, akár felújított tetőknél.",
         "longDescription2": "A 78 mm-es magasság optimális légrést biztosít, így ez a méret ajánlott lehet napelemes rendszerek alá, valamint magasabb keresztmetszetet igénylő rétegrendekhez is. A kezeletlen, de szárított fa gyors beépítést tesz lehetővé, és megfelelő felületkezeléssel hosszú távon is időtálló marad.",
+        "blogtags": ["cserépléc", "ellenléc", "tetőszerkezet"],
         "specs": {
           "Méret": "58 x 78 mm",
           "Hossz": "4 m",
@@ -1493,6 +1506,7 @@
         "description": "Szárított, egalizált lucfenyő ellenléc 78x78 mm-es méretben, 4 m-es hosszban – nagy szellőzőmagassághoz, vázakhoz és tetőszerkezethez.",
         "longDescription": "A 78x78 mm-es, 4 méteres egalizált lucfenyő ellenléc ideális választás nagy keresztmetszetű tetőszerkezetekhez, ahol fontos a stabilitás, teherbírás és precíz illeszkedés. Az osztrák származású, I-II. osztályú szárított faanyag kiváló mérettartással és megmunkálhatósággal rendelkezik. Alkalmas átszellőztetett tetőkhöz, szarufák közötti vázszerkezethez, vagy akár könnyűtartóként is felhasználható.",
         "longDescription2": "Az egalizált felület lehetővé teszi a pontos beépítést és tartós csatlakozásokat. A 78 mm-es magasság biztosítja a megfelelő szellőzőlégrést napelemes rendszerek vagy vastagabb hőszigetelések esetén is. Kezeletlen, de szárított kivitelben érkezik – kültéri használat esetén vékonylazúros felületkezelés ajánlott.",
+        "blogtags": ["cserépléc", "ellenléc", "tetőszerkezet"],
         "specs": {
           "Méret": "78 x 78 mm",
           "Hossz": "4 m",
@@ -2316,45 +2330,51 @@
     "maincategory": "Tüzelőanyag",
     "category": "Keményfa brikett",
     "slug": "kemenyfa-brikett",
-    "description": "Fedezze fel keményfa brikett kínálatunkat, amely ideális választás kandallókhoz, kályhákhoz és vegyestüzelésű kazánokhoz. A tölgyből, bükkből és más keményfákból készült brikettek kiváló fűtőértékkel rendelkeznek, alacsony nedvességtartalmuknak és nagy sűrűségüknek köszönhetően hosszan égnek, egyenletes hőt biztosítva. Ragasztóanyag nélkül, tisztán préselt faforgácsból készülnek – környezetbarát, praktikus és tiszta megoldás az otthoni fűtéshez. Vásároljon közvetlenül raktárról, raklapos tételben kedvező áron!",
+    "description": "Fedezze fel keményfa brikett kínálatunkat, amely ideális választás kandallókhoz, kályhákhoz és vegyestüzelésű kazánokhoz. A tölgyből, bükkből és más keményfákból készült fabrikettek kiváló fűtőértékkel rendelkeznek. Alacsony nedvességtartalmuknak és nagy sűrűségüknek köszönhetően hosszan égnek, egyenletes hőt biztosítva. A bio brikett ragasztóanyag nélkül, tisztán préselt faforgácsból készül, környezetbarát módon – így lesz praktikus és tiszta megoldás az otthoni fűtéshez. Vásároljon közvetlenül raktárról, raklapos tételben kedvező áron!",
     "meta": {
-      "title": "Keményfa brikett",
-      "description": "Magas fűtőértékű, préselt keményfa brikett kandallóba, kályhába vagy kazánba. Rendeljen raklapos tételben kedvező áron!",
+      "title": "Keményfa brikett | Fa brikett és fabrikett kedvező áron",
+      "description": "Magas fűtőértékű, préselt fabrikett kandallóba, kályhába vagy kazánba. Rendeljen raklapos tételben fa brikettet kedvező áron!",
       "image": "/kategoriak/brikett.jpg"
     },
-    "faqdesc": "A keményfa brikett egy préselt tüzelőanyag, amely tölgyből, bükkből vagy akácból készül, kötőanyag nélkül. Előnye a magas fűtőérték, az alacsony nedvességtartalom és a tiszta égés. Az alábbi gyakori kérdések segítenek eligazodni a típusok (RUF, Pini-Kay), az égési idő és a tárolás kapcsán.",
-    "faq": [
+    "faqdesc": "A keményfa brikett egy préselt tüzelőanyag, amely tölgyből, bükkből vagy akácból készül, kötőanyag nélkül. Előnye a magas fűtőérték, az alacsony nedvességtartalom és a tiszta égés. Az alábbi gyakori kérdések segítenek eligazodni a fabrikett típusok (RUF, Pini-Kay), az árak, az égési idő és a tárolás kapcsán.",
+    "faq": [ 
       {
         "id": "pini-kay-brikett",
-        "question": "Mit jelent az, hogy Pini-Kay brikett?",
-        "answer": "A Pini-Kay elnevezés a brikettet gyártó présgéptípusról (Pini & Kay) kapta a nevét. Ma már nemcsak a gépet, hanem a jellegzetes brikettformát is így hívják. A Pini-Kay brikett préselt keményfából készül, hosszirányban lyukas, többnyire hatszögletű vagy négyzet keresztmetszetű formában. A lyuknak köszönhetően jobb a levegőáramlás, magasabb az égéshő és hosszabb a parázstartás. Gyakran zsugorfóliába csomagolva kerül forgalomba."
+        "question": "Mit jelent az, hogy Pini-Kay fabrikett?",
+        "answer": "A Pini-Kay elnevezés a brikettet gyártó présgéptípusról (Pini & Kay) kapta a nevét. Ma már nemcsak a gépet, hanem a jellegzetes brikettformát is így hívják. A Pini-Kay fa brikett préselt keményfából készül, hosszirányban lyukas, többnyire hatszögletű vagy négyzet keresztmetszetű formában. A lyuknak köszönhetően jobb a levegőáramlás, magasabb az égéshő és hosszabb a parázstartás. Gyakran zsugorfóliába csomagolva kerül forgalomba, így a Pini-Kay fabrikett praktikus választás otthoni fűtéshez is. Égési ideje hosszabb, mint a RUF brikettnek. Jellemzően: 2–3 óra + hosszú parázstartás"
       },
       {
         "id": "ruf-brikett",
-        "question": "Mit jelent az, hogy RUF brikett?",
-        "answer": "A RUF brikett egy téglatest alakú, nagy nyomáson préselt keményfa brikett. Nevét a német RUF brikettáló présgépről kapta, amely a gyártásban szabványos formát biztosít. Előnye, hogy könnyen rakható, kompakt, alacsony nedvességtartalmú és egyenletes hőleadást biztosít."
+        "question": "Mit jelent az, hogy RUF fabrikett?",
+        "answer": "A RUF brikett egy téglatest alakú, nagy nyomáson préselt fa brikett. Nevét a német RUF brikettáló présgépről kapta, amely a gyártásban szabványos formát biztosít. Előnye, hogy könnyen rakható, kompakt, alacsony nedvességtartalmú és egyenletes hőleadást biztosít. A RUF fabrikett különösen népszerű a háztartásokban stabil égési tulajdonságai miatt. Égési ideje: 1,5–2 óra"
       },
       {
         "id": "brikett-alapanyag",
-        "question": "Milyen fából készülnek az itt forgalmazott brikettek?",
-        "answer": "Ezek a brikettek keményfából (tölgy, bükk, akác) vagy kevert fűrészporból készülnek, kötőanyag hozzáadása nélkül, tisztán mechanikus préseléssel. Ezért környezetbarát, hamutartalmuk alacsony."
+        "question": "Milyen fából készülnek az itt forgalmazott fa brikettek?",
+        "answer": "Az itt kapható brikettek keményfából (tölgy, bükk, akác) vagy kevert fűrészporból készülnek, kötőanyag hozzáadása nélkül, tisztán mechanikus préseléssel. Ezért környezetbarát bio brikettnek számítanak, hamutartalmuk alacsony, és a fabrikett kiválóan illeszkedik a környezettudatos fűtéshez."
       },
       {
-        "id": "brikett-egetesi-ido",
-        "question": "Mennyi ideig ég egy brikett?",
-        "answer": "Ez a típustól és a tüzelőberendezéstől függ:\n\n- RUF brikett: 1,5–2 óra\n- Pini-Kay: 2–3 óra + hosszú parázstartás"
+        "id": "fabrikett-ar",
+        "question": "Mennyibe kerül a fabrikett? Hogyan alakul a fa brikett ár?",
+        "answer": "A fabrikett ár több tényezőtől függ: a brikett típusától (például RUF vagy Pini-Kay fa brikett), az alapanyag minőségétől (keményfa vagy kevert fa), valamint a vásárolt mennyiségtől. Nagyobb tételben általában kedvezőbb árat tudunk biztosítani. Az aktuális fa brikett árakat mindig megtalálja az elviratuzep.hu weboldalunkon, a termékek részletes oldalán."
       },
       {
         "id": "brikett-tarolas",
         "question": "Hogyan kell tárolni a brikettet?",
-        "answer": "Száraz, fedett helyen, ahol nem éri közvetlen nedvesség. A fóliás csomagolást bontás után is védd a párától, mert a brikett könnyen visszanedvesedik."
+        "answer": "A fa brikett tárolásánál a legfontosabb a száraz, fedett hely. Olyan helyet válassz, ahol nem éri közvetlen nedvesség. A fóliás csomagolást bontás után is védd a párától, mert a fabrikett könnyen visszanedvesedik."
       },
       {
         "id": "brikett-vs-tuzifa",
-        "question": "Jobb a brikett, mint a tűzifa?",
-        "answer": "A brikett előnye, hogy mindig száraz (<10% nedvesség), nagyobb sűrűségű, így ugyanakkora térfogatban több energia van. Tűzifa olcsóbb lehet, de ha frissen vágott, akkor sokáig kell szárítani."
+        "question": "Jobb a fa brikett, mint a tűzifa?",
+        "answer": "A fa brikett egyik legnagyobb előnye, hogy mindig száraz (<10% nedvesség), ezért azonnal felhasználható. Nagyobb sűrűségű, így ugyanakkora térfogatban több energia található, mint a tűzifában. A fabrikett hőértéke magasabb, ezért hatékonyabb és egyenletesebb fűtést biztosít. A bio brikett ráadásul teljesen természetes, kötőanyag nélküli tüzelőanyag, amely környezetbarát alternatívát kínál a szénhez vagy akár a frissen vágott fához képest. Tűzifa ugyan olcsóbb lehet, de ha frissen vágják, akkor hosszú ideig kell szárítani, mielőtt megfelelő hatásfokkal használható lenne."
+      },
+      {
+        "id": "lignit-vs-fabrikett",
+        "question": "Mi a különbség a lignit brikett és a fabrikett között?",
+        "answer": "A lignit brikett barnaszénből készül, ezért fűtőértéke magasabb lehet, de több hamut termel, és a környezetre károsabb a kibocsátása. Gyakran kapható barkácsáruházakban, például OBI brikett 25 kg kiszerelésben. A fabrikett ezzel szemben fa brikett, amely keményfából vagy fűrészporból készül kötőanyag nélkül, teljesen természetes és környezetbarát módon. A lignit brikett hosszabb parázstartást biztosíthat, viszont a fabrikett tisztább égést, alacsonyabb hamutartalmat és megújuló alapanyagot kínál, így ideális választás háztartási fűtéshez."
       }
     ],
+
     "products": [
       {
         "name": "Pini‑Kay keményfa brikett I. osztály",
@@ -2369,10 +2389,8 @@
           "reviewCount": 52
         },
         "sku": "brikett-pini-kay-tolgy", 
-        "audience": [
-          "háztartások",
-          "kandalló/kályha tulajok"
-        ],
+        "blogtags": ["fa brikett", "fenntartható energia", "zöld fűtés"],
+        "audience": ["háztartások", "kandalló/kályha tulajok"],
         "material": "Tölgy keményfa brikett (Pini-Kay), extrudált",
         "price": null,
         "mprice": null,

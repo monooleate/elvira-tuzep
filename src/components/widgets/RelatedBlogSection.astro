@@ -1,0 +1,99 @@
+---
+import { APP_BLOG } from 'astrowind:config';
+import Grid from '~/components/blog/Grid.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Button from '~/components/ui/Button.astro';
+import { fetchPosts } from '~/utils/blog';
+import { getBlogPermalink, cleanSlug } from '~/utils/permalinks';
+import type { Widget } from '~/types';
+
+export interface Props extends Widget {
+  /** A teljes termék-objektum (JSON-ból), pl. { blogtags: ["brikett","tüzelőanyag"] } */
+  product?: Record<string, any> | null;
+  /** Opcionális közvetlen tag-lista; ha megadod, felülírja a product.blogtags-ot */
+  tags?: string[] | string | null;
+  /** Megjelenített posztok száma */
+  limit?: number;
+  /** Fejléc cím */
+  title?: string;
+  /** Fejléc alatti kiegészítő info (HTML mehet slotból is) */
+  information?: string;
+  /** „Összes cikk” link szöveg */
+  linkText?: string;
+  /** „Összes cikk” link URL-je. Ha nincs, az első tag oldalára mutat. */
+  linkUrl?: string | URL;
+}
+
+const {
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+
+  product = null,
+  tags = null,
+  limit = 6,
+  title = (await Astro.slots.render('title')) || 'Kapcsolódó bejegyzések',
+  information = await Astro.slots.render('information'),
+  linkText = 'Összes bejegyzés',
+  linkUrl,
+} = Astro.props as Props;
+
+// 1) Forrás tagek: props.tags -> product.blogtags -> product.tag
+const rawTags =
+  Array.isArray(tags) ? tags
+  : typeof tags === 'string' ? [tags]
+  : Array.isArray(product?.blogtags) ? product!.blogtags
+  : (typeof product?.tag === 'string' ? [product!.tag] : []);
+
+// Projekt-konzisztens slugosítás (ugyanaz, mint a posztoknál)
+const tagSlugs: string[] = rawTags.map((t) => cleanSlug(String(t))).filter(Boolean);
+
+// 2) Posztok beolvasása az utilból (cache-elt)
+let posts = APP_BLOG.isEnabled && tagSlugs.length > 0 ? await fetchPosts() : [];
+
+// 3) Szűrés: bármely egyező tag slug esetén
+if (posts.length > 0) {
+  const wanted = new Set(tagSlugs);
+  posts = posts.filter((p) =>
+    Array.isArray(p.tags) && p.tags.some((pt) => pt?.slug && wanted.has(pt.slug))
+  );
+}
+
+// 4) Limitálás (fetchPosts már időrendben adja, de biztos ami biztos)
+posts = posts.slice(0, limit);
+
+// 5) Feltételes render
+const shouldRender = APP_BLOG.isEnabled && posts.length > 0;
+
+// 6) „Összes” link: ha nincs megadva, az első tag oldalára mutat; különben blog főoldal
+const firstTag = tagSlugs[0];
+const fallbackUrl = firstTag ? getBlogPermalink(`tag/${firstTag}`) : getBlogPermalink();
+const finalLinkUrl = linkUrl ?? fallbackUrl;
+---
+
+{shouldRender && (
+  <WidgetWrapper id={id} isDark={isDark} containerClass={classes?.container as string} bg={bg}>
+    <div class="flex flex-col lg:justify-between lg:flex-row mb-8">
+      {title && (
+        <div class="md:max-w-md">
+          <h2
+            class="text-2xl font-bold tracking- sm:leading-none group font-heading mb-2"
+            set:html={title}
+          />
+          {APP_BLOG.list.isEnabled && linkText && finalLinkUrl && (
+            <Button variant="link" href={finalLinkUrl}>
+              {linkText} »
+            </Button>
+          )}
+        </div>
+      )}
+
+      {information && (
+        <p class="text-muted dark:text-slate-400 lg:text-sm lg:max-w-md" set:html={information} />
+      )}
+    </div>
+
+    <Grid posts={posts} />
+  </WidgetWrapper>
+)}

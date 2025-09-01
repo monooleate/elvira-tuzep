@@ -3,6 +3,7 @@ import Layout from '../../../layouts/PageLayout.astro'
 import productsData from '../../../data/products.json'
 import ProductInteractiveBlock from '~/components/common/ProductInteractiveBlock.jsx';
 import ProductGallery from '~/components/widgets/ProductGallery.tsx';
+import RelatedBlogSection from '~/components/widgets/RelatedBlogSection.astro';
 
 function formatPrice(value) {
   return typeof value === 'number' ? value.toLocaleString('hu-HU') : '';
@@ -860,6 +861,15 @@ const schemaBreadcrumb = {
       </div>
     </div>
   </section>
+
 )}
+
+  <RelatedBlogSection
+    id="related-posts"
+    product={product}
+    limit={3}
+    title="Kapcsolódó bejegyzések"
+    information="A kiválasztott termékhez témában legközelebb álló cikk vagy cikkek."
+  />
 
 </Layout>
