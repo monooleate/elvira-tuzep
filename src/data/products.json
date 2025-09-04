@@ -1,6 +1,6 @@
 [
   {
-    "maincategory": "Műszárított, gyalult építőfa",
+    "maincategory": ["Műszárított, gyalult építőfa"],
     "category": "Faház építő profil",
     "slug": "fahaz-epito-profil",
     "meta": {
@@ -1529,7 +1529,7 @@
   },
 
   {
-    "maincategory": "Műszárított, gyalult építőfa",
+    "maincategory": ["BSH ragasztott gerenda","Műszárított, gyalult építőfa"],
     "category": "BSH ragasztott gerenda",
     "slug": "bsh-ragasztott-gerenda",
     "description": "Az osztrák gyártású BSH (Brettschichtholz) ragasztott gerendák megbízható és tartós megoldást kínálnak minden nagy teherbírást igénylő faszerkezethez – legyen szó tetőkről, áthidalókról, csarnokokról vagy pergolákról. A termékek GL24h szilárdsági osztály szerint, látszó minőségben, homogén szerkezetből készülnek, így nagyfokú méretstabilitást és egységes mechanikai viselkedést biztosítanak. A gyalult, fózolt élű felület nemcsak esztétikus, hanem kiválóan alkalmassá teszi a gerendát látszó szerkezeti elemként is. A BSH gerendák lazúrozásra és pácolásra előkészített felülettel, egyedileg fóliázva érkeznek, és beltéri és kültéri felhasználásra egyaránt alkalmasak.",
@@ -1570,9 +1570,7 @@
         "discountValidUntil": null,
         "stock": 0,
         "video": null,
-        "images": [
-          {"src": "/termekek/bsh-gerenda-egyedi.jpg", "alt":"BSH ragasztott gerenda – Egyedi méretre gyártva"}
-        ],
+        "image": "/termekek/bsh-gerenda-egyedi.jpg",
         "description": "Egyedi méretű BSH gerendák osztrák gyártásból, GL24h szilárdsági osztályban és látszó minőségben. Rugalmas gyártás, pontos méretezés, prémium esztétika.",
         "longDescription": "Egyedi igényekre szabott BSH (Brettschichtholz) ragasztott gerendák rendelhetők osztrák gyártásból, GL24h szilárdsági osztályban. A szabványtól eltérő keresztmetszetek gyártási ideje jellemzően 2–3 hét. A gyártás 80×120 mm-es keresztmetszettől indul, a szélesség 2 cm-es, míg a magasság 4 cm-es lépcsővel növelhető. A maximális szélesség 280 mm, a magasság esetében nincs felső határ, csupán annyi, hogy 4-gyel oszthatónak kell lennie.",
         "longDescription2": "Amennyiben a megrendelt keresztmetszet legalább 100 mm széles és 160 mm magas, a gyártó centiméter pontos hosszúságban is vállalja a gyártást, például: 100×320×7,55 m vagy 100×200×6,1 m. Kisebb keresztmetszetek esetén, ahol nem éri el a 100×160 mm-es méretet, csak 13,5 méteres hosszúságban rendelhető. A gyártó nagyobb hosszúságokat is teljesít, például két darab 140×280×4 m helyett egy darab 140×280×8,01 m hosszú elem is készülhet, számolva a vágási veszteséggel. Ezek a termékek különösen ajánlottak egyedi faszerkezeti megoldásokhoz, ahol a pontos méretezhetőség, a stabilitás és a kiemelkedő esztétika elengedhetetlen.",
@@ -2389,7 +2387,7 @@
           "reviewCount": 52
         },
         "sku": "brikett-pini-kay-tolgy", 
-        "blogtags": ["fa brikett", "fenntartható energia", "zöld fűtés"],
+        "blogtags": ["fa brikett", "fabrikett", "fenntartható energia", "zöld fűtés"],
         "audience": ["háztartások", "kandalló/kályha tulajok"],
         "material": "Tölgy keményfa brikett (Pini-Kay), extrudált",
         "price": null,
@@ -2451,7 +2449,80 @@
           "width": 80,
           "height": 100
         }
+      },
+      {
+        "name": "RUF bükk fabrikett – kocka/hasáb",
+        "slug": "ruf-fabrikett-bukk",
+        "meta": {
+          "title": "RUF brikett – prémium bükk fabrikett, alacsony hamu, magas fűtőérték",
+          "description": "Válassz RUF keményfa brikettet bükkfából! Magas fűtőérték, alacsony nedvesség és minimális hamu. Kényelmes 10 kg-os csomag, raklapon is rendelhető.",
+          "image": "/images/products/ruf-bukk-csomag"
+        },
+        "sku": "brikett-ruf-bukk",
+        "blogtags": ["fa brikett", "fabrikett", "fenntartható energia", "zöld fűtés"],
+        "audience": ["háztartások", "kandalló/kályha tulajok"],
+        "material": "100% bükk keményfa (RUF préselt brikett)",
+        "price": null,
+        "mprice": null,
+        "m2price": null,
+        "m3price": null,
+        "palprice": 139900,
+        "discountPrice": null,
+        "discountPercent": 5,
+        "discountValidUntil": null,
+        "stock": 1,
+        "images": [
+          {
+            "src": "/images/products/ruf-fabrikett-bukk-darab-felul",
+            "alt": "RUF bükk fabrikett – egy darab kocka brikett felülnézetből"
+          },
+          {
+            "src": "/images/products/ruf-fabrikett-bukk-csomag",
+            "alt": "RUF bükk fabrikett – csomagos kiszerelésű kocka/hasáb brikett"
+          },
+          {
+            "src": "/images/products/ruf-fabrikett-bukk-darab-oldal",
+            "alt": "RUF bükk fabrikett – egy darab kocka brikett oldalnézetből"
+          },
+          {
+            "src": "/images/products/ruf-fabrikett-bukk-darab-szele",
+            "alt": "RUF bükk fabrikett – egy darab kocka brikett széléről nézve"
+          },
+          {
+            "src": "/images/products/ruf-fabrikett-bukk-raklap-bal",
+            "alt": "RUF brikett – raklapos kiszerelés, 96 csomag, oldalnézetből"
+          },
+                    {
+            "src": "/images/products/ruf-fabrikett-bukk-raklap-oldal",
+            "alt": "RUF brikett – raklapos kiszerelés, 96 csomag, raklap széléről nézve"
+          }
+        ],
+        "description": "RUF kocka brikett bükkfából - prémium minőségű fabrikett alacsony nedvességgel és hamuval, magas fűtőértékkel. Hosszú égés, tiszta tűz, praktikus 10 kg-os csomagban.",
+        "longDescription": "A RUF bükk fabrikett – más néven RUF brikett vagy RUF tégla – a legismertebb és legkedveltebb tüzelőanyagok közé tartozik. 100% bükk keményfából, adalékanyag nélkül készül, nagy nyomáson préselve. A préselés során a fa természetes ligninje köti össze a részecskéket, így nincs szükség mesterséges ragasztóra. A brikett rendkívül tömör, ennek köszönhetően hosszú ideig, egyenletesen és tisztán ég.\n\nA RUF fabrikett különösen alkalmas kandallókhoz, kályhákhoz és vegyes tüzelésű kazánokhoz.",
+        "longDescription2": "Alacsony, mindössze ~2,3% nedvességtartalmának és ~0,7% hamutartalmának köszönhetően tiszta égést biztosít, kevés hamu képződésével. Magas, kb. 5,5 kWh/kg fűtőértéke (~4 730 kcal/kg, ~19,8 MJ/kg) garantálja a gazdaságos fűtést. A kocka/hasáb forma könnyen rakható, jól tárolható és stabil parázstartást ad.\n\nEgy csomag 12 darab brikettet tartalmaz, tömege kb. 10 kg (±0,5 kg). A csomagolás erős polietilén fólia, amely megvédi a brikettet a szállítás és tárolás során. Egy raklapon 96 csomag található, összesen nettó ~960 kg. A raklap műanyag pántszalaggal és fémkapoccsal rögzített, streccsfóliával körbezárt, így biztonságosan mozgatható és raktározható.",
+        "specs": {
+          "Alapanyag": "100% bükk keményfa",
+          "Forma": "Kocka/hasáb (RUF profil)",
+          "Méretek egy darabra": "150 × 60 × 100 mm",
+          "Csomagolás": "Polietilén fólia, 12 db/csomag, ~10 kg/csomag (± 0,5 kg)",
+          "Raklapos kiszerelés": "96 csomag/raklap, nettó ~960 kg",
+          "Raklap mérete": "120 × 80 cm (EUR raklap)",
+          "Nedvességtartalom": "2,3 %",
+          "Hamutartalom": "0,7 %",
+          "Fűtőérték": "5,5 kWh/kg (≈ 4 730 kcal/kg, ≈ 19,8 MJ/kg)",
+          "Előállítás": "Nagy nyomáson préselt, adalékmentes",
+          "Égési tulajdonságok": "Hosszú, egyenletes égés, stabil parázstartás, kevés hamu",
+          "Felhasználás": "Kályha, kandalló, kazán",
+          "Tárolás": "Száraz, fedett helyen, közvetlen nedvességtől védve",
+          "Megjegyzés": "Raklapon pántszalaggal átkötve, streccsfóliával körbezárva"
+        },
+        "shippingDetails": {
+          "shippingWeight": 960.0,
+          "depth": 120,
+          "width": 80
+        }
       }
+
     ]
   }
 ]

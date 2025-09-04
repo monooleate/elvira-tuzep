@@ -4,6 +4,7 @@ import productsData from '../../../data/products.json'
 import ProductInteractiveBlock from '~/components/common/ProductInteractiveBlock.jsx';
 import ProductGallery from '~/components/widgets/ProductGallery.tsx';
 import RelatedBlogSection from '~/components/widgets/RelatedBlogSection.astro';
+import DiscountCardClient from '~/components/widgets/DiscountCardClient';
 
 function formatPrice(value) {
   return typeof value === 'number' ? value.toLocaleString('hu-HU') : '';
@@ -708,7 +709,7 @@ const schemaBreadcrumb = {
             {product.stock > 0 ? (
               <span class="text-green-600">Raktáron</span>
             ) : (
-              <span class="text-green-600">Rendelhető</span>
+              <span class="text-orange-600">Rendelhető (2-3 munkanap)</span>
             )}
           </div>
           
@@ -755,114 +756,24 @@ const schemaBreadcrumb = {
     </div>
   </section>
        <!-- Kapcsolódó termékek blokk -->
-{relatedProducts.length > 0 && (
-  <section class="py-12 bg-white dark:bg-gray-900 motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade
-                intersect-once intersect-quarter intercept-no-queue">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-6 text-center">Kapcsolódó termékek</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {relatedProducts.map((product) => {
-          const hasPercent = typeof product.discountPercent === 'number' && product.discountPercent > 0;
-          const hasValidDiscountPrice = typeof product.discountPrice === 'number' && product.discountPrice > 0;
-          const hasDiscount = hasPercent || hasValidDiscountPrice;
+      {relatedProducts.length > 0 && (
+        <section class="py-12 bg-white dark:bg-gray-900 motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade
+                      intersect-once intersect-quarter intercept-no-queue">
+          <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6 text-center">Kapcsolódó termékek</h2>
 
-          const discountPrice = hasValidDiscountPrice
-            ? product.discountPrice
-            : (hasPercent
-                ? Math.round(product.price * (1 - product.discountPercent / 100))
-                : null);
-
-          const discountPercent = hasPercent
-            ? product.discountPercent
-            : (hasValidDiscountPrice && product.price
-                ? Math.round((1 - discountPrice / product.price) * 100)
-                : null);
-
-          const hasPrice = typeof product.price === 'number' && product.price > 0;
-          const hasM2Price = typeof product.m2price === 'number' && product.m2price > 0;
-          const hasM3Price = typeof product.m3price === 'number' && product.m3price > 0;
-
-          const discountM2Price = hasM2Price && hasDiscount
-            ? Math.round(product.m2price * (1 - (discountPercent ?? 0) / 100))
-            : product.m2price;
-
-          const discountM3Price = hasM3Price && hasDiscount
-            ? Math.round(product.m3price * (1 - (discountPercent ?? 0) / 100))
-            : product.m3price;
-
-          return (
-            <a href={`/termekek/${category.slug}/${product.slug}`} class="relative block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800 dark:border-gray-700">
-              {hasDiscount && (
-                <div class="absolute top-2 left-2 bg-red-600 text-white text-sm font-bold px-2 py-1 rounded z-10 shadow">
-                  Akció
-                </div>
-              )}
-              {hasDiscount && discountPercent !== null && (
-                <div class="absolute top-2 right-2 bg-red-600 text-white text-sm font-extrabold px-3 py-1 rounded z-10 shadow">
-                  -{discountPercent}%
-                </div>
-              )}
-
-              <img src={product.image} alt={product.name} class="w-full h-48 object-cover" loading="lazy" />
-
-              <div class="p-4">
-                <h2 class="text-lg font-semibold text-gray-900 dark:text-white">{product.name}</h2>
-                <p class="text-sm text-gray-600 dark:text-gray-400">{product.description}</p>
-
-                <div class="mt-2 space-y-1">
-                  {/* Darabár */}
-                  {hasPrice && (
-                    hasDiscount && discountPrice !== null ? (
-                      <>
-                        <p class="text-sm text-gray-500 line-through">{formatPrice(product.price)} Ft / db</p>
-                        <p class="text-sm text-red-600 font-bold">{formatPrice(discountPrice)} Ft / db</p>
-                      </>
-                    ) : (
-                      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{formatPrice(product.price)} Ft / db</p>
-                    )
-                  )}
-
-                  {/* m² ár */}
-                  {hasM2Price && (
-                    hasDiscount && discountM2Price !== null ? (
-                      <>
-                        <p class="text-sm text-gray-500 line-through">{formatPrice(product.m2price)} Ft / m²</p>
-                        <p class="text-sm text-red-600 font-bold">{formatPrice(discountM2Price)} Ft / m²</p>
-                      </>
-                    ) : (
-                      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{formatPrice(product.m2price)} Ft / m²</p>
-                    )
-                  )}
-
-                  {/* m³ ár */}
-                  {hasM3Price && (
-                    hasDiscount && discountM3Price !== null ? (
-                      <>
-                        <p class="text-sm text-gray-500 line-through">{formatPrice(product.m3price)} Ft / m³</p>
-                        <p class="text-sm text-red-600 font-bold">{formatPrice(discountM3Price)} Ft / m³</p>
-                      </>
-                    ) : (
-                      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{formatPrice(product.m3price)} Ft / m³</p>
-                    )
-                  )}
-                </div>
-
-                <div class="mt-1">
-                  {product.stock > 0 ? (
-                    <span class="text-green-600">Raktáron</span>
-                  ) : (
-                    <span class="text-green-600">Rendelhető</span>
-                  )}
-                </div>
-              </div>
-            </a>
-          );
-        })}
-      </div>
-    </div>
-  </section>
-
-)}
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {relatedProducts.map((p, i) => (
+                <DiscountCardClient
+                  key={(p.id as any) ?? p.sku ?? p.slug ?? i}
+                  product={p}
+                  currentCategorySlug={category?.slug}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
   <RelatedBlogSection
     id="related-posts"

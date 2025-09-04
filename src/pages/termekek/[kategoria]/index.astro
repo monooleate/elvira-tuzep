@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/PageLayout.astro';
 import productsData from '../../../data/products.json';
 import Metadata from '~/components/common/Metadata.astro';
+import DiscountCardClient from '~/components/widgets/DiscountCardClient';
 
 export async function getStaticPaths() {
   return productsData.map((cat) => ({
@@ -91,65 +92,6 @@ const faqSchema =
         }))
       };
 
-
-
-function toBase(src: string) {
-  // kiterjesztés le, pl. /images/products/xyz-1200.jpg -> /images/products/xyz-1200 (ha már számozott, békén hagyjuk lent)
-  return src.replace(/\.(jpe?g|png|webp|avif)$/i, '');
-}
-
-function toCardSrc(src?: string) {
-  if (!src) return '';
-  // ha már -500.(ext) vagy -1200/-1600, hagyjuk (van kiterjesztés)
-  const alreadySized = /\-\d+\.(jpe?g|png|webp|avif)$/i.test(src);
-  if (alreadySized) return src;
-
-  // ha nincs kiterjesztés és méret: használjuk a -500.jpg kártyára
-  const base = toBase(src);
-  // ha a src már teljes URL, hagyjuk úgy; ha relatív, hagyd relatívnak (public-ból jó lesz)
-  return `${base}-500.jpg`;
-}
-
-function pickPrimaryImage(product: any): { src: string; alt: string } | null {
-  // ha van legalább 2 kép az images tömbben → azt használjuk
-  if (Array.isArray(product?.images) && product.images.length >= 2) {
-    const it = product.images[0];
-    const src = typeof it === 'string' ? it : it.src;
-    const alt =
-      typeof it === 'string'
-        ? (product?.name ?? 'Termékkép')
-        : (it.alt ?? product?.name ?? 'Termékkép');
-    return { src: toCardSrc(src), alt };
-  }
-
-  // fallback: product.image
-  if (product?.image) {
-    if (typeof product.image === 'string') {
-      return { src: product.image, alt: product?.name ?? 'Termékkép' };
-    }
-    if (typeof product.image === 'object' && product.image.src) {
-      return {
-        src: toCardSrc(product.image.src),
-        alt: product.image.alt ?? product?.name ?? 'Termékkép',
-      };
-    }
-  }
-
-  return null;
-}
-
-
-function pickSecondaryImage(product: any): { src: string; alt: string } | null {
-  if (Array.isArray(product?.images) && product.images.length > 1) {
-    const it = product.images[1];
-    const src = typeof it === 'string' ? it : it.src;
-    const alt = typeof it === 'string' ? (product?.name ?? 'Termékkép') : (it.alt ?? product?.name ?? 'Termékkép');
-    return { src: toCardSrc(src), alt };
-  }
-  return null;
-}
-
-
 const products = currentCategory.products;
 const showDescription = !!currentCategory.description;
 
@@ -216,191 +158,13 @@ const id = 'faq-section'
       )}
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {products.map((product) => {
-          const now = new Date();
-          const discountUntil = product.discountValidUntil ? new Date(product.discountValidUntil) : null;
-          const hasTimeValid = discountUntil && discountUntil > now;
-
-          const primary = pickPrimaryImage(product);
-          const secondary = pickSecondaryImage(product);
-
-          const hasPrice = typeof product.price === 'number' && product.price > 0;
-
-          const hasValidDiscountPrice =
-            typeof product.discountPrice === 'number' &&
-            product.discountPrice > 0 &&
-            product.discountPrice < product.price &&
-            hasTimeValid;
-
-          const hasValidDiscountPercent =
-            typeof product.discountPercent === 'number' &&
-            product.discountPercent > 0 &&
-            product.discountPercent < 100 &&
-            hasTimeValid;
-
-          const hasDiscount = hasValidDiscountPrice || hasValidDiscountPercent;
-
-          const discountPrice = hasValidDiscountPrice
-            ? product.discountPrice
-            : (hasValidDiscountPercent
-                ? Math.round(product.price * (1 - product.discountPercent / 100))
-                : null);
-
-          const discountPercent = hasValidDiscountPercent
-            ? product.discountPercent
-            : (hasValidDiscountPrice && discountPrice
-                ? Math.round((1 - discountPrice / product.price) * 100)
-                : null);
-
-          const discountPercentView = parseFloat(Number(discountPercent).toFixed(1));
-
-          const hasMPrice = typeof product.mprice === 'number' && product.mprice > 0;
-          const hasM2Price = typeof product.m2price === 'number' && product.m2price > 0;
-          const hasM3Price = typeof product.m3price === 'number' && product.m3price > 0;
-          const hasPalPrice = typeof product.palprice === 'number' && product.palprice > 0;
-
-          const discountMPrice = hasMPrice && hasValidDiscountPercent
-            ? Math.round(product.mprice * (1 - product.discountPercent / 100))
-            : product.mprice;
-
-          const discountM2Price = hasM2Price && hasValidDiscountPercent
-            ? Math.round(product.m2price * (1 - product.discountPercent / 100))
-            : product.m2price;
-
-          const discountM3Price = hasM3Price && hasValidDiscountPercent
-            ? Math.round(product.m3price * (1 - product.discountPercent / 100))
-            : product.m3price;
-
-          const discountPalPrice = hasPalPrice && hasValidDiscountPercent
-            ? Math.round(product.palprice * (1 - product.discountPercent / 100))
-            : product.palprice;
-
-          return (
-            <a href={`/termekek/${currentCategory.slug}/${product.slug}`} class="py-2 group relative block border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800 dark:border-gray-700">
-
-              {/* Akció badge - BAL FELSŐ SAROK */}
-              {hasDiscount && (
-                <div class="absolute top-2 left-2 bg-red-600 text-white text-sm font-bold px-2 py-1 rounded z-10 shadow">
-                  Akció
-                </div>
-              )}
-
-              {/* Százalék badge - JOBB FELSŐ SAROK */}
-              {hasDiscount && discountPercent !== null && (
-                <div class="absolute top-2 right-2 bg-red-600 text-white text-sm font-extrabold px-3 py-1 rounded z-10 shadow">
-                  -{discountPercentView}%
-                </div>
-              )}
-
-
-
-<div class="relative bg-white dark:bg-gray-900">
-  <div class="relative overflow-hidden bg-white dark:bg-gray-900">
-    <!-- fix arány, hogy ne ugorjon a layout -->
-    <div class="w-full aspect-[4/3] relative">
-      {primary && (
-        <img
-          src={primary.src}
-          alt={primary.alt}
-          class={`absolute inset-0 w-full h-full object-contain bg-white dark:bg-gray-900 transition-opacity duration-200 ${
-            secondary ? 'group-hover:opacity-0' : ''
-          }`}
-          loading="lazy"
-          decoding="async"
-        />
-      )}
-      {secondary && (
-        <img
-          src={secondary.src}
-          alt={secondary.alt}
-          class="absolute inset-0 w-full h-full object-contain bg-white dark:bg-gray-900 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
-          loading="lazy"
-          decoding="async"
-          aria-hidden="true"
-        />
-      )}
-    </div>
-  </div>
-</div>
-
-
-              <div class="p-4">
-                <h2 class="text-lg font-semibold text-gray-900 dark:text-white">{product.name}</h2>
-                <p class="text-sm text-gray-600 dark:text-gray-400">{product.description}</p>
-
-                <div class="mt-2 space-y-1">
-                  {/* Darabár */}
-                  {hasPrice && (
-                    hasDiscount && discountPrice !== null ? (
-                      <>
-                        <p class="text-sm text-gray-500 line-through">{product.price.toLocaleString('hu-HU')} Ft / db</p>
-                        <p class="text-sm text-red-600 font-bold">{discountPrice.toLocaleString('hu-HU')} Ft / db</p>
-                      </>
-                    ) : (
-                      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.price.toLocaleString('hu-HU')} Ft / db</p>
-                    )
-                  )}
-
-                  {/* m ár */}
-                  {hasMPrice && (
-                    hasValidDiscountPercent ? (
-                      <>
-                        <p class="text-sm text-gray-500 line-through">{product.mprice.toLocaleString('hu-HU')} Ft / m</p>
-                        <p class="text-sm text-red-600 font-bold">{discountMPrice.toLocaleString('hu-HU')} Ft / m</p>
-                      </>
-                    ) : (
-                      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.mprice.toLocaleString('hu-HU')} Ft / m</p>
-                    )
-                  )}
-
-                  {/* m² ár */}
-                  {hasM2Price && (
-                    hasValidDiscountPercent ? (
-                      <>
-                        <p class="text-sm text-gray-500 line-through">{product.m2price.toLocaleString('hu-HU')} Ft / m²</p>
-                        <p class="text-sm text-red-600 font-bold">{discountM2Price.toLocaleString('hu-HU')} Ft / m²</p>
-                      </>
-                    ) : (
-                      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.m2price.toLocaleString('hu-HU')} Ft / m²</p>
-                    )
-                  )}
-
-                  {/* m³ ár */}
-                  {hasM3Price && (
-                    hasValidDiscountPercent ? (
-                      <>
-                        <p class="text-sm text-gray-500 line-through">{product.m3price.toLocaleString('hu-HU')} Ft / m³</p>
-                        <p class="text-sm text-red-600 font-bold">{discountM3Price.toLocaleString('hu-HU')} Ft / m³</p>
-                      </>
-                    ) : (
-                      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.m3price.toLocaleString('hu-HU')} Ft / m³</p>
-                    )
-                  )}
-                  
-                  {/* raklap ár */}
-                  {hasPalPrice && (
-                    hasValidDiscountPercent ? (
-                      <>
-                        <p class="text-sm text-gray-500 line-through">{product.palprice.toLocaleString('hu-HU')} Ft / raklap</p>
-                        <p class="text-sm text-red-600 font-bold">{discountPalPrice.toLocaleString('hu-HU')} Ft / raklap</p>
-                      </>
-                    ) : (
-                      <p class="text-sm font-medium text-gray-800 dark:text-gray-300">{product.palprice.toLocaleString('hu-HU')} Ft / raklap</p>
-                    )
-                  )}
-                </div>
-
-                <div class="mt-1">
-                  {product.stock > 0 ? (
-                    <span class="text-green-600">Raktáron</span>
-                  ) : (
-                    <span class="text-orange-500">Rendelhető</span>
-                  )}
-                </div>
-              </div>
-            </a>
-          );
-        })}
+        {products.map((p, i) => (
+          <DiscountCardClient
+            key={(p.id as any) ?? p.sku ?? p.slug ?? i}
+            product={p}
+            currentCategorySlug={currentCategory.slug}
+          />
+        ))}
       </div>
     </div>
   </section>
