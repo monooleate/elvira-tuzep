@@ -677,7 +677,7 @@ const filteredProducts = useMemo(() => {
           ref={(el) => el && panelsRef.current.set(name, el)}
           class={`${name === active ? '' : 'hidden'}`}
         >
-          <div class="py-4 grid grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {items.length === 0 ? (
               <div class="col-span-full text-sm text-gray-600 dark:text-gray-400">
                 Nincs megjeleníthető kategória ebben a fülben.
