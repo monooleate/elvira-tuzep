@@ -2933,12 +2933,120 @@
           "height": 2.2
         }
       }
-
-
-
-
-
     ]
+  },
+  {
+    "maincategory": "Tüzelőanyag",
+    "category": "Pellet",
+    "slug": "pellet",
+    "description": "Prémium minőségű pellet kínálatunk ideális választás pellet kazánokhoz, vízteres pellet kandallókhoz és pelletes kályhákhoz. A fa pellet és alternatív pellet fajták – mint a fenyő pellet, keményfa pellet vagy napraforgó pellet – egyaránt környezetbarát és hatékony tüzelőanyagok. Magas fűtőértéküknek, alacsony nedvességtartalmuknak és egyenletes égésüknek köszönhetően gazdaságos és kényelmes fűtést biztosítanak. A pellet árak kedvezőek, különösen raklapos tételben történő vásárláskor. Fedezze fel pellet árainkat és rendeljen közvetlenül raktárról az Elvira Tüzépnél!",
+    "meta": {
+      "title": "Pellet | Fa pellet és napraforgó pellet kazánhoz, kandallóhoz",
+      "description": "Fa pellet és alternatív pellet kedvező áron – fenyő pellet, keményfa pellet, napraforgó pellet. Ideális pellet kazánhoz, vízteres pellet kandallóhoz. Rendeljen raklapos tételben!",
+      "image": "/kategoriak/pellet.jpg"
+    },
+    "faqdesc": "A pellet egy préselt, kis henger formájú tüzelőanyag, amely jellemzően faforgácsból, fűrészporból vagy mezőgazdasági melléktermékekből (pl. napraforgóhéj) készül. Előnye a magas fűtőérték, a tiszta égés és az automatizálható adagolás. Az alábbi gyakori kérdések segítenek eligazodni a pellet típusok, árak, felhasználási módok és tárolási tudnivalók kapcsán.",
+    "faq": [
+      {
+        "id": "pellet-mi-az",
+        "question": "Mi az a pellet és mire használható?",
+        "answer": "A pellet kis henger alakú, préselt tüzelőanyag, amely fából vagy mezőgazdasági melléktermékből (pl. napraforgóhéj) készül. Használható pellet kazánban, vízteres pellet kandallóban vagy kisebb pelletes kályhában is. Előnye a tiszta égés, az egyenletes hőleadás és az automatizált adagolási lehetőség."
+      },
+      {
+        "id": "pellet-tipusok",
+        "question": "Milyen pellet típusok kaphatók?",
+        "answer": "A leggyakoribb típusok a fenyő pellet, keményfa pellet és a napraforgó pellet. A fenyő pellet világos színű, gyorsan gyullad és alacsony hamutartalmú. A keményfa pellet sűrűbb, lassabban ég és hosszabb parázstartást biztosít. A napraforgó pellet olcsóbb alternatíva, amely szintén magas fűtőértékű, de több hamut termel."
+      },
+      {
+        "id": "pellet-ar",
+        "question": "Mennyibe kerül a pellet? Hogyan alakul a pellet ár?",
+        "answer": "A pellet ár függ az alapanyagtól (fenyő, keményfa vagy napraforgó pellet), a csomagolástól (zsákos vagy raklapos) és a rendelt mennyiségtől. A pellet kazánhoz vagy kandallóhoz szükséges mennyiséget nagyobb tételben vásárolva kedvezőbb áron szerezheti be. Az aktuális pellet árakat mindig megtalálja az elviratuzep.hu weboldalon."
+      },
+      {
+        "id": "pellet-vs-brikett",
+        "question": "Mi a különbség a pellet és a brikett között?",
+        "answer": "A pellet kis átmérőjű (6–8 mm) henger formájú tüzelőanyag, amelyet főként automata adagolású pellet kazánokhoz és kandallókhoz fejlesztettek ki. A brikett nagyobb méretű, kézi adagolást igényel, és elsősorban kályhákban, vegyestüzelésű kazánokban használatos. A pellet kényelmesebb, automatizált fűtési rendszerekhez, míg a brikett egyszerűbb, hagyományos megoldásokhoz ideális."
+      },
+      {
+        "id": "pellet-tarolas",
+        "question": "Hogyan kell tárolni a pelletet?",
+        "answer": "A pellet érzékeny a nedvességre, ezért mindig száraz, fedett, szellős helyen kell tárolni. Zsákos kiszerelés esetén a gyári csomagolás védelmet nyújt, raklapos vásárlásnál érdemes fóliával letakarni. Nedvesség esetén a pellet széteshet és elveszítheti fűtőértékét."
+      },
+      {
+        "id": "pellet-kazan",
+        "question": "Milyen előnyei vannak a pellet kazánnak és a pellet kandallónak?",
+        "answer": "A pellet kazán és a vízteres pellet kandalló egyik legnagyobb előnye az automatizálható működés. A pelletes kazán képes programozottan adagolni a tüzelőanyagot, így kényelmes és energiatakarékos fűtést biztosít. A pellet kandalló pedig a hagyományos fatüzelés hangulatát ötvözi a modern technológiával, sokszor távirányítható és termosztáttal vezérelhető."
+      }
+    ],
+    "products": [
+      {
+        "name": "Prémium fenyő pellet – 15 kg zsák",
+        "slug": "fenyo-pellet-15kg-enplus-a1",
+        "meta": {
+          "title": "Fenyő pellet 15 kg | ENplus A1 | Pellet kazánhoz és kandallóhoz",
+          "description": "Prémium minőségű fenyő pellet, ENplus A1 minősítéssel. ≤10% nedvesség, ≤0,7% hamu, ≥98% mechanikai tartósság, 6±1 mm átmérő, 3,15–40 mm hossz, ≥4,6 kWh/kg fűtőérték. Ideális pellet kazánhoz és vízteres pellet kandallóhoz.",
+          "image": "/images/products/fenyo-pellet-15kg-zsak-500.avif"
+        },
+        "sku": "pellet-fenyo-15kg-enplus-a1",
+        "blogtags": ["fa brikett", "pellet", "pellet ár", "pellet kazán", "pellet kandalló", "pelletes kazán", "vízteres pellet kandalló", "fenyő pellet", "ENplus A1"],
+        "audience": ["háztartások", "pellet kazán/kandalló tulajok"],
+        "material": "100% fenyő pellet, ENplus A1",
+        "price": 2799,
+        "mprice": null,
+        "m2price": null,
+        "m3price": null,
+        "palprice": 195930,
+        "discountPrice": null,
+        "discountPercent": 5,
+        "discountValidUntil": "2025.10.01",
+        "stock": 1,
+        "images": [
+          {
+            "src": "/images/products/fenyo-pellet-15kg-zsak",
+            "alt": "Fenyő pellet – 15 kg zsákos kiszerelés eleje"
+          },
+                    {
+            "src": "/images/products/fenyo-pellet-15kg-zsak-hatulja",
+            "alt": "Fenyő pellet – 15 kg zsákos kiszerelés hatulja"
+          },
+          
+          {
+            "src": "/images/products/fenyo-pellet-15kg-raklap-szembol",
+            "alt": "Fenyő pellet – raklapos kiszerelés szemből, 70 zsák (~1050 kg)"
+          },
+          {
+            "src": "/images/products/fenyo-pellet-15kg-raklap-oldal",
+            "alt": "Fenyő pellet – raklapos kiszerelés oldalnézetből, 70 zsák (~1050 kg)"
+          }
+        ],
+        "description": "Prémium minőségű fenyő pellet, ENplus A1 tanúsítvánnyal. Alacsony hamu és nedvesség, tiszta égés, megbízható adagolhatóság pellet kazánokhoz és pellet kandallókhoz. Praktikus 15 kg-os zsákos kivitelben.",
+        "longDescription": "A fenyő pellet prémium tüzelőanyag, amely 100% fenyő alapanyagból készül. ENplus A1 minősítése garantálja az alacsony nedvességtartalmat és hamut, valamint a magas mechanikai tartósságot. Ez egyenletes, tiszta égést és magas hatásfokot biztosít, így ideális választás pellet kazánhoz, vízteres pellet kandallóhoz és pelletes kályhához. A 15 kg-os zsák könnyen mozgatható, és tisztán tárolható.",
+        "longDescription2": "Főbb jellemzők: nedvesség ≤10%, hamutartalom ≤0,7%, mechanikai tartósság ≥98%, szemcseméret 6±1 mm átmérő és 3,15–40 mm hossz, alsó fűtőérték ≥4,6 kWh/kg. A pontos mérettűrés és a magas tartósság stabil csigás adagolást tesz lehetővé. Egy raklap 70 zsákot tartalmaz (~1050 kg). Származás: Szlovákia.",
+        "specs": {
+          "Alapanyag": "100% fenyő",
+          "Osztály": "ENplus A1",
+          "Átmérő": "6 ± 1 mm",
+          "Hossz": "3,15–40 mm",
+          "Nedvességtartalom": "≤ 10 %",
+          "Hamutartalom": "≤ 0,7 %",
+          "Mechanikai tartósság": "≥ 98 %",
+          "Alsó fűtőérték": "≥ 4,6 kWh/kg",
+          "Kiszerelés": "15 kg zsák",
+          "Raklapos kiszerelés": "70 zsák/raklap (~1050 kg)",
+          "Felhasználás": "Pellet kazán, vízteres pellet kandalló, pelletes kályha",
+          "Származás": "Szlovákia",
+          "Megjegyzés": "Automata adagolásra optimalizált, tiszta égés"
+        },
+        "shippingDetails": {
+          "shippingWeight": 15,
+          "depth": 50,
+          "width": 35,
+          "height": 12
+        }
+      }
+
+      ]
   }
+
 
 ]

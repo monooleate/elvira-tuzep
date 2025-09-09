@@ -147,7 +147,41 @@ export default function MainCategoryGrid({
   headerSelectors = ['#header'],
   stickyBarId,
   initialTabName,
-  tabIntros = {},
+  tabIntros = {
+        'Műszárított, gyalult építőfa': {
+          title: 'Műszárított, gyalult építőfa',
+          body:
+            'Építkezéshez és zsaluzathoz ideális, érdes felületű, légszáraz vagy friss faanyag. Költséghatékony megoldás ott, ahol a teherbírás fontos, az esztétika kevésbé.',
+          image: 'images/products/fureszaru-500.avif', // opcionális
+          imageAlt: 'Fűrészelt építőfa'
+        },
+        'BSH ragasztott gerenda': {
+          title: 'BSH ragasztott gerenda',
+          body:
+            'Kamrában szárított, sima felületű BSH termékek látszó és tartós szerkezetekhez. Stabil, kevesebbet vetemedik és esztétikus eredményt ad tetőkben és belső terekben.',
+          image: '/termekek/bsh-gerenda-egyedi.jpg', // opcionális
+          imageAlt: 'BSH gerenda'
+        },
+    /*     'Tüzelőanyag': {
+          title: 'Tüzelőanyag – brikett és pellet raktárról',
+          body:
+            'Prémium brikett és pellet magas fűtőértékkel, alacsony nedvességtartalommal és tiszta égéssel az otthoni fűtéshez. Válassz gazdaságos, környezetkímélő megoldást gyors átvétellel és kiszállítási opcióval.',
+          //image: '/images/muszaritott-gyalult.jpg', // opcionális
+        }, */
+        'Tüzelőanyag': {
+          title: 'Tüzelőanyag',
+          body:
+            'Nagy préselési sűrűségű keményfa brikett stabil, egyenletes hőleadással és minimális hamutartalommal. Ideális kandallóhoz és vegyes tüzelésű kazánokhoz, csomagban és raklapon is elérhető.',
+          image: '/kategoriak/brikett.jpg', // opcionális ENplus minősítésű fa pellet magas fűtőértékkel és tiszta égéssel, automata adagolású kazánokhoz optimalizálva. Egységes szemcseméret, alacsony hamu, megbízható, kényelmes fűtés.
+        },
+        'OSB lapok': {
+          title: 'OSB lapok',
+          body:
+            'OSB lap kínálatunkban megtalálja a legnépszerűbb vastagságokat és méreteket: 6 mm-től 22 mm-ig. Az OSB lap kedvező árú, sokoldalú építőanyag falak, tetők és padlók burkolásához. Népszerű alternatíva az OBI és Praktiker OSB lap választékhoz képest – közvetlenül, raktárról elérhető, széles választékban.',
+          image: '/kategoriak/osb3_800x600.jpg',
+          imageAlt: 'OSB lapok különböző méretekben és vastagságban'
+        }
+      },
   productListing = false,
 }: Props) {
   // 🔧 Normalizálás: maincategory -> _maincats: string[]
@@ -276,7 +310,7 @@ const autoUnit = useMemo(() => computeAutoUnit(baseProducts), [baseProducts]);
 // ha főkategória vált, reseteljük a lapozót és a keresést (opcionális)
 useEffect(() => {
   // alapból mindig az aktuális főkategóriára szűrjünk
-  setMaincatFilter(active);
+  setMaincatFilter('');
 
   // resetek
   setVisibleCount(PAGE);
