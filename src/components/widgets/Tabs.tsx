@@ -152,27 +152,21 @@ export default function MainCategoryGrid({
           title: 'Műszárított, gyalult építőfa',
           body:
             'Építkezéshez és zsaluzathoz ideális, érdes felületű, légszáraz vagy friss faanyag. Költséghatékony megoldás ott, ahol a teherbírás fontos, az esztétika kevésbé.',
-          image: 'images/products/fureszaru-500.avif', // opcionális
+          image: 'images/products/fureszaru-500.avif', 
           imageAlt: 'Fűrészelt építőfa'
         },
         'BSH ragasztott gerenda': {
           title: 'BSH ragasztott gerenda',
           body:
             'Kamrában szárított, sima felületű BSH termékek látszó és tartós szerkezetekhez. Stabil, kevesebbet vetemedik és esztétikus eredményt ad tetőkben és belső terekben.',
-          image: '/termekek/bsh-gerenda-egyedi.jpg', // opcionális
+          image: '/termekek/bsh-gerenda-egyedi.jpg', 
           imageAlt: 'BSH gerenda'
         },
-    /*     'Tüzelőanyag': {
-          title: 'Tüzelőanyag – brikett és pellet raktárról',
-          body:
-            'Prémium brikett és pellet magas fűtőértékkel, alacsony nedvességtartalommal és tiszta égéssel az otthoni fűtéshez. Válassz gazdaságos, környezetkímélő megoldást gyors átvétellel és kiszállítási opcióval.',
-          //image: '/images/muszaritott-gyalult.jpg', // opcionális
-        }, */
         'Tüzelőanyag': {
           title: 'Tüzelőanyag',
           body:
-            'Nagy préselési sűrűségű keményfa brikett stabil, egyenletes hőleadással és minimális hamutartalommal. Ideális kandallóhoz és vegyes tüzelésű kazánokhoz, csomagban és raklapon is elérhető.',
-          image: '/kategoriak/brikett.jpg', // opcionális ENplus minősítésű fa pellet magas fűtőértékkel és tiszta égéssel, automata adagolású kazánokhoz optimalizálva. Egységes szemcseméret, alacsony hamu, megbízható, kényelmes fűtés.
+            'Prémium fabrikett és pellet magas fűtőértékkel, alacsony nedvességtartalommal, minimális hamutartalommaé és tiszta égéssel az otthoni fűtéshez. Válassz gazdaságos, környezetkímélő megoldást gyors átvétellel és kiszállítási opcióval.',
+          image: '/kategoriak/brikett.jpg', 
         },
         'OSB lapok': {
           title: 'OSB lapok',

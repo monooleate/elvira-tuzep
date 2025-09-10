@@ -78,6 +78,18 @@ export default function OfferModal({ product, unit, price, quantity, onClose }) 
 
       if (response.ok && result.success) {
         setSubmitted(true);
+        if (typeof gtag === 'function') {
+          gtag('event', 'ads_conversion_Ismer_s_1', {
+            // opcionálisan adhatsz át értéket is
+            // value: price || 0,
+            // currency: 'HUF'
+            name: product.name,
+            slug: product.slug,
+            price: price,
+            unit: unit,
+            sku: product.sku,
+          });
+  }
       } else {
         setServerError(result.error || 'Ismeretlen hiba történt.');
       }

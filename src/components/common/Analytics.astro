@@ -11,3 +11,12 @@ import { ANALYTICS } from 'astrowind:config';
     />
   ) : null
 }
+
+{
+  ANALYTICS?.vendors?.googleAdsAnalytics?.id ? (
+    <GoogleAnalytics
+      id={String(ANALYTICS.vendors.googleAdsAnalytics.id)}
+      partytown={ANALYTICS?.vendors?.googleAdsAnalytics?.partytown}
+    />
+  ) : null
+}

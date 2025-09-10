@@ -66,8 +66,13 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: "G-9C27N57B3F" # or "G-XXXXXXXXXX"
+      id: "G-9C27N57B3F"
       partytown: false
+    googleAdsAnalytics:
+      id: "AW-17238860271"
+      partytown: false
+
+
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
