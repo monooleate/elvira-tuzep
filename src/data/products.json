@@ -1178,7 +1178,7 @@
         "slug": "egalizalt-csereplec-luc-23x48-4m",
         "meta": {
           "title": "Egalizált luc cserépléc 23x48mm 4m | Elvira Tüzép",
-          "description": "Szárított, egalizált cserépléc lucfenyőből, 23x48 mm-es méretben, 4 m hosszúságban – I-II. osztályú osztrák faanyag tetőszerkezethez, lécezéshez.",
+          "description": "Szárított, egalizált cserépléc lucfenyőből, 23x48 mm-es méretben, 4 m hosszúságban – I-II. osztályú faanyag belső terek lécezéshez.",
           "image": "/termekek/egalizalt-csereplec-luc-23x48.jpg"
         },
         "aggregateRating": {
@@ -1187,17 +1187,30 @@
         },
         "sku": "luc-csl-eg-23x48-4m", 
         "price": 1119,
-        "mprice": 280,
+        "mprice": 279,
         "m2price": null,
         "m3price": null,
         "discountPrice": null,
-        "discountPercent": null,
-        "discountValidUntil": null,
-        "stock": 0,
-        "image": "/termekek/egalizalt-csereplec-luc-23x48.jpg",
-        "description": "Szárított, egalizált lucfenyő cserépléc 23x48 mm méretben, 4 m-es hosszban – I-II. osztály, osztrák minőség tetőszerkezethez.",
-        "longDescription": "Ez a 23x84 mm méretű, 4 méteres hosszúságú egalizált lucfenyő cserépléc kiválóan alkalmas tetőszerkezetek, lécezések, ellenlécek és burkolati alátétek kialakítására. Az egalizált, szárított kivitel garantálja a pontos méretet, a jobb teherbírást és a gyorsabb, pontosabb beépítést. A lucfenyő kiváló megmunkálhatóságot biztosít, természetes, világos árnyalatával és kiváló ár-érték arányával. I-II. osztályú osztrák minőség, raktárról vagy rövid határidővel rendelhető.",
-        "longDescription2": "Az egalizált cseréplécek forma- és mérettartó kialakításuknak köszönhetően ideálisak átszellőztetett tetőszerkezetekhez és a cserépfedés biztonságos rögzítéséhez. Nedvességtartalmuk stabilizált, ezért a beépítés során nem vetemednek. Kiemelten ajánlott új építésekhez, felújításokhoz vagy tetőcseréhez.",
+        "discountPercent": 5,
+        "discountValidUntil": "2025.10.01",
+        "stock": 1,
+        "images": [
+          {
+            "src": "/images/products/egalizalt-csereplec-luc-23x48-koteg",
+            "alt": "Egalizált cserépléc 23×48 mm, 4 m – műszárított tetőléc közelről kötegben"
+          },
+          {
+            "src": "/images/products/egalizalt-csereplec-luc-23x48-csomag",
+            "alt": "Egalizált cserépléc 23×48 mm, 4 m – műszárított, kötegelt, csomagolt kiszerelés oldalnézetből"
+          },
+          {
+            "src": "/images/products/egalizalt-csereplec-luc-23x48-darab",
+            "alt": "Egalizált cserépléc 23×48 mm, 4 m – műszárított, darab nézetben"
+          }
+        ],
+        "description": "Szárított, egalizált lucfenyő cserépléc 23x48 mm méretben, 4 m-es hosszban – I-II. osztály belső terekben lécezéshez",
+        "longDescription": "Ez a 23x84 mm méretű, 4 méteres hosszúságú egalizált lucfenyő cserépléc kiválóan alkalmas beltereken lécezéshez, ellenlécek és burkolati alátétek kialakítására. Az egalizált, szárított kivitel garantálja a pontos méretet, a jobb teherbírást és a gyorsabb, pontosabb beépítést. A lucfenyő kiváló megmunkálhatóságot biztosít, természetes, világos árnyalatával és kiváló ár-érték arányával. I-II. osztályú minőség, raktárról vagy rövid határidővel rendelhető.",
+        "longDescription2": "A 23×48 mm-es egalizált cserépléc forma- és mérettartó kialakításának köszönhetően nemcsak tetőszerkezeteknél, hanem beltéri felhasználásnál is ideális. Stabilizált nedvességtartalma miatt a beépítés során nem vetemedik, így megbízható megoldás válaszfalak, burkolatok és egyéb belső szerkezeti munkák esetén. Különösen ajánlott új építéseknél és felújításoknál, ahol fontos a tartósság és a pontos illeszkedés.",
         "blogtags": ["cserépléc", "ellenléc", "tetőszerkezet"],
         "specs": {
           "Méret": "23 x 48 mm",
@@ -1206,7 +1219,7 @@
           "Típus": "Egalizált cserépléc",
           "Felület": "Egalizált, szárított",
           "Minőség": "I-II. osztály",
-          "Származás": "Ausztria",
+          "Származás": "Európa",
           "Felhasználás": "Tetőszerkezet, lécezés, alátétszerkezet",
           "Mérettűrés": "Maximum ±0,3 mm"
         },
@@ -1237,7 +1250,7 @@
         "discountPrice": null,
         "discountPercent": null,
         "discountValidUntil": null,
-        "stock": 0,
+        "stock": 1,
         "image": "/termekek/egalizalt-csereplec-luc-28x48.jpg",
         "description": "Szárított, egalizált lucfenyő cserépléc 28x48 mm méretben, 3 m hosszban – I-II. osztályú, osztrák minőségű tetőléc.",
         "longDescription": "Ez a 28x48 mm-es, 3 méteres hosszúságú egalizált lucfenyő cserépléc ideális választás tetőszerkezetek kialakításához, különösen akkor, ha fontos a méretpontosság és a szilárdság. Az osztrák gyártású, szárított faanyag stabil formát és hosszú élettartamot biztosít, könnyen kezelhető és gyorsan beépíthető. I-II. osztályú minőségi besorolása jó ár-érték arányt képvisel új tetők építéséhez és meglévők felújításához.",
@@ -1259,6 +1272,56 @@
           "depth": 300,
           "width": 4.8,
           "height": 2.8
+        }
+      },
+      {
+        "name": "Bramac légszárított, impregnált cserépléc 30×50mmx4m",
+        "slug": "bramac-csereplec-30x50-4m-impregnalt-legszaritott",
+        "meta": {
+          "title": "Bramac cserépléc 30×50 mm | 4 m | Barna, impregnált, légszárított léc",
+          "description": "Bramac légszárított, nyomás alatt impregnált cserépléc 30×50 mm keresztmetszettel, 4 m hosszban. Időtálló tetőléc cserépfedéshez és lécezéshez.",
+          "image": "/images/products/bramac-csereplec-30x50-4m-koteg-500.avif"
+        },
+        "sku": "luc-csl-impreg-bramac-30x50-4m",
+        "blogtags": ["cserépléc", "Bramac léc", "tetőléc", "impregnált faanyag", "tetőfedés"],
+        "audience": ["kivitelezők", "ácsok", "tetőfedők", "magánépítkezők"],
+        "material": "Légszárított, nyomás alatt impregnált fenyő (luc/erdei fenyő)",
+        "price": 369,
+        "mprice": 1476,
+        "m2price": null,
+        "m3price": null,
+        "palprice": null,
+        "discountPrice": null,
+        "discountPercent": 10,
+        "discountValidUntil": "2025.10.01",
+        "stock": 1,
+        "images": [
+          {
+            "src": "/images/products/bramac-csereplec-30x50-4m-koteg",
+            "alt": "Bramac cserépléc 30×50 mm, 4 m – légszárított, impregnált tetőléc közelről kötegben"
+          },
+          {
+            "src": "/images/products/bramac-csereplec-30x50-4m-csomag",
+            "alt": "Bramac 30×50 mm cserépléc – kötegelt, csomagolt kiszerelés oldalnézetből"
+          }
+        ],
+        "description": "Bramac légszárított, nyomás alatt impregnált, barna színű cserépléc 30×50 mm keresztmetszettel, 4 m hosszban. Időtálló, mérettartó tetőléc cserépfedéshez és lécezéshez, kivitelezők és magánépítkezők részére.",
+        "longDescription": "A Bramac 30×50 mm-es cserépléc légszárított fenyőből készül, nyomás alatt történő impregnálással a tartósság és a biológiai kártevőkkel szembeni védelem érdekében. A 4 méteres szálhossz ideális gyors és hatékony lécezéshez. Stabil, teherbíró megoldás átszellőztetett tetőszerkezetekhez és a cserépfedés biztonságos rögzítéséhez.",
+        "longDescription2": "Az impregnálás növeli a faanyag ellenállását gombával és rovarokkal szemben, a légszárított állapot pedig segít csökkenteni a beépítés közbeni vetemedés kockázatát. Ajánlott új építésekhez és felújításokhoz egyaránt.",
+        "specs": {
+          "Keresztmetszet": "30 × 50 mm",
+          "Hossz": "4,0 m",
+          "Faanyag": "Fenyő (luc/erdei fenyő), légszárított",
+          "Felületkezelés": "Nyomás alatt impregnált",
+          "Felhasználás": "Tetőszerkezet lécezése, cserépfedés rögzítése, átszellőztetett tető",
+          "Nedvességtartalom": "Légszárított (irányadó, nem kemencés szárítás)",
+          "Minőség": "Szerkezeti felhasználásra alkalmas, válogatott anyag",
+          "Megjegyzés": "Bramac rendszerhez méretezett tetőléc; a tényleges szín az impregnálószertől függően eltérhet"
+        },
+        "shippingDetails": {
+          "shippingWeight": null,
+          "depth": 400,
+          "width": 30
         }
       },
       {
@@ -1558,6 +1621,7 @@
         "mpn": null,
         "sku": "bsh-egyedi-gl24h",
         "gtin13": null,
+        "blogtags": ["bsh", "rétegragasztott fa"],
         "audience": [],
         "material": "Fa, ragasztott (BSH), GL24h",
         "additionalType": ["https://en.wikipedia.org/wiki/Glued_laminated_timber"],
@@ -1608,6 +1672,7 @@
         "mpn": null,
         "sku": "bsh-8x12-gl24h",
         "gtin13": null,
+        "blogtags": ["bsh", "rétegragasztott fa"],
         "audience": [],
         "material": "Fa, ragasztott (BSH), GL24h",
         "price": 51839,
@@ -1659,6 +1724,7 @@
           "reviewCount": 26
         },
         "sku": "bsh-8x16-gl24h",
+        "blogtags": ["bsh", "rétegragasztott fa"],
         "price": 69118,
         "mprice": null,
         "m2price": null,
@@ -1696,6 +1762,71 @@
         }
       },
       {
+        "name": "BSH ragasztott gerenda 9x9cm",
+        "slug": "bsh-ragasztott-gerenda-9x9",
+        "meta": {
+          "title": "BSH ragasztott gerenda 9x9cm - GL24h, emelt minőség",
+          "description": "BSH gerenda 9×9 cm méretben, GL24h osztályban. Ideális kisebb szerkezetekhez, pergolákhoz, keretekhez és látszó faszerkezetekhez. Precíz, tartós és esztétikus faanyag.",
+          "image": "/termekek/bsh-gerenda-9x9.jpg"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.9,
+          "reviewCount": 18
+        },
+        "sku": "bsh-9x9-gl24h",
+        "blogtags": ["bsh", "rétegragasztott fa"],
+        "price": 12960,
+        "mprice": 3240,
+        "m2price": null,
+        "m3price": 399990,
+        "discountPrice": null,
+        "discountPercent": 5,
+        "discountValidUntil": "2025.10.01",
+        "material": "Fa, ragasztott (BSH), GL24h",
+        "stock": 1,
+        "image": "/termekek/bsh-gerenda-9x9.jpg",
+        "images": [
+            {
+              "src": "/images/products/bsh-gerenda-9x9-csomagban", 
+              "alt": "BSH ragasztott gerenda 9x9 cm – több darabos csomagban, mérettartó és esztétikus faanyag"
+            },
+            {
+              "src": "/images/products/bsh-gerenda-9x9-darab", 
+              "alt": "BSH ragasztott gerenda 9x9 cm – darabos kiszerelés, GL24h minőség, gyalult és fózolt felület"
+            },
+                        {
+              "src": "/images/products/bsh-gerenda-9x9-darab-2", 
+              "alt": "BSH gerenda 9x9 cm – 5 darab gerenda egymás mellett - prémium faanyag, látszó szerkezeti felhasználásra, GL24h osztály"
+            }        
+          ],
+        "description": "BSH gerenda 9×9 cm-es méretben, GL24h osztályban. Kisebb faszerkezetekhez és látszó elemekhez ideális tartós és homogén faanyag.",
+        "longDescription": "A 9×9 cm-es BSH (Brettschichtholz) ragasztott gerenda osztrák gyártású, GL24h szilárdsági osztályú faanyag, amely kiváló választás kisebb szerkezeti munkákhoz. Stabil és mérettartó tulajdonságai miatt különösen alkalmas pergolák, előtetők, kerti építmények, valamint dekoratív látszó faszerkezetek kialakítására.",
+        "longDescription2": "A precízen gyalult és fózolt felület esztétikus megjelenést biztosít, így a gerenda látszó elemként is beépíthető. A BSH gerendák előnye a hagyományos fűrészárukkal szemben, hogy repedésmentesek, kevésbé vetemednek, és hosszú távon megőrzik formájukat. A 9×9 cm-es méret ideális választás, ha kisebb, de tartós és esztétikus faszerkezetre van szükség.",
+        "specs": {
+          "Típus": "BSH ragasztott gerenda",
+          "Szilárdsági osztály": "GL24h",
+          "Minőség": "Látszó (esztétikai felhasználásra)",
+          "Származás": "Európa",
+          "Keresztmetszet": "9 × 9 cm",
+          "Hossz": "4 m",
+          "Felület": "Gyalult, fózolt, látszó minőségű",
+          "Nedvességtartalom": "kb. 12% ±2%",
+          "Tulajdonságok": "Repedés- és vetemedésmentes, mérettartó",
+          "Felhasználás": "Pergola, előtető, kerti építmény, látszó tartóelem",
+          "Előnyök": "Könnyen megmunkálható, esztétikus megjelenés, hosszú élettartam",
+          "Kezelés": "Pácolásra, lazúrozásra előkészítve",
+          "Csomagolás": "Egyedileg fóliázott",
+          "Szabvány": "EN 14080:2013 (BSH gyártás)",
+          "Ragasztás": "EN 301, Type I – kültéri felhasználásra is alkalmas"
+        },
+        "shippingDetails": {
+          "shippingWeight": 15.6,
+          "depth": 400,
+          "width": 9.0,
+          "height": 9.0
+        }
+      },
+      {
         "name": "BSH ragasztott gerenda 10x10cm",
         "slug": "bsh-ragasztott-gerenda-10x10",
         "meta": {
@@ -1708,6 +1839,7 @@
           "reviewCount": 34
         },
         "sku": "bsh-10x10-gl24h",
+        "blogtags": ["bsh", "rétegragasztott fa"],
         "price": 53999,
         "mprice": null,
         "m2price": null,
@@ -1756,6 +1888,7 @@
           "reviewCount": 31
         },
         "sku": "bsh-10x16-gl24h",
+        "blogtags": ["bsh", "rétegragasztott fa"],
         "price": 86398,
         "mprice": null,
         "m2price": null,
@@ -1804,6 +1937,7 @@
           "reviewCount": 37
         },
         "sku": "bsh-10x20-gl24h",
+        "blogtags": ["bsh", "rétegragasztott fa"],
         "price": 107997,
         "mprice": null,
         "m2price": null,
@@ -1852,6 +1986,7 @@
           "reviewCount": 33
         },
         "sku": "bsh-12x12-gl24h",
+        "blogtags": ["bsh", "rétegragasztott fa"],
         "price": 77758,
         "mprice": null,
         "m2price": null,
@@ -1900,6 +2035,7 @@
           "reviewCount": 33
         },
         "sku": "bsh-12x16-gl24h",
+        "blogtags": ["bsh", "rétegragasztott fa"],
         "price": 103677,
         "mprice": null,
         "m2price": null,
@@ -1948,6 +2084,7 @@
           "reviewCount": 35
         },
         "sku": "bsh-12x20-gl24h",
+        "blogtags": ["bsh", "rétegragasztott fa"],
         "price": 129597,
         "mprice": null,
         "m2price": null,
@@ -1996,6 +2133,7 @@
           "reviewCount": 41
         },
         "sku": "bsh-14x14-gl24h",
+        "blogtags": ["bsh", "rétegragasztott fa"],
         "price": 103191,
         "mprice": null,
         "m2price": null,
@@ -2044,6 +2182,7 @@
           "reviewCount": 41
         },
         "sku": "bsh-14x20-gl24h",
+        "blogtags": ["bsh", "rétegragasztott fa"],
         "price": 147416,
         "mprice": null,
         "m2price": null,
@@ -2092,6 +2231,7 @@
           "reviewCount": 44
         },
         "sku": "bsh-16x16-gl24h",
+        "blogtags": ["bsh", "rétegragasztott fa"],
         "price": 134781,
         "mprice": null,
         "m2price": null,
@@ -2140,6 +2280,7 @@
           "reviewCount": 47
         },
         "sku": "bsh-16x24-gl24h",
+        "blogtags": ["bsh", "rétegragasztott fa"],
         "price": 202171,
         "mprice": null,
         "m2price": null,
@@ -2188,6 +2329,7 @@
         "reviewCount": 42
       },
       "sku": "bsh-20x20-gl24h",
+      "blogtags": ["bsh", "rétegragasztott fa"],
       "price": 210595,
       "mprice": null,
       "m2price": null,
