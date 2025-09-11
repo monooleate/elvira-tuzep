@@ -44,16 +44,23 @@ const metadata = merge(
   },
   { ...(post?.metadata ? { ...post.metadata, canonical: post.metadata?.canonical || url } : {}) }
 ) as MetaData;
+
+const calcSchemaHead = post?.calcSchema;
 ---
 
 <Layout metadata={metadata}>
+  {calcSchemaHead && (
+    <script
+      type="application/ld+json"
+      slot="head"
+      set:html={calcSchemaHead}
+    />
+  )}
   <div class="flex flex-col lg:flex-row gap-8 px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-6xl">
-
     <!-- Sidebar bal oldalon (sticky, dark mode kompatibilis, mobilon felül) -->
     <div class="w-full lg:w-1/4 order-first lg:order-none">
       <BlogSidebar />
     </div>
-
     <!-- Főtartalom jobb oldalon -->
     <section class="w-full lg:w-3/4">
       <SinglePost post={{ ...post, image: image }} url={url}>

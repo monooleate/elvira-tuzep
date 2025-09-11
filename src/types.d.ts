@@ -42,6 +42,7 @@ export interface Post {
 
   /**  */
   readingTime?: number;
+  calcSchema?: string;
 }
 
 export interface Taxonomy {

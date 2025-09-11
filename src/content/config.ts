@@ -62,6 +62,7 @@ const postCollection = defineCollection({
     author: z.string().optional(),
 
     metadata: metadataDefinition(),
+    calcSchema: z.string().optional(), 
   }),
 });
 

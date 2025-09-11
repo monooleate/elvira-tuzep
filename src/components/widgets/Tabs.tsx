@@ -152,7 +152,7 @@ export default function MainCategoryGrid({
           title: 'Műszárított, gyalult építőfa',
           body:
             'Építkezéshez és zsaluzathoz ideális, érdes felületű, légszáraz vagy friss faanyag. Költséghatékony megoldás ott, ahol a teherbírás fontos, az esztétika kevésbé.',
-          image: 'images/products/fureszaru-500.avif', 
+          image: 'images/products/muszaritott_gyalult_epitofa-500.webp', 
           imageAlt: 'Fűrészelt építőfa'
         },
         'BSH ragasztott gerenda': {
@@ -167,6 +167,13 @@ export default function MainCategoryGrid({
           body:
             'Prémium fabrikett és pellet magas fűtőértékkel, alacsony nedvességtartalommal, minimális hamutartalommaé és tiszta égéssel az otthoni fűtéshez. Válassz gazdaságos, környezetkímélő megoldást gyors átvétellel és kiszállítási opcióval.',
           image: '/kategoriak/brikett.jpg', 
+        },
+        'Fűrészáru': {
+          title: 'Fűrészáru',
+          body:
+            'Fűrészáru kínálatunkban megtalálja a leggyakrabban használt méreteket és keresztmetszeteket. A fűrészelt faanyag ideális tetőszerkezetek, gerendák, lécek, pallók és egyéb építési munkákhoz. Kedvező árú, természetes építőanyag, amely közvetlenül, raktárról elérhető, széles választékban.',
+          image: '/images/products/fureszaru-500.avif',
+          imageAlt: 'Fűrészáru kategóriában különböző méretű és vastagságú faanyagok'
         },
         'OSB lapok': {
           title: 'OSB lapok',

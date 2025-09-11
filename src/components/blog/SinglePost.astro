@@ -16,9 +16,17 @@ export interface Props {
 }
 
 const { post, url } = Astro.props;
+const calcSchemaHead = post?.calcSchema;
 ---
 
 <section class="">
+    {calcSchemaHead && (
+    <script
+      type="application/ld+json"
+      slot="head"
+      set:html={calcSchemaHead}
+    />
+  )}
   <article>
     <header
       class={post.image
