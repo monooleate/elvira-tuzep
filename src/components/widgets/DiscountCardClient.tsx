@@ -1,3 +1,5 @@
+import { computeDiscountForCard, isDiscountActive, hasValidPercent } from '~/lib/discounts';
+
 type ImgItem = { src: string; alt?: string } | string;
 
 type Product = {
@@ -77,55 +79,6 @@ function formatHU(n: number) {
   return n.toLocaleString('hu-HU');
 }
 
-function parseValidFutureDate(s?: string | null): Date | null {
-  if (!s) return null;
-  const d = new Date(s);
-  return isNaN(+d) ? null : d;
-}
-
-function computeDiscount(p: Product) {
-  const now = new Date();
-  const until = parseValidFutureDate(p.discountValidUntil);
-  const timeValid = !!until && until > now;
-
-  const base = typeof p.price === 'number' ? p.price : null;
-  const pct =
-    typeof p.discountPercent === 'number' ? p.discountPercent : null;
-  const dprice =
-    typeof p.discountPrice === 'number' ? p.discountPrice : null;
-
-  const hasValidDiscountPercent =
-    pct !== null && pct > 0 && pct < 100 && timeValid;
-
-  const hasValidDiscountPrice =
-    dprice !== null &&
-    base !== null &&
-    dprice > 0 &&
-    dprice < base &&
-    timeValid;
-
-  const discountPrice = hasValidDiscountPrice
-    ? Math.round(dprice!)
-    : hasValidDiscountPercent && base !== null
-    ? Math.round(base * (1 - pct! / 100))
-    : null;
-
-  const discountPercent = hasValidDiscountPercent
-    ? Math.round(pct!)
-    : hasValidDiscountPrice && base !== null
-    ? Math.round((1 - (discountPrice! / base)) * 100)
-    : null;
-
-  const hasDiscount = !!(discountPrice !== null || discountPercent !== null);
-
-  return {
-    hasDiscount,
-    discountPrice,
-    discountPercent,
-    timeValid,
-  };
-}
-
 function computeUnitDiscount(
   unitPrice: number | undefined,
   discountPercent: number | null
@@ -147,16 +100,19 @@ export default function DiscountCardClient({
 
   const hasPrice = typeof product.price === 'number' && product.price > 0;
 
-  const { hasDiscount, discountPrice, discountPercent } = computeDiscount(product);
+  const { hasDiscount, discountPrice, discountPercent } = computeDiscountForCard(product);
   const discountPercentView =
-    typeof discountPercent === 'number'
-      ? parseFloat(Number(discountPercent).toFixed(1))
+    typeof discountPercent === 'number' ? discountPercent : null;
+
+  const pctForUnits =
+    isDiscountActive(product) && hasValidPercent(product)
+      ? product.discountPercent!
       : null;
 
-  const discountMPrice = computeUnitDiscount(product.mprice, discountPercent);
-  const discountM2Price = computeUnitDiscount(product.m2price, discountPercent);
-  const discountM3Price = computeUnitDiscount(product.m3price, discountPercent);
-  const discountPalPrice = computeUnitDiscount(product.palprice, discountPercent);
+  const discountMPrice  = computeUnitDiscount(product.mprice,  pctForUnits);
+  const discountM2Price = computeUnitDiscount(product.m2price, pctForUnits);
+  const discountM3Price = computeUnitDiscount(product.m3price, pctForUnits);
+  const discountPalPrice= computeUnitDiscount(product.palprice,pctForUnits);
 
   const href = `/termekek/${currentCategorySlug || product.categorySlug || 'egyeb'}/${product.slug}`;
 

@@ -2,6 +2,8 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import DiscountCardClient from '~/components/widgets/DiscountCardClient';
 import { getProductsForMainCategory } from '~/lib/products';
+import { isDiscountedProduct, getEffectiveUnitPrice, type Unit } from '~/lib/discounts';
+
 
 type Product = {
   id?: string | number;
@@ -46,7 +48,6 @@ type Props = {
   productListing?: boolean;
 };
 
-type Unit = 'db'|'m'|'m2'|'m3'|'pal';
 const UNIT_PRIORITY: Unit[] = ['pal','db','m','m2','m3'];
 
 export const unitLabel = (u: Unit) =>
@@ -84,64 +85,6 @@ const slugify = (s: string) =>
     .replace(/\-+/g, '-')
     .replace(/^\-|\-$/g, '');
 
-// --- helper: eldönti, hogy akciós-e a termék (a kártya snippet logikájával)
-function isDiscountedProduct(p: any): boolean {
-  const now = new Date();
-  const until = p?.discountValidUntil ? new Date(p.discountValidUntil) : null;
-  const hasTimeValid = !!until && until > now;
-
-  const hasValidDiscountPrice =
-    typeof p?.discountPrice === 'number' &&
-    p.discountPrice > 0 &&
-    typeof p?.price === 'number' &&
-    p.discountPrice < p.price &&
-    hasTimeValid;
-
-  const hasValidDiscountPercent =
-    typeof p?.discountPercent === 'number' &&
-    p.discountPercent > 0 &&
-    p.discountPercent < 100 &&
-    hasTimeValid;
-
-  return !!(hasValidDiscountPrice || hasValidDiscountPercent);
-}
-
-// --- helper: egység szerinti "effektív" ár számítása (discountot is figyelembe veszi)
-function getEffectiveUnitPrice(p: any, unit: 'db'|'m'|'m2'|'m3'|'pal'): number | null {
-  const until = p?.discountValidUntil ? new Date(p.discountValidUntil) : null;
-  const now = new Date();
-  const hasTimeValid = !!until && until > now;
-
-  const hasValidDiscountPercent =
-    typeof p?.discountPercent === 'number' &&
-    p.discountPercent > 0 &&
-    p.discountPercent < 100 &&
-    hasTimeValid;
-
-  const percent = hasValidDiscountPercent ? p.discountPercent : null;
-
- const pick = (val?: unknown) => {
-  const num =
-    typeof val === 'number'
-      ? val
-      : typeof val === 'string'
-        ? Number(val.replace(/\s/g, ''))
-        : NaN;
-  return Number.isFinite(num) && num > 0 ? num : null;
-};
-  const applyPct = (val: number | null) => (val !== null && percent !== null ? Math.round(val * (1 - percent/100)) : val);
-
-  switch (unit) {
-    case 'db':  return applyPct(pick(p.price));
-    case 'm':   return applyPct(pick(p.mprice));
-    case 'm2':  return applyPct(pick(p.m2price));
-    case 'm3':  return applyPct(pick(p.m3price));
-    case 'pal': return applyPct(pick(p.palprice));
-    default:    return null;
-  }
-}
-
-
 export default function MainCategoryGrid({
   categories,
   headerSelectors = ['#header'],
@@ -152,7 +95,7 @@ export default function MainCategoryGrid({
           title: 'Műszárított, gyalult építőfa',
           body:
             'Építkezéshez és zsaluzathoz ideális, érdes felületű, légszáraz vagy friss faanyag. Költséghatékony megoldás ott, ahol a teherbírás fontos, az esztétika kevésbé.',
-          image: 'images/products/muszaritott_gyalult_epitofa-500.webp', 
+          image: '/images/products/muszaritott_gyalult_epitofa-500.webp', 
           imageAlt: 'Fűrészelt építőfa'
         },
         'BSH ragasztott gerenda': {
@@ -251,11 +194,6 @@ useEffect(() => {
     [mainTabs, safeData]
   );
 
-  
-
-  const activeGroup = useMemo(() => grouped.find((g) => g.name === active), [grouped, active]);
-  
-
   // Refs
   const rootRef = useRef<HTMLDivElement>(null);
   const internalBarRef = useRef<HTMLDivElement>(null);
@@ -348,8 +286,12 @@ const filteredProducts = useMemo(() => {
   }
 
   // min/max ár egység szerint
-  const min = minPrice ? parseInt(minPrice, 10) : null;
-  const max = maxPrice ? parseInt(maxPrice, 10) : null;
+  const toInt = (s: string) => {
+    const n = Number(String(s).replace(/[^\d]/g, ''));
+    return Number.isFinite(n) ? n : null;
+  };
+  const min = minPrice ? toInt(minPrice) : null;
+  const max = maxPrice ? toInt(maxPrice) : null;
   if (min !== null || max !== null) {
     list = list.filter(p => {
       const val = getEffectiveUnitPrice(p, unit);
@@ -402,6 +344,7 @@ const filteredProducts = useMemo(() => {
   const toId = (s: string) => `tab-${slugify(s)}`;
 
   const getCombinedOffset = () => {
+    if (typeof window === 'undefined' || typeof document === 'undefined') return 0;
     const headersHeight = headerSelectors.reduce((acc, sel) => {
       const el = document.querySelector(sel) as HTMLElement | null;
       return acc + (el ? el.getBoundingClientRect().height : 0);
@@ -415,7 +358,14 @@ const filteredProducts = useMemo(() => {
     return Math.max(0, Math.round(headersHeight + stickyTop + 8));
   };
 
-  const smoothScrollTo = (y: number) => window.scrollTo({ top: y, behavior: 'smooth' });
+  const prefersReduced = typeof window !== 'undefined' &&
+    window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+  const smoothScrollTo = (y: number) => {
+    if (typeof window === 'undefined') return;
+    const behavior = prefersReduced ? 'auto' : 'smooth';
+    try { window.scrollTo({ top: y, behavior: behavior as ScrollBehavior }); }
+    catch { window.scrollTo(0, y); }
+  };
 
   const scrollToIntro = () => {
     const el = introRef.current;
@@ -425,6 +375,24 @@ const filteredProducts = useMemo(() => {
     const absoluteTop = window.scrollY + rect.top - offset;
     smoothScrollTo(absoluteTop);
   };
+
+  function waitForScrollSettle(cb: () => void, timeout = 800) {
+    if (typeof window === 'undefined') return cb();
+    let lastY = window.scrollY;
+    let remaining = timeout;
+    function tick() {
+      const y = window.scrollY;
+      if (Math.abs(y - lastY) < 1) {
+        cb();
+        return;
+      }
+      lastY = y;
+      remaining -= 16;
+      if (remaining <= 0) return cb();
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
 
   const scrollToPanelTopIfNeeded = (name: string) => {
     const panel = panelsRef.current.get(name);
@@ -440,18 +408,8 @@ const filteredProducts = useMemo(() => {
 
       if (isScrollingRef.current) return;
       isScrollingRef.current = true;
-
       panel.scrollIntoView({ block: 'start', behavior: 'smooth' });
-
-      const clear = () => {
-        isScrollingRef.current = false;
-        window.removeEventListener('scrollend', clear);
-      };
-      if ('onscrollend' in window) {
-        window.addEventListener('scrollend', clear, { once: true } as any);
-      } else {
-        setTimeout(clear, 400);
-      }
+      waitForScrollSettle(() => { isScrollingRef.current = false; });
     });
   };
 
@@ -490,7 +448,7 @@ const filteredProducts = useMemo(() => {
       const bottom = gridBottomRef.current;
       if (!bottom) return;
       const bottomTop = bottom.getBoundingClientRect().top;
-      const visible = bottomTop <= (headerSelectors.length ? 120 : 60);
+      const visible = bottomTop <= (headerSelectors.length ? 180 : 120);
       setShowSubCategory(visible);
     };
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -751,7 +709,7 @@ const filteredProducts = useMemo(() => {
           </div>
 
           {/* Összes termék az aktív főkategóriában */}
-          {productListing && name === active && baseProducts.length >= 0 && (
+          {productListing && name === active && baseProducts.length > 0 && (
             <div class="mt-6">
               <div class="flex items-end justify-center gap-4 mb-3">
                 <h2 class="text-3xl font-bold text-gray-900 dark:text-white pt-6 pb-4 text-center">
