@@ -2,25 +2,51 @@
 
 export type Unit = 'db'|'m'|'m2'|'m3'|'pal';
 
-// --- Safari-biztos, SSR-barát dátum parser
+// ~/lib/discounts
+
 export function parseDiscountUntil(raw?: string | null): Date | null {
   if (!raw) return null;
   const s = String(raw).trim();
   if (!s) return null;
 
-  // YYYY-MM-DD  → helyi nap vége
-  const m = s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
-  if (m) {
-    const [_, Y, M, D] = m;
-    const d = new Date(Number(Y), Number(M) - 1, Number(D), 23, 59, 59, 999);
-    return isNaN(+d) ? null : d;
+  // 1) YYYY.MM.DD  vagy  "YYYY. MM. DD."  → helyi nap vége
+  {
+    const m = s.match(/^(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.?$/);
+    if (m) {
+      const [, Y, M, D] = m;
+      const d = new Date(+Y, +M - 1, +D, 23, 59, 59, 999);
+      return isNaN(+d) ? null : d;
+    }
   }
 
-  // 'YYYY-MM-DD HH:mm' → normalizálás 'T'-re (Safari)
+  // 2) YYYY.MM.DD HH:mm[:ss]  → helyi idő
+  {
+    const m = s.match(
+      /^(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\s+(\d{1,2}):(\d{2})(?::(\d{2}))?$/
+    );
+    if (m) {
+      const [, Y, M, D, hh, mm, ss] = m;
+      const d = new Date(+Y, +M - 1, +D, +hh, +mm, ss ? +ss : 0, 0);
+      return isNaN(+d) ? null : d;
+    }
+  }
+
+  // 3) ISO nap: YYYY-MM-DD → helyi nap vége
+  {
+    const m = s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (m) {
+      const [, Y, M, D] = m;
+      const d = new Date(+Y, +M - 1, +D, 23, 59, 59, 999);
+      return isNaN(+d) ? null : d;
+    }
+  }
+
+  // 4) ISO dátum/idő (szóköz helyett 'T' normalizálás)
   const norm = s.includes('T') ? s : s.replace(' ', 'T');
   const d = new Date(norm);
   return isNaN(+d) ? null : d;
 }
+
 
 // --- Szigorú akciófeltétel: csak ha VAN lejárat és az a jövőben van
 export function isDiscountActive(p: any, now = new Date()): boolean {
