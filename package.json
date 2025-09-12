@@ -30,7 +30,7 @@
     "@astrolib/seo": "^1.0.0-beta.8",
     "@builder.io/partytown": "^0.10.3",
     "@fontsource-variable/inter": "^5.2.5",
-    "astro": "^5.12.4",
+    "astro": "^5.13.7",
     "astro-embed": "^0.9.0",
     "astro-icon": "^1.1.5",
     "dotenv": "^16.5.0",

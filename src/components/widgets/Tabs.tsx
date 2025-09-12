@@ -372,7 +372,7 @@ const filteredProducts = useMemo(() => {
     if (!el) return;
     const offset = getCombinedOffset();
     const rect = el.getBoundingClientRect();
-    const absoluteTop = window.scrollY + rect.top - offset;
+    const absoluteTop = window.scrollY + rect.top - offset + 30;
     smoothScrollTo(absoluteTop);
   };
 
@@ -448,7 +448,7 @@ const filteredProducts = useMemo(() => {
       const bottom = gridBottomRef.current;
       if (!bottom) return;
       const bottomTop = bottom.getBoundingClientRect().top;
-      const visible = bottomTop <= (headerSelectors.length ? 180 : 120);
+      const visible = bottomTop <= (headerSelectors.length ? 120 : 60);
       setShowSubCategory(visible);
     };
     window.addEventListener('scroll', onScroll, { passive: true });

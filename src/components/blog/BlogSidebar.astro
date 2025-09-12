@@ -13,7 +13,7 @@ import sidebarData from '~/data/blogSidebar.json' assert { type: "json" };
 const blogSidebar = sidebarData as BlogSidebarSection[];
 ---
 
-<aside class="bg-white dark:bg-gray-900 shadow-md border border-gray-200 dark:border-gray-700 rounded-xl p-4 w-full md:w-64 
+<aside class="hidden lg:block bg-white dark:bg-gray-900 shadow-md border border-gray-200 dark:border-gray-700 rounded-xl p-4 w-full md:w-64 
   lg:sticky lg:top-28 lg:self-start">
   <h2 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">Tartalomjegyzék</h2>
   {blogSidebar.map((section) => (

@@ -23,6 +23,7 @@
           "reviewCount": 20
         },
         "sku": "luc-rh-d-19x116-4m", 
+        "blogtags": ["nevezéktan"],
         "price": null,
         "mprice": null,
         "m2price": 6890,
@@ -66,7 +67,8 @@
           "ratingValue": 4.75,
           "reviewCount": 8
         },
-        "sku": "borovi-rh-d-19x116-4m", 
+        "sku": "borovi-rh-d-19x116-4m",
+        "blogtags": ["nevezéktan"],
         "price": null,
         "mprice": null,
         "m2price": 6090,
@@ -109,7 +111,8 @@
           "ratingValue": 4.65,
           "reviewCount": 7
         },
-        "sku": "borovi-rh-d-24x146-4m", 
+        "sku": "borovi-rh-d-24x146-4m",
+        "blogtags": ["nevezéktan"],
         "price": null,
         "mprice": null,
         "m2price": 7990,
@@ -152,7 +155,8 @@
           "ratingValue": 4.73,
           "reviewCount": 5
         },
-        "sku": "luc-rh-zsindely-24x146-4m", 
+        "sku": "luc-rh-zsindely-24x146-4m",
+        "blogtags": ["nevezéktan"],
         "price": null,
         "mprice": null,
         "m2price": 9190,
@@ -208,7 +212,8 @@
           "ratingValue": 4.64,
           "reviewCount": 25
         },
-        "sku": "luc-gyd-19x96-4m", 
+        "sku": "luc-gyd-19x96-4m",
+        "blogtags": ["nevezéktan"],
         "price": 2529,
         "mprice": null,
         "m2price": 6590,
@@ -251,7 +256,8 @@
           "ratingValue": 4.65,
           "reviewCount": 27
         },
-        "sku": "luc-gyd-19x116-4m", 
+        "sku": "luc-gyd-19x116-4m",
+        "blogtags": ["nevezéktan"],
         "price": 3059,
         "mprice": null,
         "m2price": 6590,
@@ -294,7 +300,8 @@
           "ratingValue": 4.68,
           "reviewCount": 12
         },
-        "sku": "luc-gyd-19x146-4m", 
+        "sku": "luc-gyd-19x146-4m",
+        "blogtags": ["nevezéktan"],
         "price": 3849,
         "mprice": null,
         "m2price": 6590,
@@ -337,7 +344,8 @@
           "ratingValue": 4.8,
           "reviewCount": 8
         },
-        "sku": "luc-gyd-19x190-4m", 
+        "sku": "luc-gyd-19x190-4m",
+        "blogtags": ["nevezéktan"],
         "price": 5239,
         "mprice": null,
         "m2price": 6890,
@@ -393,7 +401,8 @@
           "ratingValue": 4.8,
           "reviewCount": 32
         },
-        "sku": "luc-lam-12_5x96-4m", 
+        "sku": "luc-lam-12_5x96-4m",
+        "blogtags": ["nevezéktan"],
         "price": 1799,
         "mprice": null,
         "m2price": 4690,
@@ -436,7 +445,8 @@
           "ratingValue": 4.5,
           "reviewCount": 31
         },
-        "sku": "luc-lam-12_5x96-4m-bc", 
+        "sku": "luc-lam-12_5x96-4m-bc",
+        "blogtags": ["nevezéktan"],
         "price": 1499,
         "mprice": null,
         "m2price": 3890,
@@ -479,7 +489,8 @@
           "ratingValue": 4.81,
           "reviewCount": 28
         },
-        "sku": "luc-lam-f-15x116-4m-abveh", 
+        "sku": "luc-lam-f-15x116-4m-abveh",
+        "blogtags": ["nevezéktan"],
         "price": 2639,
         "mprice": null,
         "m2price": 5690,
@@ -522,7 +533,8 @@
           "ratingValue": 4.5,
           "reviewCount": 31
         },
-        "sku": "luc-lam-sl-14x121-4m-abveh", 
+        "sku": "luc-lam-sl-14x121-4m-abveh",
+        "blogtags": ["nevezéktan"],
         "price": 2415,
         "mprice": null,
         "m2price": 4990,
@@ -565,7 +577,8 @@
           "ratingValue": 4.4,
           "reviewCount": 18
         },
-        "sku": "luc-lam-sl-14x121-4m-bc", 
+        "sku": "luc-lam-sl-14x121-4m-bc",
+        "blogtags": ["nevezéktan"],
         "price": 1979,
         "mprice": null,
         "m2price": 4090,
@@ -608,7 +621,8 @@
           "ratingValue": 4.56,
           "reviewCount": 17
         },
-        "sku": "borovi-lam-c-15x116-4m-abveh", 
+        "sku": "borovi-lam-c-15x116-4m-abveh",
+        "blogtags": ["nevezéktan"],
         "price": 2500,
         "mprice": null,
         "m2price": 5390,
@@ -651,7 +665,8 @@
           "ratingValue": 4.54,
           "reviewCount": 10
         },
-        "sku": "luc-lam-c-15x116-4m-abveh", 
+        "sku": "luc-lam-c-15x116-4m-abveh",
+        "blogtags": ["nevezéktan"],
         "price": 2500,
         "mprice": null,
         "m2price": 5390,
@@ -708,7 +723,8 @@
           "ratingValue": 4.72,
           "reviewCount": 35
         },
-        "sku": "luc-hp-e-19x116-4m", 
+        "sku": "luc-hp-e-19x116-4m",
+        "blogtags": ["nevezéktan"],
         "price": 3199,
         "mprice": null,
         "m2price": 6890,
@@ -755,7 +771,8 @@
           "ratingValue": 4.65,
           "reviewCount": 45
         },
-        "sku": "luc-hp-c-19x116-4m", 
+        "sku": "luc-hp-c-19x116-4m",
+        "blogtags": ["nevezéktan"],
         "price": 2825,
         "mprice": null,
         "m2price": 6090,
@@ -803,6 +820,7 @@
           "reviewCount": 36
         },
         "sku": "luc-hp-c-19x116-4m-aben",
+        "blogtags": ["nevezéktan"],
         "price": 2640,
         "mprice": null,
         "m2price": 5690,
@@ -851,6 +869,7 @@
           "reviewCount": 45
         },
         "sku": "luc-hp-c-19x146-4m-abveh",
+        "blogtags": ["nevezéktan"],
         "price": 3556,
         "mprice": null,
         "m2price": 6090,
@@ -899,6 +918,7 @@
           "reviewCount": 42
         },
         "sku": "borovi-hp-c-19x146-4m-abveh",
+        "blogtags": ["nevezéktan"],
         "price": 3556,
         "mprice": null,
         "m2price": 6090,
@@ -947,6 +967,7 @@
           "reviewCount": 29
         },
         "sku": "luc-hp-c-19x146-4m-aben",
+        "blogtags": ["nevezéktan"],
         "price": 3323,
         "mprice": null,
         "m2price": 5690,
@@ -995,6 +1016,7 @@
           "reviewCount": 29
         },
         "sku": "borovi-hp-c-19x146-4m-aben",
+        "blogtags": ["nevezéktan"],
         "price": 3323,
         "mprice": null,
         "m2price": 5690,
@@ -1042,6 +1064,7 @@
           "reviewCount": 18
         },
         "sku": "luc-hp-c-19x146-4m-c",
+        "blogtags": ["nevezéktan"],
         "price": 2505,
         "mprice": null,
         "m2price": 4290,
@@ -1090,6 +1113,7 @@
           "reviewCount": 28
         },
         "sku": "borovi-hp-c-19x146-4m-c",
+        "blogtags": ["nevezéktan"],
         "price": 2505,
         "mprice": null,
         "m2price": 4290,
