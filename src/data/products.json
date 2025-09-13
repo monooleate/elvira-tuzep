@@ -9,6 +9,38 @@
       "image": "/kategoriak/fahaz-epito-profil.jpg"
     },
     "description": "Prémium minőségű osztrák rönkházprofil (D-profil) és zsindelyprofil lucfenyőből és borovi fenyőből, közvetlenül a Pabst-Holz gyártótól. Tartós, esztétikus burkolatok faházakhoz, homlokzatokhoz, belső terekhez – készletről, kiváló árakon!",
+    "faq": [
+  {
+    "id": "ronkhaz-profil-mi-ez",
+    "question": "Mi az a faház építő profil (rönkház profil)?",
+    "answer": "A faház építő profil, más néven rönkház profil egy nútféderes burkolóelem, amely félköríves (D-profil) vagy zsindelyprofilú felületével a klasszikus rönkház hatását kelti. Rusztikus, természetközeli megjelenést biztosít homlokzatokon és belső falakon is."
+  },
+  {
+    "id": "ronkhaz-profil-meretek",
+    "question": "Milyen méretekben kapható a rönkház profil?",
+    "answer": "A leggyakoribb méretek 19×116 mm és 24×146 mm, jellemzően 4 méteres hosszban. A vastagabb (24 mm) profil nagyobb merevséget és jobb hőszigetelő képességet biztosít."
+  },
+  {
+    "id": "ronkhaz-profil-felhasznalas",
+    "question": "Mire használható a faház építő profil?",
+    "answer": "A rönkház profil ideális homlokzatok, melléképületek, kerítések, kerti házak és beltéri díszfalak burkolására. Rusztikus, alpesi hatású megjelenése miatt egyre népszerűbb kültéri és beltéri felhasználásban egyaránt."
+  },
+  {
+    "id": "ronkhaz-profil-felrakasa",
+    "question": "Hogyan kell felrakni a rönkház profilt?",
+    "answer": "A rönkház profilt függőleges ellenlécezésre és vízszintes stafnira rögzítve kell felrakni, így biztosítható a szellőző légrés a burkolat mögött. Kültéri felhasználás esetén minden vágott felületet és véget impregnálni kell a tartósság érdekében."
+  },
+  {
+    "id": "ronkhaz-profil-ar",
+    "question": "Mennyibe kerül a rönkház profil?",
+    "answer": "A rönkház profil árát a vastagság (19 mm vagy 24 mm), a szélesség és a fafaj határozza meg. A vastagabb, 24 mm-es profil jellemzően drágább, de tartósabb és merevebb. Az aktuális árak az Elvira Tüzép weboldalán találhatók."
+  },
+  {
+    "id": "lamberia-vs-ronkhaz-profil",
+    "question": "Mi a különbség a lambéria és a rönkház profil között?",
+    "answer": "A <a href=\"/termekek/lamberia\"><b>lambéria</b></a> vékonyabb (12,5–19 mm) burkolóelem, amely falak és mennyezetek burkolására szolgál. A rönkház profil vastagabb (19–24 mm), félköríves vagy zsindelyprofilú, és kifejezetten rusztikus homlokzatokhoz, faházakhoz és díszfalakhoz ajánlott. Alternatív megoldás lehet a <a href=\"/termekek/hajopadlo\"><b>hajópadló</b></a>, ha erősebb padló- vagy falburkolatot keresünk."
+  }
+],
     "products": [
       {
         "name": "Luc rönkház profil /D/ 19x116mmx4m A-B minőség",
@@ -199,6 +231,38 @@
       "image": "/kategoriak/gyalult-deszka.jpg"
     },
     "description": "Prémium minőségű gyalult deszkák bel- és kültéri felhasználásra. Kínálatunkban megtalálhatóak különböző vastagságú és szélességű lucfenyő gyalult deszkák, amelyek ideálisak falburkoláshoz, mennyezethez, lambériázáshoz vagy bútorok készítéséhez. Az osztrák gyártásból származó faanyagok sima felületűek, precízen megmunkáltak és könnyen kezelhetők. Készletről, több méretben és kivitelben – rendeljen megbízható minőségű faanyagot otthoni vagy professzionális munkáihoz!",
+    "faq": [
+      {
+        "id": "gyalult-deszka-mi-ez",
+        "question": "Mi az a gyalult deszka?",
+        "answer": "A gyalult deszka sima felületű, méretpontos faanyag, amelyet a fűrészelést követően gyalulással tesznek szabályossá. Esztétikus, könnyen kezelhető, és sokkal kevésbé szálkás, mint a gyalulatlan deszka."
+      },
+      {
+        "id": "gyalult-deszka-felhasznalas",
+        "question": "Mire használható a gyalult deszka?",
+        "answer": "A gyalult deszka széles körben felhasználható: kerítések, burkolatok, bútorok, polcok, belsőépítészeti elemek, homlokzatok és pergolák építéséhez. A sima felület miatt kültérben és beltérben egyaránt kedvelt, gyakran kombinálják <a href=\"/termekek/lamberia\">lambériával</a> vagy <a href=\"/termekek/hajopadlo\">hajópadlóval</a>."
+      },
+      {
+        "id": "gyalult-deszka-meretek",
+        "question": "Milyen méretekben kapható a gyalult deszka?",
+        "answer": "A leggyakoribb vastagságok 18 mm, 19 mm, 21 mm és 24 mm. Szélességben 90–200 mm közötti méretek a jellemzőek, 3–5 méteres hosszúságban. A gyalult deszkák pontos mérettartással készülnek, így könnyen illeszthetők."
+      },
+      {
+        "id": "gyalult-vs-gyalulatlan",
+        "question": "Mi a különbség a gyalult és a gyalulatlan deszka között?",
+        "answer": "A gyalult deszka sima, megmunkált felületű és méretpontos, ezért látszó felhasználásokhoz és precíz illesztésekhez ajánlott. A <a href=\"/termekek/fureszelt-deszka\"><b>gyalulatlan fűrészelt deszka</b></a> érdesebb, olcsóbb, és inkább szerkezeti vagy ideiglenes célokra alkalmas. Például, mint <a href=\"/termekek/fureszelt-deszka/zsaludeszka-25x150x4000\"><b>zsaludeszka</b></a>."
+      },
+      {
+        "id": "gyalult-deszka-ar",
+        "question": "Mennyibe kerül a gyalult deszka?",
+        "answer": "A gyalult deszka ára a vastagságtól, szélességtől és a hosszúságtól függ. Általában méterben vagy négyzetméterben számolják. Az aktuális gyalult deszka árakat megtalálja az Elvira Tüzép weboldalán."
+      },
+      {
+        "id": "gyalult-deszka-faj",
+        "question": "Milyen fafajból készül a gyalult deszka?",
+        "answer": "Leggyakrabban fenyőből (luc, borovi, erdeifenyő) készül, de elérhető keményfából is különlegesebb felhasználásokhoz. A fenyő gyalult deszka kedvező ár-érték arányú és kültéri szerkezetekhez is jól használható, ha felületkezelést kap."
+      }
+    ],
     "products": [
       {
         "name": "Gyalult deszka /AF profil/ 19x96mmx4m AB-VEH minőség",
@@ -388,6 +452,43 @@
       "image": "/kategoriak/lamberia.webp"
     },
     "description": "Prémium minőségű lambéria kínálat lucfenyőből és borovi fenyőből, többféle profilban és méretben. A gondosan gyalult, illesztett lambéria elemek ideálisak fal- és mennyezetburkolatokhoz, belső terek meleg, természetes hangulatának megteremtéséhez, valamint külső homlokzatburkolatok kialakításához. Osztrák származású, AB minőségű termékeink esztétikus felületet, könnyű szerelhetőséget és hosszú élettartamot biztosítanak. Válasszon készletről elérhető méreteink közül kedvező áron, igény esetén egyedi megoldásokkal!",
+    "faq": [
+  {
+    "id": "lamberia-mi-ez",
+    "question": "Mi az a lambéria és mire használható?",
+    "answer": "A lambéria egy gyalult, nútféderes burkoló faanyag, amelyet falak, mennyezetek és tetőterek burkolására használnak. Elérhető beltéri és kültéri kivitelben, esztétikus és tartós megoldást nyújt. Alternatív burkolati megoldás a <a href=\"/termekek/hajopadlo\"><b>hajópadló</b></a> és a <a href=\"/termekek/fahaz-epito-profil\"><b>faház építő profil</b></a>."
+  },
+  {
+    "id": "lamberia-tipusok",
+    "question": "Milyen típusai vannak a lambériának?",
+    "answer": "Két fő típusa van: a beltéri lambéria (12,5–14 mm vastag, fal- és mennyezetburkolathoz), valamint a kültéri lambéria (14–19 mm vastag), amely vastagabb, időjárásállóbb és homlokzatokhoz, ereszekhez, előtetőkhöz ajánlott."
+  },
+  {
+    "id": "lamberia-meretek",
+    "question": "Milyen méretekben kapható a lambéria?",
+    "answer": "A beltéri lambéria jellemzően 12,5–14 mm vastag, 96–121 mm széles, 3,6–5,1 m hosszú. A kültéri lambéria 14–19 mm vastag, 120–140 mm széles, 3,6–5 m hosszú. A pontos méretválaszték a lambéria termékoldalain található."
+  },
+  {
+    "id": "lamberia-felrakasa",
+    "question": "Hogyan kell felrakni a lambériát?",
+    "answer": "A lambériát párnafára vagy stafnira kell rögzíteni, 40–60 cm-es kiosztással. Rögzítése történhet rejtett kapoccsal vagy szeggel a nút-féder oldalon. Kültéri homlokzatburkolásnál mindig szükséges a hátsó szellőző légrés kialakítása."
+  },
+  {
+    "id": "lamberia-felhasznalas",
+    "question": "Hol használható a beltéri és a kültéri lambéria?",
+    "answer": "A beltéri lambéria ideális nappalik, tetőterek, mennyezetek és falburkolatok kialakítására. A kültéri lambéria homlokzatok, előtetők, melléképületek, ereszek burkolására használható, megfelelő felületkezeléssel hosszú élettartamú."
+  },
+  {
+    "id": "lamberia-kulonbsegek",
+    "question": "Mi a különbség a lambéria, a hajópadló és a rönkház profil között?",
+    "answer": "A lambéria vékonyabb (12,5–19 mm), főként falak és mennyezetek burkolására használatos. A <a href=\"/termekek/hajopadlo\"><b>hajópadló</b></a> vastagabb (15–28 mm), önhordóbb, ezért padlóként és teraszburkolatként is alkalmas. A <a href=\"/termekek/fahaz-epito-profil\"><b>rönkház profil</b></a> rusztikus, félköríves vagy zsindelyprofilú burkolat, amely rönkház-hatást kelt homlokzatokon és belső falakon."
+  },
+  {
+    "id": "lamberia-ar",
+    "question": "Mennyibe kerül a lambéria? Hogyan alakulnak a lambéria árak?",
+    "answer": "A lambéria árát a vastagság (12,5–19 mm), a szélesség és a fafaj határozza meg. Általánosságban a beltéri lambéria kedvezőbb árú, a kültéri változat pedig vastagabb és tartósabb, ezért magasabb árkategóriába tartozik. Aktuális lambéria árainkat megtalálja az Elvira Tüzép weboldalán."
+  }
+],
     "products": [
       {
         "name": "Lambéria Luc Trapéz F-profil 12,5x96mmx4m AB minőség",
@@ -710,7 +811,34 @@
       "image": "/kategoriak/hajopadlo.jpg"
     },
     "description": "Prémium minőségű hajópadló kínálat lucfenyőből és borovi fenyőből, többféle profillal és méretben. A gondosan gyalult, illesztett hajópadló elemek ideálisak fal- és mennyezetburkolatokhoz, belső terek természetes és meleg hangulatának kialakításához. Kültéri használatra is alkalmas, megfelelő kezeléssel. Osztrák gyártású, AB-VEH, AB-EN és C minőségű faanyagaink tartósak, esztétikus felületűek és könnyen szerelhetők. Fedezze fel készleten lévő hajópadló típusainkat, kedvező áron!",
-    "products": [
+    "faq": [
+      {
+        "id": "hajopadlo-mi-ez",
+        "question": "Mi az a hajópadló?",
+        "answer": "A hajópadló egy nútféderes, gyalult burkolóanyag, amely vastagabb és erősebb, mint a <a href=\"/termekek/lamberia\"><b>lambéria</b></a>. Elsősorban padlóburkolatként, fal- és mennyezetburkolatként, valamint kültéri építményeknél használják, ahol nagyobb teherbírás és tartósság szükséges."
+      },
+      {
+        "id": "hajopadlo-felhasznalas",
+        "question": "Mire használható a hajópadló?",
+        "answer": "A hajópadló kiválóan alkalmas belső padlóburkolatokhoz, tetőtéri mennyezetekhez, falburkolatokhoz, valamint védett kültéri szerkezetekhez. Rusztikus megjelenésű építményekhez alternatívát jelenthet a <a href=\"/termekek/fahaz-epito-profil\"><b>rönkház profil</b></a> is."
+      },
+      {
+        "id": "hajopadlo-meretek",
+        "question": "Milyen méretekben kapható a hajópadló?",
+        "answer": "A hajópadló leggyakoribb vastagságai 15–28 mm között mozognak, szélessége jellemzően 90–200 mm, hossza pedig 3–5 méter."
+      },
+      {
+        "id": "hajopadlo-vs-lamberia-vsronkhazprofil",
+        "question": "Mi a különbség a hajópadló, a lambéria és a rönkház profil között?",
+        "answer": "A hajópadló vastagabb (15–28 mm) és önhordó, ezért padlóként és teraszon is alkalmazható. A <a href=\"/termekek/lamberia\"><b>lambéria</b></a> vékonyabb (12,5–19 mm), főként fal- és mennyezetburkolásra való. A <a href=\"/termekek/fahaz-epito-profil\"><b>rönkház profil</b></a> félköríves vagy zsindelyprofilú, rusztikus hatású burkolat homlokzatokra és díszfalakra."
+      },
+      {
+        "id": "hajopadlo-ar",
+        "question": "Mennyibe kerül a hajópadló?",
+        "answer": "A hajópadló árát a vastagság, szélesség és hossz határozza meg. Az aktuális árakat mindig a méret és a faanyag minősége befolyásolja."
+      }
+    ],
+"products": [
       {
         "name": "Hajópadló - Luc Softline /E profil/ 19x116mmx4m AB-VEH minőség",
         "slug": "hajopadlo-luc-softline-eprofil-19x116-abveh",
@@ -1625,6 +1753,43 @@
       "description": "Prémium osztrák BSH gerendák GL24h szilárdsági osztályban és látszó minőségben. Ragasztott, gyalult felületű faanyag tetőkhöz, csarnokokhoz, pergolákhoz.",
       "image": "/kategoriak/bsh.jpg"
     },
+    "faq": [
+      {
+        "id": "bsh-gerenda-mi-ez",
+        "question": "Mi az a BSH gerenda?",
+        "answer": "A BSH gerenda (ragasztott, rétegragasztott gerenda) több rétegű, szárított és egymáshoz ragasztott fenyőből készül. Nagy szilárdságú, mérettartó és esztétikus faanyag, amely kiválóan alkalmas nagy fesztávú szerkezetekhez."
+      },
+      {
+        "id": "bsh-gerenda-felhasznalas",
+        "question": "Mire használható a BSH ragasztott gerenda?",
+        "answer": "Leggyakrabban tetőszerkezetek, csarnokok, teraszok, pergolák és látszó szerkezetek építésére alkalmazzák. Magas teherbírása és mérettartása miatt olyan helyeken ideális, ahol a tömör fa vetemedne vagy repedne."
+      },
+      {
+        "id": "bsh-gerenda-ar",
+        "question": "Mennyibe kerül a BSH gerenda?",
+        "answer": "A BSH gerenda árát a keresztmetszet (pl. 10×10 cm, 12×16 cm, 20×20 cm), a hosszúság és a szilárdsági osztály (pl. GL24h) határozza meg. Aktuális BSH gerenda áraink elérhetők az Elvira Tüzép weboldalán."
+      },
+      {
+        "id": "bsh-gerenda-teherbiras",
+        "question": "Milyen a BSH gerenda teherbírása?",
+        "answer": "A rétegragasztott gerendák teherbírása nagyobb, mint a tömör fenyőé. Jellemző szilárdsági osztályuk GL24h, amely garantálja a nagy fesztávoknál is a biztonságot és a hosszú élettartamot."
+      },
+      {
+        "id": "bsh-gerenda-meretek",
+        "question": "Milyen méretekben érhető el a BSH gerenda?",
+        "answer": "Kínálatunkban a BSH gerenda 10×10 cm-től 20×20 cm-ig terjedő keresztmetszetekben érhető el, jellemzően 6–13 m hosszúságban. A pontos készlet és méretválaszték a termékoldalon található."
+      },
+      {
+        "id": "bsh-vs-kvh",
+        "question": "Mi a különbség a BSH és a KVH között?",
+        "answer": "A KVH (konstruktív tömör fa) egy műszárított, hossztoldott, de tömör fenyő faanyag, amely kisebb keresztmetszetekben és rövidebb hosszban készül. A BSH ezzel szemben több rétegből ragasztott, nagyobb méretű és stabilabb szerkezeti anyag, amely hosszabb fesztávokra is alkalmas."
+      },
+      {
+        "id": "bsh-fafaj",
+        "question": "Milyen fából készül a BSH gerenda?",
+        "answer": "A BSH gerendák elsősorban lucfenyőből készülnek, mert könnyű, jól ragasztható és nagy szilárdságú. Egyes esetekben erdeifenyő vagy vörösfenyő is előfordul, ha nagyobb időjárásállóság szükséges. Az Elvira Tüzépen forgalmazott BSH gerenda lucfenyőből készül."
+      }
+    ],
     "products": [
       {
         "name": "BSH ragasztott gerenda – Egyedi méretre gyártva",
@@ -2519,750 +2684,750 @@
       }
     ]
   },
-  {
-    "maincategory": "Tüzelőanyag",
-    "category": "Keményfa brikett",
-    "slug": "kemenyfa-brikett",
-    "description": "Fedezze fel keményfa brikett kínálatunkat, amely ideális választás kandallókhoz, kályhákhoz és vegyestüzelésű kazánokhoz. A tölgyből, bükkből és más keményfákból készült fabrikettek kiváló fűtőértékkel rendelkeznek. Alacsony nedvességtartalmuknak és nagy sűrűségüknek köszönhetően hosszan égnek, egyenletes hőt biztosítva. A bio brikett ragasztóanyag nélkül, tisztán préselt faforgácsból készül, környezetbarát módon – így lesz praktikus és tiszta megoldás az otthoni fűtéshez. Vásároljon közvetlenül raktárról, raklapos tételben kedvező áron!",
-    "meta": {
-      "title": "Keményfa brikett | Fa brikett és fabrikett kedvező áron",
-      "description": "Magas fűtőértékű, préselt fabrikett kandallóba, kályhába vagy kazánba. Rendeljen raklapos tételben fa brikettet kedvező áron!",
-      "image": "/kategoriak/brikett.jpg"
-    },
-    "faqdesc": "A keményfa brikett egy préselt tüzelőanyag, amely tölgyből, bükkből vagy akácból készül, kötőanyag nélkül. Előnye a magas fűtőérték, az alacsony nedvességtartalom és a tiszta égés. Az alábbi gyakori kérdések segítenek eligazodni a fabrikett típusok (RUF, Pini-Kay), az árak, az égési idő és a tárolás kapcsán.",
-    "faq": [ 
-      {
-        "id": "pini-kay-brikett",
-        "question": "Mit jelent az, hogy Pini-Kay fabrikett?",
-        "answer": "A Pini-Kay elnevezés a brikettet gyártó présgéptípusról (Pini & Kay) kapta a nevét. Ma már nemcsak a gépet, hanem a jellegzetes brikettformát is így hívják. A Pini-Kay fa brikett préselt keményfából készül, hosszirányban lyukas, többnyire hatszögletű vagy négyzet keresztmetszetű formában. A lyuknak köszönhetően jobb a levegőáramlás, magasabb az égéshő és hosszabb a parázstartás. Gyakran zsugorfóliába csomagolva kerül forgalomba, így a Pini-Kay fabrikett praktikus választás otthoni fűtéshez is. Égési ideje hosszabb, mint a RUF brikettnek. Jellemzően: 2–3 óra + hosszú parázstartás"
+    {
+      "maincategory": "Tüzelőanyag",
+      "category": "Keményfa brikett",
+      "slug": "kemenyfa-brikett",
+      "description": "Fedezze fel keményfa brikett kínálatunkat, amely ideális választás kandallókhoz, kályhákhoz és vegyestüzelésű kazánokhoz. A tölgyből, bükkből és más keményfákból készült fabrikettek kiváló fűtőértékkel rendelkeznek. Alacsony nedvességtartalmuknak és nagy sűrűségüknek köszönhetően hosszan égnek, egyenletes hőt biztosítva. A bio brikett ragasztóanyag nélkül, tisztán préselt faforgácsból készül, környezetbarát módon – így lesz praktikus és tiszta megoldás az otthoni fűtéshez. Vásároljon közvetlenül raktárról, raklapos tételben kedvező áron!",
+      "meta": {
+        "title": "Keményfa brikett | Fa brikett és fabrikett kedvező áron",
+        "description": "Magas fűtőértékű, préselt fabrikett kandallóba, kályhába vagy kazánba. Rendeljen raklapos tételben fa brikettet kedvező áron!",
+        "image": "/kategoriak/brikett.jpg"
       },
-      {
-        "id": "ruf-brikett",
-        "question": "Mit jelent az, hogy RUF fabrikett?",
-        "answer": "A RUF brikett egy téglatest alakú, nagy nyomáson préselt fa brikett. Nevét a német RUF brikettáló présgépről kapta, amely a gyártásban szabványos formát biztosít. Előnye, hogy könnyen rakható, kompakt, alacsony nedvességtartalmú és egyenletes hőleadást biztosít. A RUF fabrikett különösen népszerű a háztartásokban stabil égési tulajdonságai miatt. Égési ideje: 1,5–2 óra"
-      },
-      {
-        "id": "brikett-alapanyag",
-        "question": "Milyen fából készülnek az itt forgalmazott fa brikettek?",
-        "answer": "Az itt kapható brikettek keményfából (tölgy, bükk, akác) vagy kevert fűrészporból készülnek, kötőanyag hozzáadása nélkül, tisztán mechanikus préseléssel. Ezért környezetbarát bio brikettnek számítanak, hamutartalmuk alacsony, és a fabrikett kiválóan illeszkedik a környezettudatos fűtéshez."
-      },
-      {
-        "id": "fabrikett-ar",
-        "question": "Mennyibe kerül a fabrikett? Hogyan alakul a fa brikett ár?",
-        "answer": "A fabrikett ár több tényezőtől függ: a brikett típusától (például RUF vagy Pini-Kay fa brikett), az alapanyag minőségétől (keményfa vagy kevert fa), valamint a vásárolt mennyiségtől. Nagyobb tételben általában kedvezőbb árat tudunk biztosítani. Az aktuális fa brikett árakat mindig megtalálja az elviratuzep.hu weboldalunkon, a termékek részletes oldalán."
-      },
-      {
-        "id": "brikett-tarolas",
-        "question": "Hogyan kell tárolni a brikettet?",
-        "answer": "A fa brikett tárolásánál a legfontosabb a száraz, fedett hely. Olyan helyet válassz, ahol nem éri közvetlen nedvesség. A fóliás csomagolást bontás után is védd a párától, mert a fabrikett könnyen visszanedvesedik."
-      },
-      {
-        "id": "brikett-vs-tuzifa",
-        "question": "Jobb a fa brikett, mint a tűzifa?",
-        "answer": "A fa brikett egyik legnagyobb előnye, hogy mindig száraz (<10% nedvesség), ezért azonnal felhasználható. Nagyobb sűrűségű, így ugyanakkora térfogatban több energia található, mint a tűzifában. A fabrikett hőértéke magasabb, ezért hatékonyabb és egyenletesebb fűtést biztosít. A bio brikett ráadásul teljesen természetes, kötőanyag nélküli tüzelőanyag, amely környezetbarát alternatívát kínál a szénhez vagy akár a frissen vágott fához képest. Tűzifa ugyan olcsóbb lehet, de ha frissen vágják, akkor hosszú ideig kell szárítani, mielőtt megfelelő hatásfokkal használható lenne."
-      },
-      {
-        "id": "lignit-vs-fabrikett",
-        "question": "Mi a különbség a lignit brikett és a fabrikett között?",
-        "answer": "A lignit brikett barnaszénből készül, ezért fűtőértéke magasabb lehet, de több hamut termel, és a környezetre károsabb a kibocsátása. Gyakran kapható barkácsáruházakban, például OBI brikett 25 kg kiszerelésben. A fabrikett ezzel szemben fa brikett, amely keményfából vagy fűrészporból készül kötőanyag nélkül, teljesen természetes és környezetbarát módon. A lignit brikett hosszabb parázstartást biztosíthat, viszont a fabrikett tisztább égést, alacsonyabb hamutartalmat és megújuló alapanyagot kínál, így ideális választás háztartási fűtéshez."
-      }
-    ],
-
-    "products": [
-      {
-        "name": "Pini‑Kay keményfa brikett I. osztály",
-        "slug": "pini-kay-brikett-tolgy",
-        "meta": {
-            "title": "Pini‑Kay keményfa brikett I. osztály – 100% tölgy",
-            "description": "100% tölgyfából készült Pini‑Kay brikett, alacsony nedvességtartalommal és kiemelkedő fűtőértékkel. Prémium minőség, lyukas szerkezet a hatékony égésért.",
-            "image": "/termekek/pini-kay-brikett.jpg"
-          },
-        "aggregateRating": {
-          "ratingValue": 4.8,
-          "reviewCount": 52
+      "faqdesc": "A keményfa brikett egy préselt tüzelőanyag, amely tölgyből, bükkből vagy akácból készül, kötőanyag nélkül. Előnye a magas fűtőérték, az alacsony nedvességtartalom és a tiszta égés. Az alábbi gyakori kérdések segítenek eligazodni a fabrikett típusok (RUF, Pini-Kay), az árak, az égési idő és a tárolás kapcsán.",
+      "faq": [ 
+        {
+          "id": "pini-kay-brikett",
+          "question": "Mit jelent az, hogy Pini-Kay fabrikett?",
+          "answer": "A Pini-Kay elnevezés a brikettet gyártó présgéptípusról (Pini & Kay) kapta a nevét. Ma már nemcsak a gépet, hanem a jellegzetes brikettformát is így hívják. A Pini-Kay fa brikett préselt keményfából készül, hosszirányban lyukas, többnyire hatszögletű vagy négyzet keresztmetszetű formában. A lyuknak köszönhetően jobb a levegőáramlás, magasabb az égéshő és hosszabb a parázstartás. Gyakran zsugorfóliába csomagolva kerül forgalomba, így a Pini-Kay fabrikett praktikus választás otthoni fűtéshez is. Égési ideje hosszabb, mint a RUF brikettnek. Jellemzően: 2–3 óra + hosszú parázstartás"
         },
-        "sku": "brikett-pini-kay-tolgy", 
-        "blogtags": ["fa brikett", "fabrikett", "fenntartható energia", "zöld fűtés"],
-        "audience": ["háztartások", "kandalló/kályha tulajok"],
-        "material": "Tölgy keményfa brikett (Pini-Kay), extrudált",
-        "price": null,
-        "mprice": null,
-        "m2price": null,
-        "m3price": null,
-        "palprice": 169900,
-        "discountPrice": null,
-        "discountPercent": 5.885815185,
-        "discountValidUntil": "2025-09-01",
-        "stock": 1,
-        "images": [
+        {
+          "id": "ruf-brikett",
+          "question": "Mit jelent az, hogy RUF fabrikett?",
+          "answer": "A RUF brikett egy téglatest alakú, nagy nyomáson préselt fa brikett. Nevét a német RUF brikettáló présgépről kapta, amely a gyártásban szabványos formát biztosít. Előnye, hogy könnyen rakható, kompakt, alacsony nedvességtartalmú és egyenletes hőleadást biztosít. A RUF fabrikett különösen népszerű a háztartásokban stabil égési tulajdonságai miatt. Égési ideje: 1,5–2 óra"
+        },
+        {
+          "id": "brikett-alapanyag",
+          "question": "Milyen fából készülnek az itt forgalmazott fa brikettek?",
+          "answer": "Az itt kapható brikettek keményfából (tölgy, bükk, akác) vagy kevert fűrészporból készülnek, kötőanyag hozzáadása nélkül, tisztán mechanikus préseléssel. Ezért környezetbarát bio brikettnek számítanak, hamutartalmuk alacsony, és a fabrikett kiválóan illeszkedik a környezettudatos fűtéshez."
+        },
+        {
+          "id": "fabrikett-ar",
+          "question": "Mennyibe kerül a fabrikett? Hogyan alakul a fa brikett ár?",
+          "answer": "A fabrikett ár több tényezőtől függ: a brikett típusától (például RUF vagy Pini-Kay fa brikett), az alapanyag minőségétől (keményfa vagy kevert fa), valamint a vásárolt mennyiségtől. Nagyobb tételben általában kedvezőbb árat tudunk biztosítani. Az aktuális fa brikett árakat mindig megtalálja az elviratuzep.hu weboldalunkon, a termékek részletes oldalán."
+        },
+        {
+          "id": "brikett-tarolas",
+          "question": "Hogyan kell tárolni a brikettet?",
+          "answer": "A fa brikett tárolásánál a legfontosabb a száraz, fedett hely. Olyan helyet válassz, ahol nem éri közvetlen nedvesség. A fóliás csomagolást bontás után is védd a párától, mert a fabrikett könnyen visszanedvesedik."
+        },
+        {
+          "id": "brikett-vs-tuzifa",
+          "question": "Jobb a fa brikett, mint a tűzifa?",
+          "answer": "A fa brikett egyik legnagyobb előnye, hogy mindig száraz (<10% nedvesség), ezért azonnal felhasználható. Nagyobb sűrűségű, így ugyanakkora térfogatban több energia található, mint a tűzifában. A fabrikett hőértéke magasabb, ezért hatékonyabb és egyenletesebb fűtést biztosít. A bio brikett ráadásul teljesen természetes, kötőanyag nélküli tüzelőanyag, amely környezetbarát alternatívát kínál a szénhez vagy akár a frissen vágott fához képest. Tűzifa ugyan olcsóbb lehet, de ha frissen vágják, akkor hosszú ideig kell szárítani, mielőtt megfelelő hatásfokkal használható lenne."
+        },
+        {
+          "id": "lignit-vs-fabrikett",
+          "question": "Mi a különbség a lignit brikett és a fabrikett között?",
+          "answer": "A lignit brikett barnaszénből készül, ezért fűtőértéke magasabb lehet, de több hamut termel, és a környezetre károsabb a kibocsátása. Gyakran kapható barkácsáruházakban, például OBI brikett 25 kg kiszerelésben. A fabrikett ezzel szemben fa brikett, amely keményfából vagy fűrészporból készül kötőanyag nélkül, teljesen természetes és környezetbarát módon. A lignit brikett hosszabb parázstartást biztosíthat, viszont a fabrikett tisztább égést, alacsonyabb hamutartalmat és megújuló alapanyagot kínál, így ideális választás háztartási fűtéshez."
+        }
+      ],
+
+      "products": [
+        {
+          "name": "Pini‑Kay keményfa brikett I. osztály",
+          "slug": "pini-kay-brikett-tolgy",
+          "meta": {
+              "title": "Pini‑Kay keményfa brikett I. osztály – 100% tölgy",
+              "description": "100% tölgyfából készült Pini‑Kay brikett, alacsony nedvességtartalommal és kiemelkedő fűtőértékkel. Prémium minőség, lyukas szerkezet a hatékony égésért.",
+              "image": "/termekek/pini-kay-brikett.jpg"
+            },
+          "aggregateRating": {
+            "ratingValue": 4.8,
+            "reviewCount": 52
+          },
+          "sku": "brikett-pini-kay-tolgy", 
+          "blogtags": ["fa brikett", "fabrikett", "fenntartható energia", "zöld fűtés"],
+          "audience": ["háztartások", "kandalló/kályha tulajok"],
+          "material": "Tölgy keményfa brikett (Pini-Kay), extrudált",
+          "price": null,
+          "mprice": null,
+          "m2price": null,
+          "m3price": null,
+          "palprice": 169900,
+          "discountPrice": null,
+          "discountPercent": 5.885815185,
+          "discountValidUntil": "2025-09-01",
+          "stock": 1,
+          "images": [
+              {
+                "src": "/images/products/pini-kay-brikett-csomag", 
+                "alt": "Pini-Kay keményfa brikett I. osztály – 10 kg-os csomag, 12 darab keményfa brikett"
+              },
+              {
+                "src": "/images/products/pini-kay-brikett-csomag_darab", 
+                "alt": "Pini-Kay keményfa brikett I. osztály – egy darab keményfa brikett és egy 10 kg-os csomag egymás mellett"              
+              },
+              {
+                "src": "/images/products/pini-kay-brikett-raklap", 
+                "alt": "Pini-Kay keményfa brikett I. osztály – raklapos kiszerelés, 96 csomag keményfa brikett"
+              },
+              {
+                "src": "/images/products/pini-kay-brikett-raklap-2", 
+                "alt": "Pini-Kay keményfa brikett I. osztály – teljes raklap, 960 kg keményfa brikett (96 csomag × 10 kg)"
+              },
+              {
+                "src": "/images/products/pini-kay-brikett-darab", 
+                "alt": "Pini-Kay keményfa brikett I. osztály – egy darab keményfa brikett közelről"
+              },
+              {
+                "src": "/images/products/pini-kay-brikett-darab-top", 
+                "alt": "Pini-Kay keményfa brikett I. osztály – felülnézetből, jól látható a lyukas (üreges) szerkezet"
+              }           
+            ],
+          "description": "Lyukas, hengeres keményfa brikett kizárólag tölgyfából, I. osztályú minőségben. Hosszú égés, magas hőérték, minimális hamu.",
+          "longDescription": "A Pini‑Kay brikett 100% tölgyfából készül, I. osztályú minőségben. Lyukas, szellőzést biztosító szerkezete hatékony égést tesz lehetővé akár kandallóban, kályhában vagy kazánban is. A rendkívül alacsony, kb. 2–6% nedvességtartalom, a 4 800–5 000 kcal/kg (~20 MJ/kg) fűtőérték és a kb. 1,0–1,2% hamutartalom ideálissá teszik hosszú égésű, környezetbarát tüzelőként. A brikett nem tartalmaz adalékot vagy ragasztót, kizárólag természetes faőrleményből készül magas nyomáson préselve.",
+          "longDescription2": "",
+          "specs": {
+              "Alapanyag": "100% keményfa (főként tölgy)",
+              "Forma": "Lyukkal ellátott henger (ventilált Pini-Kay profil)",
+              "Méretek egy darabra": "Kb. 53 × 53 mm keresztmetszet, 300–330 mm hossz",
+              "Csomagolás": "10 kg-os zsugorfóliázott csomag, 12 brikett/csomag",
+              "Raklapos kiszerelés": "960 kg (96 csomag × 10 kg/csomag, EUR raklapon)",
+              "Nedvességtartalom": "2–6 %",
+              "Fűtőérték": "4800–5000 kcal/kg (~20 MJ/kg)",
+              "Hamutartalom": "1,0–1,2 %",
+              "Előállítás": "Adalékmentes, nagy nyomáson préselt",
+              "Égési tulajdonságok": "Hosszú égés (~2 óra/db), stabil szerkezet, tiszta égés",
+              "Környezet": "100% természetes, vegyszermentes",
+              "Felhasználás": "Kályha, kandalló, kazán, grillezés",
+              "Tárolás": "Száraz, fedett helyen, közvetlen nedvességtől védve"
+            },
+          "shippingDetails": {
+            "shippingWeight": 960.0,
+            "depth": 120,
+            "width": 80,
+            "height": 100
+          }
+        },
+        {
+          "name": "RUF bükk fabrikett – kocka/hasáb",
+          "slug": "ruf-fabrikett-bukk",
+          "meta": {
+            "title": "RUF brikett – prémium bükk fabrikett, alacsony hamu, magas fűtőérték",
+            "description": "Válassz RUF keményfa brikettet bükkfából! Magas fűtőérték, alacsony nedvesség és minimális hamu. Kényelmes 10 kg-os csomag, raklapon is rendelhető.",
+            "image": "/images/products/ruf-fabrikett-bukk-darab-felul-500.avif"
+          },
+          "sku": "brikett-ruf-bukk",
+          "blogtags": ["fa brikett", "fabrikett", "fenntartható energia", "zöld fűtés"],
+          "audience": ["háztartások", "kandalló/kályha tulajok"],
+          "material": "100% bükk keményfa (RUF préselt brikett)",
+          "price": null,
+          "mprice": null,
+          "m2price": null,
+          "m3price": null,
+          "palprice": 139900,
+          "discountPrice": null,
+          "discountPercent": 5,
+          "discountValidUntil": null,
+          "stock": 1,
+          "images": [
             {
-              "src": "/images/products/pini-kay-brikett-csomag", 
-              "alt": "Pini-Kay keményfa brikett I. osztály – 10 kg-os csomag, 12 darab keményfa brikett"
+              "src": "/images/products/ruf-fabrikett-bukk-darab-felul",
+              "alt": "RUF bükk fabrikett – egy darab kocka brikett felülnézetből"
             },
             {
-              "src": "/images/products/pini-kay-brikett-csomag_darab", 
-              "alt": "Pini-Kay keményfa brikett I. osztály – egy darab keményfa brikett és egy 10 kg-os csomag egymás mellett"              
+              "src": "/images/products/ruf-fabrikett-bukk-csomag",
+              "alt": "RUF bükk fabrikett – csomagos kiszerelésű kocka/hasáb brikett"
             },
             {
-              "src": "/images/products/pini-kay-brikett-raklap", 
-              "alt": "Pini-Kay keményfa brikett I. osztály – raklapos kiszerelés, 96 csomag keményfa brikett"
+              "src": "/images/products/ruf-fabrikett-bukk-darab-oldal",
+              "alt": "RUF bükk fabrikett – egy darab kocka brikett oldalnézetből"
             },
             {
-              "src": "/images/products/pini-kay-brikett-raklap-2", 
-              "alt": "Pini-Kay keményfa brikett I. osztály – teljes raklap, 960 kg keményfa brikett (96 csomag × 10 kg)"
+              "src": "/images/products/ruf-fabrikett-bukk-darab-szele",
+              "alt": "RUF bükk fabrikett – egy darab kocka brikett széléről nézve"
             },
             {
-              "src": "/images/products/pini-kay-brikett-darab", 
-              "alt": "Pini-Kay keményfa brikett I. osztály – egy darab keményfa brikett közelről"
+              "src": "/images/products/ruf-fabrikett-bukk-raklap-bal",
+              "alt": "RUF brikett – raklapos kiszerelés, 96 csomag, oldalnézetből"
             },
-            {
-              "src": "/images/products/pini-kay-brikett-darab-top", 
-              "alt": "Pini-Kay keményfa brikett I. osztály – felülnézetből, jól látható a lyukas (üreges) szerkezet"
-            }           
+                      {
+              "src": "/images/products/ruf-fabrikett-bukk-raklap-oldal",
+              "alt": "RUF brikett – raklapos kiszerelés, 96 csomag, raklap széléről nézve"
+            }
           ],
-        "description": "Lyukas, hengeres keményfa brikett kizárólag tölgyfából, I. osztályú minőségben. Hosszú égés, magas hőérték, minimális hamu.",
-        "longDescription": "A Pini‑Kay brikett 100% tölgyfából készül, I. osztályú minőségben. Lyukas, szellőzést biztosító szerkezete hatékony égést tesz lehetővé akár kandallóban, kályhában vagy kazánban is. A rendkívül alacsony, kb. 2–6% nedvességtartalom, a 4 800–5 000 kcal/kg (~20 MJ/kg) fűtőérték és a kb. 1,0–1,2% hamutartalom ideálissá teszik hosszú égésű, környezetbarát tüzelőként. A brikett nem tartalmaz adalékot vagy ragasztót, kizárólag természetes faőrleményből készül magas nyomáson préselve.",
-        "longDescription2": "",
-        "specs": {
-            "Alapanyag": "100% keményfa (főként tölgy)",
-            "Forma": "Lyukkal ellátott henger (ventilált Pini-Kay profil)",
-            "Méretek egy darabra": "Kb. 53 × 53 mm keresztmetszet, 300–330 mm hossz",
-            "Csomagolás": "10 kg-os zsugorfóliázott csomag, 12 brikett/csomag",
-            "Raklapos kiszerelés": "960 kg (96 csomag × 10 kg/csomag, EUR raklapon)",
-            "Nedvességtartalom": "2–6 %",
-            "Fűtőérték": "4800–5000 kcal/kg (~20 MJ/kg)",
-            "Hamutartalom": "1,0–1,2 %",
-            "Előállítás": "Adalékmentes, nagy nyomáson préselt",
-            "Égési tulajdonságok": "Hosszú égés (~2 óra/db), stabil szerkezet, tiszta égés",
-            "Környezet": "100% természetes, vegyszermentes",
-            "Felhasználás": "Kályha, kandalló, kazán, grillezés",
-            "Tárolás": "Száraz, fedett helyen, közvetlen nedvességtől védve"
+          "description": "RUF kocka brikett bükkfából - prémium minőségű fabrikett alacsony nedvességgel és hamuval, magas fűtőértékkel. Hosszú égés, tiszta tűz, praktikus 10 kg-os csomagban.",
+          "longDescription": "A RUF bükk fabrikett – más néven RUF brikett vagy RUF tégla – a legismertebb és legkedveltebb tüzelőanyagok közé tartozik. 100% bükk keményfából, adalékanyag nélkül készül, nagy nyomáson préselve. A préselés során a fa természetes ligninje köti össze a részecskéket, így nincs szükség mesterséges ragasztóra. A brikett rendkívül tömör, ennek köszönhetően hosszú ideig, egyenletesen és tisztán ég.\n\nA RUF fabrikett különösen alkalmas kandallókhoz, kályhákhoz és vegyes tüzelésű kazánokhoz.",
+          "longDescription2": "Alacsony, mindössze ~2,3% nedvességtartalmának és ~0,7% hamutartalmának köszönhetően tiszta égést biztosít, kevés hamu képződésével. Magas, kb. 5,5 kWh/kg fűtőértéke (~4 730 kcal/kg, ~19,8 MJ/kg) garantálja a gazdaságos fűtést. A kocka/hasáb forma könnyen rakható, jól tárolható és stabil parázstartást ad.\n\nEgy csomag 12 darab brikettet tartalmaz, tömege kb. 10 kg (±0,5 kg). A csomagolás erős polietilén fólia, amely megvédi a brikettet a szállítás és tárolás során. Egy raklapon 96 csomag található, összesen nettó ~960 kg. A raklap műanyag pántszalaggal és fémkapoccsal rögzített, streccsfóliával körbezárt, így biztonságosan mozgatható és raktározható.",
+          "specs": {
+            "Alapanyag": "100% bükk keményfa",
+            "Forma": "Kocka/hasáb (RUF profil)",
+            "Méretek egy darabra": "150 × 60 × 100 mm",
+            "Csomagolás": "Polietilén fólia, 12 db/csomag, ~10 kg/csomag (± 0,5 kg)",
+            "Raklapos kiszerelés": "96 csomag/raklap, nettó ~960 kg",
+            "Raklap mérete": "120 × 80 cm (EUR raklap)",
+            "Nedvességtartalom": "2,3 %",
+            "Hamutartalom": "0,7 %",
+            "Fűtőérték": "5,5 kWh/kg (≈ 4 730 kcal/kg, ≈ 19,8 MJ/kg)",
+            "Előállítás": "Nagy nyomáson préselt, adalékmentes",
+            "Égési tulajdonságok": "Hosszú, egyenletes égés, stabil parázstartás, kevés hamu",
+            "Felhasználás": "Kályha, kandalló, kazán",
+            "Tárolás": "Száraz, fedett helyen, közvetlen nedvességtől védve",
+            "Megjegyzés": "Raklapon pántszalaggal átkötve, streccsfóliával körbezárva"
           },
-        "shippingDetails": {
-          "shippingWeight": 960.0,
-          "depth": 120,
-          "width": 80,
-          "height": 100
-        }
-      },
-      {
-        "name": "RUF bükk fabrikett – kocka/hasáb",
-        "slug": "ruf-fabrikett-bukk",
-        "meta": {
-          "title": "RUF brikett – prémium bükk fabrikett, alacsony hamu, magas fűtőérték",
-          "description": "Válassz RUF keményfa brikettet bükkfából! Magas fűtőérték, alacsony nedvesség és minimális hamu. Kényelmes 10 kg-os csomag, raklapon is rendelhető.",
-          "image": "/images/products/ruf-fabrikett-bukk-darab-felul-500.avif"
-        },
-        "sku": "brikett-ruf-bukk",
-        "blogtags": ["fa brikett", "fabrikett", "fenntartható energia", "zöld fűtés"],
-        "audience": ["háztartások", "kandalló/kályha tulajok"],
-        "material": "100% bükk keményfa (RUF préselt brikett)",
-        "price": null,
-        "mprice": null,
-        "m2price": null,
-        "m3price": null,
-        "palprice": 139900,
-        "discountPrice": null,
-        "discountPercent": 5,
-        "discountValidUntil": null,
-        "stock": 1,
-        "images": [
-          {
-            "src": "/images/products/ruf-fabrikett-bukk-darab-felul",
-            "alt": "RUF bükk fabrikett – egy darab kocka brikett felülnézetből"
-          },
-          {
-            "src": "/images/products/ruf-fabrikett-bukk-csomag",
-            "alt": "RUF bükk fabrikett – csomagos kiszerelésű kocka/hasáb brikett"
-          },
-          {
-            "src": "/images/products/ruf-fabrikett-bukk-darab-oldal",
-            "alt": "RUF bükk fabrikett – egy darab kocka brikett oldalnézetből"
-          },
-          {
-            "src": "/images/products/ruf-fabrikett-bukk-darab-szele",
-            "alt": "RUF bükk fabrikett – egy darab kocka brikett széléről nézve"
-          },
-          {
-            "src": "/images/products/ruf-fabrikett-bukk-raklap-bal",
-            "alt": "RUF brikett – raklapos kiszerelés, 96 csomag, oldalnézetből"
-          },
-                    {
-            "src": "/images/products/ruf-fabrikett-bukk-raklap-oldal",
-            "alt": "RUF brikett – raklapos kiszerelés, 96 csomag, raklap széléről nézve"
+          "shippingDetails": {
+            "shippingWeight": 960.0,
+            "depth": 120,
+            "width": 80
           }
-        ],
-        "description": "RUF kocka brikett bükkfából - prémium minőségű fabrikett alacsony nedvességgel és hamuval, magas fűtőértékkel. Hosszú égés, tiszta tűz, praktikus 10 kg-os csomagban.",
-        "longDescription": "A RUF bükk fabrikett – más néven RUF brikett vagy RUF tégla – a legismertebb és legkedveltebb tüzelőanyagok közé tartozik. 100% bükk keményfából, adalékanyag nélkül készül, nagy nyomáson préselve. A préselés során a fa természetes ligninje köti össze a részecskéket, így nincs szükség mesterséges ragasztóra. A brikett rendkívül tömör, ennek köszönhetően hosszú ideig, egyenletesen és tisztán ég.\n\nA RUF fabrikett különösen alkalmas kandallókhoz, kályhákhoz és vegyes tüzelésű kazánokhoz.",
-        "longDescription2": "Alacsony, mindössze ~2,3% nedvességtartalmának és ~0,7% hamutartalmának köszönhetően tiszta égést biztosít, kevés hamu képződésével. Magas, kb. 5,5 kWh/kg fűtőértéke (~4 730 kcal/kg, ~19,8 MJ/kg) garantálja a gazdaságos fűtést. A kocka/hasáb forma könnyen rakható, jól tárolható és stabil parázstartást ad.\n\nEgy csomag 12 darab brikettet tartalmaz, tömege kb. 10 kg (±0,5 kg). A csomagolás erős polietilén fólia, amely megvédi a brikettet a szállítás és tárolás során. Egy raklapon 96 csomag található, összesen nettó ~960 kg. A raklap műanyag pántszalaggal és fémkapoccsal rögzített, streccsfóliával körbezárt, így biztonságosan mozgatható és raktározható.",
-        "specs": {
-          "Alapanyag": "100% bükk keményfa",
-          "Forma": "Kocka/hasáb (RUF profil)",
-          "Méretek egy darabra": "150 × 60 × 100 mm",
-          "Csomagolás": "Polietilén fólia, 12 db/csomag, ~10 kg/csomag (± 0,5 kg)",
-          "Raklapos kiszerelés": "96 csomag/raklap, nettó ~960 kg",
-          "Raklap mérete": "120 × 80 cm (EUR raklap)",
-          "Nedvességtartalom": "2,3 %",
-          "Hamutartalom": "0,7 %",
-          "Fűtőérték": "5,5 kWh/kg (≈ 4 730 kcal/kg, ≈ 19,8 MJ/kg)",
-          "Előállítás": "Nagy nyomáson préselt, adalékmentes",
-          "Égési tulajdonságok": "Hosszú, egyenletes égés, stabil parázstartás, kevés hamu",
-          "Felhasználás": "Kályha, kandalló, kazán",
-          "Tárolás": "Száraz, fedett helyen, közvetlen nedvességtől védve",
-          "Megjegyzés": "Raklapon pántszalaggal átkötve, streccsfóliával körbezárva"
-        },
-        "shippingDetails": {
-          "shippingWeight": 960.0,
-          "depth": 120,
-          "width": 80
         }
-      }
-
-    ]
-  },
-  {
-    "maincategory": "OSB lapok",
-    "category": "OSB lapok",
-    "slug": "osb-lapok",
-    "description": "OSB lap kínálatunkban megtalálja a legnépszerűbb méreteket és vastagságokat: OSB 6mm, OSB 8mm, OSB 12mm, OSB 15mm és OSB 18mm. Az OSB lapok kedvező árakon érhetők el, legyen szó OSB 3 nedvességálló lapról vagy beltéri felhasználásra szánt típusról. Az OSB lap ár és a pontos OSB lap méretek minden terméknél feltüntetésre kerülnek, így könnyedén összehasonlíthatóak. A kínálatban a legkeresettebb OSB lapok szerepelnek, amelyeket OBI áruházakban is keresnek – de nálunk közvetlenül, raktárról vásárolhatja meg őket. Az OSB lap ideális falak, tetők és padlók burkolásához, valamint bútor és egyéb belsőépítészeti megoldásokhoz is.",
-    "meta": {
-      "title": "OSB lapok | OSB árak, méretek, OSB 3, 6–18 mm vastagság",
-      "description": "OSB lap kedvező áron: OSB 3 nedvességálló lapok, 6mm–18mm vastagságban. Tekintse meg OSB lap ár kínálatunkat és vásároljon közvetlenül raktárról!",
-      "image": "/kategoriak/osb3_800x600.jpg"
-    },
-    "faqdesc": "Az OSB lap az egyik legkeresettebb építőanyag Magyarországon. Az alábbi gyakran ismételt kérdések segítenek eligazodni az OSB lap árak, méretek, típusok (pl. OSB 3), valamint a felhasználási lehetőségek között.",
-    "faq": [
-      {
-        "id": "osb-lap-mi-az",
-        "question": "Mi az OSB lap és mire használható?",
-        "answer": "Az OSB lap (Oriented Strand Board) faforgácsokból és gyantából nagy nyomással préselt építőlemez. Előnye, hogy mérettartó, teherbíró és költséghatékony alternatívája a rétegelt lemeznek. Az OSB 3 a leggyakoribb típus, amely nedvességálló és tetők, falak, padlók burkolására alkalmas. Az Elvira Tüzépen kizárólag 1250×2500 mm méretű, 3,125 m²-es OSB táblát forgalmazunk, amely szabványos méret a legtöbb építőipari munkához."
-      },
-      {
-        "id": "osb-lap-meretek",
-        "question": "Milyen OSB lap méretek kaphatók és miért 1250×2500 mm a legelterjedtebb?",
-        "answer": "Az OSB lap méret általában 1250×2500 mm (3,125 m²), ez a leggyakoribb szabvány az építőiparban. Más kereskedőknél, például Praktiker OSB lap vagy OBI OSB lap kínálatban is ez a méret szerepel, mert könnyen kezelhető és szállítható. Az Elvira Tüzép is ezt a méretet forgalmazza minden vastagságban (6 mm-től 22 mm-ig), így a vásárlók mindig pontosan számolhatnak az OSB tábla árak alapján."
-      },
-      {
-        "id": "osb-lap-ar",
-        "question": "Mennyibe kerül egy OSB lap? Hogyan alakulnak az OSB lap árak?",
-        "answer": "Az OSB lap ár a vastagságtól függ. A legkeresettebb méretek közé tartozik az OSB 6 mm, OSB 8 mm, OSB 12 mm, OSB 15 mm és OSB 18 mm. Az Elvira Tüzép kínálatában minden OSB lap 1250×2500 mm méretű, így az árak könnyen összehasonlíthatók a piacon kapható OSB lap árakkal. Az OSB lap ára kedvezőbb, mint a rétegelt lemezé, ezért költséghatékony választás építkezéshez és felújításhoz."
-      },
-      {
-        "id": "csiszolt-vs-nemcsiszolt",
-        "question": "Mi a különbség a csiszolt és a nem csiszolt OSB lap között?",
-        "answer": "A nem csiszolt OSB lap érdes felületű, jellemzően szerkezeti célokra, fal- és tetőburkolatra használják, ahol a megjelenés kevésbé fontos. A csiszolt OSB lap ezzel szemben sima felületű, pontosabb vastagságú, ezért ideális padlóaljzatnak, belső falburkolatnak vagy akár dekorációs célokra is. Az Elvira Tüzépen elérhető OSB lap 1250×2500 mm méretben kapható csiszolt és nem csiszolt kivitelben is, így minden felhasználási igényhez megtalálható a megfelelő változat."
-      },
-      {
-        "id": "osb-lap-felhasznalas",
-        "question": "Mire használható az OSB lemez?",
-        "answer": "Az OSB lemez rendkívül sokoldalú építőanyag, amelyet tetők alátéthéjazataként (például zsindely felrakása OSB lapra), válaszfalakhoz, padlóburkolathoz, mennyezetekhez, csomagoláshoz vagy bútorokhoz is használnak. Az Elvira Tüzép kínálatában minden OSB lap 1250×2500 mm (3,125 m²) méretű, amely a legelterjedtebb szabvány. Vastagság szerint az ajánlott felhasználások:<br><br> 6 mm OSB lap – fal- és mennyezet burkolatok <br> 8 mm OSB lap – szarufa alá, tető alsó síkja, egyutas raklap<br>10 mm OSB lap – íves felületek zsaluzata, csomagolás<br>12 mm OSB lap – kész- és faház építés, szállító ládák, tetőhéjalás<br>15 mm OSB lap – külső-belső falelemek, tengeren túli szállítás<br>18 mm OSB lap – állványpadló, tetőtárcsa, monolit zsaluzat<br>22 mm OSB lap – hevederek, szerelő csík, előre gyártott zsalu tábla<br><br>Az OSB tábla árak a vastagságtól függően változnak, de minden változatban a 1250×2500 mm-es méretet kínáljuk, így könnyen kalkulálható a szükséges mennyiség."
-      },
-      {
-        "id": "osb-szerkezeti-tulajdonsagok",
-        "question": "Milyen a szerkezeti felépítése az OSB lapnak, és mitől ilyen erős?",
-        "answer": "Az OSB lap (Oriented Strand Board) speciális rétegrendje biztosítja nagy teherbírását és formatartását. A gyártás során 8–15 cm hosszú, vékony faforgácsokat (strandokat) három vagy négy rétegben helyeznek el. <br>A külső rétegek forgácsai hosszanti, míg a belső rétegek keresztirányban rendezettek – ez az irányított elrendezés ('oriented') adja a panel mechanikai stabilitását. A forgácsokat műgyanta-alapú ragasztóval és viasszal itatják át, majd magas hőmérsékleten és nagy nyomáson préselik össze. A folyamat eredménye egy nagy sűrűségű (~600–680 kg/m³), tartós és jól megmunkálható építőlemez. A keresztirányú elrendezés miatt az OSB lap mindkét tengely mentén jó hajlítószilárósággal rendelkezik, ezért padlók, falak és tetőszerkezetek burkolására is kiváló. A leggyakoribb típus, az OSB 3, már mérsékelten nedvességálló, így beltéri és fedett kültéri szerkezeti célokra is alkalmas."
-      }
-
-    ],
-    "products": [
-      {
-        "name": "OSB lap 6 mm – fal- és mennyezet burkolathoz",
-        "slug": "osb-lap-6mm",
-        "meta": {
-          "title": "OSB lap 6 mm | Fal- és mennyezet burkolat | OSB lap árak",
-          "description": "OSB lap 6 mm vastagságban – fal- és mennyezet burkolathoz ideális. Ismerje meg OSB lap árainkat és méreteinket, Praktiker, Bauhaus, OBI helyett kedvezőbb áron!",
-          "image": "/termekek/osb-lap-6mm.jpg"
-        },
-        "aggregateRating": {
-          "ratingValue": 4.72,
-          "reviewCount": 53
-        },
-        "sku": "osb-6mm",
-        "blogtags": ["osb lap", "osb lap ár", "osb méret", "osb tábla árak", "osb lemez"],
-        "audience": ["építkezők", "lakásfelújítók", "kivitelezők"],
-        "material": "OSB 3 nedvességálló faforgács panel",
-        "price": 4290,
-        "mprice": null,
-        "m2price": 1373,
-        "m3price": null,
-        "palprice": null,
-        "discountPrice": null,
-        "discountPercent": null,
-        "discountValidUntil": null,
-        "stock": 0,
-        "image": "/termekek/osb-lap-6mm.jpg",
-        "description": "6 mm vastag OSB lap fal- és mennyezet burkolathoz. Könnyű, mégis stabil, ideális választás belsőépítészeti projektekhez és gyors szereléshez. A lap pontos OSB méretben és szabványos táblaformában érhető el.",
-        "longDescription": "Az OSB 6 mm lap tökéletes választás fal- és mennyezet burkolatokhoz, ahol fontos a kis súly, az egyszerű kezelhetőség és a stabil tartás. A szabványos OSB tábla méret (2500×1250 mm) miatt könnyen illeszthető, a 6 mm vastagság pedig ideálissá teszi száraz belső terekben történő alkalmazásra. Az OSB lap árak kedvezőbbek, mint a rétegelt lemezé, így költséghatékony megoldást kínál felújítóknak és építkezőknek. Gyakran keresett alternatíva Praktiker és OBI OSB lap kínálat helyett, közvetlenül raktárról, széles választékban.",
-        "longDescription2": "",
-        "specs": {
-          "Vastagság": "6 mm",
-          "Tábla méret": "2500 × 1250 mm",
-          "Tábla felülete": "3,125m²",
-          "Sűrűség": "kb. 600–680 kg/m³",
-          "Tömeg": "~ 12,2 kg",
-          "Felület": "csiszolt, éles él",
-          "Típus": "OSB 3 – teherhordó, nedvességálló",
-          "Felhasználás": "Fal- és mennyezet burkolatok, belsőépítészeti munkák",
-          "Előnyök": "Könnyű súly, stabil tartás, kedvező OSB lap ár",
-          "Ajánlott hely": "Száraz beltér, lakásfelújítás, könnyű válaszfalak"
-        },
-        "shippingDetails": {
-          "shippingWeight": 12.2,
-          "depth": 250,
-          "width": 125,
-          "height": 0.6
-        }
-      },
-      {
-        "name": "OSB lap 8 mm – szarufa alá, tető alsó síkjához",
-        "slug": "osb-lap-8mm",
-        "meta": {
-          "title": "OSB lap 8 mm | Tető alá, szarufákhoz | OSB árak és méretek",
-          "description": "OSB lap 8 mm vastagságban – tetőszerkezetekhez ideális. Szabványos OSB lap méret 2500×1250 mm. Nézze meg kedvező OSB árainkat – Praktiker és OBI alternatíva!",
-          "image": "/images/products/osb-lap-8mm-lapok-500.jpg"
-        },
-        "aggregateRating": {
-          "ratingValue": 4.81,
-          "reviewCount": 46
-        },
-        "sku": "osb-8mm",
-        "blogtags": ["osb lap", "osb lap ár", "osb 8mm", "osb lap méret", "osb tábla", "építőanyag", "tetőburkolat"],
-        "audience": ["kivitelezők", "építkezők", "ácsok", "tetőfedők"],
-        "material": "OSB 3 nedvességálló faforgács panel",
-        "price": 5290,
-        "mprice": null,
-        "m2price": 1693,
-        "m3price": null,
-        "palprice": null,
-        "discountPrice": null,
-        "discountPercent": null,
-        "discountValidUntil": null,
-        "stock": 1,
-        "images": [
-          {
-            "src": "/images/products/osb-lap-8mm-lapok",
-            "alt": "8 mm vastag OSB 3 lapok – szabályos, egyforma méretű táblalapok közelről"
-          },
-          {
-            "src": "/images/products/osb-lap-8mm-darab",
-            "alt": "Egy darab 8 mm vastag OSB lap oldalnézeti fotója – 1250×2500 mm tábla részlete"
-          },
-          {
-            "src": "/images/products/osb-lap-8mm-koteg-raklap",
-            "alt": "8 mm OSB 3 lapok raklapon, kötegelve – szabványos tábla méret: 1250×2500 mm"
-          }
-        ],
-        "description": "8 mm vastag OSB lap tetők alátétszerkezetéhez, szarufák alá és egyutas raklaphoz is ideális. Nedvességálló, tartós és jól megmunkálható anyag szabványos méretben.",
-        "longDescription": "Az OSB 8 mm lap kiváló választás a tető alsó síkjának burkolására, például szarufa alá elhelyezve. A szabványos 2500×1250 mm-es OSB tábla méret miatt egyszerű a tervezés és beépítés, a 3,125 m² felület pedig pontos kalkulációt tesz lehetővé. Az OSB 3 típusú lap nedvességálló, teherhordásra is alkalmas, így szél- és hőszigeteléssel kombinálva kiváló teljesítményt nyújt. Az OSB lap 8 mm vastagságban gyakran használatos tetőknél, de raklapokhoz és könnyű csomagolásokhoz is bevált. Alternatívát nyújt a Praktiker, OBI vagy Bauhaus OSB lap kínálathoz képest, versenyképes áron, elérhető raktárról.",
-        "longDescription2": "",
-        "specs": {
-          "Vastagság": "8 mm",
-          "Tábla méret": "2500 × 1250 mm",
-          "Tábla felülete": "3,125m²",
-          "Sűrűség": "kb. 600–680 kg/m³",
-          "Tömeg": "~ 16,3 kg",
-          "Felület": "csiszolt, éles él",
-          "Típus": "OSB 3 – teherhordó, nedvességálló",
-          "Felhasználás": "Tető alsó síkja, szarufa alá, egyutas raklap",
-          "Előnyök": "Nedvességálló, tartós, könnyen szerelhető, szabványos méret",
-          "Ajánlott hely": "Tetőszerkezetek, fedélszék, gazdaságos belső burkolás"
-        },
-        "shippingDetails": {
-          "shippingWeight": 16.3,
-          "depth": 250,
-          "width": 125,
-          "height": 0.8
-        }
-      },
-      {
-        "name": "OSB lap 10 mm – zsaluzat, csomagolás, burkolat",
-        "slug": "osb-lap-10mm",
-        "meta": {
-          "title": "OSB lap 10 mm | Íves zsaluzat és csomagolás | OSB árak",
-          "description": "OSB lap 10 mm vastagságban – ideális csomagoláshoz, íves zsaluzathoz és általános belső burkoláshoz. Nézze meg OSB 3 lapjainkat – 2500×1250 mm tábla, elérhető raktárról.",
-          "image": "/images/products/osb-lap-10mm-lapok-500.jpg"
-        },
-        "aggregateRating": {
-          "ratingValue": 4.76,
-          "reviewCount": 46
-        },
-        "sku": "osb-10mm",
-        "blogtags": ["osb lap", "osb lap ár", "osb 10mm", "osb lap méret", "osb tábla", "zsaluzat", "csomagolás"],
-        "audience": ["építkezők", "ipari csomagolók", "kivitelezők", "bútorasztalosok"],
-        "material": "OSB 3 nedvességálló faforgács panel",
-        "price": 6090,
-        "mprice": null,
-        "m2price": 1949,
-        "m3price": null,
-        "palprice": null,
-        "discountPrice": null,
-        "discountPercent": 3,
-        "discountValidUntil": "2025.10.10",
-        "stock": 1,
-        "images": [
-          {
-            "src": "/images/products/osb-lap-10mm-lapok",
-            "alt": "10 mm OSB lapok egymásra helyezve – szabványos méretű tábla"
-          },
-          {
-            "src": "/images/products/osb-lap-10mm-darab",
-            "alt": "Egyetlen 10 mm vastag OSB lap oldalnézetből – 2500×1250 mm méret"
-          },
-          {
-            "src": "/images/products/osb-lap-10mm-koteg-raklap",
-            "alt": "10 mm OSB lapok raklapon kötegelve – szállításra kész állapot"
-          }
-        ],
-        "description": "10 mm vastag OSB lap, amely kiválóan alkalmas íves felületek zsaluzatára, ipari csomagolásra és általános belsőépítészeti burkolatokhoz. Nedvességálló, stabil és jól kezelhető szabványos táblaformában.",
-        "longDescription": "Az OSB 10 mm lap tökéletes választás, ha íves vagy speciális felületek burkolására, zsaluzására vagy strapabíró csomagolásra van szükség. Az OSB 3 típusú tábla teherhordó és nedvességálló, így építkezéseknél, raktározásnál, logisztikai vagy ipari felhasználás során is megbízható megoldást kínál. A szabványos 2500×1250 mm-es OSB tábla méret és a 3,125 m² felület egyszerű kalkulációt és gyors beépítést tesz lehetővé. Kedvelt választás a Praktiker, OBI vagy Bauhaus OSB lapok helyett – közvetlenül raktárról, kiváló ár-érték arányban.",
-        "longDescription2": "",
-        "specs": {
-          "Vastagság": "10 mm",
-          "Tábla méret": "2500 × 1250 mm",
-          "Tábla felülete": "3,125m²",
-          "Sűrűség": "kb. 600–680 kg/m³",
-          "Tömeg": "~ 20,3 kg",
-          "Felület": "csiszolt, éles él",
-          "Típus": "OSB 3 – teherhordó, nedvességálló",
-          "Felhasználás": "Íves zsaluzat, ipari csomagolás, belső burkolat",
-          "Előnyök": "Nedvességálló, hajlíthatóbb vastagság, széleskörű felhasználás",
-          "Ajánlott hely": "Belsőépítészet, építkezés, csomagolástechnika, raktározás"
-        },
-        "shippingDetails": {
-          "shippingWeight": 20.3,
-          "depth": 250,
-          "width": 125,
-          "height": 1.0
-        }
-      },
-
-      {
-        "name": "OSB lap 12 mm – faház építéshez, tetőburkoláshoz",
-        "slug": "osb-lap-12mm",
-        "meta": {
-          "title": "OSB lap 12 mm | Tetőburkolat és faház építés | OSB 3 árak",
-          "description": "OSB lap 12 mm vastagságban – kiváló választás faházakhoz, tetőburkolathoz, ládákhoz. 2500×1250 mm szabványos OSB tábla, nedvességálló, raktárról elérhető.",
-          "image": "/images/products/osb-lap-12mm.png"
-        },
-        "aggregateRating": {
-          "ratingValue": 4.71,
-          "reviewCount": 63
-        },
-        "sku": "osb-12mm",
-        "blogtags": ["osb lap", "osb lap ár", "osb 12mm", "faház építés", "tetőburkolat", "osb tábla"],
-        "audience": ["építkezők", "kivitelezők", "asztalosok", "kertépítők"],
-        "material": "OSB 3 nedvességálló faforgács panel",
-        "price": 6890,
-        "mprice": null,
-        "m2price": 2205,
-        "m3price": null,
-        "palprice": null,
-        "discountPrice": null,
-        "discountPercent": null,
-        "discountValidUntil": null,
-        "stock": 0,
-        "image": "/termekek/osb-lap-12mm.png",
-        "description": "12 mm vastag OSB lap, ideális faházak, kész- és mobilházak falburkolásához, tetőaljzatnak, vagy nagy teherbírású csomagoló ládákhoz. Stabil, nedvességálló, jól szerelhető panel.",
-        "longDescription": "Az OSB 12 mm lap univerzális építőanyag, amely kiválóan alkalmas könnyűszerkezetes házakhoz, kész- és faházak falainak burkolásához, tetőaljzatként való alkalmazásra, vagy szállítóládák és dobozok gyártására. Az OSB 3 típusú panel teherhordó és nedvességálló, így kültéri burkolatokhoz is biztonságosan használható. A 2500×1250 mm-es szabványos OSB tábla méret 3,125 m² fedést biztosít, így könnyen kalkulálható a szükséges mennyiség. Gyakori választás Praktiker, OBI vagy Bauhaus OSB lapok helyett – közvetlenül elérhető raktárról.",
-        "longDescription2": "",
-        "specs": {
-          "Vastagság": "12 mm",
-          "Tábla méret": "2500 × 1250 mm",
-          "Tábla felülete": "3,125m²",
-          "Sűrűség": "kb. 600–680 kg/m³",
-          "Tömeg": "~ 24,4 kg",
-          "Felület": "csiszolt, éles él",
-          "Típus": "OSB 3 – teherhordó, nedvességálló",
-          "Felhasználás": "Faház, kész- és mobilház építés, tetőhéjalás, szállítóláda",
-          "Előnyök": "Megerősített tartás, kültéri alkalmazhatóság, standard méret",
-          "Ajánlott hely": "Könnyűszerkezetes építés, raktározás, kültéri burkolás"
-        },
-        "shippingDetails": {
-          "shippingWeight": 24.4,
-          "depth": 250,
-          "width": 125,
-          "height": 1.2
-        }
-      },
-      {
-        "name": "OSB lap 15 mm – külső-belső falelemekhez, zsaluzáshoz",
-        "slug": "osb-lap-15mm",
-        "meta": {
-          "title": "OSB lap 15 mm | Külső-belső falhoz, zsaluzáshoz | OSB 3 árak",
-          "description": "OSB 15 mm vastag teherhordó lemez kültéri és beltéri szerkezetekhez. Nedvességálló OSB lap, szabványos méret (2500×1250 mm), kiváló ár-érték arányban.",
-          "image": "/termekek/osb-lap-15mm.avif"
-        },
-        "aggregateRating": {
-          "ratingValue": 4.82,
-          "reviewCount": 41
-        },
-        "sku": "osb-15mm",
-        "blogtags": ["osb lap", "osb lap ár", "osb 15mm", "zsaluzat", "külső fal", "építőanyag"],
-        "audience": ["kivitelezők", "építkezők", "zsaluzó szakemberek", "asztalosok"],
-        "material": "OSB 3 nedvességálló faforgács panel",
-        "price": 8690,
-        "mprice": null,
-        "m2price": 2781,
-        "m3price": null,
-        "palprice": null,
-        "discountPrice": null,
-        "discountPercent": null,
-        "discountValidUntil": null,
-        "stock": 0,
-        "image": "/termekek/osb-lap-15mm.avif",
-        "description": "15 mm vastag OSB lap teherhordó külső és belső falakhoz, zsaluzatokhoz, ideiglenes padlókhoz. Kiváló szilárdság, nedvességállóság és jó megmunkálhatóság.",
-        "longDescription": "Az OSB lap 15 mm vastagságban kiváló választás teherhordó szerkezetekhez – legyen szó külső vagy belső falakról, lépcsőburkolatról, monolit zsaluzatról vagy építési ideiglenes padlózatokról. OSB 3 típusként nedvességálló, így félkültéri felhasználásra is alkalmas. A szabványos 2500×1250 mm-es OSB méret egyszerűvé teszi a kivitelezést, a 3,125 m² felület pedig pontos kalkulációt tesz lehetővé. A termék kedvező alternatívája a hagyományos zsalulemezeknek és sok más kereskedő OSB kínálatának (Praktiker, Bauhaus, OBI).",
-        "longDescription2": "",
-        "specs": {
-          "Vastagság": "15 mm",
-          "Tábla méret": "2500 × 1250 mm",
-          "Tábla felülete": "3,125m²",
-          "Sűrűség": "kb. 600–680 kg/m³",
-          "Tömeg": "~ 30,5 kg",
-          "Felület": "csiszolt, éles él",
-          "Típus": "OSB 3 – teherhordó, nedvességálló",
-          "Felhasználás": "Külső-belső falelemek, zsaluzat, ideiglenes padló",
-          "Előnyök": "Erős tartás, nedvességállóság, sokoldalú felhasználás",
-          "Ajánlott hely": "Építkezés, burkolás, szerkezeti elemek kialakítása"
-        },
-        "shippingDetails": {
-          "shippingWeight": 30.5,
-          "depth": 250,
-          "width": 125,
-          "height": 1.5
-        }
-      },
-      {
-        "name": "OSB lap 18 mm – állványpadlóhoz, zsaluzáshoz",
-        "slug": "osb-lap-18mm",
-        "meta": {
-          "title": "OSB lap 18 mm | Állványpadló, zsaluzat | OSB 3 lap ár",
-          "description": "OSB lap 18 mm vastagságban – nagy teherbírású szerkezeti célokra. Csiszolt, nedvességálló OSB 3 tábla 2500×1250 mm méretben. Elérhető raktárról, kedvező áron.",
-          "image": "/termekek/osb-lap-18mm.webp"
-        },
-        "aggregateRating": {
-          "ratingValue": 4.83,
-          "reviewCount": 39
-        },
-        "sku": "osb-18mm",
-        "blogtags": ["osb lap", "osb 18mm", "osb lap ár", "zsaluzat", "építőanyag", "állványpadló"],
-        "audience": ["kivitelezők", "állványozók", "építők", "ipari szakemberek"],
-        "material": "OSB 3 nedvességálló faforgács panel",
-        "price": 10290,
-        "mprice": null,
-        "m2price": 3293,
-        "m3price": null,
-        "palprice": null,
-        "discountPrice": null,
-        "discountPercent": null,
-        "discountValidUntil": null,
-        "stock": 0,
-        "image": "/termekek/osb-lap-18mm.webp",
-        "description": "18 mm vastag, csiszolt OSB lap – kiváló nagy igénybevételű szerkezeti feladatokra. Használható állványpadlóként, tetőtárcsaként, valamint zsaluzási célokra.",
-        "longDescription": "Az OSB 18 mm lap az egyik legstabilabb és legnagyobb teherbírású OSB típus, amelyet csiszolt felülete, nedvességállósága és szabványos mérete (2500×1250 mm) különösen alkalmassá tesz nehéz igénybevételű szerkezeti feladatokra. Gyakran használják állványpadlóként építkezéseken, tetőtárcsaként fedélszékekben vagy zsaluzatként monolit betonöntéshez. OSB 3 típusként ideális félig nyitott terekben is. A 3,125 m² tábla méret megkönnyíti a tervezést és az anyagszükséglet kiszámítását. Alternatívát kínál a Praktiker, OBI vagy Bauhaus OSB lap választékhoz képest – kedvezőbb árakkal, raktárról.",
-        "longDescription2": "",
-        "specs": {
-          "Vastagság": "18 mm",
-          "Tábla méret": "2500 × 1250 mm",
-          "Tábla felülete": "3,125m²",
-          "Sűrűség": "kb. 600–680 kg/m³",
-          "Tömeg": "~ 36,5 kg",
-          "Felület": "csiszolt, éles él",
-          "Típus": "OSB 3 – teherhordó, nedvességálló",
-          "Felhasználás": "Állványpadló, tetőtárcsa, zsaluzat, szerkezeti felépítmények",
-          "Előnyök": "Nagy teherbírás, csiszolt felület, hosszú élettartam",
-          "Ajánlott hely": "Építkezés, ipari szerkezetek, félkültéri alkalmazások"
-        },
-        "shippingDetails": {
-          "shippingWeight": 36.5,
-          "depth": 250,
-          "width": 125,
-          "height": 1.8
-        }
-      },
-      {
-        "name": "OSB lap 22 mm – zsalutábla, heveder, teherhordó réteg",
-        "slug": "osb-lap-22mm",
-        "meta": {
-          "title": "OSB lap 22 mm | Erős OSB tábla zsaluzáshoz | OSB lap árak",
-          "description": "OSB lap 22 mm vastagságban – ideális zsalutáblának, hevederekhez és teherhordó rétegként. Csiszolt felület, szabványos 2500×1250 mm méretben, elérhető raktárról.",
-          "image": "/termekek/osb-lap-22mm.webp"
-        },
-        "aggregateRating": {
-          "ratingValue": 4.88,
-          "reviewCount": 31
-        },
-        "sku": "osb-22mm",
-        "blogtags": ["osb lap", "osb 22mm", "osb lap ár", "zsalutábla", "heveder", "építőanyag"],
-        "audience": ["kivitelezők", "építési vállalkozók", "zsaluzó szakemberek"],
-        "material": "OSB 3 nedvességálló faforgács panel",
-        "price": 12690,
-        "mprice": null,
-        "m2price": 4061,
-        "m3price": null,
-        "palprice": null,
-        "discountPrice": null,
-        "discountPercent": null,
-        "discountValidUntil": null,
-        "stock": 0,
-        "image": "/termekek/osb-lap-22mm.webp",
-        "description": "22 mm vastag OSB 3 lap – ideális zsalutáblának, hevedernek vagy nehéz szerkezeti rétegnek. Extra teherbírás, nedvességálló kivitel, szabványos 3,125 m² táblaformátumban.",
-        "longDescription": "A 22 mm-es OSB lap az egyik legerősebb szabványos vastagság, amely különösen alkalmas zsalutáblaként való felhasználásra, előregyártott elemekhez, vagy akár padlók teherhordó rétegeként. Az OSB 3 típusú panel kiváló nedvességállósággal és formatartással rendelkezik, így kültéri vagy fokozott igénybevételű belsőépítészeti feladatokra is ajánlott. A 2500×1250 mm-es méret és csiszolt felület megkönnyíti a beépítést és pontos illesztést. Kedvezőbb árú alternatíva a rétegelt lemezekhez képest, elérhető raktárról, akár azonnali elszállítással.",
-        "longDescription2": "",
-        "specs": {
-          "Vastagság": "22 mm",
-          "Tábla méret": "2500 × 1250 mm",
-          "Tábla felülete": "3,125m²",
-          "Sűrűség": "kb. 600–680 kg/m³",
-          "Tömeg": "~ 44,6 kg",
-          "Felület": "csiszolt, éles él",
-          "Típus": "OSB 3 – teherhordó, nedvességálló",
-          "Felhasználás": "Zsalutábla, hevederek, padlószerkezetek, erős burkolat",
-          "Előnyök": "Extra teherbírás, nagy vastagság, nedvességállóság",
-          "Ajánlott hely": "Zsaluzás, kültéri szerkezet, ipari padló, magas igénybevételű területek"
-        },
-        "shippingDetails": {
-          "shippingWeight": 44.6,
-          "depth": 250,
-          "width": 125,
-          "height": 2.2
-        }
-      }
-    ]
-  },
-  {
-    "maincategory": "Tüzelőanyag",
-    "category": "Pellet",
-    "slug": "pellet",
-    "description": "Prémium minőségű pellet kínálatunk ideális választás pellet kazánokhoz, vízteres pellet kandallókhoz és pelletes kályhákhoz. A fa pellet és alternatív pellet fajták – mint a fenyő pellet, keményfa pellet vagy napraforgó pellet – egyaránt környezetbarát és hatékony tüzelőanyagok. Magas fűtőértéküknek, alacsony nedvességtartalmuknak és egyenletes égésüknek köszönhetően gazdaságos és kényelmes fűtést biztosítanak. A pellet árak kedvezőek, különösen raklapos tételben történő vásárláskor. Fedezze fel pellet árainkat és rendeljen közvetlenül raktárról az Elvira Tüzépnél!",
-    "meta": {
-      "title": "Pellet | Fa pellet és napraforgó pellet kazánhoz, kandallóhoz",
-      "description": "Fa pellet és alternatív pellet kedvező áron – fenyő pellet, keményfa pellet, napraforgó pellet. Ideális pellet kazánhoz, vízteres pellet kandallóhoz. Rendeljen raklapos tételben!",
-      "image": "/kategoriak/pellet.jpg"
-    },
-    "faqdesc": "A pellet egy préselt, kis henger formájú tüzelőanyag, amely jellemzően faforgácsból, fűrészporból vagy mezőgazdasági melléktermékekből (pl. napraforgóhéj) készül. Előnye a magas fűtőérték, a tiszta égés és az automatizálható adagolás. Az alábbi gyakori kérdések segítenek eligazodni a pellet típusok, árak, felhasználási módok és tárolási tudnivalók kapcsán.",
-    "faq": [
-      {
-        "id": "pellet-mi-az",
-        "question": "Mi az a pellet és mire használható?",
-        "answer": "A pellet kis henger alakú, préselt tüzelőanyag, amely fából vagy mezőgazdasági melléktermékből (pl. napraforgóhéj) készül. Használható pellet kazánban, vízteres pellet kandallóban vagy kisebb pelletes kályhában is. Előnye a tiszta égés, az egyenletes hőleadás és az automatizált adagolási lehetőség."
-      },
-      {
-        "id": "pellet-tipusok",
-        "question": "Milyen pellet típusok kaphatók?",
-        "answer": "A leggyakoribb típusok a fenyő pellet, keményfa pellet és a napraforgó pellet. A fenyő pellet világos színű, gyorsan gyullad és alacsony hamutartalmú. A keményfa pellet sűrűbb, lassabban ég és hosszabb parázstartást biztosít. A napraforgó pellet olcsóbb alternatíva, amely szintén magas fűtőértékű, de több hamut termel."
-      },
-      {
-        "id": "pellet-ar",
-        "question": "Mennyibe kerül a pellet? Hogyan alakul a pellet ár?",
-        "answer": "A pellet ár függ az alapanyagtól (fenyő, keményfa vagy napraforgó pellet), a csomagolástól (zsákos vagy raklapos) és a rendelt mennyiségtől. A pellet kazánhoz vagy kandallóhoz szükséges mennyiséget nagyobb tételben vásárolva kedvezőbb áron szerezheti be. Az aktuális pellet árakat mindig megtalálja az elviratuzep.hu weboldalon."
-      },
-      {
-        "id": "pellet-vs-brikett",
-        "question": "Mi a különbség a pellet és a brikett között?",
-        "answer": "A pellet kis átmérőjű (6–8 mm) henger formájú tüzelőanyag, amelyet főként automata adagolású pellet kazánokhoz és kandallókhoz fejlesztettek ki. A brikett nagyobb méretű, kézi adagolást igényel, és elsősorban kályhákban, vegyestüzelésű kazánokban használatos. A pellet kényelmesebb, automatizált fűtési rendszerekhez, míg a brikett egyszerűbb, hagyományos megoldásokhoz ideális."
-      },
-      {
-        "id": "pellet-tarolas",
-        "question": "Hogyan kell tárolni a pelletet?",
-        "answer": "A pellet érzékeny a nedvességre, ezért mindig száraz, fedett, szellős helyen kell tárolni. Zsákos kiszerelés esetén a gyári csomagolás védelmet nyújt, raklapos vásárlásnál érdemes fóliával letakarni. Nedvesség esetén a pellet széteshet és elveszítheti fűtőértékét."
-      },
-      {
-        "id": "pellet-kazan",
-        "question": "Milyen előnyei vannak a pellet kazánnak és a pellet kandallónak?",
-        "answer": "A pellet kazán és a vízteres pellet kandalló egyik legnagyobb előnye az automatizálható működés. A pelletes kazán képes programozottan adagolni a tüzelőanyagot, így kényelmes és energiatakarékos fűtést biztosít. A pellet kandalló pedig a hagyományos fatüzelés hangulatát ötvözi a modern technológiával, sokszor távirányítható és termosztáttal vezérelhető."
-      }
-    ],
-    "products": [
-      {
-        "name": "Prémium fenyő pellet – 15 kg zsák",
-        "slug": "fenyo-pellet-15kg-enplus-a1",
-        "meta": {
-          "title": "Fenyő pellet 15 kg | ENplus A1 | Pellet kazánhoz és kandallóhoz",
-          "description": "Prémium minőségű fenyő pellet, ENplus A1 minősítéssel. ≤10% nedvesség, ≤0,7% hamu, ≥98% mechanikai tartósság, 6±1 mm átmérő, 3,15–40 mm hossz, ≥4,6 kWh/kg fűtőérték. Ideális pellet kazánhoz és vízteres pellet kandallóhoz.",
-          "image": "/images/products/fenyo-pellet-15kg-zsak-500.avif"
-        },
-        "sku": "pellet-fenyo-15kg-enplus-a1",
-        "blogtags": ["fa brikett", "pellet", "pellet ár", "pellet kazán", "pellet kandalló", "pelletes kazán", "vízteres pellet kandalló", "fenyő pellet", "ENplus A1"],
-        "audience": ["háztartások", "pellet kazán/kandalló tulajok"],
-        "material": "100% fenyő pellet, ENplus A1",
-        "price": 2799,
-        "mprice": null,
-        "m2price": null,
-        "m3price": null,
-        "palprice": 195930,
-        "discountPrice": null,
-        "discountPercent": 5,
-        "discountValidUntil": "2025.10.01",
-        "stock": 1,
-        "images": [
-          {
-            "src": "/images/products/fenyo-pellet-15kg-zsak",
-            "alt": "Fenyő pellet – 15 kg zsákos kiszerelés eleje"
-          },
-                    {
-            "src": "/images/products/fenyo-pellet-15kg-zsak-hatulja",
-            "alt": "Fenyő pellet – 15 kg zsákos kiszerelés hatulja"
-          },
-          
-          {
-            "src": "/images/products/fenyo-pellet-15kg-raklap-szembol",
-            "alt": "Fenyő pellet – raklapos kiszerelés szemből, 70 zsák (~1050 kg)"
-          },
-          {
-            "src": "/images/products/fenyo-pellet-15kg-raklap-oldal",
-            "alt": "Fenyő pellet – raklapos kiszerelés oldalnézetből, 70 zsák (~1050 kg)"
-          }
-        ],
-        "description": "Prémium minőségű fenyő pellet, ENplus A1 tanúsítvánnyal. Alacsony hamu és nedvesség, tiszta égés, megbízható adagolhatóság pellet kazánokhoz és pellet kandallókhoz. Praktikus 15 kg-os zsákos kivitelben.",
-        "longDescription": "A fenyő pellet prémium tüzelőanyag, amely 100% fenyő alapanyagból készül. ENplus A1 minősítése garantálja az alacsony nedvességtartalmat és hamut, valamint a magas mechanikai tartósságot. Ez egyenletes, tiszta égést és magas hatásfokot biztosít, így ideális választás pellet kazánhoz, vízteres pellet kandallóhoz és pelletes kályhához. A 15 kg-os zsák könnyen mozgatható, és tisztán tárolható.",
-        "longDescription2": "Főbb jellemzők: nedvesség ≤10%, hamutartalom ≤0,7%, mechanikai tartósság ≥98%, szemcseméret 6±1 mm átmérő és 3,15–40 mm hossz, alsó fűtőérték ≥4,6 kWh/kg. A pontos mérettűrés és a magas tartósság stabil csigás adagolást tesz lehetővé. Egy raklap 70 zsákot tartalmaz (~1050 kg). Származás: Szlovákia.",
-        "specs": {
-          "Alapanyag": "100% fenyő",
-          "Osztály": "ENplus A1",
-          "Átmérő": "6 ± 1 mm",
-          "Hossz": "3,15–40 mm",
-          "Nedvességtartalom": "≤ 10 %",
-          "Hamutartalom": "≤ 0,7 %",
-          "Mechanikai tartósság": "≥ 98 %",
-          "Alsó fűtőérték": "≥ 4,6 kWh/kg",
-          "Kiszerelés": "15 kg zsák",
-          "Raklapos kiszerelés": "70 zsák/raklap (~1050 kg)",
-          "Felhasználás": "Pellet kazán, vízteres pellet kandalló, pelletes kályha",
-          "Származás": "Szlovákia",
-          "Megjegyzés": "Automata adagolásra optimalizált, tiszta égés"
-        },
-        "shippingDetails": {
-          "shippingWeight": 15,
-          "depth": 50,
-          "width": 35,
-          "height": 12
-        }
-      }
 
       ]
-  },
-  {
-  "maincategory": "Fűrészáru",
-  "category": "Fűrészelt deszka",
-  "slug": "fureszelt-deszka",
-  "description": "Fűrészelt, gyalulatlan deszka kínálatunk légszáraz kivitelben érhető el, amely ideális tetőszerkezetekhez, zsaluzáshoz, burkolatokhoz és egyéb építési munkákhoz. A gyalulatlan deszka természetes, masszív és kedvező árú faanyag, széles méretválasztékban, közvetlenül raktárról.",
-  "meta": {
-    "title": "Fűrészelt deszka | Gyalulatlan, légszáraz építő deszka árak és méretek",
-    "description": "Fűrészelt, gyalulatlan deszka közvetlenül raktárról – szélezetlen és zsaludeszka több méretben. Tekintse meg deszka árainkat, méreteinket és felhasználási lehetőségeiket!",
-    "image": "/images/products/fureszaru-500.avif"
-  },
-  "faqdesc": "A fűrészelt deszka (más néven gyalulatlan deszka vagy építő deszka) a leggyakrabban használt faanyag tetőszerkezetekhez, zsaluhoz és általános építési felhasználásra. A szélezetlen, légszáraz kivitel előnye, hogy kedvező áron nagy teherbírású, természetes alapanyaghoz juthatunk. Az alábbi gyakori kérdések segítenek eligazodni a deszka méretek, árak és felhasználási módok között.",
-  "faq": [
+    },
+    {
+      "maincategory": "OSB lapok",
+      "category": "OSB lapok",
+      "slug": "osb-lapok",
+      "description": "OSB lap kínálatunkban megtalálja a legnépszerűbb méreteket és vastagságokat: OSB 6mm, OSB 8mm, OSB 12mm, OSB 15mm és OSB 18mm. Az OSB lapok kedvező árakon érhetők el, legyen szó OSB 3 nedvességálló lapról vagy beltéri felhasználásra szánt típusról. Az OSB lap ár és a pontos OSB lap méretek minden terméknél feltüntetésre kerülnek, így könnyedén összehasonlíthatóak. A kínálatban a legkeresettebb OSB lapok szerepelnek, amelyeket OBI áruházakban is keresnek – de nálunk közvetlenül, raktárról vásárolhatja meg őket. Az OSB lap ideális falak, tetők és padlók burkolásához, valamint bútor és egyéb belsőépítészeti megoldásokhoz is.",
+      "meta": {
+        "title": "OSB lapok | OSB árak, méretek, OSB 3, 6–18 mm vastagság",
+        "description": "OSB lap kedvező áron: OSB 3 nedvességálló lapok, 6mm–18mm vastagságban. Tekintse meg OSB lap ár kínálatunkat és vásároljon közvetlenül raktárról!",
+        "image": "/kategoriak/osb3_800x600.jpg"
+      },
+      "faqdesc": "Az OSB lap az egyik legkeresettebb építőanyag Magyarországon. Az alábbi gyakran ismételt kérdések segítenek eligazodni az OSB lap árak, méretek, típusok (pl. OSB 3), valamint a felhasználási lehetőségek között.",
+      "faq": [
+        {
+          "id": "osb-lap-mi-az",
+          "question": "Mi az OSB lap és mire használható?",
+          "answer": "Az OSB lap (Oriented Strand Board) faforgácsokból és gyantából nagy nyomással préselt építőlemez. Előnye, hogy mérettartó, teherbíró és költséghatékony alternatívája a rétegelt lemeznek. Az OSB 3 a leggyakoribb típus, amely nedvességálló és tetők, falak, padlók burkolására alkalmas. Az Elvira Tüzépen kizárólag 1250×2500 mm méretű, 3,125 m²-es OSB táblát forgalmazunk, amely szabványos méret a legtöbb építőipari munkához."
+        },
+        {
+          "id": "osb-lap-meretek",
+          "question": "Milyen OSB lap méretek kaphatók és miért 1250×2500 mm a legelterjedtebb?",
+          "answer": "Az OSB lap méret általában 1250×2500 mm (3,125 m²), ez a leggyakoribb szabvány az építőiparban. Más kereskedőknél, például Praktiker OSB lap vagy OBI OSB lap kínálatban is ez a méret szerepel, mert könnyen kezelhető és szállítható. Az Elvira Tüzép is ezt a méretet forgalmazza minden vastagságban (6 mm-től 22 mm-ig), így a vásárlók mindig pontosan számolhatnak az OSB tábla árak alapján."
+        },
+        {
+          "id": "osb-lap-ar",
+          "question": "Mennyibe kerül egy OSB lap? Hogyan alakulnak az OSB lap árak?",
+          "answer": "Az OSB lap ár a vastagságtól függ. A legkeresettebb méretek közé tartozik az OSB 6 mm, OSB 8 mm, OSB 12 mm, OSB 15 mm és OSB 18 mm. Az Elvira Tüzép kínálatában minden OSB lap 1250×2500 mm méretű, így az árak könnyen összehasonlíthatók a piacon kapható OSB lap árakkal. Az OSB lap ára kedvezőbb, mint a rétegelt lemezé, ezért költséghatékony választás építkezéshez és felújításhoz."
+        },
+        {
+          "id": "csiszolt-vs-nemcsiszolt",
+          "question": "Mi a különbség a csiszolt és a nem csiszolt OSB lap között?",
+          "answer": "A nem csiszolt OSB lap érdes felületű, jellemzően szerkezeti célokra, fal- és tetőburkolatra használják, ahol a megjelenés kevésbé fontos. A csiszolt OSB lap ezzel szemben sima felületű, pontosabb vastagságú, ezért ideális padlóaljzatnak, belső falburkolatnak vagy akár dekorációs célokra is. Az Elvira Tüzépen elérhető OSB lap 1250×2500 mm méretben kapható csiszolt és nem csiszolt kivitelben is, így minden felhasználási igényhez megtalálható a megfelelő változat."
+        },
+        {
+          "id": "osb-lap-felhasznalas",
+          "question": "Mire használható az OSB lemez?",
+          "answer": "Az OSB lemez rendkívül sokoldalú építőanyag, amelyet tetők alátéthéjazataként (például zsindely felrakása OSB lapra), válaszfalakhoz, padlóburkolathoz, mennyezetekhez, csomagoláshoz vagy bútorokhoz is használnak. Az Elvira Tüzép kínálatában minden OSB lap 1250×2500 mm (3,125 m²) méretű, amely a legelterjedtebb szabvány. Vastagság szerint az ajánlott felhasználások:<br><br> 6 mm OSB lap – fal- és mennyezet burkolatok <br> 8 mm OSB lap – szarufa alá, tető alsó síkja, egyutas raklap<br>10 mm OSB lap – íves felületek zsaluzata, csomagolás<br>12 mm OSB lap – kész- és faház építés, szállító ládák, tetőhéjalás<br>15 mm OSB lap – külső-belső falelemek, tengeren túli szállítás<br>18 mm OSB lap – állványpadló, tetőtárcsa, monolit zsaluzat<br>22 mm OSB lap – hevederek, szerelő csík, előre gyártott zsalu tábla<br><br>Az OSB tábla árak a vastagságtól függően változnak, de minden változatban a 1250×2500 mm-es méretet kínáljuk, így könnyen kalkulálható a szükséges mennyiség."
+        },
+        {
+          "id": "osb-szerkezeti-tulajdonsagok",
+          "question": "Milyen a szerkezeti felépítése az OSB lapnak, és mitől ilyen erős?",
+          "answer": "Az OSB lap (Oriented Strand Board) speciális rétegrendje biztosítja nagy teherbírását és formatartását. A gyártás során 8–15 cm hosszú, vékony faforgácsokat (strandokat) három vagy négy rétegben helyeznek el. <br>A külső rétegek forgácsai hosszanti, míg a belső rétegek keresztirányban rendezettek – ez az irányított elrendezés ('oriented') adja a panel mechanikai stabilitását. A forgácsokat műgyanta-alapú ragasztóval és viasszal itatják át, majd magas hőmérsékleten és nagy nyomáson préselik össze. A folyamat eredménye egy nagy sűrűségű (~600–680 kg/m³), tartós és jól megmunkálható építőlemez. A keresztirányú elrendezés miatt az OSB lap mindkét tengely mentén jó hajlítószilárósággal rendelkezik, ezért padlók, falak és tetőszerkezetek burkolására is kiváló. A leggyakoribb típus, az OSB 3, már mérsékelten nedvességálló, így beltéri és fedett kültéri szerkezeti célokra is alkalmas."
+        }
+
+      ],
+      "products": [
+        {
+          "name": "OSB lap 6 mm – fal- és mennyezet burkolathoz",
+          "slug": "osb-lap-6mm",
+          "meta": {
+            "title": "OSB lap 6 mm | Fal- és mennyezet burkolat | OSB lap árak",
+            "description": "OSB lap 6 mm vastagságban – fal- és mennyezet burkolathoz ideális. Ismerje meg OSB lap árainkat és méreteinket, Praktiker, Bauhaus, OBI helyett kedvezőbb áron!",
+            "image": "/termekek/osb-lap-6mm.jpg"
+          },
+          "aggregateRating": {
+            "ratingValue": 4.72,
+            "reviewCount": 53
+          },
+          "sku": "osb-6mm",
+          "blogtags": ["osb lap", "osb lap ár", "osb méret", "osb tábla árak", "osb lemez"],
+          "audience": ["építkezők", "lakásfelújítók", "kivitelezők"],
+          "material": "OSB 3 nedvességálló faforgács panel",
+          "price": 4290,
+          "mprice": null,
+          "m2price": 1373,
+          "m3price": null,
+          "palprice": null,
+          "discountPrice": null,
+          "discountPercent": null,
+          "discountValidUntil": null,
+          "stock": 0,
+          "image": "/termekek/osb-lap-6mm.jpg",
+          "description": "6 mm vastag OSB lap fal- és mennyezet burkolathoz. Könnyű, mégis stabil, ideális választás belsőépítészeti projektekhez és gyors szereléshez. A lap pontos OSB méretben és szabványos táblaformában érhető el.",
+          "longDescription": "Az OSB 6 mm lap tökéletes választás fal- és mennyezet burkolatokhoz, ahol fontos a kis súly, az egyszerű kezelhetőség és a stabil tartás. A szabványos OSB tábla méret (2500×1250 mm) miatt könnyen illeszthető, a 6 mm vastagság pedig ideálissá teszi száraz belső terekben történő alkalmazásra. Az OSB lap árak kedvezőbbek, mint a rétegelt lemezé, így költséghatékony megoldást kínál felújítóknak és építkezőknek. Gyakran keresett alternatíva Praktiker és OBI OSB lap kínálat helyett, közvetlenül raktárról, széles választékban.",
+          "longDescription2": "",
+          "specs": {
+            "Vastagság": "6 mm",
+            "Tábla méret": "2500 × 1250 mm",
+            "Tábla felülete": "3,125m²",
+            "Sűrűség": "kb. 600–680 kg/m³",
+            "Tömeg": "~ 12,2 kg",
+            "Felület": "csiszolt, éles él",
+            "Típus": "OSB 3 – teherhordó, nedvességálló",
+            "Felhasználás": "Fal- és mennyezet burkolatok, belsőépítészeti munkák",
+            "Előnyök": "Könnyű súly, stabil tartás, kedvező OSB lap ár",
+            "Ajánlott hely": "Száraz beltér, lakásfelújítás, könnyű válaszfalak"
+          },
+          "shippingDetails": {
+            "shippingWeight": 12.2,
+            "depth": 250,
+            "width": 125,
+            "height": 0.6
+          }
+        },
+        {
+          "name": "OSB lap 8 mm – szarufa alá, tető alsó síkjához",
+          "slug": "osb-lap-8mm",
+          "meta": {
+            "title": "OSB lap 8 mm | Tető alá, szarufákhoz | OSB árak és méretek",
+            "description": "OSB lap 8 mm vastagságban – tetőszerkezetekhez ideális. Szabványos OSB lap méret 2500×1250 mm. Nézze meg kedvező OSB árainkat – Praktiker és OBI alternatíva!",
+            "image": "/images/products/osb-lap-8mm-lapok-500.jpg"
+          },
+          "aggregateRating": {
+            "ratingValue": 4.81,
+            "reviewCount": 46
+          },
+          "sku": "osb-8mm",
+          "blogtags": ["osb lap", "osb lap ár", "osb 8mm", "osb lap méret", "osb tábla", "építőanyag", "tetőburkolat"],
+          "audience": ["kivitelezők", "építkezők", "ácsok", "tetőfedők"],
+          "material": "OSB 3 nedvességálló faforgács panel",
+          "price": 5290,
+          "mprice": null,
+          "m2price": 1693,
+          "m3price": null,
+          "palprice": null,
+          "discountPrice": null,
+          "discountPercent": null,
+          "discountValidUntil": null,
+          "stock": 1,
+          "images": [
+            {
+              "src": "/images/products/osb-lap-8mm-lapok",
+              "alt": "8 mm vastag OSB 3 lapok – szabályos, egyforma méretű táblalapok közelről"
+            },
+            {
+              "src": "/images/products/osb-lap-8mm-darab",
+              "alt": "Egy darab 8 mm vastag OSB lap oldalnézeti fotója – 1250×2500 mm tábla részlete"
+            },
+            {
+              "src": "/images/products/osb-lap-8mm-koteg-raklap",
+              "alt": "8 mm OSB 3 lapok raklapon, kötegelve – szabványos tábla méret: 1250×2500 mm"
+            }
+          ],
+          "description": "8 mm vastag OSB lap tetők alátétszerkezetéhez, szarufák alá és egyutas raklaphoz is ideális. Nedvességálló, tartós és jól megmunkálható anyag szabványos méretben.",
+          "longDescription": "Az OSB 8 mm lap kiváló választás a tető alsó síkjának burkolására, például szarufa alá elhelyezve. A szabványos 2500×1250 mm-es OSB tábla méret miatt egyszerű a tervezés és beépítés, a 3,125 m² felület pedig pontos kalkulációt tesz lehetővé. Az OSB 3 típusú lap nedvességálló, teherhordásra is alkalmas, így szél- és hőszigeteléssel kombinálva kiváló teljesítményt nyújt. Az OSB lap 8 mm vastagságban gyakran használatos tetőknél, de raklapokhoz és könnyű csomagolásokhoz is bevált. Alternatívát nyújt a Praktiker, OBI vagy Bauhaus OSB lap kínálathoz képest, versenyképes áron, elérhető raktárról.",
+          "longDescription2": "",
+          "specs": {
+            "Vastagság": "8 mm",
+            "Tábla méret": "2500 × 1250 mm",
+            "Tábla felülete": "3,125m²",
+            "Sűrűség": "kb. 600–680 kg/m³",
+            "Tömeg": "~ 16,3 kg",
+            "Felület": "csiszolt, éles él",
+            "Típus": "OSB 3 – teherhordó, nedvességálló",
+            "Felhasználás": "Tető alsó síkja, szarufa alá, egyutas raklap",
+            "Előnyök": "Nedvességálló, tartós, könnyen szerelhető, szabványos méret",
+            "Ajánlott hely": "Tetőszerkezetek, fedélszék, gazdaságos belső burkolás"
+          },
+          "shippingDetails": {
+            "shippingWeight": 16.3,
+            "depth": 250,
+            "width": 125,
+            "height": 0.8
+          }
+        },
+        {
+          "name": "OSB lap 10 mm – zsaluzat, csomagolás, burkolat",
+          "slug": "osb-lap-10mm",
+          "meta": {
+            "title": "OSB lap 10 mm | Íves zsaluzat és csomagolás | OSB árak",
+            "description": "OSB lap 10 mm vastagságban – ideális csomagoláshoz, íves zsaluzathoz és általános belső burkoláshoz. Nézze meg OSB 3 lapjainkat – 2500×1250 mm tábla, elérhető raktárról.",
+            "image": "/images/products/osb-lap-10mm-lapok-500.jpg"
+          },
+          "aggregateRating": {
+            "ratingValue": 4.76,
+            "reviewCount": 46
+          },
+          "sku": "osb-10mm",
+          "blogtags": ["osb lap", "osb lap ár", "osb 10mm", "osb lap méret", "osb tábla", "zsaluzat", "csomagolás"],
+          "audience": ["építkezők", "ipari csomagolók", "kivitelezők", "bútorasztalosok"],
+          "material": "OSB 3 nedvességálló faforgács panel",
+          "price": 6090,
+          "mprice": null,
+          "m2price": 1949,
+          "m3price": null,
+          "palprice": null,
+          "discountPrice": null,
+          "discountPercent": 3,
+          "discountValidUntil": "2025.10.10",
+          "stock": 1,
+          "images": [
+            {
+              "src": "/images/products/osb-lap-10mm-lapok",
+              "alt": "10 mm OSB lapok egymásra helyezve – szabványos méretű tábla"
+            },
+            {
+              "src": "/images/products/osb-lap-10mm-darab",
+              "alt": "Egyetlen 10 mm vastag OSB lap oldalnézetből – 2500×1250 mm méret"
+            },
+            {
+              "src": "/images/products/osb-lap-10mm-koteg-raklap",
+              "alt": "10 mm OSB lapok raklapon kötegelve – szállításra kész állapot"
+            }
+          ],
+          "description": "10 mm vastag OSB lap, amely kiválóan alkalmas íves felületek zsaluzatára, ipari csomagolásra és általános belsőépítészeti burkolatokhoz. Nedvességálló, stabil és jól kezelhető szabványos táblaformában.",
+          "longDescription": "Az OSB 10 mm lap tökéletes választás, ha íves vagy speciális felületek burkolására, zsaluzására vagy strapabíró csomagolásra van szükség. Az OSB 3 típusú tábla teherhordó és nedvességálló, így építkezéseknél, raktározásnál, logisztikai vagy ipari felhasználás során is megbízható megoldást kínál. A szabványos 2500×1250 mm-es OSB tábla méret és a 3,125 m² felület egyszerű kalkulációt és gyors beépítést tesz lehetővé. Kedvelt választás a Praktiker, OBI vagy Bauhaus OSB lapok helyett – közvetlenül raktárról, kiváló ár-érték arányban.",
+          "longDescription2": "",
+          "specs": {
+            "Vastagság": "10 mm",
+            "Tábla méret": "2500 × 1250 mm",
+            "Tábla felülete": "3,125m²",
+            "Sűrűség": "kb. 600–680 kg/m³",
+            "Tömeg": "~ 20,3 kg",
+            "Felület": "csiszolt, éles él",
+            "Típus": "OSB 3 – teherhordó, nedvességálló",
+            "Felhasználás": "Íves zsaluzat, ipari csomagolás, belső burkolat",
+            "Előnyök": "Nedvességálló, hajlíthatóbb vastagság, széleskörű felhasználás",
+            "Ajánlott hely": "Belsőépítészet, építkezés, csomagolástechnika, raktározás"
+          },
+          "shippingDetails": {
+            "shippingWeight": 20.3,
+            "depth": 250,
+            "width": 125,
+            "height": 1.0
+          }
+        },
+
+        {
+          "name": "OSB lap 12 mm – faház építéshez, tetőburkoláshoz",
+          "slug": "osb-lap-12mm",
+          "meta": {
+            "title": "OSB lap 12 mm | Tetőburkolat és faház építés | OSB 3 árak",
+            "description": "OSB lap 12 mm vastagságban – kiváló választás faházakhoz, tetőburkolathoz, ládákhoz. 2500×1250 mm szabványos OSB tábla, nedvességálló, raktárról elérhető.",
+            "image": "/images/products/osb-lap-12mm.png"
+          },
+          "aggregateRating": {
+            "ratingValue": 4.71,
+            "reviewCount": 63
+          },
+          "sku": "osb-12mm",
+          "blogtags": ["osb lap", "osb lap ár", "osb 12mm", "faház építés", "tetőburkolat", "osb tábla"],
+          "audience": ["építkezők", "kivitelezők", "asztalosok", "kertépítők"],
+          "material": "OSB 3 nedvességálló faforgács panel",
+          "price": 6890,
+          "mprice": null,
+          "m2price": 2205,
+          "m3price": null,
+          "palprice": null,
+          "discountPrice": null,
+          "discountPercent": null,
+          "discountValidUntil": null,
+          "stock": 0,
+          "image": "/termekek/osb-lap-12mm.png",
+          "description": "12 mm vastag OSB lap, ideális faházak, kész- és mobilházak falburkolásához, tetőaljzatnak, vagy nagy teherbírású csomagoló ládákhoz. Stabil, nedvességálló, jól szerelhető panel.",
+          "longDescription": "Az OSB 12 mm lap univerzális építőanyag, amely kiválóan alkalmas könnyűszerkezetes házakhoz, kész- és faházak falainak burkolásához, tetőaljzatként való alkalmazásra, vagy szállítóládák és dobozok gyártására. Az OSB 3 típusú panel teherhordó és nedvességálló, így kültéri burkolatokhoz is biztonságosan használható. A 2500×1250 mm-es szabványos OSB tábla méret 3,125 m² fedést biztosít, így könnyen kalkulálható a szükséges mennyiség. Gyakori választás Praktiker, OBI vagy Bauhaus OSB lapok helyett – közvetlenül elérhető raktárról.",
+          "longDescription2": "",
+          "specs": {
+            "Vastagság": "12 mm",
+            "Tábla méret": "2500 × 1250 mm",
+            "Tábla felülete": "3,125m²",
+            "Sűrűség": "kb. 600–680 kg/m³",
+            "Tömeg": "~ 24,4 kg",
+            "Felület": "csiszolt, éles él",
+            "Típus": "OSB 3 – teherhordó, nedvességálló",
+            "Felhasználás": "Faház, kész- és mobilház építés, tetőhéjalás, szállítóláda",
+            "Előnyök": "Megerősített tartás, kültéri alkalmazhatóság, standard méret",
+            "Ajánlott hely": "Könnyűszerkezetes építés, raktározás, kültéri burkolás"
+          },
+          "shippingDetails": {
+            "shippingWeight": 24.4,
+            "depth": 250,
+            "width": 125,
+            "height": 1.2
+          }
+        },
+        {
+          "name": "OSB lap 15 mm – külső-belső falelemekhez, zsaluzáshoz",
+          "slug": "osb-lap-15mm",
+          "meta": {
+            "title": "OSB lap 15 mm | Külső-belső falhoz, zsaluzáshoz | OSB 3 árak",
+            "description": "OSB 15 mm vastag teherhordó lemez kültéri és beltéri szerkezetekhez. Nedvességálló OSB lap, szabványos méret (2500×1250 mm), kiváló ár-érték arányban.",
+            "image": "/termekek/osb-lap-15mm.avif"
+          },
+          "aggregateRating": {
+            "ratingValue": 4.82,
+            "reviewCount": 41
+          },
+          "sku": "osb-15mm",
+          "blogtags": ["osb lap", "osb lap ár", "osb 15mm", "zsaluzat", "külső fal", "építőanyag"],
+          "audience": ["kivitelezők", "építkezők", "zsaluzó szakemberek", "asztalosok"],
+          "material": "OSB 3 nedvességálló faforgács panel",
+          "price": 8690,
+          "mprice": null,
+          "m2price": 2781,
+          "m3price": null,
+          "palprice": null,
+          "discountPrice": null,
+          "discountPercent": null,
+          "discountValidUntil": null,
+          "stock": 0,
+          "image": "/termekek/osb-lap-15mm.avif",
+          "description": "15 mm vastag OSB lap teherhordó külső és belső falakhoz, zsaluzatokhoz, ideiglenes padlókhoz. Kiváló szilárdság, nedvességállóság és jó megmunkálhatóság.",
+          "longDescription": "Az OSB lap 15 mm vastagságban kiváló választás teherhordó szerkezetekhez – legyen szó külső vagy belső falakról, lépcsőburkolatról, monolit zsaluzatról vagy építési ideiglenes padlózatokról. OSB 3 típusként nedvességálló, így félkültéri felhasználásra is alkalmas. A szabványos 2500×1250 mm-es OSB méret egyszerűvé teszi a kivitelezést, a 3,125 m² felület pedig pontos kalkulációt tesz lehetővé. A termék kedvező alternatívája a hagyományos zsalulemezeknek és sok más kereskedő OSB kínálatának (Praktiker, Bauhaus, OBI).",
+          "longDescription2": "",
+          "specs": {
+            "Vastagság": "15 mm",
+            "Tábla méret": "2500 × 1250 mm",
+            "Tábla felülete": "3,125m²",
+            "Sűrűség": "kb. 600–680 kg/m³",
+            "Tömeg": "~ 30,5 kg",
+            "Felület": "csiszolt, éles él",
+            "Típus": "OSB 3 – teherhordó, nedvességálló",
+            "Felhasználás": "Külső-belső falelemek, zsaluzat, ideiglenes padló",
+            "Előnyök": "Erős tartás, nedvességállóság, sokoldalú felhasználás",
+            "Ajánlott hely": "Építkezés, burkolás, szerkezeti elemek kialakítása"
+          },
+          "shippingDetails": {
+            "shippingWeight": 30.5,
+            "depth": 250,
+            "width": 125,
+            "height": 1.5
+          }
+        },
+        {
+          "name": "OSB lap 18 mm – állványpadlóhoz, zsaluzáshoz",
+          "slug": "osb-lap-18mm",
+          "meta": {
+            "title": "OSB lap 18 mm | Állványpadló, zsaluzat | OSB 3 lap ár",
+            "description": "OSB lap 18 mm vastagságban – nagy teherbírású szerkezeti célokra. Csiszolt, nedvességálló OSB 3 tábla 2500×1250 mm méretben. Elérhető raktárról, kedvező áron.",
+            "image": "/termekek/osb-lap-18mm.webp"
+          },
+          "aggregateRating": {
+            "ratingValue": 4.83,
+            "reviewCount": 39
+          },
+          "sku": "osb-18mm",
+          "blogtags": ["osb lap", "osb 18mm", "osb lap ár", "zsaluzat", "építőanyag", "állványpadló"],
+          "audience": ["kivitelezők", "állványozók", "építők", "ipari szakemberek"],
+          "material": "OSB 3 nedvességálló faforgács panel",
+          "price": 10290,
+          "mprice": null,
+          "m2price": 3293,
+          "m3price": null,
+          "palprice": null,
+          "discountPrice": null,
+          "discountPercent": null,
+          "discountValidUntil": null,
+          "stock": 0,
+          "image": "/termekek/osb-lap-18mm.webp",
+          "description": "18 mm vastag, csiszolt OSB lap – kiváló nagy igénybevételű szerkezeti feladatokra. Használható állványpadlóként, tetőtárcsaként, valamint zsaluzási célokra.",
+          "longDescription": "Az OSB 18 mm lap az egyik legstabilabb és legnagyobb teherbírású OSB típus, amelyet csiszolt felülete, nedvességállósága és szabványos mérete (2500×1250 mm) különösen alkalmassá tesz nehéz igénybevételű szerkezeti feladatokra. Gyakran használják állványpadlóként építkezéseken, tetőtárcsaként fedélszékekben vagy zsaluzatként monolit betonöntéshez. OSB 3 típusként ideális félig nyitott terekben is. A 3,125 m² tábla méret megkönnyíti a tervezést és az anyagszükséglet kiszámítását. Alternatívát kínál a Praktiker, OBI vagy Bauhaus OSB lap választékhoz képest – kedvezőbb árakkal, raktárról.",
+          "longDescription2": "",
+          "specs": {
+            "Vastagság": "18 mm",
+            "Tábla méret": "2500 × 1250 mm",
+            "Tábla felülete": "3,125m²",
+            "Sűrűség": "kb. 600–680 kg/m³",
+            "Tömeg": "~ 36,5 kg",
+            "Felület": "csiszolt, éles él",
+            "Típus": "OSB 3 – teherhordó, nedvességálló",
+            "Felhasználás": "Állványpadló, tetőtárcsa, zsaluzat, szerkezeti felépítmények",
+            "Előnyök": "Nagy teherbírás, csiszolt felület, hosszú élettartam",
+            "Ajánlott hely": "Építkezés, ipari szerkezetek, félkültéri alkalmazások"
+          },
+          "shippingDetails": {
+            "shippingWeight": 36.5,
+            "depth": 250,
+            "width": 125,
+            "height": 1.8
+          }
+        },
+        {
+          "name": "OSB lap 22 mm – zsalutábla, heveder, teherhordó réteg",
+          "slug": "osb-lap-22mm",
+          "meta": {
+            "title": "OSB lap 22 mm | Erős OSB tábla zsaluzáshoz | OSB lap árak",
+            "description": "OSB lap 22 mm vastagságban – ideális zsalutáblának, hevederekhez és teherhordó rétegként. Csiszolt felület, szabványos 2500×1250 mm méretben, elérhető raktárról.",
+            "image": "/termekek/osb-lap-22mm.webp"
+          },
+          "aggregateRating": {
+            "ratingValue": 4.88,
+            "reviewCount": 31
+          },
+          "sku": "osb-22mm",
+          "blogtags": ["osb lap", "osb 22mm", "osb lap ár", "zsalutábla", "heveder", "építőanyag"],
+          "audience": ["kivitelezők", "építési vállalkozók", "zsaluzó szakemberek"],
+          "material": "OSB 3 nedvességálló faforgács panel",
+          "price": 12690,
+          "mprice": null,
+          "m2price": 4061,
+          "m3price": null,
+          "palprice": null,
+          "discountPrice": null,
+          "discountPercent": null,
+          "discountValidUntil": null,
+          "stock": 0,
+          "image": "/termekek/osb-lap-22mm.webp",
+          "description": "22 mm vastag OSB 3 lap – ideális zsalutáblának, hevedernek vagy nehéz szerkezeti rétegnek. Extra teherbírás, nedvességálló kivitel, szabványos 3,125 m² táblaformátumban.",
+          "longDescription": "A 22 mm-es OSB lap az egyik legerősebb szabványos vastagság, amely különösen alkalmas zsalutáblaként való felhasználásra, előregyártott elemekhez, vagy akár padlók teherhordó rétegeként. Az OSB 3 típusú panel kiváló nedvességállósággal és formatartással rendelkezik, így kültéri vagy fokozott igénybevételű belsőépítészeti feladatokra is ajánlott. A 2500×1250 mm-es méret és csiszolt felület megkönnyíti a beépítést és pontos illesztést. Kedvezőbb árú alternatíva a rétegelt lemezekhez képest, elérhető raktárról, akár azonnali elszállítással.",
+          "longDescription2": "",
+          "specs": {
+            "Vastagság": "22 mm",
+            "Tábla méret": "2500 × 1250 mm",
+            "Tábla felülete": "3,125m²",
+            "Sűrűség": "kb. 600–680 kg/m³",
+            "Tömeg": "~ 44,6 kg",
+            "Felület": "csiszolt, éles él",
+            "Típus": "OSB 3 – teherhordó, nedvességálló",
+            "Felhasználás": "Zsalutábla, hevederek, padlószerkezetek, erős burkolat",
+            "Előnyök": "Extra teherbírás, nagy vastagság, nedvességállóság",
+            "Ajánlott hely": "Zsaluzás, kültéri szerkezet, ipari padló, magas igénybevételű területek"
+          },
+          "shippingDetails": {
+            "shippingWeight": 44.6,
+            "depth": 250,
+            "width": 125,
+            "height": 2.2
+          }
+        }
+      ]
+    },
+    {
+      "maincategory": "Tüzelőanyag",
+      "category": "Pellet",
+      "slug": "pellet",
+      "description": "Prémium minőségű pellet kínálatunk ideális választás pellet kazánokhoz, vízteres pellet kandallókhoz és pelletes kályhákhoz. A fa pellet és alternatív pellet fajták – mint a fenyő pellet, keményfa pellet vagy napraforgó pellet – egyaránt környezetbarát és hatékony tüzelőanyagok. Magas fűtőértéküknek, alacsony nedvességtartalmuknak és egyenletes égésüknek köszönhetően gazdaságos és kényelmes fűtést biztosítanak. A pellet árak kedvezőek, különösen raklapos tételben történő vásárláskor. Fedezze fel pellet árainkat és rendeljen közvetlenül raktárról az Elvira Tüzépnél!",
+      "meta": {
+        "title": "Pellet | Fa pellet és napraforgó pellet kazánhoz, kandallóhoz",
+        "description": "Fa pellet és alternatív pellet kedvező áron – fenyő pellet, keményfa pellet, napraforgó pellet. Ideális pellet kazánhoz, vízteres pellet kandallóhoz. Rendeljen raklapos tételben!",
+        "image": "/kategoriak/pellet.jpg"
+      },
+      "faqdesc": "A pellet egy préselt, kis henger formájú tüzelőanyag, amely jellemzően faforgácsból, fűrészporból vagy mezőgazdasági melléktermékekből (pl. napraforgóhéj) készül. Előnye a magas fűtőérték, a tiszta égés és az automatizálható adagolás. Az alábbi gyakori kérdések segítenek eligazodni a pellet típusok, árak, felhasználási módok és tárolási tudnivalók kapcsán.",
+      "faq": [
+        {
+          "id": "pellet-mi-az",
+          "question": "Mi az a pellet és mire használható?",
+          "answer": "A pellet kis henger alakú, préselt tüzelőanyag, amely fából vagy mezőgazdasági melléktermékből (pl. napraforgóhéj) készül. Használható pellet kazánban, vízteres pellet kandallóban vagy kisebb pelletes kályhában is. Előnye a tiszta égés, az egyenletes hőleadás és az automatizált adagolási lehetőség."
+        },
+        {
+          "id": "pellet-tipusok",
+          "question": "Milyen pellet típusok kaphatók?",
+          "answer": "A leggyakoribb típusok a fenyő pellet, keményfa pellet és a napraforgó pellet. A fenyő pellet világos színű, gyorsan gyullad és alacsony hamutartalmú. A keményfa pellet sűrűbb, lassabban ég és hosszabb parázstartást biztosít. A napraforgó pellet olcsóbb alternatíva, amely szintén magas fűtőértékű, de több hamut termel."
+        },
+        {
+          "id": "pellet-ar",
+          "question": "Mennyibe kerül a pellet? Hogyan alakul a pellet ár?",
+          "answer": "A pellet ár függ az alapanyagtól (fenyő, keményfa vagy napraforgó pellet), a csomagolástól (zsákos vagy raklapos) és a rendelt mennyiségtől. A pellet kazánhoz vagy kandallóhoz szükséges mennyiséget nagyobb tételben vásárolva kedvezőbb áron szerezheti be. Az aktuális pellet árakat mindig megtalálja az elviratuzep.hu weboldalon."
+        },
+        {
+          "id": "pellet-vs-brikett",
+          "question": "Mi a különbség a pellet és a brikett között?",
+          "answer": "A pellet kis átmérőjű (6–8 mm) henger formájú tüzelőanyag, amelyet főként automata adagolású pellet kazánokhoz és kandallókhoz fejlesztettek ki. A brikett nagyobb méretű, kézi adagolást igényel, és elsősorban kályhákban, vegyestüzelésű kazánokban használatos. A pellet kényelmesebb, automatizált fűtési rendszerekhez, míg a brikett egyszerűbb, hagyományos megoldásokhoz ideális."
+        },
+        {
+          "id": "pellet-tarolas",
+          "question": "Hogyan kell tárolni a pelletet?",
+          "answer": "A pellet érzékeny a nedvességre, ezért mindig száraz, fedett, szellős helyen kell tárolni. Zsákos kiszerelés esetén a gyári csomagolás védelmet nyújt, raklapos vásárlásnál érdemes fóliával letakarni. Nedvesség esetén a pellet széteshet és elveszítheti fűtőértékét."
+        },
+        {
+          "id": "pellet-kazan",
+          "question": "Milyen előnyei vannak a pellet kazánnak és a pellet kandallónak?",
+          "answer": "A pellet kazán és a vízteres pellet kandalló egyik legnagyobb előnye az automatizálható működés. A pelletes kazán képes programozottan adagolni a tüzelőanyagot, így kényelmes és energiatakarékos fűtést biztosít. A pellet kandalló pedig a hagyományos fatüzelés hangulatát ötvözi a modern technológiával, sokszor távirányítható és termosztáttal vezérelhető."
+        }
+      ],
+      "products": [
+        {
+          "name": "Prémium fenyő pellet – 15 kg zsák",
+          "slug": "fenyo-pellet-15kg-enplus-a1",
+          "meta": {
+            "title": "Fenyő pellet 15 kg | ENplus A1 | Pellet kazánhoz és kandallóhoz",
+            "description": "Prémium minőségű fenyő pellet, ENplus A1 minősítéssel. ≤10% nedvesség, ≤0,7% hamu, ≥98% mechanikai tartósság, 6±1 mm átmérő, 3,15–40 mm hossz, ≥4,6 kWh/kg fűtőérték. Ideális pellet kazánhoz és vízteres pellet kandallóhoz.",
+            "image": "/images/products/fenyo-pellet-15kg-zsak-500.avif"
+          },
+          "sku": "pellet-fenyo-15kg-enplus-a1",
+          "blogtags": ["fa brikett", "pellet", "pellet ár", "pellet kazán", "pellet kandalló", "pelletes kazán", "vízteres pellet kandalló", "fenyő pellet", "ENplus A1"],
+          "audience": ["háztartások", "pellet kazán/kandalló tulajok"],
+          "material": "100% fenyő pellet, ENplus A1",
+          "price": 2799,
+          "mprice": null,
+          "m2price": null,
+          "m3price": null,
+          "palprice": 195930,
+          "discountPrice": null,
+          "discountPercent": 5,
+          "discountValidUntil": "2025.10.01",
+          "stock": 1,
+          "images": [
+            {
+              "src": "/images/products/fenyo-pellet-15kg-zsak",
+              "alt": "Fenyő pellet – 15 kg zsákos kiszerelés eleje"
+            },
+                      {
+              "src": "/images/products/fenyo-pellet-15kg-zsak-hatulja",
+              "alt": "Fenyő pellet – 15 kg zsákos kiszerelés hatulja"
+            },
+            
+            {
+              "src": "/images/products/fenyo-pellet-15kg-raklap-szembol",
+              "alt": "Fenyő pellet – raklapos kiszerelés szemből, 70 zsák (~1050 kg)"
+            },
+            {
+              "src": "/images/products/fenyo-pellet-15kg-raklap-oldal",
+              "alt": "Fenyő pellet – raklapos kiszerelés oldalnézetből, 70 zsák (~1050 kg)"
+            }
+          ],
+          "description": "Prémium minőségű fenyő pellet, ENplus A1 tanúsítvánnyal. Alacsony hamu és nedvesség, tiszta égés, megbízható adagolhatóság pellet kazánokhoz és pellet kandallókhoz. Praktikus 15 kg-os zsákos kivitelben.",
+          "longDescription": "A fenyő pellet prémium tüzelőanyag, amely 100% fenyő alapanyagból készül. ENplus A1 minősítése garantálja az alacsony nedvességtartalmat és hamut, valamint a magas mechanikai tartósságot. Ez egyenletes, tiszta égést és magas hatásfokot biztosít, így ideális választás pellet kazánhoz, vízteres pellet kandallóhoz és pelletes kályhához. A 15 kg-os zsák könnyen mozgatható, és tisztán tárolható.",
+          "longDescription2": "Főbb jellemzők: nedvesség ≤10%, hamutartalom ≤0,7%, mechanikai tartósság ≥98%, szemcseméret 6±1 mm átmérő és 3,15–40 mm hossz, alsó fűtőérték ≥4,6 kWh/kg. A pontos mérettűrés és a magas tartósság stabil csigás adagolást tesz lehetővé. Egy raklap 70 zsákot tartalmaz (~1050 kg). Származás: Szlovákia.",
+          "specs": {
+            "Alapanyag": "100% fenyő",
+            "Osztály": "ENplus A1",
+            "Átmérő": "6 ± 1 mm",
+            "Hossz": "3,15–40 mm",
+            "Nedvességtartalom": "≤ 10 %",
+            "Hamutartalom": "≤ 0,7 %",
+            "Mechanikai tartósság": "≥ 98 %",
+            "Alsó fűtőérték": "≥ 4,6 kWh/kg",
+            "Kiszerelés": "15 kg zsák",
+            "Raklapos kiszerelés": "70 zsák/raklap (~1050 kg)",
+            "Felhasználás": "Pellet kazán, vízteres pellet kandalló, pelletes kályha",
+            "Származás": "Szlovákia",
+            "Megjegyzés": "Automata adagolásra optimalizált, tiszta égés"
+          },
+          "shippingDetails": {
+            "shippingWeight": 15,
+            "depth": 50,
+            "width": 35,
+            "height": 12
+          }
+        }
+
+        ]
+    },
+    {
+    "maincategory": "Fűrészáru",
+    "category": "Fűrészelt deszka",
+    "slug": "fureszelt-deszka",
+    "description": "Fűrészelt, gyalulatlan deszka kínálatunk légszáraz kivitelben érhető el, amely ideális tetőszerkezetekhez, zsaluzáshoz, burkolatokhoz és egyéb építési munkákhoz. A gyalulatlan deszka természetes, masszív és kedvező árú faanyag, széles méretválasztékban, közvetlenül raktárról.",
+    "meta": {
+      "title": "Fűrészelt deszka | Gyalulatlan, légszáraz építő deszka árak és méretek",
+      "description": "Fűrészelt, gyalulatlan deszka közvetlenül raktárról – szélezetlen és zsaludeszka több méretben. Tekintse meg deszka árainkat, méreteinket és felhasználási lehetőségeiket!",
+      "image": "/images/products/deszka-25x150x4000-koteg-500.avif"
+    },
+    "faqdesc": "A fűrészelt deszka (más néven gyalulatlan deszka vagy építő deszka) a leggyakrabban használt faanyag tetőszerkezetekhez, zsaluhoz és általános építési felhasználásra. A szélezetlen, légszáraz kivitel előnye, hogy kedvező áron nagy teherbírású, természetes alapanyaghoz juthatunk. Az alábbi gyakori kérdések segítenek eligazodni a deszka méretek, árak és felhasználási módok között.",
+    "faq": [
       {
         "id": "deszka-tipikus-meretek",
         "question": "Milyen méretekben kapható a fűrészelt deszka?",
-        "answer": "Kínálatunkban elsősorban 25 mm és 50 mm vastag gyalulatlan deszkák érhetők el, 100 mm, 150 mm és 200 mm szélességben, 4000 mm hosszúságban. Ezek a méretek a leggyakrabban használt zsaludeszka és építő deszka méretek."
+        "answer": "Kínálatunkban elsősorban 25 mm vastag (colos) gyalulatlan deszkák érhetők el 100 mm, 150 mm és 200 mm szélességben, jellemzően 4000 mm hosszúságban. Ezek a méretek a leggyakrabban használt zsaludeszka méretek. A 50 mm vastag anyag már palló kategóriába tartozik."
       },
       {
         "id": "gyalult-vs-gyalulatlan",
         "question": "Mi a különbség a gyalult és a gyalulatlan deszka között?",
-        "answer": "A gyalult deszka sima, megmunkált felületű, inkább beltéri vagy látszó felhasználásra való. A gyalulatlan (fűrészelt) deszka érdesebb felületű, gazdaságosabb és főként szerkezeti, építési célokra – például zsaluhoz, tetőszerkezethez vagy ideiglenes építményekhez – használják."
+        "answer": "A gyalult deszka sima, megmunkált felületű, inkább beltéri vagy látszó felhasználásra való. A <a href=\"/termekek/gyalult-deszka\"><b>gyalult deszka</b></a> esztétikusabb és méretpontosabb, ezért tartósabb szerkezetekhez ajánlott. A gyalulatlan (fűrészelt) deszka érdesebb felületű, gazdaságosabb és főként szerkezeti, építési célokra – például zsaluhoz, tetőszerkezethez vagy ideiglenes építményekhez – használják."
       },
       {
         "id": "deszka-felhasznalas",
@@ -3272,7 +3437,7 @@
       {
         "id": "deszka-ar",
         "question": "Mennyibe kerül egy deszka? Hogyan alakulnak a deszka árak?",
-        "answer": "A deszka árát a vastagság (25 mm vagy 50 mm), a szélesség (100 mm, 150 mm, 200 mm) és a hossz (általában 4000 mm) határozza meg. Gyakran keresett méretek: 10 cm deszka ár, 15 cm deszka ár, 20-as deszka ár. Aktuális árainkat megtalálja az elviratuzep.hu weboldalon."
+        "answer": "A deszka árát főként a vastagság (pl. 25 mm), a szélesség (100 mm, 150 mm, 200 mm) és a hossz (általában 4000 mm) határozza meg. Gyakran keresett méretek: 10 cm deszka ár, 15 cm deszka ár, 20 cm deszka ár. A 50 mm vastag anyag azonban már pallóként szerepel az árlistában."
       },
       {
         "id": "szelezetlen-deszka",
@@ -3282,25 +3447,81 @@
       {
         "id": "zsaludeszka",
         "question": "Mi az a zsaludeszka és mire használják?",
-        "answer": "A zsaludeszka a fűrészelt, gyalulatlan deszka egyik leggyakoribb felhasználási módja. Betonozási munkáknál a zsaluzat építéséhez használják, mert könnyen méretre vágható, masszív és kedvező árú faanyag. A 15 cm széles, 25 mm vastag colos deszka tipikus választás zsaluzáshoz."
+        "answer": "A zsaludeszka a fűrészelt, gyalulatlan deszka egyik leggyakoribb felhasználási módja. Betonozási munkáknál a zsaluzat építéséhez használják, mert könnyen méretre vágható, masszív és kedvező árú faanyag. A 25 mm vastag, 150 mm széles colos deszka tipikus választás zsaluzáshoz."
       }
     ],
-    "products": [
+      "products": [
+        {
+          "name": "Fűrészelt deszka 25×100×4000 mm – colos deszka",
+          "slug": "fureszelt-deszka-25x100x4000",
+          "meta": {
+            "title": "Fűrészelt deszka 25×100×4000 mm | Colos gyalulatlan deszka ár és felhasználás",
+            "description": "25×100×4000 mm fűrészelt, gyalulatlan deszka (colos deszka) légszáraz kivitelben. Ideális tetőszerkezetekhez, zsaluhoz, építési és barkács felhasználásra.",
+            "image": "/images/products/deszka-25x100x4000-darab-500.avif"
+          },
+          "sku": "D25100400",
+          "blogtags": [
+            "deszka"
+          ],
+          "audience": ["építkezők", "kivitelezők", "tetőfedők", "barkácsolók"],
+          "material": "Légszáraz fenyő, gyalulatlan",
+          "price": 1729,
+          "mprice": null,
+          "m2price": null,
+          "m3price": null,
+          "palprice": null,
+          "discountPrice": null,
+          "discountPercent": null,
+          "discountValidUntil": null,
+          "stock": 1,
+          "images": [
+            {
+              "src": "/images/products/deszka-25x100x4000-darab",
+              "alt": "Fűrészelt deszka 25×100×4000 mm – colos deszka közelről"
+            },
+            {
+              "src": "/images/products/deszka-25x100x4000-koteg",
+              "alt": "Fűrészelt deszka 25×100×4000 mm kötegben"
+            }
+          ],
+          "description": "Fűrészelt, gyalulatlan fenyő deszka 25×100×4000 mm méretben. Klasszikus colos deszka légszáraz kivitelben, kedvező áron, széles körű építési és barkács felhasználásra.",
+          "longDescription": "A 25×100×4000 mm fűrészelt deszka (colos deszka) a legelterjedtebb méretű gyalulatlan faanyag. Erős, tartós és gazdaságos megoldás tetőszerkezetek építéséhez, zsaluzáshoz, burkolatok kialakításához és barkácsoláshoz. Légszáraz kivitelének köszönhetően stabilabb, kevésbé vetemedik. Kedvező deszka árainkkal és azonnali raktárkészlettel várjuk vásárlóinkat.",
+          "longDescription2": "Főbb jellemzők: vastagság 25 mm, szélesség 100 mm, hossz 4000 mm. Népszerű elnevezése colos deszka. Anyaga: légszáraz, gyalulatlan fenyő. Felhasználási területei: zsaludeszka, tetőszerkezetek, ideiglenes építmények, kerítések, barkácsprojektek. Az Elvira Tüzépnél közvetlenül raktárról érhető el, széles választékban és kedvező áron.",
+          "specs": {
+            "Méret": "25×100×4000 mm",
+            "Vastagság": "25 mm (colos deszka)",
+            "Szélesség": "100 mm",
+            "Hossz": "4000 mm",
+            "Felület": "1,0 m²/deszka",
+            "Térfogat": "0,01 m³/deszka",
+            "Tömeg": "≈ 4,5–5 kg/deszka",
+            "Anyag": "Légszáraz fenyő",
+            "Kivitel": "Gyalulatlan, fűrészelt",
+            "Felhasználás": "Tetőszerkezet, zsalu, burkolat, kerítés, barkács",
+            "Megjegyzés": "Kedvező árú, tömegében árusított építőfa"
+          },
+          "shippingDetails": {
+            "shippingWeight": 5,
+            "depth": 400,
+            "width": 10,
+            "height": 2.5
+          }
+      },
       {
-        "name": "Fűrészelt deszka 25×100×4000 mm – colos deszka",
-        "slug": "fureszelt-deszka-25x100x4000",
+        "name": "Zsaludeszka 25×150×4000 mm – colos deszka",
+        "slug": "zsaludeszka-25x150x4000",
         "meta": {
-          "title": "Fűrészelt deszka 25×100×4000 mm | Colos gyalulatlan deszka ár és felhasználás",
-          "description": "25×100×4000 mm fűrészelt, gyalulatlan deszka (colos deszka) légszáraz kivitelben. Ideális tetőszerkezetekhez, zsaluhoz, építési és barkács felhasználásra.",
-          "image": "/images/products/deszka-25x100x4000-darab-500.avif"
+          "title": "Zsaludeszka 25×150×4000 mm | Fűrészelt deszka",
+          "description": "25×150×4000 mm gyalulatlan fűrészelt deszka légszáraz kivitelben. Zsaludeszka zsaluzáshoz és építési munkákhoz kedvező áron.",
+          "image": "/images/products/deszka-25x150x4000-darab-500.avif"
         },
-        "sku": "D25100400",
+        "sku": "D251504000",
         "blogtags": [
           "deszka"
         ],
         "audience": ["építkezők", "kivitelezők", "tetőfedők", "barkácsolók"],
         "material": "Légszáraz fenyő, gyalulatlan",
-        "price": 1729,
+        "price": 2590,
         "mprice": null,
         "m2price": null,
         "m3price": null,
@@ -3311,208 +3532,197 @@
         "stock": 1,
         "images": [
           {
-            "src": "/images/products/deszka-25x100x4000-darab",
-            "alt": "Fűrészelt deszka 25×100×4000 mm – colos deszka közelről"
+            "src": "/images/products/deszka-25x150x4000-darab",
+            "alt": "Fűrészelt deszka 25×150×4000 mm gyalulatlan kivitelben, mely zsaludeszkaként használatos - darab nézetben látható"
           },
           {
-            "src": "/images/products/deszka-25x100x4000-koteg",
-            "alt": "Fűrészelt deszka 25×100×4000 mm kötegben"
+            "src": "/images/products/deszka-25x150x4000-koteg",
+            "alt": "25×150×4000 mm gyalulatlan fenyő deszka kötegben. Főleg, mint zsaludeszka használatos"
           }
         ],
-        "description": "Fűrészelt, gyalulatlan fenyő deszka 25×100×4000 mm méretben. Klasszikus colos deszka légszáraz kivitelben, kedvező áron, széles körű építési és barkács felhasználásra.",
-        "longDescription": "A 25×100×4000 mm fűrészelt deszka (colos deszka) a legelterjedtebb méretű gyalulatlan faanyag. Erős, tartós és gazdaságos megoldás tetőszerkezetek építéséhez, zsaluzáshoz, burkolatok kialakításához és barkácsoláshoz. Légszáraz kivitelének köszönhetően stabilabb, kevésbé vetemedik. Kedvező deszka árainkkal és azonnali raktárkészlettel várjuk vásárlóinkat.",
-        "longDescription2": "Főbb jellemzők: vastagság 25 mm, szélesség 100 mm, hossz 4000 mm. Népszerű elnevezése colos deszka. Anyaga: légszáraz, gyalulatlan fenyő. Felhasználási területei: zsaludeszka, tetőszerkezetek, ideiglenes építmények, kerítések, barkácsprojektek. Az Elvira Tüzépnél közvetlenül raktárról érhető el, széles választékban és kedvező áron.",
+        "description": "25×150×4000 mm gyalulatlan, fűrészelt fenyő deszka légszáraz kivitelben. Erős, tartós és gazdaságos építőanyag zsaluzáshoz, tetőszerkezetekhez és barkácsprojektekhez.",
+        "longDescription": "A 25×150×4000 mm fűrészelt deszka egy kedvelt méret a gyalulatlan deszkák között. Légszáraz kivitelének köszönhetően stabilabb és kevésbé vetemedik. Alkalmas zsaluzásra, tetőszerkezetek építésére, kerítésekhez vagy egyéb általános építési felhasználásra. Kedvező deszka árainkkal és közvetlen raktárkészlettel kínáljuk.",
+        "longDescription2": "Főbb jellemzők: vastagság 25 mm, szélesség 150 mm, hossz 4000 mm. Anyaga: légszáraz fenyő, gyalulatlan. Térfogata 0,015 m³, tömege kb. 7 kg. Felhasználási területei: tetőszerkezet, zsaludeszka, ideiglenes szerkezetek, barkácsolás. A nagyobb szélesség miatt különösen alkalmas zsaluzáshoz és burkolatokhoz.",
         "specs": {
-          "Méret": "25×100×4000 mm",
+          "Méret": "25×150×4000 mm",
           "Vastagság": "25 mm (colos deszka)",
-          "Szélesség": "100 mm",
+          "Szélesség": "150 mm",
           "Hossz": "4000 mm",
-          "Felület": "1,0 m²/deszka",
-          "Térfogat": "0,01 m³/deszka",
-          "Tömeg": "≈ 4,5–5 kg/deszka",
           "Anyag": "Légszáraz fenyő",
           "Kivitel": "Gyalulatlan, fűrészelt",
-          "Felhasználás": "Tetőszerkezet, zsalu, burkolat, kerítés, barkács",
-          "Megjegyzés": "Kedvező árú, tömegében árusított építőfa"
+          "Felület": "≈ 1,41 m²/deszka",
+          "Térfogat": "0,015 m³/deszka",
+          "Tömeg": "≈ 7 kg/deszka",
+          "Felhasználás": "Zsalu, tetőszerkezet, burkolat, kerítés, barkács",
+          "Megjegyzés": "Tömegében árusított, gazdaságos építőfa"
         },
         "shippingDetails": {
-          "shippingWeight": 5,
+          "shippingWeight": 7,
           "depth": 400,
-          "width": 10,
+          "width": 15,
           "height": 2.5
         }
-    },
-    {
-      "name": "Zsaludeszka 25×150×4000 mm – colos deszka",
-      "slug": "zsaludeszka-25x150x4000",
-      "meta": {
-        "title": "Zsaludeszka 25×150×4000 mm | Fűrészelt deszka",
-        "description": "25×150×4000 mm gyalulatlan fűrészelt deszka légszáraz kivitelben. Zsaludeszka zsaluzáshoz és építési munkákhoz kedvező áron.",
-        "image": "/images/products/deszka-25x150x4000-darab-500.avif"
-      },
-      "sku": "D251504000",
-      "blogtags": [
-        "deszka"
-      ],
-      "audience": ["építkezők", "kivitelezők", "tetőfedők", "barkácsolók"],
-      "material": "Légszáraz fenyő, gyalulatlan",
-      "price": 2590,
-      "mprice": null,
-      "m2price": null,
-      "m3price": null,
-      "palprice": null,
-      "discountPrice": null,
-      "discountPercent": null,
-      "discountValidUntil": null,
-      "stock": 1,
-      "images": [
-        {
-          "src": "/images/products/deszka-25x150x4000-darab",
-          "alt": "Fűrészelt deszka 25×150×4000 mm gyalulatlan kivitelben, mely zsaludeszkaként használatos - darab nézetben látható"
-        },
-        {
-          "src": "/images/products/deszka-25x150x4000-koteg",
-          "alt": "25×150×4000 mm gyalulatlan fenyő deszka kötegben. Főleg, mint zsaludeszka használatos"
-        }
-      ],
-      "description": "25×150×4000 mm gyalulatlan, fűrészelt fenyő deszka légszáraz kivitelben. Erős, tartós és gazdaságos építőanyag zsaluzáshoz, tetőszerkezetekhez és barkácsprojektekhez.",
-      "longDescription": "A 25×150×4000 mm fűrészelt deszka egy kedvelt méret a gyalulatlan deszkák között. Légszáraz kivitelének köszönhetően stabilabb és kevésbé vetemedik. Alkalmas zsaluzásra, tetőszerkezetek építésére, kerítésekhez vagy egyéb általános építési felhasználásra. Kedvező deszka árainkkal és közvetlen raktárkészlettel kínáljuk.",
-      "longDescription2": "Főbb jellemzők: vastagság 25 mm, szélesség 150 mm, hossz 4000 mm. Anyaga: légszáraz fenyő, gyalulatlan. Térfogata 0,015 m³, tömege kb. 7 kg. Felhasználási területei: tetőszerkezet, zsaludeszka, ideiglenes szerkezetek, barkácsolás. A nagyobb szélesség miatt különösen alkalmas zsaluzáshoz és burkolatokhoz.",
-      "specs": {
-        "Méret": "25×150×4000 mm",
-        "Vastagság": "25 mm (colos deszka)",
-        "Szélesség": "150 mm",
-        "Hossz": "4000 mm",
-        "Anyag": "Légszáraz fenyő",
-        "Kivitel": "Gyalulatlan, fűrészelt",
-        "Felület": "≈ 1,41 m²/deszka",
-        "Térfogat": "0,015 m³/deszka",
-        "Tömeg": "≈ 7 kg/deszka",
-        "Felhasználás": "Zsalu, tetőszerkezet, burkolat, kerítés, barkács",
-        "Megjegyzés": "Tömegében árusított, gazdaságos építőfa"
-      },
-      "shippingDetails": {
-        "shippingWeight": 7,
-        "depth": 400,
-        "width": 15,
-        "height": 2.5
       }
+    ]
+  },
+  {
+    "maincategory": "Fűrészáru",
+    "category": "Fűrészelt palló",
+    "slug": "fureszelt-pallo",
+    "description": "Fűrészelt, gyalulatlan palló kínálatunk légszáraz kivitelben elérhető. Erős, masszív és tartós építőanyag, amely ideális tetőszerkezetekhez, födémekhez, zsaluzáshoz és egyéb teherbíró szerkezetekhez. Kedvező árú, természetes faanyag közvetlenül raktárról, többféle méretben.",
+    "meta": {
+      "title": "Fűrészelt palló | Gyalulatlan, légszáraz építő palló árak és méretek",
+      "description": "Fűrészelt, gyalulatlan palló közvetlenül raktárról – 50 mm vastag pallók 100, 150 és 200 mm szélességben, 4000 mm hosszban. Nézze meg palló árainkat és felhasználási lehetőségeit az Elvira Tüzépen!",
+      "image": "/images/products/pallo-50x100x4000-koteg-500.avif"
     },
-    {
-      "name": "Fűrészelt deszka 50×100×4000 mm – gyalulatlan",
-      "slug": "fureszelt-deszka-50x100x4000",
-      "meta": {
-        "title": "Fűrészelt deszka 50×100×4000 mm | Gyalulatlan deszka",
-        "description": "50×100×4000 mm gyalulatlan, légszáraz fűrészelt deszka. Ideális zsaluzáshoz, tetőszerkezetekhez és általános építési felhasználásra kedvező áron.",
-        "image": "/images/products/deszka-50x100x4000-darab.avif"
+    "faqdesc": "A fűrészelt palló (más néven gyalulatlan palló) vastagabb és erősebb, mint a deszka, ezért különösen alkalmas teherhordó szerkezetekhez. Az építőiparban gyakran használják tetőszerkezetek, födémek és masszív zsaluzatok készítéséhez. Az alábbi gyakori kérdések segítenek eligazodni a palló méretek, árak és felhasználási módok között.",
+    "faq": [
+      {
+        "id": "pallo-tipikus-meretek",
+        "question": "Milyen méretekben kapható a fűrészelt palló?",
+        "answer": "Kínálatunkban elsősorban 50 mm vastag pallók érhetők el, 100 mm, 150 mm és 200 mm szélességben, 4000 mm hosszúságban. Ezek a leggyakrabban használt építőipari méretek tetőszerkezethez és födémhez."
       },
-      "sku": "D501004000",
-      "blogtags": [
-        "deszka"
-      ],
-      "audience": ["építkezők", "kivitelezők", "tetőfedők", "barkácsolók"],
-      "material": "Légszáraz fenyő, gyalulatlan",
-      "price": 3449,
-      "mprice": null,
-      "m2price": null,
-      "m3price": null,
-      "palprice": null,
-      "discountPrice": null,
-      "discountPercent": null,
-      "discountValidUntil": null,
-      "stock": 1,
-      "images": [
-        {
-          "src": "/images/products/deszka-50x100x4000-darab",
-          "alt": "Fűrészelt deszka 50×100×4000 mm gyalulatlan kivitelben - darab nézetben"
-        },
-        {
-          "src": "/images/products/deszka-50x100x4000-koteg",
-          "alt": "50×100×4000 mm gyalulatlan fenyő deszka kötegben - köteg nézetben"
-        }
-      ],
-      "description": "50×100×4000 mm gyalulatlan fenyő deszka légszáraz kivitelben. Erős, tartós és gazdaságos faanyag tetőszerkezetekhez, zsaluhoz és barkácsoláshoz.",
-      "longDescription": "A 50×100×4000 mm fűrészelt deszka masszívabb keresztmetszete miatt különösen alkalmas teherhordó szerkezetek, zsaluzatok, tetőszerkezetek és ideiglenes építmények építéséhez. Légszáraz kivitelének köszönhetően kevésbé vetemedik, kedvező áron kapható és széles körben felhasználható.",
-      "longDescription2": "Főbb jellemzők: vastagság 50 mm, szélesség 100 mm, hossz 4000 mm. Anyaga: légszáraz fenyő, gyalulatlan. Térfogata 0,02 m³, tömege kb. 9 kg. Felhasználási területei: zsalu, tetőszerkezet, burkolat, kerítés és barkácsolás. Erős, tartós és gazdaságos építőfa, közvetlenül raktárról elérhető.",
-      "specs": {
-        "Méret": "50×100×4000 mm",
-        "Vastagság": "50 mm",
-        "Szélesség": "100 mm",
-        "Hossz": "4000 mm",
-        "Anyag": "Légszáraz fenyő",
-        "Kivitel": "Gyalulatlan, fűrészelt",
-        "Felület": "≈ 1,21 m²/deszka",
-        "Térfogat": "0,02 m³/deszka",
-        "Tömeg": "≈ 9 kg/deszka",
-        "Felhasználás": "Tetőszerkezet, zsalu, burkolat, kerítés, barkács",
-        "Megjegyzés": "Erősebb keresztmetszet, nagyobb teherbírás"
+      {
+        "id": "pallo-felhasznalas",
+        "question": "Mire használható a fűrészelt palló?",
+        "answer": "A palló nagyobb teherbírású, mint a deszka, ezért kiválóan használható tetőszerkezetekhez, födémszerkezetekhez, zsaluzatokhoz, kerítésekhez és egyéb masszív építési feladatokhoz. Közepes és nagy keresztmetszetű pallók különösen alkalmasak tartós szerkezetekhez."
       },
-      "shippingDetails": {
-        "shippingWeight": 9,
-        "depth": 400,
-        "width": 10,
-        "height": 5
+      {
+        "id": "pallo-vs-deszka",
+        "question": "Mi a különbség a palló és a deszka között?",
+        "answer": "A legfőbb különbség a vastagságban van: a deszka legfeljebb 40 mm vastag, míg a palló 43–108 mm közé esik. A palló így erősebb, teherbíróbb faanyag, amelyet szerkezeti feladatokra használnak."
+      },
+      {
+        "id": "pallo-ar",
+        "question": "Mennyibe kerül egy palló? Hogyan alakulnak a palló árak?",
+        "answer": "A palló árát főként a szélesség (100 mm, 150 mm, 200 mm) és a hossz határozza meg. Gyakori keresések: 10-es palló ár, 15-ös palló ár, 20-as palló ár. Aktuális árainkat folyamatosan frissítve találja meg az elviratuzep.hu oldalon."
+      },
+      {
+        "id": "pallo-szelezetlen",
+        "question": "Mit jelent a szélezetlen palló?",
+        "answer": "A szélezetlen palló oldalsó szélein kérges részeket tartalmaz, szabálytalanabb formájú, és főként olyan helyeken használják, ahol a pontos méret és az esztétika kevésbé fontos. Előnye, hogy olcsóbb, de több utómunkát igényelhet."
+      },
+      {
+        "id": "pallo-zsalu",
+        "question": "Használható-e a palló zsaluzáshoz?",
+        "answer": "Igen, a palló kifejezetten alkalmas zsaluzatok készítésére. A nagyobb vastagság miatt masszívabb szerkezetet ad, és többszöri használatra is jobban megfelel, mint a vékonyabb deszka."
       }
-    },
-    {
-      "name": "Fűrészelt deszka 50×150×4000 mm – gyalulatlan",
-      "slug": "fureszelt-deszka-50x150x4000",
-      "meta": {
-        "title": "Fűrészelt deszka 50×150×4000 mm | Masszív gyalulatlan deszka",
-        "description": "50×150×4000 mm gyalulatlan, légszáraz fűrészelt deszka. Masszív és tartós faanyag zsaluzáshoz, tetőszerkezetekhez és egyéb építési munkákhoz kedvező áron.",
-        "image": "/images/products/deszka-50x150x4000-darab.avif"
-      },
-      "sku": "deszka-50x150x4000",
-      "blogtags": [
-        "deszka"
-      ],
-      "audience": ["építkezők", "kivitelezők", "tetőfedők", "asztalosok", "barkácsolók"],
-      "material": "Légszáraz fenyő, gyalulatlan",
-      "price": 5179,
-      "mprice": null,
-      "m2price": null,
-      "m3price": null,
-      "palprice": null,
-      "discountPrice": null,
-      "discountPercent": null,
-      "discountValidUntil": null,
-      "stock": 1,
-      "images": [
-        {
-          "src": "/images/products/deszka-50x150x4000-darab",
-          "alt": "Fűrészelt deszka 50×150×4000 mm gyalulatlan kivitelben"
+    ],
+    "products": [
+      {
+        "name": "Fűrészelt palló 50×100×4000 mm – gyalulatlan",
+        "slug": "fureszelt-pallo-50x100x4000",
+        "meta": {
+          "title": "Fűrészelt palló 50×100×4000 mm | Gyalulatlan palló",
+          "description": "50×100×4000 mm gyalulatlan, légszáraz fűrészelt palló. Erős és sokoldalúan felhasználható faanyag tetőszerkezetekhez, födémekhez és zsaluzáshoz.",
+          "image": "/images/products/pallo-50x100x4000-darab.avif"
         },
-        {
-          "src": "/images/products/deszka-50x150x4000-koteg",
-          "alt": "50×150×4000 mm gyalulatlan fenyő deszka kötegben"
+        "sku": "D501004000",
+        "blogtags": [
+          "deszka",
+          "palló"
+        ],
+        "audience": ["építkezők", "kivitelezők", "tetőfedők", "asztalosok", "barkácsolók"],
+        "material": "Légszáraz fenyő, gyalulatlan",
+        "price": 3449,
+        "mprice": null,
+        "m2price": null,
+        "m3price": null,
+        "palprice": null,
+        "discountPrice": null,
+        "discountPercent": null,
+        "discountValidUntil": null,
+        "stock": 1,
+        "images": [
+          {
+            "src": "/images/products/pallo-50x100x4000-darab",
+            "alt": "Fűrészelt palló 50×100×4000 mm gyalulatlan kivitelben - darab nézetben"
+          },
+          {
+            "src": "/images/products/pallo-50x100x4000-koteg",
+            "alt": "50×100×4000 mm gyalulatlan fenyő palló kötegben - köteg nézetben"
+          }
+        ],
+        "description": "50×100×4000 mm gyalulatlan, légszáraz fűrészelt palló. Közepes keresztmetszetű, erős faanyag, amely ideális tetőszerkezetekhez, födémekhez és zsaluzáshoz.",
+        "longDescription": "Az 50×100×4000 mm fűrészelt palló megbízható és sokoldalúan alkalmazható építőanyag. Légszáraz kivitelének köszönhetően kevésbé vetemedik, gyalulatlan felülete pedig kedvező árúvá teszi. Kiválóan alkalmas tetőszerkezetekhez, födémszerkezetekhez, zsaluzatokhoz, kerítésekhez és barkácsprojektekhez. Stabilitása és tartóssága miatt az egyik leggyakrabban használt palló méret az építőiparban.",
+        "longDescription2": "Főbb jellemzők: vastagság 50 mm, szélesség 100 mm, hossz 4000 mm. Anyaga: légszáraz, gyalulatlan fenyő. Térfogata 0,02 m³, tömege kb. 9 kg. Felhasználási területei: tetőszerkezet, födémszerkezet, zsaluzat, kerítés, barkácsolás. Megbízható, kedvező ár-érték arányú palló, közvetlenül raktárról elérhető.",
+        "specs": {
+          "Méret": "50×100×4000 mm",
+          "Vastagság": "50 mm",
+          "Szélesség": "100 mm",
+          "Hossz": "4000 mm",
+          "Anyag": "Légszáraz fenyő",
+          "Kivitel": "Gyalulatlan, fűrészelt",
+          "Felület": "≈ 1,21 m²/palló",
+          "Térfogat": "0,02 m³/palló",
+          "Tömeg": "≈ 9 kg/palló",
+          "Felhasználás": "Tetőszerkezet, födémszerkezet, zsaluzat, kerítés, barkács",
+          "Megjegyzés": "Erősebb keresztmetszet, nagyobb teherbírás"
+        },
+        "shippingDetails": {
+          "shippingWeight": 9,
+          "depth": 400,
+          "width": 10,
+          "height": 5
         }
-      ],
-      "description": "50×150×4000 mm gyalulatlan, légszáraz fűrészelt deszka. Erős, masszív keresztmetszetének köszönhetően ideális teherbíró szerkezetekhez és zsaluzáshoz.",
-      "longDescription": "A 50×150×4000 mm fűrészelt deszka nagyobb keresztmetszetének köszönhetően kiemelkedően erős és tartós építőanyag. Légszáraz kivitelben kínáljuk, így kevésbé vetemedik. Kiválóan alkalmas zsaluzási munkákhoz, tetőszerkezetek építéséhez, burkolatokhoz, kerítésekhez vagy barkácsprojektekhez. Kedvező deszka árainkkal közvetlenül raktárkészletről rendelhető.",
-      "longDescription2": "Főbb jellemzők: vastagság 50 mm, szélesség 150 mm, hossz 4000 mm. Anyaga: légszáraz, gyalulatlan fenyő. Térfogata 0,03 m³, tömege kb. 14 kg. Felhasználási területei: tetőszerkezet, zsaluzat, ideiglenes szerkezetek, burkolat, barkácsolás. Nagyobb teherbírású kivitel, tartós és sokoldalúan felhasználható.",
-      "specs": {
-        "Méret": "50×150×4000 mm",
-        "Vastagság": "50 mm",
-        "Szélesség": "150 mm",
-        "Hossz": "4000 mm",
-        "Anyag": "Légszáraz fenyő",
-        "Kivitel": "Gyalulatlan, fűrészelt",
-        "Felület": "≈ 1,62 m²/deszka",
-        "Térfogat": "0,03 m³/deszka",
-        "Tömeg": "≈ 14 kg/deszka",
-        "Felhasználás": "Tetőszerkezet, zsalu, burkolat, kerítés, barkács",
-        "Megjegyzés": "Masszív keresztmetszet, nagyobb teherbírás"
       },
-      "shippingDetails": {
-        "shippingWeight": 14,
-        "depth": 400,
-        "width": 15,
-        "height": 5
+      {
+        "name": "Fűrészelt palló 50×150×4000 mm – gyalulatlan",
+        "slug": "fureszelt-pallo-50x150x4000",
+        "meta": {
+          "title": "Fűrészelt palló 50×150×4000 mm | Masszív gyalulatlan palló",
+          "description": "50×150×4000 mm gyalulatlan, légszáraz fűrészelt palló. Masszív és tartós faanyag tetőszerkezetekhez, födémszerkezetekhez, zsaluzáshoz és egyéb építési munkákhoz kedvező áron.",
+          "image": "/images/products/pallo-50x150x4000-darab.avif"
+        },
+        "sku": "D501504000",
+        "blogtags": [
+          "deszka",
+          "palló"
+        ],
+        "audience": ["építkezők", "kivitelezők", "tetőfedők", "asztalosok", "barkácsolók"],
+        "material": "Légszáraz fenyő, gyalulatlan",
+        "price": 5179,
+        "mprice": null,
+        "m2price": null,
+        "m3price": null,
+        "palprice": null,
+        "discountPrice": null,
+        "discountPercent": null,
+        "discountValidUntil": null,
+        "stock": 1,
+        "images": [
+          {
+            "src": "/images/products/pallo-50x150x4000-darab",
+            "alt": "Fűrészelt palló 50×150×4000 mm gyalulatlan kivitelben"
+          },
+          {
+            "src": "/images/products/pallo-50x150x4000-koteg",
+            "alt": "50×150×4000 mm gyalulatlan fenyő palló kötegben"
+          }
+        ],
+        "description": "50×150×4000 mm gyalulatlan, légszáraz fűrészelt palló. Erős, masszív keresztmetszetének köszönhetően ideális tetőszerkezetekhez, födémszerkezetekhez és zsaluzáshoz.",
+        "longDescription": "Az 50×150×4000 mm fűrészelt palló nagyobb keresztmetszetének köszönhetően kiemelkedően erős és tartós építőanyag. Légszáraz kivitelben kínáljuk, így kevésbé vetemedik. Kiválóan alkalmas tetőszerkezetekhez, födémszerkezetek építéséhez, zsaluzatokhoz, kerítésekhez vagy barkácsprojektekhez. Kedvező palló árainkkal közvetlenül raktárkészletről rendelhető.",
+        "longDescription2": "Főbb jellemzők: vastagság 50 mm, szélesség 150 mm, hossz 4000 mm. Anyaga: légszáraz, gyalulatlan fenyő. Térfogata 0,03 m³, tömege kb. 14 kg. Felhasználási területei: tetőszerkezet, födémszerkezet, zsaluzat, kerítés, barkácsolás. Nagyobb teherbírású kivitel, tartós és sokoldalúan felhasználható.",
+        "specs": {
+          "Méret": "50×150×4000 mm",
+          "Vastagság": "50 mm",
+          "Szélesség": "150 mm",
+          "Hossz": "4000 mm",
+          "Anyag": "Légszáraz fenyő",
+          "Kivitel": "Gyalulatlan, fűrészelt",
+          "Felület": "≈ 1,62 m²/palló",
+          "Térfogat": "0,03 m³/palló",
+          "Tömeg": "≈ 14 kg/palló",
+          "Felhasználás": "Tetőszerkezet, zsalu, burkolat, kerítés, barkács",
+          "Megjegyzés": "Masszív keresztmetszet, nagyobb teherbírás"
+        },
+        "shippingDetails": {
+          "shippingWeight": 14,
+          "depth": 400,
+          "width": 15,
+          "height": 5
+        }
       }
-    }
-
-
-
-  ]
-}
+    ]
+  }
 ]
