@@ -163,9 +163,9 @@ export default function DiscountCardClient({
       </div>
 
       <div class="p-4">
-        <h2 class="text-lg font-semibold text-gray-900 dark:text-white">
+        <p class="text-lg font-semibold text-gray-900 dark:text-white">
           {product.name}
-        </h2>
+        </p>
 
         {product.description && (
           <p class="text-sm text-gray-600 dark:text-gray-400">

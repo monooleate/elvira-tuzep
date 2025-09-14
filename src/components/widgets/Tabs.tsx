@@ -46,6 +46,7 @@ type Props = {
   initialTabName?: string;
   tabIntros?: Record<string, TabIntro>;
   productListing?: boolean;
+  mainPage?: boolean;
 };
 
 const UNIT_PRIORITY: Unit[] = ['pal','db','m','m2','m3'];
@@ -127,6 +128,7 @@ export default function MainCategoryGrid({
         }
       },
   productListing = false,
+  mainPage = false,
 }: Props) {
   // 🔧 Normalizálás: maincategory -> _maincats: string[]
   const safeData = useMemo<Category[]>(
@@ -217,7 +219,7 @@ const [maxPrice, setMaxPrice] = useState<string>('');
 const [sortBy, setSortBy] = useState<'relevance'|'name'|'price-asc'|'price-desc'>('relevance');
 const PAGE = 12;
 const [visibleCount, setVisibleCount] = useState(PAGE);
-const [maincatFilter, setMaincatFilter] = useState<string>(active); // '' = nincs szűrő
+const [maincatFilter, setMaincatFilter] = useState<string>(''); // '' = nincs szűrő
 
 const baseProducts = useMemo(() => {
   if (maincatFilter && mainTabs.includes(maincatFilter)) {
@@ -249,7 +251,7 @@ const autoUnit = useMemo(() => computeAutoUnit(baseProducts), [baseProducts]);
 // ha főkategória vált, reseteljük a lapozót és a keresést (opcionális)
 useEffect(() => {
   // alapból mindig az aktuális főkategóriára szűrjünk
-  setMaincatFilter('');
+  setMaincatFilter(active);
 
   // resetek
   setVisibleCount(PAGE);
@@ -460,9 +462,21 @@ const filteredProducts = useMemo(() => {
 
   return (
     <div ref={rootRef} class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-3xl font-bold text-gray-900 dark:text-white pt-6 pb-4 text-center">
-        Fő termékkategóriák
-      </h1>
+      
+
+
+      {mainPage ? 
+        (
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white pt-6 pb-4 text-center">
+            Termékkatalógus
+          </h2>
+        ) :
+        (      
+          <h1 class="text-3xl font-bold text-gray-900 dark:text-white pt-6 pb-4 text-center">
+            Termékkatalógus
+          </h1>
+        )
+      }
 
       {/* Főkategória csempék */}
       <div
@@ -491,6 +505,8 @@ const filteredProducts = useMemo(() => {
                 : '#';
 
               return (
+                
+
                 <div key={name} class="group">
                   {shouldLink ? (
                     <a
@@ -512,17 +528,35 @@ const filteredProducts = useMemo(() => {
                           <div class="w-full h-full bg-gray-100 dark:bg-gray-700" aria-hidden="true" />
                         )}
                       </div>
-                      <h2 class="p-3">
-                        <span
-                          class={`block text-sm font-semibold ${
-                            isActive
-                              ? 'text-orange-600 dark:text-orange-400'
-                              : 'text-gray-900 dark:text-white'
-                          }`}
-                        >
-                          {name}
-                        </span>
-                      </h2>
+
+                      {mainPage ? (
+                        <h3 class="p-3">
+                          <span
+                            class={`block text-sm font-semibold ${
+                              isActive
+                                ? 'text-orange-600 dark:text-orange-400'
+                                : 'text-gray-900 dark:text-white'
+                            }`}
+                          >
+                            {name}
+                          </span>
+                        </h3>
+                      )
+                      :
+                      (
+                        <h2 class="p-3">
+                          <span
+                            class={`block text-sm font-semibold ${
+                              isActive
+                                ? 'text-orange-600 dark:text-orange-400'
+                                : 'text-gray-900 dark:text-white'
+                            }`}
+                          >
+                            {name}
+                          </span>
+                        </h2>
+                      )}
+                    
                     </a>
                   ) : (
                     <button
@@ -553,17 +587,37 @@ const filteredProducts = useMemo(() => {
                           <div class="w-full h-full bg-gray-100 dark:bg-gray-700" aria-hidden="true" />
                         )}
                       </div>
-                      <h2 class="p-3">
-                        <span
-                          class={`block text-sm font-semibold ${
-                            isActive
-                              ? 'text-orange-600 dark:text-orange-400'
-                              : 'text-gray-900 dark:text-white'
-                          }`}
-                        >
-                          {name}
-                        </span>
-                      </h2>
+
+
+                      {mainPage ? (
+                        <h3 class="p-3">
+                          <span
+                            class={`block text-sm font-semibold ${
+                              isActive
+                                ? 'text-orange-600 dark:text-orange-400'
+                                : 'text-gray-900 dark:text-white'
+                            }`}
+                          >
+                            {name}
+                          </span>
+                        </h3>
+                      )
+                      :
+                      (
+                        <h2 class="p-3">
+                          <span
+                            class={`block text-sm font-semibold ${
+                              isActive
+                                ? 'text-orange-600 dark:text-orange-400'
+                                : 'text-gray-900 dark:text-white'
+                            }`}
+                          >
+                            {name}
+                          </span>
+                        </h2>
+                      )}
+
+
                     </button>
                   )}
                 </div>
@@ -647,18 +701,18 @@ const filteredProducts = useMemo(() => {
           )}
           <div class="p-4">
             {activeIntro.title && (
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+              <p class="text-lg font-semibold text-gray-900 dark:text-white mb-1">
                 {activeIntro.title}
-              </h3>
+              </p>
             )}
             <p class="text-sm text-gray-700 dark:text-gray-300">{activeIntro.body}</p>
           </div>
         </div>
       )}
 
-      <h2 class="text-3xl font-bold text-gray-900 dark:text-white pt-6 pb-4 text-center">
+      <p class="text-3xl font-bold text-gray-900 dark:text-white pt-6 pb-4 text-center">
         {(activeIntro?.title || active)} – Alkategóriái
-      </h2>
+      </p>
 
       {/* Panelek – az aktív főkategória alkategóriái */}
       {grouped.map(({ name, items }) => (
@@ -696,9 +750,20 @@ const filteredProducts = useMemo(() => {
                     )}
                   </div>
                   <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                      {category.category}
-                    </h3>
+
+                    {mainPage ? 
+                      (
+                        <h4 class="text-lg font-semibold text-gray-900 dark:text-white">
+                          {category.category}
+                        </h4>
+                      ) 
+                      :
+                      (
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                          {category.category}
+                        </h3>
+                      )
+                    }
                     <p class="text-sm text-gray-600 dark:text-gray-400">
                       {category.meta?.description || category.description || ''}
                     </p>
@@ -712,108 +777,104 @@ const filteredProducts = useMemo(() => {
           {productListing && name === active && baseProducts.length > 0 && (
             <div class="mt-6">
               <div class="flex items-end justify-center gap-4 mb-3">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-white pt-6 pb-4 text-center">
+                <p class="text-3xl font-bold text-gray-900 dark:text-white pt-6 pb-4 text-center">
                 Összes termék {maincatFilter ? `– ${maincatFilter}` : '– minden főkategória'}{' '}
                 <span class="text-gray-500 dark:text-gray-400 font-normal">
                     ({filteredProducts.length})
                 </span>
-                </h2>
+                </p>
               </div>
 
              {/* fő vezérlők rácsa – ÚJ elrendezés */}
-<div class="px-4 py-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
-  {/* BAL OSZLOP: Kereső + alatta Rendezés */}
-  <div class="space-y-3">
-    {/* Kereső */}
-    <label class="block group">
-      <span class="block text-xs text-gray-600 dark:text-gray-400 mb-1">Keresés</span>
-      <div class="relative">
-        <svg class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" viewBox="0 0 24 24" fill="none">
-          <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
-          <path d="M20 20l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <input
-          type="text"
-          value={q}
-          onInput={(e: any) => setQ(e.currentTarget.value)}
-          placeholder="Terméknév, leírás…"
-          class="w-full pl-9 pr-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500/60"
-        />
-      </div>
-    </label>
+            <div class="px-4 py-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+              {/* BAL OSZLOP: Kereső + alatta Rendezés */}
+              <div class="space-y-3">
+                {/* Kereső */}
+                <label class="block group">
+                  <span class="block text-xs text-gray-600 dark:text-gray-400 mb-1">Keresés</span>
+                  <div class="relative">
+                    <svg class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" viewBox="0 0 24 24" fill="none">
+                      <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                      <path d="M20 20l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <input
+                      type="text"
+                      value={q}
+                      onInput={(e: any) => setQ(e.currentTarget.value)}
+                      placeholder="Terméknév, leírás…"
+                      class="w-full pl-9 pr-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500/60"
+                    />
+                  </div>
+                </label>
 
-    {/* Rendezés (Keresés alatt) */}
-    <label class="block">
-      <span class="block text-xs text-gray-600 dark:text-gray-400 mb-1">Rendezés</span>
-      <div class="relative">
-        <select
-          value={sortBy}
-          onChange={(e: any) => setSortBy(e.currentTarget.value)}
-          class="w-full appearance-none pl-3 pr-9 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/60"
-        >
-          <option value="relevance">Relevancia</option>
-          <option value="name">Név (A–Z)</option>
-          <option value="price-asc">Ár szerint (növ.)</option>
-          <option value="price-desc">Ár szerint (csökk.)</option>
-        </select>
-        <svg class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.117l3.71-3.886a.75.75 0 111.08 1.04l-4.24 4.444a.75.75 0 01-1.08 0L5.25 8.27a.75.75 0 01-.02-1.06z"/>
-        </svg>
-      </div>
-    </label>
-  </div>
+                {/* Rendezés (Keresés alatt) */}
+                <label class="block">
+                  <span class="block text-xs text-gray-600 dark:text-gray-400 mb-1">Rendezés</span>
+                  <div class="relative">
+                    <select
+                      value={sortBy}
+                      onChange={(e: any) => setSortBy(e.currentTarget.value)}
+                      class="w-full appearance-none pl-3 pr-9 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/60"
+                    >
+                      <option value="relevance">Relevancia</option>
+                      <option value="name">Név (A–Z)</option>
+                      <option value="price-asc">Ár szerint (növ.)</option>
+                      <option value="price-desc">Ár szerint (csökk.)</option>
+                    </select>
+                    <svg class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.117l3.71-3.886a.75.75 0 111.08 1.04l-4.24 4.444a.75.75 0 01-1.08 0L5.25 8.27a.75.75 0 01-.02-1.06z"/>
+                    </svg>
+                  </div>
+                </label>
+              </div>
 
-  {/* JOBB OSZLOP: Főkategória + mellé (lg) az Akciós/Raktáron pickerek */}
-  <div class="space-y-3">
-    {/* Főkategória legördülő */}
-    <label class="block group">
-      <span class="block text-xs text-gray-600 dark:text-gray-400 mb-1">Főkategória</span>
-      <div class="relative">
-        <select
-          value={maincatFilter}
-          onChange={(e: any) => { setMaincatFilter(e.currentTarget.value); setVisibleCount(PAGE); }}
-          class="w-full appearance-none pl-3 pr-9 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/60"
-        >
-          <option value="">(összes)</option>
-          {mainTabs.map((mc) => (
-            <option key={mc} value={mc}>{mc}</option>
-          ))}
-        </select>
-        <svg class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.117l3.71-3.886a.75.75 0 111.08 1.04l-4.24 4.444a.75.75 0 01-1.08 0L5.25 8.27a.75.75 0 01-.02-1.06z"/>
-        </svg>
-      </div>
-    </label>
+              {/* JOBB OSZLOP: Főkategória + mellé (lg) az Akciós/Raktáron pickerek */}
+              <div class="space-y-3">
+                {/* Főkategória legördülő */}
+                <label class="block group">
+                  <span class="block text-xs text-gray-600 dark:text-gray-400 mb-1">Főkategória</span>
+                  <div class="relative">
+                    <select
+                      value={maincatFilter}
+                      onChange={(e: any) => { setMaincatFilter(e.currentTarget.value); setVisibleCount(PAGE); }}
+                      class="w-full appearance-none pl-3 pr-9 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/60"
+                    >
+                      <option value="">(összes)</option>
+                      {mainTabs.map((mc) => (
+                        <option key={mc} value={mc}>{mc}</option>
+                      ))}
+                    </select>
+                    <svg class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.117l3.71-3.886a.75.75 0 111.08 1.04l-4.24 4.444a.75.75 0 01-1.08 0L5.25 8.27a.75.75 0 01-.02-1.06z"/>
+                    </svg>
+                  </div>
+                </label>
 
-    {/* Akciós / Raktáron – nagy képernyőn mellé, mobilon alá (rugalmas sor) */}
-    <span class="block text-xs text-gray-600 dark:text-gray-400 mb-1">Választás</span>
-    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-      <label class="inline-flex items-center gap-2 text-sm px-3 py-2 rounded-lg border border-transparent hover:border-gray-300 dark:hover:border-gray-600">
-        <input
-          type="checkbox"
-          checked={onlyDiscounted}
-          onChange={(e: any) => setOnlyDiscounted(e.currentTarget.checked)}
-          class="h-4 w-4 rounded border-gray-300 dark:border-gray-600 text-orange-600 focus:ring-orange-500/60"
-        />
-        Csak akciós
-      </label>
+                {/* Akciós / Raktáron – nagy képernyőn mellé, mobilon alá (rugalmas sor) */}
+                <span class="block text-xs text-gray-600 dark:text-gray-400 mb-1">Választás</span>
+                <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                  <label class="inline-flex items-center gap-2 text-sm px-3 py-2 rounded-lg border border-transparent hover:border-gray-300 dark:hover:border-gray-600">
+                    <input
+                      type="checkbox"
+                      checked={onlyDiscounted}
+                      onChange={(e: any) => setOnlyDiscounted(e.currentTarget.checked)}
+                      class="h-4 w-4 rounded border-gray-300 dark:border-gray-600 text-orange-600 focus:ring-orange-500/60"
+                    />
+                    Csak akciós
+                  </label>
 
-      <label class="inline-flex items-center gap-2 text-sm px-3 py-2 rounded-lg border border-transparent hover:border-gray-300 dark:hover:border-gray-600">
-        <input
-          type="checkbox"
-          checked={onlyStock}
-          onChange={(e: any) => setOnlyStock(e.currentTarget.checked)}
-          class="h-4 w-4 rounded border-gray-300 dark:border-gray-600 text-orange-600 focus:ring-orange-500/60"
-        />
-        Csak raktáron
-      </label>
-    </div>
-  </div>
-</div>
-
-
-
-
+                  <label class="inline-flex items-center gap-2 text-sm px-3 py-2 rounded-lg border border-transparent hover:border-gray-300 dark:hover:border-gray-600">
+                    <input
+                      type="checkbox"
+                      checked={onlyStock}
+                      onChange={(e: any) => setOnlyStock(e.currentTarget.checked)}
+                      class="h-4 w-4 rounded border-gray-300 dark:border-gray-600 text-orange-600 focus:ring-orange-500/60"
+                    />
+                    Csak raktáron
+                  </label>
+                </div>
+              </div>
+            </div>
               {baseProducts.length === 0 ? (
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   Nincs megjeleníthető termék ebben a főkategóriában.

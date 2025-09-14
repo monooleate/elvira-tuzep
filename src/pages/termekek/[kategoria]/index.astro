@@ -17,7 +17,7 @@ if (!currentCategory) {
   throw new Error(`A(z) "${params.kategoria}" kategória nem található.`);
 }
 
-const base = 'https://elviratuzep.hu/';
+const base = 'https://elviratuzep.hu';
 const catUrl = `${base}/termekek/${currentCategory.slug}`;
 const pageId = `${catUrl}#collection`;
 const listId = `${catUrl}#itemlist`;
