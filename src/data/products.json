@@ -2750,7 +2750,7 @@
           "blogtags": ["fa brikett", "fabrikett", "fenntartható energia", "zöld fűtés"],
           "audience": ["háztartások", "kandalló/kályha tulajok"],
           "material": "Tölgy keményfa brikett (Pini-Kay), extrudált",
-          "price": null,
+          "price": 147.5,
           "mprice": null,
           "m2price": null,
           "m3price": null,
@@ -2785,7 +2785,7 @@
                 "alt": "Pini-Kay keményfa brikett I. osztály – felülnézetből, jól látható a lyukas (üreges) szerkezet"
               }           
             ],
-          "description": "Lyukas, hengeres keményfa brikett kizárólag tölgyfából, I. osztályú minőségben. Hosszú égés, magas hőérték, minimális hamu.",
+          "description": "Lyukas, hengeres keményfa brikett kizárólag tölgyfából, I. osztályú minőségben. Hosszú égés, magas hőérték, minimális hamu. Praktikus 10 kg-os csomagban (12 darab/csomag ; ~0.8 kg/darab)",
           "longDescription": "A Pini‑Kay brikett 100% tölgyfából készül, I. osztályú minőségben. Lyukas, szellőzést biztosító szerkezete hatékony égést tesz lehetővé akár kandallóban, kályhában vagy kazánban is. A rendkívül alacsony, kb. 2–6% nedvességtartalom, a 4 800–5 000 kcal/kg (~20 MJ/kg) fűtőérték és a kb. 1,0–1,2% hamutartalom ideálissá teszik hosszú égésű, környezetbarát tüzelőként. A brikett nem tartalmaz adalékot vagy ragasztót, kizárólag természetes faőrleményből készül magas nyomáson préselve.",
           "longDescription2": "",
           "specs": {
@@ -2793,7 +2793,7 @@
               "Forma": "Lyukkal ellátott henger (ventilált Pini-Kay profil)",
               "Méretek egy darabra": "Kb. 53 × 53 mm keresztmetszet, 300–330 mm hossz",
               "Csomagolás": "10 kg-os zsugorfóliázott csomag, 12 brikett/csomag",
-              "Raklapos kiszerelés": "960 kg (96 csomag × 10 kg/csomag, EUR raklapon)",
+              "Raklapos kiszerelés": "960 kg (96 csomag × 10 kg/csomag); 1152 darab/raklap EUR raklapon)",
               "Nedvességtartalom": "2–6 %",
               "Fűtőérték": "4800–5000 kcal/kg (~20 MJ/kg)",
               "Hamutartalom": "1,0–1,2 %",
@@ -2822,7 +2822,7 @@
           "blogtags": ["fa brikett", "fabrikett", "fenntartható energia", "zöld fűtés"],
           "audience": ["háztartások", "kandalló/kályha tulajok"],
           "material": "100% bükk keményfa (RUF préselt brikett)",
-          "price": null,
+          "price": 145.7,
           "mprice": null,
           "m2price": null,
           "m3price": null,
@@ -2857,15 +2857,15 @@
               "alt": "RUF brikett – raklapos kiszerelés, 96 csomag, raklap széléről nézve"
             }
           ],
-          "description": "RUF kocka brikett bükkfából - prémium minőségű fabrikett alacsony nedvességgel és hamuval, magas fűtőértékkel. Hosszú égés, tiszta tűz, praktikus 10 kg-os csomagban.",
+          "description": "RUF kocka brikett bükkfából - prémium minőségű fabrikett alacsony nedvességgel és hamuval, magas fűtőértékkel. Hosszú égés, tiszta tűz, praktikus 10 kg-os csomagban (10 darab / csomag ; ~1 kg / darab)",
           "longDescription": "A RUF bükk fabrikett – más néven RUF brikett vagy RUF tégla – a legismertebb és legkedveltebb tüzelőanyagok közé tartozik. 100% bükk keményfából, adalékanyag nélkül készül, nagy nyomáson préselve. A préselés során a fa természetes ligninje köti össze a részecskéket, így nincs szükség mesterséges ragasztóra. A brikett rendkívül tömör, ennek köszönhetően hosszú ideig, egyenletesen és tisztán ég.\n\nA RUF fabrikett különösen alkalmas kandallókhoz, kályhákhoz és vegyes tüzelésű kazánokhoz.",
           "longDescription2": "Alacsony, mindössze ~2,3% nedvességtartalmának és ~0,7% hamutartalmának köszönhetően tiszta égést biztosít, kevés hamu képződésével. Magas, kb. 5,5 kWh/kg fűtőértéke (~4 730 kcal/kg, ~19,8 MJ/kg) garantálja a gazdaságos fűtést. A kocka/hasáb forma könnyen rakható, jól tárolható és stabil parázstartást ad.\n\nEgy csomag 12 darab brikettet tartalmaz, tömege kb. 10 kg (±0,5 kg). A csomagolás erős polietilén fólia, amely megvédi a brikettet a szállítás és tárolás során. Egy raklapon 96 csomag található, összesen nettó ~960 kg. A raklap műanyag pántszalaggal és fémkapoccsal rögzített, streccsfóliával körbezárt, így biztonságosan mozgatható és raktározható.",
           "specs": {
             "Alapanyag": "100% bükk keményfa",
             "Forma": "Kocka/hasáb (RUF profil)",
             "Méretek egy darabra": "150 × 60 × 100 mm",
-            "Csomagolás": "Polietilén fólia, 12 db/csomag, ~10 kg/csomag (± 0,5 kg)",
-            "Raklapos kiszerelés": "96 csomag/raklap, nettó ~960 kg",
+            "Csomagolás": "Polietilén fólia, 10 db/csomag, ~10 kg/csomag (± 0,5 kg)",
+            "Raklapos kiszerelés": "96 csomag/raklap, 960 darab/raklap, nettó ~960 kg",
             "Raklap mérete": "120 × 80 cm (EUR raklap)",
             "Nedvességtartalom": "2,3 %",
             "Hamutartalom": "0,7 %",
