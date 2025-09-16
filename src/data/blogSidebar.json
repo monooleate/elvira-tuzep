@@ -15,7 +15,8 @@
     "category": "Tüzelőanyagok",
     "items": [
       { "title": "Környezetbarát fabrikett", "slug": "/tudastar/kornyezetbarat-brikett" },
-      { "title": "Tüzifa mértékegységek", "slug": "/tudastar/tuzifa-mertekegysegek" }
+      { "title": "Tüzifa mértékegységek", "slug": "/tudastar/tuzifa-mertekegysegek" },
+      { "title": "Pellet alomként", "slug": "/tudastar/pellet-alomkent" }
     ]
   }
 ]
