@@ -16,6 +16,7 @@
     "items": [
       { "title": "Környezetbarát fabrikett", "slug": "/tudastar/kornyezetbarat-brikett" },
       { "title": "Tüzifa mértékegységek", "slug": "/tudastar/tuzifa-mertekegysegek" },
+      { "title": "Fapelletről", "slug": "/tudastar/fa-pellet" },
       { "title": "Pellet alomként", "slug": "/tudastar/pellet-alomkent" }
     ]
   }
