@@ -23,6 +23,7 @@ type Product = {
   discountValidUntil?: string;
 
   stock?: number;
+  category?: string;
 };
 
 function toBase(path: string) {
@@ -114,7 +115,7 @@ export default function DiscountCardClient({
   const discountM3Price = computeUnitDiscount(product.m3price, pctForUnits);
   const discountPalPrice= computeUnitDiscount(product.palprice,pctForUnits);
 
-  const href = `/termekek/${currentCategorySlug || product.categorySlug || 'egyeb'}/${product.slug}`;
+  const href = `/termekek/${currentCategorySlug || product.category || 'egyeb'}/${product.slug}`;
 
   return (
     <a
