@@ -1,37 +1,33 @@
 ---
 import Layout from '../../../layouts/PageLayout.astro'
-import productsData from '../../../data/products.json'
 import ProductInteractiveBlock from '~/components/common/ProductInteractiveBlock.jsx';
 import ProductGallery from '~/components/widgets/ProductGallery.tsx';
 import RelatedBlogSection from '~/components/widgets/RelatedBlogSection.astro';
 import DiscountCardClient from '~/components/widgets/DiscountCardClient';
+import { fetchProductBySlug, fetchRelatedProducts, fetchProductPaths, fetchCategoryMetaBySlug } from '../../../lib/medusa-adapter';
 
 function formatPrice(value) {
   return typeof value === 'number' ? value.toLocaleString('hu-HU') : '';
 }
 
 export async function getStaticPaths() {
-  const paths = [];
-  for (const category of productsData) {
-    for (const product of category.products) {
-      paths.push({
-        params: {
-          kategoria: category.slug,
-          slug: product.slug,
-        },
-      });
-    }
-  }
-  return paths;
+  return await fetchProductPaths()
 }
 
 const { params } = Astro;
 
-const category = productsData.find((c) => c.slug === params.kategoria);
-if (!category) throw new Error(`Nincs ilyen kategória: ${params.kategoria}`);
+const [product, category, relatedProducts] = await Promise.all([
+  fetchProductBySlug(params.slug),
+  fetchCategoryMetaBySlug(params.kategoria),
+  fetchRelatedProducts(params.kategoria, params.slug)
+])
 
-const product = category.products.find((p) => p.slug === params.slug);
-if (!product) throw new Error(`Nincs ilyen termék: ${params.slug}`);
+/* console.log(fetchProductBySlug(params.slug)) */
+
+if (!product || !category) {
+  console.error("❌ Product page fetch failed:", params.slug)
+  throw new Error(`Nincs ilyen termék vagy kategória: ${params.slug}`)
+}
 
 const now = new Date();
 const hasPrice = typeof product.price === 'number' && product.price > 0;
@@ -117,10 +113,6 @@ const metadata = {
     image: images.length > 0 ? images[0] : '', // Twitter csak egy képet enged
   },
 };
-
-const relatedProducts = category.products
-  .filter((p) => p.slug !== product.slug)
-  .slice(0, 3);
 
 const STORE_ID = "https://elviratuzep.hu/#store";
 
@@ -324,16 +316,32 @@ function getShippingDetails(product) {
 const shipping = getShippingDetails(product);
 
 function specsToAdditionalProperty(specs) {
-  if (!specs || typeof specs !== 'object') return undefined;
+  if (!specs || typeof specs !== "object") return undefined;
+
   const entries = Object.entries(specs)
-    .filter(([_, v]) => v !== null && v !== undefined && String(v).trim() !== '');
+    .filter(([_, v]) => v !== null && v !== undefined && String(v).trim() !== "");
+
   if (!entries.length) return undefined;
-  return entries.map(([name, value]) => ({
-    "@type": "PropertyValue",
-    name,
-    value
-  }));
+
+  return entries.map(([key, val]) => {
+    // 🔍 Új típus: ha objektum és tartalmaz 'value' mezőt → új formátum
+    if (val && typeof val === "object" && "value" in val) {
+      return {
+        "@type": "PropertyValue",
+        name: val.label || key,
+        value: val.value ?? "",
+      };
+    }
+
+    // 🔙 Régi típus: sima string érték
+    return {
+      "@type": "PropertyValue",
+      name: key,
+      value: String(val),
+    };
+  });
 }
+
 
 const additionalProperty = specsToAdditionalProperty(product.specs);
 
@@ -723,20 +731,53 @@ const schemaBreadcrumb = {
 
         <!-- Műszaki adatok táblázat -->
         {product.specs && (
-          <div class="md:w-1/2">
-            <h2 class="text-xl font-bold mb-2">További információk</h2>
-            <table class="w-full text-sm text-left border border-gray-300 dark:border-gray-600 overflow-hidden rounded-lg">
-              <tbody>
-                {Object.entries(product.specs).map(([label, value], index) => (
-                  <tr class={`border-b ${index % 2 === 0 ? 'bg-gray-50 dark:bg-gray-800' : 'bg-white dark:bg-gray-700'}`}>
-                    <th class="py-2 px-4 font-medium w-1/3 text-gray-700 dark:text-gray-200">{label}</th>
-                    <td class="py-2 px-4 text-gray-600 dark:text-gray-300">{value}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
+  <div class="md:w-1/2">
+    <h2 class="text-xl font-bold mb-2">További információk</h2>
+    <table class="w-full text-sm text-left border border-gray-300 dark:border-gray-600 overflow-hidden rounded-lg">
+      <tbody>
+        {Object.entries(product.specs)
+          // átalakítás: ha value objektum → structured, ha string → simple
+          .map(([key, value]: [string, any]) => {
+            if (value && typeof value === "object" && "value" in value) {
+              // új formátum
+              return {
+                label: value.label || key,
+                value: value.value ?? "",
+                order: value.order ?? 999,
+              }
+            } else {
+              // régi formátum (string)
+              return {
+                label: key,
+                value: String(value),
+                order: 999,
+              }
+            }
+          })
+          // order alapján rendezés, ha van
+          .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+          // renderelés
+          .map((spec, index) => (
+            <tr
+              class={`border-b ${
+                index % 2 === 0
+                  ? "bg-gray-50 dark:bg-gray-800"
+                  : "bg-white dark:bg-gray-700"
+              }`}
+            >
+              <th class="py-2 px-4 font-medium w-1/3 text-gray-700 dark:text-gray-200">
+                {spec.label}
+              </th>
+              <td class="py-2 px-4 text-gray-600 dark:text-gray-300">
+                {spec.value}
+              </td>
+            </tr>
+          ))}
+      </tbody>
+    </table>
+  </div>
+)}
+
 
         <!-- Hosszú leírás -->
         <div class="md:w-1/2">

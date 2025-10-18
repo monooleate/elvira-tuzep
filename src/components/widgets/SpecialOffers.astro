@@ -1,11 +1,8 @@
 ---
-import productsData from '~/data/products.json';
 import DiscountCard from '~/components/widgets/DiscountCardClient.tsx'
-import { computeDiscounted } from '~/lib/discounts';
 
 const now = new Date();
-
-const discounted = computeDiscounted(productsData);
+const { discounted = [] } = Astro.props
 
 // ===== JSON-LD (ItemList) generálás az akciós termékekhez =====
 
@@ -17,16 +14,24 @@ export function buildSpecialOffersItemList(discounted) {
     "@type": "ItemList",
     "name": "Akciós termékeink",
     "itemListOrder": "https://schema.org/ItemListOrderDescending",
-    "numberOfItems": discounted.length,
+    "numberOfItems":  discounted.length,
     "itemListElement": discounted.map((p, i) => ({
       "@type": "ListItem",
       "position": i + 1,
       "item": {
         "@type": "Product",
-        "@id": `https://elviratuzep.hu/termekek/${p.categorySlug}/${p.slug}#product`
+        "@id": `https://elviratuzep.hu/termekek/${p.category}/${p.slug}#product`,
+        "name": p.name,
+        "image": p.image,
+        "offers": {
+          "@type": "Offer",
+          "price": p.discountPrice ?? p.price,
+          "priceCurrency": "HUF",
+          "availability": "https://schema.org/InStock"
+        }
       }
     }))
-  };
+  }
 }
 
 ---
@@ -36,18 +41,25 @@ export function buildSpecialOffersItemList(discounted) {
     <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-10 text-center">
       Akciós termékeink
     </h2>
-
-    {discounted.length <= 3 && (
-      <div class={`grid gap-6 ${
-  discounted.length === 1 ? 'grid-cols-1 justify-items-center' :
-  discounted.length === 2 ? 'grid-cols-1 sm:grid-cols-2 justify-items-center gap-3' :
-  'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center'
-}`}>
-  {discounted.map((product) => (
-    <DiscountCard product={product} />
-  ))}
-</div>
-    )}
+{discounted.length <= 3 && (
+  <div
+    class={`grid gap-6 ${
+      discounted.length === 1
+        ? "grid-cols-1 justify-items-center" // középre
+        : discounted.length === 2
+        ? "grid-cols-1 sm:grid-cols-2 justify-items-center gap-3"
+        : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
+    }`}
+  >
+    {discounted.map((product) => (
+      <div
+        class={discounted.length === 1 ? "max-w-[350px] w-full" : ""}
+      >
+        <DiscountCard product={product} />
+      </div>
+    ))}
+  </div>
+)}
 
     {discounted.length > 3 && (
   <div class="overflow-x-auto scroll-smooth max-w-4xl">

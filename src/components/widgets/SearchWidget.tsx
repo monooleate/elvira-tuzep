@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef, useMemo } from 'preact/hooks';
 import Fuse from 'fuse.js';
-import productsData from '../../data/products.json';
+import { fetchCategoriesWithProducts } from '../../lib/medusa-adapter'
+
+const productsData = await fetchCategoriesWithProducts()
 
 type MaybeNum = number | null;
 type MaybeStr = string | null;
@@ -143,26 +145,44 @@ function normalizeItem(p: Product, cat: Category): FlatProduct {
       : null;
 
   // ── képek ──────────────────────────────────────────────
-  let images: Array<{ src: string; alt?: string }> =
-    Array.isArray(p.images) ? p.images.filter(Boolean) : [];
+  let images: Array<{ src: string; alt?: string }> = []
 
+  // 1️⃣ Ha van images[] és nem üres
+  if (Array.isArray(p.images) && p.images.length > 0) {
+    images = p.images.filter(
+      (img) => img && typeof img.src === "string" && img.src.trim() !== ""
+    )
+  }
+
+  // 2️⃣ Ha nincs vagy üres → próbáljuk az image mezőt
   if (images.length === 0) {
-    if (p.image && typeof p.image === 'object' && (p.image as any).src) {
-      images = [{ src: (p.image as any).src as string, alt: (p.image as any).alt || name }];
-    } else if (typeof p.image === 'string') {
-      images = [{ src: p.image as string, alt: name }];
+    if (p.image && typeof p.image === "object" && (p.image as any).src) {
+      images = [{ src: (p.image as any).src as string, alt: (p.image as any).alt || name }]
+    } else if (typeof p.image === "string" && p.image.trim() !== "") {
+      images = [{ src: p.image as string, alt: name }]
     }
   }
 
-  // Ha az eredeti forrás images[] volt → -500.jpg; ha csak image volt → változtatás nélkül; ha semmi → placeholder
-  let image: { src: string; alt: string };
-  if (Array.isArray(p.images) && p.images.length > 0 && images[0]) {
-    image = { src: `${images[0].src}-500.jpg`, alt: images[0].alt || name || 'Termékkép' };
-  } else if (images.length > 0) {
-    image = { src: images[0].src, alt: images[0].alt || name || 'Termékkép' };
-  } else {
-    image = { src: '/images/placeholder.png', alt: name || 'Termékkép' };
+  // 3️⃣ Ha az is hiányzik → placeholder
+  if (images.length === 0) {
+    images = [{ src: "/images/placeholder.png", alt: name || "Termékkép" }]
   }
+
+  // 4️⃣ Elsődleges kép kiválasztása
+  let main = images[0]
+  let imgSrc = main.src
+
+  // ➕ Csak akkor fűzzük hozzá a -500.jpg-t, ha:
+  //    - az images tömbből jön (nem az image mezőből),
+  //    - és a src NEM végződik .jpg / .png / .webp kiterjesztéssel
+  const cameFromImages = Array.isArray(p.images) && p.images.length > 0
+  const hasExtension = /\.(jpg|jpeg|png|webp)$/i.test(imgSrc)
+
+  if (cameFromImages && !hasExtension) {
+    imgSrc = `${imgSrc}-500.jpg`
+  }
+
+  const image = { src: imgSrc, alt: main.alt || name || "Termékkép" }
 
   return {
     name,
@@ -201,6 +221,8 @@ export default function SearchWidget() {
   const [results, setResults] = useState<any[]>([]);
   const [isOpen, setIsOpen] = useState(false);
 
+
+  
   // Laposított és normalizált terméklista
   const flatProducts: FlatProduct[] = useMemo(() => {
     return (productsData as Category[]).flatMap((cat) =>
@@ -281,6 +303,8 @@ export default function SearchWidget() {
       window.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+
+/*   console.log(results) */
 
   return (
     <div class="relative max-h-[90vh] overflow-y-auto">

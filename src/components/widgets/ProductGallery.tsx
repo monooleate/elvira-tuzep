@@ -5,7 +5,10 @@ import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import 'photoswipe/style.css';
 
 type RawImage = { src: string; alt?: string } | string;
-type ImageItem = { base: string; alt: string };
+type ImageItem =
+  | { kind: 'direct'; url: string; alt: string }   // teljes fájlút – nincs -500
+  | { kind: 'base'; base: string; alt: string };   // variánsos – lehet -500, -1200 stb.
+
 type Props = { product: any };
 
 const CANDIDATE_WIDTHS = [1200, 500] as const; // nagy -> kicsi
@@ -25,24 +28,42 @@ const _lightboxPickCache = new Map<string, Promise<{ url: string; w: number; h: 
 const toBase = (src: string) => src.replace(/\.(jpe?g|png|webp|avif)$/i, '');
 
 function normalizeImages(product: any): ImageItem[] {
-  if (Array.isArray(product?.images) && product.images.length > 0) {
-    return product.images.map((it: RawImage) => {
-      const src = typeof it === 'string' ? it : it.src;
-      const alt = typeof it === 'string' ? (product?.name ?? 'Termékkép') : (it.alt ?? product?.name ?? 'Termékkép');
-      return { base: toBase(src), alt };
-    });
+  const name = product?.name ?? 'Termékkép'
+
+  const hasImageString =
+    typeof product?.image === 'string' && product.image.trim() !== ''
+
+      // 2) Ha image nincs / null → nézd az images-t
+  if (Array.isArray(product?.images)) {
+    if (product.images.length > 0) {
+      // images tömb esetén a meglévő logikát megtartjuk (variánsos base)
+      return product.images.map((it: RawImage) => {
+        const src = typeof it === 'string' ? it : it.src
+        const alt = typeof it === 'string' ? name : (it.alt ?? name)
+        return { kind: 'base', base: toBase(src), alt }
+      })
+    }
+
+  // 1) Ha image string → ezt használd, DIRECT módban (ne variánsozzon)
+  if (hasImageString) {
+    return [{ kind: 'direct', url: product.image.trim(), alt: name }]
   }
+
+
+    // 3) Ha images üres tömb és image string lenne → már az elején visszatértünk
+    // itt nem kell semmi
+  }
+
+  // 4) Ha image tömb (ritkább edge case), akkor variánsos base-ként kezelem
   if (Array.isArray(product?.image) && product.image.length > 0) {
     return product.image.map((it: RawImage) => {
-      const src = typeof it === 'string' ? it : it.src;
-      const alt = typeof it === 'string' ? (product?.name ?? 'Termékkép') : (it.alt ?? product?.name ?? 'Termékkép');
-      return { base: toBase(src), alt };
-    });
+      const src = typeof it === 'string' ? it : it.src
+      const alt = typeof it === 'string' ? name : (it.alt ?? name)
+      return { kind: 'base', base: toBase(src), alt }
+    })
   }
-  if (typeof product?.image === 'string') {
-    return [{ base: toBase(product.image), alt: product?.name ?? 'Termékkép' }];
-  }
-  return [];
+
+  return []
 }
 
 // ——— böngésző oldali elérhetőség-ellenőrzés (cache-elve)
@@ -103,6 +124,11 @@ async function detectAvailable(base: string, widths = CANDIDATE_WIDTHS) {
 
 function buildSrcset(base: string, ext: 'avif' | 'webp' | 'jpg', widths: number[]) {
   return widths.map((w) => `${base}-${w}.${ext} ${w}w`).join(', ');
+}
+
+async function pickLightboxTargetFromDirect(url: string) {
+  const nat = await getNaturalSize(url)
+  return { url, w: nat.w, h: nat.h }
 }
 
 // a lightboxhoz kiválasztjuk a legnagyobb ELÉRHETŐ fájlt és lekérdezzük a valós méretét (cache-elve)
@@ -222,7 +248,13 @@ export default function ProductGallery({ product }: Props) {
   useEffect(() => {
     let alive = true;
     (async () => {
-      const targets = await Promise.all(images.map((img) => pickLightboxTarget(img.base)));
+      const targets = await Promise.all(
+        images.map((img) =>
+          img.kind === 'base'
+            ? pickLightboxTarget(img.base)
+            : Promise.resolve({ url: img.url, w: LIGHTBOX_DEFAULT_W, h: LIGHTBOX_DEFAULT_H })
+        )
+      );
       if (alive) setLbTargets(targets);
     })();
     return () => {
@@ -247,9 +279,13 @@ export default function ProductGallery({ product }: Props) {
   }, [images.length]);
 
   // PhotoSwipe init — ref-alapú (nincs id, nincs ütközés több példány között)
+ // PhotoSwipe init — csak több képnél vagy base-es képeknél
   useEffect(() => {
-    if (typeof window === 'undefined') return; // SSR guard
-    if (!containerRef.current || images.length === 0) return;
+    if (typeof window === 'undefined') return
+    if (!containerRef.current || images.length === 0) return
+
+    // ha csak 1 direct image van → NE indítsd a lightboxot
+    if (images.length === 1 && images[0].kind === 'direct') return
 
     // tisztítás, ha maradt korábbi
     if (lbRef.current) {
@@ -290,54 +326,76 @@ export default function ProductGallery({ product }: Props) {
   };
 
   // ——— egy kép esetén
-  if (images.length === 1) {
-    const img = images[0];
-    const target = lbTargets[0];
-    const href = target?.url ?? `${img.base}-${LIGHTBOX_DEFAULT_W}.jpg`;
-    const w = target?.w ?? LIGHTBOX_DEFAULT_W;
-    const h = target?.h ?? LIGHTBOX_DEFAULT_H;
+if (images.length === 1) {
+  const img = images[0];
 
+  // ha direct típusú (string image) → NINCS lightbox
+  if (img.kind === "direct") {
     return (
       <div class="w-full" style="aspect-ratio: 2 / 3;">
-        <a
-          ref={containerRef as any}
-          href={href}
-          data-pswp-width={w}
-          data-pswp-height={h}
-          class="block cursor-zoom-in"
-        >
-          <PictureDynamic
-            base={img.base}
-            alt={img.alt}
-            sizes={DEFAULT_SIZES}
-            eager
-            className="w-full max-h-[70vh] object-contain rounded-lg"
-          />
-        </a>
+        <img
+          src={img.url}
+          alt={img.alt}
+          class="w-full max-h-[70vh] object-contain rounded-lg"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        />
       </div>
     );
   }
 
-  // ——— több kép esetén
-  return (
-    <div class="w-full relative">
-      <div class="overflow-hidden rounded-lg relative" ref={viewportRef}>
-        <div class="flex" ref={containerRef}>
-          {images.map((img, i) => {
-            const target = lbTargets[i];
-            const href = target?.url ?? `${img.base}-${LIGHTBOX_DEFAULT_W}.jpg`;
-            const w = target?.w ?? LIGHTBOX_DEFAULT_W;
-            const h = target?.h ?? LIGHTBOX_DEFAULT_H;
+  // ha base → működjön a lightbox
+  const target = lbTargets[0];
+  const href = target?.url ?? `${img.base}-${LIGHTBOX_DEFAULT_W}.jpg`;
+  const w = target?.w ?? LIGHTBOX_DEFAULT_W;
+  const h = target?.h ?? LIGHTBOX_DEFAULT_H;
 
-            return (
-              <a
-                key={img.base || i}
-                href={href}
-                data-pswp-width={w}
-                data-pswp-height={h}
-                class="flex-[0_0_100%] min-w-0 cursor-zoom-in block"
-                onClick={() => setSelected(i)}
-              >
+  return (
+    <div class="w-full" style="aspect-ratio: 2 / 3;">
+      <a
+        ref={containerRef as any}
+        href={href}
+        data-pswp-width={w}
+        data-pswp-height={h}
+        class="block cursor-zoom-in"
+      >
+        <PictureDynamic
+          base={img.base}
+          alt={img.alt}
+          sizes={DEFAULT_SIZES}
+          eager
+          className="w-full max-h-[70vh] object-contain rounded-lg"
+        />
+      </a>
+    </div>
+  );
+}
+
+// ——— több kép esetén
+return (
+  <div class="w-full relative">
+    <div class="overflow-hidden rounded-lg relative" ref={viewportRef}>
+      <div class="flex" ref={containerRef}>
+        {images.map((img, i) => {
+          const target = lbTargets[i];
+          const href =
+            img.kind === "base"
+              ? target?.url ?? `${img.base}-${LIGHTBOX_DEFAULT_W}.jpg`
+              : img.url;
+          const w = target?.w ?? LIGHTBOX_DEFAULT_W;
+          const h = target?.h ?? LIGHTBOX_DEFAULT_H;
+
+          return (
+            <a
+              key={img.kind === "base" ? img.base : img.url}
+              href={href}
+              data-pswp-width={w}
+              data-pswp-height={h}
+              class="flex-[0_0_100%] min-w-0 cursor-zoom-in block"
+              onClick={() => setSelected(i)}
+            >
+              {img.kind === "base" ? (
                 <PictureDynamic
                   base={img.base}
                   alt={img.alt}
@@ -347,37 +405,51 @@ export default function ProductGallery({ product }: Props) {
                   height={800}
                   className="w-full max-h-[70vh] object-contain"
                 />
-              </a>
-            );
-          })}
-        </div>
+              ) : (
+                <img
+                  src={img.url}
+                  alt={img.alt}
+                  class="w-full max-h-[70vh] object-contain"
+                  loading={i === 0 ? "eager" : "lazy"}
+                  decoding="async"
+                />
+              )}
+            </a>
+          );
+        })}
+      </div>
 
-        {/* nav gombok */}
-        <div class="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-2 pointer-events-none md:hidden lg:flex">
-          <button
-            type="button"
-            aria-label="Előző kép"
-            onClick={(e) => prev(e as any)}
-            class="pointer-events-auto h-12 w-12 text-2xl grid place-items-center rounded-full 
-                  bg-white/80 border border-gray-200 shadow hover:bg-white 
-                  active:scale-95 backdrop-blur 
-                  dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-800"
-          >
-            <span class="relative bottom-[2px]">‹</span>
-          </button>
-          <button
-            type="button"
-            aria-label="Következő kép"
-            onClick={(e) => next(e as any)}
-            class="pointer-events-auto h-12 w-12 text-2xl grid place-items-center rounded-full 
-                  bg-white/80 border border-gray-200 shadow hover:bg-white 
-                  active:scale-95 backdrop-blur
-                  dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-800"
-          >
-            <span class="relative bottom-[2px]">›</span>
-          </button>
-        </div>
-
+      {/* navigációs gombok */}
+      <div class="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-2 pointer-events-none md:hidden lg:flex">
+        <button
+          type="button"
+          aria-label="Előző kép"
+          onClick={(e) => {
+            e.stopPropagation();
+            emblaRef.current?.scrollPrev();
+          }}
+          class="pointer-events-auto h-12 w-12 text-2xl grid place-items-center rounded-full 
+                bg-white/80 border border-gray-200 shadow hover:bg-white 
+                active:scale-95 backdrop-blur 
+                dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-800"
+        >
+          <span class="relative bottom-[2px]">‹</span>
+        </button>
+        <button
+          type="button"
+          aria-label="Következő kép"
+          onClick={(e) => {
+            e.stopPropagation();
+            emblaRef.current?.scrollNext();
+          }}
+          class="pointer-events-auto h-12 w-12 text-2xl grid place-items-center rounded-full 
+                bg-white/80 border border-gray-200 shadow hover:bg-white 
+                active:scale-95 backdrop-blur
+                dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-800"
+        >
+          <span class="relative bottom-[2px]">›</span>
+        </button>
+      </div>
 
       {/* pont indikátorok mobilon */}
       <div class="mt-2 flex justify-center gap-2 pointer-events-none z-[1] md:hidden">
@@ -388,51 +460,59 @@ export default function ProductGallery({ product }: Props) {
               key={i}
               type="button"
               aria-label={`Ugrás a(z) ${i + 1}. képre`}
-              aria-current={isActive ? 'true' : 'false'}
+              aria-current={isActive ? "true" : "false"}
               onClick={(e) => {
-                (e as any).stopPropagation();
-                goTo(i);
+                e.stopPropagation();
+                emblaRef.current?.scrollTo(i);
               }}
               class={`pointer-events-auto h-2.5 w-2.5 rounded-full border transition
                 ${
                   isActive
-                    ? 'bg-orange-500 border-orange-500'
-                    : 'bg-gray-400/80 border-gray-400 hover:bg-gray-500 dark:bg-white/80 dark:border-white dark:hover:bg-white'
+                    ? "bg-orange-500 border-orange-500"
+                    : "bg-gray-400/80 border-gray-400 hover:bg-gray-500 dark:bg-white/80 dark:border-white dark:hover:bg-white"
                 }`}
             />
           );
         })}
       </div>
-
-      </div>
-
-      {/* thumbs — külön thumbs fájl nélkül a -500 variánst használjuk */}
-      <div class="hidden md:flex gap-2 mt-4 overflow-x-auto no-scrollbar">
-        {images.map((img, i) => {
-          const isActive = i === selected;
-          return (
-            <button
-              key={img.base || i}
-              type="button"
-              aria-label={`Kép ${i + 1}`}
-              onClick={() => goTo(i)}
-              class={`h-16 w-16 rounded overflow-hidden border transition
-                      ${isActive ? 'border-orange-500 ring-2 ring-orange-500'
-                        : 'border-gray-200 hover:ring-2 hover:ring-orange-400'}`}
-            >
-              <img
-                src={`${img.base}-${THUMB_WIDTH}.jpg`}
-                alt={img.alt}
-                class="h-full w-full object-contain"
-                loading="lazy"
-                decoding="async"
-                width={THUMB_WIDTH}
-                height={Math.round((THUMB_WIDTH * 3) / 4)}
-              />
-            </button>
-          );
-        })}
-      </div>
     </div>
-  );
+
+    {/* thumbs */}
+    <div class="hidden md:flex gap-2 mt-4 overflow-x-auto no-scrollbar">
+      {images.map((img, i) => {
+        const isActive = i === selected;
+        const thumbSrc =
+          img.kind === "base"
+            ? `${img.base}-${THUMB_WIDTH}.jpg`
+            : img.url;
+
+        return (
+          <button
+            key={img.kind === "base" ? img.base : img.url}
+            type="button"
+            aria-label={`Kép ${i + 1}`}
+            onClick={() => emblaRef.current?.scrollTo(i)}
+            class={`h-16 w-16 rounded overflow-hidden border transition
+                    ${
+                      isActive
+                        ? "border-orange-500 ring-2 ring-orange-500"
+                        : "border-gray-200 hover:ring-2 hover:ring-orange-400"
+                    }`}
+          >
+            <img
+              src={thumbSrc}
+              alt={img.alt}
+              class="h-full w-full object-contain"
+              loading="lazy"
+              decoding="async"
+              width={THUMB_WIDTH}
+              height={Math.round((THUMB_WIDTH * 3) / 4)}
+            />
+          </button>
+        );
+      })}
+    </div>
+  </div>
+);
+
 }

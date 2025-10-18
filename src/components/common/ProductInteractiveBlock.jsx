@@ -5,30 +5,68 @@ import ModalWrapper from '../ui/ModalWrapper.js';
 export default function ProductInteractiveBlock({ product }) {
   const [quantity, setQuantity] = useState(1);
   
-  let basePrice = product.price;
-  let unit = 'darab';
 
-  if (!basePrice || basePrice === 0) {
-    if (product.m2price && product.m2price > 0) {
-      basePrice = product.m2price;
-      unit = 'm²';
-    } else if (product.m3price && product.m3price > 0) {
-      basePrice = product.m3price;
-      unit = 'm³';
-    } else if (product.mprice && product.mprice > 0) {
-      basePrice = product.mprice;
-      unit = 'm';
-    } else if (product.palprice && product.palprice > 0) {
-      basePrice = product.palprice;
-      unit = 'raklap';
+  function resolveFinalPrice(product) {
+    const now = new Date();
+
+    // Segédfüggvény, ami megmondja, hogy a discount dátuma még érvényes-e
+    const isValidDiscount = (dateStr) => {
+      if (!dateStr) return true; // ha nincs dátum megadva, tekintsük érvényesnek
+      const discountDate = new Date(dateStr);
+      return discountDate > now; // csak ha jövőbeni a dátum
+    };
+
+    const candidates = [
+      {
+        base: product.price,
+        discount: product.discountPrice,
+        validUntil: product.discountValidUntil,
+        unit: "Ft/db",
+      },
+      {
+        base: product.mprice,
+        discount: product.discountMPrice,
+        validUntil: product.discountValidUntil,
+        unit: "Ft/m",
+      },
+      {
+        base: product.m2price,
+        discount: product.discountM2Price,
+        validUntil: product.discountValidUntil,
+        unit: "Ft/m²",
+      },
+      {
+        base: product.m3price,
+        discount: product.discountM3Price,
+        validUntil: product.discountValidUntil,
+        unit: "Ft/m³",
+      },
+      {
+        base: product.palprice,
+        discount: product.discountPalPrice,
+        validUntil: product.discountValidUntil,
+        unit: "Ft/raklap",
+      },
+    ];
+
+    for (const c of candidates) {
+      if (c.base != null && c.base > 0) {
+        const discountActive =
+          c.discount != null && c.discount < c.base && isValidDiscount(c.validUntil);
+        const finalPrice = discountActive ? c.discount : c.base;
+        return {
+          price: finalPrice,
+          unit: c.unit,
+          hasDiscount: discountActive,
+        };
+      }
     }
+
+    return { price: null, unit: "", hasDiscount: false };
   }
 
-  const price = product.discountPrice || (
-    product.discountPercent
-      ? Math.round(basePrice * (1 - product.discountPercent / 100))
-      : basePrice
-  );
+let { price, unit} = resolveFinalPrice(product);
+
 
 
   return (

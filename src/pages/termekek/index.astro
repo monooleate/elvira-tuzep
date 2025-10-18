@@ -1,12 +1,14 @@
 ---
 import Layout from '../../layouts/PageLayout.astro';
-import productsData from '../../data/products.json';
 import MainCategoryGrid from '../../components/widgets/Tabs.jsx';
+import { fetchCategoriesWithProducts } from '../../lib/medusa-adapter'
 
 const metadata = {
   title: 'Termékek | Elvira Tüzép',
   description: 'Fedezd fel az Elvira Tüzép teljes faanyag kínálatát: szárított fűrészáru, gyalult fa, brikett és további minőségi termékek egy helyen.'
 };
+
+const productsData = await fetchCategoriesWithProducts()
 
 const base = 'https://elviratuzep.hu';
 const pageUrl = `${base}/termekek`;

@@ -1,17 +1,18 @@
 ---
 import Layout from '../../../layouts/PageLayout.astro';
-import productsData from '../../../data/products.json';
+import { fetchCategoriesOnly, fetchProductsByCategorySlug } from '../../../lib/medusa-adapter'
 import Metadata from '~/components/common/Metadata.astro';
 import DiscountCardClient from '~/components/widgets/DiscountCardClient';
 
 export async function getStaticPaths() {
-  return productsData.map((cat) => ({
+  const categories = await fetchCategoriesOnly()
+  return categories.map((cat) => ({
     params: { kategoria: cat.slug },
   }));
 }
 
 const { params } = Astro;
-const currentCategory = productsData.find((cat) => cat.slug === params.kategoria);
+const currentCategory = await fetchProductsByCategorySlug(params.kategoria)
 
 if (!currentCategory) {
   throw new Error(`A(z) "${params.kategoria}" kategória nem található.`);

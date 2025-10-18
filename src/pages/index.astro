@@ -16,7 +16,7 @@ import SpecialOffers, { buildSpecialOffersItemList } from '~/components/widgets/
 import { computeDiscounted } from '~/lib/discounts';
 import CategoryGrid from '../components/widgets/CategoryGrid.astro';
 import MainCategoryGrid from '../components/widgets/Tabs.jsx';
-import productsData from '../data/products.json';
+import { fetchCategoriesOnly, fetchDiscountedProducts } from '../lib/medusa-adapter'
 import MapWidget from '../components/widgets/MapWidget.astro';
 
 import heroImg from '../assets/images/elvira-tuzep-hero.png';
@@ -112,7 +112,8 @@ const schemaHome = [
   }
 ];
 
-const discounted = computeDiscounted(productsData);
+const productsData = await fetchCategoriesOnly()
+const discounted = await fetchDiscountedProducts();
 const itemListJsonLd = buildSpecialOffersItemList(discounted);
 
 ---
@@ -187,7 +188,7 @@ const itemListJsonLd = buildSpecialOffersItemList(discounted);
     description="" 
   />
 
-  <SpecialOffers />
+  <SpecialOffers discounted={discounted}/>
   
   <CallToAction>
     <Fragment slot="title">
