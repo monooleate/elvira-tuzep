@@ -22,7 +22,7 @@ const [product, category, relatedProducts] = await Promise.all([
   fetchRelatedProducts(params.kategoria, params.slug)
 ])
 
-/* console.log(fetchProductBySlug(params.slug)) */
+console.log(fetchProductBySlug(params.slug))
 
 if (!product || !category) {
   console.error("❌ Product page fetch failed:", params.slug)
