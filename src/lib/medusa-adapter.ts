@@ -89,6 +89,7 @@ async function safeFetchJson(url: string, fallback: any = null) {
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
     const json = await res.json()
     /* if (import.meta.env.DEV) console.log("✅ Fetched:", url) */
+    console.warn(`ℹ️ USE_API=true → API lekérés sikeres (${url})`);
     return json
   } catch (err: any) {
     /* console.warn("⚠️ Medusa fetch failed:", url, err.message) */
