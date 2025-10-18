@@ -29,8 +29,8 @@ async function main() {
   console.log("🛠️ Termékadatok frissítése Medusából...")
 
   console.log("ENV CHECK", {
-  PUBLIC_USE_API: import.meta.env.PUBLIC_USE_API,
-  PUBLIC_API_BASE: import.meta.env.PUBLIC_API_BASE,
+  PUBLIC_USE_API: process.env.PUBLIC_USE_API,
+  PUBLIC_API_BASE: process.env.PUBLIC_API_BASE,
   SECRET_API: process.env.SECRET_API ? "***" : "missing"
 })
 
