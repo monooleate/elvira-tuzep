@@ -56,8 +56,8 @@ export type Category = {
   products?: Product[]
 }
 
-const TOKEN = import.meta.env.SECRET_API
-const base = import.meta.env.PUBLIC_API_BASE
+const TOKEN = process.env.SECRET_API
+const base = process.env.PUBLIC_API_BASE
 
 // 🧭 Globális vezérlőkapcsoló
 // Használja az API-t, vagy dolgozzon csak a JSON-nal?
