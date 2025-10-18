@@ -93,6 +93,7 @@ async function safeFetchJson(url: string, fallback: any = null) {
     return json
   } catch (err: any) {
     /* console.warn("⚠️ Medusa fetch failed:", url, err.message) */
+    console.warn(`ℹ️ USE_API=error → API lekérés közben ERROR (${url})`);
     return fallback
   }
 }
