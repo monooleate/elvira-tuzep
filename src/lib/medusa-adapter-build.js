@@ -50,6 +50,7 @@ async function safeFetchJson(url, fallback = null) {
 export async function fetchAllCategoriesWithProducts(productUpload = false) {
   const url = `${base}/admin/collections?limit=100`
   const data = await safeFetchJson(url, { collections: [] })
+  console.log(`✅ Szerver válasz: ${data}`)
 
   if (!data || !Array.isArray(data.collections) || data.collections.length === 0) {
     return productsLocal

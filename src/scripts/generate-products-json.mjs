@@ -28,6 +28,12 @@ function readFallback(filePath) {
 async function main() {
   console.log("🛠️ Termékadatok frissítése Medusából...")
 
+  console.log("ENV CHECK", {
+  PUBLIC_USE_API: import.meta.env.PUBLIC_USE_API,
+  PUBLIC_API_BASE: import.meta.env.PUBLIC_API_BASE,
+  SECRET_API: process.env.SECRET_API ? "***" : "missing"
+})
+
   // 1️⃣ Próbáljuk Medusa API-ról
   try {
     const categories = await fetchCategoriesWithProducts()
