@@ -113,7 +113,7 @@ async function safeFetchJson(url: string, fallback: any = null) {
       headers: {
         "Content-Type": "application/json",
         "Authorization": "Basic " + TOKEN,
-        "Cache-Control": "no-cache",
+        "Cache-Control": "s-maxage=300, stale-while-revalidate=86400",
       },
     })
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
