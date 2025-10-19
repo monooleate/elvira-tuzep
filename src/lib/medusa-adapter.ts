@@ -56,14 +56,44 @@ export type Category = {
   products?: Product[]
 }
 
-const TOKEN = process.env.SECRET_API
-const base = process.env.PUBLIC_API_BASE
+// 🧭 Környezeti változók (development vs production)
+let TOKEN: string | undefined;
+let BASE: string | undefined;
+let USE_API: boolean;
 
-// 🧭 Globális vezérlőkapcsoló
-// Használja az API-t, vagy dolgozzon csak a JSON-nal?
-// Állítsd be .env-ben: USE_API=true / false
-const USE_API = import.meta.env.PUBLIC_USE_API === "true"
+if (process.env.NODE_ENV === "development") {
+  // fejlesztés alatt az import.meta.env értékeit használjuk
+  TOKEN = import.meta.env.SECRET_API;
+  BASE = import.meta.env.PUBLIC_API_BASE || import.meta.env.PUBLIC_API_URL;
+  USE_API = import.meta.env.PUBLIC_USE_API === "true";
+  console.log("🧪 Fejlesztői környezet: import.meta.env értékek használatban.");
+} else {
+  // SSR / Netlify / production alatt a process.env értékeit
+  TOKEN = process.env.SECRET_API;
+  BASE = process.env.PUBLIC_API_BASE || process.env.PUBLIC_API_URL;
+  USE_API = process.env.USE_API === "true";
+  console.log("🚀 Production SSR: process.env értékek használatban.");
+}
 
+// ENV validáció
+if (!BASE) {
+  console.warn("⚠️ Nincs beállítva PUBLIC_API_BASE vagy PUBLIC_API_URL")
+}
+if (!TOKEN) {
+  console.warn("⚠️ Nincs beállítva SECRET_API token")
+}
+
+// Diagnosztikai log – csak fejlesztői módban
+if (process.env.NODE_ENV !== "production") {
+  console.log("🔍 SSR ENV:", {
+    NODE_ENV: process.env.NODE_ENV,
+    USE_API,
+    BASE: BASE,
+    TOKEN: TOKEN ? "[HIDDEN]" : "❌ missing",
+  })
+}
+
+// 🪫 Fallback adatforrás
 const fallbackProducts: Category[] = Array.isArray(productsLocal) && productsLocal.length > 0
   ? (productsLocal as Category[])
   : (productsSafe as Category[])
@@ -83,7 +113,7 @@ async function safeFetchJson(url: string, fallback: any = null) {
       headers: {
         "Content-Type": "application/json",
         "Authorization": "Basic " + TOKEN,
-        "Cache-Control": "s-maxage=300, stale-while-revalidate=86400",
+        "Cache-Control": "no-cache",
       },
     })
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
@@ -104,7 +134,7 @@ async function safeFetchJson(url: string, fallback: any = null) {
 export async function fetchAllCategoriesWithProducts(
   productUpload: boolean = false
 ): Promise<Category[]> {
-  const url = `${base}/admin/collections?limit=100`
+  const url = `${BASE}/admin/collections?limit=100`
 
   const data = await safeFetchJson(url, { collections: [] })
 
@@ -125,7 +155,7 @@ export async function fetchAllCategoriesWithProducts(
 
       if (productUpload) {
         const productData = await safeFetchJson(
-          `${base}/admin/products?collection_id=${c.id}&limit=500`,
+          `${BASE}/admin/products?collection_id=${c.id}&limit=500`,
           { products: [] }
         )
 
@@ -242,7 +272,7 @@ export async function fetchAllCategoriesWithProducts(
 
 let cachedCategories: Category[] = []
 let lastFetchTime = 0
-const CACHE_TTL = 1000 * 60 * (Number(import.meta.env.CACHE_TTL_MINUTES) || 5)
+const CACHE_TTL = 1000 * 60 * (Number(process.env.CACHE_TTL_MINUTES) || 5);
 
 export async function getCachedCategoriesWithProducts(): Promise<Category[]> {
   const now = Date.now()
@@ -273,7 +303,7 @@ export async function fetchProductsByCategorySlug(slug: string) {
 }
 
 export async function fetchProductPaths(): Promise<{ params: { kategoria: string; slug: string } }[]>  {
-  const collections = await safeFetchJson(`${base}/admin/collections?limit=100`, { collections: [] })
+  const collections = await safeFetchJson(`${BASE}/admin/collections?limit=100`, { collections: [] })
   const paths: any[] = []
 
   if (!collections.collections || collections.collections.length === 0) {
@@ -287,7 +317,7 @@ export async function fetchProductPaths(): Promise<{ params: { kategoria: string
 
   for (const c of collections.collections || []) {
     const productData = await safeFetchJson(
-      `${base}/admin/products?collection_id=${c.id}&limit=500`,
+      `${BASE}/admin/products?collection_id=${c.id}&limit=500`,
       { products: [] }
     )
     const products = productData?.products ?? []

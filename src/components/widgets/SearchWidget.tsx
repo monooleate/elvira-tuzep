@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef, useMemo } from 'preact/hooks';
 import Fuse from 'fuse.js';
-import { fetchCategoriesWithProducts } from '../../lib/medusa-adapter'
 
-const productsData = await fetchCategoriesWithProducts()
+import productsData from "../../data/products.json" with { type: "json" }
+
+/* const productsData = await fetchCategoriesWithProducts() */
 
 type MaybeNum = number | null;
 type MaybeStr = string | null;
