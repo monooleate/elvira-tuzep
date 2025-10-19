@@ -71,8 +71,8 @@ if (process.env.NODE_ENV === "development") {
   // SSR / Netlify / production alatt a process.env értékeit
   TOKEN = process.env.SECRET_API;
   BASE = process.env.PUBLIC_API_BASE || process.env.PUBLIC_API_URL;
-  USE_API = process.env.USE_API === "true";
-  console.log("🚀 Production SSR: process.env értékek használatban.");
+  USE_API = process.env.PUBLIC_USE_API === "true";
+  console.log(`🚀 Production SSR: process.env értékek használatban. Token= ${TOKEN} Base= ${BASE} Use_API= ${USE_API}`);
 }
 
 // ENV validáció

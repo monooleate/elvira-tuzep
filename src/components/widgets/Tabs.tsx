@@ -632,7 +632,7 @@ const filteredProducts = useMemo(() => {
 
       {/* Sticky navigáció: vissza + aktuális főkategória jelző */}
       {showBackSticky && (
-        <div class="sticky top-[calc(env(safe-area-inset-top)+86px)] z-40 dark:bg-gray-900/80 backdrop-blur">
+        <div class="sticky top-[calc(env(safe-area-inset-top)+72px)] md:top-[calc(env(safe-area-inset-top)+86px)] z-40 dark:bg-gray-900/80 backdrop-blur">
           <div class="mx-auto max-w-6xl">
             <div class="flex flex-wrap items-center justify-center gap-2 py-2">
               <button

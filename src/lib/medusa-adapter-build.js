@@ -10,12 +10,6 @@ import "dotenv/config"
 const TOKEN = process.env.SECRET_API
 const base = process.env.PUBLIC_API_BASE
 
-
-// 🧭 Globális vezérlőkapcsoló
-// Használja az API-t, vagy dolgozzon csak a JSON-nal?
-// Állítsd be .env-ben: USE_API=true / false
-/* const USE_API = import.meta.env.USE_API === "true" */
-
 const fallbackProducts =
   Array.isArray(productsLocal) && productsLocal.length > 0
     ? productsLocal
@@ -25,6 +19,7 @@ const fallbackProducts =
  * Helper: biztonságos fetch cache-eléssel
  * --------------------------------------------------- */
 async function safeFetchJson(url, fallback = null) {
+  /* Always build json fallback at runtime */
   if (false) {
     return fallback
   }
