@@ -66,13 +66,13 @@ if (process.env.NODE_ENV === "development") {
   TOKEN = import.meta.env.SECRET_API;
   BASE = import.meta.env.PUBLIC_API_BASE || import.meta.env.PUBLIC_API_URL;
   USE_API = import.meta.env.PUBLIC_USE_API === "true";
-  console.log("🧪 Fejlesztői környezet: import.meta.env értékek használatban.");
+/*   console.log("🧪 Fejlesztői környezet: import.meta.env értékek használatban."); */
 } else {
   // SSR / Netlify / production alatt a process.env értékeit
   TOKEN = process.env.SECRET_API;
   BASE = process.env.PUBLIC_API_BASE || process.env.PUBLIC_API_URL;
   USE_API = process.env.PUBLIC_USE_API === "true";
-  console.log(`🚀 Production SSR: process.env értékek használatban. Token= ${TOKEN} Base= ${BASE} Use_API= ${USE_API}`);
+/*   console.log(`🚀 Production SSR: process.env értékek használatban. Token= ${TOKEN} Base= ${BASE} Use_API= ${USE_API}`); */
 }
 
 // ENV validáció
@@ -104,7 +104,7 @@ const fallbackProducts: Category[] = Array.isArray(productsLocal) && productsLoc
 async function safeFetchJson(url: string, fallback: any = null) {
 
   if (!USE_API) {
-    console.warn(`ℹ️ USE_API=false → API lekérés kihagyva (${url})`);
+/*     console.warn(`ℹ️ USE_API=false → API lekérés kihagyva (${url})`); */
     return fallback;
   }
   try {
@@ -119,11 +119,11 @@ async function safeFetchJson(url: string, fallback: any = null) {
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
     const json = await res.json()
     /* if (import.meta.env.DEV) console.log("✅ Fetched:", url) */
-    console.warn(`ℹ️ USE_API=true → API lekérés sikeres (${url})`);
+/*     console.warn(`ℹ️ USE_API=true → API lekérés sikeres (${url})`); */
     return json
   } catch (err: any) {
     /* console.warn("⚠️ Medusa fetch failed:", url, err.message) */
-    console.warn(`ℹ️ USE_API=error → API lekérés közben ERROR (${url})`);
+/*     console.warn(`ℹ️ USE_API=error → API lekérés közben ERROR (${url})`); */
     return fallback
   }
 }
@@ -275,13 +275,26 @@ let lastFetchTime = 0
 const CACHE_TTL = 1000 * 60 * (Number(process.env.CACHE_TTL_MINUTES) || 5);
 
 export async function getCachedCategoriesWithProducts(): Promise<Category[]> {
-  const now = Date.now()
-  if (cachedCategories && now - lastFetchTime < CACHE_TTL) return cachedCategories
+  const now = Date.now();
 
-  const cats = await fetchAllCategoriesWithProducts(true)
-  cachedCategories = (cats && cats.length > 0) ? cats : fallbackProducts
-  lastFetchTime = now
-  return cachedCategories
+  if (cachedCategories && now - lastFetchTime < CACHE_TTL) {
+/*     console.log("🟢 CACHE HIT → adatok memóriából"); */
+    return cachedCategories;
+  }
+
+/*   console.log("🟡 CACHE MISS → új Medusa lekérés..."); */
+  const cats = await fetchAllCategoriesWithProducts(true);
+
+  if (cats && cats.length > 0) {
+/*     console.log("✅ CACHE UPDATE → friss adatok mentve"); */
+    cachedCategories = cats;
+    lastFetchTime = now;
+  } else {
+/*     console.warn("⚠️ CACHE UPDATE FAIL → fallback JSON mentve"); */
+    cachedCategories = fallbackProducts;
+  }
+
+  return cachedCategories;
 }
 
 
