@@ -125,6 +125,13 @@ export default function MainCategoryGrid({
             'OSB lap kínálatunkban megtalálja a legnépszerűbb vastagságokat és méreteket: 6 mm-től 22 mm-ig. Az OSB lap kedvező árú, sokoldalú építőanyag falak, tetők és padlók burkolásához. Népszerű alternatíva az OBI és Praktiker OSB lap választékhoz képest – közvetlenül, raktárról elérhető, széles választékban.',
           image: '/kategoriak/osb3_800x600.jpg',
           imageAlt: 'OSB lapok különböző méretekben és vastagságban'
+        },
+        'Kertifa': {
+          title: 'Kertifa',
+          body:
+            'Kertifa kategóriánkban nyomás alatt impregnált, telített faanyagokat találsz kültéri felhasználásra – legyen szó kerítésoszlopról, hegyezett cölöpről, rúdfáról, deszkáról vagy pallóról. Ezek a tartós, időjárás-álló faanyagok ellenállnak a nedvességnek, gombáknak és rovaroknak, így ideálisak kertépítéshez, faültetéshez, játszótéri és szerkezeti elemekhez.',
+          image: '',
+          imageAlt: 'Kertbe szánt kezelt fa különböző méretekben és típusokban'
         }
       },
   productListing = false,
