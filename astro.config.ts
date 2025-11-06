@@ -88,6 +88,12 @@ export default defineConfig({
         '~': path.resolve(__dirname, './src'),
       },
     },
+    optimizeDeps: {
+      exclude: ["@medusajs/js-sdk"], // ne próbálja prebundle-ölni
+    },
+    ssr: {
+      noExternal: ["@medusajs/js-sdk"], // így CJS fallback lesz
+    },
   },
 
   adapter: netlify(),
