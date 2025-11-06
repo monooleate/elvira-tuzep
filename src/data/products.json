@@ -6626,7 +6626,7 @@
         "m2price": null,
         "m3price": null,
         "discountPrice": null,
-        "discountPercent": 5,
+        "discountPercent": 6,
         "discountValidUntil": "2025-09-30T22:00:00.000Z",
         "stock": 1,
         "specs": {
