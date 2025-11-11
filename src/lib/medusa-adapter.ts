@@ -7,6 +7,7 @@ import productsLocal from "../data/products.json" with { type: "json" }
 import productsSafe from "../data/products_safe.json" with { type: "json" }
 import { sdk } from "../lib/medusa-client"
 import type { HttpTypes } from "@medusajs/types"
+import { USE_API } from "~/lib/useApiFlag.ts";
 
 /* -----------------------------------------------------
  *  Típusdefiníciók
@@ -39,6 +40,7 @@ export type Product = {
   mprice?: number | null
   m2price?: number | null
   m3price?: number | null
+  palprice?: number | null
   discountPrice?: number | null
   discountPercent?: number | null
   discountValidUntil?: string | null
@@ -76,6 +78,10 @@ const fallbackProducts: Category[] =
 export async function listCollections(
   queryParams: Record<string, string> = {}
 ): Promise<{ collections: HttpTypes.StoreCollection[]; count: number }> {
+  if (!USE_API) {
+/*     console.warn("🟡 listCollections kihagyva (USE_API=false)"); */
+    return { collections: [], count: 0 };
+  } 
   queryParams.limit = queryParams.limit || "100"
   queryParams.offset = queryParams.offset || "0"
   queryParams.fields = queryParams.fields || "id,handle,title,metadata"
@@ -110,12 +116,12 @@ async function listProductsByCollectionId(collectionId: string, limit = 500) {
         query: {
           collection_id: collectionId,
           limit: String(limit),
-          fields: "id,handle,title,metadata,*variants,images",
+          fields: "id,handle,title,metadata,description,*variants,variants.prices.*,*images",
         },
         cache: "force-cache",
       }
     )
-    console.log(res.products.variants)
+/*     console.log(res.products) */
     return res.products ?? []
   } catch (e: any) {
     console.error(`⚠️ Hiba a terméklekérésnél (collection_id=${collectionId}):`, e?.message)
@@ -130,13 +136,19 @@ export async function fetchAllCategoriesWithProducts(
   includeProducts = false
 ): Promise<Category[]> {
   try {
+    // 🔹 Ha USE_API=false → azonnal fallback
+    if (!USE_API) {
+/*       console.info("🟡 USE_API=false → fallback JSON adat használatban."); */
+      return fallbackProducts;
+    }
+
     // ✅ Csak az alap mezőket kérjük le
     const { collections } = await listCollections({
       fields: "id,handle,title,metadata",
     })
 
     if (!collections?.length) {
-      console.warn("⚠️ Nincs collection → fallback JSON.")
+/*       console.warn("⚠️ Nincs collection → fallback JSON.") */
       return fallbackProducts
     }
 
@@ -177,7 +189,7 @@ export async function fetchAllCategoriesWithProducts(
                     height: v.height ?? null,
                   }))
                 : null
-
+if (variants.length > 1){console.log(variants)} 
             return {
               name: p.title,
               slug: p.handle,
@@ -201,14 +213,15 @@ export async function fetchAllCategoriesWithProducts(
               image: p.metadata?.image ?? null,
               images,
               sku: variant?.sku,
-              price: variant?.calculated_price ?? variant?.prices?.[0]?.amount ?? null,
+              price: variant?.prices?.[0]?.amount ?? null,
               mprice: variant?.metadata?.mprice ?? null,
               m2price: variant?.metadata?.m2price ?? null,
               m3price: variant?.metadata?.m3price ?? null,
+              palprice: variant?.metadata?.palprice ?? null,
               discountPrice: variant?.metadata?.discountPrice ?? null,
               discountPercent: variant?.metadata?.discountPercent ?? null,
               discountValidUntil: variant?.metadata?.discountValidUntil ?? null,
-              stock: variant?.inventory_quantity ?? null,
+              stock: variant?.metadata?.inventory ?? null,
               specs: p.metadata?.specs ?? {},
               shippingDetails: {
                 weight: variant?.weight ?? null,
@@ -221,7 +234,7 @@ export async function fetchAllCategoriesWithProducts(
             }
           })
         }
-       /*  console.log(mappedProducts) */
+/*         console.log(mappedProducts) */
         return {
           maincategory: c.metadata?.maincategory ?? "",
           category: c.title,
@@ -256,6 +269,10 @@ const CACHE_TTL = 1000 * 60 * (Number(import.meta.env.CACHE_TTL_MINUTES) || 5)
 
 export async function getCachedCategoriesWithProducts(): Promise<Category[]> {
   const now = Date.now()
+   if (!USE_API) {
+/*     console.info("🟡 USE_API=false → getCachedCategoriesWithProducts csak fallbacket ad vissza.") */
+    return fallbackProducts
+  }
   if (cachedCategories && now - lastFetchTime < CACHE_TTL) return cachedCategories
 
   const cats = await fetchAllCategoriesWithProducts(true)
@@ -326,3 +343,50 @@ export async function fetchDiscountedProducts(limit = 20): Promise<Product[]> {
 
   return discounted.slice(0, limit)
 }
+
+/* -----------------------------------------------------
+ *  Build-időben használható termékútvonalak lekérése
+ *  → csak a Store API-t használja (biztonságos publikusan is)
+ * --------------------------------------------------- */
+export async function fetchProductPaths() {
+  try {
+    if (!USE_API) {
+/*       console.info("🟡 USE_API=false → static product path generálás fallbackből."); */
+      return fallbackProducts.flatMap((cat) =>
+        (cat.products || []).map((p) => ({
+          params: { kategoria: cat.slug, slug: p.slug },
+        }))
+      );
+    }
+    // Gyors cache – ha már le vannak töltve a kategóriák termékekkel
+    const categories = await getCachedCategoriesWithProducts();
+
+    // Ha cache/fallback JSON-ból jön
+    if (!categories?.length) {
+/*       console.warn("⚠️ Nincs kategória → fallback JSON-ból generálás."); */
+      return (fallbackProducts as Category[]).flatMap((cat) =>
+        (cat.products || []).map((p) => ({
+          params: { kategoria: cat.slug, slug: p.slug },
+        }))
+      );
+    }
+
+    // Store API-s útvonalak generálása
+    const paths = categories.flatMap((cat) =>
+      (cat.products || []).map((p) => ({
+        params: { kategoria: cat.slug, slug: p.slug },
+      }))
+    );
+
+    return paths;
+  } catch (e: any) {
+    console.error("❌ fetchProductPaths hiba:", e?.message);
+    // Fallback – biztonsági mentés a lokális JSON-ból
+    return (productsLocal as Category[]).flatMap((cat) =>
+      (cat.products || []).map((p) => ({
+        params: { kategoria: cat.slug, slug: p.slug },
+      }))
+    );
+  }
+}
+

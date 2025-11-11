@@ -2,6 +2,9 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 import { defineConfig } from 'astro/config';
+import dotenv from "dotenv";
+dotenv.config();
+const USE_API = process.env.PUBLIC_USE_API === "true";
 
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
@@ -25,8 +28,10 @@ const hasExternalScripts = false;
 const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroIntegration)[] = []) =>
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
+/* console.log("🧭 USE_API:", USE_API);
+console.log("🧭 PUBLIC_USE_API:", process.env.PUBLIC_USE_API); */
 export default defineConfig({
-  output: 'server',
+   output: USE_API ? "server" : "static",
 
   integrations: [tailwind({
     applyBaseStyles: false,

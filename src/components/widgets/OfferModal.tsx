@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'preact/hooks';
 import Button from '../ui/Button.tsx';
+import { createPortal } from 'preact/compat';
 
 export default function OfferModal({ product, unit, price, quantity, onClose }) {
   const [name, setName] = useState('');
@@ -12,6 +13,7 @@ export default function OfferModal({ product, unit, price, quantity, onClose }) 
   const [serverError, setServerError] = useState(null);
 
   const modalRef = useRef(null);
+  
 
   useEffect(() => {
     const handleEsc = (e) => {
@@ -98,7 +100,7 @@ export default function OfferModal({ product, unit, price, quantity, onClose }) 
     }
   };
 
-  return (
+  return createPortal(
     <div
       ref={modalRef}
       onClick={handleBackdropClick}
@@ -132,7 +134,7 @@ export default function OfferModal({ product, unit, price, quantity, onClose }) 
               <div class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm text-gray-800 dark:text-gray-200 mb-3">
                 <div><strong>Termék:</strong> {product.name}</div>
                 <div><strong>Cikkszám:</strong> {product.sku}</div>
-                <div><strong>Mennyiség:</strong> {quantity} {unit}</div>
+                <div><strong>Mennyiség:</strong> {quantity} db</div>
               </div>
 
               <div>
@@ -200,6 +202,7 @@ export default function OfferModal({ product, unit, price, quantity, onClose }) 
           </>
         )}
       </div>
-    </div>
+    </div>,
+  document.body
   );
 }

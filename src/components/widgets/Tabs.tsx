@@ -126,11 +126,11 @@ export default function MainCategoryGrid({
           image: '/kategoriak/osb3_800x600.jpg',
           imageAlt: 'OSB lapok különböző méretekben és vastagságban'
         },
-        'Kertifa': {
-          title: 'Kertifa',
+        'Telített kertifa': {
+          title: 'Telített kertifa',
           body:
             'Kertifa kategóriánkban nyomás alatt impregnált, telített faanyagokat találsz kültéri felhasználásra – legyen szó kerítésoszlopról, hegyezett cölöpről, rúdfáról, deszkáról vagy pallóról. Ezek a tartós, időjárás-álló faanyagok ellenállnak a nedvességnek, gombáknak és rovaroknak, így ideálisak kertépítéshez, faültetéshez, játszótéri és szerkezeti elemekhez.',
-          image: '',
+          image: '/kategoriak/telitett-kertifa.webp',
           imageAlt: 'Kertbe szánt kezelt fa különböző méretekben és típusokban'
         }
       },
