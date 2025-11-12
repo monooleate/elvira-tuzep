@@ -61,7 +61,7 @@ export default function OfferModal({ product, unit, price, quantity, onClose }) 
       quantity,
       unit,
       product: {
-        name: product.name,
+        name: product.title || product.name,
         slug: product.slug,
         price: price,
         unit: unit,
@@ -85,7 +85,7 @@ export default function OfferModal({ product, unit, price, quantity, onClose }) 
             // opcionálisan adhatsz át értéket is
             // value: price || 0,
             // currency: 'HUF'
-            name: product.name,
+            name: product.title || product.name,
             slug: product.slug,
             price: price,
             unit: unit,
@@ -132,7 +132,7 @@ export default function OfferModal({ product, unit, price, quantity, onClose }) 
               <h2 class="text-lg font-bold mb-2 text-gray-800 dark:text-gray-100">Ajánlatot kérek</h2>
 
               <div class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm text-gray-800 dark:text-gray-200 mb-3">
-                <div><strong>Termék:</strong> {product.name}</div>
+                <div><strong>Termék:</strong> {product.title || product.name}</div>
                 <div><strong>Cikkszám:</strong> {product.sku}</div>
                 <div><strong>Mennyiség:</strong> {quantity} db</div>
               </div>

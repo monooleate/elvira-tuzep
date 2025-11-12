@@ -5656,7 +5656,7 @@
         "m3price": null,
         "discountPrice": null,
         "discountPercent": 5,
-        "discountValidUntil": "2025-10-19T22:00:00.000Z",
+        "discountValidUntil": "2025-10-17T22:00:00.000Z",
         "stock": 1,
         "specs": {
           "Forma": {
@@ -6621,7 +6621,7 @@
           "ENplus A1"
         ],
         "sku": "pellet-fenyo-15kg-enplus-a1",
-        "price": 2799,
+        "price": 3390,
         "mprice": null,
         "m2price": null,
         "m3price": null,
@@ -7246,5 +7246,835 @@
         "category": "fureszelt-pallo"
       }
     ]
+  },
+  {
+    "maincategory": "Telített kertifa",
+    "category": "Telített hegyezett cölöp",
+    "slug": "telitett-hegyzett-colop",
+    "meta": {
+      "title": "Telített hegyezett cölöp | Nyomás alatt impregnált fa",
+      "description": "Körmart, nyomás alatt impregnált telített hegyezett cölöp faültetéshez, kerítéshez és szőlőkarónak. Tartós, időjárás-álló, nem mártott faanyag.",
+      "image": "/kategoriak/telitett-hegyezett-colop.webp"
+    },
+    "description": "A telített hegyezett cölöp – más néven körmart hegyezett cölöp vagy karózó oszlop – ideális választás faültetéshez, szőlőkarónak vagy kerítés oszlopnak. Hegyezett vége megkönnyíti a leverést, a nyomás alatt impregnált (nagynyomásos telített) kezelés pedig mélyen védi a fát a nedvességtől, gombától és rovaroktól. A telített hegyezett cölöp hosszú élettartamú, időjárás-álló megoldás minden kültéri felhasználásra, és sokkal tartósabb, mint a felületi mártással kezelt faanyag – így kerítésoszlopként is kiválóan alkalmazható.",
+    "faq": [
+      {
+        "id": 1,
+        "answer": "A telített hegyezett cölöp sokoldalúan alkalmazható",
+        "question": "Mire használható a telített hegyezett cölöp?"
+      },
+      {
+        "id": 2,
+        "answer": "A körmart hegyezett cölöp esztétikus, szabályos formájú és könnyen leverhető a talajba. A nyomás alatt impregnált kezelés mélyen a fa rostjaiba hatol, így tartósabb és ellenállóbb, mint egy kezeletlen vagy csak mártott faanyag.",
+        "question": "Miért jobb a körmart hegyezett cölöp, mint egy sima fenyőkaró?"
+      },
+      {
+        "id": 3,
+        "answer": "Egy megfelelően beépített, nyomás alatt impregnált kerítésoszlop általában 10–20 évig is megőrzi szerkezeti épségét. A nagynyomásos telítésnek köszönhetően lassabban korhad, ellenáll a gombáknak, rovaroknak és a talajnedvességnek.",
+        "question": "Meddig tart a nyomás alatt impregnált kerítésoszlop élettartama?"
+      },
+      {
+        "id": 4,
+        "answer": "A mártott fa esetén a védőanyag csak a felületet éri, míg a nagynyomáson telített hegyezett cölöp esetében a kezelés a fa belsejébe is behatol. Ez a mélyvédelem biztosítja a hosszabb élettartamot és a jobb időjárás-állóságot.",
+        "question": "Miben különbözik a telített hegyezett cölöp a mártott fához képest?"
+      },
+      {
+        "id": 5,
+        "answer": "Igen, a telített hegyezett cölöp biztonságosan használható játszótéri építményekhez is. Tartóoszlopként vagy szerkezeti elemként is megállja a helyét, mivel a nyomás alatt impregnált faanyag ellenáll az időjárási hatásoknak.",
+        "question": "Használható-e a telített hegyezett cölöp játszótéri faelemnek?"
+      },
+      {
+        "id": 6,
+        "answer": "A karózó oszlop esetében a fa rostjai már telítettek, ezért a vékonylazúr nem tud mélyen beszívódni. Fedőfesték vagy vastaglazúr használata ajánlott, amely bevonatot képez a felületen és esztétikai védelmet biztosít, miközben a szerkezetvédelmet maga a telítés adja.",
+        "question": "Lehet festeni vagy lazúrozni a karózó oszlopot?"
+      },
+      {
+        "id": 7,
+        "answer": "A körmart kerítésoszlopok többféle hosszban és átmérőben elérhetők, így megfelelnek faültetéshez, kerítésépítéshez vagy kerti szerkezetekhez. Az Elvira Tüzép kínálatában mindig megtalálható a szükséges méret és minőség.",
+        "question": "Milyen méretekben érhető el a körmart kerítésoszlop?"
+      }
+    ],
+    "faqdesc": "A telített hegyezett cölöp – más néven körmart hegyezett cölöp vagy karózó oszlop – tartós, nyomás alatt impregnált faanyag, amely ideális faültetéshez, szőlőkarónak és kerítésoszlopnak. Az alábbi gyakori kérdések segítenek eligazodni a telített faanyag előnyeiben, az élettartamban, a festés módjában és a kerítés oszlop felhasználási lehetőségeiben.",
+    "products": [
+      {
+        "name": "Telített hegyezett cölöp Ø40mm",
+        "slug": "telitett-hegyezett-colop-atmero-40",
+        "meta": {
+          "title": "Telített hegyezett cölöp 40 mm – Impregnált fa karó | Elvira Tüzép",
+          "description": "Tartós, impregnált hegyezett cölöp 40 mm átmérővel. Ideális kerítéshez, növénytámasznak és kertépítéshez.",
+          "image": "/termekek/hegyezett-colop-atmero-4.webp"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.86,
+          "reviewCount": 20
+        },
+        "description": "Telített, impregnált hegyezett fa cölöp 40 mm átmérővel, kerítéshez és kertépítéshez.",
+        "image": "/termekek/hegyezett-colop-atmero-4.webp",
+        "images": [],
+        "longDescription": "A telített hegyezett cölöp 40 mm-es átmérővel könnyű, mégis stabil megoldás kerti szerkezetekhez, támrendszerekhez vagy ideiglenes kerítésekhez. Nyomás alatti impregnálása véd a korhadás és a rovarok ellen, így hosszú élettartamot biztosít. A hegyezett vég megkönnyíti a leverést, a télített faanyag pedig minimális karbantartást igényel.",
+        "longDescription2": "Alkalmazható szőlőkaróként, növénytámaszként vagy ideiglenes kerítésoszlopként. A zöldes árnyalatú impregnálás természetes hatású, és jól illeszkedik bármely kültéri környezethez.",
+        "material": "Nagy nyomáson telített borovi fenyő",
+        "audience": [
+          "kertépítők",
+          "barkácsolók",
+          "faültetők"
+        ],
+        "blogtags": [
+          "kertifa",
+          "hegyezett cölöp"
+        ],
+        "sku": "HC4100",
+        "price": 719,
+        "mprice": null,
+        "m2price": null,
+        "m3price": null,
+        "discountPrice": null,
+        "discountPercent": null,
+        "discountValidUntil": null,
+        "stock": 1,
+        "specs": {
+          "Anyag": {
+            "label": "Anyag",
+            "order": 3,
+            "value": "Nagynyomáson telített borovi fenyőfa"
+          },
+          "Hossz": {
+            "label": "Hossz",
+            "order": 2,
+            "value": "1000–3000 mm"
+          },
+          "Tömeg": {
+            "label": "Tömeg",
+            "order": 6,
+            "value": "≈ 2–4 kg/db"
+          },
+          "Kivitel": {
+            "label": "Kivitel",
+            "order": 4,
+            "value": "Egyik vége hegyezett, másik vége fózolt, körmart cölöp"
+          },
+          "Átmérő": {
+            "label": "Átmérő",
+            "order": 1,
+            "value": "40 mm"
+          },
+          "Megjegyzés": {
+            "label": "Megjegyzés",
+            "order": 8,
+            "value": "Könnyen leverhető, kis súlyú cölöp"
+          },
+          "Impregnálás": {
+            "label": "Impregnálás",
+            "order": 5,
+            "value": "Nyomás alatti (vízbázisú védőszerrel)"
+          },
+          "Felhasználás": {
+            "label": "Felhasználás",
+            "order": 7,
+            "value": "Kertépítés, növénytámasz, ideiglenes kerítés"
+          }
+        },
+        "shippingDetails": {
+          "weight": null,
+          "length": 100,
+          "width": 4,
+          "height": 4
+        },
+        "variants": [
+          {
+            "id": "variant_01K9Q4DRA3ECXW2E3A64WC9VSD",
+            "title": "Ø40mm x 100 | hegyezett",
+            "variantType": null,
+            "sku": "HC4100",
+            "price": 719,
+            "stock": null,
+            "metadata": {
+              "mprice": null,
+              "m2price": null,
+              "m3price": null,
+              "palprice": null,
+              "inventory": 1,
+              "discountPrice": null,
+              "aggregateRating": {
+                "ratingValue": 4.86,
+                "reviewCount": 20
+              },
+              "discountPercent": null,
+              "discountValidUntil": null
+            },
+            "weight": null,
+            "length": 100,
+            "width": 4,
+            "height": 4
+          },
+          {
+            "id": "variant_01K9SB1JE4KMH12ZYEME1E06TR",
+            "title": "Ø40mm x 150 | hegyezett",
+            "variantType": null,
+            "sku": "HC4150",
+            "price": 875,
+            "stock": null,
+            "metadata": {},
+            "weight": null,
+            "length": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "id": "variant_01K9SBBADXM9M8SZVRHBAG5VBC",
+            "title": "Ø40mm x 200 | hegyezett",
+            "variantType": null,
+            "sku": "HC4200",
+            "price": 1430,
+            "stock": null,
+            "metadata": {},
+            "weight": null,
+            "length": null,
+            "width": null,
+            "height": null
+          }
+        ],
+        "category": "telitett-hegyzett-colop"
+      },
+      {
+        "name": "Telített hegyezett cölöp Ø50mm",
+        "slug": "telitett-hegyezett-colop-atmero-50",
+        "meta": {
+          "title": "Telített hegyezett cölöp 50 mm – Impregnált fa oszlop | Elvira Tüzép",
+          "description": "Erős, telített hegyezett fa cölöp 50 mm átmérővel. Időtálló megoldás kerítéshez, támfalhoz és kerti projektekhez.",
+          "image": ""
+        },
+        "aggregateRating": {
+          "ratingValue": null,
+          "reviewCount": null
+        },
+        "description": "Impregnált, telített hegyezett fa cölöp 50 mm átmérővel, tartós kültéri felhasználásra.",
+        "image": null,
+        "images": [],
+        "longDescription": "A 50 mm átmérőjű telített hegyezett cölöp ideális választás kisebb kerítések, ágyásszegélyek és növénytámaszok építéséhez. Az impregnálás védelmet nyújt nedvesség, korhadás és rovarok ellen, miközben természetes megjelenést biztosít.",
+        "longDescription2": "A hegyezett vég megkönnyíti a földbe ütést, a telített fenyőanyag pedig ellenáll az időjárási hatásoknak. Tartós és környezetbarát alternatíva műanyag vagy fém támaszok helyett.",
+        "material": "Nagy nyomáson telített borovi fenyő",
+        "audience": [
+          "kertépítők",
+          "barkácsolók",
+          "faültetők"
+        ],
+        "blogtags": [
+          "kertifa",
+          "hegyezett cölöp"
+        ],
+        "sku": "HC5150",
+        "price": 1242,
+        "mprice": null,
+        "m2price": null,
+        "m3price": null,
+        "discountPrice": null,
+        "discountPercent": null,
+        "discountValidUntil": null,
+        "stock": 1,
+        "specs": {
+          "Anyag": {
+            "label": "Anyag",
+            "order": 3,
+            "value": "Nagynyomáson telített borovi fenyőfa"
+          },
+          "Hossz": {
+            "label": "Hossz",
+            "order": 2,
+            "value": "1000–3000 mm"
+          },
+          "Tömeg": {
+            "label": "Tömeg",
+            "order": 6,
+            "value": "≈ 3–5 kg/db"
+          },
+          "Kivitel": {
+            "label": "Kivitel",
+            "order": 4,
+            "value": "Egyik vége hegyezett, másik vége fózolt, körmart cölöp"
+          },
+          "Átmérő": {
+            "label": "Átmérő",
+            "order": 1,
+            "value": "50 mm"
+          },
+          "Megjegyzés": {
+            "label": "Megjegyzés",
+            "order": 8,
+            "value": "Kiváló ár-érték arányú méret"
+          },
+          "Impregnálás": {
+            "label": "Impregnálás",
+            "order": 5,
+            "value": "Nyomás alatti (zöld színű)"
+          },
+          "Felhasználás": {
+            "label": "Felhasználás",
+            "order": 7,
+            "value": "Kerítés, ágyásszegély, támrúd, kertépítés"
+          }
+        },
+        "shippingDetails": {
+          "weight": 1,
+          "length": 150,
+          "width": 5,
+          "height": 5
+        },
+        "variants": [
+          {
+            "id": "variant_01K9SN9SJ2YE9JCCTXZKHT6Q9X",
+            "title": "Ø50mm x 150 | hegyezett",
+            "variantType": null,
+            "sku": "HC5150",
+            "price": 1242,
+            "stock": null,
+            "metadata": {
+              "inventory": 1
+            },
+            "weight": 1,
+            "length": 150,
+            "width": 5,
+            "height": 5
+          },
+          {
+            "id": "variant_01K9SN9W1XB9AN25EMMRC307ME",
+            "title": "Ø50mm x 200 | hegyezett",
+            "variantType": null,
+            "sku": "HC5200",
+            "price": 1658,
+            "stock": null,
+            "metadata": {
+              "inventory": 1
+            },
+            "weight": 1,
+            "length": 200,
+            "width": 5,
+            "height": 5
+          },
+          {
+            "id": "variant_01K9SN9YMNDQYD519YZBNFDDXB",
+            "title": "Ø50mm x 250 | hegyezett",
+            "variantType": null,
+            "sku": "HC5250",
+            "price": 2055,
+            "stock": null,
+            "metadata": {
+              "inventory": 1
+            },
+            "weight": 2,
+            "length": 250,
+            "width": 5,
+            "height": 5
+          }
+        ],
+        "category": "telitett-hegyzett-colop"
+      },
+      {
+        "name": "Telített hegyezett cölöp Ø60mm",
+        "slug": "telitett-hegyezett-colop-atmero-60",
+        "meta": {
+          "title": "Telített hegyezett cölöp 60 mm – Impregnált kerítésfa | Elvira Tüzép",
+          "description": "Tartós, telített hegyezett cölöp 60 mm átmérővel. Kiváló kerítésekhez, támfalhoz, kerti szerkezetekhez.",
+          "image": ""
+        },
+        "aggregateRating": {
+          "ratingValue": 4.75,
+          "reviewCount": 25
+        },
+        "description": "Telített, impregnált hegyezett fa cölöp 60 mm átmérővel, erős és időjárásálló kivitelben.",
+        "image": null,
+        "images": [],
+        "longDescription": "A 60 mm-es telített hegyezett cölöp univerzális méret, amely alkalmas kerítésoszlopnak, támrúdnak vagy kerti szerkezetek alapanyagaként. A télítés megóvja a fát a nedvességtől, gombáktól és rovaroktól, biztosítva a hosszan tartó élettartamot.",
+        "longDescription2": "A hegyezett kialakítás miatt könnyen telepíthető, nem igényel előfúrást. A fenyő természetes erezete és zöldes árnyalata jól illik kertészeti vagy mezőgazdasági környezetbe.",
+        "material": "Nagy nyomáson telített borovi fenyő",
+        "audience": [
+          "kertépítők",
+          "barkácsolók",
+          "faültetők"
+        ],
+        "blogtags": [
+          "kertifa",
+          "hegyezett cölöp"
+        ],
+        "sku": "HC06050",
+        "price": 610,
+        "mprice": null,
+        "m2price": null,
+        "m3price": null,
+        "discountPrice": null,
+        "discountPercent": null,
+        "discountValidUntil": null,
+        "stock": 1,
+        "specs": {
+          "Anyag": {
+            "label": "Anyag",
+            "order": 3,
+            "value": "Nagynyomáson telített borovi fenyőfa"
+          },
+          "Hossz": {
+            "label": "Hossz",
+            "order": 2,
+            "value": "1000–3000 mm"
+          },
+          "Tömeg": {
+            "label": "Tömeg",
+            "order": 6,
+            "value": "≈ 4–6 kg/db"
+          },
+          "Kivitel": {
+            "label": "Kivitel",
+            "order": 4,
+            "value": "Egyik vége hegyezett, másik vége fózolt, körmart cölöp"
+          },
+          "Átmérő": {
+            "label": "Átmérő",
+            "order": 1,
+            "value": "60 mm"
+          },
+          "Megjegyzés": {
+            "label": "Megjegyzés",
+            "order": 8,
+            "value": "Tartós, középerős kivitel"
+          },
+          "Impregnálás": {
+            "label": "Impregnálás",
+            "order": 5,
+            "value": "Nyomás alatti (réz-bázisú védőszerrel)"
+          },
+          "Felhasználás": {
+            "label": "Felhasználás",
+            "order": 7,
+            "value": "Kerítés, támfal, növénytámasz, kertépítés"
+          }
+        },
+        "shippingDetails": {
+          "weight": null,
+          "length": 50,
+          "width": 6,
+          "height": 6
+        },
+        "variants": null,
+        "category": "telitett-hegyzett-colop"
+      },
+      {
+        "name": "Telített hegyezett cölöp Ø70mm",
+        "slug": "telitett-hegyezett-colop-atmero-70",
+        "meta": {
+          "title": "Telített hegyezett cölöp 70 mm – Impregnált kerítésoszlop | Elvira Tüzép",
+          "description": "Időtálló, telített hegyezett fa cölöp 70 mm átmérővel. Erős szerkezeti elem kültéri felhasználásra.",
+          "image": ""
+        },
+        "aggregateRating": {
+          "ratingValue": 4.68,
+          "reviewCount": 63
+        },
+        "description": "Erős, telített hegyezett cölöp 70 mm átmérővel, hosszú élettartamra tervezve.",
+        "image": null,
+        "images": [],
+        "longDescription": "A 70 mm-es hegyezett telített cölöp már komolyabb kerítések, kapuk és támfalak építéséhez is alkalmas. Erős tartást biztosít, miközben megőrzi a fa természetes megjelenését.",
+        "longDescription2": "Kiváló választás, ha tartós és stabil faoszlopra van szükség kültéri építkezésekhez. A nyomás alatti télítés ellenáll a nedvességnek és rovaroknak.",
+        "material": "Nagy nyomáson telített borovi fenyő",
+        "audience": [
+          "kertépítők",
+          "barkácsolók",
+          "faültetők"
+        ],
+        "blogtags": [
+          "kertifa",
+          "hegyezett cölöp"
+        ],
+        "sku": "HC7250",
+        "price": 3556,
+        "mprice": null,
+        "m2price": null,
+        "m3price": null,
+        "discountPrice": null,
+        "discountPercent": null,
+        "discountValidUntil": null,
+        "stock": 1,
+        "specs": {
+          "Anyag": {
+            "label": "Anyag",
+            "order": 3,
+            "value": "Nagynyomáson telített borovi fenyőfa"
+          },
+          "Hossz": {
+            "label": "Hossz",
+            "order": 2,
+            "value": "1000–3000 mm"
+          },
+          "Tömeg": {
+            "label": "Tömeg",
+            "order": 5,
+            "value": "≈ 5–8 kg/db"
+          },
+          "Kivitel": {
+            "label": "Kivitel",
+            "order": 4,
+            "value": "Egyik vége hegyezett, másik vége fózolt, körmart cölöp"
+          },
+          "Átmérő": {
+            "label": "Átmérő",
+            "order": 1,
+            "value": "70 mm"
+          },
+          "Megjegyzés": {
+            "label": "Megjegyzés",
+            "order": 7,
+            "value": "Masszív kivitel, hosszú élettartam"
+          },
+          "Felhasználás": {
+            "label": "Felhasználás",
+            "order": 6,
+            "value": "Kerítés, támfal, kerti szerkezet, mezőgazdasági cél"
+          }
+        },
+        "shippingDetails": {
+          "weight": null,
+          "length": 250,
+          "width": 7,
+          "height": 7
+        },
+        "variants": null,
+        "category": "telitett-hegyzett-colop"
+      },
+      {
+        "name": "Telített hegyezett cölöp Ø80mm",
+        "slug": "telitett-hegyezett-colop-atmero-80",
+        "meta": {
+          "title": "Telített hegyezett cölöp 80 mm – Impregnált fa oszlop | Elvira Tüzép",
+          "description": "Nagy teherbírású, telített hegyezett fa cölöp 80 mm átmérővel. Kiváló kültéri szerkezetekhez és kerítésekhez.",
+          "image": ""
+        },
+        "aggregateRating": {
+          "ratingValue": 4.59,
+          "reviewCount": 23
+        },
+        "description": "Telített, impregnált hegyezett fa cölöp 80 mm átmérővel, nagy teherbírású kivitel.",
+        "image": null,
+        "images": [],
+        "longDescription": "A 80 mm-es telített hegyezett cölöp a legerősebb kivitel, ideális stabil kerítésekhez, mezőgazdasági építményekhez és tartós kerti szerkezetekhez. A télítés biztosítja a fa hosszú élettartamát és ellenállását az időjárással szemben.",
+        "longDescription2": "A nagyobb átmérő fokozott teherbírást jelent, így akár kapuoszlopként is alkalmazható. A zöld impregnálás esztétikus, természetes árnyalatot ad a fának.",
+        "material": "Nagy nyomáson telített borovi fenyő",
+        "audience": [
+          "kertépítők",
+          "barkácsolók",
+          "faültetők"
+        ],
+        "blogtags": [
+          "kertifa",
+          "hegyezett cölöp"
+        ],
+        "sku": "HC08050",
+        "price": 740,
+        "mprice": null,
+        "m2price": null,
+        "m3price": null,
+        "discountPrice": null,
+        "discountPercent": null,
+        "discountValidUntil": null,
+        "stock": 1,
+        "specs": {
+          "Anyag": {
+            "label": "Anyag",
+            "order": 3,
+            "value": "Nagynyomáson telített borovi fenyőfa"
+          },
+          "Hossz": {
+            "label": "Hossz",
+            "order": 2,
+            "value": "1000–3000 mm"
+          },
+          "Tömeg": {
+            "label": "Tömeg",
+            "order": 6,
+            "value": "≈ 6–10 kg/db"
+          },
+          "Kivitel": {
+            "label": "Kivitel",
+            "order": 4,
+            "value": "Egyik vége hegyezett, másik vége fózolt, körmart cölöp"
+          },
+          "Átmérő": {
+            "label": "Átmérő",
+            "order": 1,
+            "value": "80 mm"
+          },
+          "Megjegyzés": {
+            "label": "Megjegyzés",
+            "order": 8,
+            "value": "Nagy teherbírás, prémium kivitel"
+          },
+          "Impregnálás": {
+            "label": "Impregnálás",
+            "order": 5,
+            "value": "Nyomás alatti"
+          },
+          "Felhasználás": {
+            "label": "Felhasználás",
+            "order": 7,
+            "value": "Kerítés, tartóoszlop, mezőgazdasági építmény"
+          }
+        },
+        "shippingDetails": {
+          "weight": null,
+          "length": 50,
+          "width": 8,
+          "height": 8
+        },
+        "variants": null,
+        "category": "telitett-hegyzett-colop"
+      }
+    ]
+  },
+  {
+    "maincategory": "Telített kertifa",
+    "category": "Telített rúdfa",
+    "slug": "telitett-rudfa",
+    "meta": {
+      "title": "Telített rúdfa | Nyomás alatt impregnált kerítésfa",
+      "description": "Körmart, nyomás alatt impregnált telített rúdfa kerítésekhez, hintaállványhoz és kerti építményekhez. Tartós, időjárás-álló, minőségi faanyag.",
+      "image": "/kategoriak/telitett-rudfa.webp"
+    },
+    "description": "A telített rúdfa erős és tartós kültéri faanyag, amelyet leggyakrabban kerítésfa, támrúd vagy kerti szerkezet építéséhez használnak. A nyomás alatt impregnált kezelés mélyen védi a fát a nedvességtől, gombától és rovaroktól, így hosszú távon megőrzi tartósságát és természetes megjelenését.",
+    "faq": [
+      {
+        "id": 1,
+        "answer": "A telített rúdfa főként kerítések, támrudak, korlátok és kerti építmények készítéséhez ideális. Kerek keresztmetszete miatt természetes hatású és jól illeszkedik bármely kültéri környezetbe.",
+        "question": "Mire használható a telített rúdfa?"
+      },
+      {
+        "id": 2,
+        "answer": "A nyomás alatt impregnált rúdfa esetében a védőanyag nyomás hatására mélyen a fa rostjaiba jut, így a fa nem csak felületi védelmet kap. Ez a mélytelítés biztosítja a hosszú távú ellenállást a nedvességgel, gombákkal és rovarokkal szemben.",
+        "question": "Miért tartósabb a nyomás alatt impregnált rúdfa, mint a sima faanyag?"
+      },
+      {
+        "id": 3,
+        "answer": "Megfelelő beépítés mellett a telített rúdfa élettartama 10–15 év is lehet, de rendszeres karbantartással és fedett helyen alkalmazva ennél is tovább megőrzi szerkezeti szilárdságát.",
+        "question": "Milyen élettartamra számíthatok telített rúdfa esetén?"
+      },
+      {
+        "id": 4,
+        "answer": "Igen, a telített rúdfa alkalmas játszótéri elemek, például hintaállvány vagy tartószerkezet építésére is. A nyomás alatt impregnált kezelés biztonságos és időjárás-álló, ezért jól bírja a kültéri igénybevételt.",
+        "question": "Használható-e a telített rúdfa játszótéri építményekhez?"
+      },
+      {
+        "id": 5,
+        "answer": "A telített rúdfa rostjai telítve vannak, ezért a vékonylazúr vagy olaj nem tud mélyen beszívódni. A felületkezeléshez fedőfesték vagy vastaglazúr ajánlott, amely filmréteget képez a felületen, miközben a telítés gondoskodik a fa belső védelméről.",
+        "question": "Hogyan festhető a telített rúdfa?"
+      },
+      {
+        "id": 6,
+        "answer": "A telített rúdfa ára magasabb, mivel a nyomás alatt impregnált kezelés időigényesebb és korszerűbb technológia. Ez azonban tartósabb, minőségi és hosszabb élettartamú terméket eredményez, így hosszú távon gazdaságosabb választás.",
+        "question": "Mennyibe kerül a telített rúdfa, és miért drágább, mint a mártott fa?"
+      },
+      {
+        "id": 7,
+        "answer": "A rúdfa többféle hosszban és átmérőben elérhető – jellemzően 1,5–3 m hosszban és 6–12 cm átmérőben. Az Elvira Tüzép kínálatában mindig megtalálhatók a szabványos és egyedi méretek is.",
+        "question": "Milyen méretekben kapható a telített rúdfa?"
+      }
+    ],
+    "faqdesc": "A telített rúdfa – más néven nyomás alatt impregnált rúdfa vagy kerítésfa – időjárás-álló és hosszú élettartamú faanyag kültéri felhasználásra. Az alábbi kérdések segítenek megérteni a telített faanyag előnyeit, festését, élettartamát és árát, valamint felhasználási lehetőségeit kerítésekhez, hintaállványhoz és kerti szerkezetekhez.",
+    "products": []
+  },
+  {
+    "maincategory": "Telített kertifa",
+    "category": "Telített deszka",
+    "slug": "telitett-deszka",
+    "meta": {
+      "title": "Telített deszka | Nyomás alatt impregnált kerítésfa",
+      "description": "Tartós, nyomás alatt impregnált telített deszka kerítésekhez, burkolatokhoz és magaságyásokhoz. Időjárás-álló, kültéri használatra készült faanyag.",
+      "image": "/kategoriak/telitett-deszka.jpg"
+    },
+    "description": "A telített deszka időjárás-álló, nyomás alatt impregnált faanyag, amely kiválóan alkalmas kerítések, burkolatok, magaságyások vagy kerti tárolók építéséhez. Tartósabb és ellenállóbb, mint a mártott vagy kezeletlen deszka, így hosszú távon megbízható megoldást kínál minden kültéri projekthez.",
+    "faq": [
+      {
+        "id": 1,
+        "answer": "A telített deszka ideális kerítésekhez, teraszburkolatokhoz, virágládákhoz, magaságyásokhoz és kerti építményekhez. A nyomás alatt impregnált kezelés miatt kültéri körülmények között is hosszú ideig tartós marad.",
+        "question": "Mire használható a telített deszka?"
+      },
+      {
+        "id": 2,
+        "answer": "A nyomás alatt impregnált deszka esetében a védőanyag a fa belsejébe is bejut, nem csak a felületét fedi. Ez a mélytelítés megakadályozza a korhadást és védi a fát a rovaroktól, gombáktól és nedvességtől.",
+        "question": "Miben különbözik a telített deszka a kezeletlen fától?"
+      },
+      {
+        "id": 3,
+        "answer": "Megfelelő beépítés és szellőzés mellett a telített deszka élettartama 10–15 év is lehet, jelentősen hosszabb, mint a felületi kezeléssel ellátott vagy kezeletlen deszkáké.",
+        "question": "Milyen élettartamra számíthatok telített deszka esetén?"
+      },
+      {
+        "id": 4,
+        "answer": "A telített deszka rostjai már telítve vannak, így a vékonylazúr nem tud beszívódni. Ezért fedőfesték vagy vastaglazúr ajánlott, amely a felületet védi és esztétikus megjelenést biztosít, miközben a telítés gondoskodik a fa belső védelméről.",
+        "question": "Festhető vagy lazúrozható a telített deszka?"
+      },
+      {
+        "id": 5,
+        "answer": "Igen, a telített deszka biztonságosan alkalmazható játszótéri elemekhez, kerítésekhez és kerti bútorokhoz is. A nyomás alatt impregnált faanyag ellenáll az időjárásnak és a mechanikai igénybevételnek.",
+        "question": "Használható a telített deszka játszótéri vagy kerti szerkezetekhez?"
+      },
+      {
+        "id": 6,
+        "answer": "A telített deszka ára magasabb, mivel a nyomás alatti impregnálás korszerű és időigényes eljárás. A telített fa azonban hosszabb élettartamú, tartósabb és kevesebb karbantartást igényel, így hosszú távon gazdaságosabb.",
+        "question": "Mennyibe kerül a telített deszka, és miért drágább, mint a mártott?"
+      },
+      {
+        "id": 7,
+        "answer": "A telített deszka jellemző méretei 19–25 mm vastagság, 90–146 mm szélesség és 4–5 m hosszúság. Az Elvira Tüzép kínálatában több méret és felületkialakítás is elérhető kerítésekhez és burkolatokhoz.",
+        "question": "Milyen méretekben kapható a telített deszka?"
+      }
+    ],
+    "faqdesc": "A telített deszka – más néven nyomás alatt impregnált deszka vagy kültéri kerítésfa – hosszú élettartamú, gomba- és rovarálló faanyag. Az alábbi gyakori kérdések bemutatják, hogyan használható a telített faanyag kerítéshez, teraszhoz vagy burkolatokhoz, valamint mire érdemes figyelni festés, méret és ár választásakor.",
+    "products": []
+  },
+  {
+    "maincategory": "Telített kertifa",
+    "category": "Telített palló",
+    "slug": "telitett-pallo",
+    "meta": {
+      "title": "Telített palló | Nyomás alatt impregnált építőfa",
+      "description": "Erős, nyomás alatt impregnált telített palló támfalakhoz, magaságyásokhoz és szerkezetépítéshez. Tartós, kültéri használatra szánt minőségi faanyag.",
+      "image": "/kategoriak/telitett-pallo.webp"
+    },
+    "description": "A telített palló nagy szilárdságú, nyomás alatt impregnált faanyag, amelyet támfalakhoz, magaságyásokhoz, lépcsőszerkezetekhez vagy kerti építményekhez használnak. A mélytelítésnek köszönhetően jobban ellenáll a nedvességnek és a korhadásnak, mint a mártott palló, így hosszú távú, megbízható választás kültéri szerkezetekhez.",
+    "faq": [
+      {
+        "id": 1,
+        "answer": "A telített palló kiválóan használható támfalak, magaságyások, lépcsők, kerítések és tartós kerti szerkezetek építéséhez. Nagy teherbírású és hosszú élettartamú kültéri faanyag.",
+        "question": "Mire használható a telített palló?"
+      },
+      {
+        "id": 2,
+        "answer": "A nyomás alatt impregnált palló esetében a védőanyag mélyen bejut a fa rostjai közé, míg a mártott kezelés csak a felületet védi. A telített palló így tartósabb, ellenállóbb és kevésbé igényel karbantartást.",
+        "question": "Miben különbözik a telített palló a mártott fától?"
+      },
+      {
+        "id": 3,
+        "answer": "A telített palló élettartama megfelelő beépítés és vízelvezetés mellett 10–20 év is lehet. A fa nem vetemedik és lassabban korhad, mint a kezeletlen vagy mártott változat.",
+        "question": "Milyen élettartamra számíthatok telített palló esetén?"
+      },
+      {
+        "id": 4,
+        "answer": "A telített palló rostjai már védettek, így a vékonylazúr és az olaj nem szívódik be. Ezért fedőfesték vagy vastaglazúr ajánlott, amely filmréteget képez a felületen, miközben a telítés biztosítja a belső védelmet.",
+        "question": "Hogyan festhető vagy kezelhető a telített palló?"
+      },
+      {
+        "id": 5,
+        "answer": "A telített palló ára magasabb, mert a nyomás alatti impregnálás korszerű és költségesebb eljárás. A palló viszont hosszabb élettartamú és kevesebb karbantartást igényel, így hosszú távon kedvezőbb befektetés.",
+        "question": "Mennyibe kerül a telített palló, és miért drágább, mint a kezeletlen?"
+      },
+      {
+        "id": 6,
+        "answer": "Igen, a telített palló biztonságosan felhasználható játszótéri elemekhez, korlátokhoz és szerkezeti tartókhoz is. Ellenáll az időjárási hatásoknak és megfelel a kültéri biztonsági követelményeknek.",
+        "question": "Alkalmas-e a telített palló játszótéri szerkezetekhez?"
+      },
+      {
+        "id": 7,
+        "answer": "A telített pallók leggyakoribb méretei 50 mm vastag, 100–200 mm széles, 4000 mm hosszúságú kivitelben kaphatók. Az Elvira Tüzép kínálatában többféle keresztmetszet és méret elérhető az építési igényekhez.",
+        "question": "Milyen méretekben kapható a telített palló?"
+      }
+    ],
+    "faqdesc": "A telített palló – más néven nyomás alatt impregnált építőfa – vastag, masszív szerkezeti faanyag, amely ideális kerti támfalak, magaságyások és kültéri építmények kialakításához. Az alábbi gyakori kérdések segítenek eligazodni a telített faanyag előnyeiben, felhasználási módjaiban, élettartamában, festésében és áraiban.",
+    "products": []
+  },
+  {
+    "maincategory": "Telített kertifa",
+    "category": "Telített oszlop",
+    "slug": "telitett-oszlop",
+    "meta": {
+      "title": "Telített oszlop | Nyomás alatt impregnált faoszlop",
+      "description": "Masszív, nyomás alatt impregnált telített faoszlop kerítésekhez, kapuoszlophoz és kerti szerkezetekhez. Tartós, kültéri használatra készült faanyag.",
+      "image": "/kategoriak/telitett-oszlop.webp"
+    },
+    "description": "A telített oszlop nagyszilárdságú, nyomás alatt impregnált faanyag, amelyet leggyakrabban kerítésoszlopként, kapuoszlopként vagy szerkezeti tartóelemként használnak. A mélyen bejutó telítőanyag védelmet nyújt a nedvességgel, gombákkal és rovarokkal szemben, így a telített faoszlop hosszú távon stabil és megbízható megoldást jelent minden kültéri alkalmazásban.",
+    "faq": [
+      {
+        "id": 1,
+        "answer": "A telített oszlop ideális kerítésoszlopnak, kapuoszlopnak vagy kerti szerkezeti tartónak. A nyomás alatt impregnált kezelésnek köszönhetően hosszú élettartamú és ellenáll a kültéri hatásoknak.",
+        "question": "Mire használható a telített oszlop?"
+      },
+      {
+        "id": 2,
+        "answer": "A nyomás alatt impregnált faoszlop mélyen átitatódik védőanyaggal, így belülről is védett. A kezeletlen fa csak rövid ideig tartós, míg a telített oszlop évekig megőrzi stabilitását és szerkezeti szilárdságát.",
+        "question": "Miben különbözik a telített oszlop a kezeletlen fától?"
+      },
+      {
+        "id": 3,
+        "answer": "Megfelelő beépítés és vízelvezetés mellett a telített oszlop akár 10–20 évig is ellenáll az időjárási hatásoknak. Földdel érintkezve is tovább bírja, mint a mártott vagy kezeletlen faoszlop.",
+        "question": "Milyen élettartamra számíthatok telített oszlop esetén?"
+      },
+      {
+        "id": 4,
+        "answer": "A telített oszlop rostjai már telítettek, ezért a vékonylazúr vagy olaj nem tud beszívódni. A felületkezeléshez fedőfesték vagy vastaglazúr ajánlott, amely védőréteget képez és esztétikus megjelenést ad.",
+        "question": "Hogyan festhető vagy kezelhető a telített oszlop?"
+      },
+      {
+        "id": 5,
+        "answer": "A telített oszlop ára magasabb, mert a nyomás alatti impregnálás korszerűbb és időigényesebb eljárás. Az így kezelt faanyag tartósabb, megbízhatóbb és hosszabb élettartamú, ezért hosszú távon gazdaságosabb.",
+        "question": "Mennyibe kerül a telített oszlop, és miért drágább, mint a mártott?"
+      },
+      {
+        "id": 6,
+        "answer": "Igen, a telített oszlop biztonságosan alkalmazható játszótéri elemekhez és szerkezeti tartókhoz. A nyomás alatt impregnált faanyag ellenáll a nedvességnek és a biológiai károsítóknak.",
+        "question": "Használható-e a telített oszlop játszótéri szerkezetekhez?"
+      },
+      {
+        "id": 7,
+        "answer": "A telített oszlop jellemzően 90×90 mm, 100×100 mm és 120×120 mm keresztmetszetben kapható, 2–3 m hosszúságban. Az Elvira Tüzép kínálatában többféle méret és kialakítás is elérhető.",
+        "question": "Milyen méretekben kapható a telített oszlop?"
+      }
+    ],
+    "faqdesc": "A telített oszlop – más néven nyomás alatt impregnált faoszlop vagy kerítésoszlop – tartós, kültéri felhasználásra tervezett faanyag. Az alábbi kérdések segítenek eligazodni a telített faanyag előnyei, élettartama, festése, ára és felhasználási területei között, legyen szó kerítésépítésről, kapuoszlopról vagy kerti tartószerkezetekről.",
+    "products": []
+  },
+  {
+    "maincategory": "Telített kertifa",
+    "category": "Telített félcölöp",
+    "slug": "telitett-felcolop",
+    "meta": {
+      "title": "Telített félcölöp | Nyomás alatt impregnált faelem",
+      "description": "Nyomás alatt impregnált telített félcölöp kerítésekhez, szegélyekhez, farögzítő szettekhez és kerti szerkezetekhez. Tartós, kültéri használatra készült faanyag.",
+      "image": "/kategoriak/telitett-felcolop.webp"
+    },
+    "description": "A telített félcölöp praktikus és esztétikus nyomás alatt impregnált faelem, amelyet kerítések, szegélyek, kerti támfalak, farögzítő szettek és faépítmények kialakításához használnak. A mélytelítés megakadályozza a korhadást és a rovarok károsítását, így a félcölöp tartós, időjárás-álló megoldás kültéri felhasználásra.",
+    "faq": [
+      {
+        "id": 1,
+        "answer": "A telített félcölöp ideális kerítések, szegélyek, támfalak, farögzítő szettek és kerti szerkezetek építéséhez. A félköríves kialakítás dekoratív, könnyen szerelhető és jól illeszkedik más telített faelemekhez.",
+        "question": "Mire használható a telített félcölöp?"
+      },
+      {
+        "id": 2,
+        "answer": "A félcölöp egy hosszában kettévágott cölöp, amely sík felületével könnyen illeszthető falhoz vagy alaphoz. Ugyanolyan nyomás alatt impregnált technológiával készül, így ugyanolyan tartós és ellenálló.",
+        "question": "Miben különbözik a telített félcölöp a teljes cölöptől?"
+      },
+      {
+        "id": 3,
+        "answer": "A nyomás alatt impregnált félcölöp 10–15 éves élettartammal is bírhat kültéren, megfelelő vízelvezetés és szellőzés mellett akár tovább is megőrzi szerkezeti stabilitását.",
+        "question": "Milyen élettartamra számíthatok telített félcölöp esetén?"
+      },
+      {
+        "id": 4,
+        "answer": "A félcölöp rostjai telítettek, így a vékonylazúr vagy olaj nem szívódik be. A felületkezeléshez fedőfesték vagy vastaglazúr ajánlott, amely bevonatot képez és védi az anyagot az UV-sugárzástól.",
+        "question": "Hogyan festhető vagy kezelhető a telített félcölöp?"
+      },
+      {
+        "id": 5,
+        "answer": "A telített félcölöp ára magasabb a mártott változatnál, mert a nyomás alatti impregnálás korszerűbb és tartósabb védelmet biztosít. Ez a technológia hosszabb élettartamot és jobb ellenállást nyújt az időjárással szemben.",
+        "question": "Mennyibe kerül a telített félcölöp, és miért drágább, mint a mártott?"
+      },
+      {
+        "id": 6,
+        "answer": "Igen, a telített félcölöp biztonságosan alkalmazható játszótéri elemeknél, korlátoknál és dekoratív kerti burkolatoknál is. Természetes hatású és időjárás-álló.",
+        "question": "Használható-e a telített félcölöp játszótéri vagy dekorációs célra?"
+      },
+      {
+        "id": 7,
+        "answer": "A félcölöpök általában 1,5–3 m hosszúságban, 6–14 cm átmérőjű kivitelben kaphatók. Az Elvira Tüzép kínálatában többféle méret és keresztmetszet elérhető.",
+        "question": "Milyen méretekben kapható a telített félcölöp?"
+      }
+    ],
+    "faqdesc": "A telített félcölöp – más néven nyomás alatt impregnált féloszlop vagy kerítésszegély-fa – tartós és dekoratív faanyag kerti és szerkezeti alkalmazásokhoz. Az alábbi gyakori kérdések bemutatják a telített faanyag előnyeit, élettartamát, festését, méreteit és árait, valamint a farögzítő szettekhez való felhasználási lehetőségeit.",
+    "products": []
   }
 ]
