@@ -7260,7 +7260,7 @@
     "faq": [
       {
         "id": 1,
-        "answer": "A telített hegyezett cölöp sokoldalúan alkalmazható",
+        "answer": "A telített hegyezett cölöp sokoldalúan alkalmazható a kert körül. Főleg faültetésnél van jelentős szerepe, mikoris a frissen ültetett fa támasztékául szolgál.",
         "question": "Mire használható a telített hegyezett cölöp?"
       },
       {
@@ -7386,6 +7386,7 @@
             "title": "Ø40mm x 100 | hegyezett",
             "variantType": null,
             "sku": "HC4100",
+            "variant_rank": 0,
             "price": 719,
             "stock": null,
             "metadata": {
@@ -7412,6 +7413,7 @@
             "title": "Ø40mm x 150 | hegyezett",
             "variantType": null,
             "sku": "HC4150",
+            "variant_rank": 0,
             "price": 875,
             "stock": null,
             "metadata": {},
@@ -7425,6 +7427,7 @@
             "title": "Ø40mm x 200 | hegyezett",
             "variantType": null,
             "sku": "HC4200",
+            "variant_rank": 0,
             "price": 1430,
             "stock": null,
             "metadata": {},
@@ -7442,14 +7445,14 @@
         "meta": {
           "title": "Telített hegyezett cölöp 50 mm – Impregnált fa oszlop | Elvira Tüzép",
           "description": "Erős, telített hegyezett fa cölöp 50 mm átmérővel. Időtálló megoldás kerítéshez, támfalhoz és kerti projektekhez.",
-          "image": ""
+          "image": "/termekek/hegyezett-colop-atmero-5.jpg"
         },
         "aggregateRating": {
           "ratingValue": null,
           "reviewCount": null
         },
         "description": "Impregnált, telített hegyezett fa cölöp 50 mm átmérővel, tartós kültéri felhasználásra.",
-        "image": null,
+        "image": "/termekek/hegyezett-colop-atmero-5.jpg",
         "images": [],
         "longDescription": "A 50 mm átmérőjű telített hegyezett cölöp ideális választás kisebb kerítések, ágyásszegélyek és növénytámaszok építéséhez. Az impregnálás védelmet nyújt nedvesség, korhadás és rovarok ellen, miközben természetes megjelenést biztosít.",
         "longDescription2": "A hegyezett vég megkönnyíti a földbe ütést, a telített fenyőanyag pedig ellenáll az időjárási hatásoknak. Tartós és környezetbarát alternatíva műanyag vagy fém támaszok helyett.",
@@ -7522,10 +7525,11 @@
         },
         "variants": [
           {
-            "id": "variant_01K9SN9SJ2YE9JCCTXZKHT6Q9X",
+            "id": "variant_01KA10A76KXSZA9MNKSTMS42JM",
             "title": "Ø50mm x 150 | hegyezett",
             "variantType": null,
             "sku": "HC5150",
+            "variant_rank": 0,
             "price": 1242,
             "stock": null,
             "metadata": {
@@ -7537,10 +7541,11 @@
             "height": 5
           },
           {
-            "id": "variant_01K9SN9W1XB9AN25EMMRC307ME",
+            "id": "variant_01KA10C22WR5Z082FAZZFW7CDS",
             "title": "Ø50mm x 200 | hegyezett",
             "variantType": null,
             "sku": "HC5200",
+            "variant_rank": 1,
             "price": 1658,
             "stock": null,
             "metadata": {
@@ -7552,10 +7557,11 @@
             "height": 5
           },
           {
-            "id": "variant_01K9SN9YMNDQYD519YZBNFDDXB",
+            "id": "variant_01KA10C4J0X0TPC6T4WPK660ZN",
             "title": "Ø50mm x 250 | hegyezett",
             "variantType": null,
             "sku": "HC5250",
+            "variant_rank": 2,
             "price": 2055,
             "stock": null,
             "metadata": {
@@ -7575,14 +7581,14 @@
         "meta": {
           "title": "Telített hegyezett cölöp 60 mm – Impregnált kerítésfa | Elvira Tüzép",
           "description": "Tartós, telített hegyezett cölöp 60 mm átmérővel. Kiváló kerítésekhez, támfalhoz, kerti szerkezetekhez.",
-          "image": ""
+          "image": "/termekek/hegyezett-colop-atmero-6.webp"
         },
         "aggregateRating": {
-          "ratingValue": 4.75,
-          "reviewCount": 25
+          "ratingValue": null,
+          "reviewCount": null
         },
         "description": "Telített, impregnált hegyezett fa cölöp 60 mm átmérővel, erős és időjárásálló kivitelben.",
-        "image": null,
+        "image": "/termekek/hegyezett-colop-atmero-6.webp",
         "images": [],
         "longDescription": "A 60 mm-es telített hegyezett cölöp univerzális méret, amely alkalmas kerítésoszlopnak, támrúdnak vagy kerti szerkezetek alapanyagaként. A télítés megóvja a fát a nedvességtől, gombáktól és rovaroktól, biztosítva a hosszan tartó élettartamot.",
         "longDescription2": "A hegyezett kialakítás miatt könnyen telepíthető, nem igényel előfúrást. A fenyő természetes erezete és zöldes árnyalata jól illik kertészeti vagy mezőgazdasági környezetbe.",
@@ -7596,15 +7602,15 @@
           "kertifa",
           "hegyezett cölöp"
         ],
-        "sku": "HC06050",
-        "price": 610,
+        "sku": "HC06125",
+        "price": 1610,
         "mprice": null,
         "m2price": null,
         "m3price": null,
         "discountPrice": null,
         "discountPercent": null,
         "discountValidUntil": null,
-        "stock": 1,
+        "stock": 0,
         "specs": {
           "Anyag": {
             "label": "Anyag",
@@ -7648,12 +7654,109 @@
           }
         },
         "shippingDetails": {
-          "weight": null,
-          "length": 50,
+          "weight": 2,
+          "length": 125,
           "width": 6,
           "height": 6
         },
-        "variants": null,
+        "variants": [
+          {
+            "id": "variant_01K9YX3VRDDDKRFXCAZ6NC72MV",
+            "title": "Ø60mm x 125 | hegyezett",
+            "variantType": null,
+            "sku": "HC06125",
+            "variant_rank": 2,
+            "price": 1610,
+            "stock": null,
+            "metadata": {
+              "inventory": 0
+            },
+            "weight": 2,
+            "length": 125,
+            "width": 6,
+            "height": 6
+          },
+          {
+            "id": "variant_01K9YX3P3V7RKHAFQT7V949K3H",
+            "title": "Ø60mm x 50 | hegyezett",
+            "variantType": null,
+            "sku": "HC6050",
+            "variant_rank": 0,
+            "price": 610,
+            "stock": null,
+            "metadata": {
+              "inventory": 0
+            },
+            "weight": null,
+            "length": 50,
+            "width": 6,
+            "height": 6
+          },
+          {
+            "id": "variant_01K9YX3RYNXHMB4WSMPTK3K5R6",
+            "title": "Ø60mm x 100 | hegyezett",
+            "variantType": null,
+            "sku": "HC06100",
+            "variant_rank": 1,
+            "price": 1220,
+            "stock": null,
+            "metadata": {
+              "inventory": 1
+            },
+            "weight": 1,
+            "length": 100,
+            "width": 6,
+            "height": 6
+          },
+          {
+            "id": "variant_01K9YX3YM037HRJAK392RDD4H8",
+            "title": "Ø60mm x 150 | hegyezett",
+            "variantType": null,
+            "sku": "HC06150",
+            "variant_rank": 3,
+            "price": 1822,
+            "stock": null,
+            "metadata": {
+              "inventory": 1
+            },
+            "weight": 2,
+            "length": 150,
+            "width": 6,
+            "height": 6
+          },
+          {
+            "id": "variant_01K9YX41PQ4PWQNNKGZM16DW36",
+            "title": "Ø60mm x 200 | hegyezett",
+            "variantType": null,
+            "sku": "HC06200",
+            "variant_rank": 4,
+            "price": 2440,
+            "stock": null,
+            "metadata": {
+              "inventory": 1
+            },
+            "weight": 3,
+            "length": 200,
+            "width": 6,
+            "height": 6
+          },
+          {
+            "id": "variant_01K9YX451RNNAVDFA4YDYPD7TW",
+            "title": "Ø60mm x 250 | hegyezett",
+            "variantType": null,
+            "sku": "HC06250",
+            "variant_rank": 5,
+            "price": 3056,
+            "stock": null,
+            "metadata": {
+              "inventory": 1
+            },
+            "weight": 3,
+            "length": 250,
+            "width": 6,
+            "height": 6
+          }
+        ],
         "category": "telitett-hegyzett-colop"
       },
       {
@@ -7662,14 +7765,14 @@
         "meta": {
           "title": "Telített hegyezett cölöp 70 mm – Impregnált kerítésoszlop | Elvira Tüzép",
           "description": "Időtálló, telített hegyezett fa cölöp 70 mm átmérővel. Erős szerkezeti elem kültéri felhasználásra.",
-          "image": ""
+          "image": "/termekek/hegyezett-colop-atmero-7.jpg"
         },
         "aggregateRating": {
-          "ratingValue": 4.68,
-          "reviewCount": 63
+          "ratingValue": null,
+          "reviewCount": null
         },
         "description": "Erős, telített hegyezett cölöp 70 mm átmérővel, hosszú élettartamra tervezve.",
-        "image": null,
+        "image": "/termekek/hegyezett-colop-atmero-7.jpg",
         "images": [],
         "longDescription": "A 70 mm-es hegyezett telített cölöp már komolyabb kerítések, kapuk és támfalak építéséhez is alkalmas. Erős tartást biztosít, miközben megőrzi a fa természetes megjelenését.",
         "longDescription2": "Kiváló választás, ha tartós és stabil faoszlopra van szükség kültéri építkezésekhez. A nyomás alatti télítés ellenáll a nedvességnek és rovaroknak.",
@@ -7691,7 +7794,7 @@
         "discountPrice": null,
         "discountPercent": null,
         "discountValidUntil": null,
-        "stock": 1,
+        "stock": 0,
         "specs": {
           "Anyag": {
             "label": "Anyag",
@@ -7730,7 +7833,7 @@
           }
         },
         "shippingDetails": {
-          "weight": null,
+          "weight": 4,
           "length": 250,
           "width": 7,
           "height": 7
@@ -7744,14 +7847,14 @@
         "meta": {
           "title": "Telített hegyezett cölöp 80 mm – Impregnált fa oszlop | Elvira Tüzép",
           "description": "Nagy teherbírású, telített hegyezett fa cölöp 80 mm átmérővel. Kiváló kültéri szerkezetekhez és kerítésekhez.",
-          "image": ""
+          "image": "/termekek/hegyezett-colop-atmero-8.webp"
         },
         "aggregateRating": {
-          "ratingValue": 4.59,
-          "reviewCount": 23
+          "ratingValue": null,
+          "reviewCount": null
         },
         "description": "Telített, impregnált hegyezett fa cölöp 80 mm átmérővel, nagy teherbírású kivitel.",
-        "image": null,
+        "image": "/termekek/hegyezett-colop-atmero-8.webp",
         "images": [],
         "longDescription": "A 80 mm-es telített hegyezett cölöp a legerősebb kivitel, ideális stabil kerítésekhez, mezőgazdasági építményekhez és tartós kerti szerkezetekhez. A télítés biztosítja a fa hosszú élettartamát és ellenállását az időjárással szemben.",
         "longDescription2": "A nagyobb átmérő fokozott teherbírást jelent, így akár kapuoszlopként is alkalmazható. A zöld impregnálás esztétikus, természetes árnyalatot ad a fának.",
@@ -7817,12 +7920,109 @@
           }
         },
         "shippingDetails": {
-          "weight": null,
+          "weight": 1,
           "length": 50,
           "width": 8,
           "height": 8
         },
-        "variants": null,
+        "variants": [
+          {
+            "id": "variant_01KA18ECM9FWW12V83XDQHK33H",
+            "title": "Ø80mm x 50 | hegyezett",
+            "variantType": null,
+            "sku": "HC08050",
+            "variant_rank": 0,
+            "price": 740,
+            "stock": null,
+            "metadata": {
+              "inventory": 1
+            },
+            "weight": 1,
+            "length": 50,
+            "width": 8,
+            "height": 8
+          },
+          {
+            "id": "variant_01KA18EFP047TXRNBKHFM13ADS",
+            "title": "Ø80mm x 100 | hegyezett",
+            "variantType": null,
+            "sku": "HC08100",
+            "variant_rank": 1,
+            "price": 1510,
+            "stock": null,
+            "metadata": {
+              "inventory": 0
+            },
+            "weight": 2,
+            "length": 100,
+            "width": 8,
+            "height": 8
+          },
+          {
+            "id": "variant_01KA18EJD8WRCH7WH8P2RRVC22",
+            "title": "Ø80mm x 150 | hegyezett",
+            "variantType": null,
+            "sku": "HC08150",
+            "variant_rank": 2,
+            "price": 2580,
+            "stock": null,
+            "metadata": {
+              "inventory": 1
+            },
+            "weight": 3,
+            "length": 150,
+            "width": 8,
+            "height": 8
+          },
+          {
+            "id": "variant_01KA18EN31G8954468TY7Z0DAN",
+            "title": "Ø80mm x 180 | hegyezett",
+            "variantType": null,
+            "sku": "HC8180",
+            "variant_rank": 3,
+            "price": 3095,
+            "stock": null,
+            "metadata": {
+              "inventory": 1
+            },
+            "weight": 3,
+            "length": 180,
+            "width": 8,
+            "height": 8
+          },
+          {
+            "id": "variant_01KA18ER9JN0CKM6G0HXJZ07MW",
+            "title": "Ø80mm x 250 | hegyezett",
+            "variantType": null,
+            "sku": "HC08250",
+            "variant_rank": 4,
+            "price": 4189,
+            "stock": null,
+            "metadata": {
+              "inventory": 1
+            },
+            "weight": 6,
+            "length": 250,
+            "width": 8,
+            "height": 8
+          },
+          {
+            "id": "variant_01KA18EVBG1T2TR9Y8KA2QGN7Q",
+            "title": "Ø80mm x 300 | hegyezett",
+            "variantType": null,
+            "sku": "HC08300",
+            "variant_rank": 5,
+            "price": 5306,
+            "stock": null,
+            "metadata": {
+              "inventory": 1
+            },
+            "weight": 7,
+            "length": 300,
+            "width": 8,
+            "height": 8
+          }
+        ],
         "category": "telitett-hegyzett-colop"
       }
     ]
@@ -7875,7 +8075,524 @@
       }
     ],
     "faqdesc": "A telített rúdfa – más néven nyomás alatt impregnált rúdfa vagy kerítésfa – időjárás-álló és hosszú élettartamú faanyag kültéri felhasználásra. Az alábbi kérdések segítenek megérteni a telített faanyag előnyeit, festését, élettartamát és árát, valamint felhasználási lehetőségeit kerítésekhez, hintaállványhoz és kerti szerkezetekhez.",
-    "products": []
+    "products": [
+      {
+        "name": "Telített rúdfa Ø80mm",
+        "slug": "telitett-rudfa-atmero-80",
+        "meta": {
+          "title": "Telített rúdfa 80 mm – Impregnált kerítésfa | Elvira Tüzép",
+          "description": "Erős, nyomás alatt impregnált telített rúdfa 80 mm átmérővel. Tartós és időjárásálló választás kerítéshez és kerti építményekhez.",
+          "image": "/termekek/rudfa-atmero-8.webp"
+        },
+        "aggregateRating": {
+          "ratingValue": null,
+          "reviewCount": null
+        },
+        "description": "Nyomás alatt impregnált, tartós telített rúdfa 80 mm átmérővel kerítésekhez és kerti szerkezetekhez.",
+        "image": "/termekkep/telitett-rudfa-atmero-8.webp",
+        "images": [],
+        "longDescription": "A telített rúdfa 80 mm átmérővel kiváló választás kerítésekhez, támrudakhoz és kerti szerkezetekhez. A nyomás alatti impregnálás mélyen védi a fát a nedvességtől, gombáktól és rovaroktól.",
+        "longDescription2": "Stabil és időtálló faanyagként a 80 mm-es rúdfa alkalmas kisebb szerkezetekhez, támrendszerekhez vagy könnyű kerítésekhez. A zöldes árnyalatú impregnálás természetes hatást ad.",
+        "material": "Nagy nyomáson telített borovi fenyő",
+        "audience": [
+          "kertépítők",
+          "barkácsolók",
+          "kerítésépítők"
+        ],
+        "blogtags": [
+          "kertifa",
+          "rúdfa"
+        ],
+        "sku": "RF08050",
+        "price": 740,
+        "mprice": null,
+        "m2price": null,
+        "m3price": null,
+        "discountPrice": null,
+        "discountPercent": null,
+        "discountValidUntil": null,
+        "stock": 0,
+        "specs": {
+          "Anyag": {
+            "label": "Anyag",
+            "order": 3,
+            "value": "Nagynyomáson telített borovi fenyő"
+          },
+          "Hossz": {
+            "label": "Hossz",
+            "order": 2,
+            "value": "1500–3000 mm"
+          },
+          "Tömeg": {
+            "label": "Tömeg",
+            "order": 6,
+            "value": "≈ 5–7 kg/db"
+          },
+          "Kivitel": {
+            "label": "Kivitel",
+            "order": 4,
+            "value": "Körmart, simított felület"
+          },
+          "Átmérő": {
+            "label": "Átmérő",
+            "order": 1,
+            "value": "80 mm"
+          },
+          "Megjegyzés": {
+            "label": "Megjegyzés",
+            "order": 8,
+            "value": "Tartós, közepes teherbírású elem"
+          },
+          "Impregnálás": {
+            "label": "Impregnálás",
+            "order": 5,
+            "value": "Nyomás alatti (réz-bázisú)"
+          },
+          "Felhasználás": {
+            "label": "Felhasználás",
+            "order": 7,
+            "value": "Kerítés, kerti szerkezet, támrúd"
+          }
+        },
+        "shippingDetails": {
+          "weight": 1,
+          "length": 50,
+          "width": 8,
+          "height": 8
+        },
+        "variants": [
+          {
+            "id": "variant_01KA1EQHM29KFKQKKD2EXHHKDA",
+            "title": "Ø80mm x 50 | rúdfa",
+            "variantType": null,
+            "sku": "RF08050",
+            "variant_rank": 0,
+            "price": 740,
+            "stock": null,
+            "metadata": {
+              "inventory": 0
+            },
+            "weight": 1,
+            "length": 50,
+            "width": 8,
+            "height": 8
+          },
+          {
+            "id": "variant_01KA1EQM7CEHMEG1CFZRS1KEVT",
+            "title": "Ø80mm x 100 | rúdfa",
+            "variantType": null,
+            "sku": "RF08100",
+            "variant_rank": 1,
+            "price": 1510,
+            "stock": null,
+            "metadata": {
+              "inventory": 0
+            },
+            "weight": 2,
+            "length": 100,
+            "width": 8,
+            "height": 8
+          },
+          {
+            "id": "variant_01KA1EQPVB227CS76T4KVV785S",
+            "title": "Ø80mm x 200 | rúdfa",
+            "variantType": null,
+            "sku": "RF08200",
+            "variant_rank": 2,
+            "price": 3020,
+            "stock": null,
+            "metadata": {
+              "inventory": 0
+            },
+            "weight": 4,
+            "length": 200,
+            "width": 8,
+            "height": 8
+          },
+          {
+            "id": "variant_01KA1EQSGAW3T82FR7AJC0AWJV",
+            "title": "Ø80mm x 250 | rúdfa",
+            "variantType": null,
+            "sku": "RF08250",
+            "variant_rank": 3,
+            "price": 3775,
+            "stock": null,
+            "metadata": {
+              "inventory": 0
+            },
+            "weight": 7,
+            "length": 250,
+            "width": 8,
+            "height": 8
+          },
+          {
+            "id": "variant_01KA1EQW7S68Q0RNGM3KETBNP9",
+            "title": "Ø80mm x 300 | rúdfa",
+            "variantType": null,
+            "sku": "RF08300",
+            "variant_rank": 4,
+            "price": 4530,
+            "stock": null,
+            "metadata": {
+              "inventory": 1
+            },
+            "weight": 8,
+            "length": 300,
+            "width": 8,
+            "height": 8
+          }
+        ],
+        "category": "telitett-rudfa"
+      },
+      {
+        "name": "Telített rúdfa Ø100mm",
+        "slug": "telitett-rudfa-atmero-100",
+        "meta": {
+          "title": "Telített rúdfa 100 mm – Impregnált faoszlop | Elvira Tüzép",
+          "description": "Erős, időjárásálló telített rúdfa 100 mm átmérővel. Kiváló kerítésekhez, kerti szerkezethez és hintaállványhoz.",
+          "image": "/termekek/rudfa-atmero-10.webp"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.79,
+          "reviewCount": 53
+        },
+        "description": "Masszív, nyomás alatt impregnált telített rúdfa 100 mm átmérővel kültéri felhasználásra.",
+        "image": "/termekkep/telitett-rudfa-atmero-10.webp",
+        "images": [],
+        "longDescription": "A 100 mm-es telített rúdfa alkalmas kerítésekhez, tartóelemekhez és kisebb hintaállványokhoz. A mélytelítés tartósságot biztosít.",
+        "longDescription2": "Szerkezeti stabilitása miatt kiváló választás olyan helyekre, ahol erős, tartós faanyagra van szükség.",
+        "material": "Nagy nyomáson telített borovi fenyő",
+        "audience": [
+          "kertépítők",
+          "barkács kivitelezők",
+          "gazdálkodók"
+        ],
+        "blogtags": [
+          "kertifa",
+          "rúdfa"
+        ],
+        "sku": "Telített rúdfa Ø100mm",
+        "price": 740,
+        "mprice": null,
+        "m2price": null,
+        "m3price": null,
+        "discountPrice": null,
+        "discountPercent": null,
+        "discountValidUntil": null,
+        "stock": 1,
+        "specs": {
+          "Anyag": {
+            "label": "Anyag",
+            "order": 3,
+            "value": "Nagynyomáson telített borovi fenyő"
+          },
+          "Hossz": {
+            "label": "Hossz",
+            "order": 2,
+            "value": "1500–3000 mm"
+          },
+          "Tömeg": {
+            "label": "Tömeg",
+            "order": 6,
+            "value": "≈ 7–10 kg/db"
+          },
+          "Kivitel": {
+            "label": "Kivitel",
+            "order": 4,
+            "value": "Körmart, simított felület"
+          },
+          "Átmérő": {
+            "label": "Átmérő",
+            "order": 1,
+            "value": "100 mm"
+          },
+          "Megjegyzés": {
+            "label": "Megjegyzés",
+            "order": 8,
+            "value": "Erős tartóelem kültéri használatra"
+          },
+          "Impregnálás": {
+            "label": "Impregnálás",
+            "order": 5,
+            "value": "Nyomás alatti (réz-bázisú)"
+          },
+          "Felhasználás": {
+            "label": "Felhasználás",
+            "order": 7,
+            "value": "Kerítés, hintaállvány, kerti szerkezet"
+          }
+        },
+        "shippingDetails": {
+          "weight": null,
+          "length": null,
+          "width": null,
+          "height": null
+        },
+        "variants": null,
+        "category": "telitett-rudfa"
+      },
+      {
+        "name": "Telített rúdfa Ø120mm",
+        "slug": "telitett-rudfa-atmero-120",
+        "meta": {
+          "title": "Telített rúdfa 120 mm – Masszív kültéri fa | Elvira Tüzép",
+          "description": "Masszív, tartós telített rúdfa 120 mm átmérővel. Ideális hintaállványhoz, kerítéshez és nagyobb kerti szerkezetekhez.",
+          "image": "/termekek/rudfa-atmero-12.webp"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.84,
+          "reviewCount": 67
+        },
+        "description": "Prémium minőségű, nyomás alatt impregnált telített rúdfa 120 mm átmérővel.",
+        "image": "/termekkep/telitett-rudfa-atmero-12.webp",
+        "images": [],
+        "longDescription": "A telített rúdfa 120 mm-es átmérővel alkalmas szerkezeti célokra és nagy igénybevételre.",
+        "longDescription2": "Játszótéri szerkezeteknél, hintaállványoknál és terhelhető kerti projektekben is bevált.",
+        "material": "Nagy nyomáson telített borovi fenyő",
+        "audience": [
+          "kertépítők",
+          "játszótér-építők",
+          "kivitelezők"
+        ],
+        "blogtags": [
+          "kertifa",
+          "rúdfa"
+        ],
+        "sku": "Telített rúdfa Ø120mm",
+        "price": 740,
+        "mprice": null,
+        "m2price": null,
+        "m3price": null,
+        "discountPrice": null,
+        "discountPercent": null,
+        "discountValidUntil": null,
+        "stock": 1,
+        "specs": {
+          "Anyag": {
+            "label": "Anyag",
+            "order": 3,
+            "value": "Nagynyomáson telített borovi fenyő"
+          },
+          "Hossz": {
+            "label": "Hossz",
+            "order": 2,
+            "value": "2000–3000 mm"
+          },
+          "Tömeg": {
+            "label": "Tömeg",
+            "order": 6,
+            "value": "≈ 10–15 kg/db"
+          },
+          "Kivitel": {
+            "label": "Kivitel",
+            "order": 4,
+            "value": "Körmart, erős kivitel"
+          },
+          "Átmérő": {
+            "label": "Átmérő",
+            "order": 1,
+            "value": "120 mm"
+          },
+          "Megjegyzés": {
+            "label": "Megjegyzés",
+            "order": 8,
+            "value": "Nagy teherbíráshoz ajánlott"
+          },
+          "Impregnálás": {
+            "label": "Impregnálás",
+            "order": 5,
+            "value": "Nyomás alatti (réz-bázisú)"
+          },
+          "Felhasználás": {
+            "label": "Felhasználás",
+            "order": 7,
+            "value": "Hintaállvány, szerkezeti elem, kerítés"
+          }
+        },
+        "shippingDetails": {
+          "weight": null,
+          "length": null,
+          "width": null,
+          "height": null
+        },
+        "variants": null,
+        "category": "telitett-rudfa"
+      },
+      {
+        "name": "Telített rúdfa Ø140mm",
+        "slug": "telitett-rudfa-atmero-140",
+        "meta": {
+          "title": "Telítettrúdfa 140 mm – Impregnált szerkezeti fa | Elvira Tüzép",
+          "description": "Extra erős telített rúdfa 140 mm átmérővel. Ideális nagy terhelésű szerkezetekhez, játszóterekhez és kerítésekhez.",
+          "image": "/termekek/rudfa-atmero-14.webp"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.88,
+          "reviewCount": 92
+        },
+        "description": "Erős, nagyméretű nyomás alatt impregnált telített rúdfa 140 mm átmérővel.",
+        "image": "/termekkep/telitett-rudfa-atmero-14.webp",
+        "images": [],
+        "longDescription": "A 140 mm-es telített rúdfa professzionális szerkezeti célokra készült. Nagy teherbírású.",
+        "longDescription2": "A telítés mélyen a fa belső szerkezetébe hatol, hosszú élettartamot biztosít kültéren.",
+        "material": "Nagy nyomáson telített borovi fenyő",
+        "audience": [
+          "játszótér-építők",
+          "szerkezetépítők",
+          "barkácsolók"
+        ],
+        "blogtags": [
+          "kertifa",
+          "rúdfa"
+        ],
+        "sku": "Telített rúdfa Ø140mm",
+        "price": 740,
+        "mprice": null,
+        "m2price": null,
+        "m3price": null,
+        "discountPrice": null,
+        "discountPercent": null,
+        "discountValidUntil": null,
+        "stock": 1,
+        "specs": {
+          "Anyag": {
+            "label": "Anyag",
+            "order": 3,
+            "value": "Nagynyomáson telített borovi fenyő"
+          },
+          "Hossz": {
+            "label": "Hossz",
+            "order": 2,
+            "value": "2000–3000 mm"
+          },
+          "Tömeg": {
+            "label": "Tömeg",
+            "order": 6,
+            "value": "≈ 15–20 kg/db"
+          },
+          "Kivitel": {
+            "label": "Kivitel",
+            "order": 4,
+            "value": "Körmart, extra erős kivitel"
+          },
+          "Átmérő": {
+            "label": "Átmérő",
+            "order": 1,
+            "value": "140 mm"
+          },
+          "Megjegyzés": {
+            "label": "Megjegyzés",
+            "order": 8,
+            "value": "Erős terheléshez ajánlott"
+          },
+          "Impregnálás": {
+            "label": "Impregnálás",
+            "order": 5,
+            "value": "Nyomás alatti"
+          },
+          "Felhasználás": {
+            "label": "Felhasználás",
+            "order": 7,
+            "value": "Játszótér, hintaállvány, szerkezeti tartó"
+          }
+        },
+        "shippingDetails": {
+          "weight": null,
+          "length": null,
+          "width": null,
+          "height": null
+        },
+        "variants": null,
+        "category": "telitett-rudfa"
+      },
+      {
+        "name": "Telített rúdfa Ø160mm",
+        "slug": "telitett-rudfa-atmero-160",
+        "meta": {
+          "title": "Telített rúdfa 160 mm – Prémium kültéri faanyag | Elvira Tüzép",
+          "description": "Prémium telített rúdfa 160 mm átmérővel nagy terhelésű kerti és játszótéri szerkezetekhez.",
+          "image": "/termekek/rudfa-atmero-16.webp"
+        },
+        "aggregateRating": {
+          "ratingValue": 4.91,
+          "reviewCount": 118
+        },
+        "description": "Nagyméretű, teherbíró telített rúdfa 160 mm átmérővel kültéri szerkezetekhez.",
+        "image": "/termekkep/telitett-rudfa-atmero-16.webp",
+        "images": [],
+        "longDescription": "A 160 mm-es rúdfa a legerősebb kategóriát képviseli, nagy terhelésre.",
+        "longDescription2": "Ideális nagyméretű hintaállványokhoz, gerendavázakhoz és tartóoszlopokhoz.",
+        "material": "Nagy nyomáson telített borovi fenyő",
+        "audience": [
+          "kivitelezők",
+          "játszótér-építők",
+          "kertépítők"
+        ],
+        "blogtags": [
+          "kertifa",
+          "rúdfa"
+        ],
+        "sku": "Telített rúdfa Ø160mm",
+        "price": 740,
+        "mprice": null,
+        "m2price": null,
+        "m3price": null,
+        "discountPrice": null,
+        "discountPercent": null,
+        "discountValidUntil": null,
+        "stock": 1,
+        "specs": {
+          "Anyag": {
+            "label": "Anyag",
+            "order": 3,
+            "value": "Nagynyomáson telített borovi fenyő"
+          },
+          "Hossz": {
+            "label": "Hossz",
+            "order": 2,
+            "value": "2000–3000 mm"
+          },
+          "Tömeg": {
+            "label": "Tömeg",
+            "order": 6,
+            "value": "≈ 20–28 kg/db"
+          },
+          "Kivitel": {
+            "label": "Kivitel",
+            "order": 4,
+            "value": "Körmart, nagyméretű kivitel"
+          },
+          "Átmérő": {
+            "label": "Átmérő",
+            "order": 1,
+            "value": "160 mm"
+          },
+          "Megjegyzés": {
+            "label": "Megjegyzés",
+            "order": 8,
+            "value": "Prémium, nagy teherbírású méret"
+          },
+          "Impregnálás": {
+            "label": "Impregnálás",
+            "order": 5,
+            "value": "Nyomás alatti"
+          },
+          "Felhasználás": {
+            "label": "Felhasználás",
+            "order": 7,
+            "value": "Szerkezetépítés, játszótér, tartóelem"
+          }
+        },
+        "shippingDetails": {
+          "weight": null,
+          "length": null,
+          "width": null,
+          "height": null
+        },
+        "variants": null,
+        "category": "telitett-rudfa"
+      }
+    ]
   },
   {
     "maincategory": "Telített kertifa",

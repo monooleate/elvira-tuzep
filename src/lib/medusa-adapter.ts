@@ -180,6 +180,7 @@ export async function fetchAllCategoriesWithProducts(
                     id: v.id,
                     title: v.title,
                     sku: v.sku,
+                    variant_rank: v.variant_rank,
                     price: v.prices?.[0]?.amount ?? null,
                     stock: v.inventory_quantity ?? null,
                     metadata: v.metadata ?? {},
@@ -189,7 +190,7 @@ export async function fetchAllCategoriesWithProducts(
                     height: v.height ?? null,
                   }))
                 : null
-if (variants.length > 1){console.log(variants)} 
+/* if (variants.length > 1){console.log(variants)}  */
             return {
               name: p.title,
               slug: p.handle,
@@ -200,9 +201,9 @@ if (variants.length > 1){console.log(variants)}
               },
               aggregateRating: {
                 ratingValue:
-                  variant?.metadata?.aggregateRating?.ratingValue ?? null,
+                  variant?.metadata?.aggregateRating?.ratingValue ?? p.metadata?.aggregateRating?.ratingValue ?? null,
                 reviewCount:
-                  variant?.metadata?.aggregateRating?.reviewCount ?? null,
+                  variant?.metadata?.aggregateRating?.reviewCount ?? p.metadata?.aggregateRating?.reviewCount ?? null,
               },
               description: p.description,
               longDescription: p.metadata?.longDescription,

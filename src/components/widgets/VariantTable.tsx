@@ -6,6 +6,7 @@ interface Variant {
   title: string;
   price: number;
   sku?: string;
+  variant_rank?: number,
   metadata?: {
     inventory?: number;
   };
@@ -40,6 +41,12 @@ export default function VariantTable({ product }: Props) {
     const found = variants.find((v) => v.id === variantId);
     if (found) setSelectedVariant(found);
   }
+
+  const sortedVariants = [...variants].sort((a, b) => {
+  const ra = a.variant_rank ?? 9999
+  const rb = b.variant_rank ?? 9999
+  return ra - rb
+})
 
   // ha nincsenek variánsok → fallback
   if (variants.length === 0) {
@@ -76,7 +83,7 @@ export default function VariantTable({ product }: Props) {
               </tr>
             </thead>
             <tbody>
-              {variants.map((variant) => (
+              {sortedVariants.map((variant) => (
                 <tr
                   key={variant.id}
                   class={`border-t border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-900 transition`}

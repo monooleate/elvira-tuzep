@@ -33,6 +33,7 @@ const [product, category, relatedProducts] = await Promise.all([
 ])
 
 /* console.log(fetchProductBySlug(params.slug)) */
+console.log(product.aggregateRating)
 
 if (!product || !category) {
   console.error("❌ Product page fetch failed:", params.slug)
@@ -607,9 +608,6 @@ else {
     "name": product.name,
     "image": images,
     "description": product.description,
-    "sku": product.sku,
-    ...(product.mpn ? { mpn: product.mpn } : {}),
-    ...(product.gtin13 ? { gtin13: product.gtin13 } : {}),
     "brand": brand,
     "seller": { "@id": STORE_ID },
     "category": categoryForSchema,
@@ -676,6 +674,8 @@ const schemaBreadcrumb = {
     }
   ]
 };
+
+
 
 ---
 <Layout metadata={metadata}>

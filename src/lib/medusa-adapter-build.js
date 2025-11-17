@@ -83,6 +83,7 @@ export async function fetchAllCategoriesWithProducts(productUpload = false) {
                   title: v.title,
                   variantType: v.metadata?.variantType || null,
                   sku: v.sku,
+                  variant_rank: v.variant_rank,
                   price: v.prices?.[0]?.amount ?? null,
                   stock: v.inventory_quantity ?? null,
                   metadata: v.metadata ?? {},

@@ -293,14 +293,26 @@ export default function DiscountCardClient({
             )
           )}
         </div>
-
-        <div class="mt-1">
-          {typeof product.stock === 'number' && product.stock > 0 ? (
-            <span class="text-green-600">Raktáron</span>
-          ) : (
-            <span class="text-orange-500">Rendelhető (2-3 munkanap)</span>
-          )}
-        </div>
+        
+        {!product.variants ? (
+          <>
+            <div class="mt-1">
+              {typeof product.stock === 'number' && product.stock > 0 ? (
+                <span class="text-green-600">Raktáron</span>
+              ) : (
+                <span class="text-orange-500">Rendelhető (2-3 munkanap)</span>
+              )}
+            </div>
+          </>
+          ):(
+          <>
+            <div class="mt-1">
+                <span class="text-green-600">Raktáron</span>
+            </div>
+          </>
+          )
+        }
+        
       </div>
     </a>
   );
