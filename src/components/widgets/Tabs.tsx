@@ -171,100 +171,30 @@ const mainTabs = useMemo(() => {
   return mainTabOrder.filter(name => exists.has(name));
 }, [mainTabOrder, safeData]);
 
-const [active, setActive] = useState<string>('');
-
-// amikor a mainTabs már ismert → töltse be a localStorage értéket
-useEffect(() => {
-  if (!mainTabs.length) return;
-
-  const saved = localStorage.getItem("selectedMainCat");
-
-  if (saved && mainTabs.includes(saved)) {
-    setActive(saved);
-  } else {
-    // fallback: első tab
-    const initial =
-      initialTabName && mainTabs.includes(initialTabName)
-        ? initialTabName
-        : mainTabs[0];
-
-    setActive(initial);
-  }
-}, [mainTabs]);
-
-useEffect(() => {
-  if (!mainTabs.length) return;
-
-  const hash = typeof window !== "undefined" ? window.location.hash : "";
-
-  if (hash.startsWith("#tab-")) {
-    const raw = decodeURIComponent(hash.replace("#tab-", ""));
-    if (mainTabs.includes(raw)) {
-      setActive(raw);
-      localStorage.setItem("selectedMainCat", raw);
-    }
-  }
-}, [mainTabs]);
-
-useEffect(() => {
-  const saved = localStorage.getItem("selectedMainCat");
-  if (saved && mainTabs.includes(saved) && saved !== active) {
-    setActive(saved);
-  }
-}, [mainTabs]);
+// Kezdő aktív fül biztonságosan
+const [active, setActive] = useState<string>(() => {
+  const initial =
+    initialTabName && mainTabs.includes(initialTabName)
+      ? initialTabName
+      : (mainTabs[0] ?? '');
+  return initial;
+});
 
 // Ha változik a mainTabs, tartsuk érvényesnek az aktív fület
 useEffect(() => {
   if (!mainTabs.length) return;
-  if (!mainTabs.includes(active)) {
-    setActive(
-      initialTabName && mainTabs.includes(initialTabName)
-        ? initialTabName
-        : mainTabs[0]
-    );
+
+  const saved = sessionStorage.getItem("maincat-active");
+
+  if (saved && mainTabs.includes(saved)) {
+    setActive(saved);
+    return;
+  }
+
+  if (!active && mainTabs.length) {
+    setActive(mainTabs[0]);
   }
 }, [mainTabs]);
-
-// Görgetési pozíció mentése
-useEffect(() => {
-  const saveScroll = () => {
-    localStorage.setItem("catalogScroll", String(window.scrollY));
-  };
-
-  window.addEventListener("scroll", saveScroll, { passive: true });
-  return () => window.removeEventListener("scroll", saveScroll);
-}, []);
-
-// Visszagörgetés mount után
-useEffect(() => {
-  const y = localStorage.getItem("catalogScroll");
-  if (!y) return;
-
-  requestAnimationFrame(() => {
-    window.scrollTo(0, Number(y));
-  });
-}, []);
-
-// Szűrők visszatöltése mount után
-useEffect(() => {
-  const saved = localStorage.getItem("filters");
-  if (!saved) return;
-
-  try {
-    const f = JSON.parse(saved);
-    if (f.q) setQ(f.q);
-    if (f.onlyDiscounted !== undefined) setOnlyDiscounted(f.onlyDiscounted);
-    if (f.onlyStock !== undefined) setOnlyStock(f.onlyStock);
-    if (f.minPrice !== undefined) setMinPrice(f.minPrice);
-    if (f.maxPrice !== undefined) setMaxPrice(f.maxPrice);
-    if (f.sortBy) setSortBy(f.sortBy);
-
-  } catch {}
-}, []);
-
-
-
-
 
 
   // 🔹 Csoportosítás: főkategória -> azok az alkategóriák, ahol c._maincats tartalmazza a főkategóriát
@@ -326,25 +256,13 @@ const baseProducts = useMemo(() => {
 
 const autoUnit = useMemo(() => computeAutoUnit(baseProducts), [baseProducts]);
 
-// Szűrők mentése localStorage-be
-useEffect(() => {
-  const filters = {
-    q,
-    onlyDiscounted,
-    onlyStock,
-    minPrice,
-    maxPrice,
-    sortBy
-  };
-  localStorage.setItem("filters", JSON.stringify(filters));
-}, [q, onlyDiscounted, onlyStock, minPrice, maxPrice, sortBy]);
 
 
 
 // ha főkategória vált, reseteljük a lapozót és a keresést (opcionális)
 useEffect(() => {
   // alapból mindig az aktuális főkategóriára szűrjünk
-  setMaincatFilter(active);
+  setMaincatFilter((prev) => prev === '' || prev === active ? active : prev);
 
   // resetek
   setVisibleCount(PAGE);
@@ -553,6 +471,16 @@ const filteredProducts = useMemo(() => {
 
   const activeIntro: TabIntro | undefined = tabIntros[active];
 
+  useEffect(() => {
+  const savedScroll = sessionStorage.getItem("maincat-scroll");
+  if (savedScroll) {
+    sessionStorage.removeItem("maincat-scroll");
+    setTimeout(() => {
+      window.scrollTo(0, Number(savedScroll));
+    }, 20);
+  }
+}, []);
+
   return (
     <div ref={rootRef} class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -660,9 +588,13 @@ const filteredProducts = useMemo(() => {
                       aria-controls={`panel-${toId(name)}`}
                       data-tab={name}
                       onClick={() => {
+                        sessionStorage.setItem("maincat-active", name);
+                        sessionStorage.setItem("maincat-scroll", String(window.scrollY));
                         setActive(name);
-                        localStorage.setItem("selectedMainCat", name);
-                        requestAnimationFrame(() => scrollToActiveStart(name));
+
+                        setTimeout(() => {
+                          scrollToActiveStart(name);
+                        }, 35);
                       }}
                       class={`w-full text-left rounded-xl overflow-hidden border transition shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-orange-500
                         ${isActive ? 'border-orange-500 ring-1 ring-orange-500' : 'border-gray-200 dark:border-gray-700 hover:shadow-md'}
@@ -828,6 +760,9 @@ const filteredProducts = useMemo(() => {
                 <a
                   key={category.slug}
                   href={`/termekek/${category.slug}`}
+                    onClick={() => {
+    sessionStorage.setItem("maincat-scroll", String(window.scrollY));
+  }}
                   class="block border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800"
                 >
                   <div class="w-full h-48 overflow-hidden">
