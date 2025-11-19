@@ -8,6 +8,17 @@ import productsData from "../../data/products.json" with { type: "json" }
 type MaybeNum = number | null;
 type MaybeStr = string | null;
 
+interface Variant {
+  id: string;
+  title: string;
+  price: number;
+  sku?: string;
+  variant_rank?: number,
+  metadata?: {
+    inventory?: number;
+  };
+}
+
 interface Product {
   name?: string;
   description?: string;
@@ -27,9 +38,12 @@ interface Product {
   /** ISO dátum string pl. "2025-09-30" vagy "2025-09-30T23:59:59Z" */
   discountValidUntil?: string | null;
 
+  
+
   slug?: string;
   stock?: number;
   sku?: string;
+  variants?: Variant[];
 }
 
 interface Category {
@@ -68,6 +82,7 @@ interface FlatProduct {
 
   categorySlug: string;
   categoryName: string;
+  variants?: Variant[];
 }
 
 const PRICE_ORDER = ['price', 'mprice', 'm2price', 'm3price', 'palprice'] as const;
@@ -212,6 +227,7 @@ function normalizeItem(p: Product, cat: Category): FlatProduct {
 
     categorySlug: cat.slug,
     categoryName: cat.category,
+    variants: p.variants
   };
 }
 
@@ -337,7 +353,7 @@ export default function SearchWidget() {
             class="bg-white dark:bg-gray-900 w-full max-w-xl rounded-lg shadow-lg p-6 relative max-h-[90vh] overflow-y-auto"
           >
             <button
-              class="absolute top-2 right-2 text-gray-500 hover:text-black dark:hover:text-white"
+              class="absolute top-[8px] right-2 text-gray-500 hover:text-black dark:hover:text-white"
               onClick={closeModal}
             >
               ✖️
@@ -349,7 +365,7 @@ export default function SearchWidget() {
               placeholder="Keresés a termékek között..."
               value={query}
               onInput={(e) => setQuery((e.target as HTMLInputElement).value)}
-              class="w-full border border-gray-300 dark:border-gray-600 rounded px-4 py-2 mb-4 bg-white dark:bg-gray-800 text-black dark:text-white"
+              class="w-full border border-gray-300 dark:border-gray-600 rounded px-4 py-2 my-4 bg-white dark:bg-gray-800 text-black dark:text-white"
             />
 
             <ul>
@@ -386,7 +402,9 @@ export default function SearchWidget() {
                           <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">{item.description}</p>
                         )}
                         <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">
-                          {inStock ? (
+                          {!item.variants ? (
+                            <> 
+                            {inStock ? (
                             item.finalPrice !== null ? (
                               item.hasDiscount ? (
                                 <>
@@ -418,6 +436,15 @@ export default function SearchWidget() {
                           ) : (
                             `Előrendelés – ${item.finalPrice.toLocaleString("hu-HU")} Ft`
                           )}
+                            </>
+                          ) : (
+                            <> 
+                            <span class="text-green-600 dark:text-green-400 mr-2">Raktáron -</span>
+                            {`${item.variants[0].price.toLocaleString("hu-HU")} Ft-tól`}
+                            </>
+                          )}
+
+                          
                         </p>
 
                       </div>
