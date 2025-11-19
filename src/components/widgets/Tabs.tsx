@@ -171,14 +171,47 @@ const mainTabs = useMemo(() => {
   return mainTabOrder.filter(name => exists.has(name));
 }, [mainTabOrder, safeData]);
 
-// Kezdő aktív fül biztonságosan
-const [active, setActive] = useState<string>(() => {
-  const initial =
-    initialTabName && mainTabs.includes(initialTabName)
-      ? initialTabName
-      : (mainTabs[0] ?? '');
-  return initial;
-});
+const [active, setActive] = useState<string>('');
+
+// amikor a mainTabs már ismert → töltse be a localStorage értéket
+useEffect(() => {
+  if (!mainTabs.length) return;
+
+  const saved = localStorage.getItem("selectedMainCat");
+
+  if (saved && mainTabs.includes(saved)) {
+    setActive(saved);
+  } else {
+    // fallback: első tab
+    const initial =
+      initialTabName && mainTabs.includes(initialTabName)
+        ? initialTabName
+        : mainTabs[0];
+
+    setActive(initial);
+  }
+}, [mainTabs]);
+
+useEffect(() => {
+  if (!mainTabs.length) return;
+
+  const hash = typeof window !== "undefined" ? window.location.hash : "";
+
+  if (hash.startsWith("#tab-")) {
+    const raw = decodeURIComponent(hash.replace("#tab-", ""));
+    if (mainTabs.includes(raw)) {
+      setActive(raw);
+      localStorage.setItem("selectedMainCat", raw);
+    }
+  }
+}, [mainTabs]);
+
+useEffect(() => {
+  const saved = localStorage.getItem("selectedMainCat");
+  if (saved && mainTabs.includes(saved) && saved !== active) {
+    setActive(saved);
+  }
+}, [mainTabs]);
 
 // Ha változik a mainTabs, tartsuk érvényesnek az aktív fület
 useEffect(() => {
@@ -191,6 +224,47 @@ useEffect(() => {
     );
   }
 }, [mainTabs]);
+
+// Görgetési pozíció mentése
+useEffect(() => {
+  const saveScroll = () => {
+    localStorage.setItem("catalogScroll", String(window.scrollY));
+  };
+
+  window.addEventListener("scroll", saveScroll, { passive: true });
+  return () => window.removeEventListener("scroll", saveScroll);
+}, []);
+
+// Visszagörgetés mount után
+useEffect(() => {
+  const y = localStorage.getItem("catalogScroll");
+  if (!y) return;
+
+  requestAnimationFrame(() => {
+    window.scrollTo(0, Number(y));
+  });
+}, []);
+
+// Szűrők visszatöltése mount után
+useEffect(() => {
+  const saved = localStorage.getItem("filters");
+  if (!saved) return;
+
+  try {
+    const f = JSON.parse(saved);
+    if (f.q) setQ(f.q);
+    if (f.onlyDiscounted !== undefined) setOnlyDiscounted(f.onlyDiscounted);
+    if (f.onlyStock !== undefined) setOnlyStock(f.onlyStock);
+    if (f.minPrice !== undefined) setMinPrice(f.minPrice);
+    if (f.maxPrice !== undefined) setMaxPrice(f.maxPrice);
+    if (f.sortBy) setSortBy(f.sortBy);
+
+  } catch {}
+}, []);
+
+
+
+
 
 
   // 🔹 Csoportosítás: főkategória -> azok az alkategóriák, ahol c._maincats tartalmazza a főkategóriát
@@ -252,6 +326,18 @@ const baseProducts = useMemo(() => {
 
 const autoUnit = useMemo(() => computeAutoUnit(baseProducts), [baseProducts]);
 
+// Szűrők mentése localStorage-be
+useEffect(() => {
+  const filters = {
+    q,
+    onlyDiscounted,
+    onlyStock,
+    minPrice,
+    maxPrice,
+    sortBy
+  };
+  localStorage.setItem("filters", JSON.stringify(filters));
+}, [q, onlyDiscounted, onlyStock, minPrice, maxPrice, sortBy]);
 
 
 
@@ -575,6 +661,7 @@ const filteredProducts = useMemo(() => {
                       data-tab={name}
                       onClick={() => {
                         setActive(name);
+                        localStorage.setItem("selectedMainCat", name);
                         requestAnimationFrame(() => scrollToActiveStart(name));
                       }}
                       class={`w-full text-left rounded-xl overflow-hidden border transition shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-orange-500
