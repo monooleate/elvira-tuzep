@@ -4,8 +4,18 @@ import { fetchCategoriesOnly, fetchProductsByCategorySlug } from '../../../lib/m
 import Metadata from '~/components/common/Metadata.astro';
 import DiscountCardClient from '~/components/widgets/DiscountCardClient';
 
+import { USE_API } from "~/lib/useApiFlag";
+
+export const prerender = !USE_API;
+
 export async function getStaticPaths() {
-  const categories = await fetchCategoriesOnly()
+  if (USE_API) {
+    // SSR módban semmit sem kell visszaadni
+    return [];
+  }
+
+  // SSG módban lekéri a kategóriákat
+  const categories = await fetchCategoriesOnly();
   return categories.map((cat) => ({
     params: { kategoria: cat.slug },
   }));

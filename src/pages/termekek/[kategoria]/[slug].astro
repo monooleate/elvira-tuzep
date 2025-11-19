@@ -5,13 +5,23 @@ import ProductGallery from '~/components/widgets/ProductGallery.tsx';
 import RelatedBlogSection from '~/components/widgets/RelatedBlogSection.astro';
 import DiscountCardClient from '~/components/widgets/DiscountCardClient';
 import { fetchProductBySlug, fetchRelatedProducts, fetchProductPaths, fetchCategoryMetaBySlug } from '../../../lib/medusa-adapter';
-
+import VariantTable from "~/components/widgets/VariantTable.tsx";
 function formatPrice(value) {
   return typeof value === 'number' ? value.toLocaleString('hu-HU') : '';
 }
 
+import { USE_API } from "~/lib/useApiFlag";
+// Csak akkor generál statikus oldalakat, ha nem SSR
+export const prerender = !USE_API;
+
 export async function getStaticPaths() {
-  return await fetchProductPaths()
+  if (USE_API) {
+    // SSR módban nem kell buildidőben útvonal
+    return [];
+  }
+
+  // SSG módban buildidőben legenerálja az összes termék útvonalat
+  return await fetchProductPaths();
 }
 
 const { params } = Astro;
@@ -23,6 +33,7 @@ const [product, category, relatedProducts] = await Promise.all([
 ])
 
 /* console.log(fetchProductBySlug(params.slug)) */
+console.log(product.aggregateRating)
 
 if (!product || !category) {
   console.error("❌ Product page fetch failed:", params.slug)
@@ -158,8 +169,19 @@ function buildOfferShippingDetails(p) {
 
 // Darabár felirat: hossz CSAK a specs-ből (nem számolunk)
 function buildPieceOfferName(baseName, p) {
-  const len = p?.specs?.["Hossz"] || p?.specs?.["Hossz (darab)"];
-  return len ? `${baseName} – darabár (${len})` : `${baseName} – darabár`;
+  let len = p?.specs?.["Hossz"] || p?.specs?.["Hossz (darab)"];
+
+  // Ha objektum → próbáld meg kinyerni belőle a value mezőt
+  if (len && typeof len === "object") {
+    len = len.value || len.val || len.length || null;
+  }
+
+  // Ha még így sincs vagy üres → visszaadjuk a sima darabár nevet
+  if (!len || typeof len !== "string") {
+    return `${baseName} – darabár`;
+  }
+
+  return `${baseName} – darabár (${len})`;
 }
 
 const productDims = buildProductDimensions(product);
@@ -345,183 +367,281 @@ function specsToAdditionalProperty(specs) {
 
 const additionalProperty = specsToAdditionalProperty(product.specs);
 
+let schemaProduct;
+if(!product.variants) {
+    schemaProduct = pruneNulls({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#product`,
+    "inLanguage": "hu",
+    "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
+    "name": product.name,
+    "image": images,
+    "description": product.description,
+    "sku": product.sku,
+    ...(product.mpn ? { "mpn": product.mpn } : {}),
+    ...(product.gtin13 ? { "gtin13": product.gtin13 } : {}),
+    "brand": brand,
+    "seller": { "@id": STORE_ID },
+    "category": categoryForSchema,
+    ...(materialForSchema ? { "material": materialForSchema } : {}),
+    "audience": audienceBlock,
+    ...(sameAsClean.length ? { "sameAs": sameAsClean } : {}),
+    ...(additionalProperty ? { "additionalProperty": additionalProperty } : {}),
+    ...(productDims || {}),
+    ...(product.aggregateRating ? {
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": (() => {
+          const raw = product.aggregateRating.ratingValue;
 
-const schemaProduct = pruneNulls({
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#product`,
-  "inLanguage": "hu",
-  "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
-  "name": product.name,
-  "image": images,
-  "description": product.description,
-  "sku": product.sku,
-  ...(product.mpn ? { "mpn": product.mpn } : {}),
-  ...(product.gtin13 ? { "gtin13": product.gtin13 } : {}),
-  "brand": brand,
-  "seller": { "@id": STORE_ID },
-  "category": categoryForSchema,
-  ...(materialForSchema ? { "material": materialForSchema } : {}),
-  "audience": audienceBlock,
-  ...(sameAsClean.length ? { "sameAs": sameAsClean } : {}),
-  ...(additionalProperty ? { "additionalProperty": additionalProperty } : {}),
-  ...(productDims || {}),
-  ...(product.aggregateRating ? {
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": product.aggregateRating.ratingValue,
-      "reviewCount": product.aggregateRating.reviewCount
-    }
-  } : {}),
-  "offers": pruneNulls([
-    (typeof product.price === "number" && product.price > 0) ? pruneNulls({
-      "@type": "Offer",
-      "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-darab`,
-      "priceCurrency": "HUF",
-      "price": hasDiscount && discountPrice ? discountPrice : product.price,
-      "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
-      "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
-      "itemCondition": "https://schema.org/NewCondition",
-      "name": buildPieceOfferName(product.name, product),
-      "seller": { "@id": STORE_ID },
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
-        "price": hasDiscount && discountPrice ? discountPrice : product.price,
+          // Ha szám → visszaadjuk
+          if (typeof raw === "number" && !isNaN(raw)) return raw;
+
+          // Ha string → normalize
+          if (typeof raw === "string") {
+            const normalized = raw.trim().replace(",", ".");
+            const numeric = Number(normalized);
+            return !isNaN(numeric) ? numeric : undefined;
+          }
+
+          return undefined;
+        })(),
+        "reviewCount": Number(product.aggregateRating.reviewCount)
+      }
+    } : {}),
+    "offers": pruneNulls([
+      (typeof product.price === "number" && product.price > 0) ? pruneNulls({
+        "@type": "Offer",
+        "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-darab`,
         "priceCurrency": "HUF",
-        "unitCode": "C62"
-      },
-      ...(hasValidDiscountPercent && product.discountValidUntil ? {
-        "validThrough": product.discountValidUntil,
-        "priceValidUntil": product.discountValidUntil
-      } : {
-        "priceValidUntil": endOfMonthISO()
-      }),
-      "shippingDetails": shippingDetailsHU,
-      "hasMerchantReturnPolicy": merchantReturnPolicyHU
-    }) : null,
+        "price": hasDiscount && discountPrice ? discountPrice : product.price,
+        "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+        "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
+        "itemCondition": "https://schema.org/NewCondition",
+        "name": buildPieceOfferName(product.name, product),
+        "seller": { "@id": STORE_ID },
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": hasDiscount && discountPrice ? discountPrice : product.price,
+          "priceCurrency": "HUF",
+          "unitCode": "C62"
+        },
+        ...(hasValidDiscountPercent && product.discountValidUntil ? {
+          "validThrough": product.discountValidUntil,
+          "priceValidUntil": product.discountValidUntil
+        } : {
+          "priceValidUntil": endOfMonthISO()
+        }),
+        "shippingDetails": shippingDetailsHU,
+        "hasMerchantReturnPolicy": merchantReturnPolicyHU
+      }) : null,
 
-    (typeof product.mprice === "number" && product.mprice > 0) ? pruneNulls({
-      "@type": "Offer",
-      "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-meterar`,
-      "priceCurrency": "HUF",
-      "price": hasValidDiscountPercent
-        ? Math.round(product.mprice * (1 - (discountPercent ?? 0) / 100))
-        : product.mprice,
-      "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
-      "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
-      "itemCondition": "https://schema.org/NewCondition",
-      "name": `${product.name} – méterár`,
-      "seller": { "@id": STORE_ID },
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
+      (typeof product.mprice === "number" && product.mprice > 0) ? pruneNulls({
+        "@type": "Offer",
+        "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-meterar`,
+        "priceCurrency": "HUF",
         "price": hasValidDiscountPercent
           ? Math.round(product.mprice * (1 - (discountPercent ?? 0) / 100))
           : product.mprice,
-        "priceCurrency": "HUF",
-        "unitCode": "MTR"
-      },
-      ...(hasValidDiscountPercent && product.discountValidUntil ? {
-        "validThrough": product.discountValidUntil,
-        "priceValidUntil": product.discountValidUntil
-      } : {
-        "priceValidUntil": endOfMonthISO()
-      }),
-      "shippingDetails": shippingDetailsHU,
-      "hasMerchantReturnPolicy": merchantReturnPolicyHU
-    }) : null,
+        "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+        "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
+        "itemCondition": "https://schema.org/NewCondition",
+        "name": `${product.name} – méterár`,
+        "seller": { "@id": STORE_ID },
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": hasValidDiscountPercent
+            ? Math.round(product.mprice * (1 - (discountPercent ?? 0) / 100))
+            : product.mprice,
+          "priceCurrency": "HUF",
+          "unitCode": "MTR"
+        },
+        ...(hasValidDiscountPercent && product.discountValidUntil ? {
+          "validThrough": product.discountValidUntil,
+          "priceValidUntil": product.discountValidUntil
+        } : {
+          "priceValidUntil": endOfMonthISO()
+        }),
+        "shippingDetails": shippingDetailsHU,
+        "hasMerchantReturnPolicy": merchantReturnPolicyHU
+      }) : null,
 
-    (typeof product.m2price === "number" && product.m2price > 0) ? pruneNulls({
-      "@type": "Offer",
-      "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-nm2ar`,
-      "priceCurrency": "HUF",
-      "price": hasValidDiscountPercent
-        ? Math.round(product.m2price * (1 - (discountPercent ?? 0) / 100))
-        : product.m2price,
-      "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
-      "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
-      "itemCondition": "https://schema.org/NewCondition",
-      "name": `${product.name} – négyzetméterár`,
-      "seller": { "@id": STORE_ID },
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
+      (typeof product.m2price === "number" && product.m2price > 0) ? pruneNulls({
+        "@type": "Offer",
+        "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-nm2ar`,
+        "priceCurrency": "HUF",
         "price": hasValidDiscountPercent
           ? Math.round(product.m2price * (1 - (discountPercent ?? 0) / 100))
           : product.m2price,
-        "priceCurrency": "HUF",
-        "unitCode": "MTK"
-      },
-      ...(hasValidDiscountPercent && product.discountValidUntil ? {
-        "validThrough": product.discountValidUntil,
-        "priceValidUntil": product.discountValidUntil
-      } : {
-        "priceValidUntil": endOfMonthISO()
-      }),
-      "shippingDetails": shippingDetailsHU,
-      "hasMerchantReturnPolicy": merchantReturnPolicyHU
-    }) : null,
+        "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+        "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
+        "itemCondition": "https://schema.org/NewCondition",
+        "name": `${product.name} – négyzetméterár`,
+        "seller": { "@id": STORE_ID },
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": hasValidDiscountPercent
+            ? Math.round(product.m2price * (1 - (discountPercent ?? 0) / 100))
+            : product.m2price,
+          "priceCurrency": "HUF",
+          "unitCode": "MTK"
+        },
+        ...(hasValidDiscountPercent && product.discountValidUntil ? {
+          "validThrough": product.discountValidUntil,
+          "priceValidUntil": product.discountValidUntil
+        } : {
+          "priceValidUntil": endOfMonthISO()
+        }),
+        "shippingDetails": shippingDetailsHU,
+        "hasMerchantReturnPolicy": merchantReturnPolicyHU
+      }) : null,
 
-    (typeof product.m3price === "number" && product.m3price > 0) ? pruneNulls({
-      "@type": "Offer",
-      "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-m3ar`,
-      "priceCurrency": "HUF",
-      "price": hasValidDiscountPercent
-        ? Math.round(product.m3price * (1 - (discountPercent ?? 0) / 100))
-        : product.m3price,
-      "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
-      "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
-      "itemCondition": "https://schema.org/NewCondition",
-      "name": `${product.name} – köbméterár`,
-      "seller": { "@id": STORE_ID },
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
+      (typeof product.m3price === "number" && product.m3price > 0) ? pruneNulls({
+        "@type": "Offer",
+        "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-m3ar`,
+        "priceCurrency": "HUF",
         "price": hasValidDiscountPercent
           ? Math.round(product.m3price * (1 - (discountPercent ?? 0) / 100))
           : product.m3price,
-        "priceCurrency": "HUF",
-        "unitCode": "MTQ"
-      },
-      ...(hasValidDiscountPercent && product.discountValidUntil ? {
-        "validThrough": product.discountValidUntil,
-        "priceValidUntil": product.discountValidUntil
-      } : {
-        "priceValidUntil": endOfMonthISO()
-      }),
-      "shippingDetails": shippingDetailsHU,
-      "hasMerchantReturnPolicy": merchantReturnPolicyHU
-    }) : null,
+        "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+        "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
+        "itemCondition": "https://schema.org/NewCondition",
+        "name": `${product.name} – köbméterár`,
+        "seller": { "@id": STORE_ID },
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": hasValidDiscountPercent
+            ? Math.round(product.m3price * (1 - (discountPercent ?? 0) / 100))
+            : product.m3price,
+          "priceCurrency": "HUF",
+          "unitCode": "MTQ"
+        },
+        ...(hasValidDiscountPercent && product.discountValidUntil ? {
+          "validThrough": product.discountValidUntil,
+          "priceValidUntil": product.discountValidUntil
+        } : {
+          "priceValidUntil": endOfMonthISO()
+        }),
+        "shippingDetails": shippingDetailsHU,
+        "hasMerchantReturnPolicy": merchantReturnPolicyHU
+      }) : null,
 
-    (typeof product.palprice === "number" && product.palprice > 0) ? pruneNulls({
-      "@type": "Offer",
-      "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-raklapar`,
-      "priceCurrency": "HUF",
-      "price": hasValidDiscountPercent
-        ? Math.round(product.palprice * (1 - (discountPercent ?? 0) / 100))
-        : product.palprice,
-      "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
-      "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
-      "itemCondition": "https://schema.org/NewCondition",
-      "name": `${product.name} – raklapár`,
-      "seller": { "@id": STORE_ID },
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
+      (typeof product.palprice === "number" && product.palprice > 0) ? pruneNulls({
+        "@type": "Offer",
+        "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-raklapar`,
+        "priceCurrency": "HUF",
         "price": hasValidDiscountPercent
           ? Math.round(product.palprice * (1 - (discountPercent ?? 0) / 100))
           : product.palprice,
+        "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+        "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
+        "itemCondition": "https://schema.org/NewCondition",
+        "name": `${product.name} – raklapár`,
+        "seller": { "@id": STORE_ID },
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": hasValidDiscountPercent
+            ? Math.round(product.palprice * (1 - (discountPercent ?? 0) / 100))
+            : product.palprice,
+          "priceCurrency": "HUF",
+          "unitCode": "C62",
+          "unitText":"raklap"
+        },
+        ...(hasValidDiscountPercent && product.discountValidUntil ? {
+          "validThrough": product.discountValidUntil,
+          "priceValidUntil": product.discountValidUntil
+        } : {
+          "priceValidUntil": endOfMonthISO()
+        }),
+        "shippingDetails": shippingDetailsHU,
+        "hasMerchantReturnPolicy": merchantReturnPolicyHU
+      }) : null
+    ])
+  });
+} 
+else {
+  const variantOffers = product.variants.map(v =>
+    pruneNulls({
+      "@type": "Offer",
+      "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#variant-${v.id}`,
+      "sku": v.sku || null,
+      "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
+      "priceCurrency": "HUF",
+      "price": v.price,
+      "availability": v.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+      "itemCondition": "https://schema.org/NewCondition",
+      "seller": { "@id": STORE_ID },
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": v.price,
         "priceCurrency": "HUF",
-        "unitCode": "C62",
-        "unitText":"raklap"
+        "unitCode": v.unitCode || "C62"
       },
-      ...(hasValidDiscountPercent && product.discountValidUntil ? {
-        "validThrough": product.discountValidUntil,
-        "priceValidUntil": product.discountValidUntil
-      } : {
-        "priceValidUntil": endOfMonthISO()
-      }),
+      "additionalProperty": [
+        v.title
+          ? {
+              "@type": "PropertyValue",
+              "name": "Változat",
+              "value": v.title
+            }
+          : null,
+        v.variantType
+          ? {
+              "@type": "PropertyValue",
+              "name": "Típus",
+              "value": v.variantType
+            }
+          : null
+      ].filter(Boolean),
       "shippingDetails": shippingDetailsHU,
       "hasMerchantReturnPolicy": merchantReturnPolicyHU
-    }) : null
-  ])
-});
+    })
+  );
+
+  schemaProduct = pruneNulls({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#product`,
+    "inLanguage": "hu",
+    "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
+    "name": product.name,
+    "image": images,
+    "description": product.description,
+    "brand": brand,
+    "seller": { "@id": STORE_ID },
+    "category": categoryForSchema,
+    ...(materialForSchema ? { material: materialForSchema } : {}),
+    "audience": audienceBlock,
+    ...(sameAsClean.length ? { sameAs: sameAsClean } : {}),
+    ...(additionalProperty ? { additionalProperty } : {}),
+    ...(productDims || {}),
+    ...(product.aggregateRating?.ratingValue && product.aggregateRating?.reviewCount
+      ? {
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": (() => {
+              const raw = product.aggregateRating.ratingValue;
+
+              // Ha szám → visszaadjuk
+              if (typeof raw === "number" && !isNaN(raw)) return raw;
+
+              // Ha string → normalize
+              if (typeof raw === "string") {
+                const normalized = raw.trim().replace(",", ".");
+                const numeric = Number(normalized);
+                return !isNaN(numeric) ? numeric : undefined;
+              }
+
+              return undefined;
+            })(),
+            "reviewCount": Number(product.aggregateRating.reviewCount)
+          }
+        }
+      : {}),
+    "offers": variantOffers
+  });
+}
 
 const schemaBreadcrumb = {
   "@context": "https://schema.org",
@@ -555,6 +675,8 @@ const schemaBreadcrumb = {
   ]
 };
 
+
+
 ---
 <Layout metadata={metadata}>
 
@@ -576,28 +698,25 @@ const schemaBreadcrumb = {
 
   <section class="py-12">
     <div class="max-w-4xl mx-auto px-4">
-<!-- Breadcrumb -->
-<div class="sticky top-[70px] 2xl:top-[90px] z-20 bg-white dark:bg-gray-900 px-4 py-2 shadow-sm">
-  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-sm text-gray-500 dark:text-gray-400 mb-0">
-    
-    <nav class="mb-2 sm:mb-0" aria-label="Breadcrumb">
-      <a href="/" class="hover:underline">Főoldal</a> /
-      <a href="/termekek" class="hover:underline">Termékek</a> /
-      <a href={`/termekek/${category.slug}`} class="hover:underline">{category.category}</a> /
-      <span class="font-medium text-gray-800 dark:text-gray-200">{product.name}</span>
-    </nav>
+      <!-- Breadcrumb -->
+      <div class="sticky top-[70px] 2xl:top-[90px] z-20 bg-white dark:bg-gray-900 px-4 py-2 shadow-sm">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-sm text-gray-500 dark:text-gray-400 mb-0">
+          
+          <nav class="mb-2 sm:mb-0" aria-label="Breadcrumb">
+            <a href="/" class="hover:underline">Főoldal</a> /
+            <a href="/termekek" class="hover:underline">Termékek</a> /
+            <a href={`/termekek/${category.slug}`} class="hover:underline">{category.category}</a> /
+            <span class="font-medium text-gray-800 dark:text-gray-200">{product.name}</span>
+          </nav>
 
-<!--     <a href={`/termekek/${category.slug}`} class="text-orange-500 hover:underline dark:text-blue-400">
-      ← Vissza a kategóriaoldalra
-    </a> -->
-  </div>
-</div>
-
-
-
-      <!-- Termék adatblokk -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 pt-10 motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade
-                intersect-once intersect-quarter intercept-no-queue">
+      <!--     <a href={`/termekek/${category.slug}`} class="text-orange-500 hover:underline dark:text-blue-400">
+            ← Vissza a kategóriaoldalra
+          </a> -->
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 pt-10 motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade 
+      intersect-once intersect-quarter intercept-no-queue">
         <div class="relative">
           {Array.isArray(product.images) ? (
             <>
@@ -638,7 +757,11 @@ const schemaBreadcrumb = {
             </>
           )}
         </div>
-        <div>
+
+      <!-- Termék adatblokk -->
+      {!product.variants ? (     
+        <> 
+          <div>
           <h1 class="text-3xl font-bold mb-2">{product.name}</h1>
           <p class="text-sm text-gray-500 dark:text-gray-400">Cikkszám: {product.sku}</p></br>
           <p class="text-gray-600 dark:text-gray-400 mb-4">{product.description}</p>
@@ -723,6 +846,11 @@ const schemaBreadcrumb = {
           
           <ProductInteractiveBlock product={product} client:load />
         </div>
+      
+    </>
+  ) : (
+      <VariantTable product={product} client:load />
+      )}
       </div>
 
       <!-- Leírás + Táblázat flex elrendezésben -->

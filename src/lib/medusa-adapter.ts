@@ -1,11 +1,17 @@
 /**
- * Medusa → Astro adapter (cache + fallback + log)
- * Netlify SSR-re optimalizált verzió
+ * Medusa → Astro adapter (SDK alapú, cache + fallback + teljes API)
+ * Használja a @medusajs/js-sdk kliensét és a store endpointokat
  */
 
 import productsLocal from "../data/products.json" with { type: "json" }
 import productsSafe from "../data/products_safe.json" with { type: "json" }
+import { sdk } from "../lib/medusa-client"
+import type { HttpTypes } from "@medusajs/types"
+import { USE_API } from "~/lib/useApiFlag.ts";
 
+/* -----------------------------------------------------
+ *  Típusdefiníciók
+ * --------------------------------------------------- */
 export type ProductSpecs = {
   length?: number
   width?: number
@@ -14,10 +20,7 @@ export type ProductSpecs = {
   [key: string]: any
 }
 
-export type ProductImage = {
-  src: string
-  alt: string
-}
+export type ProductImage = { src: string; alt: string }
 
 export type Product = {
   name: string
@@ -37,12 +40,15 @@ export type Product = {
   mprice?: number | null
   m2price?: number | null
   m3price?: number | null
+  palprice?: number | null
   discountPrice?: number | null
   discountPercent?: number | null
   discountValidUntil?: string | null
   stock?: number | null
   specs?: ProductSpecs
   shippingDetails?: ProductSpecs
+  category?: string
+  variants?: any[] | null
 }
 
 export type Category = {
@@ -51,304 +57,261 @@ export type Category = {
   slug: string
   meta: { title: string; description: string; image?: string }
   description?: string
-  faqdesc?: string 
+  faqdesc?: string
   faq?: Array<{ id: string; question: string; answer: string }>
   products?: Product[]
 }
 
-// 🧭 Környezeti változók (development vs production)
-let TOKEN: string | undefined;
-let BASE: string | undefined;
-let USE_API: boolean;
-
-if (process.env.NODE_ENV === "development") {
-  // fejlesztés alatt az import.meta.env értékeit használjuk
-  TOKEN = import.meta.env.SECRET_API;
-  BASE = import.meta.env.PUBLIC_API_BASE || import.meta.env.PUBLIC_API_URL;
-  USE_API = import.meta.env.PUBLIC_USE_API === "true";
-/*   console.log("🧪 Fejlesztői környezet: import.meta.env értékek használatban."); */
-} else {
-  // SSR / Netlify / production alatt a process.env értékeit
-  TOKEN = process.env.SECRET_API;
-  BASE = process.env.PUBLIC_API_BASE || process.env.PUBLIC_API_URL;
-  USE_API = process.env.PUBLIC_USE_API === "true";
-/*   console.log(`🚀 Production SSR: process.env értékek használatban. Token= ${TOKEN} Base= ${BASE} Use_API= ${USE_API}`); */
-}
-
-// ENV validáció
-if (!BASE) {
-  console.warn("⚠️ Nincs beállítva PUBLIC_API_BASE vagy PUBLIC_API_URL")
-}
-if (!TOKEN) {
-  console.warn("⚠️ Nincs beállítva SECRET_API token")
-}
-
-// Diagnosztikai log – csak fejlesztői módban
-if (process.env.NODE_ENV !== "production") {
-  console.log("🔍 SSR ENV:", {
-    NODE_ENV: process.env.NODE_ENV,
-    USE_API,
-    BASE: BASE,
-    TOKEN: TOKEN ? "[HIDDEN]" : "❌ missing",
-  })
-}
-
-// 🪫 Fallback adatforrás
-const fallbackProducts: Category[] = Array.isArray(productsLocal) && productsLocal.length > 0
-  ? (productsLocal as Category[])
-  : (productsSafe as Category[])
-
 /* -----------------------------------------------------
- * Helper: biztonságos fetch cache-eléssel
+ *  Fallback adatforrás
  * --------------------------------------------------- */
-async function safeFetchJson(url: string, fallback: any = null) {
+const fallbackProducts: Category[] =
+  Array.isArray(productsLocal) && productsLocal.length > 0
+    ? (productsLocal as Category[])
+    : (productsSafe as Category[])
 
+/* -----------------------------------------------------
+ *  SDK alapú alapfüggvények
+ * --------------------------------------------------- */
+
+// ✅ Collection lista (mezők lekorlátozva)
+export async function listCollections(
+  queryParams: Record<string, string> = {}
+): Promise<{ collections: HttpTypes.StoreCollection[]; count: number }> {
   if (!USE_API) {
-/*     console.warn(`ℹ️ USE_API=false → API lekérés kihagyva (${url})`); */
-    return fallback;
-  }
+/*     console.warn("🟡 listCollections kihagyva (USE_API=false)"); */
+    return { collections: [], count: 0 };
+  } 
+  queryParams.limit = queryParams.limit || "100"
+  queryParams.offset = queryParams.offset || "0"
+  queryParams.fields = queryParams.fields || "id,handle,title,metadata"
+
+  const { collections } = await sdk.client.fetch<{
+    collections: HttpTypes.StoreCollection[]
+  }>("/store/collections", {
+    query: queryParams,
+    cache: "force-cache",
+  })
+
+  return { collections, count: collections.length }
+}
+
+// ✅ Egy adott collection lekérése ID alapján
+export async function retrieveCollection(
+  id: string
+): Promise<HttpTypes.StoreCollection> {
+  const { collection } = await sdk.client.fetch<{ collection: HttpTypes.StoreCollection }>(
+    `/store/collections/${id}`,
+    { cache: "force-cache" }
+  )
+  return collection
+}
+
+// ✅ Termékek lekérése egy collection-höz
+async function listProductsByCollectionId(collectionId: string, limit = 500) {
   try {
-    
-    const res = await fetch(url, {
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": "Basic " + TOKEN,
-        "Cache-Control": "s-maxage=300, stale-while-revalidate=86400",
-      },
-    })
-    if (!res.ok) throw new Error(`HTTP ${res.status}`)
-    const json = await res.json()
-    /* if (import.meta.env.DEV) console.log("✅ Fetched:", url) */
-/*     console.warn(`ℹ️ USE_API=true → API lekérés sikeres (${url})`); */
-    return json
-  } catch (err: any) {
-    /* console.warn("⚠️ Medusa fetch failed:", url, err.message) */
-/*     console.warn(`ℹ️ USE_API=error → API lekérés közben ERROR (${url})`); */
-    return fallback
+    const res = await sdk.client.fetch<{ products: HttpTypes.StoreProduct[] }>(
+      `/store/products`,
+      {
+        query: {
+          collection_id: collectionId,
+          limit: String(limit),
+          fields: "id,handle,title,metadata,description,*variants,variants.prices.*,*images",
+        },
+        cache: "force-cache",
+      }
+    )
+/*     console.log(res.products) */
+    return res.products ?? []
+  } catch (e: any) {
+    console.error(`⚠️ Hiba a terméklekérésnél (collection_id=${collectionId}):`, e?.message)
+    return []
   }
 }
 
 /* -----------------------------------------------------
- * 1️⃣ Kategóriák + termékek (teljes JSON)
+ *  Kategóriák + termékek (SDK verzió, fallback-kel)
  * --------------------------------------------------- */
 export async function fetchAllCategoriesWithProducts(
-  productUpload: boolean = false
+  includeProducts = false
 ): Promise<Category[]> {
-  const url = `${BASE}/admin/collections?limit=100`
+  try {
+    // 🔹 Ha USE_API=false → azonnal fallback
+    if (!USE_API) {
+/*       console.info("🟡 USE_API=false → fallback JSON adat használatban."); */
+      return fallbackProducts;
+    }
 
-  const data = await safeFetchJson(url, { collections: [] })
-
-  // ⚠️ ÚJ: ha nincs adat, vagy üres, vagy hibás a struktúra → fallback
-  if (
-    !data ||
-    !Array.isArray(data.collections) ||
-    data.collections.length === 0
-  ) {
-/*     console.warn("⚠️ Medusa API nem adott adatot, fallback productsLocal JSON-ra.") */
-    return productsLocal
-  }
-
-  const categories: Category[] = await Promise.all(
-    data.collections.map(async (c: any) => {
-      // ha productUpload = false → nem töltünk terméket
-      let mappedProducts: Product[] = []
-
-      if (productUpload) {
-        const productData = await safeFetchJson(
-          `${BASE}/admin/products?collection_id=${c.id}&limit=500`,
-          { products: [] }
-        )
-
-        const products = productData?.products ?? []
-
-        mappedProducts = products.map((p: any) => {
-          const variants = Array.isArray(p.variants) ? p.variants : []
-          const variant = p.variants?.[0]
-
-
-          // --- Képek és alt szövegek párosítása ---
-          const imageUrls: string[] = Array.isArray(p.images)
-            ? p.images.map((img: any) => img.url)
-            : []
-
-          const imageAlts: string[] = Array.isArray(p.metadata?.image_alts)
-            ? p.metadata.image_alts
-            : []
-
-          const images = imageUrls.map((src, i) => ({
-            src,
-            alt: imageAlts[i] || "",
-          }))
-
-          // --- Ha több variáns van, hozzuk létre a variants objectet ---
-          const variantsObject =
-            variants.length > 1
-              ? variants.map((v: any) => ({
-                  id: v.id,
-                  title: v.title,
-                  type: v.metadata?.variantType || null,
-                  sku: v.sku,
-                  price: v.prices?.[0]?.amount ?? null,
-                  stock: v.inventory_quantity ?? null,
-                  metadata: v.metadata ?? {},
-                  weight: v.weight ?? null,
-                  length: v.length ?? null,
-                  width: v.width ?? null,
-                  height: v.height ?? null,
-                }))
-              : null
-
-          return {
-            name: p.title,
-            slug: p.handle,
-            meta: {
-              title: p.metadata?.seo_title || p.title,
-              description:
-                p.metadata?.seo_description || p.description || "",
-              image: p.metadata?.seo_image || "",
-            },
-            aggregateRating: {
-              ratingValue:
-                variant?.metadata?.aggregateRating?.ratingValue ?? null,
-              reviewCount:
-                variant?.metadata?.aggregateRating?.reviewCount ?? null,
-            },
-            description: p.description,
-            image: p?.metadata?.image ?? null,
-            images,
-            longDescription: p.metadata?.longDescription,
-            longDescription2: p.metadata?.longDescription2,
-            material: p.material,
-            audience: p.metadata?.audience || [],
-            blogtags: p.metadata?.blogtags || [],
-            sku: variant?.sku,
-            price: variant?.prices?.[0]?.amount ?? null,
-            mprice: variant?.metadata?.mprice ?? null,
-            m2price: variant?.metadata?.m2price ?? null,
-            m3price: variant?.metadata?.m3price ?? null,
-            discountPrice: variant?.metadata?.discountPrice ?? null,
-            discountPercent: variant?.metadata?.discountPercent ?? null,
-            discountValidUntil:
-              variant?.metadata?.discountValidUntil ?? null,
-            stock: variant?.metadata?.inventory ?? null,
-            specs: p.metadata?.specs ?? {},
-            shippingDetails: {
-              weight: variant?.weight ?? null,
-              length: variant?.length ?? null,
-              width: variant?.width ?? null,
-              height: variant?.height ?? null,
-            },
-            variants: variantsObject,
-            category: c.handle
-          }
-        })
-      }
-     
-      return {
-        maincategory: c.metadata?.maincategory ?? "",
-        category: c.title,
-        slug: c.handle,
-        meta: {
-          title: c.metadata?.seo_title || c.title,
-          description: c.metadata?.seo_description || "",
-          image: c.metadata?.seo_image || "",
-        },
-        description: c.metadata?.description || "",
-        faq: c.metadata?.faq || [],
-        faqdesc: c.metadata?.faqdesc || "",
-        products: mappedProducts,
-      }
+    // ✅ Csak az alap mezőket kérjük le
+    const { collections } = await listCollections({
+      fields: "id,handle,title,metadata",
     })
-  )
 
-/*   console.log(
-    `✅ ${categories.length} kategória betöltve ${productUpload} ${
-      productUpload ? " termékekkel együtt " : ""
-    }`
-  ) */
-  
-  return categories
+    if (!collections?.length) {
+/*       console.warn("⚠️ Nincs collection → fallback JSON.") */
+      return fallbackProducts
+    }
+
+    const categories = await Promise.all(
+      collections.map(async (c: any) => {
+        let mappedProducts: Product[] = []
+
+        if (includeProducts) {
+          const products = await listProductsByCollectionId(c.id, 500)
+
+          mappedProducts = products.map((p: any) => {
+            const variants = Array.isArray(p.variants) ? p.variants : []
+            const variant = variants[0]
+
+            const imageUrls = Array.isArray(p.images)
+              ? p.images.map((i: any) => i.url)
+              : []
+            const alts = Array.isArray(p.metadata?.image_alts)
+              ? p.metadata.image_alts
+              : []
+            const images = imageUrls.map((src, i) => ({
+              src,
+              alt: alts[i] || "",
+            }))
+
+            const variantsObject =
+              variants.length > 1
+                ? variants.map((v: any) => ({
+                    id: v.id,
+                    title: v.title,
+                    sku: v.sku,
+                    variant_rank: v.variant_rank,
+                    price: v.prices?.[0]?.amount ?? null,
+                    stock: v.inventory_quantity ?? null,
+                    metadata: v.metadata ?? {},
+                    weight: v.weight ?? null,
+                    length: v.length ?? null,
+                    width: v.width ?? null,
+                    height: v.height ?? null,
+                  }))
+                : null
+/* if (variants.length > 1){console.log(variants)}  */
+            return {
+              name: p.title,
+              slug: p.handle,
+              meta: {
+                title: p.metadata?.seo_title || p.title,
+                description: p.metadata?.seo_description || p.description || "",
+                image: p.metadata?.seo_image || "",
+              },
+              aggregateRating: {
+                ratingValue:
+                  variant?.metadata?.aggregateRating?.ratingValue ?? p.metadata?.aggregateRating?.ratingValue ?? null,
+                reviewCount:
+                  variant?.metadata?.aggregateRating?.reviewCount ?? p.metadata?.aggregateRating?.reviewCount ?? null,
+              },
+              description: p.description,
+              longDescription: p.metadata?.longDescription,
+              longDescription2: p.metadata?.longDescription2,
+              material: p.metadata?.material || "",
+              audience: p.metadata?.audience || [],
+              blogtags: p.metadata?.blogtags || [],
+              image: p.metadata?.image ?? null,
+              images,
+              sku: variant?.sku,
+              price: variant?.prices?.[0]?.amount ?? null,
+              mprice: variant?.metadata?.mprice ?? null,
+              m2price: variant?.metadata?.m2price ?? null,
+              m3price: variant?.metadata?.m3price ?? null,
+              palprice: variant?.metadata?.palprice ?? null,
+              discountPrice: variant?.metadata?.discountPrice ?? null,
+              discountPercent: variant?.metadata?.discountPercent ?? null,
+              discountValidUntil: variant?.metadata?.discountValidUntil ?? null,
+              stock: variant?.metadata?.inventory ?? null,
+              specs: p.metadata?.specs ?? {},
+              shippingDetails: {
+                weight: variant?.weight ?? null,
+                length: variant?.length ?? null,
+                width: variant?.width ?? null,
+                height: variant?.height ?? null,
+              },
+              variants: variantsObject,
+              category: c.handle,
+            }
+          })
+        }
+/*         console.log(mappedProducts) */
+        return {
+          maincategory: c.metadata?.maincategory ?? "",
+          category: c.title,
+          slug: c.handle,
+          meta: {
+            title: c.metadata?.seo_title || c.title,
+            description: c.metadata?.seo_description || "",
+            image: c.metadata?.seo_image || "",
+          },
+          description: c.metadata?.description || "",
+          faq: c.metadata?.faq || [],
+          faqdesc: c.metadata?.faqdesc || "",
+          products: mappedProducts,
+        }
+      })
+    )
+
+    return categories
+    
+  } catch (err: any) {
+    console.error("❌ Medusa SDK hiba:", err.message)
+    return fallbackProducts
+  }
 }
 
+/* -----------------------------------------------------
+ *  Cache + Helper függvények
+ * --------------------------------------------------- */
 let cachedCategories: Category[] = []
 let lastFetchTime = 0
-const CACHE_TTL = 1000 * 60 * (Number(process.env.CACHE_TTL_MINUTES) || 5);
+const CACHE_TTL = 1000 * 60 * (Number(import.meta.env.CACHE_TTL_MINUTES) || 5)
 
 export async function getCachedCategoriesWithProducts(): Promise<Category[]> {
-  const now = Date.now();
-
-  if (cachedCategories && now - lastFetchTime < CACHE_TTL) {
-/*     console.log("🟢 CACHE HIT → adatok memóriából"); */
-    return cachedCategories;
+  const now = Date.now()
+   if (!USE_API) {
+/*     console.info("🟡 USE_API=false → getCachedCategoriesWithProducts csak fallbacket ad vissza.") */
+    return fallbackProducts
   }
+  if (cachedCategories && now - lastFetchTime < CACHE_TTL) return cachedCategories
 
-/*   console.log("🟡 CACHE MISS → új Medusa lekérés..."); */
-  const cats = await fetchAllCategoriesWithProducts(true);
-
-  if (cats && cats.length > 0) {
-/*     console.log("✅ CACHE UPDATE → friss adatok mentve"); */
-    cachedCategories = cats;
-    lastFetchTime = now;
-  } else {
-/*     console.warn("⚠️ CACHE UPDATE FAIL → fallback JSON mentve"); */
-    cachedCategories = fallbackProducts;
-  }
-
-  return cachedCategories;
+  const cats = await fetchAllCategoriesWithProducts(true)
+  cachedCategories = cats.length ? cats : fallbackProducts
+  lastFetchTime = now
+  return cachedCategories
 }
 
+/* -----------------------------------------------------
+ *  Kiegészítő API-k
+ * --------------------------------------------------- */
 
-
-// csak kategóriák
 export async function fetchCategoriesOnly() {
   return await fetchAllCategoriesWithProducts(false)
 }
 
-// kategóriák + termékek
 export async function fetchCategoriesWithProducts() {
   return await fetchAllCategoriesWithProducts(true)
 }
 
-// egy kategória termékei
 export async function fetchProductsByCategorySlug(slug: string) {
   const all = await getCachedCategoriesWithProducts()
-  return all.find(c => c.slug === slug)
+  return all.find((c) => c.slug === slug)
 }
 
-export async function fetchProductPaths(): Promise<{ params: { kategoria: string; slug: string } }[]>  {
-  const collections = await safeFetchJson(`${BASE}/admin/collections?limit=100`, { collections: [] })
-  const paths: any[] = []
-
-  if (!collections.collections || collections.collections.length === 0) {
-/*     console.warn("⚠️ Nincs elérhető Medusa collection, fallback JSON-ból generáljuk a pathokat.") */
-    return productsLocal.flatMap(c =>
-      (c.products || []).map(p => ({
-        params: { kategoria: c.slug, slug: p.slug }
-      }))
-    )
+export async function fetchCategoryMetaBySlug(slug: string) {
+  const categories = await getCachedCategoriesWithProducts()
+  const c = categories.find((cat) => cat.slug === slug)
+  if (!c) return null
+  return {
+    maincategory: c.maincategory ?? "",
+    category: c.category,
+    slug: c.slug,
+    meta: c.meta,
+    description: c.description ?? "",
   }
-
-  for (const c of collections.collections || []) {
-    const productData = await safeFetchJson(
-      `${BASE}/admin/products?collection_id=${c.id}&limit=500`,
-      { products: [] }
-    )
-    const products = productData?.products ?? []
-    for (const p of products) {
-      paths.push({
-        params: {
-          kategoria: c.handle,
-          slug: p.handle,
-        },
-      })
-    }
-  }
-  return paths
 }
 
-/* -----------------------------------------------------
- * 2️⃣ Egy konkrét termék (slug alapján)
- * --------------------------------------------------- */
 export async function fetchProductBySlug(slug: string): Promise<Product | null> {
   const categories = await getCachedCategoriesWithProducts()
   for (const cat of categories) {
@@ -358,29 +321,14 @@ export async function fetchProductBySlug(slug: string): Promise<Product | null> 
   return null
 }
 
-/* -----------------------------------------------------
- * 3️⃣ Kapcsolódó termékek (azonos kategória)
- * --------------------------------------------------- */
-export async function fetchRelatedProducts(categorySlug: string, excludeSlug?: string): Promise<Product[]> {
+export async function fetchRelatedProducts(
+  categorySlug: string,
+  excludeSlug?: string
+): Promise<Product[]> {
   const categories = await getCachedCategoriesWithProducts()
   const cat = categories.find((c) => c.slug === categorySlug)
   if (!cat) return []
-  return (cat.products ?? [])
-    .filter((p) => p.slug !== excludeSlug)
-    .slice(0, 3)
-}
-
-export async function fetchCategoryMetaBySlug(slug: string) {
-  const categories = await getCachedCategoriesWithProducts()
-  const c = categories.find(cat => cat.slug === slug)
-  if (!c) return null
-  return {
-    maincategory: c.maincategory ?? "",
-    category: c.category,
-    slug: c.slug,
-    meta: c.meta,
-    description: c.description ?? "",
-  }
+  return (cat.products ?? []).filter((p) => p.slug !== excludeSlug).slice(0, 3)
 }
 
 export async function fetchDiscountedProducts(limit = 20): Promise<Product[]> {
@@ -396,3 +344,50 @@ export async function fetchDiscountedProducts(limit = 20): Promise<Product[]> {
 
   return discounted.slice(0, limit)
 }
+
+/* -----------------------------------------------------
+ *  Build-időben használható termékútvonalak lekérése
+ *  → csak a Store API-t használja (biztonságos publikusan is)
+ * --------------------------------------------------- */
+export async function fetchProductPaths() {
+  try {
+    if (!USE_API) {
+/*       console.info("🟡 USE_API=false → static product path generálás fallbackből."); */
+      return fallbackProducts.flatMap((cat) =>
+        (cat.products || []).map((p) => ({
+          params: { kategoria: cat.slug, slug: p.slug },
+        }))
+      );
+    }
+    // Gyors cache – ha már le vannak töltve a kategóriák termékekkel
+    const categories = await getCachedCategoriesWithProducts();
+
+    // Ha cache/fallback JSON-ból jön
+    if (!categories?.length) {
+/*       console.warn("⚠️ Nincs kategória → fallback JSON-ból generálás."); */
+      return (fallbackProducts as Category[]).flatMap((cat) =>
+        (cat.products || []).map((p) => ({
+          params: { kategoria: cat.slug, slug: p.slug },
+        }))
+      );
+    }
+
+    // Store API-s útvonalak generálása
+    const paths = categories.flatMap((cat) =>
+      (cat.products || []).map((p) => ({
+        params: { kategoria: cat.slug, slug: p.slug },
+      }))
+    );
+
+    return paths;
+  } catch (e: any) {
+    console.error("❌ fetchProductPaths hiba:", e?.message);
+    // Fallback – biztonsági mentés a lokális JSON-ból
+    return (productsLocal as Category[]).flatMap((cat) =>
+      (cat.products || []).map((p) => ({
+        params: { kategoria: cat.slug, slug: p.slug },
+      }))
+    );
+  }
+}
+
