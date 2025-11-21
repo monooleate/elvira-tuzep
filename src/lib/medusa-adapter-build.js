@@ -106,15 +106,16 @@ export async function fetchAllCategoriesWithProducts(productUpload = false) {
             },
             aggregateRating: {
               ratingValue:
-                variant?.metadata?.aggregateRating?.ratingValue ?? null,
+                variant?.metadata?.aggregateRating?.ratingValue ?? p.metadata?.aggregateRating?.ratingValue ?? null,
               reviewCount:
-                variant?.metadata?.aggregateRating?.reviewCount ?? null,
+                variant?.metadata?.aggregateRating?.reviewCount ?? p.metadata?.aggregateRating?.reviewCount ?? null,
             },
             description: p.description,
             image: p?.metadata?.image ?? null,
             images,
             longDescription: p.metadata?.longDescription,
             longDescription2: p.metadata?.longDescription2,
+            longDescription3: p.metadata?.longDescription3,
             material: p.material,
             audience: p.metadata?.audience || [],
             blogtags: p.metadata?.blogtags || [],
