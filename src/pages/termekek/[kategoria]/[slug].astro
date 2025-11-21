@@ -4,6 +4,8 @@ import ProductInteractiveBlock from '~/components/common/ProductInteractiveBlock
 import ProductGallery from '~/components/widgets/ProductGallery.tsx';
 import RelatedBlogSection from '~/components/widgets/RelatedBlogSection.astro';
 import DiscountCardClient from '~/components/widgets/DiscountCardClient';
+import HtmlExcerpt from '~/components/widgets/HtmlExcerpt';
+import { HTMLString } from "astro/runtime/server/index.js";
 import { fetchProductBySlug, fetchRelatedProducts, fetchProductPaths, fetchCategoryMetaBySlug } from '../../../lib/medusa-adapter';
 import VariantTable from "~/components/widgets/VariantTable.tsx";
 function formatPrice(value) {
@@ -33,7 +35,7 @@ const [product, category, relatedProducts] = await Promise.all([
 ])
 
 /* console.log(fetchProductBySlug(params.slug)) */
-console.log(product.aggregateRating)
+/* console.log(product?.longDescription3) */
 
 if (!product || !category) {
   console.error("❌ Product page fetch failed:", params.slug)
@@ -108,11 +110,12 @@ function buildImageUrl(path) {
   return `https://elviratuzep.hu${path}-1200.jpg`;
 }
 
-const images = Array.isArray(product.images)
-  ? product.images.map(img => buildImageUrl(img.src))
-  : product.image
-  ? [buildImageUrl(product.image)]
-  : [];
+const images =
+  Array.isArray(product.images) && product.images.length > 0
+    ? product.images.map(img => buildImageUrl(img.src))
+    : product.image
+    ? [buildImageUrl(product.image)]
+    : [];
 
 const metadata = {
   title: product.meta.title,
@@ -217,13 +220,13 @@ const brand =
     ? pruneNulls({ "@type": "Brand", "name": product.brandName, "sameAs": product.brandUrl ? [product.brandUrl] : null })
     : { "@type": "Brand", "name": "Elvira Tüzép" };
 
-const audienceBlock = Array.isArray(product.audience) && product.audience.length
+const audienceBlock = null /*  Array.isArray(product.audience) && product.audience.length
   ? product.audience.map(aud => ({ "@type": "Audience", "audienceType": aud }))
   : [
       { "@type": "Audience", "audienceType": "kivitelezők" },
       { "@type": "Audience", "audienceType": "asztalosok" },
       { "@type": "Audience", "audienceType": "építtetők" }
-    ];
+    ]; */
 
 const shippingDetailsHU = {
   "@type": "OfferShippingDetails",
@@ -717,7 +720,8 @@ const schemaBreadcrumb = {
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 pt-10 motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade 
       intersect-once intersect-quarter intercept-no-queue">
-        <div class="relative">
+        <div class="relative md:sticky md:top-32 md:self-start 
+           max-h-[80vh] overflow-hidden p-1">
           {Array.isArray(product.images) ? (
             <>
               {/* ProductGallery mint island */}
@@ -921,7 +925,18 @@ const schemaBreadcrumb = {
           </div>
         )}
         </div>
+
       </div>
+        {product.longDescription3 && (
+          <>
+          <h2 class="text-xl font-bold mb-2 pt-12">Részletes termékleírás</h2>
+            <HtmlExcerpt 
+              html={product.longDescription3}
+              client:load
+            />
+          </>
+        )}
+         
     </div>
   </section>
        <!-- Kapcsolódó termékek blokk -->

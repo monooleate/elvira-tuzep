@@ -30,6 +30,7 @@ export type Product = {
   description?: string
   longDescription?: string
   longDescription2?: string
+  longDescription3?: string
   material?: string
   audience?: string[]
   blogtags?: string[]
@@ -208,6 +209,7 @@ export async function fetchAllCategoriesWithProducts(
               description: p.description,
               longDescription: p.metadata?.longDescription,
               longDescription2: p.metadata?.longDescription2,
+              longDescription3: p.metadata?.longDescription3,
               material: p.metadata?.material || "",
               audience: p.metadata?.audience || [],
               blogtags: p.metadata?.blogtags || [],
