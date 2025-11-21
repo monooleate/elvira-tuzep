@@ -262,7 +262,7 @@ const autoUnit = useMemo(() => computeAutoUnit(baseProducts), [baseProducts]);
 // ha főkategória vált, reseteljük a lapozót és a keresést (opcionális)
 useEffect(() => {
   // alapból mindig az aktuális főkategóriára szűrjünk
-  setMaincatFilter((prev) => prev === '' || prev === active ? active : prev);
+  setMaincatFilter(active);
 
   // resetek
   setVisibleCount(PAGE);
