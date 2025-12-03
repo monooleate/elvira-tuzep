@@ -4,7 +4,15 @@ import DiscountCard from '~/components/widgets/DiscountCardClient.tsx'
 const now = new Date();
 const { discounted = [] } = Astro.props
 
-// -----------------------------------------------------
+
+
+
+// ===== JSON-LD (ItemList) generálás az akciós termékekhez =====
+
+export function buildSpecialOffersItemList(discounted) {
+  if (!discounted || discounted.length === 0) return null;
+
+  // -----------------------------------------------------
 // 1) Shipping schema (HU)
 // -----------------------------------------------------
 const shippingDetailsHU = {
@@ -70,12 +78,6 @@ const merchantReturnPolicyHU = {
     "unitCode": "DAY"
   }
 };
-
-
-// ===== JSON-LD (ItemList) generálás az akciós termékekhez =====
-
-export function buildSpecialOffersItemList(discounted) {
-  if (!discounted || discounted.length === 0) return null;
 
   return {
     "@context": "https://schema.org",
