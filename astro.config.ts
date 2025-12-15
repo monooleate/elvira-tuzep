@@ -33,50 +33,62 @@ console.log("🧭 PUBLIC_USE_API:", process.env.PUBLIC_USE_API); */
 export default defineConfig({
    output: USE_API ? "server" : "static",
 
-  integrations: [tailwind({
-    applyBaseStyles: false,
-  }), sitemap(), mdx(), icon({
-    include: {
-      tabler: ['*'],
-      'flat-color-icons': [
-        'template',
-        'gallery',
-        'approval',
-        'document',
-        'advertising',
-        'currency-exchange',
-        'voice-presentation',
-        'business-contact',
-        'database',
-      ],
-    },
-  }), 
-  
-  partytown({
-      config: {
-        forward: ['dataLayer.push'],
+  integrations: [
+    tailwind({
+      applyBaseStyles: false,
+    }),  
+    mdx(), 
+    icon({
+      include: {
+        tabler: ['*'],
+        'flat-color-icons': [
+          'template',
+          'gallery',
+          'approval',
+          'document',
+          'advertising',
+          'currency-exchange',
+          'voice-presentation',
+          'business-contact',
+          'database',
+        ],
       },
     }),
-  
-  compress({
-    CSS: true,
-    HTML: {
-      'html-minifier-terser': {
-        removeAttributeQuotes: false,
+    sitemap({
+        filter: (page) =>
+          !page.includes("/admin") &&
+          !page.includes("/tudastar/tag") &&
+          !/\/tudastar\/\d/.test(page),
+        lastmod: new Date(),
+        changefreq: "daily",
+        entryLimit: 500,
+      }),
+    
+    partytown({
+        config: {
+          forward: ['dataLayer.push'],
+        },
+      }),
+    
+    compress({
+      CSS: true,
+      HTML: {
+        'html-minifier-terser': {
+          removeAttributeQuotes: false,
+        },
       },
-    },
-    Image: false,
-    JavaScript: true,
-    SVG: false,
-    Logger: 1,
-  }), 
-  
-  astrowind({
-    config: './src/config.yaml',
-  }), 
-  
-  preact()
-],
+      Image: false,
+      JavaScript: true,
+      SVG: false,
+      Logger: 1,
+    }), 
+    
+    astrowind({
+      config: './src/config.yaml',
+    }), 
+    
+    preact()
+  ],
 
   image: {
     domains: ['cdn.pixabay.com'],
@@ -94,10 +106,10 @@ export default defineConfig({
       },
     },
     optimizeDeps: {
-      exclude: ["@medusajs/js-sdk"], // ne próbálja prebundle-ölni
+      exclude: ["@medusajs/js-sdk"],
     },
     ssr: {
-      noExternal: ["@medusajs/js-sdk"], // így CJS fallback lesz
+      noExternal: ["@medusajs/js-sdk"],
     },
   },
 

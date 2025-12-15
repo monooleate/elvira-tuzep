@@ -100,7 +100,7 @@ export default function VariantTable({ product }: Props) {
                   </td>
                   <td class="p-3">{variant.title}</td>
                   <td class="p-3 font-semibold text-black-600">
-                    {formatPrice(variant.price)} Ft
+                    {variant.price} Ft
                   </td>
                   <td class="p-3">
                     {variant.metadata?.inventory && variant.metadata.inventory > 0 ? (
