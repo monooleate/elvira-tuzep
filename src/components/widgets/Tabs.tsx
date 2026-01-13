@@ -125,6 +125,13 @@ export default function MainCategoryGrid({
             'OSB lap kínálatunkban megtalálja a legnépszerűbb vastagságokat és méreteket: 6 mm-től 22 mm-ig. Az OSB lap kedvező árú, sokoldalú építőanyag falak, tetők és padlók burkolásához. Népszerű alternatíva az OBI és Praktiker OSB lap választékhoz képest – közvetlenül, raktárról elérhető, széles választékban.',
           image: '/kategoriak/osb3_800x600.jpg',
           imageAlt: 'OSB lapok különböző méretekben és vastagságban'
+        },
+        'Telített kertifa': {
+          title: 'Telített kertifa',
+          body:
+            'Kertifa kategóriánkban nyomás alatt impregnált, telített faanyagokat találsz kültéri felhasználásra – legyen szó kerítésoszlopról, hegyezett cölöpről, rúdfáról, deszkáról vagy pallóról. Ezek a tartós, időjárás-álló faanyagok ellenállnak a nedvességnek, gombáknak és rovaroknak, így ideálisak kertépítéshez, faültetéshez, játszótéri és szerkezeti elemekhez.',
+          image: '/kategoriak/telitett-kertifa.webp',
+          imageAlt: 'Kertbe szánt kezelt fa különböző méretekben és típusokban'
         }
       },
   productListing = false,
@@ -176,12 +183,16 @@ const [active, setActive] = useState<string>(() => {
 // Ha változik a mainTabs, tartsuk érvényesnek az aktív fület
 useEffect(() => {
   if (!mainTabs.length) return;
-  if (!mainTabs.includes(active)) {
-    setActive(
-      initialTabName && mainTabs.includes(initialTabName)
-        ? initialTabName
-        : mainTabs[0]
-    );
+
+  const saved = sessionStorage.getItem("maincat-active");
+
+  if (saved && mainTabs.includes(saved)) {
+    setActive(saved);
+    return;
+  }
+
+  if (!active && mainTabs.length) {
+    setActive(mainTabs[0]);
   }
 }, [mainTabs]);
 
@@ -460,6 +471,16 @@ const filteredProducts = useMemo(() => {
 
   const activeIntro: TabIntro | undefined = tabIntros[active];
 
+  useEffect(() => {
+  const savedScroll = sessionStorage.getItem("maincat-scroll");
+  if (savedScroll) {
+    sessionStorage.removeItem("maincat-scroll");
+    setTimeout(() => {
+      window.scrollTo(0, Number(savedScroll));
+    }, 20);
+  }
+}, []);
+
   return (
     <div ref={rootRef} class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -567,8 +588,13 @@ const filteredProducts = useMemo(() => {
                       aria-controls={`panel-${toId(name)}`}
                       data-tab={name}
                       onClick={() => {
+                        sessionStorage.setItem("maincat-active", name);
+                        sessionStorage.setItem("maincat-scroll", String(window.scrollY));
                         setActive(name);
-                        requestAnimationFrame(() => scrollToActiveStart(name));
+
+                        setTimeout(() => {
+                          scrollToActiveStart(name);
+                        }, 35);
                       }}
                       class={`w-full text-left rounded-xl overflow-hidden border transition shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-orange-500
                         ${isActive ? 'border-orange-500 ring-1 ring-orange-500' : 'border-gray-200 dark:border-gray-700 hover:shadow-md'}
@@ -734,6 +760,9 @@ const filteredProducts = useMemo(() => {
                 <a
                   key={category.slug}
                   href={`/termekek/${category.slug}`}
+                    onClick={() => {
+    sessionStorage.setItem("maincat-scroll", String(window.scrollY));
+  }}
                   class="block border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800"
                 >
                   <div class="w-full h-48 overflow-hidden">

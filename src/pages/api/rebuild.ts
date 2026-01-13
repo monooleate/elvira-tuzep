@@ -4,6 +4,13 @@
 
 import type { APIRoute } from "astro"
 
+export const GET: APIRoute = async () => {
+  return new Response("🔧 Rebuild endpoint aktív – csak POST-ot fogad el", {
+    status: 200,
+    headers: { "Content-Type": "text/plain" },
+  })
+}
+
 export const POST: APIRoute = async ({ request }) => {
   try {
     const body = await request.json()

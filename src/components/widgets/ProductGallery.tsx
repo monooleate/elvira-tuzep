@@ -332,7 +332,7 @@ if (images.length === 1) {
   // ha direct típusú (string image) → NINCS lightbox
   if (img.kind === "direct") {
     return (
-      <div class="w-full" style="aspect-ratio: 2 / 3;">
+      <div class="w-full lg:aspect-[6/7]">
         <img
           src={img.url}
           alt={img.alt}

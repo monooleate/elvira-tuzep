@@ -2,6 +2,10 @@ import { computeDiscountForCard, isDiscountActive, hasValidPercent } from '~/lib
 
 type ImgItem = { src: string; alt?: string } | string;
 
+type Variant = {
+  price?: number | null;
+};
+
 type Product = {
   id?: string | number;
   sku?: string;
@@ -11,6 +15,7 @@ type Product = {
   description?: string;
   images?: ImgItem[];
   image?: string | { src: string; alt?: string };
+  variants?: Variant[] | null;
 
   price?: number;
   mprice?: number;
@@ -176,21 +181,44 @@ export default function DiscountCardClient({
 
         <div class="mt-2 space-y-1">
           {/* Darabár */}
-          {hasPrice && (
-            hasDiscount && discountPrice !== null ? (
-              <>
-                <p class="text-sm text-gray-500 line-through">
-                  {formatHU(product.price!)} Ft / db
-                </p>
-                <p class="text-sm text-red-600 font-bold">
-                  {formatHU(discountPrice)} Ft / db
-                </p>
-              </>
-            ) : (
-              <p class="text-sm font-medium text-gray-800 dark:text-gray-300">
-                {formatHU(product.price!)} Ft / db
-              </p>
-            )
+          {!product.variants ? (
+            <>
+              {hasPrice && (
+                hasDiscount && discountPrice !== null ? (
+                  <>
+                    <p class="text-sm text-gray-500 line-through">
+                      {formatHU(product.price!)} Ft / db
+                    </p>
+                    <p class="text-sm text-red-600 font-bold">
+                      {formatHU(discountPrice)} Ft / db
+                    </p>
+                  </>
+                ) : (
+                  <p class="text-sm font-medium text-gray-800 dark:text-gray-300">
+                    {formatHU(product.price!)} Ft / db
+                  </p>
+                )
+              )}
+            </>
+          ) : (
+            <>
+              {hasPrice && (
+                hasDiscount && discountPrice !== null ? (
+                  <>
+                    <p class="text-sm text-gray-500 line-through">
+                      {formatHU(product.price!)} Ft / db-tól
+                    </p>
+                    <p class="text-sm text-red-600 font-bold">
+                      {formatHU(discountPrice)} Ft / db-tól
+                    </p>
+                  </>
+                ) : (
+                  <p class="text-sm font-medium text-gray-800 dark:text-gray-300">
+                    {formatHU(product.price!)} Ft / db-tól
+                  </p>
+                )
+              )}
+            </>
           )}
 
           {/* m ár */}
@@ -265,14 +293,26 @@ export default function DiscountCardClient({
             )
           )}
         </div>
-
-        <div class="mt-1">
-          {typeof product.stock === 'number' && product.stock > 0 ? (
-            <span class="text-green-600">Raktáron</span>
-          ) : (
-            <span class="text-orange-500">Rendelhető (2-3 munkanap)</span>
-          )}
-        </div>
+        
+        {!product.variants ? (
+          <>
+            <div class="mt-1">
+              {typeof product.stock === 'number' && product.stock > 0 ? (
+                <span class="text-green-600">Raktáron</span>
+              ) : (
+                <span class="text-orange-500">Rendelhető (2-3 munkanap)</span>
+              )}
+            </div>
+          </>
+          ):(
+          <>
+            <div class="mt-1">
+                <span class="text-green-600">Raktáron</span>
+            </div>
+          </>
+          )
+        }
+        
       </div>
     </a>
   );
