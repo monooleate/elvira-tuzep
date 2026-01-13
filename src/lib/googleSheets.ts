@@ -9,6 +9,7 @@ export async function appendOfferToSheet(offer: any) {
     scopes: ['https://www.googleapis.com/auth/spreadsheets'],
   });
 
+  
   const sheets = google.sheets({ version: 'v4', auth });
 
   const sheetId = process.env.GOOGLE_SHEET_ID!;
