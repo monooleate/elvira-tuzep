@@ -18,8 +18,11 @@ export async function appendOfferToSheet(offer: any) {
     
     const credentials = JSON.parse(
       Buffer.from(process.env.GOOGLE_SERVICE_ACCOUNT_BASE64!, 'base64').toString('utf-8')
-    );
-    console.log('Credentials parsed, client_email:', credentials.client_email);
+
+    ),
+    scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+  });
+  
 
     const auth = new google.auth.GoogleAuth({
       credentials,

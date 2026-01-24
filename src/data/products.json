@@ -6630,8 +6630,10 @@
         "m2price": null,
         "m3price": null,
         "discountPrice": null,
-        "discountPercent": 8,
-        "discountValidUntil": "2025-12-14T23:00:00.000Z",
+
+        "discountPercent": 6,
+        "discountValidUntil": "2025-09-30T22:00:00.000Z",
+
         "stock": 1,
         "specs": {
           "Hossz": {
