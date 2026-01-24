@@ -1,0 +1,239 @@
+---
+/**
+ * DeliveryZones.astro
+ * Szállítási zónák vizualizációja Magyarország térképpel
+ */
+
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+
+const {
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline
+    title="Szállítási Információ"
+    subtitle="Országos kiszállítás – Budapesttől a legkisebb faluig!"
+    tagline="🚚 Mindenhova eljutunk"
+  />
+
+  <div class="grid lg:grid-cols-2 gap-8 mt-8 items-center">
+    
+    <!-- BAL OLDAL: Szöveges információ -->
+    <div class="space-y-6">
+      
+      <!-- Standard szállítás -->
+      <div class="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-xl p-6 border-l-4 border-blue-500">
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-blue-900 dark:text-blue-100 mb-2">
+              Standard Szállítás – 3 munkanap
+            </h3>
+            <p class="text-blue-700 dark:text-blue-300">
+              Megrendelés után 3 munkanapon belül kézbesítjük a raklapot. A sofőr előtte telefonon egyeztet az időpontról.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expressz szállítás -->
+      <div class="bg-gradient-to-r from-amber-50 to-orange-100 dark:from-amber-900/30 dark:to-orange-800/30 rounded-xl p-6 border-l-4 border-amber-500">
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 w-12 h-12 bg-amber-500 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-amber-900 dark:text-amber-100 mb-2">
+              Expressz Szállítás – 24-48 óra
+            </h3>
+            <p class="text-amber-700 dark:text-amber-300">
+              Sürgős? Felár ellenében expressz szállítást is vállalunk! Hívjon, és egyeztetjük a részleteket.
+            </p>
+            <p class="text-sm text-amber-600 dark:text-amber-400 mt-2 font-semibold">
+              +5.000 - 15.000 Ft felárat számolunk (távolságtól függően)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Szállítási díj info -->
+      <div class="bg-gradient-to-r from-emerald-50 to-teal-100 dark:from-emerald-900/30 dark:to-teal-800/30 rounded-xl p-6 border-l-4 border-emerald-500">
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-emerald-900 dark:text-emerald-100 mb-2">
+              Transzparens Árazás
+            </h3>
+            <p class="text-emerald-700 dark:text-emerald-300 mb-3">
+              A szállítási díj súly- és távolságfüggő. Raklapos tételnél:
+            </p>
+            <div class="grid grid-cols-2 gap-2 text-sm">
+              <div class="bg-white/50 dark:bg-slate-800/50 rounded-lg p-2 text-center">
+                <span class="block text-emerald-600 dark:text-emerald-400 font-bold">~23.000 Ft-tól</span>
+                <span class="text-emerald-700 dark:text-emerald-300 text-xs">Közeli régiók</span>
+              </div>
+              <div class="bg-white/50 dark:bg-slate-800/50 rounded-lg p-2 text-center">
+                <span class="block text-emerald-600 dark:text-emerald-400 font-bold">~35.000 Ft-ig</span>
+                <span class="text-emerald-700 dark:text-emerald-300 text-xs">Távoli régiók</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fontos infók -->
+      <div class="bg-gray-50 dark:bg-slate-700/50 rounded-xl p-4 flex items-start gap-3">
+        <svg class="w-6 h-6 text-gray-500 dark:text-gray-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <div class="text-sm text-gray-600 dark:text-gray-300">
+          <strong>Fontos:</strong> A szállítás mindig a megadott címre történik. Emelőhátfalas autóval érkezünk, 
+          de ha nincs lehetőség a lepakolásra, kérjük jelezze előre! Targonca szükség esetén külön megbeszélés tárgya.
+        </div>
+      </div>
+    </div>
+
+    <!-- JOBB OLDAL: Térkép vizualizáció -->
+    <div class="relative">
+      <div class="bg-gradient-to-br from-emerald-100 via-blue-50 to-amber-100 dark:from-slate-800 dark:via-slate-700 dark:to-slate-800 rounded-2xl p-8 shadow-xl">
+        
+        <!-- Magyarország stilizált térkép (SVG placeholder) -->
+        <div class="relative aspect-[4/3] bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-inner">
+          <!-- Egyszerűsített Magyarország körvonal -->
+          <svg viewBox="0 0 400 300" class="w-full h-full">
+            <!-- Háttér gradient -->
+            <defs>
+              <linearGradient id="mapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.2" />
+                <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.2" />
+              </linearGradient>
+              <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.3" />
+                <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0" />
+              </radialGradient>
+            </defs>
+            
+            <!-- Magyarország egyszerűsített körvonal -->
+            <path 
+              d="M50,120 Q80,80 140,70 L180,75 Q220,65 260,80 L320,90 Q360,100 380,140 L370,180 Q350,220 300,240 L240,250 Q180,260 120,250 L70,230 Q30,200 25,160 L30,130 Z" 
+              fill="url(#mapGradient)" 
+              stroke="#10b981" 
+              stroke-width="2"
+              class="dark:stroke-emerald-400"
+            />
+            
+            <!-- Központi pont - Érd (telephelyünk) -->
+            <circle cx="200" cy="150" r="40" fill="url(#centerGlow)" />
+            <circle cx="200" cy="150" r="8" fill="#f59e0b" class="animate-pulse" />
+            <circle cx="200" cy="150" r="16" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,4">
+              <animateTransform 
+                attributeName="transform" 
+                type="rotate" 
+                from="0 200 150" 
+                to="360 200 150" 
+                dur="10s" 
+                repeatCount="indefinite"
+              />
+            </circle>
+            
+            <!-- Szállítási sugarak -->
+            <g class="delivery-lines" stroke="#3b82f6" stroke-width="1" stroke-dasharray="5,5" opacity="0.5">
+              <line x1="200" y1="150" x2="100" y2="100">
+                <animate attributeName="stroke-dashoffset" from="0" to="10" dur="1s" repeatCount="indefinite" />
+              </line>
+              <line x1="200" y1="150" x2="320" y2="100">
+                <animate attributeName="stroke-dashoffset" from="0" to="10" dur="1s" repeatCount="indefinite" />
+              </line>
+              <line x1="200" y1="150" x2="80" y2="200">
+                <animate attributeName="stroke-dashoffset" from="0" to="10" dur="1s" repeatCount="indefinite" />
+              </line>
+              <line x1="200" y1="150" x2="340" y2="200">
+                <animate attributeName="stroke-dashoffset" from="0" to="10" dur="1s" repeatCount="indefinite" />
+              </line>
+              <line x1="200" y1="150" x2="200" y2="250">
+                <animate attributeName="stroke-dashoffset" from="0" to="10" dur="1s" repeatCount="indefinite" />
+              </line>
+            </g>
+            
+            <!-- Célpontok -->
+            <g class="destinations">
+              <circle cx="100" cy="100" r="6" fill="#3b82f6" opacity="0.8" />
+              <circle cx="320" cy="100" r="6" fill="#3b82f6" opacity="0.8" />
+              <circle cx="80" cy="200" r="6" fill="#3b82f6" opacity="0.8" />
+              <circle cx="340" cy="200" r="6" fill="#3b82f6" opacity="0.8" />
+              <circle cx="200" cy="250" r="6" fill="#3b82f6" opacity="0.8" />
+            </g>
+            
+            <!-- Feliratok -->
+            <text x="200" y="130" text-anchor="middle" class="fill-amber-600 dark:fill-amber-400 font-bold text-sm">
+              Érd
+            </text>
+            <text x="200" y="145" text-anchor="middle" class="fill-amber-600 dark:fill-amber-400 text-xs">
+              (Telephely)
+            </text>
+          </svg>
+          
+          <!-- Overlay badge -->
+          <div class="absolute top-4 right-4 bg-emerald-500 text-white px-4 py-2 rounded-lg font-bold text-sm shadow-lg">
+            🇭🇺 Teljes Magyarország
+          </div>
+          
+          <!-- Truck ikon animáció -->
+          <div class="absolute bottom-4 left-4 bg-white dark:bg-slate-800 rounded-lg px-3 py-2 shadow-lg flex items-center gap-2">
+            <span class="text-2xl animate-bounce">🚚</span>
+            <span class="text-sm font-semibold text-gray-700 dark:text-gray-300">Úton vagyunk!</span>
+          </div>
+        </div>
+        
+        <!-- Statisztikák a térkép alatt -->
+        <div class="grid grid-cols-3 gap-4 mt-6">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-emerald-600 dark:text-emerald-400">19</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">megye</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">3.155</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">település</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-amber-600 dark:text-amber-400">1</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">hívás</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</WidgetWrapper>
+
+<style>
+  @keyframes truck-drive {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+  }
+  
+  .delivery-lines line {
+    animation: dash 1s linear infinite;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 10;
+    }
+  }
+</style>

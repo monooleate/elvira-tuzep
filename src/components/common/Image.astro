@@ -21,12 +21,27 @@ if (props.alt === undefined || props.alt === null) {
   throw new Error();
 }
 
+const parseNumericDimension = (value: string) => {
+  const normalized = value.trim();
+  if (!/^-?\d+(\.\d+)?$/.test(normalized)) {
+    return undefined;
+  }
+  const numericValue = Number(normalized);
+  return Number.isFinite(numericValue) ? numericValue : undefined;
+};
+
 if (typeof props.width === 'string') {
-  props.width = parseInt(props.width);
+  const parsedWidth = parseNumericDimension(props.width);
+  if (parsedWidth !== undefined) {
+    props.width = parsedWidth;
+  }
 }
 
 if (typeof props.height === 'string') {
-  props.height = parseInt(props.height);
+  const parsedHeight = parseNumericDimension(props.height);
+  if (parsedHeight !== undefined) {
+    props.height = parsedHeight;
+  }
 }
 
 if (!props.loading) {
