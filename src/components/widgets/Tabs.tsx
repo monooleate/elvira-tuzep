@@ -132,6 +132,13 @@ export default function MainCategoryGrid({
             'Kertifa kategóriánkban nyomás alatt impregnált, telített faanyagokat találsz kültéri felhasználásra – legyen szó kerítésoszlopról, hegyezett cölöpről, rúdfáról, deszkáról vagy pallóról. Ezek a tartós, időjárás-álló faanyagok ellenállnak a nedvességnek, gombáknak és rovaroknak, így ideálisak kertépítéshez, faültetéshez, játszótéri és szerkezeti elemekhez.',
           image: '/kategoriak/telitett-kertifa.webp',
           imageAlt: 'Kertbe szánt kezelt fa különböző méretekben és típusokban'
+        },
+        'Kötőelemek': {
+          title: 'Kötőelemek',
+          body:
+            'Kötőelemek kategóriánkban megtalálod a faépítésekhez szükséges professzionális rögzítőelemeket – legyen szó szerkezetépítő csavarokról, süllyesztett fejű csavarokról, Torx (TX) meghajtásról vagy horganyzott kötőelemekről. Ezek a tartós, nagy szilárdságú csavarok és alkatrészek megbízható kötést biztosítanak tetőszerkezeteknél, pergoláknál, teraszoknál és minden kültéri vagy beltéri faépítménynél.',
+          image: '/kategoriak/kotoelemek.webp',
+          imageAlt: 'Faépítésekhez használt csavarok és kötőelemek egy asztalon elrendezve'
         }
       },
   productListing = false,

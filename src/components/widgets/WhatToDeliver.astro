@@ -1,0 +1,155 @@
+---
+/**
+ * WhatToDeliver.astro
+ * "Mit célszerű kiszállíttatni?" komponens
+ * 3 kártya váltakozó színekkel + CTA gombok
+ */
+
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+
+const {
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+const deliveryItems = [
+  {
+    icon: '🔥',
+    title: 'Tűzifa Brikett',
+    description: 'Hogy ne fázzon télen, és ne kelljen bajlódni a beszerzéssel! Prémium minőségű brikett házhozszállítva – csak be kell rakni a kazánba.',
+    features: ['Magas fűtőérték', 'Tiszta égés', 'Könnyű tárolás'],
+    cta: { text: 'Brikett böngészése →', href: '/termekek/kemenyfa-brikett' },
+    colorScheme: {
+      bg: 'bg-amber-50 dark:bg-amber-950/40',
+      border: 'border-amber-200 dark:border-amber-800',
+      iconBg: 'bg-amber-100 dark:bg-amber-900/60',
+      titleColor: 'text-amber-800 dark:text-amber-200',
+      textColor: 'text-amber-700 dark:text-amber-300',
+      featureBg: 'bg-amber-100 dark:bg-amber-900/50',
+      featureText: 'text-amber-700 dark:text-amber-300',
+      btnBg: 'bg-amber-500 hover:bg-amber-600 dark:bg-amber-600 dark:hover:bg-amber-500',
+      btnText: 'text-white',
+    },
+  },
+  {
+    icon: '🌲',
+    title: 'Telített Kertifa',
+    description: 'A kert csodáinak megalkotásához! Pergolák, kerítések, játszóterek, támfalak – tartós faanyag, ami évtizedekig bírja.',
+    features: ['15-25 év élettartam', 'Gyermekbarát', 'Nem rohad'],
+    cta: { text: 'Kertifa böngészése →', href: '/termekek/telitett-hegyzett-colop' },
+    colorScheme: {
+      bg: 'bg-emerald-50 dark:bg-emerald-950/40',
+      border: 'border-emerald-200 dark:border-emerald-800',
+      iconBg: 'bg-emerald-100 dark:bg-emerald-900/60',
+      titleColor: 'text-emerald-800 dark:text-emerald-200',
+      textColor: 'text-emerald-700 dark:text-emerald-300',
+      featureBg: 'bg-emerald-100 dark:bg-emerald-900/50',
+      featureText: 'text-emerald-700 dark:text-emerald-300',
+      btnBg: 'bg-emerald-500 hover:bg-emerald-600 dark:bg-emerald-600 dark:hover:bg-emerald-500',
+      btnText: 'text-white',
+    },
+  },
+  {
+    icon: '🛠️',
+    title: 'Barkács Anyagok',
+    description: 'És még sok minden más! Böngéssze honlapunkat, és barkácskodja össze szíve – vagy asszonya szíve – vágyát!',
+    features: ['Széles választék', 'Minden egy helyen', 'Saját projekt'],
+    cta: { text: 'Összes termék →', href: '/termekek' },
+    colorScheme: {
+      bg: 'bg-indigo-50 dark:bg-indigo-950/40',
+      border: 'border-indigo-200 dark:border-indigo-800',
+      iconBg: 'bg-indigo-100 dark:bg-indigo-900/60',
+      titleColor: 'text-indigo-800 dark:text-indigo-200',
+      textColor: 'text-indigo-700 dark:text-indigo-300',
+      featureBg: 'bg-indigo-100 dark:bg-indigo-900/50',
+      featureText: 'text-indigo-700 dark:text-indigo-300',
+      btnBg: 'bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-600 dark:hover:bg-indigo-500',
+      btnText: 'text-white',
+    },
+  },
+];
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline
+    title="Mit Célszerű Kiszállíttatni?"
+    subtitle="Nehéz, terjedelmes termékek – mi visszük, Ön élvezi!"
+    tagline="📦 Népszerű kategóriák"
+  />
+
+  <div class="grid md:grid-cols-3 gap-6 mt-8">
+    {deliveryItems.map((item, index) => (
+      <div 
+        class={`
+          relative rounded-2xl p-6 border-2 transition-all duration-300
+          hover:shadow-xl hover:-translate-y-1
+          ${item.colorScheme.bg}
+          ${item.colorScheme.border}
+        `}
+      >
+        <!-- Ikon -->
+        <div class={`
+          w-16 h-16 rounded-xl flex items-center justify-center text-4xl mb-4
+          ${item.colorScheme.iconBg}
+        `}>
+          {item.icon}
+        </div>
+
+        <!-- Cím -->
+        <h3 class={`text-xl font-bold mb-3 ${item.colorScheme.titleColor}`}>
+          {item.title}
+        </h3>
+
+        <!-- Leírás -->
+        <p class={`mb-4 leading-relaxed ${item.colorScheme.textColor}`}>
+          {item.description}
+        </p>
+
+        <!-- Features lista -->
+        <div class="flex flex-wrap gap-2 mb-6">
+          {item.features.map((feature) => (
+            <span class={`
+              text-xs font-medium px-2 py-1 rounded-full
+              ${item.colorScheme.featureBg}
+              ${item.colorScheme.featureText}
+            `}>
+              ✓ {feature}
+            </span>
+          ))}
+        </div>
+
+        <!-- CTA gomb -->
+        <a 
+          href={item.cta.href}
+          class={`
+            inline-flex items-center justify-center w-full py-3 px-4 
+            rounded-xl font-semibold transition-colors
+            ${item.colorScheme.btnBg}
+            ${item.colorScheme.btnText}
+          `}
+        >
+          {item.cta.text}
+        </a>
+
+        <!-- Dekoratív szám -->
+        <div class="absolute top-4 right-4 text-6xl font-black opacity-10">
+          {index + 1}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Extra motivációs szöveg -->
+  <div class="mt-10 text-center">
+    <p class="text-lg text-gray-600 dark:text-gray-400">
+      Nem találja, amit keres? 
+      <a href="/kapcsolat" class="text-primary-600 dark:text-primary-400 font-semibold hover:underline">
+        Hívjon minket
+      </a>
+      – szinte mindent meg tudunk oldani!
+    </p>
+  </div>
+</WidgetWrapper>

@@ -191,7 +191,7 @@ export async function fetchAllCategoriesWithProducts(
                     height: v.height ?? null,
                   }))
                 : null
-/* if (variants.length > 1){console.log(variants)}  */
+/* if (variants.length > 1){console.log(variants[1].prices?.[0]?.amount ?? null,)}  */
             return {
               name: p.title,
               slug: p.handle,

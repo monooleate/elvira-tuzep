@@ -4,7 +4,7 @@ import path from "path";
 import sharp from "sharp";
 
 const IN = "src_images";
-const OUT = "public/images/products";
+const OUT = "public/images/products_2";
 const TARGET_WIDTHS = [500, 1200];
 
 if (!fs.existsSync(IN)) {

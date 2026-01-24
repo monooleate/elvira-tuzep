@@ -1,0 +1,607 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import DeliveryZones from '~/components/widgets/DeliveryZones.astro';
+import WhatToDeliver from '~/components/widgets/WhatToDeliver.astro';
+
+const metadata = {
+  title: 'Országos Kiszállítás | Telített Fa & Brikett Raklapon | Elvira Tüzép',
+  description: 'Országos házhozszállítás raklapos tételben! Telített kertifa, brikett bruttó 23.000 Ft-tól. 3 napos kiszállítás, expressz opció. Rendeljen most!',
+  canonical: 'https://elviratuzep.hu/orszagos-kiszallitas',
+  openGraph: {
+    type: 'website',
+    title: 'Országos Kiszállítás - Telített Fa & Brikett | Elvira Tüzép',
+    description: 'Raklapos házhozszállítás országosan! 3 nap alatt nálad. Telített kertifa, tűzifa brikett.',
+    image: '~/assets/images/og-orszagos-kiszallitas.jpg',
+  },
+};
+---
+
+<Layout metadata={metadata}>
+  
+  <!-- ============================================
+       1. HERO SECTION
+       ============================================ -->
+  <Hero
+    id="hero"
+    tagline="🚚 Országos Házhozszállítás"
+    title="Harmadnapra Nálad a Raklap!"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Árajánlat kérése',
+        href: '/kapcsolat',
+        icon: 'tabler:mail',
+      },
+      {
+        variant: 'secondary',
+        text: 'Mit szállítunk?',
+        href: '#mit-szallitsunk',
+        icon: 'tabler:package',
+      },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      <div class="space-y-3">
+        <p class="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-200">
+          <span class="text-primary-600 dark:text-primary-400 font-bold">Telített kertifa</span>, 
+          <span class="text-amber-600 dark:text-amber-400 font-bold">Brikett</span> és 
+          <span class="text-indigo-600 dark:text-indigo-400 font-bold">még sok minden más</span> – 
+          raklapon, az ország bármely pontjára!
+        </p>
+        
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-4 pb-4">
+          <div class="inline-flex items-center gap-2 bg-green-100 dark:bg-green-900/40 text-green-800 dark:text-green-300 px-4 py-2 rounded-full font-semibold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Bruttó ~23.000 Ft-tól</span>
+          </div>
+          
+          <div class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 px-4 py-2 rounded-full font-semibold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>3 napos szállítás</span>
+          </div>
+          
+          <div class="inline-flex items-center gap-2 bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 px-4 py-2 rounded-full font-semibold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+            <span>Expressz opció</span>
+          </div>
+        </div>
+      </div>
+    </Fragment>
+
+<!--     <Fragment slot="image">
+      <div class="relative">
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-emerald-800 via-emerald-700 to-amber-700 aspect-[4/3] flex items-center justify-center">
+          <div class="absolute inset-0 bg-black/20"></div>
+          <div class="relative z-10 text-center text-white p-8">
+            <div class="text-8xl mb-4">🪵</div>
+            <div class="text-6xl mb-4">🔥</div>
+            <p class="text-xl font-bold uppercase tracking-wider">Telített Fa & Brikett</p>
+            <p class="text-lg opacity-80">Országos szállítás</p>
+          </div>
+          
+          <div class="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-lg font-bold text-sm transform rotate-12 shadow-lg">
+            AKCIÓ!
+          </div>
+          <div class="absolute bottom-4 left-4 bg-white/90 dark:bg-slate-800/90 text-gray-800 dark:text-white px-4 py-2 rounded-lg font-bold shadow-lg">
+            🚚 Raklapos tétel
+          </div>
+        </div>
+      </div>
+    </Fragment> -->
+  </Hero>
+
+  <!-- ============================================
+       2. MOTIVÁCIÓS SZEKCIÓ
+       ============================================ -->
+  <section class="py-12 md:py-16 bg-gradient-to-r from-emerald-50 via-white to-amber-50 dark:from-slate-900 dark:via-emerald-950/30 dark:to-slate-900">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+        Ne legyen álmainak gátja a beszerzés! 🌟
+      </h2>
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+        Építsen <strong class="text-emerald-600 dark:text-emerald-400">kerítést</strong>, 
+        <strong class="text-emerald-600 dark:text-emerald-400">kertet</strong>, 
+        <strong class="text-emerald-600 dark:text-emerald-400">gyermekjátszóteret</strong>. 
+        <br class="hidden md:block" />
+        <span class="text-amber-600 dark:text-amber-400 font-semibold">Nyugozza le a szomszédokat!</span> 
+        <br class="hidden md:block" />
+        A termékeket mi adjuk – Ön csak megrendeli, és <strong>harmadnapra ott a raklap</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       3. SZÁLLÍTÁSI INFORMÁCIÓ
+       ============================================ -->
+  <DeliveryZones id="szallitas" />
+
+  <!-- ============================================
+       4. MIT CÉLSZERŰ KISZÁLLÍTTATNI?
+       ============================================ -->
+  <WhatToDeliver id="mit-szallitsunk" />
+
+  <!-- ============================================
+       5. MIÉRT TŐLÜNK RENDELJEN?
+       ============================================ -->
+  <Features
+    id="elonyok"
+    title="Miért Tőlünk Rendeljen?"
+    subtitle="Országos házhozszállítás, megbízható minőség, egyszerű rendelés"
+    columns={3}
+    items={[
+      {
+        title: 'Országos Kiszállítás',
+        description: 'Az ország bármely pontjára szállítunk raklapos tételben. Budapesttől Debrecenig, Soprontól Szegedig – mindenhova!',
+        icon: 'tabler:map-pin',
+      },
+      {
+        title: '3 Napos Szállítás',
+        description: 'Megrendelés után 3 munkanapon belül kézbesítjük. Sürgős? Expressz opcióval még gyorsabban!',
+        icon: 'tabler:truck-delivery',
+      },
+      {
+        title: 'Transzparens Árazás',
+        description: 'Súly- és távolságfüggő szállítási díjak, nincsenek rejtett költségek. Előre tudja, mire számítson.',
+        icon: 'tabler:receipt',
+      },
+      {
+        title: 'Minőségi Termékek',
+        description: 'Tanalith-kezelt telített fa, prémium brikett. Csak olyan terméket szállítunk, amit magunknak is megvennénk.',
+        icon: 'tabler:award',
+      },
+      {
+        title: 'Rugalmas Mennyiség',
+        description: 'Brikettnél akár kisebb tételben is. Telített fánál raklapos minimum – a legjobb ár-érték arány.',
+        icon: 'tabler:packages',
+      },
+      {
+        title: '15+ Év Tapasztalat',
+        description: 'Megbízható partner vagyunk. Több ezer elégedett vásárló szerte az országban.',
+        icon: 'tabler:history',
+      },
+    ]}
+  />
+
+  <!-- ============================================
+       6. TERMÉK BEMUTATÓ BOXOK (váltakozó színek)
+       ============================================ -->
+  
+  <!-- Box 1: Telített fa - Kertépítés (ZÖLD, kép balra) -->
+<!--   <Content
+    id="telitett-fa"
+    isReversed
+    title="Telített Fa – Kertépítéshez"
+    subtitle="Nagynyomáson kezelt borovifa minden kültéri projekthez"
+    items={[
+      {
+        title: 'Pergolák és lugasok',
+        description: 'Tartós váz kerti pihenőkhöz, árnyékolókhoz.',
+      },
+      {
+        title: 'Kerti bútorok alapanyaga',
+        description: 'Padok, asztalok, virágládák építéséhez.',
+      },
+      {
+        title: 'Támfalak és szegélyek',
+        description: 'Kertrendezéshez, ágyások kialakításához.',
+      },
+    ]}
+    callToAction={{
+      text: 'Telített fa termékek →',
+      href: '/telitett-fa',
+    }}
+    classes={{
+      container: 'bg-emerald-50 dark:bg-emerald-950/30',
+    }}
+  >
+    <Fragment slot="content">
+      <div class="bg-emerald-100 dark:bg-emerald-900/40 rounded-xl p-6 border-l-4 border-emerald-500">
+        <h3 class="text-xl font-bold text-emerald-800 dark:text-emerald-300 mb-3">
+          🛡️ Miért telített fa?
+        </h3>
+        <ul class="space-y-2 text-emerald-700 dark:text-emerald-200">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            15-25 év élettartam kültéren
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Nem rohad, nem korhad
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Festhető, lazúrozható
+          </li>
+        </ul>
+      </div>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="rounded-xl overflow-hidden shadow-lg bg-gradient-to-br from-emerald-600 to-emerald-800 aspect-square flex items-center justify-center">
+        <div class="text-center text-white p-8">
+          <div class="text-7xl mb-4">🏡</div>
+          <p class="font-bold text-xl">Kertépítés</p>
+          <p class="text-emerald-200 text-sm">Placeholder kép helye</p>
+        </div>
+      </div>
+    </Fragment>
+  </Content> -->
+
+  <!-- Box 2: Faültetés - Tartó cölöpök (KÉK, kép jobbra) -->
+<!--   <Content
+    id="faultetes"
+    title="Tartó Cölöpök – Faültetéshez"
+    subtitle="Fiatal fák védelme és támasztása professzionális minőségben"
+    items={[
+      {
+        title: 'Hegyezett cölöpök',
+        description: 'Könnyen leverhetők, stabilan állnak.',
+      },
+      {
+        title: 'Szőlőkarók',
+        description: 'Szőlőműveléshez, futónövényekhez.',
+      },
+      {
+        title: 'Különböző méretek',
+        description: '1,5 m-től 3 m-ig, több átmérőben.',
+      },
+    ]}
+    callToAction={{
+      text: 'Cölöpök böngészése →',
+      href: '/telitett-fa/colopok',
+    }}
+    classes={{
+      container: 'bg-blue-50 dark:bg-blue-950/30',
+    }}
+  >
+    <Fragment slot="content">
+      <div class="bg-blue-100 dark:bg-blue-900/40 rounded-xl p-6 border-l-4 border-blue-500">
+        <h3 class="text-xl font-bold text-blue-800 dark:text-blue-300 mb-3">
+          🌱 Faültetés tippek
+        </h3>
+        <ul class="space-y-2 text-blue-700 dark:text-blue-200">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Fa mellé 2-3 cölöp ajánlott
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Telített fa 25 évig bírja földben
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Nem kell cserélgetni évente
+          </li>
+        </ul>
+      </div>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="rounded-xl overflow-hidden shadow-lg bg-gradient-to-br from-blue-600 to-blue-800 aspect-square flex items-center justify-center">
+        <div class="text-center text-white p-8">
+          <div class="text-7xl mb-4">🌳</div>
+          <p class="font-bold text-xl">Faültetés</p>
+          <p class="text-blue-200 text-sm">Placeholder kép helye</p>
+        </div>
+      </div>
+    </Fragment>
+  </Content>
+ -->
+  <!-- Box 3: Brikett (AMBER, kép balra) -->
+<!--   <Content
+    id="brikett"
+    isReversed
+    title="Tűzifa Brikett – Fűtéshez"
+    subtitle="Prémium minőségű brikett, tiszta égés, magas fűtőérték"
+    items={[
+      {
+        title: 'Magas fűtőérték',
+        description: '4,5-5 kWh/kg – kevesebből többet fűt.',
+      },
+      {
+        title: 'Tiszta égés',
+        description: 'Kevés hamu (1-3%), nem füstöl.',
+      },
+      {
+        title: 'Könnyű tárolás',
+        description: 'Szabályos alakú, helytakarékos.',
+      },
+    ]}
+    callToAction={{
+      text: 'Brikett termékek →',
+      href: '/brikett',
+    }}
+    classes={{
+      container: 'bg-amber-50 dark:bg-amber-950/30',
+    }}
+  >
+    <Fragment slot="content">
+      <div class="bg-amber-100 dark:bg-amber-900/40 rounded-xl p-6 border-l-4 border-amber-500">
+        <h3 class="text-xl font-bold text-amber-800 dark:text-amber-300 mb-3">
+          🔥 Miért brikett?
+        </h3>
+        <ul class="space-y-2 text-amber-700 dark:text-amber-200">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-amber-600 dark:text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Nem kell aprítani, darabolni
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-amber-600 dark:text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Egyenletes, hosszan tartó hő
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-amber-600 dark:text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Kémény kevésbé kormozódik
+          </li>
+        </ul>
+      </div>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="rounded-xl overflow-hidden shadow-lg bg-gradient-to-br from-amber-600 to-orange-700 aspect-square flex items-center justify-center">
+        <div class="text-center text-white p-8">
+          <div class="text-7xl mb-4">🔥</div>
+          <p class="font-bold text-xl">Brikett</p>
+          <p class="text-amber-200 text-sm">Placeholder kép helye</p>
+        </div>
+      </div>
+    </Fragment>
+  </Content> -->
+
+  <!-- Box 4: Kerítésépítés (SLATE/SZÜRKE, kép jobbra) -->
+<!--   <Content
+    id="kerites"
+    title="Kerítésépítés – Tartós Megoldások"
+    subtitle="Kerítésoszlopok, lécek, kapuk alapanyagai telített fából"
+    items={[
+      {
+        title: 'Kerítésoszlopok',
+        description: 'Hegyezett vagy sima végű, földbe verhető.',
+      },
+      {
+        title: 'Kerítéslécek',
+        description: 'Különböző szélességben és hosszban.',
+      },
+      {
+        title: 'Keresztlécek',
+        description: 'Stabil vázszerkezethez.',
+      },
+    ]}
+    callToAction={{
+      text: 'Kerítés anyagok →',
+      href: '/telitett-fa/kerites',
+    }}
+    classes={{
+      container: 'bg-slate-100 dark:bg-slate-800/50',
+    }}
+  >
+    <Fragment slot="content">
+      <div class="bg-slate-200 dark:bg-slate-700/60 rounded-xl p-6 border-l-4 border-slate-500">
+        <h3 class="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3">
+          🏗️ Kerítés projekt
+        </h3>
+        <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-slate-600 dark:text-slate-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Teljes anyagszükséglet egy helyen
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-slate-600 dark:text-slate-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Évtizedekig nem kell cserélni
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-slate-600 dark:text-slate-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Természetes, szép megjelenés
+          </li>
+        </ul>
+      </div>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="rounded-xl overflow-hidden shadow-lg bg-gradient-to-br from-slate-600 to-slate-800 aspect-square flex items-center justify-center">
+        <div class="text-center text-white p-8">
+          <div class="text-7xl mb-4">🏠</div>
+          <p class="font-bold text-xl">Kerítésépítés</p>
+          <p class="text-slate-300 text-sm">Placeholder kép helye</p>
+        </div>
+      </div>
+    </Fragment>
+  </Content>
+ -->
+  <!-- Box 5: Gyermekjátszótér (LILA/PURPLE, kép balra) -->
+<!--   <Content
+    id="jatszoter"
+    isReversed
+    title="Gyermekjátszótér – Biztonságosan"
+    subtitle="Gyermekbarát, Tanalith-kezelt fa játszóterek építéséhez"
+    items={[
+      {
+        title: 'Hinták, mászókák váza',
+        description: 'Erős, tartós szerkezetek alapja.',
+      },
+      {
+        title: 'Homokozó keret',
+        description: 'Rothadásmentes, évekig tartós.',
+      },
+      {
+        title: 'Játékházak',
+        description: 'Gyerekek kedvenc rejtekhelye.',
+      },
+    ]}
+    callToAction={{
+      text: 'Játszótér anyagok →',
+      href: '/telitett-fa/jatszoter',
+    }}
+    classes={{
+      container: 'bg-purple-50 dark:bg-purple-950/30',
+    }}
+  >
+    <Fragment slot="content">
+      <div class="bg-purple-100 dark:bg-purple-900/40 rounded-xl p-6 border-l-4 border-purple-500">
+        <h3 class="text-xl font-bold text-purple-800 dark:text-purple-300 mb-3">
+          👶 Gyermekbiztos
+        </h3>
+        <ul class="space-y-2 text-purple-700 dark:text-purple-200">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            EN 71-3 játékbiztonsági szabvány
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Nehézfém-mentes (nincs króm, arzén)
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Gyerekek bőrével érintkezhet
+          </li>
+        </ul>
+      </div>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="rounded-xl overflow-hidden shadow-lg bg-gradient-to-br from-purple-600 to-pink-600 aspect-square flex items-center justify-center">
+        <div class="text-center text-white p-8">
+          <div class="text-7xl mb-4">🎠</div>
+          <p class="font-bold text-xl">Játszótér</p>
+          <p class="text-purple-200 text-sm">Placeholder kép helye</p>
+        </div>
+      </div>
+    </Fragment>
+  </Content> -->
+
+  <!-- ============================================
+       7. HOGYAN RENDELJEN?
+       ============================================ -->
+  <Steps
+    id="rendeles-folyamat"
+    title="Hogyan Rendeljen?"
+    subtitle="Egyszerű, gyors, problémamentes"
+    items={[
+      {
+        title: '1. Válassza ki a terméket',
+        description: 'Böngéssze át telített fa, brikett vagy egyéb kínálatunkat. Nem talál valamit? Kérdezzen!',
+        icon: 'tabler:list-search',
+      },
+      {
+        title: '2. Küldje el rendelését',
+        description: 'Telefonon, e-mailben vagy az űrlapon. Írja le, mit és mennyit szeretne, hova szállítsuk.',
+        icon: 'tabler:send',
+      },
+      {
+        title: '3. Visszaigazolás & fizetés',
+        description: 'Munkatársunk visszahívja, egyeztet. Fizetés előre utalással – utánvét nincs.',
+        icon: 'tabler:phone-check',
+      },
+      {
+        title: '4. Szállítás 3 napon belül',
+        description: 'A megbeszélt időpontban kiszállítjuk a raklapot az Ön címére.',
+        icon: 'tabler:truck-delivery',
+      },
+    ]}
+  />
+
+  <!-- ============================================
+       8. GYIK (ÚJ KÉRDÉSEK)
+       ============================================ -->
+  <FAQs
+    id="gyik"
+    title="Gyakran Ismételt Kérdések"
+    subtitle="Minden, amit a rendelésről tudni érdemes"
+    items={[
+      {
+        title: 'Van utánvétes fizetési lehetőség?',
+        description: 'Sajnos utánvétet nem tudunk vállalni. A fizetés előre utalással történik, a visszaigazolt összeg beérkezése után indítjuk a szállítást. Céges vásárlóknak egyedi megállapodás lehetséges.',
+      },
+      {
+        title: 'Van garancia a termékekre?',
+        description: 'Klasszikus garanciát nem tudunk vállalni, de a Tanalith-kezelt telített fa gyártói minősítéssel rendelkezik: UC4 besorolás, mely 15-25 év tartósságot jelent talajkontaktusban is. A minőségért kezeskedünk!',
+      },
+      {
+        title: 'Mi a minimum rendelési mennyiség?',
+        description: 'Telített fánál a minimum 1 raklap. Brikettnél rugalmasabbak vagyunk, de a szállítás csak nagyobb tételnél éri meg igazán.',
+      },
+      {
+        title: 'Mennyibe kerül a szállítás?',
+        description: 'A szállítási díj súly- és távolságfüggő. Raklapos tételnél bruttó ~23.000 Ft-tól indul. Pontos árajánlatért vegye fel velünk a kapcsolatot!',
+      },
+      {
+        title: 'Milyen gyorsan szállítanak?',
+        description: 'Standard szállítás 3 munkanapon belül. Ha sürgős, expressz opcióval akár másnap is (+5.000-15.000 Ft felár).',
+      },
+      {
+        title: 'Hova szállítanak?',
+        description: 'Magyarország teljes területére! Budapesttől a legkisebb faluig, mindenhova eljuttatjuk a rendelését.',
+      },
+      {
+        title: 'Hogyan történik a lepakolás?',
+        description: 'Emelőhátfalas autóval érkezünk. Ha nincs lehetőség a lepakolásra (pl. szűk utca), kérjük előre jelezze! Targonca szükség esetén egyedi megbeszélés tárgya.',
+      },
+      {
+        title: 'Mit tegyek, ha sérült a termék?',
+        description: 'Szállításkor ellenőrizze a csomagolást a sofőr jelenlétében! Sérülés esetén azonnal jelezze és lépjen kapcsolatba velünk – keressük a megoldást.',
+      },
+    ]}
+  />
+
+  <!-- ============================================
+       9. ZÁRÓ CTA
+       ============================================ -->
+  <CallToAction
+    id="megrendeles"
+    title="Készen Áll a Rendelésre?"
+    subtitle="Ne halassza tovább – harmadnapra nálad a raklap!"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Árajánlat kérése',
+        href: '/kapcsolat',
+        icon: 'tabler:mail',
+      },
+      {
+        variant: 'secondary',
+        text: 'Termékek böngészése',
+        href: '/termekek',
+        icon: 'tabler:arrow-right',
+      },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      <div class="space-y-4">
+        <p class="text-xl">
+          <strong>Telített kertifa</strong> • <strong>Tűzifa brikett</strong> • <strong>Minden megoldható!</strong>
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4 text-sm">
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Országos szállítás
+          </span>
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            3 napos kiszállítás
+          </span>
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Expressz opció
+          </span>
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            ~23.000 Ft-tól
+          </span>
+        </div>
+      </div>
+    </Fragment>
+  </CallToAction>
+
+</Layout>

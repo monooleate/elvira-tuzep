@@ -17,6 +17,10 @@ export const headerData = {
       href: getPermalink('/szolgaltatasok'),
       links: [
         {
+          text: 'Raklapos házhozszállítás',
+          href: getPermalink('/orszagos-kiszallitas')
+        },
+        {
           text: 'Vágás',
           href: getPermalink('/szolgaltatasok/vagas')
         },
