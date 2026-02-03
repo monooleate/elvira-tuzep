@@ -1,0 +1,59 @@
+{
+  "categorySlug": "telitett-oszlop",
+  "items": [
+    {
+      "slug": "telitett-oszlop-70x70",
+      "categorySlug": "telitett-oszlop",
+      "name": "Telített oszlop 70×70 mm",
+      "description": "Nyomás alatt impregnált, tartós telített oszlop 70×70 mm keresztmetszettel kerti szerkezetekhez és kerítésekhez.",
+      "sku": "OSZ77240",
+      "image": "/termekek/telitett-oszlop.webp",
+      "images": [],
+      "priceFrom": 4000,
+      "priceTo": 6025,
+      "stock": 3,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "70x70 x 180",
+        "70x70 x 240",
+        "70x70 x 270"
+      ],
+      "variantSkus": [
+        "OSZ77180",
+        "OSZ77240",
+        "OSZ77270"
+      ]
+    },
+    {
+      "slug": "telitett-oszlop-90x90",
+      "categorySlug": "telitett-oszlop",
+      "name": "Telített oszlop 90×90 mm",
+      "description": "Nyomás alatt impregnált, masszív telített oszlop 90×90 mm keresztmetszettel nagy teherbírású kültéri szerkezetekhez.",
+      "sku": "OSZ99210",
+      "image": "/termekek/telitett-oszlop.webp",
+      "images": [],
+      "priceFrom": 6128,
+      "priceTo": 10910,
+      "stock": 5,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "90x90 x 210",
+        "90x90 x 240",
+        "90x90 x 270",
+        "90x90 x 300",
+        "90x90 x 350"
+      ],
+      "variantSkus": [
+        "OSZ99210",
+        "OSZ99240",
+        "OSZ99270",
+        "OSZ99300",
+        "OSZ99350"
+      ]
+    }
+  ]
+}

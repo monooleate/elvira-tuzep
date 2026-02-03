@@ -1,0 +1,121 @@
+{
+  "name": "Telített rúdfa Ø140mm",
+  "slug": "telitett-rudfa-atmero-140",
+  "meta": {
+    "title": "Telítettrúdfa 140 mm – Impregnált szerkezeti fa | Elvira Tüzép",
+    "description": "Extra erős telített rúdfa 140 mm átmérővel. Ideális nagy terhelésű szerkezetekhez, játszóterekhez és kerítésekhez.",
+    "image": "/termekek/rudfa-atmero-14.webp"
+  },
+  "aggregateRating": {
+    "ratingValue": 4.88,
+    "reviewCount": 92
+  },
+  "description": "Erős, nagyméretű nyomás alatt impregnált telített rúdfa 140 mm átmérővel.",
+  "image": "/termekkep/telitett-rudfa-atmero-14.webp",
+  "images": [],
+  "longDescription": "A 140 mm-es telített rúdfa professzionális szerkezeti célokra készült. Nagy teherbírású.",
+  "longDescription2": "A telítés mélyen a fa belső szerkezetébe hatol, hosszú élettartamot biztosít kültéren.",
+  "material": "Nagy nyomáson telített borovi fenyő",
+  "audience": [
+    "játszótér-építők",
+    "szerkezetépítők",
+    "barkácsolók"
+  ],
+  "blogtags": [
+    "kertifa",
+    "rúdfa"
+  ],
+  "sku": "RF14300",
+  "price": 19583,
+  "mprice": null,
+  "m2price": null,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": 1,
+  "specs": {
+    "Anyag": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyő"
+    },
+    "Hossz": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "500–3000 mm"
+    },
+    "Tömeg": {
+      "label": "Tömeg",
+      "order": 6,
+      "value": "≈ 15–20 kg/db"
+    },
+    "Kivitel": {
+      "label": "Kivitel",
+      "order": 4,
+      "value": "Körmart, extra erős kivitel"
+    },
+    "Átmérő": {
+      "label": "Átmérő",
+      "order": 1,
+      "value": "140 mm"
+    },
+    "Megjegyzés": {
+      "label": "Megjegyzés",
+      "order": 8,
+      "value": "Erős terheléshez ajánlott"
+    },
+    "Impregnálás": {
+      "label": "Impregnálás",
+      "order": 5,
+      "value": "Nyomás alatti"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 7,
+      "value": "Játszótér, hintaállvány, szerkezeti tartó"
+    }
+  },
+  "shippingDetails": {
+    "weight": 21,
+    "length": 300,
+    "width": 14,
+    "height": 14
+  },
+  "variants": [
+    {
+      "id": "variant_01KA93DMNH8Q4BC3VBZSWMMA72",
+      "title": "Ø140mm x 300 | rúdfa",
+      "variantType": null,
+      "sku": "RF14300",
+      "variant_rank": 1,
+      "price": 19583,
+      "stock": null,
+      "metadata": {
+        "inventory": 1
+      },
+      "weight": 21,
+      "length": 300,
+      "width": 14,
+      "height": 14
+    },
+    {
+      "id": "variant_01KA9349AZ62ZH97Q63TZZF9C1",
+      "title": "Ø140mm x 50 | rúdfa",
+      "variantType": null,
+      "sku": "RF1450",
+      "variant_rank": 0,
+      "price": 4065,
+      "stock": null,
+      "metadata": {
+        "inventory": 1
+      },
+      "weight": 3,
+      "length": 50,
+      "width": 14,
+      "height": 14
+    }
+  ],
+  "category": "telitett-rudfa",
+  "categorySlug": "telitett-rudfa"
+}

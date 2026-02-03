@@ -1,0 +1,132 @@
+{
+  "name": "Telített oszlop 70×70 mm",
+  "slug": "telitett-oszlop-70x70",
+  "meta": {
+    "title": "Telített oszlop 70×70 mm – Impregnált fa tartóelem | Elvira Tüzép",
+    "description": "Erős, nyomás alatt impregnált telített oszlop 70×70 mm méretben. Ideális kerítésekhez, könnyű kerti szerkezetekhez.",
+    "image": "/termekek/telitett-oszlop.webp"
+  },
+  "aggregateRating": {
+    "ratingValue": 4.78,
+    "reviewCount": 39
+  },
+  "description": "Nyomás alatt impregnált, tartós telített oszlop 70×70 mm keresztmetszettel kerti szerkezetekhez és kerítésekhez.",
+  "image": "/termekek/telitett-oszlop.webp",
+  "images": [],
+  "longDescription": "A 70×70 mm-es telített oszlop könnyebb teherbírású, mégis stabil, jó választás kerítésekhez, kisebb szerkezetekhez, növénytámasznak vagy kerti elemek rögzítéséhez. A mélytelítés védelmet nyújt korhadás és rovarok ellen.",
+  "longDescription2": "A simított felületű borovi oszlop könnyen megmunkálható, festhető és jól illeszkedik kerti projektekhez. Költséghatékony megoldás szerkezeti elemként, ha nem szükséges nagy teherbírás.",
+  "material": "Nagy nyomáson telített borovi fenyő",
+  "audience": [
+    "kertépítők",
+    "barkácsolók",
+    "kerítésépítők"
+  ],
+  "blogtags": [
+    "kertifa",
+    "rúdfa"
+  ],
+  "sku": "OSZ77240",
+  "price": 5365,
+  "mprice": null,
+  "m2price": null,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": 1,
+  "specs": {
+    "Anyag": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyő"
+    },
+    "Hossz": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "1800–2700 mm"
+    },
+    "Tömeg": {
+      "label": "Tömeg",
+      "order": 5,
+      "value": "≈ 7–9 kg/db"
+    },
+    "Megjegyzés": {
+      "label": "Megjegyzés",
+      "order": 7,
+      "value": "Kisebb terheléshez ideális"
+    },
+    "Impregnálás": {
+      "label": "Impregnálás",
+      "order": 4,
+      "value": "Nyomás alatti (réz-bázisú)"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 6,
+      "value": "Kerítés, kisebb kerti szerkezetek, tartóelem"
+    },
+    "Keresztmetszet": {
+      "label": "Keresztmetszet",
+      "order": 1,
+      "value": "70×70 mm"
+    }
+  },
+  "shippingDetails": {
+    "weight": null,
+    "length": 240,
+    "width": 7,
+    "height": 7
+  },
+  "variants": [
+    {
+      "id": "variant_01KAE9K7SGT37X1MZNSVBNFW5Y",
+      "title": "70x70 x 240",
+      "variantType": null,
+      "sku": "OSZ77240",
+      "variant_rank": 1,
+      "price": 5365,
+      "stock": null,
+      "metadata": {
+        "inventory": 1
+      },
+      "weight": null,
+      "length": 240,
+      "width": 7,
+      "height": 7
+    },
+    {
+      "id": "variant_01KAE9K4HPJE1CVQSAJGTP93FN",
+      "title": "70x70 x 180",
+      "variantType": null,
+      "sku": "OSZ77180",
+      "variant_rank": 0,
+      "price": 4000,
+      "stock": null,
+      "metadata": {
+        "inventory": 1
+      },
+      "weight": null,
+      "length": 180,
+      "width": 7,
+      "height": 7
+    },
+    {
+      "id": "variant_01KAE9KB2BEHRHH516BH3C47WW",
+      "title": "70x70 x 270",
+      "variantType": null,
+      "sku": "OSZ77270",
+      "variant_rank": 2,
+      "price": 6025,
+      "stock": null,
+      "metadata": {
+        "inventory": 1
+      },
+      "weight": null,
+      "length": 270,
+      "width": 7,
+      "height": 7
+    }
+  ],
+  "category": "telitett-oszlop",
+  "categorySlug": "telitett-oszlop"
+}

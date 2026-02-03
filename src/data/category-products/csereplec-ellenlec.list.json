@@ -1,0 +1,216 @@
+{
+  "categorySlug": "csereplec-ellenlec",
+  "items": [
+    {
+      "slug": "egalizalt-csereplec-luc-23x48-4m",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Egalizált cserépléc luc 23x48mmx4m I-II. osztály",
+      "description": "Szárított, egalizált lucfenyő cserépléc 23x48 mm méretben, 4 m-es hosszban – I-II. osztály belső terekben lécezéshez",
+      "sku": "luc-csl-eg-23x48-4m",
+      "image": "/termekek/egalizalt-csereplec-luc-23x48.jpg",
+      "images": [
+        {
+          "src": "/images/products/egalizalt-csereplec-luc-23x48-koteg",
+          "alt": "Egalizált cserépléc 23×48 mm, 4 m – műszárított tetőléc közelről kötegben"
+        },
+        {
+          "src": "/images/products/egalizalt-csereplec-luc-23x48-csomag",
+          "alt": "Egalizált cserépléc 23×48 mm, 4 m – műszárított, kötegelt, csomagolt kiszerelés oldalnézetből"
+        },
+        {
+          "src": "/images/products/egalizalt-csereplec-luc-23x48-darab",
+          "alt": "Egalizált cserépléc 23×48 mm, 4 m – műszárított, darab nézetben"
+        }
+      ],
+      "priceFrom": 1119,
+      "priceTo": null,
+      "stock": 1,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-csl-eg-23x48-4m"
+      ]
+    },
+    {
+      "slug": "egalizalt-csereplec-luc-28x48-3m",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Egalizált cserépléc luc 28x48mmx3m I-II. osztály",
+      "description": "Szárított, egalizált lucfenyő cserépléc 28x48 mm méretben, 3 m hosszban – I-II. osztályú, osztrák minőségű tetőléc.",
+      "sku": "luc-csl-eg-28x48-3m",
+      "image": "/termekek/egalizalt-csereplec-luc-28x48.jpg",
+      "images": [],
+      "priceFrom": 799,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-csl-eg-28x48-3m"
+      ]
+    },
+    {
+      "slug": "bramac-csereplec-30x50-4m-impregnalt-legszaritott",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Bramac légszárított, impregnált cserépléc 30×50mmx4m",
+      "description": "Bramac légszárított, nyomás alatt impregnált, barna színű cserépléc 30×50 mm keresztmetszettel, 4 m hosszban. Időtálló, mérettartó tetőléc cserépfedéshez és lécezéshez, kivitelezők és magánépítkezők részére.",
+      "sku": "luc-csl-impreg-bramac-30x50-4m",
+      "image": "/images/products/bramac-csereplec-30x50-4m-koteg-500.avif",
+      "images": [
+        {
+          "src": "/images/products/bramac-csereplec-30x50-4m-koteg",
+          "alt": "Bramac cserépléc 30×50 mm, 4 m – légszárított, impregnált tetőléc közelről kötegben"
+        },
+        {
+          "src": "/images/products/bramac-csereplec-30x50-4m-csomag",
+          "alt": "Bramac 30×50 mm cserépléc – kötegelt, csomagolt kiszerelés oldalnézetből"
+        }
+      ],
+      "priceFrom": 1476,
+      "priceTo": null,
+      "stock": 1,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-csl-impreg-bramac-30x50-4m"
+      ]
+    },
+    {
+      "slug": "egalizalt-csereplec-luc-28x48-4m",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Egalizált cserépléc luc 28x48mmx4m I-II. osztály",
+      "description": "Szárított, egalizált lucfenyő cserépléc 28x48 mm méretben, 4 méter hosszban – osztrák I-II. osztályú faanyag tetőkhöz.",
+      "sku": "luc-csl-eg-28x48-4m",
+      "image": "/termekek/egalizalt-csereplec-luc-28x48.jpg",
+      "images": [],
+      "priceFrom": 1169,
+      "priceTo": null,
+      "stock": 1,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-csl-eg-28x48-4m"
+      ]
+    },
+    {
+      "slug": "ellenlec-luc-38x58-4m",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Ellenléc luc 38x58mmx4m I-II. osztály",
+      "description": "Fűrészelt lucfenyő ellenléc 38x58 mm méretben, 4 méteres hosszban – osztrák I-II. osztály, kiváló választás szellőző tetőszerkezethez.",
+      "sku": "luc-el-38x58-4m",
+      "image": "/termekek/ellenlec-luc-38x58.webp",
+      "images": [],
+      "priceFrom": 1999,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-el-38x58-4m"
+      ]
+    },
+    {
+      "slug": "egalizalt-ellenlec-luc-48x48-4m",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Egalizált ellenléc luc 48x48mmx4m I-II. osztály",
+      "description": "Egalizált, szárított lucfenyő ellenléc 48x48 mm méretben, 4 m-es hosszban – osztrák I-II. osztályú faanyag szellőző légréshez és lécezéshez.",
+      "sku": "luc-el-eg-48x48-4m",
+      "image": "/termekek/egalizalt-ellenlec-luc-48x48-4m.png",
+      "images": [],
+      "priceFrom": 1999,
+      "priceTo": null,
+      "stock": 1,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-el-eg-48x48-4m"
+      ]
+    },
+    {
+      "slug": "egalizalt-ellenlec-luc-48x78-4m-generon",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Egalizált ellenléc luc 48x78mmx4m I-II. osztály (Terran Generon kompatibilis)",
+      "description": "Terran Generon-kompatibilis, egalizált lucfenyő ellenléc 48x78 mm-es méretben, 4 m hosszúságban – szárított, I-II. osztályú osztrák faanyag.",
+      "sku": "luc-el-eg-48x78-4m",
+      "image": "/termekek/egalizalt-ellenlec-luc-48x78.jpg",
+      "images": [],
+      "priceFrom": 3390,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-el-eg-48x78-4m"
+      ]
+    },
+    {
+      "slug": "ellenlec-luc-58x78-4m",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Ellenléc luc 58x78mmx4m I-II. osztály",
+      "description": "Fűrészelt lucfenyő ellenléc 58x78 mm méretben, 4 m-es hosszban – osztrák I-II. osztályú faanyag nagyobb légréshez és szerkezeti stabilitáshoz.",
+      "sku": "luc-el-58x78-4m",
+      "image": "/termekek/ellenlec-luc-58x78-4m.jpg",
+      "images": [],
+      "priceFrom": 4090,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-el-58x78-4m"
+      ]
+    },
+    {
+      "slug": "egalizalt-ellenlec-luc-78x78-4m",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Egalizált ellenléc luc 78x78mmx4m I-II. osztály",
+      "description": "Szárított, egalizált lucfenyő ellenléc 78x78 mm-es méretben, 4 m-es hosszban – nagy szellőzőmagassághoz, vázakhoz és tetőszerkezethez.",
+      "sku": "luc-el-eg-78x78-4m",
+      "image": "/termekek/egalizalt-ellenlec-luc-78x78-4m.jpg",
+      "images": [],
+      "priceFrom": 5690,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-el-eg-78x78-4m"
+      ]
+    }
+  ]
+}

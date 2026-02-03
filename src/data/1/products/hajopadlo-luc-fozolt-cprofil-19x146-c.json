@@ -1,0 +1,108 @@
+{
+  "name": "Hajópadló - Luc Fózolt /C profil/ 19x146mmx4m C minőség",
+  "slug": "hajopadlo-luc-fozolt-cprofil-19x146-c",
+  "meta": {
+    "title": "Hajópadló Luc Fózolt C profil – 19x146mm C minőség | Elvira Tüzép",
+    "description": "Lucfenyő hajópadló C profillal, 19x146mm-es méretben, C minőségben. Gazdaságos megoldás műszaki vagy kevésbé látszó burkolatokhoz, melléképületekbe, tárolókba.",
+    "image": "/termekek/hajopadlo-c-19x146.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,3",
+    "reviewCount": 18
+  },
+  "description": "Lucfenyő hajópadló 19x146mm méretben, fózolt C profillal, C minőségben. Kedvező árú burkolat kevésbé igényes felhasználásra.",
+  "image": "/termekek/hajopadlo-c-19x146.jpg",
+  "images": [],
+  "longDescription": "Ez a lucfenyő hajópadló 19x146mm-es méretben, fózolt C profillal, C minőségű faanyagból készült. A C minőségű hajópadló természetes csomókkal, színeltérésekkel, esetleges repedésekkel rendelkezik, ezért elsősorban olyan helyekre ajánljuk, ahol az esztétika kevésbé lényeges szempont. Ideális például melléképületekbe, nyaralókba, tárolókba, garázsokba, műszaki célokra vagy alépítményekhez. A nút-féderes csatlakozás révén ennek ellenére stabilan szerelhető. Gazdaságos választás, ha fontos a természetes faanyag, de nem szükséges a hibátlan megjelenés.",
+  "longDescription2": null,
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "nevezéktan"
+  ],
+  "sku": "luc-hp-c-19x146-4m-c",
+  "price": 2505,
+  "mprice": null,
+  "m2price": 4290,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 3,
+      "value": "4 m"
+    },
+    "Méret": {
+      "label": "Méret",
+      "order": 2,
+      "value": "19 x 146 mm"
+    },
+    "Profil": {
+      "label": "Profil",
+      "order": 5,
+      "value": "Fózolt / C profil"
+    },
+    "Fa fajta": {
+      "label": "Fa fajta",
+      "order": 4,
+      "value": "Lucfenyő"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 7,
+      "value": "Simára gyalult"
+    },
+    "Kezelés": {
+      "label": "Kezelés",
+      "order": 13,
+      "value": "Kezeletlen, szükség esetén csiszolható vagy felületkezelhető"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 9,
+      "value": "C (műszaki minőség, hibákkal, esztétikai kompromisszumokkal)"
+    },
+    "Tárolás": {
+      "label": "Tárolás",
+      "order": 12,
+      "value": "Száraz, jól szellőző helyen, nedvességtől védve"
+    },
+    "Rögzítés": {
+      "label": "Rögzítés",
+      "order": 11,
+      "value": "Szegelés vagy csavarozás"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 8,
+      "value": "Ausztria"
+    },
+    "Terméktípus": {
+      "label": "Terméktípus",
+      "order": 1,
+      "value": "Hajópadló"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 10,
+      "value": "Garázs, tároló, melléképület, alépítmény, kevésbé látható beltéri burkolat"
+    },
+    "Profil kialakítás": {
+      "label": "Profil kialakítás",
+      "order": 6,
+      "value": "Nút-féderes, fózolt él (lecsapott él)"
+    }
+  },
+  "shippingDetails": {
+    "weight": 5,
+    "length": 400,
+    "width": 14,
+    "height": 1
+  },
+  "variants": null,
+  "category": "hajopadlo",
+  "categorySlug": "hajopadlo"
+}

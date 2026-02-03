@@ -1,0 +1,124 @@
+{
+  "name": "BSH ragasztott gerenda 14x20cm",
+  "slug": "bsh-ragasztott-gerenda-14x20",
+  "meta": {
+    "title": "BSH ragasztott gerenda 14x20cm - GL24h, osztrák gyártás",
+    "description": "BSH gerenda 14×20 cm méretben, osztrák gyártású GL24h minőségben. Ideális nagyobb terhelésű, látszó faszerkezetekhez.",
+    "image": "/termekek/bsh-gerenda-14x20.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,9",
+    "reviewCount": 41
+  },
+  "description": "BSH gerenda 14×20 cm keresztmetszettel, 13,5 méteres hosszal, GL24h minőségben. Strapabíró, esztétikus és mérettartó megoldás igényes faszerkezetekhez.",
+  "image": "/termekek/bsh-gerenda-14x20.jpg",
+  "images": [],
+  "longDescription": "A 14×20 cm-es méretű BSH (Brettschichtholz) ragasztott gerenda tökéletes választás olyan építkezésekhez, ahol a magas statikai követelmények mellett az esztétikai megjelenés is kulcsfontosságú. Az osztrák gyártású, GL24h minőségű rétegragasztott gerenda kimagasló teherbírással és formastabilitással rendelkezik. Gyalult, fózolt felülete miatt látszó szerkezeti elemként is kitűnően használható.",
+  "longDescription2": "A BSH technológiával készített gerendák előnye a szabványos fűrészáruhoz képest a vetemedés- és repedésmentes viselkedés, valamint a precíz mérettartás. A 14x20 cm-es keresztmetszet ideális nagyobb teherhordó szerkezetekhez, például gerendaként tetőszerkezetekhez, áthidalókhoz, kocsibeállókhoz. A termék előkészített felülettel érkezik, lazúrozásra vagy pácolásra alkalmas, és fóliázott kivitelben szállítjuk.",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "bsh",
+    "rétegragasztott fa"
+  ],
+  "sku": "bsh-14x20-gl24h",
+  "price": 147416,
+  "mprice": null,
+  "m2price": null,
+  "m3price": 389990,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 6,
+      "value": "13,5 m"
+    },
+    "Típus": {
+      "label": "Típus",
+      "order": 1,
+      "value": "BSH ragasztott gerenda"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 7,
+      "value": "9,18 m²"
+    },
+    "Kezelés": {
+      "label": "Kezelés",
+      "order": 15,
+      "value": "Pácolásra, lazúrozásra előkészítve"
+    },
+    "Előnyök": {
+      "label": "Előnyök",
+      "order": 14,
+      "value": "Kiemelkedő statikai teljesítmény, dekoratív kivitel, hosszú élettartam"
+    },
+    "Felülete": {
+      "label": "Felülete",
+      "order": 10,
+      "value": "Gyalult, fózolt, látszó minőségű"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 3,
+      "value": "Látszó (esztétikai felhasználásra)"
+    },
+    "Térfogat": {
+      "label": "Térfogat",
+      "order": 8,
+      "value": "0,378 m³"
+    },
+    "Csomagolás": {
+      "label": "Csomagolás",
+      "order": 16,
+      "value": "Egyedileg fóliázott"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 4,
+      "value": "Ausztria"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 13,
+      "value": "Gerenda, tetőszerkezet, áthidaló, pergola"
+    },
+    "Keresztmetszet": {
+      "label": "Keresztmetszet",
+      "order": 5,
+      "value": "14 × 20 cm"
+    },
+    "Tulajdonságok": {
+      "label": "Tulajdonságok",
+      "order": 12,
+      "value": "Repedés- és vetemedésmentes, mérettartó"
+    },
+    "Nedvességtartalom": {
+      "label": "Nedvességtartalom",
+      "order": 11,
+      "value": "kb. 12% ±2%"
+    },
+    "Szilárdsági osztály": {
+      "label": "Szilárdsági osztály",
+      "order": 2,
+      "value": "GL24h"
+    },
+    "Választható hosszúságok": {
+      "label": "Választható hosszúságok",
+      "order": 9,
+      "value": "4,5 m / 6,75 m / 9 m / 13,5 m"
+    }
+  },
+  "shippingDetails": {
+    "weight": 178,
+    "length": 1350,
+    "width": 14,
+    "height": 20
+  },
+  "variants": null,
+  "category": "bsh-ragasztott-gerenda",
+  "categorySlug": "bsh-ragasztott-gerenda"
+}

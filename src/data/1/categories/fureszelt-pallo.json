@@ -1,0 +1,44 @@
+{
+  "maincategory": "Fűrészáru",
+  "category": "Fűrészelt palló",
+  "slug": "fureszelt-pallo",
+  "meta": {
+    "title": "Fűrészelt palló | Gyalulatlan, légszáraz építő palló",
+    "description": "Fűrészelt, gyalulatlan palló raktárkészletről gyorsan és kedvező áron. Ideális választás zsaluzáshoz, tetőszerkezethez és más építési munkákhoz.",
+    "image": "/images/products/pallo-50x100x4000-koteg-500.avif"
+  },
+  "description": "Fűrészelt, gyalulatlan palló kínálatunk légszáraz kivitelben elérhető. Erős, masszív és tartós építőanyag, amely ideális tetőszerkezetekhez, födémekhez, zsaluzáshoz és egyéb teherbíró szerkezetekhez. Kedvező árú, természetes faanyag közvetlenül raktárról, többféle méretben.",
+  "faq": [
+    {
+      "id": 1,
+      "answer": "Kínálatunkban elsősorban 50 mm vastag pallók érhetők el, 100 mm, 150 mm és 200 mm szélességben, 4000 mm hosszúságban. Ezek a leggyakrabban használt építőipari méretek tetőszerkezethez és födémhez.",
+      "question": "Milyen méretekben kapható a fűrészelt palló?"
+    },
+    {
+      "id": 2,
+      "answer": "A palló nagyobb teherbírású, mint a deszka, ezért kiválóan használható tetőszerkezetekhez, födémszerkezetekhez, zsaluzatokhoz, kerítésekhez és egyéb masszív építési feladatokhoz. Közepes és nagy keresztmetszetű pallók különösen alkalmasak tartós szerkezetekhez.",
+      "question": "Mire használható a fűrészelt palló?"
+    },
+    {
+      "id": 3,
+      "answer": "A legfőbb különbség a vastagságban van",
+      "question": "Mi a különbség a palló és a deszka között?"
+    },
+    {
+      "id": 4,
+      "answer": "A palló árát főként a szélesség (100 mm, 150 mm, 200 mm) és a hossz határozza meg. Gyakori keresések",
+      "question": "Mennyibe kerül egy palló? Hogyan alakulnak a palló árak?"
+    },
+    {
+      "id": 5,
+      "answer": "A szélezetlen palló oldalsó szélein kérges részeket tartalmaz, szabálytalanabb formájú, és főként olyan helyeken használják, ahol a pontos méret és az esztétika kevésbé fontos. Előnye, hogy olcsóbb, de több utómunkát igényelhet.",
+      "question": "Mit jelent a szélezetlen palló?"
+    },
+    {
+      "id": 6,
+      "answer": "Igen, a palló kifejezetten alkalmas zsaluzatok készítésére. A nagyobb vastagság miatt masszívabb szerkezetet ad, és többszöri használatra is jobban megfelel, mint a vékonyabb deszka.",
+      "question": "Használható-e a palló zsaluzáshoz?"
+    }
+  ],
+  "faqdesc": "A fűrészelt palló (más néven gyalulatlan palló) vastagabb és erősebb, mint a deszka, ezért különösen alkalmas teherhordó szerkezetekhez. Az építőiparban gyakran használják tetőszerkezetek, födémek és masszív zsaluzatok készítéséhez. Az alábbi gyakori kérdések segítenek eligazodni a palló méretek, árak és felhasználási módok között."
+}

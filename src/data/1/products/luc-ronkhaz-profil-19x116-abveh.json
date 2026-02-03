@@ -1,0 +1,88 @@
+{
+  "name": "Luc rönkház profil /D/ 19x116mmx4m A-B minőség",
+  "slug": "luc-ronkhaz-profil-19x116-abveh",
+  "meta": {
+    "title": "Luc rönkház profil 19x116mm 4m abveh",
+    "description": "Luc fenyő rönkházprofil (19×116 mm), gyalult, sima felület. Belső/külső burkolathoz ideális, 4 m hosszban, osztrák gyártótól.",
+    "image": "/termekek/luc-ronkhaz-19x116.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,7",
+    "reviewCount": 20
+  },
+  "description": "Belső vagy külső burkolatokhoz ideális, sima felületű, gyalult rönkházprofil lucfenyőből.",
+  "image": "/termekek/luc-ronkhaz-19x116.jpg",
+  "images": [],
+  "longDescription": "A lucfenyő rönkházprofil (más néven D-profil) kiváló választás minden olyan faházhoz, melléképülethez, vagy belső burkolathoz, ahol természetes, esztétikus és időtálló megoldásra van szükség. A gyalult, sima felület és a félköríves homlokzat utánozza a valódi gerendaházak megjelenését, miközben könnyen szerelhető és kezelhető. Alkalmas belső terek hangulatos burkolására, valamint homlokzatképzésre is. A lucfenyő faanyag kedvező tulajdonságai – jó megmunkálhatóság, kellemes színárnyalat és stabilitás – teszik ideálissá ezt a profilt. A termék ausztriai, fenntartható erdőgazdálkodásból származik, megbízható minőséget képviselve.",
+  "longDescription2": "Ideális választás lehet kerítéshez is, amennyiben teljesen zárt, belátás biztos kerítést szeretne, ugyanis a nút-féderes kötésnek köszönhetően az elemek teljesen zártak maradnak, a faanyag száradását követően is, szemben a hagyományos deszkázattal. Kültéri alkalmazás esetén, vékonylazúrral történő felületkezelés javasolt.",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "nevezéktan"
+  ],
+  "sku": "luc-rh-d-19x116-4m",
+  "price": null,
+  "mprice": null,
+  "m2price": 6890,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "Méret": {
+      "label": "Méret",
+      "order": 1,
+      "value": "19 x 116 mm"
+    },
+    "Profil": {
+      "label": "Profil",
+      "order": 4,
+      "value": "D-profil (rönkházprofil)"
+    },
+    "Fa fajta": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Gyalult, sima"
+    },
+    "Kezelés": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kezeletlen, igény szerint felületkezelhető"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "AB-VEH (válogatott, építőipari)"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 6,
+      "value": "Ausztria"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Belső terek, homlokzatburkolás, melléképületek"
+    }
+  },
+  "shippingDetails": {
+    "weight": 4,
+    "length": 400,
+    "width": 11,
+    "height": 1
+  },
+  "variants": null,
+  "category": "fahaz-epito-profil",
+  "categorySlug": "fahaz-epito-profil"
+}

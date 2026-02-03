@@ -1,0 +1,101 @@
+{
+  "categorySlug": "telitett-deszka",
+  "name": "Telített bordázott deszka 28×140 mm",
+  "slug": "telitett-bordazott-deszka-28x140",
+  "meta": {
+    "title": "Bordázott telített deszka 28×140 mm – Impregnált teraszburkolat | Elvira Tüzép",
+    "description": "Tartós, csúszásmentes bordázott telített deszka 28×140 mm méretben. Ideális teraszhoz, járófelületekhez, kerti burkolatokhoz.",
+    "image": "/termekek/telitett-bordazott-deszka.jpg"
+  },
+  "description": "Nyomás alatt impregnált, időjárásálló bordázott deszka 28×140 mm teraszokhoz, járófelületekhez és kerti burkolatokhoz.",
+  "longDescription": "A 28×140 mm-es bordázott deszka erős, nagy terhelést bíró kültéri burkolat, mely csúszásmentes felületének köszönhetően teraszokhoz és kerti utakhoz kiváló. A telítés hosszú távú védelmet ad.",
+  "longDescription2": "A 4000 mm-es hossz prémium felhasználást tesz lehetővé, és méretre vágást vállalunk. A bordázott felület esztétikus, stabil és biztonságos kültéri kialakítást nyújt.",
+  "longDescription3": "",
+  "material": "Nagy nyomáson telített borovi fenyő",
+  "audience": [
+    "kertépítők",
+    "kivitelezők",
+    "teraszépítők"
+  ],
+  "blogtags": [
+    "kertifa",
+    "rúdfa"
+  ],
+  "specs": {
+    "67676f92a7": {
+      "label": "Méret",
+      "order": 1,
+      "value": "28×140 mm"
+    },
+    "20705d784e": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4000 mm"
+    },
+    "b9319ea0b6": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyő"
+    },
+    "cff46e90f0": {
+      "label": "Kivitel",
+      "order": 4,
+      "value": "Bordázott, csúszásmentes felület"
+    },
+    "4863e0a5cd": {
+      "label": "Impregnálás",
+      "order": 5,
+      "value": "Nyomás alatti, zöld árnyalat"
+    },
+    "d95f0796a1": {
+      "label": "Tömeg",
+      "order": 6,
+      "value": "≈ 10–12 kg/db"
+    },
+    "9b280d7825": {
+      "label": "Felhasználás",
+      "order": 7,
+      "value": "Teraszburkolat, járófelület, kerti út"
+    },
+    "9ac752d0f9": {
+      "label": "Megjegyzés",
+      "order": 8,
+      "value": "Méretre vágást vállalunk"
+    }
+  },
+  "shippingDetails": null,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.89,
+    "reviewCount": 57
+  },
+  "image": "/termekek/telitett-bordazott-deszka.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_a68a240a340f5dad",
+      "title": "Alap",
+      "sku": "Telített bordázott deszka 28×140 mm",
+      "variant_rank": 0,
+      "price": 6365,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 6365,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

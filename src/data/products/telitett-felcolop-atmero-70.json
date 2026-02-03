@@ -1,0 +1,101 @@
+{
+  "categorySlug": "telitett-felcolop",
+  "name": "Telített félcölöp Ø70mm",
+  "slug": "telitett-felcolop-atmero-70",
+  "meta": {
+    "title": "Telített félcölöp 70 mm – Impregnált kerítésszegély | Elvira Tüzép",
+    "description": "Tartós, nyomás alatt impregnált telített félcölöp 70 mm átmérővel. Ideális szegélyekhez, kerti szerkezetekhez és kerítésekhez.",
+    "image": "/termekek/telitett-felcolop-atmero-7.webp"
+  },
+  "description": "Nyomás alatt impregnált, tartós telített félcölöp 70 mm átmérővel szegélyekhez, kerítésekhez és kerti szerkezetekhez.",
+  "longDescription": "A telített félcölöp 70 mm-es átmérővel esztétikus és jól terhelhető faelem. Szegélyekhez, támfalakhoz, kerítésekhez és dekoratív kerti szerkezetekhez is használható. A nyomás alatti impregnálás mély védelmet nyújt nedvesség, gombák és rovarok ellen.",
+  "longDescription2": "Egyik oldala sík, másik félköríves, így könnyen rögzíthető. A 2500 mm-es hossz egységes méret, de kérésre méretre vágjuk. A zöldes impregnálás természetes megjelenést biztosít.",
+  "longDescription3": "",
+  "material": "Nagy nyomáson telített borovi fenyő",
+  "audience": [
+    "kertépítők",
+    "barkácsolók",
+    "kertberendezők"
+  ],
+  "blogtags": [
+    "kertifa",
+    "rúdfa"
+  ],
+  "specs": {
+    "db66f4373a": {
+      "label": "Átmérő",
+      "order": 1,
+      "value": "70 mm"
+    },
+    "38ed5ded74": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "2500 mm"
+    },
+    "7111b0284c": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyőfa"
+    },
+    "215dfef5cc": {
+      "label": "Kivitel",
+      "order": 4,
+      "value": "Félköríves kialakítás, simított felület"
+    },
+    "8d571f0020": {
+      "label": "Impregnálás",
+      "order": 5,
+      "value": "Nyomás alatti (réz-bázisú)"
+    },
+    "98de330ce9": {
+      "label": "Tömeg",
+      "order": 6,
+      "value": "≈ 5–7 kg/db"
+    },
+    "694edfd09d": {
+      "label": "Felhasználás",
+      "order": 7,
+      "value": "Szegély, kerítés, kerti szerkezet"
+    },
+    "9ac752d0f9": {
+      "label": "Megjegyzés",
+      "order": 8,
+      "value": "Méretre vágást vállalunk"
+    }
+  },
+  "shippingDetails": null,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.83,
+    "reviewCount": 48
+  },
+  "image": "/termekek/telitett-felcolop-atmero-7.webp",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_0b00880ebae3255c",
+      "title": "Alap",
+      "sku": "Telített félcölöp Ø70mm",
+      "variant_rank": 0,
+      "price": 1778,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 1778,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Lambéria Luc Trapéz F-profil 12,5x96mmx4m AB minőség",
+  "slug": "lamberia-12-5x96-ab",
+  "meta": {
+    "title": "Lambéria F-profil 12,5x96mm 4m ab",
+    "description": "Trapéz profilú lambéria 12,5×96 mm-es méretben, osztrák AB minőségben. Beltéri fal- és mennyezetburkolathoz ajánlott, esztétikus gyalult felülettel.",
+    "image": "/termekek/lamberia-f-12_5x96.png"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,8",
+    "reviewCount": 32
+  },
+  "description": "Esztétikus, sima felületű trapéz profilú lambéria, kiváló beltéri burkoláshoz.",
+  "image": "/termekek/lamberia-f-12_5x96.png",
+  "images": [],
+  "longDescription": "A 12,5x96 mm-es méretű trapéz profilú (F profil) lambéria ideális választás beltéri falak és mennyezetek burkolására. Az osztrák gyártású, AB minőségű lucfenyő alapanyag esztétikus, simára gyalult felülettel rendelkezik, így további csiszolást nem igényel. A precíz illesztés és a profilkialakítás könnyű szerelhetőséget biztosít, míg a természetes fenyő színvilág meleg, otthonos hangulatot teremt. Tökéletes választás faházakba, nappalikba, tetőterekbe vagy akár irodai burkolatokhoz is.",
+  "longDescription2": null,
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "nevezéktan"
+  ],
+  "sku": "luc-lam-12_5x96-4m",
+  "price": 1799,
+  "mprice": null,
+  "m2price": 4690,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": 1,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "Méret": {
+      "label": "Méret",
+      "order": 1,
+      "value": "12,5 x 96 mm"
+    },
+    "Profil": {
+      "label": "Profil",
+      "order": 4,
+      "value": "F profil (trapéz formájú lambéria)"
+    },
+    "Fa fajta": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Gyalult, sima"
+    },
+    "Kezelés": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "AB (válogatott, burkolati minőség)"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 6,
+      "value": "Ausztria"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Belső fal- és mennyezetburkolat"
+    }
+  },
+  "shippingDetails": {
+    "weight": 2,
+    "length": 400,
+    "width": 9,
+    "height": 1
+  },
+  "variants": null,
+  "category": "lamberia",
+  "categorySlug": "lamberia"
+}

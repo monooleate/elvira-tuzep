@@ -1,0 +1,124 @@
+{
+  "name": "BSH ragasztott gerenda 16x16cm",
+  "slug": "bsh-ragasztott-gerenda-16x16",
+  "meta": {
+    "title": "BSH ragasztott gerenda 16x16cm - GL24h, osztrák gyártás",
+    "description": "BSH gerenda 16×16 cm méretben, osztrák gyártású GL24h minőségben. Erős, esztétikus és tartós megoldás nagy igénybevételű faszerkezetekhez.",
+    "image": "/termekek/bsh-gerenda-16x16.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,9",
+    "reviewCount": 44
+  },
+  "description": "BSH gerenda 16×16 cm keresztmetszettel, 13,5 méteres hosszal, GL24h minőségben. Nagy teherbírás, dekoratív megjelenés, hosszú élettartam kültéren és beltéren is.",
+  "image": "/termekek/bsh-gerenda-16x16.jpg",
+  "images": [],
+  "longDescription": "A 16×16 cm-es méretű BSH (Brettschichtholz) ragasztott gerenda kimagasló statikai teherbírást nyújt, miközben megőrzi esztétikus és mérettartó jellegét. Az osztrák gyártású GL24h osztályú rétegragasztott faanyag ideális választás azoknak, akik megbízható és dekoratív megoldást keresnek nagyobb szerkezeti igénybevételhez, legyen szó áthidalóról, tartógerendáról vagy kültéri faszerkezetről.",
+  "longDescription2": "A BSH gerendák homogén rétegszerkezetük révén kiválóan ellenállnak a csavarodásnak, repedésnek, vetemedésnek. A gyalult, fózolt élű, látszó minőségű felület kiváló megjelenést biztosít – akár pácolható, lazúrozható is. A 16x16 cm-es méret már komolyabb fesztávokhoz, tetőszerkezetekhez, nyitott kocsibeállókhoz, teraszfedésekhez is alkalmas. Egyedileg fóliázva, esztétikus és tartós kivitelben szállítjuk.",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "bsh",
+    "rétegragasztott fa"
+  ],
+  "sku": "bsh-16x16-gl24h",
+  "price": 134781,
+  "mprice": null,
+  "m2price": null,
+  "m3price": 389990,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 6,
+      "value": "13,5 m"
+    },
+    "Típus": {
+      "label": "Típus",
+      "order": 1,
+      "value": "BSH ragasztott gerenda"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 7,
+      "value": "8,64 m²"
+    },
+    "Kezelés": {
+      "label": "Kezelés",
+      "order": 15,
+      "value": "Pácolásra, lazúrozásra előkészítve"
+    },
+    "Előnyök": {
+      "label": "Előnyök",
+      "order": 14,
+      "value": "Kiemelkedő statikai teljesítmény, dekoratív kivitel, hosszú élettartam"
+    },
+    "Felülete": {
+      "label": "Felülete",
+      "order": 10,
+      "value": "Gyalult, fózolt, látszó minőségű"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 3,
+      "value": "Látszó (esztétikai felhasználásra)"
+    },
+    "Térfogat": {
+      "label": "Térfogat",
+      "order": 8,
+      "value": "0,346 m³"
+    },
+    "Csomagolás": {
+      "label": "Csomagolás",
+      "order": 16,
+      "value": "Egyedileg fóliázott"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 4,
+      "value": "Ausztria"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 13,
+      "value": "Teherhordó tartószerkezet, áthidaló, kocsibeálló, teraszfedés"
+    },
+    "Keresztmetszet": {
+      "label": "Keresztmetszet",
+      "order": 5,
+      "value": "16 × 16 cm"
+    },
+    "Tulajdonságok": {
+      "label": "Tulajdonságok",
+      "order": 12,
+      "value": "Repedés- és vetemedésmentes, mérettartó"
+    },
+    "Nedvességtartalom": {
+      "label": "Nedvességtartalom",
+      "order": 11,
+      "value": "kb. 12% ±2%"
+    },
+    "Szilárdsági osztály": {
+      "label": "Szilárdsági osztály",
+      "order": 2,
+      "value": "GL24h"
+    },
+    "Választható hosszúságok": {
+      "label": "Választható hosszúságok",
+      "order": 9,
+      "value": "4,5 m / 6,75 m / 9 m / 13,5 m"
+    }
+  },
+  "shippingDetails": {
+    "weight": 162,
+    "length": 1350,
+    "width": 16,
+    "height": 16
+  },
+  "variants": null,
+  "category": "bsh-ragasztott-gerenda",
+  "categorySlug": "bsh-ragasztott-gerenda"
+}

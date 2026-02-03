@@ -1,0 +1,103 @@
+{
+  "name": "Egalizált cserépléc luc 23x48mmx4m I-II. osztály",
+  "slug": "egalizalt-csereplec-luc-23x48-4m",
+  "meta": {
+    "title": "Egalizált luc cserépléc 23x48mm 4m | Elvira Tüzép",
+    "description": "Szárított, egalizált cserépléc lucfenyőből, 23x48 mm-es méretben, 4 m hosszúságban – I-II. osztályú faanyag belső terek lécezéshez.",
+    "image": "/termekek/egalizalt-csereplec-luc-23x48.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,8",
+    "reviewCount": 6
+  },
+  "description": "Szárított, egalizált lucfenyő cserépléc 23x48 mm méretben, 4 m-es hosszban – I-II. osztály belső terekben lécezéshez",
+  "image": null,
+  "images": [
+    {
+      "src": "/images/products/egalizalt-csereplec-luc-23x48-koteg",
+      "alt": "Egalizált cserépléc 23×48 mm, 4 m – műszárított tetőléc közelről kötegben,Egalizált cserépléc 23×48 mm, 4 m – műszárított, kötegelt, csomagolt kiszerelés oldalnézetből,Egalizált cserépléc 23×48 mm, 4 m – műszárított, darab nézetben"
+    },
+    {
+      "src": "/images/products/egalizalt-csereplec-luc-23x48-csomag",
+      "alt": ""
+    },
+    {
+      "src": "/images/products/egalizalt-csereplec-luc-23x48-darab",
+      "alt": ""
+    }
+  ],
+  "longDescription": "Ez a 23x84 mm méretű, 4 méteres hosszúságú egalizált lucfenyő cserépléc kiválóan alkalmas beltereken lécezéshez, ellenlécek és burkolati alátétek kialakítására. Az egalizált, szárított kivitel garantálja a pontos méretet, a jobb teherbírást és a gyorsabb, pontosabb beépítést. A lucfenyő kiváló megmunkálhatóságot biztosít, természetes, világos árnyalatával és kiváló ár-érték arányával. I-II. osztályú minőség, raktárról vagy rövid határidővel rendelhető.",
+  "longDescription2": "A 23×48 mm-es egalizált cserépléc forma- és mérettartó kialakításának köszönhetően nemcsak tetőszerkezeteknél, hanem beltéri felhasználásnál is ideális. Stabilizált nedvességtartalma miatt a beépítés során nem vetemedik, így megbízható megoldás válaszfalak, burkolatok és egyéb belső szerkezeti munkák esetén. Különösen ajánlott új építéseknél és felújításoknál, ahol fontos a tartósság és a pontos illeszkedés.",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "cserépléc",
+    "ellenléc",
+    "tetőszerkezet"
+  ],
+  "sku": "luc-csl-eg-23x48-4m",
+  "price": 1119,
+  "mprice": 279,
+  "m2price": null,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": 5,
+  "discountValidUntil": "2025-09-30T22:00:00.000Z",
+  "stock": 1,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "Méret": {
+      "label": "Méret",
+      "order": 1,
+      "value": "23 x 48 mm"
+    },
+    "Típus": {
+      "label": "Típus",
+      "order": 4,
+      "value": "Egalizált cserépléc"
+    },
+    "Fa fajta": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Egalizált, szárított"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 6,
+      "value": "I-II. osztály"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 7,
+      "value": "Európa"
+    },
+    "Mérettűrés": {
+      "label": "Mérettűrés",
+      "order": 9,
+      "value": "Maximum ±0,3 mm"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Tetőszerkezet, lécezés, alátétszerkezet"
+    }
+  },
+  "shippingDetails": {
+    "weight": 2,
+    "length": 400,
+    "width": 4,
+    "height": 2
+  },
+  "variants": null,
+  "category": "csereplec-ellenlec",
+  "categorySlug": "csereplec-ellenlec"
+}

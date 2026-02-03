@@ -1,0 +1,88 @@
+{
+  "name": "Telített deszka 18×140 mm",
+  "slug": "telitett-deszka-18x140",
+  "meta": {
+    "title": "Telített deszka 18×140 mm – Impregnált kerítésfa | Elvira Tüzép",
+    "description": "Tartós, nyomás alatt impregnált telített deszka 18×140 mm méretben. Ideális kerítésekhez, burkolatokhoz, kültéri felületekhez.",
+    "image": "/termekek/telitett-deszka.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": 4.85,
+    "reviewCount": 44
+  },
+  "description": "Nyomás alatt impregnált, tartós telített deszka 18×140 mm méretben kerítésekhez, burkolatokhoz és kerti szerkezetekhez.",
+  "image": "/termekek/telitett-deszka.jpg",
+  "images": [],
+  "longDescription": "Az erős, mégis könnyű telített deszka 18×140 mm kiváló kerítésléchez, burkolatokhoz és díszítő elemekhez. Az impregnálás mély védelmet ad nedvesség, gombák és rovarok ellen.",
+  "longDescription2": "A 3600 mm hosszú deszka jól megmunkálható, festhető, és méretre vágást vállalunk. Természetes, zöld árnyalata szépen illeszkedik bármilyen kerti felépítményhez.",
+  "material": "Nagy nyomáson telített borovi fenyő",
+  "audience": [
+    "kertépítők",
+    "barkácsolók",
+    "kerítésépítők"
+  ],
+  "blogtags": [
+    "kertifa",
+    "rúdfa"
+  ],
+  "sku": "Telített deszka 18×140 mm",
+  "price": 3060,
+  "mprice": null,
+  "m2price": null,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": 1,
+  "specs": {
+    "Anyag": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyő"
+    },
+    "Hossz": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "3600 mm"
+    },
+    "Méret": {
+      "label": "Méret",
+      "order": 1,
+      "value": "18×140 mm"
+    },
+    "Tömeg": {
+      "label": "Tömeg",
+      "order": 6,
+      "value": "≈ 6–8 kg/db"
+    },
+    "Kivitel": {
+      "label": "Kivitel",
+      "order": 4,
+      "value": "Gyalult, simított felület"
+    },
+    "Megjegyzés": {
+      "label": "Megjegyzés",
+      "order": 8,
+      "value": "Méretre vágást vállalunk"
+    },
+    "Impregnálás": {
+      "label": "Impregnálás",
+      "order": 5,
+      "value": "Nyomás alatti, zöld árnyalat"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 7,
+      "value": "Kerítés, burkolat, díszítés"
+    }
+  },
+  "shippingDetails": {
+    "weight": null,
+    "length": null,
+    "width": null,
+    "height": null
+  },
+  "variants": null,
+  "category": "telitett-deszka",
+  "categorySlug": "telitett-deszka"
+}

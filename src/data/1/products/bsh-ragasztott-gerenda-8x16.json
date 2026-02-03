@@ -1,0 +1,124 @@
+{
+  "name": "BSH ragasztott gerenda 8x16cm",
+  "slug": "bsh-ragasztott-gerenda-8x16",
+  "meta": {
+    "title": "BSH ragasztott gerenda 8x16cm - GL24h, osztrák gyártás",
+    "description": "BSH gerenda 8×16 cm méretben, GL24h osztályban. Ideális pergolákhoz, teraszokhoz, látszó faszerkezetekhez. Tartós, esztétikus osztrák faanyag.",
+    "image": "/termekek/bsh-gerenda-8x16.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,9",
+    "reviewCount": 26
+  },
+  "description": "BSH gerenda 8×16 cm-es méretben, 13,5 méteres hosszban, GL24h osztályban. Nagyobb fesztávokhoz és látszó szerkezetekhez ajánlott precíz és tartós faanyag.",
+  "image": "/termekek/bsh-gerenda-8x16.jpg",
+  "images": [],
+  "longDescription": "A 8×16 cm-es BSH (Brettschichtholz) ragasztott gerenda osztrák gyártású, GL24h szilárdsági osztályú, homogén szerkezetű faanyag, amely kiváló választás olyan szerkezetekhez, ahol nemcsak tartósság, hanem esztétika is fontos. A nagyobb keresztmetszet lehetővé teszi hosszabb fesztávok áthidalását, így alkalmas terasztetők, előtetők, pergolák és kisebb melléképületek vázszerkezeteinek kialakítására is.",
+  "longDescription2": "A precízen gyalult, fózolt felület lazúrozásra és pácolásra előkészített, így a termék látszó szerkezeti elemként is kiváló. A BSH gerendák előnye a hagyományos fűrészárukkal szemben, hogy mérettartóak, repedésmentesek és kiszámítható statikai tulajdonságokat nyújtanak. A 8×16 cm-es méret ideális választás, ha a kisebb keresztmetszet már nem elegendő, de a nagyobb tömeg vagy költség még nem indokolt.",
+  "material": "Fa, ragasztott (BSH), GL24h",
+  "audience": [],
+  "blogtags": [
+    "bsh",
+    "rétegragasztott fa"
+  ],
+  "sku": "bsh-8x16-gl24h",
+  "price": 69118,
+  "mprice": null,
+  "m2price": null,
+  "m3price": 399990,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": 1,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 6,
+      "value": "13,5 m"
+    },
+    "Típus": {
+      "label": "Típus",
+      "order": 1,
+      "value": "BSH ragasztott gerenda"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 7,
+      "value": "6,48 m²"
+    },
+    "Kezelés": {
+      "label": "Kezelés",
+      "order": 15,
+      "value": "Pácolásra, lazúrozásra előkészítve"
+    },
+    "Előnyök": {
+      "label": "Előnyök",
+      "order": 14,
+      "value": "Nagyobb fesztáv áthidalása, elegáns megjelenés, homogén szerkezet"
+    },
+    "Felülete": {
+      "label": "Felülete",
+      "order": 10,
+      "value": "Gyalult, fózolt, látszó minőségű"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 3,
+      "value": "Látszó (esztétikai felhasználásra)"
+    },
+    "Térfogat": {
+      "label": "Térfogat",
+      "order": 8,
+      "value": "0,173 m³"
+    },
+    "Csomagolás": {
+      "label": "Csomagolás",
+      "order": 16,
+      "value": "Egyedileg fóliázott"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 4,
+      "value": "Ausztria"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 13,
+      "value": "Terasz, pergola, előtető, látszó tartó"
+    },
+    "Keresztmetszet": {
+      "label": "Keresztmetszet",
+      "order": 5,
+      "value": "8 × 16 cm"
+    },
+    "Tulajdonságok": {
+      "label": "Tulajdonságok",
+      "order": 12,
+      "value": "Repedés- és vetemedésmentes, mérettartó"
+    },
+    "Nedvességtartalom": {
+      "label": "Nedvességtartalom",
+      "order": 11,
+      "value": "kb. 12% ±2%"
+    },
+    "Szilárdsági osztály": {
+      "label": "Szilárdsági osztály",
+      "order": 2,
+      "value": "GL24h"
+    },
+    "Választható hosszúságok": {
+      "label": "Választható hosszúságok",
+      "order": 9,
+      "value": "4,5 m / 6,75 m / 9 m / 13,5 m"
+    }
+  },
+  "shippingDetails": {
+    "weight": 81,
+    "length": 1350,
+    "width": 8,
+    "height": 16
+  },
+  "variants": null,
+  "category": "bsh-ragasztott-gerenda",
+  "categorySlug": "bsh-ragasztott-gerenda"
+}

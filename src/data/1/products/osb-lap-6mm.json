@@ -1,0 +1,102 @@
+{
+  "name": "OSB lap 6 mm – fal- és mennyezet burkolathoz",
+  "slug": "osb-lap-6mm",
+  "meta": {
+    "title": "OSB lap 6 mm | Fal- és mennyezet burkolat | OSB lap árak",
+    "description": "OSB lap 6 mm vastagságban – fal- és mennyezet burkolathoz ideális. Ismerje meg OSB lap árainkat és méreteinket, Praktiker, Bauhaus, OBI helyett kedvezőbb áron!",
+    "image": "/termekek/osb-lap-6mm.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,72",
+    "reviewCount": 53
+  },
+  "description": "6 mm vastag OSB lap fal- és mennyezet burkolathoz. Könnyű, mégis stabil, ideális választás belsőépítészeti projektekhez és gyors szereléshez. A lap pontos OSB méretben és szabványos táblaformában érhető el.",
+  "image": "/termekek/osb-lap-6mm.jpg",
+  "images": [],
+  "longDescription": "Az OSB 6 mm lap tökéletes választás fal- és mennyezet burkolatokhoz, ahol fontos a kis súly, az egyszerű kezelhetőség és a stabil tartás. A szabványos OSB tábla méret (2500×1250 mm) miatt könnyen illeszthető, a 6 mm vastagság pedig ideálissá teszi száraz belső terekben történő alkalmazásra. Az OSB lap árak kedvezőbbek, mint a rétegelt lemezé, így költséghatékony megoldást kínál felújítóknak és építkezőknek. Gyakran keresett alternatíva Praktiker és OBI OSB lap kínálat helyett, közvetlenül raktárról, széles választékban.",
+  "longDescription2": null,
+  "longDescription3": null,
+  "material": "OSB 3 nedvességálló faforgács panel",
+  "audience": [
+    "építkezők",
+    "lakásfelújítók",
+    "kivitelezők"
+  ],
+  "blogtags": [
+    "osb lap",
+    "osb lap ár",
+    "osb méret",
+    "osb tábla árak",
+    "osb lemez"
+  ],
+  "sku": "osb-6mm",
+  "price": 4290,
+  "mprice": null,
+  "m2price": 1373,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Típus": {
+      "label": "Típus",
+      "order": 7,
+      "value": "OSB 3 – teherhordó, nedvességálló"
+    },
+    "Tömeg": {
+      "label": "Tömeg",
+      "order": 5,
+      "value": "~ 12,2 kg"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 6,
+      "value": "csiszolt, éles él"
+    },
+    "Előnyök": {
+      "label": "Előnyök",
+      "order": 9,
+      "value": "Könnyű súly, stabil tartás, kedvező OSB lap ár"
+    },
+    "Sűrűség": {
+      "label": "Sűrűség",
+      "order": 4,
+      "value": "kb. 600–680 kg/m³"
+    },
+    "Vastagság": {
+      "label": "Vastagság",
+      "order": 1,
+      "value": "6 mm"
+    },
+    "Tábla méret": {
+      "label": "Tábla méret",
+      "order": 2,
+      "value": "2500 × 1250 mm"
+    },
+    "Ajánlott hely": {
+      "label": "Ajánlott hely",
+      "order": 10,
+      "value": "Száraz beltér, lakásfelújítás, könnyű válaszfalak"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Fal- és mennyezet burkolatok, belsőépítészeti munkák"
+    },
+    "Tábla felülete": {
+      "label": "Tábla felülete",
+      "order": 3,
+      "value": "3,125m²"
+    }
+  },
+  "shippingDetails": {
+    "weight": 12,
+    "length": 250,
+    "width": 125,
+    "height": null
+  },
+  "variants": null,
+  "category": "osb-lapok",
+  "categorySlug": "osb-lapok"
+}

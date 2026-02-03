@@ -1,0 +1,112 @@
+{
+  "name": "Fűrészelt deszka 25×100×4000 mm – colos deszka",
+  "slug": "fureszelt-deszka-25x100x4000",
+  "meta": {
+    "title": "Fűrészelt deszka 25×100×4000 mm | Colos gyalulatlan deszka ár és felhasználás",
+    "description": "25×100×4000 mm fűrészelt, gyalulatlan deszka (colos deszka) légszáraz kivitelben. Ideális tetőszerkezetekhez, zsaluhoz, építési és barkács felhasználásra.",
+    "image": "/images/products/deszka-25x100x4000-darab-500.avif"
+  },
+  "aggregateRating": {
+    "ratingValue": 4.51,
+    "reviewCount": 10
+  },
+  "description": "Fűrészelt, gyalulatlan fenyő deszka 25×100×4000 mm méretben. Klasszikus colos deszka légszáraz kivitelben, kedvező áron, széles körű építési és barkács felhasználásra.",
+  "image": null,
+  "images": [
+    {
+      "src": "/images/products/deszka-25x100x4000-darab",
+      "alt": "Fűrészelt deszka 25×100×4000 mm – colos deszka közelről"
+    },
+    {
+      "src": "/images/products/deszka-25x100x4000-koteg",
+      "alt": "Fűrészelt deszka 25×100×4000 mm kötegben"
+    }
+  ],
+  "longDescription": "A 25×100×4000 mm fűrészelt deszka (colos deszka) a legelterjedtebb méretű gyalulatlan faanyag. Erős, tartós és gazdaságos megoldás tetőszerkezetek építéséhez, zsaluzáshoz, burkolatok kialakításához és barkácsoláshoz. Légszáraz kivitelének köszönhetően stabilabb, kevésbé vetemedik. Kedvező deszka árainkkal és azonnali raktárkészlettel várjuk vásárlóinkat.",
+  "longDescription2": "Főbb jellemzők: vastagság 25 mm, szélesség 100 mm, hossz 4000 mm. Népszerű elnevezése colos deszka. Anyaga: légszáraz, gyalulatlan fenyő. Felhasználási területei: zsaludeszka, tetőszerkezetek, ideiglenes építmények, kerítések, barkácsprojektek. Az Elvira Tüzépnél közvetlenül raktárról érhető el, széles választékban és kedvező áron.",
+  "material": "Légszáraz fenyő, gyalulatlan",
+  "audience": [
+    "építkezők",
+    "kivitelezők",
+    "tetőfedők",
+    "barkácsolók"
+  ],
+  "blogtags": [
+    "deszka"
+  ],
+  "sku": "D25100400",
+  "price": 1729,
+  "mprice": null,
+  "m2price": null,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": 1,
+  "specs": {
+    "Anyag": {
+      "label": "Anyag",
+      "order": 8,
+      "value": "Légszáraz fenyő"
+    },
+    "Hossz": {
+      "label": "Hossz",
+      "order": 4,
+      "value": "4000 mm"
+    },
+    "Méret": {
+      "label": "Méret",
+      "order": 1,
+      "value": "25×100×4000 mm"
+    },
+    "Tömeg": {
+      "label": "Tömeg",
+      "order": 7,
+      "value": "≈ 4,5–5 kg/deszka"
+    },
+    "Kivitel": {
+      "label": "Kivitel",
+      "order": 9,
+      "value": "Gyalulatlan, fűrészelt"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 5,
+      "value": "1,0 m²/deszka"
+    },
+    "Térfogat": {
+      "label": "Térfogat",
+      "order": 6,
+      "value": "0,01 m³/deszka"
+    },
+    "Vastagság": {
+      "label": "Vastagság",
+      "order": 2,
+      "value": "25 mm (colos deszka)"
+    },
+    "Megjegyzés": {
+      "label": "Megjegyzés",
+      "order": 11,
+      "value": "Kedvező árú, tömegében árusított építőfa"
+    },
+    "Szélesség": {
+      "label": "Szélesség",
+      "order": 3,
+      "value": "100 mm"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 10,
+      "value": "Tetőszerkezet, zsalu, burkolat, kerítés, barkács"
+    }
+  },
+  "shippingDetails": {
+    "weight": 5,
+    "length": 400,
+    "width": 10,
+    "height": 2
+  },
+  "variants": null,
+  "category": "fureszelt-deszka",
+  "categorySlug": "fureszelt-deszka"
+}

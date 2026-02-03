@@ -1,0 +1,103 @@
+{
+  "name": "OSB lap 15 mm – külső-belső falelemekhez, zsaluzáshoz",
+  "slug": "osb-lap-15mm",
+  "meta": {
+    "title": "OSB lap 15 mm | Külső-belső falhoz, zsaluzáshoz | OSB 3 árak",
+    "description": "OSB 15 mm vastag teherhordó lemez kültéri és beltéri szerkezetekhez. Nedvességálló OSB lap, szabványos méret (2500×1250 mm), kiváló ár-érték arányban.",
+    "image": "/termekek/osb-lap-15mm.avif"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,82",
+    "reviewCount": 41
+  },
+  "description": "15 mm vastag OSB lap teherhordó külső és belső falakhoz, zsaluzatokhoz, ideiglenes padlókhoz. Kiváló szilárdság, nedvességállóság és jó megmunkálhatóság.",
+  "image": "/termekek/osb-lap-15mm.avif",
+  "images": [],
+  "longDescription": "Az OSB lap 15 mm vastagságban kiváló választás teherhordó szerkezetekhez – legyen szó külső vagy belső falakról, lépcsőburkolatról, monolit zsaluzatról vagy építési ideiglenes padlózatokról. OSB 3 típusként nedvességálló, így félkültéri felhasználásra is alkalmas. A szabványos 2500×1250 mm-es OSB méret egyszerűvé teszi a kivitelezést, a 3,125 m² felület pedig pontos kalkulációt tesz lehetővé. A termék kedvező alternatívája a hagyományos zsalulemezeknek és sok más kereskedő OSB kínálatának (Praktiker, Bauhaus, OBI).",
+  "longDescription2": null,
+  "material": "OSB 3 nedvességálló faforgács panel",
+  "audience": [
+    "kivitelezők",
+    "építkezők",
+    "zsaluzó szakemberek",
+    "asztalosok"
+  ],
+  "blogtags": [
+    "osb lap",
+    "osb lap ár",
+    "osb 15mm",
+    "zsaluzat",
+    "külső fal",
+    "építőanyag"
+  ],
+  "sku": "osb-15mm",
+  "price": 8690,
+  "mprice": null,
+  "m2price": 2781,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Típus": {
+      "label": "Típus",
+      "order": 7,
+      "value": "OSB 3 – teherhordó, nedvességálló"
+    },
+    "Tömeg": {
+      "label": "Tömeg",
+      "order": 5,
+      "value": "~ 30,5 kg"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 6,
+      "value": "csiszolt, éles él"
+    },
+    "Előnyök": {
+      "label": "Előnyök",
+      "order": 9,
+      "value": "Erős tartás, nedvességállóság, sokoldalú felhasználás"
+    },
+    "Sűrűség": {
+      "label": "Sűrűség",
+      "order": 4,
+      "value": "kb. 600–680 kg/m³"
+    },
+    "Vastagság": {
+      "label": "Vastagság",
+      "order": 1,
+      "value": "15 mm"
+    },
+    "Tábla méret": {
+      "label": "Tábla méret",
+      "order": 2,
+      "value": "2500 × 1250 mm"
+    },
+    "Ajánlott hely": {
+      "label": "Ajánlott hely",
+      "order": 10,
+      "value": "Építkezés, burkolás, szerkezeti elemek kialakítása"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Külső-belső falelemek, zsaluzat, ideiglenes padló"
+    },
+    "Tábla felülete": {
+      "label": "Tábla felülete",
+      "order": 3,
+      "value": "3,125m²"
+    }
+  },
+  "shippingDetails": {
+    "weight": 30,
+    "length": 250,
+    "width": 125,
+    "height": 1
+  },
+  "variants": null,
+  "category": "osb-lapok",
+  "categorySlug": "osb-lapok"
+}

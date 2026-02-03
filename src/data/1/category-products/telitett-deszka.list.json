@@ -1,0 +1,41 @@
+{
+  "categorySlug": "telitett-deszka",
+  "items": [
+    {
+      "slug": "telitett-bordazott-deszka-28x140",
+      "categorySlug": "telitett-deszka",
+      "name": "Telített bordázott deszka 28×140 mm",
+      "image": "/termekek/telitett-bordazott-deszka.jpg",
+      "images": [],
+      "sku": "Telített bordázott deszka 28×140 mm",
+      "priceFrom": 6365,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "inStock": true,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.89,
+      "reviewCount": 57
+    },
+    {
+      "slug": "telitett-deszka-18x140",
+      "categorySlug": "telitett-deszka",
+      "name": "Telített deszka 18×140 mm",
+      "image": "/termekek/telitett-deszka.jpg",
+      "images": [],
+      "sku": "Telített deszka 18×140 mm",
+      "priceFrom": 3060,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "inStock": true,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.85,
+      "reviewCount": 44
+    }
+  ]
+}

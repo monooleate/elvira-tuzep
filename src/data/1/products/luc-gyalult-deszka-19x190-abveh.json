@@ -1,0 +1,88 @@
+{
+  "name": "Gyalult deszka /AF profil/ 19x190mmx4m AB-VEH minőség",
+  "slug": "luc-gyalult-deszka-19x190-abveh",
+  "meta": {
+    "title": "Luc gyalult deszka /AF profil/ 19x190mm 4m abveh",
+    "description": "Extra széles gyalult luc deszka (19×190 mm) osztrák importból, AB-VEH minőségben. Tökéletes választás belső burkolatokhoz, mennyezethez, bútorlaphoz.",
+    "image": "/termekek/luc-ronkhaz-19x190.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,8",
+    "reviewCount": 8
+  },
+  "description": "Extra széles, esztétikusan gyalult, 4 oldalon fózolt lucfenyő deszka beltérre és kültérre",
+  "image": "/termekek/luc-gyalult-deszka-19x190.jpg",
+  "images": [],
+  "longDescription": "A 19x190 mm-es lucfenyő gyalult deszka /AF profil/ ideális választás minden olyan felhasználásra, ahol a nagyobb fedőszélesség előnyt jelent. Osztrák gyártású, AB-VEH minőségű faanyag, amely 4 oldalon gyalult és fózolt, így esztétikus, kész felületet biztosít. Kiválóan használható mennyezetek, oldalfalak, polcok, bútorlapok vagy kerítések kialakításához. Kültéri használat esetén ajánlott vékonylazúros kezeléssel növelni az élettartamot.",
+  "longDescription2": null,
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "nevezéktan"
+  ],
+  "sku": "luc-gyd-19x190-4m",
+  "price": 5239,
+  "mprice": null,
+  "m2price": 6890,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "Méret": {
+      "label": "Méret",
+      "order": 1,
+      "value": "19 x 190 mm"
+    },
+    "Profil": {
+      "label": "Profil",
+      "order": 4,
+      "value": "AF profil (gyalult, fózolt deszka)"
+    },
+    "Fa fajta": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 5,
+      "value": "4 oldalon gyalult, fózolt"
+    },
+    "Kezelés": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kültéri használat esetén vékonylazúrral kezelendő"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "AB-VEH (válogatott, építőipari)"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 6,
+      "value": "Ausztria"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Fafödémek, oromszegély, polclap, kerítésléc"
+    }
+  },
+  "shippingDetails": {
+    "weight": 6,
+    "length": 400,
+    "width": 19,
+    "height": 1
+  },
+  "variants": null,
+  "category": "gyalult-deszka",
+  "categorySlug": "gyalult-deszka"
+}

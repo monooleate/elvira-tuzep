@@ -1,0 +1,194 @@
+{
+  "categorySlug": "hajopadlo",
+  "items": [
+    {
+      "slug": "hajopadlo-luc-softline-eprofil-19x116-abveh",
+      "categorySlug": "hajopadlo",
+      "name": "Hajópadló - Luc Softline /E profil/ 19x116mmx4m AB-VEH minőség",
+      "description": "Softline hajópadló E profil, 19x116mm-es méretben. AB-VEH minőség, gyalult felület, könnyen szerelhető beltéri burkolatként.",
+      "sku": "luc-hp-e-19x116-4m",
+      "image": "/termekek/hajopadlo-softline-19x116.png",
+      "images": [],
+      "priceFrom": 3199,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": 15,
+      "discountValidUntil": "2026-06-25",
+      "hasDiscount": true,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-hp-e-19x116-4m"
+      ]
+    },
+    {
+      "slug": "hajopadlo-luc-fozolt-cprofil-19x116-abveh",
+      "categorySlug": "hajopadlo",
+      "name": "Hajópadló - Luc Fózolt /C profil/ 19x116mmx4m AB-VEH minőség",
+      "description": "Lucfenyő hajópadló C profillal, fózolt élkialakítással. 19x116mm méret, AB-VEH minőség. Belső falra vagy mennyezetre kiváló választás.",
+      "sku": "luc-hp-c-19x116-4m",
+      "image": "/termekek/hajopadlo-c-19x116.webp",
+      "images": [],
+      "priceFrom": 2825,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-hp-c-19x116-4m"
+      ]
+    },
+    {
+      "slug": "hajopadlo-luc-fozolt-cprofil-19x116-aben",
+      "categorySlug": "hajopadlo",
+      "name": "Hajópadló - Luc Fózolt /C profil/ 19x116mmx4m AB-EN minőség",
+      "description": "Lucfenyő hajópadló fózolt C profillal, 19x116mm méretben. AB-EN minőség, kiváló választás falra vagy mennyezetre belső térbe.",
+      "sku": "luc-hp-c-19x116-4m-aben",
+      "image": "/termekek/hajopadlo-c-19x116.webp",
+      "images": [],
+      "priceFrom": 2640,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-hp-c-19x116-4m-aben"
+      ]
+    },
+    {
+      "slug": "hajopadlo-luc-fozolt-cprofil-19x146-abveh",
+      "categorySlug": "hajopadlo",
+      "name": "Hajópadló - Luc Fózolt /C profil/ 19x146mmx4m AB-VEH minőség",
+      "description": "Lucfenyő hajópadló, széles 19x146mm-es kivitelben, fózolt C profillal. AB-VEH minőség, ideális fal- és mennyezetburkolathoz világos tónusban.",
+      "sku": "luc-hp-c-19x146-4m-abveh",
+      "image": "/termekek/hajopadlo-c-19x146.jpg",
+      "images": [],
+      "priceFrom": 3556,
+      "priceTo": null,
+      "stock": 1,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-hp-c-19x146-4m-abveh"
+      ]
+    },
+    {
+      "slug": "hajopadlo-borovi-fozolt-cprofil-19x146-abveh",
+      "categorySlug": "hajopadlo",
+      "name": "Hajópadló - Borovi Fózolt /C profil/ 19x146mmx4m AB-VEH minőség",
+      "description": "Borovi fenyő hajópadló, széles 19x146mm-es kivitelben, fózolt C profillal. AB-VEH minőség, ideális fal- és mennyezetburkolathoz.",
+      "sku": "borovi-hp-c-19x146-4m-abveh",
+      "image": "/termekek/hajopadlo-c-19x146.jpg",
+      "images": [],
+      "priceFrom": 3556,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "borovi-hp-c-19x146-4m-abveh"
+      ]
+    },
+    {
+      "slug": "hajopadlo-luc-fozolt-cprofil-19x146-aben",
+      "categorySlug": "hajopadlo",
+      "name": "Hajópadló - Luc Fózolt /C profil/ 19x146mmx4m AB-EN minőség",
+      "description": "Lucfenyő hajópadló 19x146mm-es C profillal, AB-EN minőségben. Széles kialakítás, természetes megjelenés és egyszerű szerelés falra vagy mennyezetre.",
+      "sku": "luc-hp-c-19x146-4m-aben",
+      "image": "/termekek/hajopadlo-c-19x146.jpg",
+      "images": [],
+      "priceFrom": 3323,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-hp-c-19x146-4m-aben"
+      ]
+    },
+    {
+      "slug": "hajopadlo-borovi-fozolt-cprofil-19x146-aben",
+      "categorySlug": "hajopadlo",
+      "name": "Hajópadló - Borovi Fózolt /C profil/ 19x146mmx4m AB-EN minőség",
+      "description": "Borovi fenyő hajópadló 19x146mm-es C profillal, AB-EN minőségben. Természetes erezet, széles kialakítás, kiváló belső burkolatokhoz.",
+      "sku": "borovi-hp-c-19x146-4m-aben",
+      "image": "/termekek/hajopadlo-c-19x146.jpg",
+      "images": [],
+      "priceFrom": 3323,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "borovi-hp-c-19x146-4m-aben"
+      ]
+    },
+    {
+      "slug": "hajopadlo-luc-fozolt-cprofil-19x146-c",
+      "categorySlug": "hajopadlo",
+      "name": "Hajópadló - Luc Fózolt /C profil/ 19x146mmx4m C minőség",
+      "description": "Lucfenyő hajópadló 19x146mm méretben, fózolt C profillal, C minőségben. Kedvező árú burkolat kevésbé igényes felhasználásra.",
+      "sku": "luc-hp-c-19x146-4m-c",
+      "image": "/termekek/hajopadlo-c-19x146.jpg",
+      "images": [],
+      "priceFrom": 2505,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-hp-c-19x146-4m-c"
+      ]
+    },
+    {
+      "slug": "hajopadlo-borovi-fozolt-cprofil-19x146-c",
+      "categorySlug": "hajopadlo",
+      "name": "Hajópadló - Borovi Fózolt /C profil/ 19x146mmx4m C minőség",
+      "description": "Borovi fenyő hajópadló 19x146mm méretben, C profil és C minőség – költséghatékony megoldás kevésbé igényes beltéri vagy műszaki felhasználásra.",
+      "sku": "borovi-hp-c-19x146-4m-c",
+      "image": "/termekek/hajopadlo-c-19x146.jpg",
+      "images": [],
+      "priceFrom": 2505,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "borovi-hp-c-19x146-4m-c"
+      ]
+    }
+  ]
+}

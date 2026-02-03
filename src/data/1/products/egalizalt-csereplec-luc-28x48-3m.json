@@ -1,0 +1,90 @@
+{
+  "name": "Egalizált cserépléc luc 28x48mmx3m I-II. osztály",
+  "slug": "egalizalt-csereplec-luc-28x48-3m",
+  "meta": {
+    "title": "Egalizált luc cserépléc 28x48mm 3m | Elvira Tüzép",
+    "description": "Egalizált, szárított lucfenyő cserépléc 28x48 mm méretben, 3 m hosszban – osztrák I-II. osztályú minőség tetőszerkezetekhez, lécezéshez.",
+    "image": "/termekek/egalizalt-csereplec-luc-28x48.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,71",
+    "reviewCount": 16
+  },
+  "description": "Szárított, egalizált lucfenyő cserépléc 28x48 mm méretben, 3 m hosszban – I-II. osztályú, osztrák minőségű tetőléc.",
+  "image": "/termekek/egalizalt-csereplec-luc-28x48.jpg",
+  "images": [],
+  "longDescription": "Ez a 28x48 mm-es, 3 méteres hosszúságú egalizált lucfenyő cserépléc ideális választás tetőszerkezetek kialakításához, különösen akkor, ha fontos a méretpontosság és a szilárdság. Az osztrák gyártású, szárított faanyag stabil formát és hosszú élettartamot biztosít, könnyen kezelhető és gyorsan beépíthető. I-II. osztályú minőségi besorolása jó ár-érték arányt képvisel új tetők építéséhez és meglévők felújításához.",
+  "longDescription2": "Az egalizált felület garantálja az egységes vastagságot, ami különösen előnyös lécezési és szaruzathoz történő rögzítési munkák során. Alkalmas cserepek biztonságos rögzítésére, alátétszerkezetek kialakítására vagy ellenlécnek is, ahol a stabilitás és szellőzés kulcsfontosságú.",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "cserépléc",
+    "ellenléc",
+    "tetőszerkezet"
+  ],
+  "sku": "luc-csl-eg-28x48-3m",
+  "price": 799,
+  "mprice": 266,
+  "m2price": null,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "3 m"
+    },
+    "Méret": {
+      "label": "Méret",
+      "order": 1,
+      "value": "28 x 48 mm"
+    },
+    "Típus": {
+      "label": "Típus",
+      "order": 4,
+      "value": "Egalizált cserépléc"
+    },
+    "Fa fajta": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Egalizált, szárított"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 6,
+      "value": "I-II. osztály"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 7,
+      "value": "Ausztria"
+    },
+    "Mérettűrés": {
+      "label": "Mérettűrés",
+      "order": 9,
+      "value": "Maximálisan ±0,3 mm eltérés lehetséges"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Tetőszerkezet, lécezés, ellenléc, alátétszerkezet"
+    }
+  },
+  "shippingDetails": {
+    "weight": 1,
+    "length": 300,
+    "width": 4,
+    "height": 2
+  },
+  "variants": null,
+  "category": "csereplec-ellenlec",
+  "categorySlug": "csereplec-ellenlec"
+}

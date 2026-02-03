@@ -1,0 +1,130 @@
+{
+  "categorySlug": "fureszelt-deszka",
+  "name": "Zsaludeszka 25×150×4000 mm – colos deszka",
+  "slug": "zsaludeszka-25x150x4000",
+  "meta": {
+    "title": "Zsaludeszka 25×150×4000 mm | Fűrészelt deszka",
+    "description": "25×150×4000 mm gyalulatlan fűrészelt deszka légszáraz kivitelben. Zsaludeszka zsaluzáshoz és építési munkákhoz kedvező áron.",
+    "image": "/images/products/deszka-25x150x4000-darab-500.avif"
+  },
+  "description": "25×150×4000 mm gyalulatlan, fűrészelt fenyő deszka légszáraz kivitelben. Erős, tartós és gazdaságos építőanyag zsaluzáshoz, tetőszerkezetekhez és barkácsprojektekhez.",
+  "longDescription": "A 25×150×4000 mm fűrészelt deszka egy kedvelt méret a gyalulatlan deszkák között. Légszáraz kivitelének köszönhetően stabilabb és kevésbé vetemedik. Alkalmas zsaluzásra, tetőszerkezetek építésére, kerítésekhez vagy egyéb általános építési felhasználásra. Kedvező deszka árainkkal és közvetlen raktárkészlettel kínáljuk.",
+  "longDescription2": "Főbb jellemzők: vastagság 25 mm, szélesség 150 mm, hossz 4000 mm. Anyaga: légszáraz fenyő, gyalulatlan. Térfogata 0,015 m³, tömege kb. 7 kg. Felhasználási területei: tetőszerkezet, zsaludeszka, ideiglenes szerkezetek, barkácsolás. A nagyobb szélesség miatt különösen alkalmas zsaluzáshoz és burkolatokhoz.",
+  "longDescription3": "",
+  "material": "Légszáraz fenyő, gyalulatlan",
+  "audience": [
+    "építkezők",
+    "kivitelezők",
+    "tetőfedők",
+    "barkácsolók"
+  ],
+  "blogtags": [
+    "deszka"
+  ],
+  "specs": {
+    "484f6c90a3": {
+      "label": "Méret",
+      "order": 1,
+      "value": "25×150×4000 mm"
+    },
+    "24f1037591": {
+      "label": "Vastagság",
+      "order": 2,
+      "value": "25 mm (colos deszka)"
+    },
+    "7c181413ce": {
+      "label": "Szélesség",
+      "order": 3,
+      "value": "150 mm"
+    },
+    "f0abae1a6d": {
+      "label": "Hossz",
+      "order": 4,
+      "value": "4000 mm"
+    },
+    "d0c671405e": {
+      "label": "Anyag",
+      "order": 5,
+      "value": "Légszáraz fenyő"
+    },
+    "6a0aca4759": {
+      "label": "Kivitel",
+      "order": 6,
+      "value": "Gyalulatlan, fűrészelt"
+    },
+    "9625b5c4d8": {
+      "label": "Felület",
+      "order": 7,
+      "value": "≈ 1,41 m²/deszka"
+    },
+    "9b52cc45bc": {
+      "label": "Térfogat",
+      "order": 8,
+      "value": "0,015 m³/deszka"
+    },
+    "5be8c53223": {
+      "label": "Tömeg",
+      "order": 9,
+      "value": "≈ 7 kg/deszka"
+    },
+    "9adc62fc69": {
+      "label": "Felhasználás",
+      "order": 10,
+      "value": "Zsalu, tetőszerkezet, burkolat, kerítés, barkács"
+    },
+    "e7cb92dd8d": {
+      "label": "Megjegyzés",
+      "order": 11,
+      "value": "Tömegében árusított, gazdaságos építőfa"
+    }
+  },
+  "shippingDetails": {
+    "weight": 7,
+    "length": 400,
+    "width": 15,
+    "height": 2
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.56,
+    "reviewCount": 12
+  },
+  "image": "/images/products/deszka-25x150x4000-darab-500.avif",
+  "images": [
+    {
+      "src": "/images/products/deszka-25x150x4000-darab",
+      "alt": "Fűrészelt deszka 25×150×4000 mm gyalulatlan kivitelben, mely zsaludeszkaként használatos - darab nézetben látható"
+    },
+    {
+      "src": "/images/products/deszka-25x150x4000-koteg",
+      "alt": "25×150×4000 mm gyalulatlan fenyő deszka kötegben. Főleg, mint zsaludeszka használatos"
+    }
+  ],
+  "variants": [
+    {
+      "id": "v_5f9e9bbf0988b80e",
+      "title": "Alap",
+      "sku": "D251504000",
+      "variant_rank": 0,
+      "price": 2590,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 2590,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

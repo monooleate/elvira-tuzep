@@ -1,0 +1,117 @@
+{
+  "name": "OSB lap 10 mm – zsaluzat, csomagolás, burkolat",
+  "slug": "osb-lap-10mm",
+  "meta": {
+    "title": "OSB lap 10 mm | Íves zsaluzat és csomagolás | OSB árak",
+    "description": "OSB lap 10 mm vastagságban – ideális csomagoláshoz, íves zsaluzathoz és általános belső burkoláshoz. Nézze meg OSB 3 lapjainkat – 2500×1250 mm tábla, elérhető raktárról.",
+    "image": "/images/products/osb-lap-10mm-lapok-500.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,76",
+    "reviewCount": 46
+  },
+  "description": "10 mm vastag OSB lap, amely kiválóan alkalmas íves felületek zsaluzatára, ipari csomagolásra és általános belsőépítészeti burkolatokhoz. Nedvességálló, stabil és jól kezelhető szabványos táblaformában.",
+  "image": null,
+  "images": [
+    {
+      "src": "/images/products/osb-lap-10mm-lapok",
+      "alt": "10 mm OSB lapok egymásra helyezve – szabványos méretű tábla"
+    },
+    {
+      "src": "/images/products/osb-lap-10mm-darab",
+      "alt": "Egyetlen 10 mm vastag OSB lap oldalnézetből – 2500×1250 mm méret"
+    },
+    {
+      "src": "/images/products/osb-lap-10mm-koteg-raklap",
+      "alt": "10 mm OSB lapok raklapon kötegelve – szállításra kész állapot"
+    }
+  ],
+  "longDescription": "Az OSB 10 mm lap tökéletes választás, ha íves vagy speciális felületek burkolására, zsaluzására vagy strapabíró csomagolásra van szükség. Az OSB 3 típusú tábla teherhordó és nedvességálló, így építkezéseknél, raktározásnál, logisztikai vagy ipari felhasználás során is megbízható megoldást kínál. A szabványos 2500×1250 mm-es OSB tábla méret és a 3,125 m² felület egyszerű kalkulációt és gyors beépítést tesz lehetővé. Kedvelt választás a Praktiker, OBI vagy Bauhaus OSB lapok helyett – közvetlenül raktárról, kiváló ár-érték arányban.",
+  "longDescription2": null,
+  "material": "OSB 3 nedvességálló faforgács panel",
+  "audience": [
+    "építkezők",
+    "ipari csomagolók",
+    "kivitelezők",
+    "bútorasztalosok"
+  ],
+  "blogtags": [
+    "osb lap",
+    "osb lap ár",
+    "osb 10mm",
+    "osb lap méret",
+    "osb tábla",
+    "zsaluzat",
+    "csomagolás"
+  ],
+  "sku": "osb-10mm",
+  "price": 6090,
+  "mprice": null,
+  "m2price": 1949,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": 5,
+  "discountValidUntil": "2025-12-15T23:00:00.000Z",
+  "stock": 1,
+  "specs": {
+    "Típus": {
+      "label": "Típus",
+      "order": 7,
+      "value": "OSB 3 – teherhordó, nedvességálló"
+    },
+    "Tömeg": {
+      "label": "Tömeg",
+      "order": 5,
+      "value": "~ 20,3 kg"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 6,
+      "value": "csiszolt, éles él"
+    },
+    "Előnyök": {
+      "label": "Előnyök",
+      "order": 9,
+      "value": "Nedvességálló, hajlíthatóbb vastagság, széleskörű felhasználás"
+    },
+    "Sűrűség": {
+      "label": "Sűrűség",
+      "order": 4,
+      "value": "kb. 600–680 kg/m³"
+    },
+    "Vastagság": {
+      "label": "Vastagság",
+      "order": 1,
+      "value": "10 mm"
+    },
+    "Tábla méret": {
+      "label": "Tábla méret",
+      "order": 2,
+      "value": "2500 × 1250 mm"
+    },
+    "Ajánlott hely": {
+      "label": "Ajánlott hely",
+      "order": 10,
+      "value": "Belsőépítészet, építkezés, csomagolástechnika, raktározás"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Íves zsaluzat, ipari csomagolás, belső burkolat"
+    },
+    "Tábla felülete": {
+      "label": "Tábla felülete",
+      "order": 3,
+      "value": "3,125m²"
+    }
+  },
+  "shippingDetails": {
+    "weight": 20,
+    "length": 250,
+    "width": 125,
+    "height": 1
+  },
+  "variants": null,
+  "category": "osb-lapok",
+  "categorySlug": "osb-lapok"
+}

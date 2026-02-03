@@ -1,0 +1,132 @@
+{
+  "categorySlug": "fureszelt-pallo",
+  "name": "Fűrészelt palló 50×150×4000 mm – gyalulatlan",
+  "slug": "fureszelt-pallo-50x150x4000",
+  "meta": {
+    "title": "Fűrészelt palló 50×150×4000 mm | Masszív gyalulatlan palló",
+    "description": "50×150×4000 mm gyalulatlan, légszáraz fűrészelt palló. Masszív és tartós faanyag tetőszerkezetekhez, födémszerkezetekhez, zsaluzáshoz és egyéb építési munkákhoz kedvező áron.",
+    "image": "/images/products/pallo-50x150x4000-darab.avif"
+  },
+  "description": "50×150×4000 mm gyalulatlan, légszáraz fűrészelt palló. Erős, masszív keresztmetszetének köszönhetően ideális tetőszerkezetekhez, födémszerkezetekhez és zsaluzáshoz.",
+  "longDescription": "Az 50×150×4000 mm fűrészelt palló nagyobb keresztmetszetének köszönhetően kiemelkedően erős és tartós építőanyag. Légszáraz kivitelben kínáljuk, így kevésbé vetemedik. Kiválóan alkalmas tetőszerkezetekhez, födémszerkezetek építéséhez, zsaluzatokhoz, kerítésekhez vagy barkácsprojektekhez. Kedvező palló árainkkal közvetlenül raktárkészletről rendelhető.",
+  "longDescription2": "Főbb jellemzők: vastagság 50 mm, szélesség 150 mm, hossz 4000 mm. Anyaga: légszáraz, gyalulatlan fenyő. Térfogata 0,03 m³, tömege kb. 14 kg. Felhasználási területei: tetőszerkezet, födémszerkezet, zsaluzat, kerítés, barkácsolás. Nagyobb teherbírású kivitel, tartós és sokoldalúan felhasználható.",
+  "longDescription3": "",
+  "material": "Légszáraz fenyő, gyalulatlan",
+  "audience": [
+    "építkezők",
+    "kivitelezők",
+    "tetőfedők",
+    "asztalosok",
+    "barkácsolók"
+  ],
+  "blogtags": [
+    "deszka",
+    "palló"
+  ],
+  "specs": {
+    "8350a9611e": {
+      "label": "Méret",
+      "order": 1,
+      "value": "50×150×4000 mm"
+    },
+    "3c72257807": {
+      "label": "Vastagság",
+      "order": 2,
+      "value": "50 mm"
+    },
+    "7c181413ce": {
+      "label": "Szélesség",
+      "order": 3,
+      "value": "150 mm"
+    },
+    "f0abae1a6d": {
+      "label": "Hossz",
+      "order": 4,
+      "value": "4000 mm"
+    },
+    "d0c671405e": {
+      "label": "Anyag",
+      "order": 5,
+      "value": "Légszáraz fenyő"
+    },
+    "6a0aca4759": {
+      "label": "Kivitel",
+      "order": 6,
+      "value": "Gyalulatlan, fűrészelt"
+    },
+    "57e0d129c7": {
+      "label": "Felület",
+      "order": 7,
+      "value": "≈ 1,62 m²/palló"
+    },
+    "3bed7edb37": {
+      "label": "Térfogat",
+      "order": 8,
+      "value": "0,03 m³/palló"
+    },
+    "011ee48216": {
+      "label": "Tömeg",
+      "order": 9,
+      "value": "≈ 14 kg/palló"
+    },
+    "24e02f03e6": {
+      "label": "Felhasználás",
+      "order": 10,
+      "value": "Tetőszerkezet, zsalu, burkolat, kerítés, barkács"
+    },
+    "9f41bab4e6": {
+      "label": "Megjegyzés",
+      "order": 11,
+      "value": "Masszív keresztmetszet, nagyobb teherbírás"
+    }
+  },
+  "shippingDetails": {
+    "weight": 14,
+    "length": 400,
+    "width": 15,
+    "height": 5
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.85,
+    "reviewCount": 19
+  },
+  "image": "/images/products/pallo-50x150x4000-darab.avif",
+  "images": [
+    {
+      "src": "/images/products/pallo-50x150x4000-darab",
+      "alt": "Fűrészelt palló 50×150×4000 mm gyalulatlan kivitelben"
+    },
+    {
+      "src": "/images/products/pallo-50x150x4000-koteg",
+      "alt": "50×150×4000 mm gyalulatlan fenyő palló kötegben"
+    }
+  ],
+  "variants": [
+    {
+      "id": "v_12852ac6cf92d270",
+      "title": "Alap",
+      "sku": "D501504000",
+      "variant_rank": 0,
+      "price": 5179,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 5179,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

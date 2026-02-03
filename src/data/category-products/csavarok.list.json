@@ -1,0 +1,85 @@
+{
+  "categorySlug": "csavarok",
+  "items": [
+    {
+      "slug": "acsszerkezeti-csavar-sullyesztett-fejjel",
+      "categorySlug": "csavarok",
+      "name": "Ácsszerkezeti csavar – süllyesztett fejjel (WoodStar típus)",
+      "description": "Horganyzott, süllyesztett fejű ácsszerkezeti csavar TX horonnyal, részmenetes kialakítással erős faszerkezetekhez.",
+      "sku": "001-001-023-005",
+      "image": "/images/products//images/products/csavar_acsszerkezeti_sullyesztett_fejjel_1-500.avif",
+      "images": [
+        {
+          "src": "/images/products/csavar_acsszerkezeti_sullyesztett_fejjel_1",
+          "alt": "Ácsszerkezeti csavar süllyesztett fejjel oldalról"
+        },
+        {
+          "src": "/images/products/csavar_acsszerkezeti_sullyesztett_fejjel_2",
+          "alt": "Ácsszerkezeti csavar süllyesztett fejjel középső rész látszik"
+        },
+        {
+          "src": "/images/products/csavar_acsszerkezeti_sullyesztett_fejjel_3",
+          "alt": "Ácsszerkezeti csavar süllyesztett fejjel és a csavarmenet látszik kiemelve"
+        },
+        {
+          "src": "/images/products/csavar_acsszerkezeti_sullyesztett_fejjel_4",
+          "alt": "Ácsszerkezeti csavar süllyesztett fejjel oldalról másodjára"
+        },
+        {
+          "src": "/images/products/csavar_acsszerkezeti_sullyesztett_fejjel_5",
+          "alt": "Ácsszerkezeti csavar süllyesztett feje látszik a képen a torx menettel, Ácsszerkezeti csavar süllyesztett feje látszik alulról"
+        },
+        {
+          "src": "/images/products/csavar_acsszerkezeti_sullyesztett_fejjel_6",
+          "alt": ""
+        }
+      ],
+      "priceFrom": 5.59,
+      "priceTo": 63.23,
+      "stock": 18,
+      "discountPercent": 15,
+      "discountValidUntil": "2026-06-25",
+      "hasDiscount": true,
+      "variantTitles": [
+        "Ø4mm x 30",
+        "Ø4mm x 35",
+        "Ø4,5mm x 40",
+        "Ø4,5mm x 45",
+        "Ø4,5mm x 50",
+        "Ø4,5mm x 60",
+        "Ø4,5mm x 70",
+        "Ø4,5mm x 80",
+        "Ø5mm x 50",
+        "Ø5mm x 60",
+        "Ø5mm x 70",
+        "Ø5mm x 80",
+        "Ø5mm x 100",
+        "Ø5mm x 120",
+        "Ø5mm x 140",
+        "Ø6mm x 100",
+        "Ø6mm x 120",
+        "Ø6mm x 180"
+      ],
+      "variantSkus": [
+        "001-001-023-005",
+        "001-001-023-006",
+        "001-001-023-014",
+        "001-001-023-015",
+        "001-001-023-016",
+        "001-001-023-017",
+        "001-001-023-018",
+        "001-001-023-019",
+        "001-001-023-021",
+        "001-001-023-022",
+        "001-001-023-023",
+        "001-001-023-024",
+        "001-001-023-026",
+        "001-001-023-028",
+        "001-001-023-029",
+        "001-001-025-018",
+        "001-001-025-019",
+        "001-001-025-022"
+      ]
+    }
+  ]
+}

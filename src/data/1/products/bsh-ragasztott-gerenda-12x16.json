@@ -1,0 +1,124 @@
+{
+  "name": "BSH ragasztott gerenda 12x16cm",
+  "slug": "bsh-ragasztott-gerenda-12x16",
+  "meta": {
+    "title": "BSH ragasztott gerenda 12x16cm - GL24h, osztrák gyártás",
+    "description": "BSH gerenda 12×16 cm méretben, GL24h osztályban. Stabil és időtálló megoldás faszerkezetekhez kültéren és beltéren.",
+    "image": "/termekek/bsh-gerenda-12x16.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,9",
+    "reviewCount": 33
+  },
+  "description": "BSH gerenda 12×16 cm keresztmetszettel, 13,5 méteres hosszal, GL24h osztályban. Tartós, mérettartó faanyag látszó és teherhordó szerkezetekhez.",
+  "image": "/termekek/bsh-gerenda-12x16.jpg",
+  "images": [],
+  "longDescription": "A 12×16 cm-es keresztmetszetű BSH gerenda megnövelt teherbírása miatt ideális választás nagyobb szerkezeti igénybevételű faépítményekhez. Az osztrák GL24h minőségű, rétegragasztott gerenda precízen megmunkált, gyalult és fózolt kivitelben készül, így nemcsak szerkezetileg erős, de esztétikailag is kifogástalan. Alkalmazható tetőszerkezetek, áthidalók, pergolák vagy akár beltéri látszó elemek esetén is.",
+  "longDescription2": "Ez a méret remek választás, ha nagy fesztávokat kell áthidalni vagy erősebb alátámasztás szükséges. A ragasztott technológia révén a gerenda formatartó, ellenáll a vetemedésnek és repedésnek, miközben a természetes fa meleg megjelenését kínálja. A GL24h szabványnak megfelelő gerenda szerkezetileg méretezhető, így biztonságosan alkalmazható statikai tervezés mellett. A termék előkészített felülettel érkezik, lazúrozásra vagy pácolásra készen, fóliázva.",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "bsh",
+    "rétegragasztott fa"
+  ],
+  "sku": "bsh-12x16-gl24h",
+  "price": 103677,
+  "mprice": null,
+  "m2price": null,
+  "m3price": 399990,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 6,
+      "value": "13,5 m"
+    },
+    "Típus": {
+      "label": "Típus",
+      "order": 1,
+      "value": "BSH ragasztott gerenda"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 7,
+      "value": "7,56 m²"
+    },
+    "Kezelés": {
+      "label": "Kezelés",
+      "order": 15,
+      "value": "Pácolásra, lazúrozásra előkészítve"
+    },
+    "Előnyök": {
+      "label": "Előnyök",
+      "order": 14,
+      "value": "Nagy teherbírás, kiemelkedő esztétikum, hosszú élettartam"
+    },
+    "Felülete": {
+      "label": "Felülete",
+      "order": 10,
+      "value": "Gyalult, fózolt, látszó minőségű"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 3,
+      "value": "Látszó (esztétikai felhasználásra)"
+    },
+    "Térfogat": {
+      "label": "Térfogat",
+      "order": 8,
+      "value": "0,259 m³"
+    },
+    "Csomagolás": {
+      "label": "Csomagolás",
+      "order": 16,
+      "value": "Egyedileg fóliázott"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 4,
+      "value": "Ausztria"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 13,
+      "value": "Tetőszerkezet, pergola, nagy fesztávú tartók"
+    },
+    "Keresztmetszet": {
+      "label": "Keresztmetszet",
+      "order": 5,
+      "value": "12 × 16 cm"
+    },
+    "Tulajdonságok": {
+      "label": "Tulajdonságok",
+      "order": 12,
+      "value": "Repedés- és vetemedésmentes, mérettartó"
+    },
+    "Nedvességtartalom": {
+      "label": "Nedvességtartalom",
+      "order": 11,
+      "value": "kb. 12% ±2%"
+    },
+    "Szilárdsági osztály": {
+      "label": "Szilárdsági osztály",
+      "order": 2,
+      "value": "GL24h"
+    },
+    "Választható hosszúságok": {
+      "label": "Választható hosszúságok",
+      "order": 9,
+      "value": "4,5 m / 6,75 m / 9 m / 13,5 m"
+    }
+  },
+  "shippingDetails": {
+    "weight": 122,
+    "length": 1350,
+    "width": 12,
+    "height": 16
+  },
+  "variants": null,
+  "category": "bsh-ragasztott-gerenda",
+  "categorySlug": "bsh-ragasztott-gerenda"
+}

@@ -1,0 +1,189 @@
+{
+  "categorySlug": "csereplec-ellenlec",
+  "items": [
+    {
+      "slug": "bramac-csereplec-30x50-4m-impregnalt-legszaritott",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Bramac légszárított, impregnált cserépléc 30×50mmx4m",
+      "image": "/images/products/bramac-csereplec-30x50-4m-koteg-500.avif",
+      "images": [
+        {
+          "src": "/images/products/bramac-csereplec-30x50-4m-koteg",
+          "alt": "Bramac cserépléc 30×50 mm, 4 m – légszárított, impregnált tetőléc közelről kötegben"
+        },
+        {
+          "src": "/images/products/bramac-csereplec-30x50-4m-csomag",
+          "alt": "Bramac 30×50 mm cserépléc – kötegelt, csomagolt kiszerelés oldalnézetből"
+        }
+      ],
+      "sku": "luc-csl-impreg-bramac-30x50-4m",
+      "priceFrom": 1476,
+      "priceTo": null,
+      "discountPercent": 10,
+      "discountValidUntil": "2025-09-30T22:00:00.000Z",
+      "stock": 1,
+      "inStock": true,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": null,
+      "reviewCount": null
+    },
+    {
+      "slug": "egalizalt-csereplec-luc-23x48-4m",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Egalizált cserépléc luc 23x48mmx4m I-II. osztály",
+      "image": "/termekek/egalizalt-csereplec-luc-23x48.jpg",
+      "images": [
+        {
+          "src": "/images/products/egalizalt-csereplec-luc-23x48-koteg",
+          "alt": "Egalizált cserépléc 23×48 mm, 4 m – műszárított tetőléc közelről kötegben,Egalizált cserépléc 23×48 mm, 4 m – műszárított, kötegelt, csomagolt kiszerelés oldalnézetből,Egalizált cserépléc 23×48 mm, 4 m – műszárított, darab nézetben"
+        },
+        {
+          "src": "/images/products/egalizalt-csereplec-luc-23x48-csomag",
+          "alt": ""
+        },
+        {
+          "src": "/images/products/egalizalt-csereplec-luc-23x48-darab",
+          "alt": ""
+        }
+      ],
+      "sku": "luc-csl-eg-23x48-4m",
+      "priceFrom": 1119,
+      "priceTo": null,
+      "discountPercent": 5,
+      "discountValidUntil": "2025-09-30T22:00:00.000Z",
+      "stock": 1,
+      "inStock": true,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.8,
+      "reviewCount": 6
+    },
+    {
+      "slug": "egalizalt-csereplec-luc-28x48-3m",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Egalizált cserépléc luc 28x48mmx3m I-II. osztály",
+      "image": "/termekek/egalizalt-csereplec-luc-28x48.jpg",
+      "images": [],
+      "sku": "luc-csl-eg-28x48-3m",
+      "priceFrom": 799,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "inStock": false,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.71,
+      "reviewCount": 16
+    },
+    {
+      "slug": "egalizalt-csereplec-luc-28x48-4m",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Egalizált cserépléc luc 28x48mmx4m I-II. osztály",
+      "image": "/termekek/egalizalt-csereplec-luc-28x48.jpg",
+      "images": [],
+      "sku": "luc-csl-eg-28x48-4m",
+      "priceFrom": 1169,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "inStock": true,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.75,
+      "reviewCount": 5
+    },
+    {
+      "slug": "egalizalt-ellenlec-luc-48x48-4m",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Egalizált ellenléc luc 48x48mmx4m I-II. osztály",
+      "image": "/termekek/egalizalt-ellenlec-luc-48x48-4m.png",
+      "images": [],
+      "sku": "luc-el-eg-48x48-4m",
+      "priceFrom": 1999,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "inStock": true,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.82,
+      "reviewCount": 12
+    },
+    {
+      "slug": "egalizalt-ellenlec-luc-48x78-4m-generon",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Egalizált ellenléc luc 48x78mmx4m I-II. osztály (Terran Generon kompatibilis)",
+      "image": "/termekek/egalizalt-ellenlec-luc-48x78.jpg",
+      "images": [],
+      "sku": "luc-el-eg-48x78-4m",
+      "priceFrom": 3390,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "inStock": false,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.85,
+      "reviewCount": 8
+    },
+    {
+      "slug": "egalizalt-ellenlec-luc-78x78-4m",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Egalizált ellenléc luc 78x78mmx4m I-II. osztály",
+      "image": "/termekek/egalizalt-ellenlec-luc-78x78-4m.jpg",
+      "images": [],
+      "sku": "luc-el-eg-78x78-4m",
+      "priceFrom": 5690,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "inStock": false,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.85,
+      "reviewCount": 16
+    },
+    {
+      "slug": "ellenlec-luc-38x58-4m",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Ellenléc luc 38x58mmx4m I-II. osztály",
+      "image": "/termekek/ellenlec-luc-38x58.webp",
+      "images": [],
+      "sku": "luc-el-38x58-4m",
+      "priceFrom": 1999,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "inStock": false,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.65,
+      "reviewCount": 3
+    },
+    {
+      "slug": "ellenlec-luc-58x78-4m",
+      "categorySlug": "csereplec-ellenlec",
+      "name": "Ellenléc luc 58x78mmx4m I-II. osztály",
+      "image": "/termekek/ellenlec-luc-58x78-4m.jpg",
+      "images": [],
+      "sku": "luc-el-58x78-4m",
+      "priceFrom": 4090,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "inStock": false,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.73,
+      "reviewCount": 21
+    }
+  ]
+}

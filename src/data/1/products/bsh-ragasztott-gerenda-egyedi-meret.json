@@ -1,0 +1,104 @@
+{
+  "name": "BSH ragasztott gerenda – Egyedi méretre gyártva",
+  "slug": "bsh-ragasztott-gerenda-egyedi-meret",
+  "meta": {
+    "title": "BSH ragasztott gerenda egyedi méretben - GL24h, osztrák gyártás",
+    "description": "BSH gerendák egyedi méretre gyártva: 80x120 mm-től induló keresztmetszet, akár centiméter pontos hosszméret. Gyors, 2-3 hetes gyártási idő.",
+    "image": "/termekek/bsh-gerenda-egyedi.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,8",
+    "reviewCount": 36
+  },
+  "description": "Egyedi méretű BSH gerendák osztrák gyártásból, GL24h szilárdsági osztályban és látszó minőségben. Rugalmas gyártás, pontos méretezés, prémium esztétika.",
+  "image": "/termekek/bsh-gerenda-egyedi.jpg",
+  "images": [],
+  "longDescription": "Egyedi igényekre szabott BSH (Brettschichtholz) ragasztott gerendák rendelhetők osztrák gyártásból, GL24h szilárdsági osztályban. A szabványtól eltérő keresztmetszetek gyártási ideje jellemzően 2–3 hét. A gyártás 80×120 mm-es keresztmetszettől indul, a szélesség 2 cm-es, míg a magasság 4 cm-es lépcsővel növelhető. A maximális szélesség 280 mm, a magasság esetében nincs felső határ, csupán annyi, hogy 4-gyel oszthatónak kell lennie.",
+  "longDescription2": "Amennyiben a megrendelt keresztmetszet legalább 100 mm széles és 160 mm magas, a gyártó centiméter pontos hosszúságban is vállalja a gyártást, például: 100×320×7,55 m vagy 100×200×6,1 m. Kisebb keresztmetszetek esetén, ahol nem éri el a 100×160 mm-es méretet, csak 13,5 méteres hosszúságban rendelhető. A gyártó nagyobb hosszúságokat is teljesít, például két darab 140×280×4 m helyett egy darab 140×280×8,01 m hosszú elem is készülhet, számolva a vágási veszteséggel. Ezek a termékek különösen ajánlottak egyedi faszerkezeti megoldásokhoz, ahol a pontos méretezhetőség, a stabilitás és a kiemelkedő esztétika elengedhetetlen.",
+  "material": "Fa, ragasztott (BSH), GL24h",
+  "audience": [],
+  "blogtags": [
+    "bsh",
+    "rétegragasztott fa"
+  ],
+  "sku": "bsh-egyedi-gl24h",
+  "price": null,
+  "mprice": null,
+  "m2price": null,
+  "m3price": 399990,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Méret": {
+      "label": "Méret",
+      "order": 5,
+      "value": "Egyedi – 80×120 mm-től indul, max. szélesség 280 mm, magasság 4-gyel osztható"
+    },
+    "Típus": {
+      "label": "Típus",
+      "order": 1,
+      "value": "BSH ragasztott gerenda"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 8,
+      "value": "Gyalult, fózolt, látszó minőségű"
+    },
+    "Kezelés": {
+      "label": "Kezelés",
+      "order": 11,
+      "value": "Lazúrozásra, pácolásra előkészítve"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 3,
+      "value": "Látszó (esztétikai felhasználásra)"
+    },
+    "Csomagolás": {
+      "label": "Csomagolás",
+      "order": 12,
+      "value": "Fóliázott, egyedi csomagolás kérhető"
+    },
+    "Hosszméret": {
+      "label": "Hosszméret",
+      "order": 6,
+      "value": "Centiméter pontos gyártás ≥100×160 mm keresztmetszettől"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 4,
+      "value": "Ausztria"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 10,
+      "value": "Egyedi szerkezetek, tervezett faszerkezetek, ahol centiméterpontosság szükséges"
+    },
+    "Tulajdonságok": {
+      "label": "Tulajdonságok",
+      "order": 9,
+      "value": "Mérethű, vetemedés- és repedésmentes"
+    },
+    "Gyártási idő": {
+      "label": "Gyártási idő",
+      "order": 7,
+      "value": "2–3 hét"
+    },
+    "Szilárdsági osztály": {
+      "label": "Szilárdsági osztály",
+      "order": 2,
+      "value": "GL24h"
+    }
+  },
+  "shippingDetails": {
+    "weight": null,
+    "length": null,
+    "width": null,
+    "height": null
+  },
+  "variants": null,
+  "category": "bsh-ragasztott-gerenda",
+  "categorySlug": "bsh-ragasztott-gerenda"
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Borovi rönkház profil /D/ 24x146mmx4m A-B minőség",
+  "slug": "borovi-ronkhaz-profil-24x146-aben",
+  "meta": {
+    "title": "Borovi rönkház profil 24x146mm 4m aben",
+    "description": "Borovi rönkházprofil 24x146 mm – időtálló, esztétikus D-profil kültérre és beltérre, AB-EN minőség, osztrák gyártótól.",
+    "image": "/termekek/borovi-ronkhaz-24x146.webp"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,65",
+    "reviewCount": 7
+  },
+  "description": "Időtálló borovi rönkházprofil 24x146 mm méretben – kültéri és beltéri burkolatokhoz, természetes D-profil kialakítással.",
+  "image": "/termekek/borovi-ronkhaz-24x146.webp",
+  "images": [],
+  "longDescription": "A 24x146 mm méretű borovi fenyő rönkházprofil (D-profil) ideális választás nagyobb falfelületek burkolására, ahol fontos a vastagabb, masszív megjelenés és a fokozott időjárásállóság. A gyantás borovi szerkezet kiválóan ellenáll a külső hatásoknak, így homlokzatburkolatokhoz, faházakhoz, melléképületekhez is tökéletes megoldás. Sima, gyalult felületű kialakítása és félköríves homlokzata klasszikus faház-hatást nyújt. A termék közvetlenül az osztrák Pabst-Holz gyártótól érkezik, AB-EN minőségben, fenntartható forrásból.",
+  "longDescription2": "Kiválóan alkalmas kerti faházak burkolására, amennyiben szeretne az épületnek alpesi hangulatot kölcsönözni.",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "nevezéktan"
+  ],
+  "sku": "borovi-rh-d-24x146-4m",
+  "price": null,
+  "mprice": null,
+  "m2price": 7990,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "Méret": {
+      "label": "Méret",
+      "order": 1,
+      "value": "24 x 146 mm"
+    },
+    "Profil": {
+      "label": "Profil",
+      "order": 4,
+      "value": "D-profil (rönkházprofil)"
+    },
+    "Fa fajta": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Borovi fenyő"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Gyalult, sima"
+    },
+    "Kezelés": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kezeletlen, felületkezelés ajánlott"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "AB-EN"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 6,
+      "value": "Ausztria"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Homlokzatburkolás, belső burkolatok, melléképületek"
+    }
+  },
+  "shippingDetails": {
+    "weight": 7,
+    "length": 400,
+    "width": 14,
+    "height": 2
+  },
+  "variants": null,
+  "category": "fahaz-epito-profil",
+  "categorySlug": "fahaz-epito-profil"
+}

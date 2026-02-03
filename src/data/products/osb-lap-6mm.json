@@ -1,0 +1,118 @@
+{
+  "categorySlug": "osb-lapok",
+  "name": "OSB lap 6 mm – fal- és mennyezet burkolathoz",
+  "slug": "osb-lap-6mm",
+  "meta": {
+    "title": "OSB lap 6 mm | Fal- és mennyezet burkolat | OSB lap árak",
+    "description": "OSB lap 6 mm vastagságban – fal- és mennyezet burkolathoz ideális. Ismerje meg OSB lap árainkat és méreteinket, Praktiker, Bauhaus, OBI helyett kedvezőbb áron!",
+    "image": "/termekek/osb-lap-6mm.jpg"
+  },
+  "description": "6 mm vastag OSB lap fal- és mennyezet burkolathoz. Könnyű, mégis stabil, ideális választás belsőépítészeti projektekhez és gyors szereléshez. A lap pontos OSB méretben és szabványos táblaformában érhető el.",
+  "longDescription": "Az OSB 6 mm lap tökéletes választás fal- és mennyezet burkolatokhoz, ahol fontos a kis súly, az egyszerű kezelhetőség és a stabil tartás. A szabványos OSB tábla méret (2500×1250 mm) miatt könnyen illeszthető, a 6 mm vastagság pedig ideálissá teszi száraz belső terekben történő alkalmazásra. Az OSB lap árak kedvezőbbek, mint a rétegelt lemezé, így költséghatékony megoldást kínál felújítóknak és építkezőknek. Gyakran keresett alternatíva Praktiker és OBI OSB lap kínálat helyett, közvetlenül raktárról, széles választékban.",
+  "longDescription2": "",
+  "longDescription3": "",
+  "material": "OSB 3 nedvességálló faforgács panel",
+  "audience": [
+    "építkezők",
+    "lakásfelújítók",
+    "kivitelezők"
+  ],
+  "blogtags": [
+    "osb lap",
+    "osb lap ár",
+    "osb méret",
+    "osb tábla árak",
+    "osb lemez"
+  ],
+  "specs": {
+    "2a0a4e8207": {
+      "label": "Vastagság",
+      "order": 1,
+      "value": "6 mm"
+    },
+    "d3f44929fe": {
+      "label": "Tábla méret",
+      "order": 2,
+      "value": "2500 × 1250 mm"
+    },
+    "9b1bfa95eb": {
+      "label": "Tábla felülete",
+      "order": 3,
+      "value": "3,125m²"
+    },
+    "17471b2af1": {
+      "label": "Sűrűség",
+      "order": 4,
+      "value": "kb. 600–680 kg/m³"
+    },
+    "6f0f4ffd52": {
+      "label": "Tömeg",
+      "order": 5,
+      "value": "~ 12,2 kg"
+    },
+    "a39255b4f5": {
+      "label": "Felület",
+      "order": 6,
+      "value": "csiszolt, éles él"
+    },
+    "0f96c995a9": {
+      "label": "Típus",
+      "order": 7,
+      "value": "OSB 3 – teherhordó, nedvességálló"
+    },
+    "4f54996515": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Fal- és mennyezet burkolatok, belsőépítészeti munkák"
+    },
+    "7dd9cb4820": {
+      "label": "Előnyök",
+      "order": 9,
+      "value": "Könnyű súly, stabil tartás, kedvező OSB lap ár"
+    },
+    "3472f7e8a5": {
+      "label": "Ajánlott hely",
+      "order": 10,
+      "value": "Száraz beltér, lakásfelújítás, könnyű válaszfalak"
+    }
+  },
+  "shippingDetails": {
+    "weight": 12,
+    "length": 250,
+    "width": 125
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.72,
+    "reviewCount": 53
+  },
+  "image": "/termekek/osb-lap-6mm.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_d58d524f5a850b12",
+      "title": "Alap",
+      "sku": "osb-6mm",
+      "variant_rank": 0,
+      "price": 4290,
+      "mprice": null,
+      "m2price": 1373,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 4290,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

@@ -1,0 +1,157 @@
+{
+  "categorySlug": "osb-lapok",
+  "items": [
+    {
+      "slug": "osb-lap-10mm",
+      "categorySlug": "osb-lapok",
+      "name": "OSB lap 10 mm – zsaluzat, csomagolás, burkolat",
+      "image": "/images/products/osb-lap-10mm-lapok-500.jpg",
+      "images": [
+        {
+          "src": "/images/products/osb-lap-10mm-lapok",
+          "alt": "10 mm OSB lapok egymásra helyezve – szabványos méretű tábla"
+        },
+        {
+          "src": "/images/products/osb-lap-10mm-darab",
+          "alt": "Egyetlen 10 mm vastag OSB lap oldalnézetből – 2500×1250 mm méret"
+        },
+        {
+          "src": "/images/products/osb-lap-10mm-koteg-raklap",
+          "alt": "10 mm OSB lapok raklapon kötegelve – szállításra kész állapot"
+        }
+      ],
+      "sku": "osb-10mm",
+      "priceFrom": 6090,
+      "priceTo": null,
+      "discountPercent": 5,
+      "discountValidUntil": "2025-12-15T23:00:00.000Z",
+      "stock": 1,
+      "inStock": true,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.76,
+      "reviewCount": 46
+    },
+    {
+      "slug": "osb-lap-12mm",
+      "categorySlug": "osb-lapok",
+      "name": "OSB lap 12 mm – faház építéshez, tetőburkoláshoz",
+      "image": "/images/products/osb-lap-12mm.png",
+      "images": [],
+      "sku": "osb-12mm",
+      "priceFrom": 6890,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "inStock": false,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.71,
+      "reviewCount": 63
+    },
+    {
+      "slug": "osb-lap-15mm",
+      "categorySlug": "osb-lapok",
+      "name": "OSB lap 15 mm – külső-belső falelemekhez, zsaluzáshoz",
+      "image": "/termekek/osb-lap-15mm.avif",
+      "images": [],
+      "sku": "osb-15mm",
+      "priceFrom": 8690,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "inStock": false,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.82,
+      "reviewCount": 41
+    },
+    {
+      "slug": "osb-lap-18mm",
+      "categorySlug": "osb-lapok",
+      "name": "OSB lap 18 mm – állványpadlóhoz, zsaluzáshoz",
+      "image": "/termekek/osb-lap-18mm.webp",
+      "images": [],
+      "sku": "osb-18mm",
+      "priceFrom": 10290,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "inStock": false,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.83,
+      "reviewCount": 39
+    },
+    {
+      "slug": "osb-lap-22mm",
+      "categorySlug": "osb-lapok",
+      "name": "OSB lap 22 mm – zsalutábla, heveder, teherhordó réteg",
+      "image": "/termekek/osb-lap-22mm.webp",
+      "images": [],
+      "sku": "osb-22mm",
+      "priceFrom": 12690,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "inStock": false,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.88,
+      "reviewCount": 31
+    },
+    {
+      "slug": "osb-lap-6mm",
+      "categorySlug": "osb-lapok",
+      "name": "OSB lap 6 mm – fal- és mennyezet burkolathoz",
+      "image": "/termekek/osb-lap-6mm.jpg",
+      "images": [],
+      "sku": "osb-6mm",
+      "priceFrom": 4290,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "inStock": false,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.72,
+      "reviewCount": 53
+    },
+    {
+      "slug": "osb-lap-8mm",
+      "categorySlug": "osb-lapok",
+      "name": "OSB lap 8 mm – szarufa alá, tető alsó síkjához",
+      "image": "/images/products/osb-lap-8mm-lapok-500.jpg",
+      "images": [
+        {
+          "src": "/images/products/osb-lap-8mm-lapok",
+          "alt": "8 mm vastag OSB 3 lapok – szabályos, egyforma méretű táblalapok közelről"
+        },
+        {
+          "src": "/images/products/osb-lap-8mm-darab",
+          "alt": "Egy darab 8 mm vastag OSB lap oldalnézeti fotója – 1250×2500 mm tábla részlete"
+        },
+        {
+          "src": "/images/products/osb-lap-8mm-koteg-raklap",
+          "alt": "8 mm OSB 3 lapok raklapon, kötegelve – szabványos tábla méret: 1250×2500 mm"
+        }
+      ],
+      "sku": "osb-8mm",
+      "priceFrom": 5290,
+      "priceTo": null,
+      "discountPercent": 10,
+      "discountValidUntil": "2026-02-14T23:00:00.000Z",
+      "stock": 1,
+      "inStock": true,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.81,
+      "reviewCount": 46
+    }
+  ]
+}

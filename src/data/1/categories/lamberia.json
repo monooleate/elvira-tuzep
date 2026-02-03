@@ -1,0 +1,49 @@
+{
+  "maincategory": "Műszárított, gyalult építőfa",
+  "category": "Lambéria",
+  "slug": "lamberia",
+  "meta": {
+    "title": "Lambéria | Elvira tüzép",
+    "description": "Luc és borovi lambéria falra, mennyezetre – osztrák prémium minőség, több méret és profil, bel- és kültérre is, kedvező áron!",
+    "image": "/kategoriak/lamberia.webp"
+  },
+  "description": "Prémium minőségű lambéria kínálat lucfenyőből és borovi fenyőből, többféle profilban és méretben. A gondosan gyalult, illesztett lambéria elemek ideálisak fal- és mennyezetburkolatokhoz, belső terek meleg, természetes hangulatának megteremtéséhez, valamint külső homlokzatburkolatok kialakításához. Osztrák származású, AB minőségű termékeink esztétikus felületet, könnyű szerelhetőséget és hosszú élettartamot biztosítanak. Válasszon készletről elérhető méreteink közül kedvező áron, igény esetén egyedi megoldásokkal!",
+  "faq": [
+    {
+      "id": 1,
+      "answer": "A lambéria egy gyalult, nútféderes burkoló faanyag, amelyet falak, mennyezetek és tetőterek burkolására használnak. Elérhető beltéri és kültéri kivitelben, esztétikus és tartós megoldást nyújt. Alternatív burkolati megoldás a <a href=\"/termekek/hajopadlo\"><b>hajópadló</b></a> és a <a href=\"/termekek/fahaz-epito-profil\"><b>faház építő profil</b></a>.",
+      "question": "Mi az a lambéria és mire használható?"
+    },
+    {
+      "id": 2,
+      "answer": "Két fő típusa van",
+      "question": "Milyen típusai vannak a lambériának?"
+    },
+    {
+      "id": 3,
+      "answer": "A beltéri lambéria jellemzően 12,5–14 mm vastag, 96–121 mm széles, 3,6–5,1 m hosszú. A kültéri lambéria 14–19 mm vastag, 120–140 mm széles, 3,6–5 m hosszú. A pontos méretválaszték a lambéria termékoldalain található.",
+      "question": "Milyen méretekben kapható a lambéria?"
+    },
+    {
+      "id": 4,
+      "answer": "A lambériát párnafára vagy stafnira kell rögzíteni, 40–60 cm-es kiosztással. Rögzítése történhet rejtett kapoccsal vagy szeggel a nút-féder oldalon. Kültéri homlokzatburkolásnál mindig szükséges a hátsó szellőző légrés kialakítása.",
+      "question": "Hogyan kell felrakni a lambériát?"
+    },
+    {
+      "id": 5,
+      "answer": "A beltéri lambéria ideális nappalik, tetőterek, mennyezetek és falburkolatok kialakítására. A kültéri lambéria homlokzatok, előtetők, melléképületek, ereszek burkolására használható, megfelelő felületkezeléssel hosszú élettartamú.",
+      "question": "Hol használható a beltéri és a kültéri lambéria?"
+    },
+    {
+      "id": 6,
+      "answer": "A lambéria vékonyabb (12,5–19 mm), főként falak és mennyezetek burkolására használatos. A <a href=\"/termekek/hajopadlo\"><b>hajópadló</b></a> vastagabb (15–28 mm), önhordóbb, ezért padlóként és teraszburkolatként is alkalmas. A <a href=\"/termekek/fahaz-epito-profil\"><b>rönkház profil</b></a> rusztikus, félköríves vagy zsindelyprofilú burkolat, amely rönkház-hatást kelt homlokzatokon és belső falakon.",
+      "question": "Mi a különbség a lambéria, a hajópadló és a rönkház profil között?"
+    },
+    {
+      "id": 7,
+      "answer": "A lambéria árát a vastagság (12,5–19 mm), a szélesség és a fafaj határozza meg. Általánosságban a beltéri lambéria kedvezőbb árú, a kültéri változat pedig vastagabb és tartósabb, ezért magasabb árkategóriába tartozik. Aktuális lambéria árainkat megtalálja az Elvira Tüzép weboldalán.",
+      "question": "Mennyibe kerül a lambéria? Hogyan alakulnak a lambéria árak?"
+    }
+  ],
+  "faqdesc": ""
+}

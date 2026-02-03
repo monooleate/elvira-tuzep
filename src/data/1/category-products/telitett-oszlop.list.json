@@ -1,0 +1,41 @@
+{
+  "categorySlug": "telitett-oszlop",
+  "items": [
+    {
+      "slug": "telitett-oszlop-70x70",
+      "categorySlug": "telitett-oszlop",
+      "name": "Telített oszlop 70×70 mm",
+      "image": "/termekek/telitett-oszlop.webp",
+      "images": [],
+      "sku": "OSZ77240",
+      "priceFrom": 4000,
+      "priceTo": 6025,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 3,
+      "inStock": true,
+      "hasVariants": true,
+      "variantCount": 3,
+      "ratingValue": 4.78,
+      "reviewCount": 39
+    },
+    {
+      "slug": "telitett-oszlop-90x90",
+      "categorySlug": "telitett-oszlop",
+      "name": "Telített oszlop 90×90 mm",
+      "image": "/termekek/telitett-oszlop.webp",
+      "images": [],
+      "sku": "OSZ99210",
+      "priceFrom": 6128,
+      "priceTo": 10910,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 5,
+      "inStock": true,
+      "hasVariants": true,
+      "variantCount": 5,
+      "ratingValue": 4.91,
+      "reviewCount": 84
+    }
+  ]
+}

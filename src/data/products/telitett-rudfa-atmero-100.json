@@ -1,0 +1,220 @@
+{
+  "categorySlug": "telitett-rudfa",
+  "name": "Telített rúdfa Ø100mm",
+  "slug": "telitett-rudfa-atmero-100",
+  "meta": {
+    "title": "Telített rúdfa 100 mm – Impregnált faoszlop | Elvira Tüzép",
+    "description": "Erős, időjárásálló telített rúdfa 100 mm átmérővel. Kiváló kerítésekhez, kerti szerkezethez és hintaállványhoz.",
+    "image": "/termekek/rudfa-atmero-10.webp"
+  },
+  "description": "Masszív, nyomás alatt impregnált telített rúdfa 100 mm átmérővel kültéri felhasználásra.",
+  "longDescription": "A 100 mm-es telített rúdfa alkalmas kerítésekhez, tartóelemekhez és kisebb hintaállványokhoz. A mélytelítés tartósságot biztosít.",
+  "longDescription2": "Szerkezeti stabilitása miatt kiváló választás olyan helyekre, ahol erős, tartós faanyagra van szükség.",
+  "longDescription3": "",
+  "material": "Nagy nyomáson telített borovi fenyő",
+  "audience": [
+    "kertépítők",
+    "barkács kivitelezők",
+    "gazdálkodók"
+  ],
+  "blogtags": [
+    "kertifa",
+    "rúdfa"
+  ],
+  "specs": {
+    "4938041cd9": {
+      "label": "Átmérő",
+      "order": 1,
+      "value": "100 mm"
+    },
+    "1a7cda36a2": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "500–4000 mm"
+    },
+    "b9319ea0b6": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyő"
+    },
+    "2dd60d4369": {
+      "label": "Kivitel",
+      "order": 4,
+      "value": "Körmart, simított felület"
+    },
+    "8d571f0020": {
+      "label": "Impregnálás",
+      "order": 5,
+      "value": "Nyomás alatti (réz-bázisú)"
+    },
+    "bb29083b92": {
+      "label": "Tömeg",
+      "order": 6,
+      "value": "≈ 7–10 kg/db"
+    },
+    "d2ce64e0b5": {
+      "label": "Felhasználás",
+      "order": 7,
+      "value": "Kerítés, hintaállvány, kerti szerkezet"
+    },
+    "65ee6f6574": {
+      "label": "Megjegyzés",
+      "order": 8,
+      "value": "Erős tartóelem kültéri használatra"
+    }
+  },
+  "shippingDetails": {
+    "weight": 8,
+    "length": 200,
+    "width": 10,
+    "height": 10
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.79,
+    "reviewCount": 53
+  },
+  "image": "/termekkep/rudfa-atmero-10.webp",
+  "images": [],
+  "variants": [
+    {
+      "id": "variant_01KA9334CQ904HK0TB9EY697ZN",
+      "title": "Ø100mm x 50 | rúdfa",
+      "sku": "RF10050",
+      "variant_rank": 0,
+      "price": 1095,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 2,
+      "length": 50,
+      "width": 10,
+      "height": 10
+    },
+    {
+      "id": "variant_01KA933831C4R5W7K25J1M1P6M",
+      "title": "Ø100mm x 100 | rúdfa",
+      "sku": "RF10100",
+      "variant_rank": 1,
+      "price": 2265,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 3,
+      "length": 100,
+      "width": 10,
+      "height": 10
+    },
+    {
+      "id": "variant_01KA933BTMKCN0VA2BDMJ5Z4V6",
+      "title": "Ø100mm x 150 | rúdfa",
+      "sku": "RF10150",
+      "variant_rank": 2,
+      "price": 3425,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 5,
+      "length": 150,
+      "width": 10,
+      "height": 10
+    },
+    {
+      "id": "variant_01KA93CK770W1YBYGTDYZZDRZ3",
+      "title": "Ø100mm x 200 | rúdfa",
+      "sku": "RF10200",
+      "variant_rank": 3,
+      "price": 4880,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 8,
+      "length": 200,
+      "width": 10,
+      "height": 10
+    },
+    {
+      "id": "variant_01KA93CQCRB3TZD3KKDQQRRA4Y",
+      "title": "Ø100mm x 250 | rúdfa",
+      "sku": "RF10250",
+      "variant_rank": 4,
+      "price": 5585,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 10,
+      "length": 250,
+      "width": 10,
+      "height": 10
+    },
+    {
+      "id": "variant_01KA93CVFJRFWH1C65SY7HHJ4F",
+      "title": "Ø100mm x 300 | rúdfa",
+      "sku": "RF10300",
+      "variant_rank": 5,
+      "price": 6940,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": 12,
+      "length": 300,
+      "width": 10,
+      "height": 10
+    },
+    {
+      "id": "variant_01KA93CZH0ECTTXBWCFE6RGXGK",
+      "title": "Ø100mm x 400 | rúdfa",
+      "sku": "RF10400",
+      "variant_rank": 6,
+      "price": 12745,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 17,
+      "length": 400,
+      "width": 10,
+      "height": 10
+    }
+  ],
+  "stock": 6,
+  "priceFrom": 1095,
+  "priceTo": 12745,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

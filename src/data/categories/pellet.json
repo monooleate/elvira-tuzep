@@ -1,0 +1,44 @@
+{
+  "maincategory": "Tüzelőanyag",
+  "category": "Pellet",
+  "slug": "pellet",
+  "meta": {
+    "title": "Pellet | Fa pellet és napraforgó pellet kazánhoz, kandallóhoz",
+    "description": "Magas fűtőértékű, prémium fenyő pellet közvetlenül raktárról az Elvira Tüzépen. Ideális választás pellet kazánhoz és vízteres pellet kandallóhoz.",
+    "image": "/kategoriak/pellet.jpg"
+  },
+  "description": "Prémium minőségű pellet kínálatunk ideális választás pellet kazánokhoz, vízteres pellet kandallókhoz és pelletes kályhákhoz. A fa pellet és alternatív pellet fajták – mint a fenyő pellet, keményfa pellet vagy napraforgó pellet – egyaránt környezetbarát és hatékony tüzelőanyagok. Magas fűtőértéküknek, alacsony nedvességtartalmuknak és egyenletes égésüknek köszönhetően gazdaságos és kényelmes fűtést biztosítanak. A pellet árak kedvezőek, különösen raklapos tételben történő vásárláskor. Fedezze fel pellet árainkat és rendeljen közvetlenül raktárról az Elvira Tüzépnél!",
+  "faqdesc": "A pellet egy préselt, kis henger formájú tüzelőanyag, amely jellemzően faforgácsból, fűrészporból vagy mezőgazdasági melléktermékekből (pl. napraforgóhéj) készül. Előnye a magas fűtőérték, a tiszta égés és az automatizálható adagolás. Az alábbi gyakori kérdések segítenek eligazodni a pellet típusok, árak, felhasználási módok és tárolási tudnivalók kapcsán.",
+  "faq": [
+    {
+      "id": "1",
+      "question": "Mi az a pellet és mire használható?",
+      "answer": "A pellet kis henger alakú, préselt tüzelőanyag, amely fából vagy mezőgazdasági melléktermékből (pl. napraforgóhéj) készül. Használható pellet kazánban, vízteres pellet kandallóban vagy kisebb pelletes kályhában is. Előnye a tiszta égés, az egyenletes hőleadás és az automatizált adagolási lehetőség."
+    },
+    {
+      "id": "2",
+      "question": "Milyen pellet típusok kaphatók?",
+      "answer": "A leggyakoribb típusok a fenyő pellet, keményfa pellet és a napraforgó pellet. A fenyő pellet világos színű, gyorsan gyullad és alacsony hamutartalmú. A keményfa pellet sűrűbb, lassabban ég és hosszabb parázstartást biztosít. A napraforgó pellet olcsóbb alternatíva, amely szintén magas fűtőértékű, de több hamut termel."
+    },
+    {
+      "id": "3",
+      "question": "Mennyibe kerül a pellet? Hogyan alakul a pellet ár?",
+      "answer": "A pellet ár függ az alapanyagtól (fenyő, keményfa vagy napraforgó pellet), a csomagolástól (zsákos vagy raklapos) és a rendelt mennyiségtől. A pellet kazánhoz vagy kandallóhoz szükséges mennyiséget nagyobb tételben vásárolva kedvezőbb áron szerezheti be. Az aktuális pellet árakat mindig megtalálja az elviratuzep.hu weboldalon."
+    },
+    {
+      "id": "4",
+      "question": "Mi a különbség a pellet és a brikett között?",
+      "answer": "A pellet kis átmérőjű (6–8 mm) henger formájú tüzelőanyag, amelyet főként automata adagolású pellet kazánokhoz és kandallókhoz fejlesztettek ki. A brikett nagyobb méretű, kézi adagolást igényel, és elsősorban kályhákban, vegyestüzelésű kazánokban használatos. A pellet kényelmesebb, automatizált fűtési rendszerekhez, míg a brikett egyszerűbb, hagyományos megoldásokhoz ideális."
+    },
+    {
+      "id": "5",
+      "question": "Hogyan kell tárolni a pelletet?",
+      "answer": "A pellet érzékeny a nedvességre, ezért mindig száraz, fedett, szellős helyen kell tárolni. Zsákos kiszerelés esetén a gyári csomagolás védelmet nyújt, raklapos vásárlásnál érdemes fóliával letakarni. Nedvesség esetén a pellet széteshet és elveszítheti fűtőértékét."
+    },
+    {
+      "id": "6",
+      "question": "Milyen előnyei vannak a pellet kazánnak és a pellet kandallónak?",
+      "answer": "A pellet kazán és a vízteres pellet kandalló egyik legnagyobb előnye az automatizálható működés. A pelletes kazán képes programozottan adagolni a tüzelőanyagot, így kényelmes és energiatakarékos fűtést biztosít. A pellet kandalló pedig a hagyományos fatüzelés hangulatát ötvözi a modern technológiával, sokszor távirányítható és termosztáttal vezérelhető."
+    }
+  ]
+}

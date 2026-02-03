@@ -1,0 +1,86 @@
+{
+  "name": "Palló - Luc 38x240mmx4m – I-II. osztály",
+  "slug": "luc-pallo-38x240-4m",
+  "meta": {
+    "title": "Luc palló 38x240 mm 4m | Elvira Tüzép",
+    "description": "Masszív lucfenyő palló 38x240 mm méretben, 4 méteres hosszban. Ideális födémekhez, ácsszerkezetekhez és zsaluzáshoz. Kedvező ár raktárról!",
+    "image": "/termekek/luc-pallo-38x240.webp"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,7",
+    "reviewCount": 34
+  },
+  "description": "Lucfenyő palló 38×240 mm keresztmetszettel, 4 méter hosszúságban, I./II. osztályú minőségben. Erős és sokoldalú építőanyag.",
+  "image": "/termekek/luc-pallo-38x240.webp",
+  "images": [],
+  "longDescription": "A 38x240 mm-es lucfenyő palló ideális választás ácsszerkezetekhez, zsaluzáshoz, födémek kialakításához vagy egyéb szerkezeti faanyagként. A 4 méter hosszú palló I. és II. osztályú minőségben érhető el, így ár-érték arányban kiváló választás kisebb és nagyobb építkezésekhez is. A lucfenyő szerkezeti fa előnye a könnyű megmunkálhatóság, a kedvező szilárdsági tulajdonságok, valamint a jó tartósság beltéri felhasználás esetén. Raktárról, kedvező áron vásárolható meg, raklapos tételben is rendelhető.",
+  "longDescription2": null,
+  "material": null,
+  "audience": [],
+  "blogtags": [],
+  "sku": "luc-pallo-38x240-4m",
+  "price": 8694,
+  "mprice": null,
+  "m2price": null,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Anyag": {
+      "label": "Anyag",
+      "order": 1,
+      "value": "Lucfenyő"
+    },
+    "Profil": {
+      "label": "Profil",
+      "order": 3,
+      "value": "Palló"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 6,
+      "value": "Nyers, gyalulatlan"
+    },
+    "Méretek": {
+      "label": "Méretek",
+      "order": 4,
+      "value": "38x240 mm"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 2,
+      "value": "I./II. osztály"
+    },
+    "Tárolás": {
+      "label": "Tárolás",
+      "order": 9,
+      "value": "Száraz, fedett helyen ajánlott"
+    },
+    "Hosszúság": {
+      "label": "Hosszúság",
+      "order": 5,
+      "value": "4 méter"
+    },
+    "Súly (kb.)": {
+      "label": "Súly (kb.)",
+      "order": 7,
+      "value": "28–32 kg/darab"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Födém, zsaluzat, ácsszerkezet, barkácsprojektek"
+    }
+  },
+  "shippingDetails": {
+    "weight": 30,
+    "length": 400,
+    "width": 24,
+    "height": 3
+  },
+  "variants": null,
+  "category": "pallo",
+  "categorySlug": "pallo"
+}

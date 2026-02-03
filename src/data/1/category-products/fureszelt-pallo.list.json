@@ -1,0 +1,59 @@
+{
+  "categorySlug": "fureszelt-pallo",
+  "items": [
+    {
+      "slug": "fureszelt-pallo-50x100x4000",
+      "categorySlug": "fureszelt-pallo",
+      "name": "Fűrészelt palló 50×100×4000 mm – gyalulatlan",
+      "image": "/images/products/pallo-50x100x4000-darab.avif",
+      "images": [
+        {
+          "src": "/images/products/pallo-50x100x4000-darab",
+          "alt": "Fűrészelt palló 50×100×4000 mm gyalulatlan kivitelben - darab nézetben"
+        },
+        {
+          "src": "/images/products/pallo-50x100x4000-koteg",
+          "alt": "50×100×4000 mm gyalulatlan fenyő palló kötegben - köteg nézetben"
+        }
+      ],
+      "sku": "D501004000",
+      "priceFrom": 3449,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "inStock": true,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.87,
+      "reviewCount": 15
+    },
+    {
+      "slug": "fureszelt-pallo-50x150x4000",
+      "categorySlug": "fureszelt-pallo",
+      "name": "Fűrészelt palló 50×150×4000 mm – gyalulatlan",
+      "image": "/images/products/pallo-50x150x4000-darab.avif",
+      "images": [
+        {
+          "src": "/images/products/pallo-50x150x4000-darab",
+          "alt": "Fűrészelt palló 50×150×4000 mm gyalulatlan kivitelben"
+        },
+        {
+          "src": "/images/products/pallo-50x150x4000-koteg",
+          "alt": "50×150×4000 mm gyalulatlan fenyő palló kötegben"
+        }
+      ],
+      "sku": "D501504000",
+      "priceFrom": 5179,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "inStock": true,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.85,
+      "reviewCount": 19
+    }
+  ]
+}

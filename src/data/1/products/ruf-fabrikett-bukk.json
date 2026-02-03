@@ -1,0 +1,145 @@
+{
+  "name": "RUF bükk fabrikett – kocka/hasáb",
+  "slug": "ruf-fabrikett-bukk",
+  "meta": {
+    "title": "RUF brikett – prémium bükk fabrikett, alacsony hamu, magas fűtőérték",
+    "description": "Válassz RUF keményfa brikettet bükkfából! Magas fűtőérték, alacsony nedvesség és minimális hamu. Kényelmes 10 kg-os csomag, raklapon is rendelhető.",
+    "image": "/images/products/ruf-fabrikett-bukk-darab-felul-500.avif"
+  },
+  "aggregateRating": {
+    "ratingValue": 4.97,
+    "reviewCount": 16
+  },
+  "description": "RUF kocka brikett bükkfából - prémium minőségű fabrikett alacsony nedvességgel és hamuval, magas fűtőértékkel. Hosszú égés, tiszta tűz, praktikus 10 kg-os csomagban (10 darab / csomag ; ~1 kg / darab)",
+  "image": null,
+  "images": [
+    {
+      "src": "/images/products/ruf-fabrikett-bukk-darab-felul",
+      "alt": "RUF bükk fabrikett – egy darab kocka brikett felülnézetből"
+    },
+    {
+      "src": "/images/products/ruf-fabrikett-bukk-csomag",
+      "alt": "RUF bükk fabrikett – csomagos kiszerelésű kocka/hasáb brikett"
+    },
+    {
+      "src": "/images/products/ruf-fabrikett-bukk-darab-oldal",
+      "alt": "RUF bükk fabrikett – egy darab kocka brikett oldalnézetből"
+    },
+    {
+      "src": "/images/products/ruf-fabrikett-bukk-darab-szele",
+      "alt": "RUF bükk fabrikett – egy darab kocka brikett széléről nézve"
+    },
+    {
+      "src": "/images/products/ruf-fabrikett-bukk-raklap-bal",
+      "alt": "RUF brikett – raklapos kiszerelés, 96 csomag, oldalnézetből"
+    },
+    {
+      "src": "/images/products/ruf-fabrikett-bukk-raklap-oldal",
+      "alt": "RUF brikett – raklapos kiszerelés, 96 csomag, raklap széléről nézve"
+    }
+  ],
+  "longDescription": "A RUF bükk fabrikett – más néven RUF brikett vagy RUF tégla – a legismertebb és legkedveltebb tüzelőanyagok közé tartozik. 100% bükk keményfából, adalékanyag nélkül készül, nagy nyomáson préselve. A préselés során a fa természetes ligninje köti össze a részecskéket, így nincs szükség mesterséges ragasztóra. A brikett rendkívül tömör, ennek köszönhetően hosszú ideig, egyenletesen és tisztán ég.\n\nA RUF fabrikett különösen alkalmas kandallókhoz, kályhákhoz és vegyes tüzelésű kazánokhoz.",
+  "longDescription2": "Alacsony, mindössze ~2,3% nedvességtartalmának és ~0,7% hamutartalmának köszönhetően tiszta égést biztosít, kevés hamu képződésével. Magas, kb. 5,5 kWh/kg fűtőértéke (~4 730 kcal/kg, ~19,8 MJ/kg) garantálja a gazdaságos fűtést. A kocka/hasáb forma könnyen rakható, jól tárolható és stabil parázstartást ad.\n\nEgy csomag 12 darab brikettet tartalmaz, tömege kb. 10 kg (±0,5 kg). A csomagolás erős polietilén fólia, amely megvédi a brikettet a szállítás és tárolás során. Egy raklapon 96 csomag található, összesen nettó ~960 kg. A raklap műanyag pántszalaggal és fémkapoccsal rögzített, streccsfóliával körbezárt, így biztonságosan mozgatható és raktározható.",
+  "longDescription3": null,
+  "material": "100% bükk keményfa (RUF préselt brikett)",
+  "audience": [
+    "háztartások",
+    "kandalló/kályha tulajok"
+  ],
+  "blogtags": [
+    "fa brikett",
+    "fabrikett",
+    "fenntartható energia",
+    "zöld fűtés"
+  ],
+  "sku": "brikett-ruf-bukk",
+  "price": 185,
+  "mprice": null,
+  "m2price": null,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": 5,
+  "discountValidUntil": "2025-10-17T22:00:00.000Z",
+  "stock": 1,
+  "specs": {
+    "Forma": {
+      "label": "Forma",
+      "order": 2,
+      "value": "Kocka/hasáb (RUF profil)"
+    },
+    "Alapanyag": {
+      "label": "Alapanyag",
+      "order": 1,
+      "value": "100% bükk keményfa"
+    },
+    "Tárolás": {
+      "label": "Tárolás",
+      "order": 13,
+      "value": "Száraz, fedett helyen, közvetlen nedvességtől védve"
+    },
+    "Csomagolás": {
+      "label": "Csomagolás",
+      "order": 4,
+      "value": "Polietilén fólia, 10 db/csomag, ~10 kg/csomag (± 0,5 kg)"
+    },
+    "Megjegyzés": {
+      "label": "Megjegyzés",
+      "order": 14,
+      "value": "Raklapon pántszalaggal átkötve, streccsfóliával körbezárva"
+    },
+    "Hamutartalom": {
+      "label": "Hamutartalom",
+      "order": 8,
+      "value": "0,7 %"
+    },
+    "Fűtőérték": {
+      "label": "Fűtőérték",
+      "order": 9,
+      "value": "5,5 kWh/kg (≈ 4 730 kcal/kg, ≈ 19,8 MJ/kg)"
+    },
+    "Előállítás": {
+      "label": "Előállítás",
+      "order": 10,
+      "value": "Nagy nyomáson préselt, adalékmentes"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 12,
+      "value": "Kályha, kandalló, kazán"
+    },
+    "Raklap mérete": {
+      "label": "Raklap mérete",
+      "order": 6,
+      "value": "120 × 80 cm (EUR raklap)"
+    },
+    "Nedvességtartalom": {
+      "label": "Nedvességtartalom",
+      "order": 7,
+      "value": "2,3 %"
+    },
+    "Méretek egy darabra": {
+      "label": "Méretek egy darabra",
+      "order": 3,
+      "value": "150 × 60 × 100 mm"
+    },
+    "Raklapos kiszerelés": {
+      "label": "Raklapos kiszerelés",
+      "order": 5,
+      "value": "96 csomag/raklap, 960 darab/raklap, nettó ~960 kg"
+    },
+    "Égési tulajdonságok": {
+      "label": "Égési tulajdonságok",
+      "order": 11,
+      "value": "Hosszú, egyenletes égés, stabil parázstartás, kevés hamu"
+    }
+  },
+  "shippingDetails": {
+    "weight": 960,
+    "length": 120,
+    "width": 80,
+    "height": null
+  },
+  "variants": null,
+  "category": "kemenyfa-brikett",
+  "categorySlug": "kemenyfa-brikett"
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Lambéria Trapéz F-profil 12,5x96mmx4m BC minőség",
+  "slug": "lamberia-12-5x96-bc",
+  "meta": {
+    "title": "Lambéria F-profil 12,5x96mm 4m BC",
+    "description": "BC minőségű trapéz lambéria (F profil) 12×96 mm méretben, kedvező árú burkolat beltérre. Természetes fenyő felület, egyszerű szerelés.",
+    "image": "/termekek/lamberia-f-12_5x96-bc.png"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,5",
+    "reviewCount": 31
+  },
+  "description": "Kedvező árú, trapéz profilú lambéria beltéri burkolatokhoz.",
+  "image": "/termekek/lamberia-f-12_5x96-bc.png",
+  "images": [],
+  "longDescription": "A 12x96 mm-es trapéz profilú lambéria BC minőségben ideális ár-érték arányú választás beltéri faborításokhoz. A lucfenyőből készült lambéria enyhébb esztétikai hibákat tartalmazhat, például kisebb göcsöket, színbeli eltéréseket vagy felületi egyenetlenségeket. Ezek azonban sem a stabilitást, sem a tartósságot nem befolyásolják. Különösen ajánlott melléképületekbe, garázsokba, hétvégi házakba vagy olyan terekbe, ahol a természetesség fontosabb, mint a tökéletes megjelenés. Felületkezeléssel tovább javítható a vizuális hatás.",
+  "longDescription2": null,
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "nevezéktan"
+  ],
+  "sku": "luc-lam-12_5x96-4m-bc",
+  "price": 1499,
+  "mprice": null,
+  "m2price": 3890,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "Méret": {
+      "label": "Méret",
+      "order": 1,
+      "value": "12,5 x 96 mm"
+    },
+    "Profil": {
+      "label": "Profil",
+      "order": 4,
+      "value": "F profil (trapéz formájú lambéria)"
+    },
+    "Fa fajta": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Gyalult, sima"
+    },
+    "Kezelés": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kezeletlen, felületkezelés ajánlott"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "BC (gazdaságos, burkolati célra alkalmas)"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 6,
+      "value": "Ausztria"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Belső falak, hétvégi házak, garázsburkolat, dobozolt ereszalj"
+    }
+  },
+  "shippingDetails": {
+    "weight": 2,
+    "length": 400,
+    "width": 9,
+    "height": 1
+  },
+  "variants": null,
+  "category": "lamberia",
+  "categorySlug": "lamberia"
+}

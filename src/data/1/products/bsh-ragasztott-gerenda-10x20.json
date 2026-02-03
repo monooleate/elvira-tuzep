@@ -1,0 +1,124 @@
+{
+  "name": "BSH ragasztott gerenda 10x20cm",
+  "slug": "bsh-ragasztott-gerenda-10x20",
+  "meta": {
+    "title": "BSH ragasztott gerenda 10x20cm - GL24h, osztrák gyártás",
+    "description": "BSH gerenda 10×20 cm méretben, 13,5 méteres hosszban, GL24h osztályban. Erős, mérettartó ragasztott fa kültéri és beltéri szerkezetekhez, látszó kivitelben is.",
+    "image": "/termekek/bsh-gerenda-10x20.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,9",
+    "reviewCount": 37
+  },
+  "description": "BSH gerenda 10×20 cm-es keresztmetszettel, GL24h osztályban. Ideális nagyobb fesztávokhoz, teherhordó látszó szerkezetekhez, csarnokokhoz.",
+  "image": "/termekek/bsh-gerenda-10x20.jpg",
+  "images": [],
+  "longDescription": "A 10×20 cm-es BSH (Brettschichtholz) ragasztott gerenda nagy teherbírású, tartós faanyag, amely alkalmas akár hosszabb fesztávú tetőszerkezetek, kocsibeállók, előtetők vagy nyitott csarnokvázak kialakítására is. A GL24h minőségű, homogén szerkezetű fa osztrák gyártásból származik, és garantálja a repedésmentes, méretstabil szerkezeti viselkedést. Kiválóan alkalmas látszó gerendaként is, esztétikus felületének köszönhetően.",
+  "longDescription2": "A gyalult, fózolt kivitel nemcsak esztétikus, de közvetlenül felületkezelhető is lazúrral vagy páccal. A 10×20 cm-es keresztmetszet különösen ott ideális, ahol a szerkezeti biztonság és a megjelenés egyaránt fontos: például fedett teraszok, nagyobb áthidalók, sőt akár belső díszgerendák esetén is. A termék egyedileg fóliázva érkezik, szárazon, kültérre és beltérre egyaránt alkalmas beépítésre.",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "bsh",
+    "rétegragasztott fa"
+  ],
+  "sku": "bsh-10x20-gl24h",
+  "price": 107997,
+  "mprice": null,
+  "m2price": null,
+  "m3price": 399990,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 6,
+      "value": "13,5 m"
+    },
+    "Típus": {
+      "label": "Típus",
+      "order": 1,
+      "value": "BSH ragasztott gerenda"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 7,
+      "value": "8,1 m²"
+    },
+    "Kezelés": {
+      "label": "Kezelés",
+      "order": 15,
+      "value": "Pácolásra, lazúrozásra előkészítve"
+    },
+    "Előnyök": {
+      "label": "Előnyök",
+      "order": 14,
+      "value": "Nagy teherbírás, esztétikus megjelenés, statikai biztonság"
+    },
+    "Felülete": {
+      "label": "Felülete",
+      "order": 10,
+      "value": "Gyalult, fózolt, látszó minőségű"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 3,
+      "value": "Látszó (esztétikai felhasználásra)"
+    },
+    "Térfogat": {
+      "label": "Térfogat",
+      "order": 8,
+      "value": "0,27 m³"
+    },
+    "Csomagolás": {
+      "label": "Csomagolás",
+      "order": 16,
+      "value": "Egyedileg fóliázott"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 4,
+      "value": "Ausztria"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 13,
+      "value": "Nagyobb fesztáv, tetőszerkezet, nyitott csarnok, látszó tartó"
+    },
+    "Keresztmetszet": {
+      "label": "Keresztmetszet",
+      "order": 5,
+      "value": "10 × 20 cm"
+    },
+    "Tulajdonságok": {
+      "label": "Tulajdonságok",
+      "order": 12,
+      "value": "Repedés- és vetemedésmentes, mérettartó"
+    },
+    "Nedvességtartalom": {
+      "label": "Nedvességtartalom",
+      "order": 11,
+      "value": "kb. 12% ±2%"
+    },
+    "Szilárdsági osztály": {
+      "label": "Szilárdsági osztály",
+      "order": 2,
+      "value": "GL24h"
+    },
+    "Választható hosszúságok": {
+      "label": "Választható hosszúságok",
+      "order": 9,
+      "value": "4,5 m / 6,75 m / 9 m / 13,5 m"
+    }
+  },
+  "shippingDetails": {
+    "weight": 127,
+    "length": 1350,
+    "width": 10,
+    "height": 20
+  },
+  "variants": null,
+  "category": "bsh-ragasztott-gerenda",
+  "categorySlug": "bsh-ragasztott-gerenda"
+}

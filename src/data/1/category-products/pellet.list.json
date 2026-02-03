@@ -1,0 +1,40 @@
+{
+  "categorySlug": "pellet",
+  "items": [
+    {
+      "slug": "fenyo-pellet-15kg-enplus-a1",
+      "categorySlug": "pellet",
+      "name": "Prémium fenyő pellet – 15 kg zsák",
+      "image": "/images/products/fenyo-pellet-15kg-zsak-500.avif",
+      "images": [
+        {
+          "src": "/images/products/fenyo-pellet-15kg-zsak",
+          "alt": "Fenyő pellet – 15 kg zsákos kiszerelés eleje"
+        },
+        {
+          "src": "/images/products/fenyo-pellet-15kg-zsak-hatulja",
+          "alt": "Fenyő pellet – 15 kg zsákos kiszerelés hatulja"
+        },
+        {
+          "src": "/images/products/fenyo-pellet-15kg-raklap-szembol",
+          "alt": "Fenyő pellet – raklapos kiszerelés szemből, 70 zsák (~1050 kg)"
+        },
+        {
+          "src": "/images/products/fenyo-pellet-15kg-raklap-oldal",
+          "alt": "Fenyő pellet – raklapos kiszerelés oldalnézetből, 70 zsák (~1050 kg)"
+        }
+      ],
+      "sku": "pellet-fenyo-15kg-enplus-a1",
+      "priceFrom": 3800,
+      "priceTo": null,
+      "discountPercent": 8,
+      "discountValidUntil": "2025-12-14T23:00:00.000Z",
+      "stock": 1,
+      "inStock": true,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.87,
+      "reviewCount": 52
+    }
+  ]
+}

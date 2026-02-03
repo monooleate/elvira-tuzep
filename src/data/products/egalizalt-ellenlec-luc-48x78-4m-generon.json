@@ -1,0 +1,113 @@
+{
+  "categorySlug": "csereplec-ellenlec",
+  "name": "Egalizált ellenléc luc 48x78mmx4m I-II. osztály (Terran Generon kompatibilis)",
+  "slug": "egalizalt-ellenlec-luc-48x78-4m-generon",
+  "meta": {
+    "title": "Luc ellenléc 48x78mm 4m – Generon kompatibilis | Elvira Tüzép",
+    "description": "Egalizált lucfenyő ellenléc 48x78 mm méretben, 4 m hosszban – Terran Generon napelemes tetőcseréphez ajánlott méret, osztrák I-II. osztályú faanyag.",
+    "image": "/termekek/egalizalt-ellenlec-luc-48x78.jpg"
+  },
+  "description": "Terran Generon-kompatibilis, egalizált lucfenyő ellenléc 48x78 mm-es méretben, 4 m hosszúságban – szárított, I-II. osztályú osztrák faanyag.",
+  "longDescription": "Ez a 48x78 mm méretű, 4 méteres egalizált lucfenyő ellenléc kifejezetten ajánlott a Terran Generon napelemes tetőcserép rendszerhez, ahol a megfelelő szellőzőmagasság és a pontos méret kulcsfontosságú. A precízen szárított lucfa stabil, tartós és jól megmunkálható. I-II. osztályú osztrák faanyagként hosszú távú megbízhatóságot kínál, akár új tető kialakításához, akár Generon rendszer utólagos beépítéséhez.",
+  "longDescription2": "Az egalizált felület pontos illeszkedést tesz lehetővé a tartószerkezetben, míg a 78 mm-es magasság megfelelő szellőzőteret biztosít a napelemes tetőcserép alatt. A szárított luc ellenléc kiváló választás, ha fontos a minőség, mérettartás és a kompatibilitás innovatív tetőrendszerekkel, mint a Terran Generon.",
+  "longDescription3": "",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "cserépléc",
+    "ellenléc",
+    "tetőszerkezet"
+  ],
+  "specs": {
+    "e9b8e8bc8c": {
+      "label": "Méret",
+      "order": 1,
+      "value": "48 x 78 mm"
+    },
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "be340899f3": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "dc80077fcc": {
+      "label": "Típus",
+      "order": 4,
+      "value": "Egalizált ellenléc"
+    },
+    "9aab9dc818": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Egalizált, szárított"
+    },
+    "5fd98f8686": {
+      "label": "Minőség",
+      "order": 6,
+      "value": "I-II. osztály"
+    },
+    "82d331f781": {
+      "label": "Származás",
+      "order": 7,
+      "value": "Ausztria"
+    },
+    "88203f64da": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Tetőszellőzés, ellenléc, Terran Generon tetőrendszerhez kompatibilis"
+    },
+    "f9926e4a87": {
+      "label": "Mérettűrés",
+      "order": 9,
+      "value": "Maximálisan ±0,3 mm eltérés lehetséges"
+    },
+    "1a303c0367": {
+      "label": "Kompatibilitás",
+      "order": 10,
+      "value": "Terran Generon napelemes tetőcserép rendszerrel"
+    }
+  },
+  "shippingDetails": {
+    "weight": 6,
+    "length": 400,
+    "width": 7,
+    "height": 4
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.85,
+    "reviewCount": 8
+  },
+  "image": "/termekek/egalizalt-ellenlec-luc-48x78.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_27c80736f0aaa4aa",
+      "title": "Alap",
+      "sku": "luc-el-eg-48x78-4m",
+      "variant_rank": 0,
+      "price": 3390,
+      "mprice": 847,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 3390,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

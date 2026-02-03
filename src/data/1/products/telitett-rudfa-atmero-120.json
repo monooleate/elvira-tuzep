@@ -1,0 +1,185 @@
+{
+  "name": "Telített rúdfa Ø120mm",
+  "slug": "telitett-rudfa-atmero-120",
+  "meta": {
+    "title": "Telített rúdfa 120 mm – Masszív kültéri fa | Elvira Tüzép",
+    "description": "Masszív, tartós telített rúdfa 120 mm átmérővel. Ideális hintaállványhoz, kerítéshez és nagyobb kerti szerkezetekhez.",
+    "image": "/termekek/rudfa-atmero-12.webp"
+  },
+  "aggregateRating": {
+    "ratingValue": 4.84,
+    "reviewCount": 67
+  },
+  "description": "Prémium minőségű, nyomás alatt impregnált telített rúdfa 120 mm átmérővel.",
+  "image": "/termekkep/telitett-rudfa-atmero-12.webp",
+  "images": [],
+  "longDescription": "A telített rúdfa 120 mm-es átmérővel alkalmas szerkezeti célokra és nagy igénybevételre.",
+  "longDescription2": "Játszótéri szerkezeteknél, hintaállványoknál és terhelhető kerti projektekben is bevált.",
+  "material": "Nagy nyomáson telített borovi fenyő",
+  "audience": [
+    "kertépítők",
+    "játszótér-építők",
+    "kivitelezők"
+  ],
+  "blogtags": [
+    "kertifa",
+    "rúdfa"
+  ],
+  "sku": "RF12400",
+  "price": 18515,
+  "mprice": null,
+  "m2price": null,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": 0,
+  "specs": {
+    "Anyag": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyő"
+    },
+    "Hossz": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "500–4000 mm"
+    },
+    "Tömeg": {
+      "label": "Tömeg",
+      "order": 6,
+      "value": "≈ 10–15 kg/db"
+    },
+    "Kivitel": {
+      "label": "Kivitel",
+      "order": 4,
+      "value": "Körmart, erős kivitel"
+    },
+    "Átmérő": {
+      "label": "Átmérő",
+      "order": 1,
+      "value": "120 mm"
+    },
+    "Megjegyzés": {
+      "label": "Megjegyzés",
+      "order": 8,
+      "value": "Nagy teherbíráshoz ajánlott"
+    },
+    "Impregnálás": {
+      "label": "Impregnálás",
+      "order": 5,
+      "value": "Nyomás alatti (réz-bázisú)"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 7,
+      "value": "Hintaállvány, szerkezeti elem, kerítés"
+    }
+  },
+  "shippingDetails": {
+    "weight": 28,
+    "length": 400,
+    "width": 12,
+    "height": 12
+  },
+  "variants": [
+    {
+      "id": "variant_01KA93DHAX802QHK198TJMKWSF",
+      "title": "Ø120mm x 400 | rúdfa",
+      "variantType": null,
+      "sku": "RF12400",
+      "variant_rank": 5,
+      "price": 18515,
+      "stock": null,
+      "metadata": {
+        "inventory": 0
+      },
+      "weight": 28,
+      "length": 400,
+      "width": 12,
+      "height": 12
+    },
+    {
+      "id": "variant_01KA93D63E632A41JJW7Z93E15",
+      "title": "Ø120mm x 150 | rúdfa",
+      "variantType": null,
+      "sku": "RF12150",
+      "variant_rank": 1,
+      "price": 6096,
+      "stock": null,
+      "metadata": {
+        "inventory": 0
+      },
+      "weight": 12,
+      "length": 150,
+      "width": 12,
+      "height": 12
+    },
+    {
+      "id": "variant_01KA93D9695VSR1HB4HTY5921S",
+      "title": "Ø120mm x 250 | rúdfa",
+      "variantType": null,
+      "sku": "RF12250",
+      "variant_rank": 3,
+      "price": 9690,
+      "stock": null,
+      "metadata": {
+        "inventory": 1
+      },
+      "weight": 18,
+      "length": 250,
+      "width": 12,
+      "height": 12
+    },
+    {
+      "id": "variant_01KA93DD9JE76Y75Y8ERYHB34V",
+      "title": "Ø120mm x 300 | rúdfa",
+      "variantType": null,
+      "sku": "RF12300",
+      "variant_rank": 4,
+      "price": 12192,
+      "stock": null,
+      "metadata": {
+        "inventory": 1
+      },
+      "weight": 20,
+      "length": 300,
+      "width": 12,
+      "height": 12
+    },
+    {
+      "id": "variant_01KA933XY2NV8TNF79DP5NTNTA",
+      "title": "Ø120mm x 200 | rúdfa",
+      "variantType": null,
+      "sku": "RF12200",
+      "variant_rank": 2,
+      "price": 7265,
+      "stock": null,
+      "metadata": {
+        "inventory": 0
+      },
+      "weight": 14,
+      "length": 200,
+      "width": 12,
+      "height": 12
+    },
+    {
+      "id": "variant_01KA93D309KB9P2E6CTPKWH0QG",
+      "title": "Ø120mm x 50 | rúdfa",
+      "variantType": null,
+      "sku": "RF1250",
+      "variant_rank": 0,
+      "price": 3760,
+      "stock": null,
+      "metadata": {
+        "inventory": 0
+      },
+      "weight": 4,
+      "length": 50,
+      "width": 12,
+      "height": 12
+    }
+  ],
+  "category": "telitett-rudfa",
+  "categorySlug": "telitett-rudfa"
+}

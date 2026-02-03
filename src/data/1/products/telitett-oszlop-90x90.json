@@ -1,0 +1,164 @@
+{
+  "name": "Telített oszlop 90×90 mm",
+  "slug": "telitett-oszlop-90x90",
+  "meta": {
+    "title": "Telített oszlop 90×90 mm – Erős impregnált faoszlop | Elvira Tüzép",
+    "description": "Extra erős, telített oszlop 90×90 mm méretben. Játszóterekhez, nagy terhelésű kerítésekhez és tartós szerkezetekhez ideális.",
+    "image": "/termekek/telitett-oszlop.webp"
+  },
+  "aggregateRating": {
+    "ratingValue": 4.91,
+    "reviewCount": 84
+  },
+  "description": "Nyomás alatt impregnált, masszív telített oszlop 90×90 mm keresztmetszettel nagy teherbírású kültéri szerkezetekhez.",
+  "image": "/termekek/telitett-oszlop.webp",
+  "images": [],
+  "longDescription": "A 90×90 mm-es telített oszlop nagy igénybevételre tervezett, kiváló tartóerővel. Ajánlott játszóterekhez, hintaállványokhoz, nagy kerítésekhez és teherbíró kerti szerkezetekhez. A telítés mélyen behatol a fa szerkezetébe, hosszú távú védelmet biztosít.",
+  "longDescription2": "A nagyobb keresztmetszet fokozott stabilitást és biztonságot nyújt, így gyermek játszóterekhez kifejezetten ideális. Természetes zöld árnyalata jól illik a környezetbe.",
+  "material": "Nagy nyomáson telített borovi fenyő",
+  "audience": [
+    "játszótér-építők",
+    "kivitelezők",
+    "kertépítők"
+  ],
+  "blogtags": [
+    "kertifa",
+    "rúdfa"
+  ],
+  "sku": "OSZ99210",
+  "price": 6128,
+  "mprice": null,
+  "m2price": null,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": 1,
+  "specs": {
+    "Anyag": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyő"
+    },
+    "Hossz": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "2100–3500 mm"
+    },
+    "Tömeg": {
+      "label": "Tömeg",
+      "order": 5,
+      "value": "≈ 10–14 kg/db"
+    },
+    "Megjegyzés": {
+      "label": "Megjegyzés",
+      "order": 7,
+      "value": "Nagy terheléshez ajánlott"
+    },
+    "Impregnálás": {
+      "label": "Impregnálás",
+      "order": 4,
+      "value": "Nyomás alatti (réz-bázisú)"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 6,
+      "value": "Játszótér, hintaállvány, erős kerítésszerkezet"
+    },
+    "Keresztmetszet": {
+      "label": "Keresztmetszet",
+      "order": 1,
+      "value": "90×90 mm"
+    }
+  },
+  "shippingDetails": {
+    "weight": null,
+    "length": 210,
+    "width": 9,
+    "height": 9
+  },
+  "variants": [
+    {
+      "id": "variant_01KAE9KF660F4BDJE3K64SB3J4",
+      "title": "90x90 x 210",
+      "variantType": null,
+      "sku": "OSZ99210",
+      "variant_rank": 0,
+      "price": 6128,
+      "stock": null,
+      "metadata": {
+        "inventory": 1
+      },
+      "weight": null,
+      "length": 210,
+      "width": 9,
+      "height": 9
+    },
+    {
+      "id": "variant_01KAE9KJ9AHM1KQ9JE1SN0B3V3",
+      "title": "90x90 x 240",
+      "variantType": null,
+      "sku": "OSZ99240",
+      "variant_rank": 1,
+      "price": 7004,
+      "stock": null,
+      "metadata": {
+        "inventory": 1
+      },
+      "weight": null,
+      "length": 240,
+      "width": 9,
+      "height": 9
+    },
+    {
+      "id": "variant_01KAE9KNW3AMK2KNGCWGTK025S",
+      "title": "90x90 x 270",
+      "variantType": null,
+      "sku": "OSZ99270",
+      "variant_rank": 2,
+      "price": 7603,
+      "stock": null,
+      "metadata": {
+        "inventory": 1
+      },
+      "weight": null,
+      "length": 270,
+      "width": 9,
+      "height": 9
+    },
+    {
+      "id": "variant_01KAE9KS9ZMF4K5A8PCD0XDR9G",
+      "title": "90x90 x 300",
+      "variantType": null,
+      "sku": "OSZ99300",
+      "variant_rank": 3,
+      "price": 8758,
+      "stock": null,
+      "metadata": {
+        "inventory": 1
+      },
+      "weight": null,
+      "length": 300,
+      "width": 9,
+      "height": 9
+    },
+    {
+      "id": "variant_01KAE9KWG9D1CF9AV8C8C1TQ7J",
+      "title": "90x90 x 350",
+      "variantType": null,
+      "sku": "OSZ99350",
+      "variant_rank": 4,
+      "price": 10910,
+      "stock": null,
+      "metadata": {
+        "inventory": 1
+      },
+      "weight": null,
+      "length": 350,
+      "width": 9,
+      "height": 9
+    }
+  ],
+  "category": "telitett-oszlop",
+  "categorySlug": "telitett-oszlop"
+}

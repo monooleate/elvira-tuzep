@@ -1,0 +1,169 @@
+{
+  "name": "Telített rúdfa Ø80mm",
+  "slug": "telitett-rudfa-atmero-80",
+  "meta": {
+    "title": "Telített rúdfa 80 mm – Impregnált kerítésfa | Elvira Tüzép",
+    "description": "Erős, nyomás alatt impregnált telített rúdfa 80 mm átmérővel. Tartós és időjárásálló választás kerítéshez és kerti építményekhez.",
+    "image": "/termekek/rudfa-atmero-8.webp"
+  },
+  "aggregateRating": {
+    "ratingValue": 4.82,
+    "reviewCount": 41
+  },
+  "description": "Nyomás alatt impregnált, tartós telített rúdfa 80 mm átmérővel kerítésekhez és kerti szerkezetekhez.",
+  "image": "/termekkep/telitett-rudfa-atmero-8.webp",
+  "images": [],
+  "longDescription": "A telített rúdfa 80 mm átmérővel kiváló választás kerítésekhez, támrudakhoz és kerti szerkezetekhez. A nyomás alatti impregnálás mélyen védi a fát a nedvességtől, gombáktól és rovaroktól.",
+  "longDescription2": "Stabil és időtálló faanyagként a 80 mm-es rúdfa alkalmas kisebb szerkezetekhez, támrendszerekhez vagy könnyű kerítésekhez. A zöldes árnyalatú impregnálás természetes hatást ad.",
+  "material": "Nagy nyomáson telített borovi fenyő",
+  "audience": [
+    "kertépítők",
+    "barkácsolók",
+    "kerítésépítők"
+  ],
+  "blogtags": [
+    "kertifa",
+    "rúdfa"
+  ],
+  "sku": "RF08050",
+  "price": 740,
+  "mprice": null,
+  "m2price": null,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": 0,
+  "specs": {
+    "Anyag": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyő"
+    },
+    "Hossz": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "500–3000 mm"
+    },
+    "Tömeg": {
+      "label": "Tömeg",
+      "order": 6,
+      "value": "≈ 5–7 kg/db"
+    },
+    "Kivitel": {
+      "label": "Kivitel",
+      "order": 4,
+      "value": "Körmart, simított felület"
+    },
+    "Átmérő": {
+      "label": "Átmérő",
+      "order": 1,
+      "value": "80 mm"
+    },
+    "Megjegyzés": {
+      "label": "Megjegyzés",
+      "order": 8,
+      "value": "Tartós, közepes teherbírású elem"
+    },
+    "Impregnálás": {
+      "label": "Impregnálás",
+      "order": 5,
+      "value": "Nyomás alatti (réz-bázisú)"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 7,
+      "value": "Kerítés, kerti szerkezet, támrúd"
+    }
+  },
+  "shippingDetails": {
+    "weight": 1,
+    "length": 50,
+    "width": 8,
+    "height": 8
+  },
+  "variants": [
+    {
+      "id": "variant_01KA932FNGDN4M3QDJH254XS08",
+      "title": "Ø80mm x 50 | rúdfa",
+      "variantType": null,
+      "sku": "RF08050",
+      "variant_rank": 0,
+      "price": 740,
+      "stock": null,
+      "metadata": {
+        "inventory": 0
+      },
+      "weight": 1,
+      "length": 50,
+      "width": 8,
+      "height": 8
+    },
+    {
+      "id": "variant_01KA932Q7PRDX0HY3W0GJHTW1M",
+      "title": "Ø80mm x 200 | rúdfa",
+      "variantType": null,
+      "sku": "RF08200",
+      "variant_rank": 2,
+      "price": 3020,
+      "stock": null,
+      "metadata": {
+        "inventory": 0
+      },
+      "weight": 4,
+      "length": 200,
+      "width": 8,
+      "height": 8
+    },
+    {
+      "id": "variant_01KA932KHDBJ0DF6F3G30EWXCJ",
+      "title": "Ø80mm x 100 | rúdfa",
+      "variantType": null,
+      "sku": "RF08100",
+      "variant_rank": 1,
+      "price": 1510,
+      "stock": null,
+      "metadata": {
+        "inventory": 0
+      },
+      "weight": 2,
+      "length": 100,
+      "width": 8,
+      "height": 8
+    },
+    {
+      "id": "variant_01KA932VC9ZFCW2JBMDVV7KKDV",
+      "title": "Ø80mm x 250 | rúdfa",
+      "variantType": null,
+      "sku": "RF08250",
+      "variant_rank": 3,
+      "price": 3775,
+      "stock": null,
+      "metadata": {
+        "inventory": 0
+      },
+      "weight": 7,
+      "length": 250,
+      "width": 8,
+      "height": 8
+    },
+    {
+      "id": "variant_01KA932ZD3VD7WFEH5F92JGN60",
+      "title": "Ø80mm x 300 | rúdfa",
+      "variantType": null,
+      "sku": "RF08300",
+      "variant_rank": 4,
+      "price": 4530,
+      "stock": null,
+      "metadata": {
+        "inventory": 1
+      },
+      "weight": 8,
+      "length": 300,
+      "width": 8,
+      "height": 8
+    }
+  ],
+  "category": "telitett-rudfa",
+  "categorySlug": "telitett-rudfa"
+}

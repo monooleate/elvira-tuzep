@@ -1,0 +1,41 @@
+{
+  "categorySlug": "pallo",
+  "items": [
+    {
+      "slug": "luc-pallo-38x240-4m",
+      "categorySlug": "pallo",
+      "name": "Palló - Luc 38x240mmx4m – I-II. osztály",
+      "image": "/termekek/luc-pallo-38x240.webp",
+      "images": [],
+      "sku": "luc-pallo-38x240-4m",
+      "priceFrom": 8694,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "inStock": false,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.7,
+      "reviewCount": 34
+    },
+    {
+      "slug": "luc-pallo-48x98-4m",
+      "categorySlug": "pallo",
+      "name": "Palló - Luc 48x98 mm 4 méter – I./II. osztály",
+      "image": "/termekek/luc-pallo-48x98.avif",
+      "images": [],
+      "sku": "luc-pallo-48x98-4m",
+      "priceFrom": 4194,
+      "priceTo": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "inStock": false,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.67,
+      "reviewCount": 39
+    }
+  ]
+}

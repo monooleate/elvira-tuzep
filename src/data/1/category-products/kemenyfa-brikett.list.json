@@ -1,0 +1,91 @@
+{
+  "categorySlug": "kemenyfa-brikett",
+  "items": [
+    {
+      "slug": "pini-kay-brikett-tolgy",
+      "categorySlug": "kemenyfa-brikett",
+      "name": "Pini‑Kay keményfa brikett I. osztály",
+      "image": "/termekek/pini-kay-brikett.jpg",
+      "images": [
+        {
+          "src": "/images/products/pini-kay-brikett-csomag",
+          "alt": "Pini-Kay keményfa brikett I. osztály – 10 kg-os csomag, 12 darab keményfa brikett"
+        },
+        {
+          "src": "/images/products/pini-kay-brikett-csomag_darab",
+          "alt": "Pini-Kay keményfa brikett I. osztály – egy darab keményfa brikett és egy 10 kg-os csomag egymás mellett"
+        },
+        {
+          "src": "/images/products/pini-kay-brikett-raklap",
+          "alt": "Pini-Kay keményfa brikett I. osztály – raklapos kiszerelés, 96 csomag keményfa brikett"
+        },
+        {
+          "src": "/images/products/pini-kay-brikett-raklap-2",
+          "alt": "Pini-Kay keményfa brikett I. osztály – teljes raklap, 960 kg keményfa brikett (96 csomag × 10 kg)"
+        },
+        {
+          "src": "/images/products/pini-kay-brikett-darab",
+          "alt": "Pini-Kay keményfa brikett I. osztály – egy darab keményfa brikett közelről"
+        },
+        {
+          "src": "/images/products/pini-kay-brikett-darab-top",
+          "alt": "Pini-Kay keményfa brikett I. osztály – felülnézetből, jól látható a lyukas (üreges) szerkezet"
+        }
+      ],
+      "sku": "brikett-pini-kay-tolgy",
+      "priceFrom": 162,
+      "priceTo": null,
+      "discountPercent": 5,
+      "discountValidUntil": "2026-02-14T23:00:00.000Z",
+      "stock": 1,
+      "inStock": true,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.8,
+      "reviewCount": 52
+    },
+    {
+      "slug": "ruf-fabrikett-bukk",
+      "categorySlug": "kemenyfa-brikett",
+      "name": "RUF bükk fabrikett – kocka/hasáb",
+      "image": "/images/products/ruf-fabrikett-bukk-darab-felul-500.avif",
+      "images": [
+        {
+          "src": "/images/products/ruf-fabrikett-bukk-darab-felul",
+          "alt": "RUF bükk fabrikett – egy darab kocka brikett felülnézetből"
+        },
+        {
+          "src": "/images/products/ruf-fabrikett-bukk-csomag",
+          "alt": "RUF bükk fabrikett – csomagos kiszerelésű kocka/hasáb brikett"
+        },
+        {
+          "src": "/images/products/ruf-fabrikett-bukk-darab-oldal",
+          "alt": "RUF bükk fabrikett – egy darab kocka brikett oldalnézetből"
+        },
+        {
+          "src": "/images/products/ruf-fabrikett-bukk-darab-szele",
+          "alt": "RUF bükk fabrikett – egy darab kocka brikett széléről nézve"
+        },
+        {
+          "src": "/images/products/ruf-fabrikett-bukk-raklap-bal",
+          "alt": "RUF brikett – raklapos kiszerelés, 96 csomag, oldalnézetből"
+        },
+        {
+          "src": "/images/products/ruf-fabrikett-bukk-raklap-oldal",
+          "alt": "RUF brikett – raklapos kiszerelés, 96 csomag, raklap széléről nézve"
+        }
+      ],
+      "sku": "brikett-ruf-bukk",
+      "priceFrom": 185,
+      "priceTo": null,
+      "discountPercent": 5,
+      "discountValidUntil": "2025-10-17T22:00:00.000Z",
+      "stock": 1,
+      "inStock": true,
+      "hasVariants": false,
+      "variantCount": 0,
+      "ratingValue": 4.97,
+      "reviewCount": 16
+    }
+  ]
+}

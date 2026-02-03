@@ -1,0 +1,90 @@
+{
+  "name": "Egalizált ellenléc luc 78x78mmx4m I-II. osztály",
+  "slug": "egalizalt-ellenlec-luc-78x78-4m",
+  "meta": {
+    "title": "Luc ellenléc 78x78mm 4m – egalizált | Elvira Tüzép",
+    "description": "Egalizált, szárított lucfenyő ellenléc 78x78 mm-es méretben, 4 m-es hosszban – osztrák I-II. osztályú faanyag, nagy keresztmetszetű tetőszerkezetekhez.",
+    "image": "/termekek/egalizalt-ellenlec-luc-78x78-4m.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,85",
+    "reviewCount": 16
+  },
+  "description": "Szárított, egalizált lucfenyő ellenléc 78x78 mm-es méretben, 4 m-es hosszban – nagy szellőzőmagassághoz, vázakhoz és tetőszerkezethez.",
+  "image": "/termekek/egalizalt-ellenlec-luc-78x78-4m.jpg",
+  "images": [],
+  "longDescription": "A 78x78 mm-es, 4 méteres egalizált lucfenyő ellenléc ideális választás nagy keresztmetszetű tetőszerkezetekhez, ahol fontos a stabilitás, teherbírás és precíz illeszkedés. Az osztrák származású, I-II. osztályú szárított faanyag kiváló mérettartással és megmunkálhatósággal rendelkezik. Alkalmas átszellőztetett tetőkhöz, szarufák közötti vázszerkezethez, vagy akár könnyűtartóként is felhasználható.",
+  "longDescription2": "Az egalizált felület lehetővé teszi a pontos beépítést és tartós csatlakozásokat. A 78 mm-es magasság biztosítja a megfelelő szellőzőlégrést napelemes rendszerek vagy vastagabb hőszigetelések esetén is. Kezeletlen, de szárított kivitelben érkezik – kültéri használat esetén vékonylazúros felületkezelés ajánlott.",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "cserépléc",
+    "ellenléc",
+    "tetőszerkezet"
+  ],
+  "sku": "luc-el-eg-78x78-4m",
+  "price": 5690,
+  "mprice": 1422,
+  "m2price": null,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "Méret": {
+      "label": "Méret",
+      "order": 1,
+      "value": "78 x 78 mm"
+    },
+    "Típus": {
+      "label": "Típus",
+      "order": 4,
+      "value": "Egalizált ellenléc / könnyű tartó"
+    },
+    "Fa fajta": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Egalizált, szárított"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 6,
+      "value": "I-II. osztály"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 7,
+      "value": "Ausztria"
+    },
+    "Mérettűrés": {
+      "label": "Mérettűrés",
+      "order": 9,
+      "value": "Maximálisan ±0,3 mm eltérés lehetséges a megadott mérethez képest"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Ellenléc, tetőszellőzés, vázszerkezet, napelemes rendszerek alá, könnyűtartó"
+    }
+  },
+  "shippingDetails": {
+    "weight": 11,
+    "length": 400,
+    "width": 7,
+    "height": 7
+  },
+  "variants": null,
+  "category": "csereplec-ellenlec",
+  "categorySlug": "csereplec-ellenlec"
+}

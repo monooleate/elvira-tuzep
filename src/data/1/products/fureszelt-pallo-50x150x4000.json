@@ -1,0 +1,114 @@
+{
+  "name": "Fűrészelt palló 50×150×4000 mm – gyalulatlan",
+  "slug": "fureszelt-pallo-50x150x4000",
+  "meta": {
+    "title": "Fűrészelt palló 50×150×4000 mm | Masszív gyalulatlan palló",
+    "description": "50×150×4000 mm gyalulatlan, légszáraz fűrészelt palló. Masszív és tartós faanyag tetőszerkezetekhez, födémszerkezetekhez, zsaluzáshoz és egyéb építési munkákhoz kedvező áron.",
+    "image": "/images/products/pallo-50x150x4000-darab.avif"
+  },
+  "aggregateRating": {
+    "ratingValue": 4.85,
+    "reviewCount": 19
+  },
+  "description": "50×150×4000 mm gyalulatlan, légszáraz fűrészelt palló. Erős, masszív keresztmetszetének köszönhetően ideális tetőszerkezetekhez, födémszerkezetekhez és zsaluzáshoz.",
+  "image": null,
+  "images": [
+    {
+      "src": "/images/products/pallo-50x150x4000-darab",
+      "alt": "Fűrészelt palló 50×150×4000 mm gyalulatlan kivitelben"
+    },
+    {
+      "src": "/images/products/pallo-50x150x4000-koteg",
+      "alt": "50×150×4000 mm gyalulatlan fenyő palló kötegben"
+    }
+  ],
+  "longDescription": "Az 50×150×4000 mm fűrészelt palló nagyobb keresztmetszetének köszönhetően kiemelkedően erős és tartós építőanyag. Légszáraz kivitelben kínáljuk, így kevésbé vetemedik. Kiválóan alkalmas tetőszerkezetekhez, födémszerkezetek építéséhez, zsaluzatokhoz, kerítésekhez vagy barkácsprojektekhez. Kedvező palló árainkkal közvetlenül raktárkészletről rendelhető.",
+  "longDescription2": "Főbb jellemzők: vastagság 50 mm, szélesség 150 mm, hossz 4000 mm. Anyaga: légszáraz, gyalulatlan fenyő. Térfogata 0,03 m³, tömege kb. 14 kg. Felhasználási területei: tetőszerkezet, födémszerkezet, zsaluzat, kerítés, barkácsolás. Nagyobb teherbírású kivitel, tartós és sokoldalúan felhasználható.",
+  "material": "Légszáraz fenyő, gyalulatlan",
+  "audience": [
+    "építkezők",
+    "kivitelezők",
+    "tetőfedők",
+    "asztalosok",
+    "barkácsolók"
+  ],
+  "blogtags": [
+    "deszka",
+    "palló"
+  ],
+  "sku": "D501504000",
+  "price": 5179,
+  "mprice": null,
+  "m2price": null,
+  "m3price": null,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": 1,
+  "specs": {
+    "Anyag": {
+      "label": "Anyag",
+      "order": 5,
+      "value": "Légszáraz fenyő"
+    },
+    "Hossz": {
+      "label": "Hossz",
+      "order": 4,
+      "value": "4000 mm"
+    },
+    "Méret": {
+      "label": "Méret",
+      "order": 1,
+      "value": "50×150×4000 mm"
+    },
+    "Tömeg": {
+      "label": "Tömeg",
+      "order": 9,
+      "value": "≈ 14 kg/palló"
+    },
+    "Kivitel": {
+      "label": "Kivitel",
+      "order": 6,
+      "value": "Gyalulatlan, fűrészelt"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 7,
+      "value": "≈ 1,62 m²/palló"
+    },
+    "Térfogat": {
+      "label": "Térfogat",
+      "order": 8,
+      "value": "0,03 m³/palló"
+    },
+    "Vastagság": {
+      "label": "Vastagság",
+      "order": 2,
+      "value": "50 mm"
+    },
+    "Megjegyzés": {
+      "label": "Megjegyzés",
+      "order": 11,
+      "value": "Masszív keresztmetszet, nagyobb teherbírás"
+    },
+    "Szélesség": {
+      "label": "Szélesség",
+      "order": 3,
+      "value": "150 mm"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 10,
+      "value": "Tetőszerkezet, zsalu, burkolat, kerítés, barkács"
+    }
+  },
+  "shippingDetails": {
+    "weight": 14,
+    "length": 400,
+    "width": 15,
+    "height": 5
+  },
+  "variants": null,
+  "category": "fureszelt-pallo",
+  "categorySlug": "fureszelt-pallo"
+}

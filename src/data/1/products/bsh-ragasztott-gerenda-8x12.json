@@ -1,0 +1,124 @@
+{
+  "name": "BSH ragasztott gerenda 8x12cm",
+  "slug": "bsh-ragasztott-gerenda-8x12",
+  "meta": {
+    "title": "BSH ragasztott gerenda 8x12cm - GL24h, osztrák gyártás",
+    "description": "BSH gerenda 8×12 cm-es méretben, GL24h osztályban, osztrák gyártásból. Esztétikus, mérettartó fa szerkezet kisebb faszerkezeti feladatokra.",
+    "image": "/termekek/bsh-gerenda-8x12.jpg"
+  },
+  "aggregateRating": {
+    "ratingValue": "4,9",
+    "reviewCount": 22
+  },
+  "description": "BSH gerenda 8×12 cm-es méretben, 13,5 méteres hosszban, GL24h osztályban. Tartós, esztétikus, precíz faanyag látszó és szerkezeti célokra.",
+  "image": "/termekek/bsh-gerenda-8x12.jpg",
+  "images": [],
+  "longDescription": "A 8×12 cm-es keresztmetszetű BSH (Brettschichtholz) ragasztott gerenda osztrák gyártásból származik, és GL24h szilárdsági osztályban készül. Kompakt mérete ellenére kiváló statikai tulajdonságokkal bír, így ideális kisebb szerkezeti vagy esztétikai célokra, például keretekhez, látszó belső elemekhez vagy pergolák díszítő tartóelemeként. A rétegragasztott faanyag kiváló mérettartással és időtállósággal rendelkezik, repedés- és vetemedésmentes.",
+  "longDescription2": "A gyalult, fózolt felület magas esztétikai értéket képvisel, és közvetlenül alkalmas lazúrozásra vagy pácolásra. A BSH 8×12 cm-es gerenda kis súlya miatt könnyen kezelhető, szállítható és beépíthető. Olyan helyzetekben ajánlott, ahol kisebb keresztmetszet is elegendő, de nem mondanánk le a tartósságról és a homogén, repedésmentes szerkezetről. A termék egyedileg fóliázva érkezik, kültéri és beltéri használatra is alkalmas.",
+  "material": "Fa, ragasztott (BSH), GL24h",
+  "audience": [],
+  "blogtags": [
+    "bsh",
+    "rétegragasztott fa"
+  ],
+  "sku": "bsh-8x12-gl24h",
+  "price": 51839,
+  "mprice": 3840,
+  "m2price": null,
+  "m3price": 399990,
+  "discountPrice": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "stock": null,
+  "specs": {
+    "Hossz": {
+      "label": "Hossz",
+      "order": 6,
+      "value": "13,5 m"
+    },
+    "Típus": {
+      "label": "Típus",
+      "order": 1,
+      "value": "BSH ragasztott gerenda"
+    },
+    "Felület": {
+      "label": "Felület",
+      "order": 7,
+      "value": "5,4 m²"
+    },
+    "Kezelés": {
+      "label": "Kezelés",
+      "order": 15,
+      "value": "Pácolásra, lazúrozásra előkészítve"
+    },
+    "Előnyök": {
+      "label": "Előnyök",
+      "order": 14,
+      "value": "Kompakt méret, könnyű kezelhetőség, homogén szerkezet"
+    },
+    "Felülete": {
+      "label": "Felülete",
+      "order": 10,
+      "value": "Gyalult, fózolt, látszó minőségű"
+    },
+    "Minőség": {
+      "label": "Minőség",
+      "order": 3,
+      "value": "Látszó (esztétikai felhasználásra)"
+    },
+    "Térfogat": {
+      "label": "Térfogat",
+      "order": 8,
+      "value": "0,13 m³"
+    },
+    "Csomagolás": {
+      "label": "Csomagolás",
+      "order": 16,
+      "value": "Egyedileg fóliázott"
+    },
+    "Származás": {
+      "label": "Származás",
+      "order": 4,
+      "value": "Ausztria"
+    },
+    "Felhasználás": {
+      "label": "Felhasználás",
+      "order": 13,
+      "value": "Pergola, belső tartó, kisebb keretszerkezet, dekoratív faelem"
+    },
+    "Keresztmetszet": {
+      "label": "Keresztmetszet",
+      "order": 5,
+      "value": "8 × 12 cm"
+    },
+    "Tulajdonságok": {
+      "label": "Tulajdonságok",
+      "order": 12,
+      "value": "Repedés- és vetemedésmentes, mérettartó"
+    },
+    "Nedvességtartalom": {
+      "label": "Nedvességtartalom",
+      "order": 11,
+      "value": "kb. 12% ±2%"
+    },
+    "Szilárdsági osztály": {
+      "label": "Szilárdsági osztály",
+      "order": 2,
+      "value": "GL24h"
+    },
+    "Választható hosszúságok": {
+      "label": "Választható hosszúságok",
+      "order": 9,
+      "value": "4,5 m / 6,75 m / 9 m / 13,5 m"
+    }
+  },
+  "shippingDetails": {
+    "weight": 61,
+    "length": 1350,
+    "width": 8,
+    "height": 12
+  },
+  "variants": null,
+  "category": "bsh-ragasztott-gerenda",
+  "categorySlug": "bsh-ragasztott-gerenda"
+}

@@ -1,0 +1,89 @@
+{
+  "categorySlug": "gyalult-deszka",
+  "items": [
+    {
+      "slug": "luc-gyalult-deszka-19x96-abveh",
+      "categorySlug": "gyalult-deszka",
+      "name": "Gyalult deszka /AF profil/ 19x96mmx4m AB-VEH minőség",
+      "description": "Osztrák gyártású, 4 oldalon gyalult, fózolt lucfenyő deszka – sokoldalú felhasználásra.",
+      "sku": "luc-gyd-19x96-4m",
+      "image": "/termekek/luc-gyalult-deszka-19x96.png",
+      "images": [],
+      "priceFrom": 2529,
+      "priceTo": null,
+      "stock": 1,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-gyd-19x96-4m"
+      ]
+    },
+    {
+      "slug": "luc-gyalult-deszka-19x116-abveh",
+      "categorySlug": "gyalult-deszka",
+      "name": "Gyalult deszka /AF profil/ 19x116mmx4m AB-VEH minőség",
+      "description": "Osztrák gyártású, 4 oldalon gyalult, fózolt lucfenyő deszka – sokoldalú felhasználásra.",
+      "sku": "luc-gyd-19x116-4m",
+      "image": "/termekek/luc-ronkhaz-19x116.png",
+      "images": [],
+      "priceFrom": 3059,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-gyd-19x116-4m"
+      ]
+    },
+    {
+      "slug": "luc-gyalult-deszka-19x146-abveh",
+      "categorySlug": "gyalult-deszka",
+      "name": "Gyalult deszka /AF profil/ 19x146mmx4m AB-VEH minőség",
+      "description": "Széles, gyalult, 4 oldalon fózolt lucfenyő deszka – kiváló megoldás kültérre és beltérre egyaránt.",
+      "sku": "luc-gyd-19x146-4m",
+      "image": "/termekek/luc-gyalult-deszka-19x146.png",
+      "images": [],
+      "priceFrom": 3849,
+      "priceTo": null,
+      "stock": 1,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-gyd-19x146-4m"
+      ]
+    },
+    {
+      "slug": "luc-gyalult-deszka-19x190-abveh",
+      "categorySlug": "gyalult-deszka",
+      "name": "Gyalult deszka /AF profil/ 19x190mmx4m AB-VEH minőség",
+      "description": "Extra széles, esztétikusan gyalult, 4 oldalon fózolt lucfenyő deszka beltérre és kültérre",
+      "sku": "luc-gyd-19x190-4m",
+      "image": "/termekek/luc-ronkhaz-19x190.jpg",
+      "images": [],
+      "priceFrom": 5239,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-gyd-19x190-4m"
+      ]
+    }
+  ]
+}
