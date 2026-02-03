@@ -1,0 +1,106 @@
+{
+  "categorySlug": "lamberia",
+  "name": "Lambéria Trapéz F-profil 12,5x96mmx4m BC minőség",
+  "slug": "lamberia-12-5x96-bc",
+  "meta": {
+    "title": "Lambéria F-profil 12,5x96mm 4m BC",
+    "description": "BC minőségű trapéz lambéria (F profil) 12×96 mm méretben, kedvező árú burkolat beltérre. Természetes fenyő felület, egyszerű szerelés.",
+    "image": "/termekek/lamberia-f-12_5x96-bc.png"
+  },
+  "description": "Kedvező árú, trapéz profilú lambéria beltéri burkolatokhoz.",
+  "longDescription": "A 12x96 mm-es trapéz profilú lambéria BC minőségben ideális ár-érték arányú választás beltéri faborításokhoz. A lucfenyőből készült lambéria enyhébb esztétikai hibákat tartalmazhat, például kisebb göcsöket, színbeli eltéréseket vagy felületi egyenetlenségeket. Ezek azonban sem a stabilitást, sem a tartósságot nem befolyásolják. Különösen ajánlott melléképületekbe, garázsokba, hétvégi házakba vagy olyan terekbe, ahol a természetesség fontosabb, mint a tökéletes megjelenés. Felületkezeléssel tovább javítható a vizuális hatás.",
+  "longDescription2": "",
+  "longDescription3": "",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "nevezéktan"
+  ],
+  "specs": {
+    "9e65ea8cce": {
+      "label": "Méret",
+      "order": 1,
+      "value": "12,5 x 96 mm"
+    },
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "be340899f3": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "8614950dd3": {
+      "label": "Profil",
+      "order": 4,
+      "value": "F profil (trapéz formájú lambéria)"
+    },
+    "cffd8a903b": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Gyalult, sima"
+    },
+    "0fa11b965d": {
+      "label": "Származás",
+      "order": 6,
+      "value": "Ausztria"
+    },
+    "a5e83766b3": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "BC (gazdaságos, burkolati célra alkalmas)"
+    },
+    "63940aac07": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Belső falak, hétvégi házak, garázsburkolat, dobozolt ereszalj"
+    },
+    "9bc9f7e13d": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kezeletlen, felületkezelés ajánlott"
+    }
+  },
+  "shippingDetails": {
+    "weight": 2,
+    "length": 400,
+    "width": 9,
+    "height": 1
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 31
+  },
+  "image": "/termekek/lamberia-f-12_5x96-bc.png",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_b36b39002eb50912",
+      "title": "Alap",
+      "sku": "luc-lam-12_5x96-4m-bc",
+      "variant_rank": 0,
+      "price": 1499,
+      "mprice": null,
+      "m2price": 3890,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 1499,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

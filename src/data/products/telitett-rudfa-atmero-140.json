@@ -1,0 +1,125 @@
+{
+  "categorySlug": "telitett-rudfa",
+  "name": "Telített rúdfa Ø140mm",
+  "slug": "telitett-rudfa-atmero-140",
+  "meta": {
+    "title": "Telítettrúdfa 140 mm – Impregnált szerkezeti fa | Elvira Tüzép",
+    "description": "Extra erős telített rúdfa 140 mm átmérővel. Ideális nagy terhelésű szerkezetekhez, játszóterekhez és kerítésekhez.",
+    "image": "/termekek/rudfa-atmero-14.webp"
+  },
+  "description": "Erős, nagyméretű nyomás alatt impregnált telített rúdfa 140 mm átmérővel.",
+  "longDescription": "A 140 mm-es telített rúdfa professzionális szerkezeti célokra készült. Nagy teherbírású.",
+  "longDescription2": "A telítés mélyen a fa belső szerkezetébe hatol, hosszú élettartamot biztosít kültéren.",
+  "longDescription3": "",
+  "material": "Nagy nyomáson telített borovi fenyő",
+  "audience": [
+    "játszótér-építők",
+    "szerkezetépítők",
+    "barkácsolók"
+  ],
+  "blogtags": [
+    "kertifa",
+    "rúdfa"
+  ],
+  "specs": {
+    "aa0f29e0b2": {
+      "label": "Átmérő",
+      "order": 1,
+      "value": "140 mm"
+    },
+    "13123bfbf0": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "500–3000 mm"
+    },
+    "b9319ea0b6": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyő"
+    },
+    "35fe1c3dee": {
+      "label": "Kivitel",
+      "order": 4,
+      "value": "Körmart, extra erős kivitel"
+    },
+    "aec4f12198": {
+      "label": "Impregnálás",
+      "order": 5,
+      "value": "Nyomás alatti"
+    },
+    "803f2fecab": {
+      "label": "Tömeg",
+      "order": 6,
+      "value": "≈ 15–20 kg/db"
+    },
+    "e5373595d0": {
+      "label": "Felhasználás",
+      "order": 7,
+      "value": "Játszótér, hintaállvány, szerkezeti tartó"
+    },
+    "205c631cf0": {
+      "label": "Megjegyzés",
+      "order": 8,
+      "value": "Erős terheléshez ajánlott"
+    }
+  },
+  "shippingDetails": {
+    "weight": 21,
+    "length": 300,
+    "width": 14,
+    "height": 14
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.88,
+    "reviewCount": 92
+  },
+  "image": "/termekkep/rudfa-atmero-14.webp",
+  "images": [],
+  "variants": [
+    {
+      "id": "variant_01KA9349AZ62ZH97Q63TZZF9C1",
+      "title": "Ø140mm x 50 | rúdfa",
+      "sku": "RF1450",
+      "variant_rank": 0,
+      "price": 4065,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 3,
+      "length": 50,
+      "width": 14,
+      "height": 14
+    },
+    {
+      "id": "variant_01KA93DMNH8Q4BC3VBZSWMMA72",
+      "title": "Ø140mm x 300 | rúdfa",
+      "sku": "RF14300",
+      "variant_rank": 1,
+      "price": 19583,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 21,
+      "length": 300,
+      "width": 14,
+      "height": 14
+    }
+  ],
+  "stock": 2,
+  "priceFrom": 4065,
+  "priceTo": 19583,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

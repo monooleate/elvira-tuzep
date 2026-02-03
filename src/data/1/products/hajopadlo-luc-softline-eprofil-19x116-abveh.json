@@ -1,0 +1,126 @@
+{
+  "categorySlug": "hajopadlo",
+  "name": "Hajópadló - Luc Softline /E profil/ 19x116mmx4m AB-VEH minőség",
+  "slug": "hajopadlo-luc-softline-eprofil-19x116-abveh",
+  "meta": {
+    "title": "Hajópadló Softline E profil 19x116mm 4m ab-veh",
+    "description": "19x116mm-es Softline hajópadló E profillal, AB-VEH minőségben. Precízen gyalult felület, ideális falburkolatnak és mennyezetre. Minőségi faanyag beltéri burkolatokhoz.",
+    "image": "/termekek/hajopadlo-softline-19x116.png"
+  },
+  "description": "Softline hajópadló E profil, 19x116mm-es méretben. AB-VEH minőség, gyalult felület, könnyen szerelhető beltéri burkolatként.",
+  "longDescription": "A Softline hajópadló E profillal ideális választás falak vagy mennyezetek burkolásához. Ez a 19x116mm méretű, 4 méteres hosszúságú burkolóelem AB-VEH minőségű faanyagból készül, amely sima gyalult felületet és esztétikus megjelenést biztosít. A Softline (E profil) lekerekített élkialakítása elegáns vizuális hatást nyújt, valamint megkönnyíti a tisztítást. A hajópadló illesztése rejtett, nút-féderes, így szoros és stabil illesztést garantál. Kiválóan alkalmas lakások, nyaralók vagy irodák belső tereinek meleg, természetes hangulatú burkolására.",
+  "longDescription2": "",
+  "longDescription3": "",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "nevezéktan"
+  ],
+  "specs": {
+    "00eee700bc": {
+      "label": "Terméktípus",
+      "order": 1,
+      "value": "Hajópadló"
+    },
+    "3c1200d3ff": {
+      "label": "Méret",
+      "order": 2,
+      "value": "19 x 116 mm"
+    },
+    "e98090544e": {
+      "label": "Hossz",
+      "order": 3,
+      "value": "4 m"
+    },
+    "7933a5998f": {
+      "label": "Fa fajta",
+      "order": 4,
+      "value": "Luc fenyő"
+    },
+    "a532dc67d8": {
+      "label": "Profil",
+      "order": 5,
+      "value": "Softline / E profil"
+    },
+    "8ede3ba1b3": {
+      "label": "Profil kialakítás",
+      "order": 6,
+      "value": "Nút-féderes, lekerekített él"
+    },
+    "d7cf3c93ee": {
+      "label": "Felület",
+      "order": 7,
+      "value": "Simára gyalult"
+    },
+    "de9b257d3d": {
+      "label": "Származás",
+      "order": 8,
+      "value": "Ausztria"
+    },
+    "c08c50e310": {
+      "label": "Minőség",
+      "order": 9,
+      "value": "AB-VEH (válogatott burkolati minőség)"
+    },
+    "4758a18680": {
+      "label": "Felhasználás",
+      "order": 10,
+      "value": "Beltéri falburkolat, mennyezeti burkolat"
+    },
+    "4c3370efd0": {
+      "label": "Rögzítés",
+      "order": 11,
+      "value": "Szegelés vagy klipszes rögzítés"
+    },
+    "94aa9cbf28": {
+      "label": "Tárolás",
+      "order": 12,
+      "value": "Száraz, jól szellőző helyen, nedvességtől védve"
+    },
+    "2a57f07187": {
+      "label": "Kezelés",
+      "order": 13,
+      "value": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+    }
+  },
+  "shippingDetails": {
+    "weight": 4,
+    "length": 400,
+    "width": 11,
+    "height": 1
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.72,
+    "reviewCount": 35
+  },
+  "image": "/termekek/hajopadlo-softline-19x116.png",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_a9f0e5858b7d6e08",
+      "title": "Alap",
+      "sku": "luc-hp-e-19x116-4m",
+      "variant_rank": 0,
+      "price": 3199,
+      "mprice": null,
+      "m2price": 6890,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": 15,
+      "discountValidUntil": "2026-06-25",
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 3199,
+  "priceTo": null,
+  "discountPercent": 15,
+  "discountValidUntil": "2026-06-25",
+  "hasDiscount": true
+}

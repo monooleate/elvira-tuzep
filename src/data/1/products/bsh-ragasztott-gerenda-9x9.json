@@ -1,0 +1,165 @@
+{
+  "categorySlug": "bsh-ragasztott-gerenda",
+  "name": "BSH ragasztott gerenda 9x9cm",
+  "slug": "bsh-ragasztott-gerenda-9x9",
+  "meta": {
+    "title": "BSH ragasztott gerenda 9x9cm - GL24h, emelt minőség",
+    "description": "BSH gerenda 9×9 cm méretben, GL24h osztályban. Ideális kisebb szerkezetekhez, pergolákhoz, keretekhez és látszó faszerkezetekhez. Precíz, tartós és esztétikus faanyag.",
+    "image": "/termekek/bsh-gerenda-9x9.jpg"
+  },
+  "description": "BSH gerenda 9×9 cm-es keresztmetszetben, 4 méteres hosszban, GL24h osztályban. Kisebb faszerkezetekhez és látszó elemekhez ideális tartós és homogén faanyag.",
+  "longDescription": "A 9×9 cm-es BSH (Brettschichtholz) ragasztott gerenda osztrák gyártású, GL24h szilárdsági osztályú faanyag, amely kiváló választás kisebb szerkezeti munkákhoz. Stabil és mérettartó tulajdonságai miatt különösen alkalmas pergolák, előtetők, kerti építmények, valamint dekoratív látszó faszerkezetek kialakítására.",
+  "longDescription2": "A precízen gyalult és fózolt felület esztétikus megjelenést biztosít, így a gerenda látszó elemként is beépíthető. A BSH gerendák előnye a hagyományos fűrészárukkal szemben, hogy repedésmentesek, kevésbé vetemednek, és hosszú távon megőrzik formájukat. A 9×9 cm-es méret ideális választás, ha kisebb, de tartós és esztétikus faszerkezetre van szükség.",
+  "longDescription3": "",
+  "material": "Fa, ragasztott (BSH), GL24h",
+  "audience": [],
+  "blogtags": [
+    "bsh",
+    "rétegragasztott fa"
+  ],
+  "specs": {
+    "da4c94128f": {
+      "label": "Típus",
+      "order": 1,
+      "value": "BSH ragasztott gerenda"
+    },
+    "5bbf4f9a51": {
+      "label": "Szilárdsági osztály",
+      "order": 2,
+      "value": "GL24h"
+    },
+    "2d95ffa490": {
+      "label": "Minőség",
+      "order": 3,
+      "value": "Látszó (esztétikai felhasználásra)"
+    },
+    "7f7b827465": {
+      "label": "Származás",
+      "order": 4,
+      "value": "Európa"
+    },
+    "36dcf4a1a9": {
+      "label": "Keresztmetszet",
+      "order": 5,
+      "value": "9 × 9 cm"
+    },
+    "2b7f155d2c": {
+      "label": "Hossz",
+      "order": 6,
+      "value": "4 m"
+    },
+    "3265974ffe": {
+      "label": "Felület",
+      "order": 7,
+      "value": "1,44 m²"
+    },
+    "dd5c30a418": {
+      "label": "Térfogat",
+      "order": 8,
+      "value": "0,024 m³"
+    },
+    "918dc0b3fb": {
+      "label": "Választható hosszúságok",
+      "order": 9,
+      "value": "4,5 m / 6,75 m / 9 m / 13,5 m"
+    },
+    "6786d2547f": {
+      "label": "Felülete",
+      "order": 10,
+      "value": "Gyalult, fózolt, látszó minőségű"
+    },
+    "da96e499c5": {
+      "label": "Nedvességtartalom",
+      "order": 11,
+      "value": "kb. 12% ±2%"
+    },
+    "7d81e28bc4": {
+      "label": "Tulajdonságok",
+      "order": 12,
+      "value": "Repedés- és vetemedésmentes, mérettartó"
+    },
+    "fac77fa86b": {
+      "label": "Felhasználás",
+      "order": 13,
+      "value": "Pergola, előtető, kerti építmény, látszó tartóelem"
+    },
+    "c71f79dc9b": {
+      "label": "Előnyök",
+      "order": 14,
+      "value": "Könnyen megmunkálható, esztétikus megjelenés, hosszú élettartam"
+    },
+    "ffff4f0de8": {
+      "label": "Kezelés",
+      "order": 15,
+      "value": "Pácolásra, lazúrozásra előkészítve"
+    },
+    "df5af4ef76": {
+      "label": "Csomagolás",
+      "order": 16,
+      "value": "Egyedileg fóliázott"
+    },
+    "9b9d853312": {
+      "label": "Ragasztás",
+      "order": 18,
+      "value": "EN 301, Type I – kültéri felhasználásra is alkalmas"
+    },
+    "82e7ee47a9": {
+      "label": "Szabvány",
+      "order": 2013,
+      "value": "EN 14080"
+    }
+  },
+  "shippingDetails": {
+    "weight": 15,
+    "length": 400,
+    "width": 9,
+    "height": 9
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 18
+  },
+  "image": "/termekek/bsh-gerenda-9x9.jpg",
+  "images": [
+    {
+      "src": "/images/products/bsh-gerenda-9x9-csomagban",
+      "alt": "BSH ragasztott gerenda 9x9 cm – több darabos csomagban - mérettartó és esztétikus faanyag"
+    },
+    {
+      "src": "/images/products/bsh-gerenda-9x9-darab",
+      "alt": "BSH ragasztott gerenda 9x9 cm – darabos kiszerelés - GL24h minőség - gyalult és fózolt felület"
+    },
+    {
+      "src": "/images/products/bsh-gerenda-9x9-darab-2",
+      "alt": "BSH gerenda 9x9 cm – 5 darab gerenda egymás mellett - prémium faanyag - látszó szerkezeti felhasználásra - GL24h osztály"
+    }
+  ],
+  "variants": [
+    {
+      "id": "v_a7dabc4ca9d470d9",
+      "title": "Alap",
+      "sku": "bsh-9x9-gl24h",
+      "variant_rank": 0,
+      "price": 12960,
+      "mprice": 3240,
+      "m2price": null,
+      "m3price": 399990,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": 5,
+      "discountValidUntil": "2025-09-30T22:00:00.000Z",
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 12960,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

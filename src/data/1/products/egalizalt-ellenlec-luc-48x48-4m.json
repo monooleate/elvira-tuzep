@@ -1,0 +1,108 @@
+{
+  "categorySlug": "csereplec-ellenlec",
+  "name": "Egalizált ellenléc luc 48x48mmx4m I-II. osztály",
+  "slug": "egalizalt-ellenlec-luc-48x48-4m",
+  "meta": {
+    "title": "Egalizált luc ellenléc 48x48mm 4m | Elvira Tüzép",
+    "description": "Szárított, egalizált lucfenyő ellenléc 48x48 mm méretben, 4 méter hosszúságban – I-II. osztályú, osztrák minőségű faanyag tetőkhöz és szellőző légrésekhez.",
+    "image": "/termekek/egalizalt-ellenlec-luc-48x48-4m.png"
+  },
+  "description": "Egalizált, szárított lucfenyő ellenléc 48x48 mm méretben, 4 m-es hosszban – osztrák I-II. osztályú faanyag szellőző légréshez és lécezéshez.",
+  "longDescription": "A 48x48 mm-es, 4 méteres egalizált lucfenyő ellenléc ideális választás tetőszerkezetek átszellőztetésének biztosításához. A precízen szárított lucfa stabil és mérettartó, így a tetőszerkezet hosszú távon is megbízható marad. A 48x48-as keresztmetszet különösen akkor előnyös, ha nagyobb szellőzőtávolság vagy extra szerkezeti stabilitás szükséges.",
+  "longDescription2": "Az osztrák I-II. osztályú faanyag szabványosított, kiváló minőségű alapanyagot biztosít tetőépítési vagy felújítási projektekhez. Az egalizált kialakítás révén gyors és pontos beépítést tesz lehetővé. A termék ideális választás ellenlécnek, de akár vázszerkezetek vagy alátétek készítésére is alkalmas.",
+  "longDescription3": "",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "cserépléc",
+    "ellenléc",
+    "tetőszerkezet"
+  ],
+  "specs": {
+    "289c1e5e66": {
+      "label": "Méret",
+      "order": 1,
+      "value": "48 x 48 mm"
+    },
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "be340899f3": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "dc80077fcc": {
+      "label": "Típus",
+      "order": 4,
+      "value": "Egalizált ellenléc"
+    },
+    "9aab9dc818": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Egalizált, szárított"
+    },
+    "5fd98f8686": {
+      "label": "Minőség",
+      "order": 6,
+      "value": "I-II. osztály"
+    },
+    "82d331f781": {
+      "label": "Származás",
+      "order": 7,
+      "value": "Ausztria"
+    },
+    "6bcc1b0e11": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Tetőszellőzés, ellenléc, vázszerkezet, lécezés"
+    },
+    "a6f81af022": {
+      "label": "Mérettűrés",
+      "order": 9,
+      "value": "Maximálisan ±0,3 mm eltérés"
+    }
+  },
+  "shippingDetails": {
+    "weight": 4,
+    "length": 400,
+    "width": 4,
+    "height": 4
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.82,
+    "reviewCount": 12
+  },
+  "image": "/termekek/egalizalt-ellenlec-luc-48x48-4m.png",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_175367a5c5109e3a",
+      "title": "Alap",
+      "sku": "luc-el-eg-48x48-4m",
+      "variant_rank": 0,
+      "price": 1999,
+      "mprice": 500,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 1999,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

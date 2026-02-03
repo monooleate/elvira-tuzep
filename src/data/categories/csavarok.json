@@ -1,0 +1,49 @@
+{
+  "maincategory": "Kötőelemek",
+  "category": "Csavarok",
+  "slug": "csavarok",
+  "meta": {
+    "title": "Csavarok",
+    "description": "Süllyesztett fejű és TX hornyú csavarok faszerkezetekhez. Tartós, horganyzott szerkezetépítő csavarok tetőszerkezetekhez, pergolákhoz és kültéri faépítményekhez.",
+    "image": "/kategoriak/csavarok.webp"
+  },
+  "description": "A csavarok a legfontosabb kötőelemek közé tartoznak a faszerkezet-építésben, tetők, pergolák, keretek és tartóelemek összeépítése során. A süllyesztett fejű, TX hornyú, részmenetes és horganyzott csavarok erős, tartós és korrózióálló kötést biztosítanak kültéri és beltéri alkalmazásokhoz.",
+  "faqdesc": "A csavarok elengedhetetlen rögzítőelemek a faépítési és szerkezetépítő munkáknál. Az alábbi gyakori kérdések bemutatják a süllyesztett fejű, TX hornyú és horganyzott csavarok előnyeit, tartósságát, felhasználási lehetőségeit, valamint azt, hogy hogyan viszonyulnak a prémium márkák – például a Reisser – csavarjaihoz.",
+  "faq": [
+    {
+      "id": "1",
+      "question": "Mire használhatók a szerkezetépítő csavarok?",
+      "answer": "A szerkezetépítő csavarok tartós és erős kötést adnak tetőszerkezeteknél, gerendáknál, pergoláknál, teraszoknál és kerti faépítményeknél."
+    },
+    {
+      "id": "2",
+      "question": "Miért előnyös a süllyesztett fej?",
+      "answer": "A süllyesztett fej teljesen a fa síkjába húzható, így biztonságos és esztétikus felületet ad. Különösen jó burkolatokhoz, látható szerkezetekhez."
+    },
+    {
+      "id": "3",
+      "question": "Miért jobb a TX csavar (Torx) a PH és PZ csavaroknál?",
+      "answer": "A TX horony nagyobb nyomatékátvitelt biztosít, nem csúszik meg a bit, és gyorsabb, tisztább behajtást tesz lehetővé."
+    },
+    {
+      "id": "4",
+      "question": "Tartós-e a horganyzott csavar kültéren?",
+      "answer": "A fehér horganyzott csavar ellenáll a korróziónak, és megfelelő beépítés mellett 10–15 évig is tartós maradhat kültéren."
+    },
+    {
+      "id": "5",
+      "question": "Mikor használjak részmenetes csavart?",
+      "answer": "Részmenetes csavart akkor érdemes használni, ha a faelemeket erősen össze kell húzni – például gerenda-palló kapcsolatoknál vagy tartószerkezetek építésénél."
+    },
+    {
+      "id": "6",
+      "question": "Milyen a minősége ezeknek a csavaroknak a Reisser csavarokhoz képest?",
+      "answer": "A csavar műszaki tulajdonságai – TX horony, horganyzott felület, erős szorítóhatás – nagyon közel állnak a Reisser prémium kategóriájához, megfizethetőbb áron."
+    },
+    {
+      "id": "7",
+      "question": "Hol használhatók a csavarok a ház körül?",
+      "answer": "Tetőépítésnél, teraszépítésnél, pergoláknál, kereteknél, gerendáknál, kerti építményeknél és mindenhol, ahol masszív és rezgésálló kötésre van szükség.\""
+    }
+  ]
+}

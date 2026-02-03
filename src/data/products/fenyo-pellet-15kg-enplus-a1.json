@@ -1,0 +1,154 @@
+{
+  "categorySlug": "pellet",
+  "name": "Prémium fenyő pellet – 15 kg zsák",
+  "slug": "fenyo-pellet-15kg-enplus-a1",
+  "meta": {
+    "title": "Fenyő pellet 15 kg | Pellet kazánhoz és kandallóhoz",
+    "description": "ENplus A1 tanúsítvánnyal rendelkező fenyő pellet, amely tiszta égést, nagy hatásfokot és gazdaságos fűtést biztosít. Tökéletes pellet kazánhoz és kandallóhoz.",
+    "image": "/images/products/fenyo-pellet-15kg-zsak-500.avif"
+  },
+  "description": "Prémium minőségű fenyő pellet, ENplus A1 tanúsítvánnyal. Alacsony hamu és nedvesség, tiszta égés, megbízható adagolhatóság pellet kazánokhoz és pellet kandallókhoz. Praktikus 15 kg-os zsákos kivitelben.",
+  "longDescription": "A fenyő pellet prémium tüzelőanyag, amely 100% fenyő alapanyagból készül. ENplus A1 minősítése garantálja az alacsony nedvességtartalmat és hamut, valamint a magas mechanikai tartósságot. Ez egyenletes, tiszta égést és magas hatásfokot biztosít, így ideális választás pellet kazánhoz, vízteres pellet kandallóhoz és pelletes kályhához. A 15 kg-os zsák könnyen mozgatható, és tisztán tárolható.",
+  "longDescription2": "Főbb jellemzők: nedvesség ≤10%, hamutartalom ≤0,7%, mechanikai tartósság ≥98%, szemcseméret 6±1 mm átmérő és 3,15–40 mm hossz, alsó fűtőérték ≥4,6 kWh/kg. A pontos mérettűrés és a magas tartósság stabil csigás adagolást tesz lehetővé. Egy raklap 70 zsákot tartalmaz (~1050 kg). Származás: Szlovákia.",
+  "longDescription3": "",
+  "material": "100% fenyő pellet, ENplus A1",
+  "audience": [
+    "háztartások",
+    "pellet kazán/kandalló tulajok"
+  ],
+  "blogtags": [
+    "fa brikett",
+    "pellet",
+    "pellet ár",
+    "pellet kazán",
+    "pellet kandalló",
+    "pelletes kazán",
+    "vízteres pellet kandalló",
+    "fenyő pellet",
+    "ENplus A1"
+  ],
+  "specs": {
+    "62f223fb04": {
+      "label": "Alapanyag",
+      "order": 1,
+      "value": "100% fenyő"
+    },
+    "63030b0d4a": {
+      "label": "Osztály",
+      "order": 2,
+      "value": "ENplus A1"
+    },
+    "cf9c0ad26f": {
+      "label": "Átmérő",
+      "order": 3,
+      "value": "6 ± 1 mm"
+    },
+    "b12e30176d": {
+      "label": "Hossz",
+      "order": 4,
+      "value": "3,15–40 mm"
+    },
+    "a655e1c58a": {
+      "label": "Nedvességtartalom",
+      "order": 5,
+      "value": "≤ 10 %"
+    },
+    "69df942876": {
+      "label": "Hamutartalom",
+      "order": 6,
+      "value": "≤ 0,7 %"
+    },
+    "1f83a18e07": {
+      "label": "Mechanikai tartósság",
+      "order": 7,
+      "value": "≥ 98 %"
+    },
+    "74a3daa91e": {
+      "label": "Alsó fűtőérték",
+      "order": 8,
+      "value": "≥ 4,6 kWh/kg"
+    },
+    "a132f4bfe1": {
+      "label": "Kiszerelés",
+      "order": 9,
+      "value": "15 kg zsák"
+    },
+    "0385e68ea7": {
+      "label": "Raklapos kiszerelés",
+      "order": 10,
+      "value": "70 zsák/raklap (~1050 kg)"
+    },
+    "ca251fba5f": {
+      "label": "Felhasználás",
+      "order": 11,
+      "value": "Pellet kazán, vízteres pellet kandalló, pelletes kályha"
+    },
+    "2b43c22445": {
+      "label": "Származás",
+      "order": 12,
+      "value": "Szlovákia"
+    },
+    "fd70f5f208": {
+      "label": "Megjegyzés",
+      "order": 13,
+      "value": "Automata adagolásra optimalizált, tiszta égés"
+    }
+  },
+  "shippingDetails": {
+    "weight": 15,
+    "length": 50,
+    "width": 35,
+    "height": 12
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.87,
+    "reviewCount": 52
+  },
+  "image": "/images/products/fenyo-pellet-15kg-zsak-500.avif",
+  "images": [
+    {
+      "src": "/images/products/fenyo-pellet-15kg-zsak",
+      "alt": "Fenyő pellet – 15 kg zsákos kiszerelés eleje"
+    },
+    {
+      "src": "/images/products/fenyo-pellet-15kg-zsak-hatulja",
+      "alt": "Fenyő pellet – 15 kg zsákos kiszerelés hatulja"
+    },
+    {
+      "src": "/images/products/fenyo-pellet-15kg-raklap-szembol",
+      "alt": "Fenyő pellet – raklapos kiszerelés szemből, 70 zsák (~1050 kg)"
+    },
+    {
+      "src": "/images/products/fenyo-pellet-15kg-raklap-oldal",
+      "alt": "Fenyő pellet – raklapos kiszerelés oldalnézetből, 70 zsák (~1050 kg)"
+    }
+  ],
+  "variants": [
+    {
+      "id": "v_1bff7b8e356d2d7e",
+      "title": "Alap",
+      "sku": "pellet-fenyo-15kg-enplus-a1",
+      "variant_rank": 0,
+      "price": 3800,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": 8,
+      "discountValidUntil": "2025-12-14T23:00:00.000Z",
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 3800,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

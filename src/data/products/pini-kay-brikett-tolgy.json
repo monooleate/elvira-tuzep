@@ -1,0 +1,157 @@
+{
+  "categorySlug": "kemenyfa-brikett",
+  "name": "Pini‑Kay keményfa brikett I. osztály",
+  "slug": "pini-kay-brikett-tolgy",
+  "meta": {
+    "title": "Pini‑Kay keményfa brikett I. osztály – 100% tölgy",
+    "description": "100% tölgyfából készült Pini‑Kay brikett, alacsony nedvességtartalommal és kiemelkedő fűtőértékkel. Prémium minőség, lyukas szerkezet a hatékony égésért.",
+    "image": "/termekek/pini-kay-brikett.jpg"
+  },
+  "description": "Lyukas, hengeres keményfa brikett kizárólag tölgyfából, I. osztályú minőségben. Hosszú égés, magas hőérték, minimális hamu. Praktikus 10 kg-os csomagban (12 darab/csomag ; ~0.8 kg/darab)",
+  "longDescription": "A Pini‑Kay brikett 100% tölgyfából készül, I. osztályú minőségben. Lyukas, szellőzést biztosító szerkezete hatékony égést tesz lehetővé akár kandallóban, kályhában vagy kazánban is. A rendkívül alacsony, kb. 2–6% nedvességtartalom, a 4 800–5 000 kcal/kg (~20 MJ/kg) fűtőérték és a kb. 1,0–1,2% hamutartalom ideálissá teszik hosszú égésű, környezetbarát tüzelőként. A brikett nem tartalmaz adalékot vagy ragasztót, kizárólag természetes faőrleményből készül magas nyomáson préselve.",
+  "longDescription2": "",
+  "longDescription3": "",
+  "material": "Tölgy keményfa brikett (Pini-Kay), extrudált",
+  "audience": [
+    "háztartások",
+    "kandalló/kályha tulajok"
+  ],
+  "blogtags": [
+    "fa brikett",
+    "fabrikett",
+    "fenntartható energia",
+    "zöld fűtés"
+  ],
+  "specs": {
+    "bcd54dd832": {
+      "label": "Alapanyag",
+      "order": 1,
+      "value": "100% keményfa (főként tölgy)"
+    },
+    "7ca89bfef1": {
+      "label": "Forma",
+      "order": 2,
+      "value": "Lyukkal ellátott henger (ventilált Pini-Kay profil)"
+    },
+    "ae1a638210": {
+      "label": "Méretek egy darabra",
+      "order": 3,
+      "value": "Kb. 53 × 53 mm keresztmetszet, 300–330 mm hossz"
+    },
+    "a57660adab": {
+      "label": "Csomagolás",
+      "order": 4,
+      "value": "10 kg-os zsugorfóliázott csomag, 12 brikett/csomag"
+    },
+    "ada870c684": {
+      "label": "Nedvességtartalom",
+      "order": 6,
+      "value": "2–6 %"
+    },
+    "985c1dcc69": {
+      "label": "Fűtőérték",
+      "order": 7,
+      "value": "4800–5000 kcal/kg (~20 MJ/kg)"
+    },
+    "5558edac35": {
+      "label": "Hamutartalom",
+      "order": 8,
+      "value": "1,0–1,2 %"
+    },
+    "b260bcab8b": {
+      "label": "Előállítás",
+      "order": 9,
+      "value": "Adalékmentes, nagy nyomáson préselt"
+    },
+    "f3e7c3d6b4": {
+      "label": "Égési tulajdonságok",
+      "order": 10,
+      "value": "Hosszú égés (~2 óra/db), stabil szerkezet, tiszta égés"
+    },
+    "3836866fdf": {
+      "label": "Környezet",
+      "order": 11,
+      "value": "100% természetes, vegyszermentes"
+    },
+    "e30dec40a8": {
+      "label": "Felhasználás",
+      "order": 12,
+      "value": "Kályha, kandalló, kazán, grillezés"
+    },
+    "12934c1c69": {
+      "label": "Tárolás",
+      "order": 13,
+      "value": "Száraz, fedett helyen, közvetlen nedvességtől védve"
+    },
+    "4602124e9e": {
+      "label": "Raklapos kiszerelés",
+      "order": null,
+      "value": "960 kg (96 csomag × 10 kg/csomag)"
+    }
+  },
+  "shippingDetails": {
+    "weight": 960,
+    "length": 120,
+    "width": 80,
+    "height": 100
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 52
+  },
+  "image": "/termekek/pini-kay-brikett.jpg",
+  "images": [
+    {
+      "src": "/images/products/pini-kay-brikett-csomag",
+      "alt": "Pini-Kay keményfa brikett I. osztály – 10 kg-os csomag, 12 darab keményfa brikett"
+    },
+    {
+      "src": "/images/products/pini-kay-brikett-csomag_darab",
+      "alt": "Pini-Kay keményfa brikett I. osztály – egy darab keményfa brikett és egy 10 kg-os csomag egymás mellett"
+    },
+    {
+      "src": "/images/products/pini-kay-brikett-raklap",
+      "alt": "Pini-Kay keményfa brikett I. osztály – raklapos kiszerelés, 96 csomag keményfa brikett"
+    },
+    {
+      "src": "/images/products/pini-kay-brikett-raklap-2",
+      "alt": "Pini-Kay keményfa brikett I. osztály – teljes raklap, 960 kg keményfa brikett (96 csomag × 10 kg)"
+    },
+    {
+      "src": "/images/products/pini-kay-brikett-darab",
+      "alt": "Pini-Kay keményfa brikett I. osztály – egy darab keményfa brikett közelről"
+    },
+    {
+      "src": "/images/products/pini-kay-brikett-darab-top",
+      "alt": "Pini-Kay keményfa brikett I. osztály – felülnézetből, jól látható a lyukas (üreges) szerkezet"
+    }
+  ],
+  "variants": [
+    {
+      "id": "v_04b41a1361b025fc",
+      "title": "Alap",
+      "sku": "brikett-pini-kay-tolgy",
+      "variant_rank": 0,
+      "price": 162,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": 5,
+      "discountValidUntil": "2026-02-14T23:00:00.000Z",
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 162,
+  "priceTo": null,
+  "discountPercent": 5,
+  "discountValidUntil": "2026-02-14T23:00:00.000Z",
+  "hasDiscount": true
+}

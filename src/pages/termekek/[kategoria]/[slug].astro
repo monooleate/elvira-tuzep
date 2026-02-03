@@ -1,18 +1,20 @@
 ---
+import { USE_API } from "~/lib/useApiFlag";
 import Layout from '../../../layouts/PageLayout.astro'
 import ProductInteractiveBlock from '~/components/common/ProductInteractiveBlock.jsx';
 import ProductGallery from '~/components/widgets/ProductGallery.tsx';
 import RelatedBlogSection from '~/components/widgets/RelatedBlogSection.astro';
-import DiscountCardClient from '~/components/widgets/DiscountCardClient';
+import ProductCard from '~/components/widgets/ProductCard';
 import HtmlExcerpt from '~/components/widgets/HtmlExcerpt';
 import { HTMLString } from "astro/runtime/server/index.js";
 import { fetchProductBySlug, fetchRelatedProducts, fetchProductPaths, fetchCategoryMetaBySlug } from '../../../lib/medusa-adapter';
 import VariantTable from "~/components/widgets/VariantTable.tsx";
+import { computeFinalPriceInfo } from "~/lib/discounts";
+
 function formatPrice(value) {
   return typeof value === 'number' ? value.toLocaleString('hu-HU') : '';
 }
 
-import { USE_API } from "~/lib/useApiFlag";
 // Csak akkor generál statikus oldalakat, ha nem SSR
 export const prerender = !USE_API;
 
@@ -21,7 +23,6 @@ export async function getStaticPaths() {
     // SSR módban nem kell buildidőben útvonal
     return [];
   }
-
   // SSG módban buildidőben legenerálja az összes termék útvonalat
   return await fetchProductPaths();
 }
@@ -34,72 +35,109 @@ const [product, category, relatedProducts] = await Promise.all([
   fetchRelatedProducts(params.kategoria, params.slug)
 ])
 
-/* console.log(fetchProductBySlug(params.slug)) */
-/* console.log(product?.longDescription3) */
-
 if (!product || !category) {
   console.error("❌ Product page fetch failed:", params.slug)
   throw new Error(`Nincs ilyen termék vagy kategória: ${params.slug}`)
 }
 
 const now = new Date();
-const hasPrice = typeof product.price === 'number' && product.price > 0;
 
-const discountUntil = product.discountValidUntil ? new Date(product.discountValidUntil) : null;
-const hasTimeValid = discountUntil && discountUntil > now;
+// Helper: akciós adatok számítása egy adott variánshoz
+function calculateDiscount(variant) {
+  const hasPrice = typeof variant.price === 'number' && variant.price > 0;
+  
+  const discountUntil = variant.discountValidUntil ? new Date(variant.discountValidUntil) : null;
+  const hasTimeValid = discountUntil && discountUntil > now;
 
-const hasValidDiscountPrice =
-  typeof product.discountPrice === 'number' &&
-  product.discountPrice > 0 &&
-  product.discountPrice < product.price &&
-  hasTimeValid;
+  const hasValidDiscountPrice =
+    typeof variant.discountPrice === 'number' &&
+    variant.discountPrice > 0 &&
+    variant.discountPrice < variant.price &&
+    hasTimeValid;
 
-const hasValidDiscountPercent =
-  typeof product.discountPercent === 'number' &&
-  product.discountPercent > 0 &&
-  product.discountPercent < 100 &&
-  hasTimeValid;
+  const hasValidDiscountPercent =
+    typeof variant.discountPercent === 'number' &&
+    variant.discountPercent > 0 &&
+    variant.discountPercent < 100 &&
+    hasTimeValid;
 
-const hasDiscount = (hasValidDiscountPrice || hasValidDiscountPercent) && hasTimeValid;
+  const hasDiscount = (hasValidDiscountPrice || hasValidDiscountPercent) && hasTimeValid;
 
-// Ár számítás
-const discountPrice = hasValidDiscountPrice
-  ? product.discountPrice
-  : (hasValidDiscountPercent
-      ? Math.round(product.price * (1 - product.discountPercent / 100))
-      : null);
+  // Ár számítás
+  const discountPrice = hasValidDiscountPrice
+    ? variant.discountPrice
+    : (hasValidDiscountPercent
+        ? Math.round(variant.price * (1 - variant.discountPercent / 100))
+        : null);
 
-const discountPercent = hasValidDiscountPercent
-  ? product.discountPercent
-  : (hasValidDiscountPrice && discountPrice
-      ? Math.round((1 - discountPrice / product.price) * 100)
-      : null);
+  const discountPercent = hasValidDiscountPercent
+    ? variant.discountPercent
+    : (hasValidDiscountPrice && discountPrice
+        ? Math.round((1 - discountPrice / variant.price) * 100)
+        : null);
 
-const discountPercentView = parseFloat(Number(discountPercent).toFixed(1));
+  const discountPercentView = parseFloat(Number(discountPercent).toFixed(1));
 
-// m ár csak akkor változik, ha van érvényes százalékos kedvezmény
-const hasMPrice = typeof product.mprice === 'number' && product.mprice > 0;
-const discountMPrice = hasMPrice && hasValidDiscountPercent
-  ? Math.round(product.mprice * (1 - product.discountPercent / 100))
-  : product.mprice;
+  // m ár csak akkor változik, ha van érvényes százalékos kedvezmény
+  const hasMPrice = typeof variant.mprice === 'number' && variant.mprice > 0;
+  const discountMPrice = hasMPrice && hasValidDiscountPercent
+    ? Math.round(variant.mprice * (1 - variant.discountPercent / 100))
+    : variant.mprice;
 
-// m2 ár is csak akkor változik, ha van érvényes százalékos kedvezmény
-const hasM2Price = typeof product.m2price === 'number' && product.m2price > 0;
-const discountM2Price = hasM2Price && hasValidDiscountPercent
-  ? Math.round(product.m2price * (1 - product.discountPercent / 100))
-  : product.m2price;
+  // m2 ár is csak akkor változik, ha van érvényes százalékos kedvezmény
+  const hasM2Price = typeof variant.m2price === 'number' && variant.m2price > 0;
+  const discountM2Price = hasM2Price && hasValidDiscountPercent
+    ? Math.round(variant.m2price * (1 - variant.discountPercent / 100))
+    : variant.m2price;
 
-// m3 ár csak akkor változik, ha van érvényes százalékos kedvezmény
-const hasM3Price = typeof product.m3price === 'number' && product.m3price > 0;
-const discountM3Price = hasM3Price && hasValidDiscountPercent
-  ? Math.round(product.m3price * (1 - product.discountPercent / 100))
-  : product.m3price;
+  // m3 ár csak akkor változik, ha van érvényes százalékos kedvezmény
+  const hasM3Price = typeof variant.m3price === 'number' && variant.m3price > 0;
+  const discountM3Price = hasM3Price && hasValidDiscountPercent
+    ? Math.round(variant.m3price * (1 - variant.discountPercent / 100))
+    : variant.m3price;
 
-// raklap ár is csak akkor változik, ha van érvényes százalékos kedvezmény
-const hasPalPrice = typeof product.palprice === 'number' && product.palprice > 0;
-const discountPalPrice = hasPalPrice && hasValidDiscountPercent
-  ? Math.round(product.palprice * (1 - product.discountPercent / 100))
-  : product.palprice;
+  // raklap ár is csak akkor változik, ha van érvényes százalékos kedvezmény
+  const hasPalPrice = typeof variant.palprice === 'number' && variant.palprice > 0;
+  const discountPalPrice = hasPalPrice && hasValidDiscountPercent
+    ? Math.round(variant.palprice * (1 - variant.discountPercent / 100))
+    : variant.palprice;
+
+  return {
+    hasPrice,
+    hasDiscount,
+    discountPrice,
+    discountPercent,
+    discountPercentView,
+    discountValidUntil: variant.discountValidUntil,
+    hasMPrice,
+    discountMPrice,
+    hasM2Price,
+    discountM2Price,
+    hasM3Price,
+    discountM3Price,
+    hasPalPrice,
+    discountPalPrice
+  };
+}
+
+// Ha egy variáns van, azt vesszük alapnak
+const isSingleVariant = product?.variants?.length === 1;
+const firstVariant = product?.variants?.[0];
+const firstVariantDiscount = calculateDiscount(firstVariant);
+const firstPriceInfo = firstVariant ? computeFinalPriceInfo(firstVariant) : null;
+const firstVariantUi = firstVariant
+  ? { ...firstVariant, priceInfo: firstPriceInfo }
+  : null;
+const productUi = {
+  ...product,
+  variants: (product.variants ?? []).map(v => ({
+    ...v,
+    priceInfo: computeFinalPriceInfo(v),
+  })),
+};
+// Galéria akciós jelzéséhez: ha BÁRMELY variáns akciós
+const hasAnyDiscount = product?.variants?.some(v => calculateDiscount(v).hasDiscount);
+const maxDiscountPercent = Math.max(...product.variants.map(v => calculateDiscount(v).discountPercent || 0));
 
 function buildImageUrl(path) {
   // ha már van kiterjesztés és méret, hagyjuk
@@ -158,18 +196,6 @@ function buildProductDimensions(p) {
   return Object.keys(out).length ? out : undefined;
 }
 
-// Offer alá CSAK a shippingWeight-et visszük (ha megadtad a JSON-ban)
-function buildOfferShippingDetails(p) {
-  const w = p?.shippingDetails?.shippingWeight;
-  if (typeof w === 'number') {
-    return {
-      "@type": "OfferShippingDetails",
-      "shippingWeight": { "@type":"QuantitativeValue", "value": w, "unitText":"kg" }
-    };
-  }
-  return undefined;
-}
-
 // Darabár felirat: hossz CSAK a specs-ből (nem számolunk)
 function buildPieceOfferName(baseName, p) {
   let len = p?.specs?.["Hossz"] || p?.specs?.["Hossz (darab)"];
@@ -188,7 +214,6 @@ function buildPieceOfferName(baseName, p) {
 }
 
 const productDims = buildProductDimensions(product);
-const offerShip = buildOfferShippingDetails(product);
 
 function endOfMonthISO(base = new Date()) {
   const end = new Date(base.getFullYear(), base.getMonth() + 1, 0);
@@ -220,13 +245,7 @@ const brand =
     ? pruneNulls({ "@type": "Brand", "name": product.brandName, "sameAs": product.brandUrl ? [product.brandUrl] : null })
     : { "@type": "Brand", "name": "Elvira Tüzép" };
 
-const audienceBlock = null /*  Array.isArray(product.audience) && product.audience.length
-  ? product.audience.map(aud => ({ "@type": "Audience", "audienceType": aud }))
-  : [
-      { "@type": "Audience", "audienceType": "kivitelezők" },
-      { "@type": "Audience", "audienceType": "asztalosok" },
-      { "@type": "Audience", "audienceType": "építtetők" }
-    ]; */
+const audienceBlock = null;
 
 const shippingDetailsHU = {
   "@type": "OfferShippingDetails",
@@ -259,7 +278,7 @@ const shippingDetailsHU = {
 const merchantReturnPolicyHU = {
   "@type": "MerchantReturnPolicy",
   "applicableCountry": "HU",
-  "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", // mert van 14 nap
+  "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
   "merchantReturnLink": "https://elviratuzep.hu/visszakuldes",
   "returnMethod": "https://schema.org/ReturnInStore",
   "returnFees": "https://schema.org/FreeReturn",
@@ -293,53 +312,6 @@ const sameAsClean = Array.isArray(product.sameAs)
   ? product.sameAs.filter(u => !/wikipedia\.org|wikidata\.org/i.test(u))
   : [];
 
-let calc_shippingWeight = null
-
-function getShippingDetails(product) {
-  const sd = product.shippingDetails;
-  if (!sd) return undefined;
-
-  calc_shippingWeight=sd.shippingWeight
-
-  const hasAny =
-    typeof sd.shippingWeight === 'number' ||
-    typeof sd.depth === 'number' ||
-    typeof sd.width === 'number' ||
-    typeof sd.height === 'number';
-
-  if (!hasAny) return undefined;
-
-  return {
-    "@type": "OfferShippingDetails",
-    ...(typeof sd.depth === 'number' && {
-      depth: {
-        "@type": "QuantitativeValue",
-        value: sd.depth,
-        unitText: "cm",
-        unitCode: "CMT"
-      }
-    }),
-    ...(typeof sd.width === 'number' && {
-      width: {
-        "@type": "QuantitativeValue",
-        value: sd.width,
-        unitText: "cm",
-        unitCode: "CMT"
-      }
-    }),
-    ...(typeof sd.height === 'number' && {
-      height: {
-        "@type": "QuantitativeValue",
-        value: sd.height,
-        unitText: "cm",
-        unitCode: "CMT"
-      }
-    })
-  };
-}
-
-const shipping = getShippingDetails(product);
-
 function specsToAdditionalProperty(specs) {
   if (!specs || typeof specs !== "object") return undefined;
 
@@ -353,26 +325,189 @@ function specsToAdditionalProperty(specs) {
     if (val && typeof val === "object" && "value" in val) {
       return {
         "@type": "PropertyValue",
-        name: val.label || key,
-        value: val.value ?? "",
+        "name": val.label || key,
+        "value": val.value ?? "",
       };
     }
 
     // 🔙 Régi típus: sima string érték
     return {
       "@type": "PropertyValue",
-      name: key,
-      value: String(val),
+      "name": key,
+      "value": String(val),
     };
   });
 }
 
-
 const additionalProperty = specsToAdditionalProperty(product.specs);
 
+// Helper: offer generálás egy variánshoz
+function createVariantOffers(variant, productName, categorySlug, productSlug) {
+  const discount = calculateDiscount(variant);
+  const offers = [];
+
+  // Darabár
+  if (discount.hasPrice) {
+    offers.push(pruneNulls({
+      "@type": "Offer",
+      "@id": `https://elviratuzep.hu/termekek/${categorySlug}/${productSlug}#offer-${variant.id}-darab`,
+      "sku": variant.sku || null,
+      "priceCurrency": "HUF",
+      "price": discount.hasDiscount && discount.discountPrice ? discount.discountPrice : variant.price,
+      "availability": variant.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+      "url": `https://elviratuzep.hu/termekek/${categorySlug}/${productSlug}`,
+      "itemCondition": "https://schema.org/NewCondition",
+      "name": variant.title ? `${productName} – ${variant.title}` : buildPieceOfferName(productName, product),
+      "seller": { "@id": STORE_ID },
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": discount.hasDiscount && discount.discountPrice ? discount.discountPrice : variant.price,
+        "priceCurrency": "HUF",
+        "unitCode": "C62"
+      },
+      ...(discount.hasDiscount && discount.discountValidUntil ? {
+        "validThrough": discount.discountValidUntil,
+        "priceValidUntil": discount.discountValidUntil
+      } : {
+        "priceValidUntil": endOfMonthISO()
+      }),
+      "shippingDetails": shippingDetailsHU,
+      "hasMerchantReturnPolicy": merchantReturnPolicyHU
+    }));
+  }
+
+  // Méterár
+  if (discount.hasMPrice) {
+    offers.push(pruneNulls({
+      "@type": "Offer",
+      "@id": `https://elviratuzep.hu/termekek/${categorySlug}/${productSlug}#offer-${variant.id}-meterar`,
+      "sku": variant.sku || null,
+      "priceCurrency": "HUF",
+      "price": discount.discountMPrice,
+      "availability": variant.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+      "url": `https://elviratuzep.hu/termekek/${categorySlug}/${productSlug}`,
+      "itemCondition": "https://schema.org/NewCondition",
+      "name": `${productName} – méterár${variant.title ? ` (${variant.title})` : ''}`,
+      "seller": { "@id": STORE_ID },
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": discount.discountMPrice,
+        "priceCurrency": "HUF",
+        "unitCode": "MTR"
+      },
+      ...(discount.hasDiscount && discount.discountValidUntil ? {
+        "validThrough": discount.discountValidUntil,
+        "priceValidUntil": discount.discountValidUntil
+      } : {
+        "priceValidUntil": endOfMonthISO()
+      }),
+      "shippingDetails": shippingDetailsHU,
+      "hasMerchantReturnPolicy": merchantReturnPolicyHU
+    }));
+  }
+
+  // m2 ár
+  if (discount.hasM2Price) {
+    offers.push(pruneNulls({
+      "@type": "Offer",
+      "@id": `https://elviratuzep.hu/termekek/${categorySlug}/${productSlug}#offer-${variant.id}-nm2ar`,
+      "sku": variant.sku || null,
+      "priceCurrency": "HUF",
+      "price": discount.discountM2Price,
+      "availability": variant.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+      "url": `https://elviratuzep.hu/termekek/${categorySlug}/${productSlug}`,
+      "itemCondition": "https://schema.org/NewCondition",
+      "name": `${productName} – négyzetméterár${variant.title ? ` (${variant.title})` : ''}`,
+      "seller": { "@id": STORE_ID },
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": discount.discountM2Price,
+        "priceCurrency": "HUF",
+        "unitCode": "MTK"
+      },
+      ...(discount.hasDiscount && discount.discountValidUntil ? {
+        "validThrough": discount.discountValidUntil,
+        "priceValidUntil": discount.discountValidUntil
+      } : {
+        "priceValidUntil": endOfMonthISO()
+      }),
+      "shippingDetails": shippingDetailsHU,
+      "hasMerchantReturnPolicy": merchantReturnPolicyHU
+    }));
+  }
+
+  // m3 ár
+  if (discount.hasM3Price) {
+    offers.push(pruneNulls({
+      "@type": "Offer",
+      "@id": `https://elviratuzep.hu/termekek/${categorySlug}/${productSlug}#offer-${variant.id}-m3ar`,
+      "sku": variant.sku || null,
+      "priceCurrency": "HUF",
+      "price": discount.discountM3Price,
+      "availability": variant.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+      "url": `https://elviratuzep.hu/termekek/${categorySlug}/${productSlug}`,
+      "itemCondition": "https://schema.org/NewCondition",
+      "name": `${productName} – köbméterár${variant.title ? ` (${variant.title})` : ''}`,
+      "seller": { "@id": STORE_ID },
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": discount.discountM3Price,
+        "priceCurrency": "HUF",
+        "unitCode": "MTQ"
+      },
+      ...(discount.hasDiscount && discount.discountValidUntil ? {
+        "validThrough": discount.discountValidUntil,
+        "priceValidUntil": discount.discountValidUntil
+      } : {
+        "priceValidUntil": endOfMonthISO()
+      }),
+      "shippingDetails": shippingDetailsHU,
+      "hasMerchantReturnPolicy": merchantReturnPolicyHU
+    }));
+  }
+
+  // Raklapár
+  if (discount.hasPalPrice) {
+    offers.push(pruneNulls({
+      "@type": "Offer",
+      "@id": `https://elviratuzep.hu/termekek/${categorySlug}/${productSlug}#offer-${variant.id}-raklapar`,
+      "sku": variant.sku || null,
+      "priceCurrency": "HUF",
+      "price": discount.discountPalPrice,
+      "availability": variant.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+      "url": `https://elviratuzep.hu/termekek/${categorySlug}/${productSlug}`,
+      "itemCondition": "https://schema.org/NewCondition",
+      "name": `${productName} – raklapár${variant.title ? ` (${variant.title})` : ''}`,
+      "seller": { "@id": STORE_ID },
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": discount.discountPalPrice,
+        "priceCurrency": "HUF",
+        "unitCode": "C62",
+        "unitText": "raklap"
+      },
+      ...(discount.hasDiscount && discount.discountValidUntil ? {
+        "validThrough": discount.discountValidUntil,
+        "priceValidUntil": discount.discountValidUntil
+      } : {
+        "priceValidUntil": endOfMonthISO()
+      }),
+      "shippingDetails": shippingDetailsHU,
+      "hasMerchantReturnPolicy": merchantReturnPolicyHU
+    }));
+  }
+
+  return offers;
+}
+
+// Schema generálás
 let schemaProduct;
-if(!product.variants) {
-    schemaProduct = pruneNulls({
+
+if (isSingleVariant) {
+  // Egy variáns esetén: termékszintű schema az összes árral
+  const allOffers = createVariantOffers(firstVariant, product.name, category.slug, product.slug);
+
+  schemaProduct = pruneNulls({
     "@context": "https://schema.org",
     "@type": "Product",
     "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#product`,
@@ -381,7 +516,7 @@ if(!product.variants) {
     "name": product.name,
     "image": images,
     "description": product.description,
-    "sku": product.sku,
+    "sku": firstVariant.sku,
     ...(product.mpn ? { "mpn": product.mpn } : {}),
     ...(product.gtin13 ? { "gtin13": product.gtin13 } : {}),
     "brand": brand,
@@ -397,209 +532,23 @@ if(!product.variants) {
         "@type": "AggregateRating",
         "ratingValue": (() => {
           const raw = product.aggregateRating.ratingValue;
-
-          // Ha szám → visszaadjuk
           if (typeof raw === "number" && !isNaN(raw)) return raw;
-
-          // Ha string → normalize
           if (typeof raw === "string") {
             const normalized = raw.trim().replace(",", ".");
             const numeric = Number(normalized);
             return !isNaN(numeric) ? numeric : undefined;
           }
-
           return undefined;
         })(),
         "reviewCount": Number(product.aggregateRating.reviewCount)
       }
     } : {}),
-    "offers": pruneNulls([
-      (typeof product.price === "number" && product.price > 0) ? pruneNulls({
-        "@type": "Offer",
-        "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-darab`,
-        "priceCurrency": "HUF",
-        "price": hasDiscount && discountPrice ? discountPrice : product.price,
-        "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
-        "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
-        "itemCondition": "https://schema.org/NewCondition",
-        "name": buildPieceOfferName(product.name, product),
-        "seller": { "@id": STORE_ID },
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": hasDiscount && discountPrice ? discountPrice : product.price,
-          "priceCurrency": "HUF",
-          "unitCode": "C62"
-        },
-        ...(hasValidDiscountPercent && product.discountValidUntil ? {
-          "validThrough": product.discountValidUntil,
-          "priceValidUntil": product.discountValidUntil
-        } : {
-          "priceValidUntil": endOfMonthISO()
-        }),
-        "shippingDetails": shippingDetailsHU,
-        "hasMerchantReturnPolicy": merchantReturnPolicyHU
-      }) : null,
-
-      (typeof product.mprice === "number" && product.mprice > 0) ? pruneNulls({
-        "@type": "Offer",
-        "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-meterar`,
-        "priceCurrency": "HUF",
-        "price": hasValidDiscountPercent
-          ? Math.round(product.mprice * (1 - (discountPercent ?? 0) / 100))
-          : product.mprice,
-        "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
-        "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
-        "itemCondition": "https://schema.org/NewCondition",
-        "name": `${product.name} – méterár`,
-        "seller": { "@id": STORE_ID },
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": hasValidDiscountPercent
-            ? Math.round(product.mprice * (1 - (discountPercent ?? 0) / 100))
-            : product.mprice,
-          "priceCurrency": "HUF",
-          "unitCode": "MTR"
-        },
-        ...(hasValidDiscountPercent && product.discountValidUntil ? {
-          "validThrough": product.discountValidUntil,
-          "priceValidUntil": product.discountValidUntil
-        } : {
-          "priceValidUntil": endOfMonthISO()
-        }),
-        "shippingDetails": shippingDetailsHU,
-        "hasMerchantReturnPolicy": merchantReturnPolicyHU
-      }) : null,
-
-      (typeof product.m2price === "number" && product.m2price > 0) ? pruneNulls({
-        "@type": "Offer",
-        "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-nm2ar`,
-        "priceCurrency": "HUF",
-        "price": hasValidDiscountPercent
-          ? Math.round(product.m2price * (1 - (discountPercent ?? 0) / 100))
-          : product.m2price,
-        "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
-        "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
-        "itemCondition": "https://schema.org/NewCondition",
-        "name": `${product.name} – négyzetméterár`,
-        "seller": { "@id": STORE_ID },
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": hasValidDiscountPercent
-            ? Math.round(product.m2price * (1 - (discountPercent ?? 0) / 100))
-            : product.m2price,
-          "priceCurrency": "HUF",
-          "unitCode": "MTK"
-        },
-        ...(hasValidDiscountPercent && product.discountValidUntil ? {
-          "validThrough": product.discountValidUntil,
-          "priceValidUntil": product.discountValidUntil
-        } : {
-          "priceValidUntil": endOfMonthISO()
-        }),
-        "shippingDetails": shippingDetailsHU,
-        "hasMerchantReturnPolicy": merchantReturnPolicyHU
-      }) : null,
-
-      (typeof product.m3price === "number" && product.m3price > 0) ? pruneNulls({
-        "@type": "Offer",
-        "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-m3ar`,
-        "priceCurrency": "HUF",
-        "price": hasValidDiscountPercent
-          ? Math.round(product.m3price * (1 - (discountPercent ?? 0) / 100))
-          : product.m3price,
-        "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
-        "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
-        "itemCondition": "https://schema.org/NewCondition",
-        "name": `${product.name} – köbméterár`,
-        "seller": { "@id": STORE_ID },
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": hasValidDiscountPercent
-            ? Math.round(product.m3price * (1 - (discountPercent ?? 0) / 100))
-            : product.m3price,
-          "priceCurrency": "HUF",
-          "unitCode": "MTQ"
-        },
-        ...(hasValidDiscountPercent && product.discountValidUntil ? {
-          "validThrough": product.discountValidUntil,
-          "priceValidUntil": product.discountValidUntil
-        } : {
-          "priceValidUntil": endOfMonthISO()
-        }),
-        "shippingDetails": shippingDetailsHU,
-        "hasMerchantReturnPolicy": merchantReturnPolicyHU
-      }) : null,
-
-      (typeof product.palprice === "number" && product.palprice > 0) ? pruneNulls({
-        "@type": "Offer",
-        "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#offer-huf-raklapar`,
-        "priceCurrency": "HUF",
-        "price": hasValidDiscountPercent
-          ? Math.round(product.palprice * (1 - (discountPercent ?? 0) / 100))
-          : product.palprice,
-        "availability": product.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
-        "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
-        "itemCondition": "https://schema.org/NewCondition",
-        "name": `${product.name} – raklapár`,
-        "seller": { "@id": STORE_ID },
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": hasValidDiscountPercent
-            ? Math.round(product.palprice * (1 - (discountPercent ?? 0) / 100))
-            : product.palprice,
-          "priceCurrency": "HUF",
-          "unitCode": "C62",
-          "unitText":"raklap"
-        },
-        ...(hasValidDiscountPercent && product.discountValidUntil ? {
-          "validThrough": product.discountValidUntil,
-          "priceValidUntil": product.discountValidUntil
-        } : {
-          "priceValidUntil": endOfMonthISO()
-        }),
-        "shippingDetails": shippingDetailsHU,
-        "hasMerchantReturnPolicy": merchantReturnPolicyHU
-      }) : null
-    ])
+    "offers": allOffers
   });
-} 
-else {
-  const variantOffers = product.variants.map(v =>
-    pruneNulls({
-      "@type": "Offer",
-      "@id": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}#variant-${v.id}`,
-      "sku": v.sku || null,
-      "url": `https://elviratuzep.hu/termekek/${category.slug}/${product.slug}`,
-      "priceCurrency": "HUF",
-      "price": v.price,
-      "availability": v.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
-      "itemCondition": "https://schema.org/NewCondition",
-      "seller": { "@id": STORE_ID },
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
-        "price": v.price,
-        "priceCurrency": "HUF",
-        "unitCode": v.unitCode || "C62"
-      },
-      "additionalProperty": [
-        v.title
-          ? {
-              "@type": "PropertyValue",
-              "name": "Változat",
-              "value": v.title
-            }
-          : null,
-        v.variantType
-          ? {
-              "@type": "PropertyValue",
-              "name": "Típus",
-              "value": v.variantType
-            }
-          : null
-      ].filter(Boolean),
-      "shippingDetails": shippingDetailsHU,
-      "hasMerchantReturnPolicy": merchantReturnPolicyHU
-    })
+} else {
+  // Több variáns esetén: minden variánshoz külön offer
+  const allVariantOffers = product.variants.flatMap(v => 
+    createVariantOffers(v, product.name, category.slug, product.slug)
   );
 
   schemaProduct = pruneNulls({
@@ -625,24 +574,19 @@ else {
             "@type": "AggregateRating",
             "ratingValue": (() => {
               const raw = product.aggregateRating.ratingValue;
-
-              // Ha szám → visszaadjuk
               if (typeof raw === "number" && !isNaN(raw)) return raw;
-
-              // Ha string → normalize
               if (typeof raw === "string") {
                 const normalized = raw.trim().replace(",", ".");
                 const numeric = Number(normalized);
                 return !isNaN(numeric) ? numeric : undefined;
               }
-
               return undefined;
             })(),
             "reviewCount": Number(product.aggregateRating.reviewCount)
           }
         }
       : {}),
-    "offers": variantOffers
+    "offers": allVariantOffers
   });
 }
 
@@ -678,8 +622,6 @@ const schemaBreadcrumb = {
   ]
 };
 
-
-
 ---
 <Layout metadata={metadata}>
 
@@ -711,10 +653,6 @@ const schemaBreadcrumb = {
             <a href={`/termekek/${category.slug}`} class="hover:underline">{category.category}</a> /
             <span class="font-medium text-gray-800 dark:text-gray-200">{product.name}</span>
           </nav>
-
-      <!--     <a href={`/termekek/${category.slug}`} class="text-orange-500 hover:underline dark:text-blue-400">
-            ← Vissza a kategóriaoldalra
-          </a> -->
         </div>
       </div>
       
@@ -728,18 +666,18 @@ const schemaBreadcrumb = {
               <ProductGallery
                 client:visible
                 product={product}
-                hasDiscount={hasDiscount}
-                discountPercent={discountPercent}
+                hasDiscount={hasAnyDiscount}
+                discountPercent={maxDiscountPercent}
               />
 
               {/* Akció jelzők a galéria fölött */}
-              {hasDiscount && discountPercent !== null && (
+              {hasAnyDiscount && maxDiscountPercent > 0 && (
                 <>
                   <div class="pointer-events-none absolute top-2 left-2 bg-red-600 text-white px-3 py-1 font-bold rounded shadow">
                     Akció
                   </div>
                   <div class="pointer-events-none absolute top-2 right-2 bg-red-600 text-white px-3 py-1 font-bold rounded shadow">
-                    -{discountPercentView}%
+                    -{parseFloat(maxDiscountPercent.toFixed(1))}%
                   </div>
                 </>
               )}
@@ -748,13 +686,13 @@ const schemaBreadcrumb = {
             <>
               <img src={product.image} alt={product.name} class="rounded shadow w-full object-cover" />
 
-              {hasDiscount && discountPercent !== null && (
+              {hasAnyDiscount && maxDiscountPercent > 0 && (
                 <>
                   <div class="absolute top-2 left-2 bg-red-600 text-white px-3 py-1 font-bold rounded shadow">
                     Akció
                   </div>
                   <div class="absolute top-2 right-2 bg-red-600 text-white px-3 py-1 font-bold rounded shadow">
-                    -{discountPercentView}%
+                    -{parseFloat(maxDiscountPercent.toFixed(1))}%
                   </div>
                 </>
               )}
@@ -763,97 +701,96 @@ const schemaBreadcrumb = {
         </div>
 
       <!-- Termék adatblokk -->
-      {!product.variants ? (     
+      {isSingleVariant ? (     
         <> 
           <div>
           <h1 class="text-3xl font-bold mb-2">{product.name}</h1>
-          <p class="text-sm text-gray-500 dark:text-gray-400">Cikkszám: {product.sku}</p></br>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Cikkszám: {firstVariant.sku}</p></br>
           <p class="text-gray-600 dark:text-gray-400 mb-4">{product.description}</p>
           
-           {hasPrice && (
+           {firstVariantDiscount.hasPrice && (
             <div class="text-lg font-semibold mb-4">
-              {hasDiscount && discountPrice !== null ? (
+              {firstVariantDiscount.hasDiscount && firstVariantDiscount.discountPrice !== null ? (
                 <>
                   Bruttó ár:
-                  <span class="line-through text-gray-500 mr-2">{formatPrice(product.price)} Ft/db</span>
-                  <span class="text-red-600 font-bold">{formatPrice(discountPrice)} Ft/db</span>
+                  <span class="line-through text-gray-500 mr-2">{formatPrice(firstVariant.price)} Ft/db</span>
+                  <span class="text-red-600 font-bold">{formatPrice(firstVariantDiscount.discountPrice)} Ft/db</span>
                 </>
               ) : (
-                `Bruttó ár: ${formatPrice(product.price)} Ft/db`
+                `Bruttó ár: ${formatPrice(firstVariant.price)} Ft/db`
               )}
             </div>
           )}
 
-          {hasMPrice && (
+          {firstVariantDiscount.hasMPrice && (
             <div class="font-semibold text-gray-700 dark:text-gray-300 mb-4">
-              {hasDiscount && discountMPrice !== null ? (
+              {firstVariantDiscount.hasDiscount && firstVariantDiscount.discountMPrice !== null ? (
                 <>
                   Bruttó ár:
-                  <span class="line-through text-gray-500 mr-2">{formatPrice(product.mprice)} Ft/m</span>
-                  <span class="text-red-600 font-bold">{formatPrice(discountMPrice)} Ft/m</span>
+                  <span class="line-through text-gray-500 mr-2">{formatPrice(firstVariant.mprice)} Ft/m</span>
+                  <span class="text-red-600 font-bold">{formatPrice(firstVariantDiscount.discountMPrice)} Ft/m</span>
                 </>
               ) : (
-                `Bruttó ár: ${formatPrice(product.mprice)} Ft/m`
+                `Bruttó ár: ${formatPrice(firstVariant.mprice)} Ft/m`
               )}
             </div>
           )}
 
-          {hasM2Price && (
+          {firstVariantDiscount.hasM2Price && (
             <div class="font-semibold text-gray-700 dark:text-gray-300 mb-4">
               Bruttó ár:
-              {hasDiscount && discountM2Price !== null ? (
+              {firstVariantDiscount.hasDiscount && firstVariantDiscount.discountM2Price !== null ? (
                 <>
-                  <span class="line-through text-gray-500 mr-2">{formatPrice(product.m2price)} Ft/m²</span>
-                  <span class="ml-2 text-red-600 font-semibold">{formatPrice(discountM2Price)} Ft/m²</span>
+                  <span class="line-through text-gray-500 mr-2">{formatPrice(firstVariant.m2price)} Ft/m²</span>
+                  <span class="ml-2 text-red-600 font-semibold">{formatPrice(firstVariantDiscount.discountM2Price)} Ft/m²</span>
                 </>
               ) : (
-                <span class="ml-2">{formatPrice(product.m2price)} Ft/m²</span>
+                <span class="ml-2">{formatPrice(firstVariant.m2price)} Ft/m²</span>
               )}
             </div>
           )}
           
-          {hasM3Price && (
+          {firstVariantDiscount.hasM3Price && (
             <div class="font-semibold text-gray-700 dark:text-gray-300 mb-4">
               Bruttó ár:
-              {hasDiscount && discountM3Price !== null ? (
+              {firstVariantDiscount.hasDiscount && firstVariantDiscount.discountM3Price !== null ? (
                 <>
-                  <span class="line-through text-gray-500 mr-2">{formatPrice(product.m3price)} Ft/m³</span>
-                  <span class="ml-2 text-red-600 font-semibold">{formatPrice(discountM3Price)} Ft/m³</span>
+                  <span class="line-through text-gray-500 mr-2">{formatPrice(firstVariant.m3price)} Ft/m³</span>
+                  <span class="ml-2 text-red-600 font-semibold">{formatPrice(firstVariantDiscount.discountM3Price)} Ft/m³</span>
                 </>
               ) : (
-                <span class="ml-2">{formatPrice(product.m3price)} Ft/m³</span>
+                <span class="ml-2">{formatPrice(firstVariant.m3price)} Ft/m³</span>
               )}
             </div>
           )}
 
-          {hasPalPrice && (
+          {firstVariantDiscount.hasPalPrice && (
             <div class="font-semibold text-gray-700 dark:text-gray-300 mb-4">
               Bruttó ár:
-              {hasDiscount && discountPalPrice !== null ? (
+              {firstVariantDiscount.hasDiscount && firstVariantDiscount.discountPalPrice !== null ? (
                 <>
-                  <span class="line-through text-gray-500 mr-2">{formatPrice(product.palprice)} Ft/raklap</span>
-                  <span class="ml-2 text-red-600 font-semibold">{formatPrice(discountPalPrice)} Ft/raklap</span>
+                  <span class="line-through text-gray-500 mr-2">{formatPrice(firstVariant.palprice)} Ft/raklap</span>
+                  <span class="ml-2 text-red-600 font-semibold">{formatPrice(firstVariantDiscount.discountPalPrice)} Ft/raklap</span>
                 </>
               ) : (
-                <span class="ml-2">{formatPrice(product.palprice)} Ft/raklap</span>
+                <span class="ml-2">{formatPrice(firstVariant.palprice)} Ft/raklap</span>
               )}
             </div>
           )}
 
           <div>
-            {product.stock > 0 ? (
+            {firstVariant.stock > 0 ? (
               <span class="text-green-600">Raktáron</span>
             ) : (
               <span class="text-orange-600">Rendelhető (2-3 munkanap)</span>
             )}
           </div>
           
-          <ProductInteractiveBlock product={product} client:load />
+          <ProductInteractiveBlock product={firstVariantUi} client:load />
         </div>
-      
-    </>
+      </>
   ) : (
-      <VariantTable product={product} client:load />
+      <VariantTable product={productUi} client:load />
       )}
       </div>
 
@@ -948,7 +885,7 @@ const schemaBreadcrumb = {
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {relatedProducts.map((p, i) => (
-                <DiscountCardClient
+                <ProductCard
                   key={(p.id as any) ?? p.sku ?? p.slug ?? i}
                   product={p}
                   currentCategorySlug={category?.slug}

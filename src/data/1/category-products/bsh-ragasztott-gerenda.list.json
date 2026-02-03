@@ -1,0 +1,333 @@
+{
+  "categorySlug": "bsh-ragasztott-gerenda",
+  "items": [
+    {
+      "slug": "bsh-ragasztott-gerenda-egyedi-meret",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda – Egyedi méretre gyártva",
+      "description": "Egyedi méretű BSH gerendák osztrák gyártásból, GL24h szilárdsági osztályban és látszó minőségben. Rugalmas gyártás, pontos méretezés, prémium esztétika.",
+      "sku": "bsh-egyedi-gl24h",
+      "image": "/termekek/bsh-gerenda-egyedi.jpg",
+      "images": [],
+      "priceFrom": null,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-egyedi-gl24h"
+      ]
+    },
+    {
+      "slug": "bsh-ragasztott-gerenda-8x12",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda 8x12cm",
+      "description": "BSH gerenda 8×12 cm-es méretben, 13,5 méteres hosszban, GL24h osztályban. Tartós, esztétikus, precíz faanyag látszó és szerkezeti célokra.",
+      "sku": "bsh-8x12-gl24h",
+      "image": "/termekek/bsh-gerenda-8x12.jpg",
+      "images": [],
+      "priceFrom": 51839,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-8x12-gl24h"
+      ]
+    },
+    {
+      "slug": "bsh-ragasztott-gerenda-8x16",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda 8x16cm",
+      "description": "BSH gerenda 8×16 cm-es méretben, 13,5 méteres hosszban, GL24h osztályban. Nagyobb fesztávokhoz és látszó szerkezetekhez ajánlott precíz és tartós faanyag.",
+      "sku": "bsh-8x16-gl24h",
+      "image": "/termekek/bsh-gerenda-8x16.jpg",
+      "images": [],
+      "priceFrom": 69118,
+      "priceTo": null,
+      "stock": 1,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-8x16-gl24h"
+      ]
+    },
+    {
+      "slug": "bsh-ragasztott-gerenda-9x9",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda 9x9cm",
+      "description": "BSH gerenda 9×9 cm-es keresztmetszetben, 4 méteres hosszban, GL24h osztályban. Kisebb faszerkezetekhez és látszó elemekhez ideális tartós és homogén faanyag.",
+      "sku": "bsh-9x9-gl24h",
+      "image": "/termekek/bsh-gerenda-9x9.jpg",
+      "images": [
+        {
+          "src": "/images/products/bsh-gerenda-9x9-csomagban",
+          "alt": "BSH ragasztott gerenda 9x9 cm – több darabos csomagban - mérettartó és esztétikus faanyag"
+        },
+        {
+          "src": "/images/products/bsh-gerenda-9x9-darab",
+          "alt": "BSH ragasztott gerenda 9x9 cm – darabos kiszerelés - GL24h minőség - gyalult és fózolt felület"
+        },
+        {
+          "src": "/images/products/bsh-gerenda-9x9-darab-2",
+          "alt": "BSH gerenda 9x9 cm – 5 darab gerenda egymás mellett - prémium faanyag - látszó szerkezeti felhasználásra - GL24h osztály"
+        }
+      ],
+      "priceFrom": 12960,
+      "priceTo": null,
+      "stock": 1,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-9x9-gl24h"
+      ]
+    },
+    {
+      "slug": "bsh-ragasztott-gerenda-10x10",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda 10x10cm",
+      "description": "BSH gerenda 10×10 cm-es méretben, 13,5 méteres hosszban, GL24h osztályban. Kompakt, mégis erős és látványos megoldás kisebb faszerkezetekhez.",
+      "sku": "bsh-10x10-gl24h",
+      "image": "/termekek/bsh-gerenda-10x10.jpg",
+      "images": [],
+      "priceFrom": 53999,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-10x10-gl24h"
+      ]
+    },
+    {
+      "slug": "bsh-ragasztott-gerenda-10x16",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda 10x16cm",
+      "description": "BSH gerenda 10×16 cm-es méretben, 13,5 méteres hosszban, GL24h minőségben. Kiváló választás erősebb faszerkezetekhez, látszó elemekhez, tetőalátámasztáshoz.",
+      "sku": "bsh-10x16-gl24h",
+      "image": "/termekek/bsh-gerenda-10x16.jpg",
+      "images": [],
+      "priceFrom": 86398,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-10x16-gl24h"
+      ]
+    },
+    {
+      "slug": "bsh-ragasztott-gerenda-10x20",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda 10x20cm",
+      "description": "BSH gerenda 10×20 cm-es keresztmetszettel, GL24h osztályban. Ideális nagyobb fesztávokhoz, teherhordó látszó szerkezetekhez, csarnokokhoz.",
+      "sku": "bsh-10x20-gl24h",
+      "image": "/termekek/bsh-gerenda-10x20.jpg",
+      "images": [],
+      "priceFrom": 107997,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-10x20-gl24h"
+      ]
+    },
+    {
+      "slug": "bsh-ragasztott-gerenda-12x12",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda 12x12cm",
+      "description": "BSH gerenda 12×12 cm keresztmetszettel, 13,5 méteres hosszal, GL24h osztályban. Stabil és esztétikus faanyag látszó tartószerkezetekhez.",
+      "sku": "bsh-12x12-gl24h",
+      "image": "/termekek/bsh-gerenda-12x12.jpg",
+      "images": [],
+      "priceFrom": 77758,
+      "priceTo": null,
+      "stock": 1,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-12x12-gl24h"
+      ]
+    },
+    {
+      "slug": "bsh-ragasztott-gerenda-12x16",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda 12x16cm",
+      "description": "BSH gerenda 12×16 cm keresztmetszettel, 13,5 méteres hosszal, GL24h osztályban. Tartós, mérettartó faanyag látszó és teherhordó szerkezetekhez.",
+      "sku": "bsh-12x16-gl24h",
+      "image": "/termekek/bsh-gerenda-12x16.jpg",
+      "images": [],
+      "priceFrom": 103677,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-12x16-gl24h"
+      ]
+    },
+    {
+      "slug": "bsh-ragasztott-gerenda-12x20",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda 12x20cm",
+      "description": "BSH gerenda 12×20 cm keresztmetszettel, 13,5 méteres hosszal, GL24h minőségben. Erős, mérettartó faanyag látszó és teherhordó szerkezetekhez.",
+      "sku": "bsh-12x20-gl24h",
+      "image": "/termekek/bsh-gerenda-12x20.jpg",
+      "images": [],
+      "priceFrom": 129597,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-12x20-gl24h"
+      ]
+    },
+    {
+      "slug": "bsh-ragasztott-gerenda-14x14",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda 14x14cm",
+      "description": "BSH gerenda 14×14 cm keresztmetszettel, 13,5 méteres hosszal, GL24h minőségben. Erős, esztétikus faanyag látszó és tartószerkezetekhez.",
+      "sku": "bsh-14x14-gl24h",
+      "image": "/termekek/bsh-gerenda-14x14.jpg",
+      "images": [],
+      "priceFrom": 103191,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-14x14-gl24h"
+      ]
+    },
+    {
+      "slug": "bsh-ragasztott-gerenda-14x20",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda 14x20cm",
+      "description": "BSH gerenda 14×20 cm keresztmetszettel, 13,5 méteres hosszal, GL24h minőségben. Strapabíró, esztétikus és mérettartó megoldás igényes faszerkezetekhez.",
+      "sku": "bsh-14x20-gl24h",
+      "image": "/termekek/bsh-gerenda-14x20.jpg",
+      "images": [],
+      "priceFrom": 147416,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-14x20-gl24h"
+      ]
+    },
+    {
+      "slug": "bsh-ragasztott-gerenda-16x16",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda 16x16cm",
+      "description": "BSH gerenda 16×16 cm keresztmetszettel, 13,5 méteres hosszal, GL24h minőségben. Nagy teherbírás, dekoratív megjelenés, hosszú élettartam kültéren és beltéren is.",
+      "sku": "bsh-16x16-gl24h",
+      "image": "/termekek/bsh-gerenda-16x16.jpg",
+      "images": [],
+      "priceFrom": 134781,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-16x16-gl24h"
+      ]
+    },
+    {
+      "slug": "bsh-ragasztott-gerenda-16x24",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda 16x24cm",
+      "description": "BSH gerenda 16×24 cm keresztmetszettel, 13,5 méteres hosszal, GL24h osztályban. Maximális teherbírás és prémium megjelenés nagy méretű faszerkezetekhez.",
+      "sku": "bsh-16x24-gl24h",
+      "image": "/termekek/bsh-gerenda-16x24.jpg",
+      "images": [],
+      "priceFrom": 202171,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-16x24-gl24h"
+      ]
+    },
+    {
+      "slug": "bsh-ragasztott-gerenda-20x20",
+      "categorySlug": "bsh-ragasztott-gerenda",
+      "name": "BSH ragasztott gerenda 20x20cm",
+      "description": "BSH gerenda 20×20 cm keresztmetszettel, 13,5 méteres hosszal, osztrák GL24h minőségben. Megbízható szerkezeti elem nagy igénybevételű faszerkezetekhez.",
+      "sku": "bsh-20x20-gl24h",
+      "image": "/termekek/bsh-gerenda-20x20.jpg",
+      "images": [],
+      "priceFrom": 210595,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "bsh-20x20-gl24h"
+      ]
+    }
+  ]
+}

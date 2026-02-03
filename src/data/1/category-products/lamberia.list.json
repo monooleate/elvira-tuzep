@@ -1,0 +1,152 @@
+{
+  "categorySlug": "lamberia",
+  "items": [
+    {
+      "slug": "lamberia-15x116-abveh",
+      "categorySlug": "lamberia",
+      "name": "Lambéria Trapéz F-profil 15x116mmx4m AB-VEH minőség",
+      "description": "Válogatott minőségű trapéz profilú lambéria, tökéletes beltéri falburkolatokhoz.",
+      "sku": "luc-lam-f-15x116-4m-abveh",
+      "image": "/termekek/lamberia-f-15x116.png",
+      "images": [],
+      "priceFrom": 2639,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-lam-f-15x116-4m-abveh"
+      ]
+    },
+    {
+      "slug": "lamberia-softline-14x121-abveh",
+      "categorySlug": "lamberia",
+      "name": "Lambéria - Softline /E profil/ 14x121mmx4m AB-VEH minőség",
+      "description": "Elegáns, gyalult felületű Softline profilú lambéria, ideális belső burkolatokhoz.",
+      "sku": "luc-lam-sl-14x121-4m-abveh",
+      "image": "/termekek/lamberia-softline-14x121.png",
+      "images": [],
+      "priceFrom": 2415,
+      "priceTo": null,
+      "stock": 1,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-lam-sl-14x121-4m-abveh"
+      ]
+    },
+    {
+      "slug": "lamberia-softline-14x121-bc",
+      "categorySlug": "lamberia",
+      "name": "Lambéria - Softline /E profil/ 14x121mmx4m BC minőség",
+      "description": "Gazdaságos megoldás belső burkolatokhoz, Softline profilú lucfenyő lambéria BC minőségben.",
+      "sku": "luc-lam-sl-14x121-4m-bc",
+      "image": "/termekek/lamberia-softline-14x121-bc.png",
+      "images": [],
+      "priceFrom": 1979,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-lam-sl-14x121-4m-bc"
+      ]
+    },
+    {
+      "slug": "lamberia-fozolt-15x116-abveh",
+      "categorySlug": "lamberia",
+      "name": "Lambéria - Borovi Fózolt /C profil/ 15x116mmx4m AB-VEH minőség",
+      "description": "Erős, fózolt profilú borovi lambéria belső falburkolatokhoz, válogatott AB-VEH minőségben.",
+      "sku": "borovi-lam-c-15x116-4m-abveh",
+      "image": "/termekek/lamberia-c-15x116-abveh.png",
+      "images": [],
+      "priceFrom": 2500,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "borovi-lam-c-15x116-4m-abveh"
+      ]
+    },
+    {
+      "slug": "lamberia-12-5x96-ab",
+      "categorySlug": "lamberia",
+      "name": "Lambéria Luc Trapéz F-profil 12,5x96mmx4m AB minőség",
+      "description": "Esztétikus, sima felületű trapéz profilú lambéria, kiváló beltéri burkoláshoz.",
+      "sku": "luc-lam-12_5x96-4m",
+      "image": "/termekek/lamberia-f-12_5x96.png",
+      "images": [],
+      "priceFrom": 1799,
+      "priceTo": null,
+      "stock": 1,
+      "discountPercent": 20,
+      "discountValidUntil": "2026-06-25",
+      "hasDiscount": true,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-lam-12_5x96-4m"
+      ]
+    },
+    {
+      "slug": "lamberia-12-5x96-bc",
+      "categorySlug": "lamberia",
+      "name": "Lambéria Trapéz F-profil 12,5x96mmx4m BC minőség",
+      "description": "Kedvező árú, trapéz profilú lambéria beltéri burkolatokhoz.",
+      "sku": "luc-lam-12_5x96-4m-bc",
+      "image": "/termekek/lamberia-f-12_5x96-bc.png",
+      "images": [],
+      "priceFrom": 1499,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-lam-12_5x96-4m-bc"
+      ]
+    },
+    {
+      "slug": "lamberia-luc-fozolt-15x116-abveh",
+      "categorySlug": "lamberia",
+      "name": "Lambéria /Fózolt - C profil/ 15x116mmx4m AB-VEH minőség",
+      "description": "Erős, fózolt profilú luc lambéria belső falburkolatokhoz, válogatott AB-VEH minőségben.",
+      "sku": "luc-lam-c-15x116-4m-abveh",
+      "image": "/termekek/lamberia-c-15x116-abveh.png",
+      "images": [],
+      "priceFrom": 2500,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-lam-c-15x116-4m-abveh"
+      ]
+    }
+  ]
+}

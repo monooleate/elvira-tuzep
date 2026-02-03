@@ -1,0 +1,201 @@
+{
+  "categorySlug": "telitett-hegyzett-colop",
+  "name": "Telített hegyezett cölöp Ø80mm",
+  "slug": "telitett-hegyezett-colop-atmero-80",
+  "meta": {
+    "title": "Telített hegyezett cölöp 80 mm – Impregnált fa oszlop | Elvira Tüzép",
+    "description": "Nagy teherbírású, telített hegyezett fa cölöp 80 mm átmérővel. Kiváló kültéri szerkezetekhez és kerítésekhez.",
+    "image": "/termekek/hegyezett-colop-atmero-8.webp"
+  },
+  "description": "Telített, impregnált hegyezett fa cölöp 80 mm átmérővel, nagy teherbírású kivitel.",
+  "longDescription": "A 80 mm-es telített hegyezett cölöp a legerősebb kivitel, ideális stabil kerítésekhez, mezőgazdasági építményekhez és tartós kerti szerkezetekhez. A télítés biztosítja a fa hosszú élettartamát és ellenállását az időjárással szemben.",
+  "longDescription2": "A nagyobb átmérő fokozott teherbírást jelent, így akár kapuoszlopként is alkalmazható. A zöld impregnálás esztétikus, természetes árnyalatot ad a fának.",
+  "longDescription3": "<div class=\"mb-6\">\n  <h3 class=\"text-xl font-semibold mb-3\">Körmart, telített cölöp Ø80 mm – magas stabilitás, nagy terhelésre</h3>\n  <p>\n    A 80 mm-es cölöp már rendkívül stabil és masszív, ezért alkalmas <strong>játszótéri elemek építéséhez, nagyobb teherbírású\n    kerítésekhez, tartóoszlopokhoz, kerti építményekhez, kapuoszlopokhoz és szerkezeti rögzítésekhez</strong>.  \n    Nagy igénybevételű helyeken is kiváló választás.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Északi  borovi fenyő erős, időtálló alapanyag</h3>\n  <p>\n    A nagy sűrűségű rostozat miatt kimagasló tartósságot és stabilitást biztosít hosszú éveken át.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Minőségellenőrzés három lépésben</h3>\n  <ul class=\"list-disc ml-6\">\n    <li>Termőhelyi ellenőrzés</li>\n    <li>Üzemi válogatás és méretellenőrzés</li>\n    <li>Csomagolás előtti végső minősítés</li>\n  </ul>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Professzionális telítési technológia</h3>\n  <table class=\"table-auto w-full mt-3\">\n    <tbody>\n      <tr><td class=\"font-semibold p-2\">Előszárítás:</td><td class=\"p-2\">30% alatti nedvesség</td></tr>\n      <tr><td class=\"font-semibold p-2\">Elővákuum:</td><td class=\"p-2\">30 perc</td></tr>\n      <tr><td class=\"font-semibold p-2\">Nyomás alatti telítés:</td><td class=\"p-2\">12,8 bar, 120 perc</td></tr>\n      <tr><td class=\"font-semibold p-2\">Utóvákuum:</td><td class=\"p-2\">15 perc</td></tr>\n    </tbody>\n  </table>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">HC4 favédelmi osztály</h3>\n  <p>\n    Tanalith favédőszerrel ellátva, <strong>közvetlenül a földbe verhető</strong>, nagy terhelés mellett is hosszú élettartamú.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Telepítési javaslat</h3>\n  <p>\n    A megfelelő stabilitás eléréséhez a cölöp teljes hosszának kb. <strong>egyharmadát</strong> ajánlott a talajba süllyeszteni.\n  </p>\n</div>",
+  "material": "Nagy nyomáson telített borovi fenyő",
+  "audience": [
+    "kertépítők",
+    "barkácsolók",
+    "faültetők"
+  ],
+  "blogtags": [
+    "kertifa",
+    "hegyezett cölöp"
+  ],
+  "specs": {
+    "a269395be3": {
+      "label": "Átmérő",
+      "order": 1,
+      "value": "80 mm"
+    },
+    "979f8115e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "1000–3000 mm"
+    },
+    "7111b0284c": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyőfa"
+    },
+    "0f0116106c": {
+      "label": "Kivitel",
+      "order": 4,
+      "value": "Egyik vége hegyezett, másik vége fózolt, körmart cölöp"
+    },
+    "aec4f12198": {
+      "label": "Impregnálás",
+      "order": 5,
+      "value": "Nyomás alatti"
+    },
+    "b963265e72": {
+      "label": "Tömeg",
+      "order": 6,
+      "value": "≈ 6–10 kg/db"
+    },
+    "564fca5cca": {
+      "label": "Felhasználás",
+      "order": 7,
+      "value": "Kerítés, tartóoszlop, mezőgazdasági építmény"
+    },
+    "f51d62e0f4": {
+      "label": "Megjegyzés",
+      "order": 8,
+      "value": "Nagy teherbírás, prémium kivitel"
+    }
+  },
+  "shippingDetails": {
+    "weight": 1,
+    "length": 50,
+    "width": 8,
+    "height": 8
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.59,
+    "reviewCount": 23
+  },
+  "image": "/termekek/hegyezett-colop-atmero-8.webp",
+  "images": [],
+  "variants": [
+    {
+      "id": "variant_01KA18ECM9FWW12V83XDQHK33H",
+      "title": "Ø80mm x 50 | hegyezett",
+      "sku": "HC08050",
+      "variant_rank": 0,
+      "price": 740,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 1,
+      "length": 50,
+      "width": 8,
+      "height": 8
+    },
+    {
+      "id": "variant_01KA18EFP047TXRNBKHFM13ADS",
+      "title": "Ø80mm x 100 | hegyezett",
+      "sku": "HC08100",
+      "variant_rank": 1,
+      "price": 1510,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": 2,
+      "length": 100,
+      "width": 8,
+      "height": 8
+    },
+    {
+      "id": "variant_01KA18EJD8WRCH7WH8P2RRVC22",
+      "title": "Ø80mm x 150 | hegyezett",
+      "sku": "HC08150",
+      "variant_rank": 2,
+      "price": 2580,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 3,
+      "length": 150,
+      "width": 8,
+      "height": 8
+    },
+    {
+      "id": "variant_01KA18EN31G8954468TY7Z0DAN",
+      "title": "Ø80mm x 180 | hegyezett",
+      "sku": "HC8180",
+      "variant_rank": 3,
+      "price": 3095,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 3,
+      "length": 180,
+      "width": 8,
+      "height": 8
+    },
+    {
+      "id": "variant_01KA18ER9JN0CKM6G0HXJZ07MW",
+      "title": "Ø80mm x 250 | hegyezett",
+      "sku": "HC08250",
+      "variant_rank": 4,
+      "price": 4189,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 6,
+      "length": 250,
+      "width": 8,
+      "height": 8
+    },
+    {
+      "id": "variant_01KA18EVBG1T2TR9Y8KA2QGN7Q",
+      "title": "Ø80mm x 300 | hegyezett",
+      "sku": "HC08300",
+      "variant_rank": 5,
+      "price": 5306,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 7,
+      "length": 300,
+      "width": 8,
+      "height": 8
+    }
+  ],
+  "stock": 5,
+  "priceFrom": 740,
+  "priceTo": 5306,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

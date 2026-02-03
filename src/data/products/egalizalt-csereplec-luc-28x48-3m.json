@@ -1,0 +1,108 @@
+{
+  "categorySlug": "csereplec-ellenlec",
+  "name": "Egalizált cserépléc luc 28x48mmx3m I-II. osztály",
+  "slug": "egalizalt-csereplec-luc-28x48-3m",
+  "meta": {
+    "title": "Egalizált luc cserépléc 28x48mm 3m | Elvira Tüzép",
+    "description": "Egalizált, szárított lucfenyő cserépléc 28x48 mm méretben, 3 m hosszban – osztrák I-II. osztályú minőség tetőszerkezetekhez, lécezéshez.",
+    "image": "/termekek/egalizalt-csereplec-luc-28x48.jpg"
+  },
+  "description": "Szárított, egalizált lucfenyő cserépléc 28x48 mm méretben, 3 m hosszban – I-II. osztályú, osztrák minőségű tetőléc.",
+  "longDescription": "Ez a 28x48 mm-es, 3 méteres hosszúságú egalizált lucfenyő cserépléc ideális választás tetőszerkezetek kialakításához, különösen akkor, ha fontos a méretpontosság és a szilárdság. Az osztrák gyártású, szárított faanyag stabil formát és hosszú élettartamot biztosít, könnyen kezelhető és gyorsan beépíthető. I-II. osztályú minőségi besorolása jó ár-érték arányt képvisel új tetők építéséhez és meglévők felújításához.",
+  "longDescription2": "Az egalizált felület garantálja az egységes vastagságot, ami különösen előnyös lécezési és szaruzathoz történő rögzítési munkák során. Alkalmas cserepek biztonságos rögzítésére, alátétszerkezetek kialakítására vagy ellenlécnek is, ahol a stabilitás és szellőzés kulcsfontosságú.",
+  "longDescription3": "",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "cserépléc",
+    "ellenléc",
+    "tetőszerkezet"
+  ],
+  "specs": {
+    "db85bf5321": {
+      "label": "Méret",
+      "order": 1,
+      "value": "28 x 48 mm"
+    },
+    "5fd2e4f1a2": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "3 m"
+    },
+    "be340899f3": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "7c98c70909": {
+      "label": "Típus",
+      "order": 4,
+      "value": "Egalizált cserépléc"
+    },
+    "9aab9dc818": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Egalizált, szárított"
+    },
+    "5fd98f8686": {
+      "label": "Minőség",
+      "order": 6,
+      "value": "I-II. osztály"
+    },
+    "82d331f781": {
+      "label": "Származás",
+      "order": 7,
+      "value": "Ausztria"
+    },
+    "b4df140c4b": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Tetőszerkezet, lécezés, ellenléc, alátétszerkezet"
+    },
+    "f9926e4a87": {
+      "label": "Mérettűrés",
+      "order": 9,
+      "value": "Maximálisan ±0,3 mm eltérés lehetséges"
+    }
+  },
+  "shippingDetails": {
+    "weight": 1,
+    "length": 300,
+    "width": 4,
+    "height": 2
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.71,
+    "reviewCount": 16
+  },
+  "image": "/termekek/egalizalt-csereplec-luc-28x48.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_fdb648291946e29a",
+      "title": "Alap",
+      "sku": "luc-csl-eg-28x48-3m",
+      "variant_rank": 0,
+      "price": 799,
+      "mprice": 266,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 799,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

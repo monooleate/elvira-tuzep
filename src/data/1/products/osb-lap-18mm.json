@@ -1,0 +1,121 @@
+{
+  "categorySlug": "osb-lapok",
+  "name": "OSB lap 18 mm – állványpadlóhoz, zsaluzáshoz",
+  "slug": "osb-lap-18mm",
+  "meta": {
+    "title": "OSB lap 18 mm | Állványpadló, zsaluzat | OSB 3 lap ár",
+    "description": "OSB lap 18 mm vastagságban – nagy teherbírású szerkezeti célokra. Csiszolt, nedvességálló OSB 3 tábla 2500×1250 mm méretben. Elérhető raktárról, kedvező áron.",
+    "image": "/termekek/osb-lap-18mm.webp"
+  },
+  "description": "18 mm vastag, csiszolt OSB lap – kiváló nagy igénybevételű szerkezeti feladatokra. Használható állványpadlóként, tetőtárcsaként, valamint zsaluzási célokra.",
+  "longDescription": "Az OSB 18 mm lap az egyik legstabilabb és legnagyobb teherbírású OSB típus, amelyet csiszolt felülete, nedvességállósága és szabványos mérete (2500×1250 mm) különösen alkalmassá tesz nehéz igénybevételű szerkezeti feladatokra. Gyakran használják állványpadlóként építkezéseken, tetőtárcsaként fedélszékekben vagy zsaluzatként monolit betonöntéshez. OSB 3 típusként ideális félig nyitott terekben is. A 3,125 m² tábla méret megkönnyíti a tervezést és az anyagszükséglet kiszámítását. Alternatívát kínál a Praktiker, OBI vagy Bauhaus OSB lap választékhoz képest – kedvezőbb árakkal, raktárról.",
+  "longDescription2": "",
+  "longDescription3": "",
+  "material": "OSB 3 nedvességálló faforgács panel",
+  "audience": [
+    "kivitelezők",
+    "állványozók",
+    "építők",
+    "ipari szakemberek"
+  ],
+  "blogtags": [
+    "osb lap",
+    "osb 18mm",
+    "osb lap ár",
+    "zsaluzat",
+    "építőanyag",
+    "állványpadló"
+  ],
+  "specs": {
+    "be03843018": {
+      "label": "Vastagság",
+      "order": 1,
+      "value": "18 mm"
+    },
+    "d3f44929fe": {
+      "label": "Tábla méret",
+      "order": 2,
+      "value": "2500 × 1250 mm"
+    },
+    "9b1bfa95eb": {
+      "label": "Tábla felülete",
+      "order": 3,
+      "value": "3,125m²"
+    },
+    "17471b2af1": {
+      "label": "Sűrűség",
+      "order": 4,
+      "value": "kb. 600–680 kg/m³"
+    },
+    "2ce91c59cb": {
+      "label": "Tömeg",
+      "order": 5,
+      "value": "~ 36,5 kg"
+    },
+    "a39255b4f5": {
+      "label": "Felület",
+      "order": 6,
+      "value": "csiszolt, éles él"
+    },
+    "0f96c995a9": {
+      "label": "Típus",
+      "order": 7,
+      "value": "OSB 3 – teherhordó, nedvességálló"
+    },
+    "76a8fdbcab": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Állványpadló, tetőtárcsa, zsaluzat, szerkezeti felépítmények"
+    },
+    "0af4780e49": {
+      "label": "Előnyök",
+      "order": 9,
+      "value": "Nagy teherbírás, csiszolt felület, hosszú élettartam"
+    },
+    "db6c6213c5": {
+      "label": "Ajánlott hely",
+      "order": 10,
+      "value": "Építkezés, ipari szerkezetek, félkültéri alkalmazások"
+    }
+  },
+  "shippingDetails": {
+    "weight": 36,
+    "length": 250,
+    "width": 125,
+    "height": 1
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.83,
+    "reviewCount": 39
+  },
+  "image": "/termekek/osb-lap-18mm.webp",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_2dba0885a7ab663b",
+      "title": "Alap",
+      "sku": "osb-18mm",
+      "variant_rank": 0,
+      "price": 10290,
+      "mprice": null,
+      "m2price": 3293,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 10290,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

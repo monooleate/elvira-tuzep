@@ -1,0 +1,106 @@
+{
+  "categorySlug": "gyalult-deszka",
+  "name": "Gyalult deszka /AF profil/ 19x190mmx4m AB-VEH minőség",
+  "slug": "luc-gyalult-deszka-19x190-abveh",
+  "meta": {
+    "title": "Luc gyalult deszka /AF profil/ 19x190mm 4m abveh",
+    "description": "Extra széles gyalult luc deszka (19×190 mm) osztrák importból, AB-VEH minőségben. Tökéletes választás belső burkolatokhoz, mennyezethez, bútorlaphoz.",
+    "image": "/termekek/luc-ronkhaz-19x190.jpg"
+  },
+  "description": "Extra széles, esztétikusan gyalult, 4 oldalon fózolt lucfenyő deszka beltérre és kültérre",
+  "longDescription": "A 19x190 mm-es lucfenyő gyalult deszka /AF profil/ ideális választás minden olyan felhasználásra, ahol a nagyobb fedőszélesség előnyt jelent. Osztrák gyártású, AB-VEH minőségű faanyag, amely 4 oldalon gyalult és fózolt, így esztétikus, kész felületet biztosít. Kiválóan használható mennyezetek, oldalfalak, polcok, bútorlapok vagy kerítések kialakításához. Kültéri használat esetén ajánlott vékonylazúros kezeléssel növelni az élettartamot.",
+  "longDescription2": "",
+  "longDescription3": "",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "nevezéktan"
+  ],
+  "specs": {
+    "f516b2d4be": {
+      "label": "Méret",
+      "order": 1,
+      "value": "19 x 190 mm"
+    },
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "be340899f3": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "b74e6957c6": {
+      "label": "Profil",
+      "order": 4,
+      "value": "AF profil (gyalult, fózolt deszka)"
+    },
+    "6de4745e8d": {
+      "label": "Felület",
+      "order": 5,
+      "value": "4 oldalon gyalult, fózolt"
+    },
+    "0fa11b965d": {
+      "label": "Származás",
+      "order": 6,
+      "value": "Ausztria"
+    },
+    "0bbf21e747": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "AB-VEH (válogatott, építőipari)"
+    },
+    "04b613f086": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Fafödémek, oromszegély, polclap, kerítésléc"
+    },
+    "840ab5bcf4": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kültéri használat esetén vékonylazúrral kezelendő"
+    }
+  },
+  "shippingDetails": {
+    "weight": 6,
+    "length": 400,
+    "width": 19,
+    "height": 1
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 8
+  },
+  "image": "/termekek/luc-ronkhaz-19x190.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_221c860638ae445e",
+      "title": "Alap",
+      "sku": "luc-gyd-19x190-4m",
+      "variant_rank": 0,
+      "price": 5239,
+      "mprice": null,
+      "m2price": 6890,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 5239,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

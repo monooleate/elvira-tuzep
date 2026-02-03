@@ -1,0 +1,106 @@
+{
+  "categorySlug": "lamberia",
+  "name": "Lambéria Trapéz F-profil 15x116mmx4m AB-VEH minőség",
+  "slug": "lamberia-15x116-abveh",
+  "meta": {
+    "title": "Lambéria F-profil 15x116mm 4m AB-VEH",
+    "description": "Trapéz (F profilú) lambéria 15×116 mm-es méretben, válogatott AB-VEH minőségben. Belső falburkolatra kiváló választás, sima gyalult felülettel.",
+    "image": "/termekek/lamberia-f-15x116.png"
+  },
+  "description": "Válogatott minőségű trapéz profilú lambéria, tökéletes beltéri falburkolatokhoz.",
+  "longDescription": "A 15x116 mm-es trapéz (F profilú) lambéria AB-VEH minőségben készült lucfenyőből, ideális választás beltéri falak és mennyezetek burkolására. A gyalult, sima felület esztétikus megjelenést nyújt, további csiszolást nem igényel. A trapéz profil letisztult vonalvezetést biztosít, amely elegánsan illeszkedik a modern vagy klasszikus enteriőrbe egyaránt. Könnyen szerelhető, természetes megjelenésével melegséget sugároz bármely térbe.",
+  "longDescription2": "",
+  "longDescription3": "",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "nevezéktan"
+  ],
+  "specs": {
+    "cd3c5dd01f": {
+      "label": "Méret",
+      "order": 1,
+      "value": "15 x 116 mm"
+    },
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "be340899f3": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "8614950dd3": {
+      "label": "Profil",
+      "order": 4,
+      "value": "F profil (trapéz formájú lambéria)"
+    },
+    "cffd8a903b": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Gyalult, sima"
+    },
+    "0fa11b965d": {
+      "label": "Származás",
+      "order": 6,
+      "value": "Ausztria"
+    },
+    "0ea8bf4d87": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "AB-VEH (válogatott burkolati minőség)"
+    },
+    "f5e3dd5b7b": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Belső fal- és mennyezetburkolat"
+    },
+    "39cf78be3c": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+    }
+  },
+  "shippingDetails": {
+    "weight": 3,
+    "length": 400,
+    "width": 11,
+    "height": 1
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.81,
+    "reviewCount": 28
+  },
+  "image": "/termekek/lamberia-f-15x116.png",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_b98786d5186e2191",
+      "title": "Alap",
+      "sku": "luc-lam-f-15x116-4m-abveh",
+      "variant_rank": 0,
+      "price": 2639,
+      "mprice": null,
+      "m2price": 5690,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 2639,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

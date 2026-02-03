@@ -1,0 +1,142 @@
+{
+  "categorySlug": "bsh-ragasztott-gerenda",
+  "name": "BSH ragasztott gerenda 12x16cm",
+  "slug": "bsh-ragasztott-gerenda-12x16",
+  "meta": {
+    "title": "BSH ragasztott gerenda 12x16cm - GL24h, osztrák gyártás",
+    "description": "BSH gerenda 12×16 cm méretben, GL24h osztályban. Stabil és időtálló megoldás faszerkezetekhez kültéren és beltéren.",
+    "image": "/termekek/bsh-gerenda-12x16.jpg"
+  },
+  "description": "BSH gerenda 12×16 cm keresztmetszettel, 13,5 méteres hosszal, GL24h osztályban. Tartós, mérettartó faanyag látszó és teherhordó szerkezetekhez.",
+  "longDescription": "A 12×16 cm-es keresztmetszetű BSH gerenda megnövelt teherbírása miatt ideális választás nagyobb szerkezeti igénybevételű faépítményekhez. Az osztrák GL24h minőségű, rétegragasztott gerenda precízen megmunkált, gyalult és fózolt kivitelben készül, így nemcsak szerkezetileg erős, de esztétikailag is kifogástalan. Alkalmazható tetőszerkezetek, áthidalók, pergolák vagy akár beltéri látszó elemek esetén is.",
+  "longDescription2": "Ez a méret remek választás, ha nagy fesztávokat kell áthidalni vagy erősebb alátámasztás szükséges. A ragasztott technológia révén a gerenda formatartó, ellenáll a vetemedésnek és repedésnek, miközben a természetes fa meleg megjelenését kínálja. A GL24h szabványnak megfelelő gerenda szerkezetileg méretezhető, így biztonságosan alkalmazható statikai tervezés mellett. A termék előkészített felülettel érkezik, lazúrozásra vagy pácolásra készen, fóliázva.",
+  "longDescription3": "",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "bsh",
+    "rétegragasztott fa"
+  ],
+  "specs": {
+    "da4c94128f": {
+      "label": "Típus",
+      "order": 1,
+      "value": "BSH ragasztott gerenda"
+    },
+    "5bbf4f9a51": {
+      "label": "Szilárdsági osztály",
+      "order": 2,
+      "value": "GL24h"
+    },
+    "2d95ffa490": {
+      "label": "Minőség",
+      "order": 3,
+      "value": "Látszó (esztétikai felhasználásra)"
+    },
+    "a71d4d1cbd": {
+      "label": "Származás",
+      "order": 4,
+      "value": "Ausztria"
+    },
+    "defc5c0456": {
+      "label": "Keresztmetszet",
+      "order": 5,
+      "value": "12 × 16 cm"
+    },
+    "2eaf20b3d2": {
+      "label": "Hossz",
+      "order": 6,
+      "value": "13,5 m"
+    },
+    "677ebb3832": {
+      "label": "Felület",
+      "order": 7,
+      "value": "7,56 m²"
+    },
+    "4aae73684a": {
+      "label": "Térfogat",
+      "order": 8,
+      "value": "0,259 m³"
+    },
+    "918dc0b3fb": {
+      "label": "Választható hosszúságok",
+      "order": 9,
+      "value": "4,5 m / 6,75 m / 9 m / 13,5 m"
+    },
+    "6786d2547f": {
+      "label": "Felülete",
+      "order": 10,
+      "value": "Gyalult, fózolt, látszó minőségű"
+    },
+    "da96e499c5": {
+      "label": "Nedvességtartalom",
+      "order": 11,
+      "value": "kb. 12% ±2%"
+    },
+    "7d81e28bc4": {
+      "label": "Tulajdonságok",
+      "order": 12,
+      "value": "Repedés- és vetemedésmentes, mérettartó"
+    },
+    "5eff2428f9": {
+      "label": "Felhasználás",
+      "order": 13,
+      "value": "Tetőszerkezet, pergola, nagy fesztávú tartók"
+    },
+    "29ff768f4d": {
+      "label": "Előnyök",
+      "order": 14,
+      "value": "Nagy teherbírás, kiemelkedő esztétikum, hosszú élettartam"
+    },
+    "ffff4f0de8": {
+      "label": "Kezelés",
+      "order": 15,
+      "value": "Pácolásra, lazúrozásra előkészítve"
+    },
+    "df5af4ef76": {
+      "label": "Csomagolás",
+      "order": 16,
+      "value": "Egyedileg fóliázott"
+    }
+  },
+  "shippingDetails": {
+    "weight": 122,
+    "length": 1350,
+    "width": 12,
+    "height": 16
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 33
+  },
+  "image": "/termekek/bsh-gerenda-12x16.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_a03e26a81d87f7c8",
+      "title": "Alap",
+      "sku": "bsh-12x16-gl24h",
+      "variant_rank": 0,
+      "price": 103677,
+      "mprice": null,
+      "m2price": null,
+      "m3price": 399990,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 103677,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

@@ -1,0 +1,138 @@
+{
+  "categorySlug": "telitett-hegyzett-colop",
+  "items": [
+    {
+      "slug": "telitett-hegyezett-colop-atmero-40",
+      "categorySlug": "telitett-hegyzett-colop",
+      "name": "Telített hegyezett cölöp Ø40mm",
+      "description": "Telített, impregnált hegyezett fa cölöp 40 mm átmérővel, kerítéshez és kertépítéshez.",
+      "sku": "HC4150",
+      "image": "/termekek/hegyezett-colop-atmero-4.webp",
+      "images": [],
+      "priceFrom": 719,
+      "priceTo": 1430,
+      "stock": 1,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Ø40mm x 150 | hegyezett",
+        "Ø40mm x 200 | hegyezett",
+        "Telített hegyezett cölöp Ø40mm"
+      ],
+      "variantSkus": [
+        "HC4150",
+        "HC4200",
+        "HC4100"
+      ]
+    },
+    {
+      "slug": "telitett-hegyezett-colop-atmero-50",
+      "categorySlug": "telitett-hegyzett-colop",
+      "name": "Telített hegyezett cölöp Ø50mm",
+      "description": "Impregnált, telített hegyezett fa cölöp 50 mm átmérővel, tartós kültéri felhasználásra.",
+      "sku": "HC5150",
+      "image": "/termekek/hegyezett-colop-atmero-5.jpg",
+      "images": [],
+      "priceFrom": 1242,
+      "priceTo": 2055,
+      "stock": 3,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Ø50mm x 150 | hegyezett",
+        "Ø50mm x 200 | hegyezett",
+        "Ø50mm x 250 | hegyezett"
+      ],
+      "variantSkus": [
+        "HC5150",
+        "HC5200",
+        "HC5250"
+      ]
+    },
+    {
+      "slug": "telitett-hegyezett-colop-atmero-60",
+      "categorySlug": "telitett-hegyzett-colop",
+      "name": "Telített hegyezett cölöp Ø60mm",
+      "description": "Telített, impregnált hegyezett fa cölöp 60 mm átmérővel, erős és időjárásálló kivitelben.",
+      "sku": "HC06125",
+      "image": "/termekek/hegyezett-colop-atmero-6.webp",
+      "images": [],
+      "priceFrom": 610,
+      "priceTo": 3056,
+      "stock": 4,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Ø60mm x 50 | hegyezett",
+        "Ø60mm x 100 | hegyezett",
+        "Ø60mm x 125 | hegyezett",
+        "Ø60mm x 150 | hegyezett",
+        "Ø60mm x 200 | hegyezett",
+        "Ø60mm x 250 | hegyezett"
+      ],
+      "variantSkus": [
+        "HC6050",
+        "HC06100",
+        "HC06125",
+        "HC06150",
+        "HC06200",
+        "HC06250"
+      ]
+    },
+    {
+      "slug": "telitett-hegyezett-colop-atmero-70",
+      "categorySlug": "telitett-hegyzett-colop",
+      "name": "Telített hegyezett cölöp Ø70mm",
+      "description": "Erős, telített hegyezett cölöp 70 mm átmérővel, hosszú élettartamra tervezve.",
+      "sku": "HC7250",
+      "image": "/termekek/hegyezett-colop-atmero-7.jpg",
+      "images": [],
+      "priceFrom": 3556,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "HC7250"
+      ]
+    },
+    {
+      "slug": "telitett-hegyezett-colop-atmero-80",
+      "categorySlug": "telitett-hegyzett-colop",
+      "name": "Telített hegyezett cölöp Ø80mm",
+      "description": "Telített, impregnált hegyezett fa cölöp 80 mm átmérővel, nagy teherbírású kivitel.",
+      "sku": "HC08050",
+      "image": "/termekek/hegyezett-colop-atmero-8.webp",
+      "images": [],
+      "priceFrom": 740,
+      "priceTo": 5306,
+      "stock": 5,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Ø80mm x 50 | hegyezett",
+        "Ø80mm x 100 | hegyezett",
+        "Ø80mm x 150 | hegyezett",
+        "Ø80mm x 180 | hegyezett",
+        "Ø80mm x 250 | hegyezett",
+        "Ø80mm x 300 | hegyezett"
+      ],
+      "variantSkus": [
+        "HC08050",
+        "HC08100",
+        "HC08150",
+        "HC8180",
+        "HC08250",
+        "HC08300"
+      ]
+    }
+  ]
+}

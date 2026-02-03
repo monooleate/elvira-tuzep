@@ -1,0 +1,142 @@
+{
+  "categorySlug": "bsh-ragasztott-gerenda",
+  "name": "BSH ragasztott gerenda 20x20cm",
+  "slug": "bsh-ragasztott-gerenda-20x20",
+  "meta": {
+    "title": "BSH ragasztott gerenda 20x20cm - GL24h, osztrák gyártás",
+    "description": "BSH gerenda 20×20 cm keresztmetszettel, kiváló GL24h osztályban. Nagy teherbírású, dekoratív gerenda kültéri és beltéri használatra.",
+    "image": "/termekek/bsh-gerenda-20x20.jpg"
+  },
+  "description": "BSH gerenda 20×20 cm keresztmetszettel, 13,5 méteres hosszal, osztrák GL24h minőségben. Megbízható szerkezeti elem nagy igénybevételű faszerkezetekhez.",
+  "longDescription": "A 20×20 cm-es BSH (rétegragasztott) gerenda rendkívül nagy szilárdsággal és formatartósággal rendelkezik. A GL24h minősítésű, homogén, osztrák gyártású faanyag garantálja a hosszú távú stabilitást és repedésmentes működést. A méretes keresztmetszet miatt ideális választás nagy teherbírású szerkezeti megoldásokhoz, mint például csarnokok, nagy méretű pergolák, tornácok vagy teraszfedések fő tartóelemei.",
+  "longDescription2": "A látszó minőségű, gyalult és fózolt felület azonnal beépíthetővé teszi a terméket esztétikai kompromisszum nélkül. A BSH technológia előnye, hogy a termék stabil, jól méretezhető, nem vetemedik, és nagyobb hosszakban is elérhető, mint a hagyományos fűrészáruk. A 20x20 cm-es kivitel különösen alkalmas olyan helyeken, ahol nagy teherbírás mellett kiemelten fontos a vizuális megjelenés is.",
+  "longDescription3": "",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "bsh",
+    "rétegragasztott fa"
+  ],
+  "specs": {
+    "da4c94128f": {
+      "label": "Típus",
+      "order": 1,
+      "value": "BSH ragasztott gerenda"
+    },
+    "5bbf4f9a51": {
+      "label": "Szilárdsági osztály",
+      "order": 2,
+      "value": "GL24h"
+    },
+    "2d95ffa490": {
+      "label": "Minőség",
+      "order": 3,
+      "value": "Látszó (esztétikai felhasználásra)"
+    },
+    "a71d4d1cbd": {
+      "label": "Származás",
+      "order": 4,
+      "value": "Ausztria"
+    },
+    "337e45df25": {
+      "label": "Keresztmetszet",
+      "order": 5,
+      "value": "20 × 20 cm"
+    },
+    "2eaf20b3d2": {
+      "label": "Hossz",
+      "order": 6,
+      "value": "13,5 m"
+    },
+    "fd8239c5c4": {
+      "label": "Felület",
+      "order": 7,
+      "value": "10,8 m²"
+    },
+    "dfb7188fea": {
+      "label": "Térfogat",
+      "order": 8,
+      "value": "0,54 m³"
+    },
+    "918dc0b3fb": {
+      "label": "Választható hosszúságok",
+      "order": 9,
+      "value": "4,5 m / 6,75 m / 9 m / 13,5 m"
+    },
+    "6786d2547f": {
+      "label": "Felülete",
+      "order": 10,
+      "value": "Gyalult, fózolt, látszó minőségű"
+    },
+    "da96e499c5": {
+      "label": "Nedvességtartalom",
+      "order": 11,
+      "value": "kb. 12% ±2%"
+    },
+    "7d81e28bc4": {
+      "label": "Tulajdonságok",
+      "order": 12,
+      "value": "Repedés- és vetemedésmentes, mérettartó"
+    },
+    "4fee39eead": {
+      "label": "Felhasználás",
+      "order": 13,
+      "value": "Csarnok, tornác, teraszfedés, szerkezeti tartóelem"
+    },
+    "1f8eb560f4": {
+      "label": "Előnyök",
+      "order": 14,
+      "value": "Magas teherbírás, tartósság, esztétikus megjelenés"
+    },
+    "0f6eb40eef": {
+      "label": "Kezelés",
+      "order": 15,
+      "value": "Lazúrozásra, pácolásra előkészítve"
+    },
+    "df5af4ef76": {
+      "label": "Csomagolás",
+      "order": 16,
+      "value": "Egyedileg fóliázott"
+    }
+  },
+  "shippingDetails": {
+    "weight": 254,
+    "length": 1350,
+    "width": 20,
+    "height": 20
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 42
+  },
+  "image": "/termekek/bsh-gerenda-20x20.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_11a423d31b74373f",
+      "title": "Alap",
+      "sku": "bsh-20x20-gl24h",
+      "variant_rank": 0,
+      "price": 210595,
+      "mprice": null,
+      "m2price": null,
+      "m3price": 389990,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 210595,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

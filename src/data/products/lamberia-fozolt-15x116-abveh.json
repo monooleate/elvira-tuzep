@@ -1,0 +1,106 @@
+{
+  "categorySlug": "lamberia",
+  "name": "Lambéria - Borovi Fózolt /C profil/ 15x116mmx4m AB-VEH minőség",
+  "slug": "lamberia-fozolt-15x116-abveh",
+  "meta": {
+    "title": "Lambéria - Borovi Fózolt /C profil/ 15x116mm 4m AB-VEH",
+    "description": "Fózolt (C profilú) borovi lambéria 15×116 mm-es méretben, AB-VEH minőségben. Erősebb, tartósabb fafajta beltéri falburkolathoz.",
+    "image": "/termekek/lamberia-c-15x116-abveh.png"
+  },
+  "description": "Erős, fózolt profilú borovi lambéria belső falburkolatokhoz, válogatott AB-VEH minőségben.",
+  "longDescription": "A 15x116 mm-es fózolt (C profil) borovi lambéria különösen tartós és időtálló megoldást kínál belső fal- és mennyezetburkolatokhoz. A borovi fenyő keményebb, sűrűbb szerkezetű, mint a lucfenyő, így kiválóan alkalmas nagyobb igénybevételnek kitett helyiségekbe is. A precízen gyalult felület, a profil kialakítása és a természetes színvilág elegáns, meleg hatást kelt. Az AB-VEH minőség garantálja az esztétikus megjelenést és a könnyű feldolgozhatóságot.",
+  "longDescription2": "",
+  "longDescription3": "",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "nevezéktan"
+  ],
+  "specs": {
+    "cd3c5dd01f": {
+      "label": "Méret",
+      "order": 1,
+      "value": "15 x 116 mm"
+    },
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "74867518aa": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Borovi fenyő"
+    },
+    "f573ed81fe": {
+      "label": "Profil",
+      "order": 4,
+      "value": "C profil (fózolt élű lambéria)"
+    },
+    "cffd8a903b": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Gyalult, sima"
+    },
+    "0fa11b965d": {
+      "label": "Származás",
+      "order": 6,
+      "value": "Ausztria"
+    },
+    "0ea8bf4d87": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "AB-VEH (válogatott burkolati minőség)"
+    },
+    "f5e3dd5b7b": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Belső fal- és mennyezetburkolat"
+    },
+    "481834b017": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kezeletlen, lakkozásra, pácolásra vagy lazúrozásra előkészítve"
+    }
+  },
+  "shippingDetails": {
+    "weight": 3,
+    "length": 400,
+    "width": 11,
+    "height": 1
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.56,
+    "reviewCount": 17
+  },
+  "image": "/termekek/lamberia-c-15x116-abveh.png",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_d87e53b54e2ceab2",
+      "title": "Alap",
+      "sku": "borovi-lam-c-15x116-4m-abveh",
+      "variant_rank": 0,
+      "price": 2500,
+      "mprice": null,
+      "m2price": 5390,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 2500,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

@@ -1,0 +1,144 @@
+{
+  "categorySlug": "telitett-hegyzett-colop",
+  "name": "Telített hegyezett cölöp Ø50mm",
+  "slug": "telitett-hegyezett-colop-atmero-50",
+  "meta": {
+    "title": "Telített hegyezett cölöp 50 mm – Impregnált fa oszlop | Elvira Tüzép",
+    "description": "Erős, telített hegyezett fa cölöp 50 mm átmérővel. Időtálló megoldás kerítéshez, támfalhoz és kerti projektekhez.",
+    "image": "/termekek/hegyezett-colop-atmero-5.jpg"
+  },
+  "description": "Impregnált, telített hegyezett fa cölöp 50 mm átmérővel, tartós kültéri felhasználásra.",
+  "longDescription": "A 50 mm átmérőjű telített hegyezett cölöp ideális választás kisebb kerítések, ágyásszegélyek és növénytámaszok építéséhez. Az impregnálás védelmet nyújt nedvesség, korhadás és rovarok ellen, miközben természetes megjelenést biztosít.",
+  "longDescription2": "A hegyezett vég megkönnyíti a földbe ütést, a telített fenyőanyag pedig ellenáll az időjárási hatásoknak. Tartós és környezetbarát alternatíva műanyag vagy fém támaszok helyett.",
+  "longDescription3": "<div class=\"mb-6\">\n  <h3 class=\"text-xl font-semibold mb-3\">Körmart, telített cölöp Ø50 mm – kerítésekhez és általános kerti szerkezetekhez</h3>\n  <p>\n    Az 50 mm-es körmart cölöp kiválóan alkalmas <strong>könnyű kerítésekhez, kerti támasztékokhoz, kisebb támfalakhoz,\n    növénytámaszokhoz és parcellahatároláshoz</strong>. Jó tartósságot és stabilitást nyújt, miközben megőrzi a könnyű\n    kezelhetőséget.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Északi fenyőből készült tartós alapanyag</h3>\n  <p>\n    A lassú növekedésű északi borovi fenyő magas sűrűségű, ellenálló és hosszú élettartamú faanyagot biztosít kültéri használatra.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Többlépcsős minőségellenőrzés</h3>\n  <ul class=\"list-disc ml-6\">\n    <li>Első válogatás a fakitermeléskor</li>\n    <li>Második vizsgálat az üzemi osztályozóban</li>\n    <li>Harmadik ellenőrzés csomagolás előtt</li>\n  </ul>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Nagy nyomású telítés (VNV technológia)</h3>\n  <table class=\"table-auto w-full mt-3\">\n    <tbody>\n      <tr><td class=\"font-semibold p-2\">Előszárítás:</td><td class=\"p-2\">30% alatt</td></tr>\n      <tr><td class=\"font-semibold p-2\">Elővákuum:</td><td class=\"p-2\">30 perc / 600 mm Hg</td></tr>\n      <tr><td class=\"font-semibold p-2\">Telítési ciklus:</td><td class=\"p-2\">90–120 perc, 12,8 bar</td></tr>\n      <tr><td class=\"font-semibold p-2\">Utóvákuum:</td><td class=\"p-2\">15 perc</td></tr>\n    </tbody>\n  </table>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Környezettudatos favédelem</h3>\n  <p>\n    A cölöpök <strong>Tanalith E</strong> vízbázisú favédőszerrel kerülnek telítésre.  \n    Besorolás: <strong>HC4</strong> – földbe helyezve is biztonságosan használható.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Telepítési útmutató</h3>\n  <p>A cölöp hosszának kb. <strong>1/3-a</strong> legyen a talajba süllyesztve a stabil rögzítés érdekében.</p>\n</div>",
+  "material": "Nagy nyomáson telített borovi fenyő",
+  "audience": [
+    "kertépítők",
+    "barkácsolók",
+    "faültetők"
+  ],
+  "blogtags": [
+    "kertifa",
+    "hegyezett cölöp"
+  ],
+  "specs": {
+    "665bd65b03": {
+      "label": "Átmérő",
+      "order": 1,
+      "value": "50 mm"
+    },
+    "013104534e": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "1500–2500 mm"
+    },
+    "7111b0284c": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyőfa"
+    },
+    "0f0116106c": {
+      "label": "Kivitel",
+      "order": 4,
+      "value": "Egyik vége hegyezett, másik vége fózolt, körmart cölöp"
+    },
+    "5e238630b4": {
+      "label": "Impregnálás",
+      "order": 5,
+      "value": "Nyomás alatti (zöld színű)"
+    },
+    "e5b2fdbd75": {
+      "label": "Tömeg",
+      "order": 6,
+      "value": "≈ 3–5 kg/db"
+    },
+    "a3f7c89a46": {
+      "label": "Felhasználás",
+      "order": 7,
+      "value": "Kerítés, ágyásszegély, támrúd, kertépítés"
+    },
+    "634844980a": {
+      "label": "Megjegyzés",
+      "order": 8,
+      "value": "Kiváló ár-érték arányú méret"
+    }
+  },
+  "shippingDetails": {
+    "weight": 1,
+    "length": 150,
+    "width": 5,
+    "height": 5
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.87,
+    "reviewCount": 52
+  },
+  "image": "/termekek/hegyezett-colop-atmero-5.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "variant_01KA10A76KXSZA9MNKSTMS42JM",
+      "title": "Ø50mm x 150 | hegyezett",
+      "sku": "HC5150",
+      "variant_rank": 0,
+      "price": 1242,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 1,
+      "length": 150,
+      "width": 5,
+      "height": 5
+    },
+    {
+      "id": "variant_01KA10C22WR5Z082FAZZFW7CDS",
+      "title": "Ø50mm x 200 | hegyezett",
+      "sku": "HC5200",
+      "variant_rank": 1,
+      "price": 1658,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 1,
+      "length": 200,
+      "width": 5,
+      "height": 5
+    },
+    {
+      "id": "variant_01KA10C4J0X0TPC6T4WPK660ZN",
+      "title": "Ø50mm x 250 | hegyezett",
+      "sku": "HC5250",
+      "variant_rank": 2,
+      "price": 2055,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": 2,
+      "length": 250,
+      "width": 5,
+      "height": 5
+    }
+  ],
+  "stock": 3,
+  "priceFrom": 1242,
+  "priceTo": 2055,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

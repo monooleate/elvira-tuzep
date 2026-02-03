@@ -1,0 +1,142 @@
+{
+  "categorySlug": "bsh-ragasztott-gerenda",
+  "name": "BSH ragasztott gerenda 14x14cm",
+  "slug": "bsh-ragasztott-gerenda-14x14",
+  "meta": {
+    "title": "BSH ragasztott gerenda 14x14cm - GL24h, osztrák gyártás",
+    "description": "BSH gerenda 14×14 cm keresztmetszettel, GL24h osztályban. Statikailag méretezhető, formatartó megoldás igényes faszerkezetekhez.",
+    "image": "/termekek/bsh-gerenda-14x14.jpg"
+  },
+  "description": "BSH gerenda 14×14 cm keresztmetszettel, 13,5 méteres hosszal, GL24h minőségben. Erős, esztétikus faanyag látszó és tartószerkezetekhez.",
+  "longDescription": "A 14×14 cm-es méretű BSH (Brettschichtholz) ragasztott gerenda ideális választás igényes, esztétikus faszerkezetekhez. GL24h szilárdsági osztályának és osztrák gyártásának köszönhetően magas teherbírást, méretpontosságot és hosszan tartó stabilitást kínál. A gyalult és fózolt felület beltéren és kültéren is tökéletes látványt nyújt, ideális választás például látszó oszlopokhoz, pergolákhoz, áthidalókhoz.",
+  "longDescription2": "A 14x14 cm keresztmetszetű gerenda kiválóan alkalmazható ott, ahol nemcsak a terhelhetőség, hanem az esztétikai megjelenés is kiemelt szerepet kap. A termék előkészített felülettel rendelkezik lazúrozáshoz vagy pácoláshoz, egyedileg fóliázott kivitelben érkezik. A BSH technológia garantálja a csavarodás- és repedésmentességet, ami különösen fontos a nagyobb fesztávú, látszó szerkezetek esetében.",
+  "longDescription3": "",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "bsh",
+    "rétegragasztott fa"
+  ],
+  "specs": {
+    "da4c94128f": {
+      "label": "Típus",
+      "order": 1,
+      "value": "BSH ragasztott gerenda"
+    },
+    "5bbf4f9a51": {
+      "label": "Szilárdsági osztály",
+      "order": 2,
+      "value": "GL24h"
+    },
+    "2d95ffa490": {
+      "label": "Minőség",
+      "order": 3,
+      "value": "Látszó (esztétikai felhasználásra)"
+    },
+    "a71d4d1cbd": {
+      "label": "Származás",
+      "order": 4,
+      "value": "Ausztria"
+    },
+    "aaf5ed4166": {
+      "label": "Keresztmetszet",
+      "order": 5,
+      "value": "14 × 14 cm"
+    },
+    "2eaf20b3d2": {
+      "label": "Hossz",
+      "order": 6,
+      "value": "13,5 m"
+    },
+    "677ebb3832": {
+      "label": "Felület",
+      "order": 7,
+      "value": "7,56 m²"
+    },
+    "e6f059b18a": {
+      "label": "Térfogat",
+      "order": 8,
+      "value": "0,265 m³"
+    },
+    "918dc0b3fb": {
+      "label": "Választható hosszúságok",
+      "order": 9,
+      "value": "4,5 m / 6,75 m / 9 m / 13,5 m"
+    },
+    "6786d2547f": {
+      "label": "Felülete",
+      "order": 10,
+      "value": "Gyalult, fózolt, látszó minőségű"
+    },
+    "da96e499c5": {
+      "label": "Nedvességtartalom",
+      "order": 11,
+      "value": "kb. 12% ±2%"
+    },
+    "7d81e28bc4": {
+      "label": "Tulajdonságok",
+      "order": 12,
+      "value": "Repedés- és vetemedésmentes, mérettartó"
+    },
+    "45ef0b88ac": {
+      "label": "Felhasználás",
+      "order": 13,
+      "value": "Pergola, tartóoszlop, tetőszerkezet, áthidaló"
+    },
+    "1474129d33": {
+      "label": "Előnyök",
+      "order": 14,
+      "value": "Kiemelkedő statikai teljesítmény, dekoratív kivitel, hosszú élettartam"
+    },
+    "ffff4f0de8": {
+      "label": "Kezelés",
+      "order": 15,
+      "value": "Pácolásra, lazúrozásra előkészítve"
+    },
+    "df5af4ef76": {
+      "label": "Csomagolás",
+      "order": 16,
+      "value": "Egyedileg fóliázott"
+    }
+  },
+  "shippingDetails": {
+    "weight": 124,
+    "length": 1350,
+    "width": 14,
+    "height": 14
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 41
+  },
+  "image": "/termekek/bsh-gerenda-14x14.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_1078b5e62d206b0c",
+      "title": "Alap",
+      "sku": "bsh-14x14-gl24h",
+      "variant_rank": 0,
+      "price": 103191,
+      "mprice": null,
+      "m2price": null,
+      "m3price": 389990,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 103191,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

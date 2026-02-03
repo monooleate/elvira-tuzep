@@ -1,0 +1,106 @@
+{
+  "categorySlug": "lamberia",
+  "name": "Lambéria - Softline /E profil/ 14x121mmx4m BC minőség",
+  "slug": "lamberia-softline-14x121-bc",
+  "meta": {
+    "title": "Lambéria Softline /E profil/ 14x121mm 4m BC",
+    "description": "Softline (E profilú) lambéria 14×121 mm-es méretben, gazdaságos BC minőségben. Jó ár-érték arányú lambéria belső burkoláshoz.",
+    "image": "/termekek/lamberia-softline-14x121-bc.png"
+  },
+  "description": "Gazdaságos megoldás belső burkolatokhoz, Softline profilú lucfenyő lambéria BC minőségben.",
+  "longDescription": "A 14x121 mm-es Softline (E profil) lambéria BC minőségben költséghatékony választás belső burkolatokhoz. A természetes lucfenyő anyag enyhébb esztétikai hibákat tartalmazhat (pl. kisebb göcsök, színeltérések), de szerkezeti minőségben megfelelő. A lekerekített élű profil elegáns megjelenést biztosít, a gyalult felület egyszerű szerelést tesz lehetővé. Ajánlott nyaralókba, melléképületekbe, hobbihelyiségekbe, ahol a funkcionalitás az elsődleges szempont.",
+  "longDescription2": "",
+  "longDescription3": "",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "nevezéktan"
+  ],
+  "specs": {
+    "9146df105e": {
+      "label": "Méret",
+      "order": 1,
+      "value": "14 x 121 mm"
+    },
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "be340899f3": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "d339d90905": {
+      "label": "Profil",
+      "order": 4,
+      "value": "E profil (Softline lekerekített lambéria)"
+    },
+    "cffd8a903b": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Gyalult, sima"
+    },
+    "0fa11b965d": {
+      "label": "Származás",
+      "order": 6,
+      "value": "Ausztria"
+    },
+    "c1caa6dcf9": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "BC (gazdaságos, szerkezeti minőség esztétikai hibákkal)"
+    },
+    "f5e3dd5b7b": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Belső fal- és mennyezetburkolat"
+    },
+    "39cf78be3c": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+    }
+  },
+  "shippingDetails": {
+    "weight": 3,
+    "length": 400,
+    "width": 12,
+    "height": 1
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.4,
+    "reviewCount": 18
+  },
+  "image": "/termekek/lamberia-softline-14x121-bc.png",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_f4c98f6bb756b7d7",
+      "title": "Alap",
+      "sku": "luc-lam-sl-14x121-4m-bc",
+      "variant_rank": 0,
+      "price": 1979,
+      "mprice": null,
+      "m2price": 4090,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 1979,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

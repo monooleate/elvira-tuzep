@@ -1,0 +1,126 @@
+{
+  "categorySlug": "hajopadlo",
+  "name": "Hajópadló - Luc Fózolt /C profil/ 19x146mmx4m AB-VEH minőség",
+  "slug": "hajopadlo-luc-fozolt-cprofil-19x146-abveh",
+  "meta": {
+    "title": "Hajópadló Luc Fózolt C profil – 19x146mm AB-VEH | Elvira Tüzép",
+    "description": "Lucfenyő hajópadló C profillal, 19x146mm-es méretben, AB-VEH minőségben. Széles burkolóléc falra és mennyezetre – világos, természetes megjelenés, könnyű szerelhetőség.",
+    "image": "/termekek/hajopadlo-c-19x146.jpg"
+  },
+  "description": "Lucfenyő hajópadló, széles 19x146mm-es kivitelben, fózolt C profillal. AB-VEH minőség, ideális fal- és mennyezetburkolathoz világos tónusban.",
+  "longDescription": "Ez a lucfenyőből készült, C profilú hajópadló remek választás, ha természetes, világos színű beltéri burkolatot keresel. A 19x146mm-es széles kivitel gyors burkolást tesz lehetővé nagyobb falfelületeken vagy mennyezeten is. A fózolt él (lecsapott profil) látványos tagoltságot ad, míg a nút-féderes illesztés biztosítja a stabil rögzítést. A lucfenyő könnyű fa, világos árnyalattal és finom erezettel, így kiválóan harmonizál modern és klasszikus terekben is. Az AB-VEH minőség pedig garantálja a válogatott, homogén megjelenést és a hosszú élettartamot.",
+  "longDescription2": "",
+  "longDescription3": "",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "nevezéktan"
+  ],
+  "specs": {
+    "00eee700bc": {
+      "label": "Terméktípus",
+      "order": 1,
+      "value": "Hajópadló"
+    },
+    "b81a9e92d3": {
+      "label": "Méret",
+      "order": 2,
+      "value": "19 x 146 mm"
+    },
+    "e98090544e": {
+      "label": "Hossz",
+      "order": 3,
+      "value": "4 m"
+    },
+    "1bc92f1927": {
+      "label": "Fa fajta",
+      "order": 4,
+      "value": "Lucfenyő"
+    },
+    "bc0f6f4117": {
+      "label": "Profil",
+      "order": 5,
+      "value": "Fózolt / C profil"
+    },
+    "00aa7d7393": {
+      "label": "Profil kialakítás",
+      "order": 6,
+      "value": "Nút-féderes, fózolt él (lecsapott él)"
+    },
+    "d7cf3c93ee": {
+      "label": "Felület",
+      "order": 7,
+      "value": "Simára gyalult"
+    },
+    "de9b257d3d": {
+      "label": "Származás",
+      "order": 8,
+      "value": "Ausztria"
+    },
+    "c08c50e310": {
+      "label": "Minőség",
+      "order": 9,
+      "value": "AB-VEH (válogatott burkolati minőség)"
+    },
+    "4758a18680": {
+      "label": "Felhasználás",
+      "order": 10,
+      "value": "Beltéri falburkolat, mennyezeti burkolat"
+    },
+    "4c3370efd0": {
+      "label": "Rögzítés",
+      "order": 11,
+      "value": "Szegelés vagy klipszes rögzítés"
+    },
+    "94aa9cbf28": {
+      "label": "Tárolás",
+      "order": 12,
+      "value": "Száraz, jól szellőző helyen, nedvességtől védve"
+    },
+    "2a57f07187": {
+      "label": "Kezelés",
+      "order": 13,
+      "value": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
+    }
+  },
+  "shippingDetails": {
+    "weight": 5,
+    "length": 400,
+    "width": 14,
+    "height": 1
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.68,
+    "reviewCount": 45
+  },
+  "image": "/termekek/hajopadlo-c-19x146.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_6ec03f1bf50f77d6",
+      "title": "Alap",
+      "sku": "luc-hp-c-19x146-4m-abveh",
+      "variant_rank": 0,
+      "price": 3556,
+      "mprice": null,
+      "m2price": 6090,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 3556,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}

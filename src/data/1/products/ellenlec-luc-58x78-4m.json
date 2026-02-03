@@ -1,0 +1,108 @@
+{
+  "categorySlug": "csereplec-ellenlec",
+  "name": "Ellenléc luc 58x78mmx4m I-II. osztály",
+  "slug": "ellenlec-luc-58x78-4m",
+  "meta": {
+    "title": "Luc ellenléc 58x78mm 4m | Elvira Tüzép",
+    "description": "Fűrészelt lucfenyő ellenléc 58x78 mm-es méretben, 4 m hosszban – masszív, I-II. osztályú osztrák faanyag nagy szellőzőmagasságú tetőkhöz.",
+    "image": "/termekek/ellenlec-luc-58x78-4m.jpg"
+  },
+  "description": "Fűrészelt lucfenyő ellenléc 58x78 mm méretben, 4 m-es hosszban – osztrák I-II. osztályú faanyag nagyobb légréshez és szerkezeti stabilitáshoz.",
+  "longDescription": "A 58x78 mm-es, 4 méteres ellenléc különösen alkalmas olyan tetőszerkezetekhez, ahol kiemelten fontos a megfelelő szellőzés, a teherbírás és a hosszú élettartam. A fűrészelt lucfenyő kivitel gazdaságos, jól megmunkálható és szerkezetileg is stabil. Osztrák I-II. osztályú minőségű faanyagból készül, így megbízható megoldást kínál akár új építésű, akár felújított tetőknél.",
+  "longDescription2": "A 78 mm-es magasság optimális légrést biztosít, így ez a méret ajánlott lehet napelemes rendszerek alá, valamint magasabb keresztmetszetet igénylő rétegrendekhez is. A kezeletlen, de szárított fa gyors beépítést tesz lehetővé, és megfelelő felületkezeléssel hosszú távon is időtálló marad.",
+  "longDescription3": "",
+  "material": null,
+  "audience": [],
+  "blogtags": [
+    "cserépléc",
+    "ellenléc",
+    "tetőszerkezet"
+  ],
+  "specs": {
+    "4fcce58d76": {
+      "label": "Méret",
+      "order": 1,
+      "value": "58 x 78 mm"
+    },
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
+    },
+    "be340899f3": {
+      "label": "Fa fajta",
+      "order": 3,
+      "value": "Luc fenyő"
+    },
+    "54ad623a93": {
+      "label": "Típus",
+      "order": 4,
+      "value": "Fűrészelt ellenléc"
+    },
+    "12a988c3b5": {
+      "label": "Felület",
+      "order": 5,
+      "value": "Durván fűrészelt, szárított, kezeletlen"
+    },
+    "5fd98f8686": {
+      "label": "Minőség",
+      "order": 6,
+      "value": "I-II. osztály"
+    },
+    "82d331f781": {
+      "label": "Származás",
+      "order": 7,
+      "value": "Ausztria"
+    },
+    "a2e7876501": {
+      "label": "Felhasználás",
+      "order": 8,
+      "value": "Ellenléc, nagy szellőzőmagasságú tetőszerkezet, napelemes rendszerek alá"
+    },
+    "b5eb7181a6": {
+      "label": "Mérettűrés",
+      "order": 9,
+      "value": "Maximálisan ±0,3 mm eltérés lehetséges a megadott mérethez képest"
+    }
+  },
+  "shippingDetails": {
+    "weight": 8,
+    "length": 400,
+    "width": 7,
+    "height": 5
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.73,
+    "reviewCount": 21
+  },
+  "image": "/termekek/ellenlec-luc-58x78-4m.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_a166c7c3c3d0dbcb",
+      "title": "Alap",
+      "sku": "luc-el-58x78-4m",
+      "variant_rank": 0,
+      "price": 4090,
+      "mprice": 1022,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 4090,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
+}
