@@ -1,4 +1,5 @@
 {
+  "categorySlug": "fahaz-epito-profil",
   "name": "Luc zsindely profil 24x146mmx4m A-B minőség",
   "slug": "luc-zsindely-profil-24x146-ab",
   "meta": {
@@ -6,74 +7,60 @@
     "description": "Luc zsindelyprofil 24x146 mm – esztétikus burkolat homlokzathoz és belső terekhez, A-B minőségben, osztrák gyártótól, 4 m-es kivitelben.",
     "image": "/termekek/luc-zsindely-24x146.webp"
   },
-  "aggregateRating": {
-    "ratingValue": "4,73",
-    "reviewCount": 5
-  },
   "description": "Lucfenyő zsindelyprofil 24x146 mm-es méretben, kültéri és beltéri burkolatokhoz, A-B minőségben.",
-  "image": "/termekek/luc-zsindely-24x146.webp",
-  "images": [],
   "longDescription": "A 24x146 mm-es lucfenyő zsindelyprofil kiváló választás homlokzatok és belső falfelületek burkolására. A profil vízszintes eresztékes kialakítása zsindelyhatású megjelenést biztosít, ami esztétikusan illeszkedik faházakhoz, melléképületekhez és rusztikus belső terekhez. A lucfenyő jól megmunkálható, kellemes színárnyalatú, és tartós megoldást kínál. A gyalult, sima felület könnyen kezelhető és festhető. A termék osztrák gyártású, A-B minőségben, fenntartható erdőgazdálkodásból származik, így megbízható minőséget és hosszú élettartamot kínál.",
   "longDescription2": "Ideális választás lehet kerítéshez is, amennyiben teljesen zárt, belátás biztos kerítést szeretne, ugyanis a nút-féderes kötésnek köszönhetően az elemek teljesen zártak maradnak, a faanyag száradását követően is, szemben a hagyományos deszkázattal. Kültéri alkalmazás esetén, vékonylazúrral történő felületkezelés ajánlott.",
+  "longDescription3": "",
   "material": null,
   "audience": [],
   "blogtags": [
     "nevezéktan"
   ],
-  "sku": "luc-rh-zsindely-24x146-4m",
-  "price": null,
-  "mprice": null,
-  "m2price": 9190,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": null,
   "specs": {
-    "Hossz": {
-      "label": "Hossz",
-      "order": 2,
-      "value": "4 m"
-    },
-    "Méret": {
+    "9c855ebc18": {
       "label": "Méret",
       "order": 1,
       "value": "24 x 146 mm"
     },
-    "Profil": {
-      "label": "Profil",
-      "order": 4,
-      "value": "Zsindelyprofil"
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
     },
-    "Fa fajta": {
+    "be340899f3": {
       "label": "Fa fajta",
       "order": 3,
       "value": "Luc fenyő"
     },
-    "Felület": {
+    "314ad25185": {
+      "label": "Profil",
+      "order": 4,
+      "value": "Zsindelyprofil"
+    },
+    "cffd8a903b": {
       "label": "Felület",
       "order": 5,
       "value": "Gyalult, sima"
     },
-    "Kezelés": {
-      "label": "Kezelés",
-      "order": 9,
-      "value": "Kezeletlen, felületkezelés javasolt"
-    },
-    "Minőség": {
-      "label": "Minőség",
-      "order": 7,
-      "value": "A-B"
-    },
-    "Származás": {
+    "0fa11b965d": {
       "label": "Származás",
       "order": 6,
       "value": "Ausztria"
     },
-    "Felhasználás": {
+    "bc43834862": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "A-B"
+    },
+    "4bb4f91704": {
       "label": "Felhasználás",
       "order": 8,
       "value": "Homlokzatburkolás, belső falfelületek, melléképületek"
+    },
+    "1cd96ba4fe": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kezeletlen, felületkezelés javasolt"
     }
   },
   "shippingDetails": {
@@ -82,7 +69,38 @@
     "width": 14,
     "height": 2
   },
-  "variants": null,
-  "category": "fahaz-epito-profil",
-  "categorySlug": "fahaz-epito-profil"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.73,
+    "reviewCount": 5
+  },
+  "image": "/termekek/luc-zsindely-24x146.webp",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_3c63dab264c8680c",
+      "title": "Alap",
+      "sku": "luc-rh-zsindely-24x146-4m",
+      "variant_rank": 0,
+      "price": null,
+      "mprice": null,
+      "m2price": 9190,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": null,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

@@ -8,42 +8,42 @@
     "image": "/kategoriak/brikett.jpg"
   },
   "description": "Fedezze fel keményfa brikett kínálatunkat, amely ideális választás kandallókhoz, kályhákhoz és vegyestüzelésű kazánokhoz. A tölgyből, bükkből és más keményfákból készült fabrikettek kiváló fűtőértékkel rendelkeznek. Alacsony nedvességtartalmuknak és nagy sűrűségüknek köszönhetően hosszan égnek, egyenletes hőt biztosítva. A bio brikett ragasztóanyag nélkül, tisztán préselt faforgácsból készül, környezetbarát módon – így lesz praktikus és tiszta megoldás az otthoni fűtéshez. Vásároljon közvetlenül raktárról, raklapos tételben kedvező áron!",
+  "faqdesc": "A keményfa brikett egy préselt tüzelőanyag, amely tölgyből, bükkből vagy akácból készül, kötőanyag nélkül. Előnye a magas fűtőérték, az alacsony nedvességtartalom és a tiszta égés. Az alábbi gyakori kérdések segítenek eligazodni a fabrikett típusok (RUF, Pini-Kay), az árak, az égési idő és a tárolás kapcsán.",
   "faq": [
     {
-      "id": 1,
-      "answer": "A Pini-Kay elnevezés a brikettet gyártó présgéptípusról (Pini & Kay) kapta a nevét. Ma már nemcsak a gépet, hanem a jellegzetes brikettformát is így hívják. A Pini-Kay fa brikett préselt keményfából készül, hosszirányban lyukas, többnyire hatszögletű vagy négyzet keresztmetszetű formában. A lyuknak köszönhetően jobb a levegőáramlás, magasabb az égéshő és hosszabb a parázstartás. Gyakran zsugorfóliába csomagolva kerül forgalomba, így a Pini-Kay fabrikett praktikus választás otthoni fűtéshez is. Égési ideje hosszabb, mint a RUF brikettnek. Jellemzően",
-      "question": "Mit jelent az, hogy Pini-Kay fabrikett?"
+      "id": "1",
+      "question": "Mit jelent az, hogy Pini-Kay fabrikett?",
+      "answer": "A Pini-Kay elnevezés a brikettet gyártó présgéptípusról (Pini & Kay) kapta a nevét. Ma már nemcsak a gépet, hanem a jellegzetes brikettformát is így hívják. A Pini-Kay fa brikett préselt keményfából készül, hosszirányban lyukas, többnyire hatszögletű vagy négyzet keresztmetszetű formában. A lyuknak köszönhetően jobb a levegőáramlás, magasabb az égéshő és hosszabb a parázstartás. Gyakran zsugorfóliába csomagolva kerül forgalomba, így a Pini-Kay fabrikett praktikus választás otthoni fűtéshez is. Égési ideje hosszabb, mint a RUF brikettnek. Jellemzően"
     },
     {
-      "id": 2,
-      "answer": "A RUF brikett egy téglatest alakú, nagy nyomáson préselt fa brikett. Nevét a német RUF brikettáló présgépről kapta, amely a gyártásban szabványos formát biztosít. Előnye, hogy könnyen rakható, kompakt, alacsony nedvességtartalmú és egyenletes hőleadást biztosít. A RUF fabrikett különösen népszerű a háztartásokban stabil égési tulajdonságai miatt. Égési ideje",
-      "question": "Mit jelent az, hogy RUF fabrikett?"
+      "id": "2",
+      "question": "Mit jelent az, hogy RUF fabrikett?",
+      "answer": "A RUF brikett egy téglatest alakú, nagy nyomáson préselt fa brikett. Nevét a német RUF brikettáló présgépről kapta, amely a gyártásban szabványos formát biztosít. Előnye, hogy könnyen rakható, kompakt, alacsony nedvességtartalmú és egyenletes hőleadást biztosít. A RUF fabrikett különösen népszerű a háztartásokban stabil égési tulajdonságai miatt. Égési ideje"
     },
     {
-      "id": 3,
-      "answer": "Az itt kapható brikettek keményfából (tölgy, bükk, akác) vagy kevert fűrészporból készülnek, kötőanyag hozzáadása nélkül, tisztán mechanikus préseléssel. Ezért környezetbarát bio brikettnek számítanak, hamutartalmuk alacsony, és a fabrikett kiválóan illeszkedik a környezettudatos fűtéshez.",
-      "question": "Milyen fából készülnek az itt forgalmazott fa brikettek?"
+      "id": "3",
+      "question": "Milyen fából készülnek az itt forgalmazott fa brikettek?",
+      "answer": "Az itt kapható brikettek keményfából (tölgy, bükk, akác) vagy kevert fűrészporból készülnek, kötőanyag hozzáadása nélkül, tisztán mechanikus préseléssel. Ezért környezetbarát bio brikettnek számítanak, hamutartalmuk alacsony, és a fabrikett kiválóan illeszkedik a környezettudatos fűtéshez."
     },
     {
-      "id": 4,
-      "answer": "A fabrikett ár több tényezőtől függ",
-      "question": "Mennyibe kerül a fabrikett? Hogyan alakul a fa brikett ár?"
+      "id": "4",
+      "question": "Mennyibe kerül a fabrikett? Hogyan alakul a fa brikett ár?",
+      "answer": "A fabrikett ár több tényezőtől függ"
     },
     {
-      "id": 5,
-      "answer": "A fa brikett tárolásánál a legfontosabb a száraz, fedett hely. Olyan helyet válassz, ahol nem éri közvetlen nedvesség. A fóliás csomagolást bontás után is védd a párától, mert a fabrikett könnyen visszanedvesedik.",
-      "question": "Hogyan kell tárolni a brikettet?"
+      "id": "5",
+      "question": "Hogyan kell tárolni a brikettet?",
+      "answer": "A fa brikett tárolásánál a legfontosabb a száraz, fedett hely. Olyan helyet válassz, ahol nem éri közvetlen nedvesség. A fóliás csomagolást bontás után is védd a párától, mert a fabrikett könnyen visszanedvesedik."
     },
     {
-      "id": 6,
-      "answer": "A fa brikett egyik legnagyobb előnye, hogy mindig száraz (<10% nedvesség), ezért azonnal felhasználható. Nagyobb sűrűségű, így ugyanakkora térfogatban több energia található, mint a tűzifában. A fabrikett hőértéke magasabb, ezért hatékonyabb és egyenletesebb fűtést biztosít. A bio brikett ráadásul teljesen természetes, kötőanyag nélküli tüzelőanyag, amely környezetbarát alternatívát kínál a szénhez vagy akár a frissen vágott fához képest. Tűzifa ugyan olcsóbb lehet, de ha frissen vágják, akkor hosszú ideig kell szárítani, mielőtt megfelelő hatásfokkal használható lenne.",
-      "question": "Jobb a fa brikett, mint a tűzifa?"
+      "id": "6",
+      "question": "Jobb a fa brikett, mint a tűzifa?",
+      "answer": "A fa brikett egyik legnagyobb előnye, hogy mindig száraz (<10% nedvesség), ezért azonnal felhasználható. Nagyobb sűrűségű, így ugyanakkora térfogatban több energia található, mint a tűzifában. A fabrikett hőértéke magasabb, ezért hatékonyabb és egyenletesebb fűtést biztosít. A bio brikett ráadásul teljesen természetes, kötőanyag nélküli tüzelőanyag, amely környezetbarát alternatívát kínál a szénhez vagy akár a frissen vágott fához képest. Tűzifa ugyan olcsóbb lehet, de ha frissen vágják, akkor hosszú ideig kell szárítani, mielőtt megfelelő hatásfokkal használható lenne."
     },
     {
-      "id": 7,
-      "answer": "A lignit brikett barnaszénből készül, ezért fűtőértéke magasabb lehet, de több hamut termel, és a környezetre károsabb a kibocsátása. Gyakran kapható barkácsáruházakban, például OBI brikett 25 kg kiszerelésben. A fabrikett ezzel szemben fa brikett, amely keményfából vagy fűrészporból készül kötőanyag nélkül, teljesen természetes és környezetbarát módon. A lignit brikett hosszabb parázstartást biztosíthat, viszont a fabrikett tisztább égést, alacsonyabb hamutartalmat és megújuló alapanyagot kínál, így ideális választás háztartási fűtéshez.",
-      "question": "Mi a különbség a lignit brikett és a fabrikett között?"
+      "id": "7",
+      "question": "Mi a különbség a lignit brikett és a fabrikett között?",
+      "answer": "A lignit brikett barnaszénből készül, ezért fűtőértéke magasabb lehet, de több hamut termel, és a környezetre károsabb a kibocsátása. Gyakran kapható barkácsáruházakban, például OBI brikett 25 kg kiszerelésben. A fabrikett ezzel szemben fa brikett, amely keményfából vagy fűrészporból készül kötőanyag nélkül, teljesen természetes és környezetbarát módon. A lignit brikett hosszabb parázstartást biztosíthat, viszont a fabrikett tisztább égést, alacsonyabb hamutartalmat és megújuló alapanyagot kínál, így ideális választás háztartási fűtéshez."
     }
-  ],
-  "faqdesc": "A keményfa brikett egy préselt tüzelőanyag, amely tölgyből, bükkből vagy akácból készül, kötőanyag nélkül. Előnye a magas fűtőérték, az alacsony nedvességtartalom és a tiszta égés. Az alábbi gyakori kérdések segítenek eligazodni a fabrikett típusok (RUF, Pini-Kay), az árak, az égési idő és a tárolás kapcsán."
+  ]
 }

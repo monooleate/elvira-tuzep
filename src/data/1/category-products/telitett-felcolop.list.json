@@ -5,19 +5,22 @@
       "slug": "telitett-felcolop-atmero-70",
       "categorySlug": "telitett-felcolop",
       "name": "Telített félcölöp Ø70mm",
+      "description": "Nyomás alatt impregnált, tartós telített félcölöp 70 mm átmérővel szegélyekhez, kerítésekhez és kerti szerkezetekhez.",
+      "sku": "Telített félcölöp Ø70mm",
       "image": "/termekek/telitett-felcolop-atmero-7.webp",
       "images": [],
-      "sku": "Telített félcölöp Ø70mm",
       "priceFrom": 1778,
       "priceTo": null,
+      "stock": 1,
       "discountPercent": null,
       "discountValidUntil": null,
-      "stock": 1,
-      "inStock": true,
-      "hasVariants": false,
-      "variantCount": 0,
-      "ratingValue": 4.83,
-      "reviewCount": 48
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "Telített félcölöp Ø70mm"
+      ]
     }
   ]
 }

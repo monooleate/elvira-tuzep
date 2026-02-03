@@ -8,32 +8,32 @@
     "image": "/kategoriak/hajopadlo.jpg"
   },
   "description": "Prémium minőségű hajópadló kínálat lucfenyőből és borovi fenyőből, többféle profillal és méretben. A gondosan gyalult, illesztett hajópadló elemek ideálisak fal- és mennyezetburkolatokhoz, belső terek természetes és meleg hangulatának kialakításához. Kültéri használatra is alkalmas, megfelelő kezeléssel. Osztrák gyártású, AB-VEH, AB-EN és C minőségű faanyagaink tartósak, esztétikus felületűek és könnyen szerelhetők. Fedezze fel készleten lévő hajópadló típusainkat, kedvező áron!",
+  "faqdesc": "",
   "faq": [
     {
-      "id": 1,
-      "answer": "A hajópadló egy nútféderes, gyalult burkolóanyag, amely vastagabb és erősebb, mint a <a href=\"/termekek/lamberia\"><b>lambéria</b></a>. Elsősorban padlóburkolatként, fal- és mennyezetburkolatként, valamint kültéri építményeknél használják, ahol nagyobb teherbírás és tartósság szükséges.",
-      "question": "Mi az a hajópadló?"
+      "id": "1",
+      "question": "Mi az a hajópadló?",
+      "answer": "A hajópadló egy nútféderes, gyalult burkolóanyag, amely vastagabb és erősebb, mint a <a href=\"/termekek/lamberia\"><b>lambéria</b></a>. Elsősorban padlóburkolatként, fal- és mennyezetburkolatként, valamint kültéri építményeknél használják, ahol nagyobb teherbírás és tartósság szükséges."
     },
     {
-      "id": 2,
-      "answer": "A hajópadló kiválóan alkalmas belső padlóburkolatokhoz, tetőtéri mennyezetekhez, falburkolatokhoz, valamint védett kültéri szerkezetekhez. Rusztikus megjelenésű építményekhez alternatívát jelenthet a <a href=\"/termekek/fahaz-epito-profil\"><b>rönkház profil</b></a> is.",
-      "question": "Mire használható a hajópadló?"
+      "id": "2",
+      "question": "Mire használható a hajópadló?",
+      "answer": "A hajópadló kiválóan alkalmas belső padlóburkolatokhoz, tetőtéri mennyezetekhez, falburkolatokhoz, valamint védett kültéri szerkezetekhez. Rusztikus megjelenésű építményekhez alternatívát jelenthet a <a href=\"/termekek/fahaz-epito-profil\"><b>rönkház profil</b></a> is."
     },
     {
-      "id": 3,
-      "answer": "A hajópadló leggyakoribb vastagságai 15–28 mm között mozognak, szélessége jellemzően 90–200 mm, hossza pedig 3–5 méter.",
-      "question": "Milyen méretekben kapható a hajópadló?"
+      "id": "3",
+      "question": "Milyen méretekben kapható a hajópadló?",
+      "answer": "A hajópadló leggyakoribb vastagságai 15–28 mm között mozognak, szélessége jellemzően 90–200 mm, hossza pedig 3–5 méter."
     },
     {
-      "id": 4,
-      "answer": "A hajópadló vastagabb (15–28 mm) és önhordó, ezért padlóként és teraszon is alkalmazható. A <a href=\"/termekek/lamberia\"><b>lambéria</b></a> vékonyabb (12,5–19 mm), főként fal- és mennyezetburkolásra való. A <a href=\"/termekek/fahaz-epito-profil\"><b>rönkház profil</b></a> félköríves vagy zsindelyprofilú, rusztikus hatású burkolat homlokzatokra és díszfalakra.",
-      "question": "Mi a különbség a hajópadló, a lambéria és a rönkház profil között?"
+      "id": "4",
+      "question": "Mi a különbség a hajópadló, a lambéria és a rönkház profil között?",
+      "answer": "A hajópadló vastagabb (15–28 mm) és önhordó, ezért padlóként és teraszon is alkalmazható. A <a href=\"/termekek/lamberia\"><b>lambéria</b></a> vékonyabb (12,5–19 mm), főként fal- és mennyezetburkolásra való. A <a href=\"/termekek/fahaz-epito-profil\"><b>rönkház profil</b></a> félköríves vagy zsindelyprofilú, rusztikus hatású burkolat homlokzatokra és díszfalakra."
     },
     {
-      "id": 5,
-      "answer": "A hajópadló árát a vastagság, szélesség és hossz határozza meg. Az aktuális árakat mindig a méret és a faanyag minősége befolyásolja.",
-      "question": "Mennyibe kerül a hajópadló?"
+      "id": "5",
+      "question": "Mennyibe kerül a hajópadló?",
+      "answer": "A hajópadló árát a vastagság, szélesség és hossz határozza meg. Az aktuális árakat mindig a méret és a faanyag minősége befolyásolja."
     }
-  ],
-  "faqdesc": ""
+  ]
 }

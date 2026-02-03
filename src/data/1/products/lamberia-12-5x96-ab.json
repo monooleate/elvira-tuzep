@@ -1,4 +1,5 @@
 {
+  "categorySlug": "lamberia",
   "name": "Lambéria Luc Trapéz F-profil 12,5x96mmx4m AB minőség",
   "slug": "lamberia-12-5x96-ab",
   "meta": {
@@ -6,74 +7,60 @@
     "description": "Trapéz profilú lambéria 12,5×96 mm-es méretben, osztrák AB minőségben. Beltéri fal- és mennyezetburkolathoz ajánlott, esztétikus gyalult felülettel.",
     "image": "/termekek/lamberia-f-12_5x96.png"
   },
-  "aggregateRating": {
-    "ratingValue": "4,8",
-    "reviewCount": 32
-  },
   "description": "Esztétikus, sima felületű trapéz profilú lambéria, kiváló beltéri burkoláshoz.",
-  "image": "/termekek/lamberia-f-12_5x96.png",
-  "images": [],
   "longDescription": "A 12,5x96 mm-es méretű trapéz profilú (F profil) lambéria ideális választás beltéri falak és mennyezetek burkolására. Az osztrák gyártású, AB minőségű lucfenyő alapanyag esztétikus, simára gyalult felülettel rendelkezik, így további csiszolást nem igényel. A precíz illesztés és a profilkialakítás könnyű szerelhetőséget biztosít, míg a természetes fenyő színvilág meleg, otthonos hangulatot teremt. Tökéletes választás faházakba, nappalikba, tetőterekbe vagy akár irodai burkolatokhoz is.",
-  "longDescription2": null,
+  "longDescription2": "",
+  "longDescription3": "",
   "material": null,
   "audience": [],
   "blogtags": [
     "nevezéktan"
   ],
-  "sku": "luc-lam-12_5x96-4m",
-  "price": 1799,
-  "mprice": null,
-  "m2price": 4690,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": 1,
   "specs": {
-    "Hossz": {
-      "label": "Hossz",
-      "order": 2,
-      "value": "4 m"
-    },
-    "Méret": {
+    "9e65ea8cce": {
       "label": "Méret",
       "order": 1,
       "value": "12,5 x 96 mm"
     },
-    "Profil": {
-      "label": "Profil",
-      "order": 4,
-      "value": "F profil (trapéz formájú lambéria)"
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
     },
-    "Fa fajta": {
+    "be340899f3": {
       "label": "Fa fajta",
       "order": 3,
       "value": "Luc fenyő"
     },
-    "Felület": {
+    "8614950dd3": {
+      "label": "Profil",
+      "order": 4,
+      "value": "F profil (trapéz formájú lambéria)"
+    },
+    "cffd8a903b": {
       "label": "Felület",
       "order": 5,
       "value": "Gyalult, sima"
     },
-    "Kezelés": {
-      "label": "Kezelés",
-      "order": 9,
-      "value": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
-    },
-    "Minőség": {
-      "label": "Minőség",
-      "order": 7,
-      "value": "AB (válogatott, burkolati minőség)"
-    },
-    "Származás": {
+    "0fa11b965d": {
       "label": "Származás",
       "order": 6,
       "value": "Ausztria"
     },
-    "Felhasználás": {
+    "c1cc835647": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "AB (válogatott, burkolati minőség)"
+    },
+    "f5e3dd5b7b": {
       "label": "Felhasználás",
       "order": 8,
       "value": "Belső fal- és mennyezetburkolat"
+    },
+    "39cf78be3c": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
     }
   },
   "shippingDetails": {
@@ -82,7 +69,38 @@
     "width": 9,
     "height": 1
   },
-  "variants": null,
-  "category": "lamberia",
-  "categorySlug": "lamberia"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 32
+  },
+  "image": "/termekek/lamberia-f-12_5x96.png",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_22d733ef4d5000ba",
+      "title": "Alap",
+      "sku": "luc-lam-12_5x96-4m",
+      "variant_rank": 0,
+      "price": 1799,
+      "mprice": null,
+      "m2price": 4690,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": 20,
+      "discountValidUntil": "2026-06-25",
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 1799,
+  "priceTo": null,
+  "discountPercent": 20,
+  "discountValidUntil": "2026-06-25",
+  "hasDiscount": true
 }

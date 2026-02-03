@@ -91,6 +91,7 @@ export function buildSpecialOffersItemList(discounted: any[]) {
           ? Math.round(basePrice * (1 - discount.discountPercent / 100))
           : basePrice;
 
+
       const image = p?.image ?? p?.meta?.image ?? p?.images?.[0]?.src ?? null;
       const availability = hasStock(p) 
         ? "https://schema.org/InStock" 

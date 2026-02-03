@@ -5,19 +5,22 @@
       "slug": "telitett-pallo-45x68",
       "categorySlug": "telitett-pallo",
       "name": "Telített palló 45×68 mm",
+      "description": "Nyomás alatt impregnált, tartós telített palló 45×68 mm méretben kültéri szerkezetekhez és keretépítéshez.",
+      "sku": "Telített palló 45×68 mm",
       "image": "/termekek/telitett-pallo.webp",
       "images": [],
-      "sku": "Telített palló 45×68 mm",
       "priceFrom": 3460,
       "priceTo": null,
+      "stock": 1,
       "discountPercent": null,
       "discountValidUntil": null,
-      "stock": 1,
-      "inStock": true,
-      "hasVariants": false,
-      "variantCount": 0,
-      "ratingValue": 4.86,
-      "reviewCount": 51
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "Telített palló 45×68 mm"
+      ]
     }
   ]
 }

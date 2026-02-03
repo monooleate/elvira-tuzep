@@ -8,37 +8,37 @@
     "image": "/kategoriak/csereplec-ellenlec.jpg"
   },
   "description": "Cserépléc és ellenléc kínálatunk prémium minőségű lucfenyőből készül. Az ellenléc biztosítja a tető szellőzését és az alátétfólia védelmét, míg a cserépléc a cserepek rögzítését és a teherelosztást. Elérhető a szabványos 30×50 mm Bramac cserépléc is, igazolt teherbírással és gyártói dokumentációval. Termékeink tartósak, gyorsan beépíthetők, új tetőkhöz és felújításhoz egyaránt ideálisak. Termékeinket készletről vagy rövid határidővel, kedvező áron kínáljuk.",
+  "faqdesc": "A tetőszerkezet kialakításánál gyakran felmerül a kérdés, milyen cseréplécet és ellenlécet érdemes használni. Az ellenléc biztosítja a szellőzést és a fólia védelmét, míg a cserépléc a cserepek felfekvését és teherelosztását adja. Az alábbiakban összegyűjtöttük a leggyakrabban feltett kérdéseket a cserépléccel és ellenléccel kapcsolatban, hogy könnyebb legyen a megfelelő anyag kiválasztása kültéri tetőfedéshez és beltéri szerkezetekhez.",
   "faq": [
     {
-      "id": 1,
-      "answer": "Az ellenléc a szarufára fektetett függőleges léc, amely a fólia és a cserépléc között szellőző légrést hoz létre. Feladata a tető átszellőztetése és a csapadékbiztos rétegrend kialakítása. Ezáltal növeli a tető élettartamát. Az ellenléc tipikus mérete 5×5 cm (50×50 mm), vagyis négyzet keresztmetszetű. Ez biztosítja a megfelelő szellőző keresztmetszetet a fólia és a cserépléc között. Kisebb méretek, mint a 25×50 vagy 30×50 mm is előfordulnak, de nem minden tetőn elegendők a szellőzéshez.",
-      "question": "Mi az ellenléc, mi a szerepe a tetőn és mi a tipikus mérete?"
+      "id": "1",
+      "question": "Mi az ellenléc, mi a szerepe a tetőn és mi a tipikus mérete?",
+      "answer": "Az ellenléc a szarufára fektetett függőleges léc, amely a fólia és a cserépléc között szellőző légrést hoz létre. Feladata a tető átszellőztetése és a csapadékbiztos rétegrend kialakítása. Ezáltal növeli a tető élettartamát. Az ellenléc tipikus mérete 5×5 cm (50×50 mm), vagyis négyzet keresztmetszetű. Ez biztosítja a megfelelő szellőző keresztmetszetet a fólia és a cserépléc között. Kisebb méretek, mint a 25×50 vagy 30×50 mm is előfordulnak, de nem minden tetőn elegendők a szellőzéshez."
     },
     {
-      "id": 2,
-      "answer": "A cserépléc a tetőszerkezet egyik alapvető faanyaga",
-      "question": "Mi a cserépléc és mi a tipikus mérete?"
+      "id": "2",
+      "question": "Mi a cserépléc és mi a tipikus mérete?",
+      "answer": "A cserépléc a tetőszerkezet egyik alapvető faanyaga"
     },
     {
-      "id": 3,
-      "answer": "Kültéri tetőszerkezethez a legelterjedtebb a 30×50 mm nedves Bramac cserépléc. Ez igazolt teherbírású, gyártói dokumentációval rendelkezik, és kifejezetten tetőfedés alá készült. Ha extra tartósság kell, válassz impregnálttal kezelt változatot.",
-      "question": "Milyen cseréplécet használjak kültéren?"
+      "id": "3",
+      "question": "Milyen cseréplécet használjak kültéren?",
+      "answer": "Kültéri tetőszerkezethez a legelterjedtebb a 30×50 mm nedves Bramac cserépléc. Ez igazolt teherbírású, gyártói dokumentációval rendelkezik, és kifejezetten tetőfedés alá készült. Ha extra tartósság kell, válassz impregnálttal kezelt változatot."
     },
     {
-      "id": 4,
-      "answer": "Beltéri szerkezetekhez, ahol fontos a pontos illeszkedés, az egalizált, méretpontos lécek a megfelelőek (23×48 mm vagy 28×48 mm). Ezek száraz, gyalult faanyagok, így nem vetemednek, és esztétikus megjelenést biztosítanak.",
-      "question": "Milyen cseréplécet használjak beltérben?"
+      "id": "4",
+      "question": "Milyen cseréplécet használjak beltérben?",
+      "answer": "Beltéri szerkezetekhez, ahol fontos a pontos illeszkedés, az egalizált, méretpontos lécek a megfelelőek (23×48 mm vagy 28×48 mm). Ezek száraz, gyalult faanyagok, így nem vetemednek, és esztétikus megjelenést biztosítanak."
     },
     {
-      "id": 5,
-      "answer": "A Bramac cserépléc legelterjedtebb mérete 30×50 mm, amelyet kifejezetten tetőcserepek alátámasztására gyártanak. A „Bramac cserépléc” elnevezés onnan ered, hogy a Bramac (ma BMI Bramac) tetőrendszerhez szabványosított 30×50 mm-es luc- vagy borovi fenyő lécek váltak iparági etalonná. Ez a méret biztosítja a szükséges teherbírást és illeszkedést a Bramac tetőrendszerekhez. A Bramac cserépléc ár a választott mérettől, a faanyag minőségétől és a rendelt mennyiségtől függ. Az aktuális árakat mindig a termék oldalán találja.",
-      "question": "Milyen a Bramac cserépléc mérete és mennyibe kerül?"
+      "id": "5",
+      "question": "Milyen a Bramac cserépléc mérete és mennyibe kerül?",
+      "answer": "A Bramac cserépléc legelterjedtebb mérete 30×50 mm, amelyet kifejezetten tetőcserepek alátámasztására gyártanak. A „Bramac cserépléc” elnevezés onnan ered, hogy a Bramac (ma BMI Bramac) tetőrendszerhez szabványosított 30×50 mm-es luc- vagy borovi fenyő lécek váltak iparági etalonná. Ez a méret biztosítja a szükséges teherbírást és illeszkedést a Bramac tetőrendszerekhez. A Bramac cserépléc ár a választott mérettől, a faanyag minőségétől és a rendelt mennyiségtől függ. Az aktuális árakat mindig a termék oldalán találja."
     },
     {
-      "id": 6,
-      "answer": "A cserépléc árak több tényezőtől függenek",
-      "question": "Hogyan alakulnak a cserépléc árak?"
+      "id": "6",
+      "question": "Hogyan alakulnak a cserépléc árak?",
+      "answer": "A cserépléc árak több tényezőtől függenek"
     }
-  ],
-  "faqdesc": "A tetőszerkezet kialakításánál gyakran felmerül a kérdés, milyen cseréplécet és ellenlécet érdemes használni. Az ellenléc biztosítja a szellőzést és a fólia védelmét, míg a cserépléc a cserepek felfekvését és teherelosztását adja. Az alábbiakban összegyűjtöttük a leggyakrabban feltett kérdéseket a cserépléccel és ellenléccel kapcsolatban, hogy könnyebb legyen a megfelelő anyag kiválasztása kültéri tetőfedéshez és beltéri szerkezetekhez."
+  ]
 }

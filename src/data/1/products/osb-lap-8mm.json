@@ -1,4 +1,5 @@
 {
+  "categorySlug": "osb-lapok",
   "name": "OSB lap 8 mm – szarufa alá, tető alsó síkjához",
   "slug": "osb-lap-8mm",
   "meta": {
@@ -6,29 +7,10 @@
     "description": "OSB lap 8 mm vastagságban – tetőszerkezetekhez ideális. Szabványos OSB lap méret 2500×1250 mm. Nézze meg kedvező OSB árainkat – Praktiker és OBI alternatíva!",
     "image": "/images/products/osb-lap-8mm-lapok-500.jpg"
   },
-  "aggregateRating": {
-    "ratingValue": "4,81",
-    "reviewCount": 46
-  },
   "description": "8 mm vastag OSB lap tetők alátétszerkezetéhez, szarufák alá és egyutas raklaphoz is ideális. Nedvességálló, tartós és jól megmunkálható anyag szabványos méretben.",
-  "image": null,
-  "images": [
-    {
-      "src": "/images/products/osb-lap-8mm-lapok",
-      "alt": "8 mm vastag OSB 3 lapok – szabályos, egyforma méretű táblalapok közelről"
-    },
-    {
-      "src": "/images/products/osb-lap-8mm-darab",
-      "alt": "Egy darab 8 mm vastag OSB lap oldalnézeti fotója – 1250×2500 mm tábla részlete"
-    },
-    {
-      "src": "/images/products/osb-lap-8mm-koteg-raklap",
-      "alt": "8 mm OSB 3 lapok raklapon, kötegelve – szabványos tábla méret: 1250×2500 mm"
-    }
-  ],
   "longDescription": "Az OSB 8 mm lap kiváló választás a tető alsó síkjának burkolására, például szarufa alá elhelyezve. A szabványos 2500×1250 mm-es OSB tábla méret miatt egyszerű a tervezés és beépítés, a 3,125 m² felület pedig pontos kalkulációt tesz lehetővé. Az OSB 3 típusú lap nedvességálló, teherhordásra is alkalmas, így szél- és hőszigeteléssel kombinálva kiváló teljesítményt nyújt. Az OSB lap 8 mm vastagságban gyakran használatos tetőknél, de raklapokhoz és könnyű csomagolásokhoz is bevált. Alternatívát nyújt a Praktiker, OBI vagy Bauhaus OSB lap kínálathoz képest, versenyképes áron, elérhető raktárról.",
-  "longDescription2": null,
-  "longDescription3": null,
+  "longDescription2": "",
+  "longDescription3": "",
   "material": "OSB 3 nedvességálló faforgács panel",
   "audience": [
     "kivitelezők",
@@ -45,74 +27,108 @@
     "építőanyag",
     "tetőburkolat"
   ],
-  "sku": "osb-8mm",
-  "price": 5290,
-  "mprice": null,
-  "m2price": 1693,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": 10,
-  "discountValidUntil": "2026-02-14T23:00:00.000Z",
-  "stock": 1,
   "specs": {
-    "Típus": {
-      "label": "Típus",
-      "order": 7,
-      "value": "OSB 3 – teherhordó, nedvességálló"
-    },
-    "Tömeg": {
-      "label": "Tömeg",
-      "order": 5,
-      "value": "~ 16,3 kg"
-    },
-    "Felület": {
-      "label": "Felület",
-      "order": 6,
-      "value": "csiszolt, éles él"
-    },
-    "Előnyök": {
-      "label": "Előnyök",
-      "order": 9,
-      "value": "Nedvességálló, tartós, könnyen szerelhető, szabványos méret"
-    },
-    "Sűrűség": {
-      "label": "Sűrűség",
-      "order": 4,
-      "value": "kb. 600–680 kg/m³"
-    },
-    "Vastagság": {
+    "153f62efbf": {
       "label": "Vastagság",
       "order": 1,
       "value": "8 mm"
     },
-    "Tábla méret": {
+    "d3f44929fe": {
       "label": "Tábla méret",
       "order": 2,
       "value": "2500 × 1250 mm"
     },
-    "Ajánlott hely": {
-      "label": "Ajánlott hely",
-      "order": 10,
-      "value": "Tetőszerkezetek, fedélszék, gazdaságos belső burkolás"
+    "9b1bfa95eb": {
+      "label": "Tábla felülete",
+      "order": 3,
+      "value": "3,125m²"
     },
-    "Felhasználás": {
+    "17471b2af1": {
+      "label": "Sűrűség",
+      "order": 4,
+      "value": "kb. 600–680 kg/m³"
+    },
+    "d5e9ebd3c4": {
+      "label": "Tömeg",
+      "order": 5,
+      "value": "~ 16,3 kg"
+    },
+    "a39255b4f5": {
+      "label": "Felület",
+      "order": 6,
+      "value": "csiszolt, éles él"
+    },
+    "0f96c995a9": {
+      "label": "Típus",
+      "order": 7,
+      "value": "OSB 3 – teherhordó, nedvességálló"
+    },
+    "7e0eab07db": {
       "label": "Felhasználás",
       "order": 8,
       "value": "Tető alsó síkja, szarufa alá, egyutas raklap"
     },
-    "Tábla felülete": {
-      "label": "Tábla felülete",
-      "order": 3,
-      "value": "3,125m²"
+    "3fcfe85908": {
+      "label": "Előnyök",
+      "order": 9,
+      "value": "Nedvességálló, tartós, könnyen szerelhető, szabványos méret"
+    },
+    "0e4ad3f9cd": {
+      "label": "Ajánlott hely",
+      "order": 10,
+      "value": "Tetőszerkezetek, fedélszék, gazdaságos belső burkolás"
     }
   },
   "shippingDetails": {
     "weight": 16,
     "length": 250,
-    "width": 125,
-    "height": null
+    "width": 125
   },
-  "variants": null,
-  "category": "osb-lapok",
-  "categorySlug": "osb-lapok"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.81,
+    "reviewCount": 46
+  },
+  "image": "/images/products/osb-lap-8mm-lapok-500.jpg",
+  "images": [
+    {
+      "src": "/images/products/osb-lap-8mm-lapok",
+      "alt": "8 mm vastag OSB 3 lapok – szabályos, egyforma méretű táblalapok közelről"
+    },
+    {
+      "src": "/images/products/osb-lap-8mm-darab",
+      "alt": "Egy darab 8 mm vastag OSB lap oldalnézeti fotója – 1250×2500 mm tábla részlete"
+    },
+    {
+      "src": "/images/products/osb-lap-8mm-koteg-raklap",
+      "alt": "8 mm OSB 3 lapok raklapon, kötegelve – szabványos tábla méret: 1250×2500 mm"
+    }
+  ],
+  "variants": [
+    {
+      "id": "v_6db0059137582a63",
+      "title": "Alap",
+      "sku": "osb-8mm",
+      "variant_rank": 0,
+      "price": 5290,
+      "mprice": null,
+      "m2price": 1693,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": 10,
+      "discountValidUntil": "2026-02-14T23:00:00.000Z",
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 5290,
+  "priceTo": null,
+  "discountPercent": 10,
+  "discountValidUntil": "2026-02-14T23:00:00.000Z",
+  "hasDiscount": true
 }

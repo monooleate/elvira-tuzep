@@ -37,9 +37,9 @@
       "priceFrom": 5.59,
       "priceTo": 63.23,
       "stock": 18,
-      "discountPercent": 15,
-      "discountValidUntil": "2026-06-25",
-      "hasDiscount": true,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
       "variantTitles": [
         "Ø4mm x 30",
         "Ø4mm x 35",

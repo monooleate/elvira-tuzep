@@ -1,55 +1,37 @@
-import { useState, useEffect, useRef, useMemo } from 'preact/hooks';
-import Fuse from 'fuse.js';
+import { useState, useEffect, useRef, useMemo } from "preact/hooks";
+import Fuse from "fuse.js";
 
-import productsData from "../../data/products.json" with { type: "json" }
-
-/* const productsData = await fetchCategoriesWithProducts() */
+import productsIndex from "../../data/index/products.index.json" with { type: "json" };
 
 type MaybeNum = number | null;
-type MaybeStr = string | null;
 
-interface Variant {
-  id: string;
-  title: string;
-  price: number;
-  sku?: string;
-  variant_rank?: number,
-  metadata?: {
-    inventory?: number;
-  };
-}
-
-interface Product {
-  name?: string;
-  description?: string;
-  image?: string | { src?: string; alt?: string };
-  images?: Array<{ src: string; alt?: string }>;
-
-  // ármezők
-  price?: MaybeNum;
-  mprice?: MaybeNum;
-  m2price?: MaybeNum;
-  m3price?: MaybeNum;
-  palprice?: MaybeNum;
-
-  // kedvezmény mezők a JSON-ban
-  discountPrice?: MaybeNum;
-  discountPercent?: MaybeNum;
-  /** ISO dátum string pl. "2025-09-30" vagy "2025-09-30T23:59:59Z" */
-  discountValidUntil?: string | null;
-
-  
-
-  slug?: string;
-  stock?: number;
-  sku?: string;
-  variants?: Variant[];
-}
-
-interface Category {
+interface IndexItem {
   slug: string;
-  category: string;
-  products: Product[];
+  categorySlug: string;
+  name: string | null;
+  description?: string | null;
+
+  sku: string | null;
+  image: string | null;
+  images?: any[] | null;
+
+  priceFrom: MaybeNum;
+  priceTo: MaybeNum;
+
+  stock: number;          // ✅ nálad ez van
+  hasDiscount: boolean;   // ✅ nálad ez van
+
+  discountPercent: MaybeNum;
+  discountValidUntil: string | null;
+
+  variantTitles?: (string | null)[] | null;
+  variantSkus?: (string | null)[] | null;
+}
+
+interface ProductDetail {
+  slug: string;
+  description?: string;
+  variants?: any[] | null;
 }
 
 interface FlatProduct {
@@ -57,86 +39,115 @@ interface FlatProduct {
   description: string;
   sku: string;
   slug: string;
-  stock: number;
 
-  // ármezők normalizálva
-  price: MaybeNum;
-  mprice: MaybeNum;
-  m2price: MaybeNum;
-  m3price: MaybeNum;
-  palprice: MaybeNum;
+  // indexből
+  basePrice: MaybeNum; // priceFrom
+  priceTo: MaybeNum;
 
-  // összegzett árinfók
-  hasPrice: MaybeNum;     // első nem null ár
-  basePrice: MaybeNum;    // alias: ugyanaz, csak beszédesebb
-  finalPrice: MaybeNum;   // akció figyelembevételével
-  hasDiscount: boolean;   // van-e érvényes akció most
-  discountPrice: MaybeNum;
+  // index akció (ha nincs hydrate)
+  finalPrice: MaybeNum;
+  hasDiscount: boolean;
   discountPercent: MaybeNum;
-  discountEndsAt: Date | null; // vége dátumként
-  discountLabel: string | null; // pl. "-15%"
+  discountEndsAt: Date | null;
+  discountLabel: string | null;
 
-  // képek
-  images: Array<{ src: string; alt?: string }>;
   image: { src: string; alt: string };
-
   categorySlug: string;
-  categoryName: string;
-  variants?: Variant[];
+
+  // hydrate után
+  variants?: any[] | null;
+
+  // készlet + variáns meta
+  inStock: boolean;
+  hasVariants: boolean;
+  variantTitles: string[];
+  variantSkus: string[];
+
+  // ✅ itt a lényeg: single vs multi a variantTitles alapján
+  isSingleByTitles: boolean;
+
+  // ✅ variánsos akció/ár info (hydrate után)
+  variantsMinOriginal?: MaybeNum;
+  variantsMinFinal?: MaybeNum;
+  variantsMaxFinal?: MaybeNum;
+  variantsHasDiscount?: boolean;
+  variantsMaxDiscountPercent?: MaybeNum;
+
+  searchText: string;
 }
 
-const PRICE_ORDER = ['price', 'mprice', 'm2price', 'm3price', 'palprice'] as const;
+function toStringArray(v: unknown): string[] {
+  if (!Array.isArray(v)) return [];
+  return v
+    .filter((x) => typeof x === "string")
+    .map((x) => x.trim())
+    .filter(Boolean);
+}
 
-function normalizeItem(p: Product, cat: Category): FlatProduct {
-  const name = typeof p.name === 'string' ? p.name : '';
-  const description = typeof p.description === 'string' ? p.description : '';
-  const sku = typeof p.sku === 'string' ? p.sku : '';
-  const slug =
-    typeof p.slug === 'string'
-      ? p.slug
-      : `${cat.slug}-${(sku || name).toLowerCase().trim().replace(/\s+/g, '-')}`;
+function computeHasVariantsFromIndex(i: IndexItem): boolean {
+  const titles = toStringArray(i.variantTitles);
+  const skus = toStringArray(i.variantSkus);
 
-  const stock = Number.isFinite(p.stock as number) ? (p.stock as number) : 0;
+  // ✅ ha csak "Alap" van → NINCS variáns
+  const isSingle = isSingleByVariantTitles(titles);
 
-  const numOrNull = (v: unknown): MaybeNum =>
-    typeof v === 'number' && Number.isFinite(v) ? v : null;
+  // ha single "Alap", mindegy hány sku van (nálad 1) → false
+  if (isSingle) return false;
 
-  // ── ármezők ─────────────────────────────────────────────
-  const price: MaybeNum    = numOrNull(p.price);
-  const mprice: MaybeNum   = numOrNull(p.mprice);
-  const m2price: MaybeNum  = numOrNull(p.m2price);
-  const m3price: MaybeNum  = numOrNull(p.m3price);
-  const palprice: MaybeNum = numOrNull(p.palprice);
+  // ✅ ha több SKU van → biztos variánsos
+  if (skus.length > 1) return true;
 
-  const basePrice: MaybeNum =
-    price ?? mprice ?? m2price ?? m3price ?? palprice ?? null;
+  // ✅ ha nem "Alap" és van cím (pl. Ø4mm x 30) → variánsos
+  if (titles.length >= 1) return true;
 
-  // ── kedvezmény logika ──────────────────────────────────
-  const discountPrice = numOrNull(p.discountPrice);
-  const discountPercent = numOrNull(p.discountPercent);
+  return false;
+}
 
-  // Dátum parszer: ha csak "YYYY-MM-DD" formátum jön, kezeld a nap végéig (23:59:59)
-  const parseUntil = (s?: string | null): Date | null => {
-    if (!s) return null;
-    // egyszerű YYYY-MM-DD minta
-    if (/^\d{4}-\d{2}-\d{2}$/.test(s)) {
-      const d = new Date(s + 'T23:59:59');
-      return Number.isNaN(d.getTime()) ? null : d;
-    }
-    const d = new Date(s);
+function computeInStockFromIndex(i: IndexItem): boolean {
+  return typeof i.stock === "number" && i.stock > 0;
+}
+
+
+function normalizeForSearch(input: unknown): string {
+  const s = String(input ?? "").toLowerCase().trim();
+
+  const cleaned = s
+    .replace(/[øØ]/g, "")
+    .replace(/mm/g, "")
+    .replace(/[×]/g, "x")
+    .replace(/[,]/g, ".")
+    .replace(/\s+/g, "")
+    .replace(/[^a-z0-9x.]/g, "");
+
+  return cleaned.replace(/[.]/g, "");
+}
+
+function buildSearchText(parts: unknown[]): string {
+  return parts
+    .flatMap((p) => (Array.isArray(p) ? p : [p]))
+    .map(normalizeForSearch)
+    .filter(Boolean)
+    .join(" ");
+}
+
+function numOrNull(v: unknown): MaybeNum {
+  return typeof v === "number" && Number.isFinite(v) ? v : null;
+}
+
+function parseUntil(s?: string | null): Date | null {
+  if (!s) return null;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) {
+    const d = new Date(s + "T23:59:59");
     return Number.isNaN(d.getTime()) ? null : d;
-  };
+  }
+  const d = new Date(s);
+  return Number.isNaN(d.getTime()) ? null : d;
+}
 
+function computeDiscount(basePrice: MaybeNum, discountPercent: MaybeNum, discountValidUntil?: string | null) {
   const now = new Date();
-  const discountEndsAt = parseUntil(p.discountValidUntil ?? null);
+  const discountEndsAt = parseUntil(discountValidUntil ?? null);
   const hasTimeValid = !!discountEndsAt && discountEndsAt.getTime() > now.getTime();
-
-  const hasValidDiscountPrice =
-    basePrice !== null &&
-    discountPrice !== null &&
-    discountPrice > 0 &&
-    discountPrice < basePrice &&
-    hasTimeValid;
 
   const hasValidDiscountPercent =
     basePrice !== null &&
@@ -145,112 +156,218 @@ function normalizeItem(p: Product, cat: Category): FlatProduct {
     discountPercent < 100 &&
     hasTimeValid;
 
-  const hasDiscount = !!(hasValidDiscountPrice || hasValidDiscountPercent);
+  const hasDiscount = !!hasValidDiscountPercent;
 
   const finalPrice: MaybeNum = (() => {
     if (basePrice === null) return null;
-    if (hasValidDiscountPrice) return discountPrice!;
     if (hasValidDiscountPercent) return Math.round(basePrice * (1 - discountPercent! / 100));
     return basePrice;
   })();
 
-  const discountLabel =
-    hasValidDiscountPercent ? `-${Math.round(discountPercent!)}%` :
-    hasValidDiscountPrice && basePrice !== null
-      ? `-${Math.round(100 - (discountPrice! / basePrice) * 100)}%`
-      : null;
+  const discountLabel = hasValidDiscountPercent ? `-${Math.round(discountPercent!)}%` : null;
 
-  // ── képek ──────────────────────────────────────────────
-  let images: Array<{ src: string; alt?: string }> = []
+  return { hasDiscount, finalPrice, discountEndsAt, discountLabel };
+}
 
-  // 1️⃣ Ha van images[] és nem üres
-  if (Array.isArray(p.images) && p.images.length > 0) {
-    images = p.images.filter(
-      (img) => img && typeof img.src === "string" && img.src.trim() !== ""
-    )
+function normalizeImagePath(p: unknown): string | null {
+  const s = String(p ?? "").trim();
+  if (!s) return null;
+
+  // 1) külső URL-t hagyjuk
+  if (/^https?:\/\//i.test(s)) return s;
+
+  // 2) backslash → slash
+  let out = s.replace(/\\/g, "/");
+
+  // 3) ha relatív, kapjon vezető /
+  if (!out.startsWith("/")) out = "/" + out;
+
+  // 4) duplázott prefix javítás:
+  //    /images/products//images/products/ -> /images/products/
+  out = out.replace(/^\/images\/products\/+images\/products\/+/i, "/images/products/");
+
+  // 5) extra: többszörös // -> /
+  out = out.replace(/\/{2,}/g, "/");
+
+  return out;
+}
+
+
+function pickImageSrc(item: IndexItem) {
+  const fixed = normalizeImagePath(item.image);
+  if (fixed) return fixed;
+  return "/images/placeholder.png";
+}
+
+/** ✅ SINGLE logika: ha csak "Alap" van → single */
+function isSingleByVariantTitles(titles: string[]) {
+  if (!Array.isArray(titles) || titles.length === 0) return true;
+  if (titles.length === 1 && titles[0].trim().toLowerCase() === "alap") return true;
+  return false;
+}
+
+/** --------- Variáns-akció számítás (ProductCard-szerű) --------- */
+
+type VariantForDiscount = {
+  price?: number | null;
+  discountPrice?: number | null;
+  discountPercent?: number | null;
+  discountValidUntil?: string | null;
+  stock?: number | null;
+  metadata?: { inventory?: number | null } | null;
+};
+
+function computeVariantFinalPrice(v: VariantForDiscount): {
+  original: MaybeNum;
+  final: MaybeNum;
+  hasDiscount: boolean;
+  pct: MaybeNum;
+} {
+  const original = numOrNull(v.price);
+
+  const now = new Date();
+  const ends = parseUntil(v.discountValidUntil ?? null);
+  const timeValid = !!ends && ends.getTime() > now.getTime();
+
+  // 1) discountPrice elsőbbség (ha időben érvényes)
+  const dp = numOrNull(v.discountPrice);
+  if (original !== null && dp !== null && dp > 0 && timeValid) {
+    const pct = original > 0 ? Math.round((1 - dp / original) * 100) : null;
+    return { original, final: dp, hasDiscount: true, pct };
   }
 
-  // 2️⃣ Ha nincs vagy üres → próbáljuk az image mezőt
-  if (images.length === 0) {
-    if (p.image && typeof p.image === "object" && (p.image as any).src) {
-      images = [{ src: (p.image as any).src as string, alt: (p.image as any).alt || name }]
-    } else if (typeof p.image === "string" && p.image.trim() !== "") {
-      images = [{ src: p.image as string, alt: name }]
-    }
+  // 2) discountPercent (ha időben érvényes)
+  const pct = numOrNull(v.discountPercent);
+  if (original !== null && pct !== null && pct > 0 && pct < 100 && timeValid) {
+    const final = Math.round(original * (1 - pct / 100));
+    return { original, final, hasDiscount: true, pct: Math.round(pct) };
   }
 
-  // 3️⃣ Ha az is hiányzik → placeholder
-  if (images.length === 0) {
-    images = [{ src: "/images/placeholder.png", alt: name || "Termékkép" }]
+  return { original, final: original, hasDiscount: false, pct: null };
+}
+
+function computeVariantsPriceInfo(variants: any[] | null | undefined) {
+  const list = Array.isArray(variants) ? variants : [];
+  if (list.length === 0) {
+    return {
+      hasAnyDiscount: false,
+      minOriginal: null as MaybeNum,
+      minFinal: null as MaybeNum,
+      maxFinal: null as MaybeNum,
+      maxDiscountPercent: null as MaybeNum,
+    };
   }
 
-  // 4️⃣ Elsődleges kép kiválasztása
-  let main = images[0]
-  let imgSrc = main.src
+  const computed = list
+    .map((v) => computeVariantFinalPrice(v as VariantForDiscount))
+    .filter((x) => typeof x.final === "number" && x.final! > 0);
 
-  // ➕ Csak akkor fűzzük hozzá a -500.jpg-t, ha:
-  //    - az images tömbből jön (nem az image mezőből),
-  //    - és a src NEM végződik .jpg / .png / .webp kiterjesztéssel
-  const cameFromImages = Array.isArray(p.images) && p.images.length > 0
-  const hasExtension = /\.(jpg|jpeg|png|webp)$/i.test(imgSrc)
+  const finals = computed.map((x) => x.final!) as number[];
+  const originals = computed
+    .map((x) => x.original)
+    .filter((n): n is number => typeof n === "number" && n > 0);
 
-  if (cameFromImages && !hasExtension) {
-    imgSrc = `${imgSrc}-500.jpg`
-  }
+  const minFinal = finals.length ? Math.min(...finals) : null;
+  const maxFinal = finals.length ? Math.max(...finals) : null;
+  const minOriginal = originals.length ? Math.min(...originals) : null;
 
-  const image = { src: imgSrc, alt: main.alt || name || "Termékkép" }
+  const hasAnyDiscount = computed.some((x) => x.hasDiscount);
+  const maxDiscountPercent = computed.reduce((m, x) => Math.max(m, x.pct ?? 0), 0) || null;
+
+  return { hasAnyDiscount, minOriginal, minFinal, maxFinal, maxDiscountPercent };
+}
+
+function normalizeIndexItem(i: IndexItem): FlatProduct {
+  const name = typeof i.name === "string" ? i.name : "";
+  const sku = typeof i.sku === "string" ? i.sku : "";
+  const slug = i.slug;
+  const categorySlug = i.categorySlug;
+
+  const basePrice = numOrNull(i.priceFrom);
+  const priceTo = numOrNull(i.priceTo);
+
+  const discountPercent = numOrNull(i.discountPercent);
+
+  // ✅ index alapú akció (minden terméknél működik, variánsosnál is "Ft-tól")
+  const dFrom = computeDiscount(basePrice, discountPercent, i.discountValidUntil ?? null);
+  const dTo = computeDiscount(priceTo, discountPercent, i.discountValidUntil ?? null);
+
+  const imgSrc = pickImageSrc(i);
+  const image = { src: imgSrc, alt: name || "Termékkép" };
+
+  const variantTitles = toStringArray(i.variantTitles);
+  const variantSkus = toStringArray(i.variantSkus);
+
+  const isSingle = isSingleByVariantTitles(variantTitles);
+  const hasVariants = computeHasVariantsFromIndex(i);
+  const inStock = computeInStockFromIndex(i);
+
+  const searchText = buildSearchText([name, sku, variantTitles, variantSkus]);
 
   return {
     name,
-    description,
+    description: typeof (i as any).description === "string" ? (i as any).description : "",
     sku,
     slug,
-    stock,
 
-    price,
-    mprice,
-    m2price,
-    m3price,
-    palprice,
+    basePrice,              // priceFrom
+    priceTo,                // priceTo
 
-    hasPrice: basePrice,
-    basePrice,
-    finalPrice,
-    hasDiscount,
-    discountPrice,
+    // ✅ itt most a "from" akciós finalPrice
+    finalPrice: dFrom.finalPrice,
+    hasDiscount: dFrom.hasDiscount,              // indexből számolva (nem i.hasDiscount)
     discountPercent,
-    discountEndsAt,
-    discountLabel,
+    discountEndsAt: dFrom.discountEndsAt,
+    discountLabel: dFrom.discountLabel,
 
-    images,
     image,
+    categorySlug,
+    variants: null,
 
-    categorySlug: cat.slug,
-    categoryName: cat.category,
-    variants: p.variants
+    inStock,
+    hasVariants,
+
+    variantTitles,
+    variantSkus,
+
+    isSingleByTitles: isSingle,
+
+    // ✅ (opcionális) ha akarod a "to" akciós árát is:
+    variantsMinOriginal: basePrice,
+    variantsMinFinal: dFrom.finalPrice,
+    variantsMaxFinal: dTo.finalPrice, // ha nincs, null marad
+    variantsHasDiscount: dFrom.hasDiscount,
+    variantsMaxDiscountPercent: dFrom.hasDiscount ? discountPercent : null,
+
+    searchText,
   };
+}
+
+
+async function loadProductDetail(productSlug: string): Promise<ProductDetail | null> {
+  try {
+    const mod = await import(`../../data/products/${productSlug}.json`);
+    return (mod?.default ?? mod) as ProductDetail;
+  } catch {
+    return null;
+  }
 }
 
 export default function SearchWidget() {
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [query, setQuery] = useState('');
+
+  const [query, setQuery] = useState("");
   const [results, setResults] = useState<any[]>([]);
   const [isOpen, setIsOpen] = useState(false);
 
-
-  
-  // Laposított és normalizált terméklista
   const flatProducts: FlatProduct[] = useMemo(() => {
-    return (productsData as Category[]).flatMap((cat) =>
-      (cat.products || []).map((p) => normalizeItem(p, cat))
-    );
+    return (productsIndex as IndexItem[]).map((i) => normalizeIndexItem(i));
   }, []);
 
-  // Fuse példány (memózva)
   const fuse = useMemo(() => {
     return new Fuse(flatProducts, {
-      keys: ['name', 'description', 'sku'],
+      keys: ["name", "sku", "variantTitles", "variantSkus", "searchText"],
       threshold: 0.3,
       ignoreLocation: true,
       minMatchCharLength: 2,
@@ -258,7 +375,6 @@ export default function SearchWidget() {
     });
   }, [flatProducts]);
 
-  // Keresés
   useEffect(() => {
     const q = query.trim();
     if (q.length > 1) {
@@ -266,7 +382,7 @@ export default function SearchWidget() {
         const r = fuse.search(q);
         setResults(r);
       } catch (e) {
-        console.error('Fuse search error:', e);
+        console.error("Fuse search error:", e);
         setResults([]);
       }
     } else {
@@ -274,10 +390,64 @@ export default function SearchWidget() {
     }
   }, [query, fuse]);
 
-  // ?q beolvasása
+  // Top találatokhoz leírás + variants lazy (max 10)
+  useEffect(() => {
+    let cancelled = false;
+
+    async function hydrateTop() {
+      const top = results.slice(0, 10).map((x: any) => x.item as FlatProduct);
+      if (top.length === 0) return;
+
+      const updates = await Promise.all(
+        top.map(async (p) => {
+          const detail = await loadProductDetail(p.slug);
+          return { slug: p.slug, detail };
+        })
+      );
+
+      if (cancelled) return;
+
+      setResults((prev) =>
+        prev.map((r: any) => {
+          const item = r.item as FlatProduct;
+          const found = updates.find((u) => u.slug === item.slug);
+          if (!found?.detail) return r;
+
+          const nextVariants = found.detail.variants ?? item.variants;
+          const vinfo = computeVariantsPriceInfo(nextVariants);
+
+          return {
+            ...r,
+            item: {
+              ...item,
+              description:
+                typeof found.detail.description === "string"
+                  ? found.detail.description
+                  : item.description,
+              variants: nextVariants,
+
+              // ✅ variánsos akció/ár logika
+              variantsMinOriginal: vinfo.minOriginal,
+              variantsMinFinal: vinfo.minFinal,
+              variantsMaxFinal: vinfo.maxFinal,
+              variantsHasDiscount: vinfo.hasAnyDiscount,
+              variantsMaxDiscountPercent: vinfo.maxDiscountPercent,
+            },
+          };
+        })
+      );
+    }
+
+    hydrateTop();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [results.length]);
+
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const q = params.get('q');
+    const q = params.get("q");
     if (q && q.trim().length > 1) {
       setQuery(q);
       setIsOpen(true);
@@ -285,43 +455,36 @@ export default function SearchWidget() {
     }
   }, []);
 
-  // URL szinkron
   useEffect(() => {
     const url = new URL(window.location.href);
-    if (query.trim().length > 0) {
-      url.searchParams.set('q', query);
-    } else {
-      url.searchParams.delete('q');
-    }
-    window.history.replaceState({}, '', url.toString());
+    if (query.trim().length > 0) url.searchParams.set("q", query);
+    else url.searchParams.delete("q");
+    window.history.replaceState({}, "", url.toString());
   }, [query]);
 
   const closeModal = () => {
     setIsOpen(false);
     const url = new URL(window.location.href);
-    url.searchParams.delete('q');
-    window.history.replaceState({}, '', url.toString());
+    url.searchParams.delete("q");
+    window.history.replaceState({}, "", url.toString());
   };
 
-  // ESC & outside click
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') closeModal();
+      if (e.key === "Escape") closeModal();
     };
     const handleClickOutside = (e: MouseEvent) => {
       if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
         closeModal();
       }
     };
-    window.addEventListener('keydown', handleEsc);
-    window.addEventListener('mousedown', handleClickOutside);
+    window.addEventListener("keydown", handleEsc);
+    window.addEventListener("mousedown", handleClickOutside);
     return () => {
-      window.removeEventListener('keydown', handleEsc);
-      window.removeEventListener('mousedown', handleClickOutside);
+      window.removeEventListener("keydown", handleEsc);
+      window.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-
-/*   console.log(results) */
 
   return (
     <div class="relative max-h-[90vh] overflow-y-auto">
@@ -330,9 +493,9 @@ export default function SearchWidget() {
         onClick={() => {
           setIsOpen(true);
           const url = new URL(window.location.href);
-          if (!url.searchParams.has('q')) {
-            url.searchParams.set('q', '');
-            window.history.replaceState({}, '', url.toString());
+          if (!url.searchParams.has("q")) {
+            url.searchParams.set("q", "");
+            window.history.replaceState({}, "", url.toString());
           }
           setTimeout(() => inputRef.current?.focus(), 50);
         }}
@@ -370,20 +533,11 @@ export default function SearchWidget() {
 
             <ul>
               {results.map(({ item }: { item: FlatProduct }) => {
-                const img = item;
+                const inStock = item.inStock;
 
-              // Első nem null/undefined ár érték
-                const v =
-                  item.price ??
-                  item.mprice ??
-                  item.m2price ??
-                  item.m3price ??
-                  item.palprice;
+                // ✅ MULTI csak akkor, ha van variáns ÉS nem "Alap" single
+                const isMulti = item.hasVariants && !item.isSingleByTitles;
 
-                const hasPrice: number | null =
-                  typeof v === "number" && Number.isFinite(v) ? v : null;
-
-                const inStock = Number.isFinite(item.stock) && item.stock > 0;
                 return (
                   <li key={item.slug} class="mb-4 border-b border-gray-200 dark:border-gray-700 pb-4">
                     <a
@@ -397,56 +551,105 @@ export default function SearchWidget() {
                         class="w-16 h-16 object-cover rounded"
                       />
                       <div>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{item.name || 'Névtelen termék'}</h3>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                          {item.name || "Névtelen termék"}
+                        </h3>
+
                         {item.description && (
-                          <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">{item.description}</p>
+                          <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
+                            {item.description}
+                          </p>
                         )}
+
                         <p class="text-sm text-gray-700 dark:text-gray-300 font-medium">
-                          {!item.variants ? (
-                            <> 
-                            {inStock ? (
-                            item.finalPrice !== null ? (
-                              item.hasDiscount ? (
-                                <>
-                                  <span class="text-green-600 dark:text-green-400 mr-2">Raktáron</span>
-                                  <span class="inline-block bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">
-                                    Akció
-                                  </span>
-                                  <span class="line-through mr-2 text-gray-500 dark:text-gray-400">
-                                    {item.basePrice?.toLocaleString("hu-HU")} Ft
-                                  </span>
-                                  <span class="text-red-600 dark:text-red-400 font-semibold">
-                                    {item.finalPrice.toLocaleString("hu-HU")} Ft
-                                  </span>
-                                  {item.discountLabel && (
-                                    <span class="ml-2 text-green-600 dark:text-green-400">
-                                      {item.discountLabel}
-                                    </span>
-                                  )}
-                                </>
+                          {/* ✅ MULTI variánsos megjelenítés (Ft-tól + variáns akció) */}
+                          {isMulti ? (
+                            <>
+                              <span class="text-green-600 dark:text-green-400 mr-2">
+                                {inStock ? "Raktáron -" : "Előrendelés -"}
+                              </span>
+
+                              {(() => {
+                                const minFinal = item.variantsMinFinal ?? item.basePrice;
+                                const minOriginal = item.variantsMinOriginal ?? item.basePrice;
+                                const hasDisc = item.variantsHasDiscount === true;
+
+                                if (minFinal === null) return <>Ár kérésre</>;
+
+                                return (
+                                  <>
+                                    {hasDisc && minOriginal !== null && minOriginal > minFinal ? (
+                                      <>
+                                        <span class="inline-block bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">
+                                          Akció
+                                        </span>
+                                        <span class="mr-2 text-gray-500 dark:text-gray-400">
+                                          {minOriginal.toLocaleString("hu-HU")} Ft-tól
+                                        </span>
+                                        {typeof item.variantsMaxDiscountPercent === "number" && item.variantsMaxDiscountPercent > 0 && (
+                                          <span class="ml-2 text-green-600 dark:text-green-400">
+                                            Akár -{Math.round(item.variantsMaxDiscountPercent)}%
+                                          </span>
+                                        )}
+                                      </>
+                                    ) : (
+                                      <span class="font-semibold">
+                                        {minFinal.toLocaleString("hu-HU")} Ft-tól
+                                      </span>
+                                    )}
+
+                                    {item.variantsMaxFinal !== null &&
+                                    item.variantsMaxFinal !== undefined &&
+                                    minFinal !== null &&
+                                    item.variantsMaxFinal !== minFinal ? (
+                                      <span class="ml-2 text-gray-600 dark:text-gray-400">
+                                        {item.variantsMaxFinal.toLocaleString("hu-HU")} Ft-ig
+                                      </span>
+                                    ) : null}
+                                  </>
+                                );
+                              })()}
+                            </>
+                          ) : (
+                            /* ✅ SINGLE (nem multi): ugyanaz a logika, mint a sima terméknél */
+                            <>
+                              {inStock ? (
+                                item.finalPrice !== null ? (
+                                  item.hasDiscount ? (
+                                    <>
+                                      <span class="text-green-600 dark:text-green-400 mr-2">Raktáron</span>
+                                      <span class="inline-block bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">
+                                        Akció
+                                      </span>
+                                      <span class="line-through mr-2 text-gray-500 dark:text-gray-400">
+                                        {item.basePrice?.toLocaleString("hu-HU")} Ft
+                                      </span>
+                                      <span class="text-red-600 dark:text-red-400 font-semibold">
+                                        {item.finalPrice.toLocaleString("hu-HU")} Ft
+                                      </span>
+                                      {item.discountLabel && (
+                                        <span class="ml-2 text-green-600 dark:text-green-400">
+                                          {item.discountLabel}
+                                        </span>
+                                      )}
+                                    </>
+                                  ) : (
+                                    <>
+                                      <span class="text-green-600 dark:text-green-400 mr-2">Raktáron -</span>
+                                      {item.finalPrice.toLocaleString("hu-HU")} Ft
+                                    </>
+                                  )
+                                ) : (
+                                  "Raktáron – Ár kérésre"
+                                )
                               ) : (
-                                <>
-                                  <span class="text-green-600 dark:text-green-400 mr-2">Raktáron -</span>
-                                  {item.finalPrice.toLocaleString("hu-HU")} Ft
-                                </>
-                              )
-                            ) : (
-                              "Raktáron – Ár kérésre"
-                            )
-                          ) : (
-                            `Előrendelés – ${item.finalPrice.toLocaleString("hu-HU")} Ft`
-                          )}
-                            </>
-                          ) : (
-                            <> 
-                            <span class="text-green-600 dark:text-green-400 mr-2">Raktáron -</span>
-                            {`${item.variants[0].price.toLocaleString("hu-HU")} Ft-tól`}
+                                item.finalPrice !== null
+                                  ? `Előrendelés – ${item.finalPrice.toLocaleString("hu-HU")} Ft`
+                                  : "Előrendelés – Ár kérésre"
+                              )}
                             </>
                           )}
-
-                          
                         </p>
-
                       </div>
                     </a>
                   </li>

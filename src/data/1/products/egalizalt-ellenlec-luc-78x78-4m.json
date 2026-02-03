@@ -1,4 +1,5 @@
 {
+  "categorySlug": "csereplec-ellenlec",
   "name": "Egalizált ellenléc luc 78x78mmx4m I-II. osztály",
   "slug": "egalizalt-ellenlec-luc-78x78-4m",
   "meta": {
@@ -6,15 +7,10 @@
     "description": "Egalizált, szárított lucfenyő ellenléc 78x78 mm-es méretben, 4 m-es hosszban – osztrák I-II. osztályú faanyag, nagy keresztmetszetű tetőszerkezetekhez.",
     "image": "/termekek/egalizalt-ellenlec-luc-78x78-4m.jpg"
   },
-  "aggregateRating": {
-    "ratingValue": "4,85",
-    "reviewCount": 16
-  },
   "description": "Szárított, egalizált lucfenyő ellenléc 78x78 mm-es méretben, 4 m-es hosszban – nagy szellőzőmagassághoz, vázakhoz és tetőszerkezethez.",
-  "image": "/termekek/egalizalt-ellenlec-luc-78x78-4m.jpg",
-  "images": [],
   "longDescription": "A 78x78 mm-es, 4 méteres egalizált lucfenyő ellenléc ideális választás nagy keresztmetszetű tetőszerkezetekhez, ahol fontos a stabilitás, teherbírás és precíz illeszkedés. Az osztrák származású, I-II. osztályú szárított faanyag kiváló mérettartással és megmunkálhatósággal rendelkezik. Alkalmas átszellőztetett tetőkhöz, szarufák közötti vázszerkezethez, vagy akár könnyűtartóként is felhasználható.",
   "longDescription2": "Az egalizált felület lehetővé teszi a pontos beépítést és tartós csatlakozásokat. A 78 mm-es magasság biztosítja a megfelelő szellőzőlégrést napelemes rendszerek vagy vastagabb hőszigetelések esetén is. Kezeletlen, de szárított kivitelben érkezik – kültéri használat esetén vékonylazúros felületkezelés ajánlott.",
+  "longDescription3": "",
   "material": null,
   "audience": [],
   "blogtags": [
@@ -22,60 +18,51 @@
     "ellenléc",
     "tetőszerkezet"
   ],
-  "sku": "luc-el-eg-78x78-4m",
-  "price": 5690,
-  "mprice": 1422,
-  "m2price": null,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": null,
   "specs": {
-    "Hossz": {
-      "label": "Hossz",
-      "order": 2,
-      "value": "4 m"
-    },
-    "Méret": {
+    "d91696bf12": {
       "label": "Méret",
       "order": 1,
       "value": "78 x 78 mm"
     },
-    "Típus": {
-      "label": "Típus",
-      "order": 4,
-      "value": "Egalizált ellenléc / könnyű tartó"
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
     },
-    "Fa fajta": {
+    "be340899f3": {
       "label": "Fa fajta",
       "order": 3,
       "value": "Luc fenyő"
     },
-    "Felület": {
+    "12b57a3ca1": {
+      "label": "Típus",
+      "order": 4,
+      "value": "Egalizált ellenléc / könnyű tartó"
+    },
+    "9aab9dc818": {
       "label": "Felület",
       "order": 5,
       "value": "Egalizált, szárított"
     },
-    "Minőség": {
+    "5fd98f8686": {
       "label": "Minőség",
       "order": 6,
       "value": "I-II. osztály"
     },
-    "Származás": {
+    "82d331f781": {
       "label": "Származás",
       "order": 7,
       "value": "Ausztria"
     },
-    "Mérettűrés": {
-      "label": "Mérettűrés",
-      "order": 9,
-      "value": "Maximálisan ±0,3 mm eltérés lehetséges a megadott mérethez képest"
-    },
-    "Felhasználás": {
+    "a824b67725": {
       "label": "Felhasználás",
       "order": 8,
       "value": "Ellenléc, tetőszellőzés, vázszerkezet, napelemes rendszerek alá, könnyűtartó"
+    },
+    "b5eb7181a6": {
+      "label": "Mérettűrés",
+      "order": 9,
+      "value": "Maximálisan ±0,3 mm eltérés lehetséges a megadott mérethez képest"
     }
   },
   "shippingDetails": {
@@ -84,7 +71,38 @@
     "width": 7,
     "height": 7
   },
-  "variants": null,
-  "category": "csereplec-ellenlec",
-  "categorySlug": "csereplec-ellenlec"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.85,
+    "reviewCount": 16
+  },
+  "image": "/termekek/egalizalt-ellenlec-luc-78x78-4m.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_2c07dbfaa25272c3",
+      "title": "Alap",
+      "sku": "luc-el-eg-78x78-4m",
+      "variant_rank": 0,
+      "price": 5690,
+      "mprice": 1422,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 5690,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

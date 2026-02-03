@@ -1,4 +1,5 @@
 {
+  "categorySlug": "pallo",
   "name": "Palló - Luc 38x240mmx4m – I-II. osztály",
   "slug": "luc-pallo-38x240-4m",
   "meta": {
@@ -6,72 +7,58 @@
     "description": "Masszív lucfenyő palló 38x240 mm méretben, 4 méteres hosszban. Ideális födémekhez, ácsszerkezetekhez és zsaluzáshoz. Kedvező ár raktárról!",
     "image": "/termekek/luc-pallo-38x240.webp"
   },
-  "aggregateRating": {
-    "ratingValue": "4,7",
-    "reviewCount": 34
-  },
   "description": "Lucfenyő palló 38×240 mm keresztmetszettel, 4 méter hosszúságban, I./II. osztályú minőségben. Erős és sokoldalú építőanyag.",
-  "image": "/termekek/luc-pallo-38x240.webp",
-  "images": [],
   "longDescription": "A 38x240 mm-es lucfenyő palló ideális választás ácsszerkezetekhez, zsaluzáshoz, födémek kialakításához vagy egyéb szerkezeti faanyagként. A 4 méter hosszú palló I. és II. osztályú minőségben érhető el, így ár-érték arányban kiváló választás kisebb és nagyobb építkezésekhez is. A lucfenyő szerkezeti fa előnye a könnyű megmunkálhatóság, a kedvező szilárdsági tulajdonságok, valamint a jó tartósság beltéri felhasználás esetén. Raktárról, kedvező áron vásárolható meg, raklapos tételben is rendelhető.",
-  "longDescription2": null,
+  "longDescription2": "",
+  "longDescription3": "",
   "material": null,
   "audience": [],
   "blogtags": [],
-  "sku": "luc-pallo-38x240-4m",
-  "price": 8694,
-  "mprice": null,
-  "m2price": null,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": null,
   "specs": {
-    "Anyag": {
+    "e8181c4d08": {
       "label": "Anyag",
       "order": 1,
       "value": "Lucfenyő"
     },
-    "Profil": {
-      "label": "Profil",
-      "order": 3,
-      "value": "Palló"
-    },
-    "Felület": {
-      "label": "Felület",
-      "order": 6,
-      "value": "Nyers, gyalulatlan"
-    },
-    "Méretek": {
-      "label": "Méretek",
-      "order": 4,
-      "value": "38x240 mm"
-    },
-    "Minőség": {
+    "c1d32ba225": {
       "label": "Minőség",
       "order": 2,
       "value": "I./II. osztály"
     },
-    "Tárolás": {
-      "label": "Tárolás",
-      "order": 9,
-      "value": "Száraz, fedett helyen ajánlott"
+    "31e15c984d": {
+      "label": "Profil",
+      "order": 3,
+      "value": "Palló"
     },
-    "Hosszúság": {
+    "c6a419fd0e": {
+      "label": "Méretek",
+      "order": 4,
+      "value": "38x240 mm"
+    },
+    "12a60024fc": {
       "label": "Hosszúság",
       "order": 5,
       "value": "4 méter"
     },
-    "Súly (kb.)": {
+    "cfc3da8ea6": {
+      "label": "Felület",
+      "order": 6,
+      "value": "Nyers, gyalulatlan"
+    },
+    "a44c5be96d": {
       "label": "Súly (kb.)",
       "order": 7,
       "value": "28–32 kg/darab"
     },
-    "Felhasználás": {
+    "8e5b68da6c": {
       "label": "Felhasználás",
       "order": 8,
       "value": "Födém, zsaluzat, ácsszerkezet, barkácsprojektek"
+    },
+    "8783a3c1c5": {
+      "label": "Tárolás",
+      "order": 9,
+      "value": "Száraz, fedett helyen ajánlott"
     }
   },
   "shippingDetails": {
@@ -80,7 +67,38 @@
     "width": 24,
     "height": 3
   },
-  "variants": null,
-  "category": "pallo",
-  "categorySlug": "pallo"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 34
+  },
+  "image": "/termekek/luc-pallo-38x240.webp",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_b2e1c9dd2cc261d5",
+      "title": "Alap",
+      "sku": "luc-pallo-38x240-4m",
+      "variant_rank": 0,
+      "price": 8694,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 8694,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

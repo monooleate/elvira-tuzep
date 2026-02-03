@@ -1,4 +1,5 @@
 {
+  "categorySlug": "osb-lapok",
   "name": "OSB lap 22 mm – zsalutábla, heveder, teherhordó réteg",
   "slug": "osb-lap-22mm",
   "meta": {
@@ -6,15 +7,10 @@
     "description": "OSB lap 22 mm vastagságban – ideális zsalutáblának, hevederekhez és teherhordó rétegként. Csiszolt felület, szabványos 2500×1250 mm méretben, elérhető raktárról.",
     "image": "/termekek/osb-lap-22mm.webp"
   },
-  "aggregateRating": {
-    "ratingValue": "4,88",
-    "reviewCount": 31
-  },
   "description": "22 mm vastag OSB 3 lap – ideális zsalutáblának, hevedernek vagy nehéz szerkezeti rétegnek. Extra teherbírás, nedvességálló kivitel, szabványos 3,125 m² táblaformátumban.",
-  "image": "/termekek/osb-lap-22mm.webp",
-  "images": [],
   "longDescription": "A 22 mm-es OSB lap az egyik legerősebb szabványos vastagság, amely különösen alkalmas zsalutáblaként való felhasználásra, előregyártott elemekhez, vagy akár padlók teherhordó rétegeként. Az OSB 3 típusú panel kiváló nedvességállósággal és formatartással rendelkezik, így kültéri vagy fokozott igénybevételű belsőépítészeti feladatokra is ajánlott. A 2500×1250 mm-es méret és csiszolt felület megkönnyíti a beépítést és pontos illesztést. Kedvezőbb árú alternatíva a rétegelt lemezekhez képest, elérhető raktárról, akár azonnali elszállítással.",
-  "longDescription2": null,
+  "longDescription2": "",
+  "longDescription3": "",
   "material": "OSB 3 nedvességálló faforgács panel",
   "audience": [
     "kivitelezők",
@@ -29,65 +25,56 @@
     "heveder",
     "építőanyag"
   ],
-  "sku": "osb-22mm",
-  "price": 12690,
-  "mprice": null,
-  "m2price": 4061,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": null,
   "specs": {
-    "Típus": {
-      "label": "Típus",
-      "order": 7,
-      "value": "OSB 3 – teherhordó, nedvességálló"
-    },
-    "Tömeg": {
-      "label": "Tömeg",
-      "order": 5,
-      "value": "~ 44,6 kg"
-    },
-    "Felület": {
-      "label": "Felület",
-      "order": 6,
-      "value": "csiszolt, éles él"
-    },
-    "Előnyök": {
-      "label": "Előnyök",
-      "order": 9,
-      "value": "Extra teherbírás, nagy vastagság, nedvességállóság"
-    },
-    "Sűrűség": {
-      "label": "Sűrűség",
-      "order": 4,
-      "value": "kb. 600–680 kg/m³"
-    },
-    "Vastagság": {
+    "8898a37877": {
       "label": "Vastagság",
       "order": 1,
       "value": "22 mm"
     },
-    "Tábla méret": {
+    "d3f44929fe": {
       "label": "Tábla méret",
       "order": 2,
       "value": "2500 × 1250 mm"
     },
-    "Ajánlott hely": {
-      "label": "Ajánlott hely",
-      "order": 10,
-      "value": "Zsaluzás, kültéri szerkezet, ipari padló, magas igénybevételű területek"
+    "9b1bfa95eb": {
+      "label": "Tábla felülete",
+      "order": 3,
+      "value": "3,125m²"
     },
-    "Felhasználás": {
+    "17471b2af1": {
+      "label": "Sűrűség",
+      "order": 4,
+      "value": "kb. 600–680 kg/m³"
+    },
+    "1d0b86b7f0": {
+      "label": "Tömeg",
+      "order": 5,
+      "value": "~ 44,6 kg"
+    },
+    "a39255b4f5": {
+      "label": "Felület",
+      "order": 6,
+      "value": "csiszolt, éles él"
+    },
+    "0f96c995a9": {
+      "label": "Típus",
+      "order": 7,
+      "value": "OSB 3 – teherhordó, nedvességálló"
+    },
+    "f8264f6988": {
       "label": "Felhasználás",
       "order": 8,
       "value": "Zsalutábla, hevederek, padlószerkezetek, erős burkolat"
     },
-    "Tábla felülete": {
-      "label": "Tábla felülete",
-      "order": 3,
-      "value": "3,125m²"
+    "82e1617546": {
+      "label": "Előnyök",
+      "order": 9,
+      "value": "Extra teherbírás, nagy vastagság, nedvességállóság"
+    },
+    "2a234e13f8": {
+      "label": "Ajánlott hely",
+      "order": 10,
+      "value": "Zsaluzás, kültéri szerkezet, ipari padló, magas igénybevételű területek"
     }
   },
   "shippingDetails": {
@@ -96,7 +83,38 @@
     "width": 125,
     "height": 2
   },
-  "variants": null,
-  "category": "osb-lapok",
-  "categorySlug": "osb-lapok"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.88,
+    "reviewCount": 31
+  },
+  "image": "/termekek/osb-lap-22mm.webp",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_1e73e8620c47c0d2",
+      "title": "Alap",
+      "sku": "osb-22mm",
+      "variant_rank": 0,
+      "price": 12690,
+      "mprice": null,
+      "m2price": 4061,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 12690,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

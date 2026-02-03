@@ -1,4 +1,5 @@
 {
+  "categorySlug": "osb-lapok",
   "name": "OSB lap 12 mm – faház építéshez, tetőburkoláshoz",
   "slug": "osb-lap-12mm",
   "meta": {
@@ -6,15 +7,10 @@
     "description": "OSB lap 12 mm vastagságban – kiváló választás faházakhoz, tetőburkolathoz, ládákhoz. 2500×1250 mm szabványos OSB tábla, nedvességálló, raktárról elérhető.",
     "image": "/images/products/osb-lap-12mm.png"
   },
-  "aggregateRating": {
-    "ratingValue": "4,71",
-    "reviewCount": 63
-  },
   "description": "12 mm vastag OSB lap, ideális faházak, kész- és mobilházak falburkolásához, tetőaljzatnak, vagy nagy teherbírású csomagoló ládákhoz. Stabil, nedvességálló, jól szerelhető panel.",
-  "image": "/termekek/osb-lap-12mm.png",
-  "images": [],
   "longDescription": "Az OSB 12 mm lap univerzális építőanyag, amely kiválóan alkalmas könnyűszerkezetes házakhoz, kész- és faházak falainak burkolásához, tetőaljzatként való alkalmazásra, vagy szállítóládák és dobozok gyártására. Az OSB 3 típusú panel teherhordó és nedvességálló, így kültéri burkolatokhoz is biztonságosan használható. A 2500×1250 mm-es szabványos OSB tábla méret 3,125 m² fedést biztosít, így könnyen kalkulálható a szükséges mennyiség. Gyakori választás Praktiker, OBI vagy Bauhaus OSB lapok helyett – közvetlenül elérhető raktárról.",
-  "longDescription2": null,
+  "longDescription2": "",
+  "longDescription3": "",
   "material": "OSB 3 nedvességálló faforgács panel",
   "audience": [
     "építkezők",
@@ -30,65 +26,56 @@
     "tetőburkolat",
     "osb tábla"
   ],
-  "sku": "osb-12mm",
-  "price": 6890,
-  "mprice": null,
-  "m2price": 2205,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": null,
   "specs": {
-    "Típus": {
-      "label": "Típus",
-      "order": 7,
-      "value": "OSB 3 – teherhordó, nedvességálló"
-    },
-    "Tömeg": {
-      "label": "Tömeg",
-      "order": 5,
-      "value": "~ 24,4 kg"
-    },
-    "Felület": {
-      "label": "Felület",
-      "order": 6,
-      "value": "csiszolt, éles él"
-    },
-    "Előnyök": {
-      "label": "Előnyök",
-      "order": 9,
-      "value": "Megerősített tartás, kültéri alkalmazhatóság, standard méret"
-    },
-    "Sűrűség": {
-      "label": "Sűrűség",
-      "order": 4,
-      "value": "kb. 600–680 kg/m³"
-    },
-    "Vastagság": {
+    "b8e23be10f": {
       "label": "Vastagság",
       "order": 1,
       "value": "12 mm"
     },
-    "Tábla méret": {
+    "d3f44929fe": {
       "label": "Tábla méret",
       "order": 2,
       "value": "2500 × 1250 mm"
     },
-    "Ajánlott hely": {
-      "label": "Ajánlott hely",
-      "order": 10,
-      "value": "Könnyűszerkezetes építés, raktározás, kültéri burkolás"
+    "9b1bfa95eb": {
+      "label": "Tábla felülete",
+      "order": 3,
+      "value": "3,125m²"
     },
-    "Felhasználás": {
+    "17471b2af1": {
+      "label": "Sűrűség",
+      "order": 4,
+      "value": "kb. 600–680 kg/m³"
+    },
+    "4d8f5b95ab": {
+      "label": "Tömeg",
+      "order": 5,
+      "value": "~ 24,4 kg"
+    },
+    "a39255b4f5": {
+      "label": "Felület",
+      "order": 6,
+      "value": "csiszolt, éles él"
+    },
+    "0f96c995a9": {
+      "label": "Típus",
+      "order": 7,
+      "value": "OSB 3 – teherhordó, nedvességálló"
+    },
+    "c1c7471b7e": {
       "label": "Felhasználás",
       "order": 8,
       "value": "Faház, kész- és mobilház építés, tetőhéjalás, szállítóláda"
     },
-    "Tábla felülete": {
-      "label": "Tábla felülete",
-      "order": 3,
-      "value": "3,125m²"
+    "384630b436": {
+      "label": "Előnyök",
+      "order": 9,
+      "value": "Megerősített tartás, kültéri alkalmazhatóság, standard méret"
+    },
+    "95f4c13e47": {
+      "label": "Ajánlott hely",
+      "order": 10,
+      "value": "Könnyűszerkezetes építés, raktározás, kültéri burkolás"
     }
   },
   "shippingDetails": {
@@ -97,7 +84,38 @@
     "width": 125,
     "height": 1
   },
-  "variants": null,
-  "category": "osb-lapok",
-  "categorySlug": "osb-lapok"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.71,
+    "reviewCount": 63
+  },
+  "image": "/images/products/osb-lap-12mm.png",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_d09fb7b3c2b38594",
+      "title": "Alap",
+      "sku": "osb-12mm",
+      "variant_rank": 0,
+      "price": 6890,
+      "mprice": null,
+      "m2price": 2205,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 6890,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

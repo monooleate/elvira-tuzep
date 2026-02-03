@@ -8,37 +8,37 @@
     "image": "/kategoriak/gyalult-deszka.jpg"
   },
   "description": "Prémium minőségű gyalult deszkák bel- és kültéri felhasználásra. Kínálatunkban megtalálhatóak különböző vastagságú és szélességű lucfenyő gyalult deszkák, amelyek ideálisak falburkoláshoz, mennyezethez, lambériázáshoz vagy bútorok készítéséhez. Az osztrák gyártásból származó faanyagok sima felületűek, precízen megmunkáltak és könnyen kezelhetők. Készletről, több méretben és kivitelben – rendeljen megbízható minőségű faanyagot otthoni vagy professzionális munkáihoz!",
+  "faqdesc": "",
   "faq": [
     {
-      "id": 1,
-      "answer": "A gyalult deszka sima felületű, méretpontos faanyag, amelyet a fűrészelést követően gyalulással tesznek szabályossá. Esztétikus, könnyen kezelhető, és sokkal kevésbé szálkás, mint a gyalulatlan deszka.",
-      "question": "Mi az a gyalult deszka?"
+      "id": "1",
+      "question": "Mi az a gyalult deszka?",
+      "answer": "A gyalult deszka sima felületű, méretpontos faanyag, amelyet a fűrészelést követően gyalulással tesznek szabályossá. Esztétikus, könnyen kezelhető, és sokkal kevésbé szálkás, mint a gyalulatlan deszka."
     },
     {
-      "id": 2,
-      "answer": "A gyalult deszka széles körben felhasználható",
-      "question": "Mire használható a gyalult deszka?"
+      "id": "2",
+      "question": "Mire használható a gyalult deszka?",
+      "answer": "A gyalult deszka széles körben felhasználható"
     },
     {
-      "id": 3,
-      "answer": "A leggyakoribb vastagságok 18 mm, 19 mm, 21 mm és 24 mm. Szélességben 90–200 mm közötti méretek a jellemzőek, 3–5 méteres hosszúságban. A gyalult deszkák pontos mérettartással készülnek, így könnyen illeszthetők.",
-      "question": "Milyen méretekben kapható a gyalult deszka?"
+      "id": "3",
+      "question": "Milyen méretekben kapható a gyalult deszka?",
+      "answer": "A leggyakoribb vastagságok 18 mm, 19 mm, 21 mm és 24 mm. Szélességben 90–200 mm közötti méretek a jellemzőek, 3–5 méteres hosszúságban. A gyalult deszkák pontos mérettartással készülnek, így könnyen illeszthetők."
     },
     {
-      "id": 4,
-      "answer": "A gyalult deszka sima, megmunkált felületű és méretpontos, ezért látszó felhasználásokhoz és precíz illesztésekhez ajánlott. A <a href=\"/termekek/fureszelt-deszka\"><b>gyalulatlan fűrészelt deszka</b></a> érdesebb, olcsóbb, és inkább szerkezeti vagy ideiglenes célokra alkalmas. Például, mint <a href=\"/termekek/fureszelt-deszka/zsaludeszka-25x150x4000\"><b>zsaludeszka</b></a>.",
-      "question": "Mi a különbség a gyalult és a gyalulatlan deszka között?"
+      "id": "4",
+      "question": "Mi a különbség a gyalult és a gyalulatlan deszka között?",
+      "answer": "A gyalult deszka sima, megmunkált felületű és méretpontos, ezért látszó felhasználásokhoz és precíz illesztésekhez ajánlott. A <a href=\"/termekek/fureszelt-deszka\"><b>gyalulatlan fűrészelt deszka</b></a> érdesebb, olcsóbb, és inkább szerkezeti vagy ideiglenes célokra alkalmas. Például, mint <a href=\"/termekek/fureszelt-deszka/zsaludeszka-25x150x4000\"><b>zsaludeszka</b></a>."
     },
     {
-      "id": 5,
-      "answer": "A gyalult deszka ára a vastagságtól, szélességtől és a hosszúságtól függ. Általában méterben vagy négyzetméterben számolják. Az aktuális gyalult deszka árakat megtalálja az Elvira Tüzép weboldalán.",
-      "question": "Mennyibe kerül a gyalult deszka?"
+      "id": "5",
+      "question": "Mennyibe kerül a gyalult deszka?",
+      "answer": "A gyalult deszka ára a vastagságtól, szélességtől és a hosszúságtól függ. Általában méterben vagy négyzetméterben számolják. Az aktuális gyalult deszka árakat megtalálja az Elvira Tüzép weboldalán."
     },
     {
-      "id": 6,
-      "answer": "Leggyakrabban fenyőből (luc, borovi, erdeifenyő) készül, de elérhető keményfából is különlegesebb felhasználásokhoz. A fenyő gyalult deszka kedvező ár-érték arányú és kültéri szerkezetekhez is jól használható, ha felületkezelést kap.",
-      "question": "Milyen fafajból készül a gyalult deszka?"
+      "id": "6",
+      "question": "Milyen fafajból készül a gyalult deszka?",
+      "answer": "Leggyakrabban fenyőből (luc, borovi, erdeifenyő) készül, de elérhető keményfából is különlegesebb felhasználásokhoz. A fenyő gyalult deszka kedvező ár-érték arányú és kültéri szerkezetekhez is jól használható, ha felületkezelést kap."
     }
-  ],
-  "faqdesc": ""
+  ]
 }

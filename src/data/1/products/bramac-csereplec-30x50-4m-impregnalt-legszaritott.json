@@ -1,4 +1,5 @@
 {
+  "categorySlug": "csereplec-ellenlec",
   "name": "Bramac légszárított, impregnált cserépléc 30×50mmx4m",
   "slug": "bramac-csereplec-30x50-4m-impregnalt-legszaritott",
   "meta": {
@@ -6,24 +7,10 @@
     "description": "Bramac légszárított, nyomás alatt impregnált cserépléc 30×50 mm keresztmetszettel, 4 m hosszban. Időtálló tetőléc cserépfedéshez és lécezéshez.",
     "image": "/images/products/bramac-csereplec-30x50-4m-koteg-500.avif"
   },
-  "aggregateRating": {
-    "ratingValue": null,
-    "reviewCount": null
-  },
   "description": "Bramac légszárított, nyomás alatt impregnált, barna színű cserépléc 30×50 mm keresztmetszettel, 4 m hosszban. Időtálló, mérettartó tetőléc cserépfedéshez és lécezéshez, kivitelezők és magánépítkezők részére.",
-  "image": null,
-  "images": [
-    {
-      "src": "/images/products/bramac-csereplec-30x50-4m-koteg",
-      "alt": "Bramac cserépléc 30×50 mm, 4 m – légszárított, impregnált tetőléc közelről kötegben"
-    },
-    {
-      "src": "/images/products/bramac-csereplec-30x50-4m-csomag",
-      "alt": "Bramac 30×50 mm cserépléc – kötegelt, csomagolt kiszerelés oldalnézetből"
-    }
-  ],
   "longDescription": "A Bramac 30×50 mm-es cserépléc légszárított fenyőből készül, nyomás alatt történő impregnálással a tartósság és a biológiai kártevőkkel szembeni védelem érdekében. A 4 méteres szálhossz ideális gyors és hatékony lécezéshez. Stabil, teherbíró megoldás átszellőztetett tetőszerkezetekhez és a cserépfedés biztonságos rögzítéséhez.",
   "longDescription2": "Az impregnálás növeli a faanyag ellenállását gombával és rovarokkal szemben, a légszárított állapot pedig segít csökkenteni a beépítés közbeni vetemedés kockázatát. Ajánlott új építésekhez és felújításokhoz egyaránt.",
+  "longDescription3": "",
   "material": "Légszárított, nyomás alatt impregnált fenyő (luc/erdei fenyő)",
   "audience": [
     "kivitelezők",
@@ -38,64 +25,89 @@
     "impregnált faanyag",
     "tetőfedés"
   ],
-  "sku": "luc-csl-impreg-bramac-30x50-4m",
-  "price": 1476,
-  "mprice": 369,
-  "m2price": null,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": 10,
-  "discountValidUntil": "2025-09-30T22:00:00.000Z",
-  "stock": 1,
   "specs": {
-    "Hossz": {
-      "label": "Hossz",
-      "order": 2,
-      "value": "4,0 m"
-    },
-    "Faanyag": {
-      "label": "Faanyag",
-      "order": 3,
-      "value": "Fenyő (luc/erdei fenyő), légszárított"
-    },
-    "Minőség": {
-      "label": "Minőség",
-      "order": 7,
-      "value": "Szerkezeti felhasználásra alkalmas, válogatott anyag"
-    },
-    "Megjegyzés": {
-      "label": "Megjegyzés",
-      "order": null,
-      "value": "Bramac rendszerhez méretezett tetőléc"
-    },
-    "Felhasználás": {
-      "label": "Felhasználás",
-      "order": 5,
-      "value": "Tetőszerkezet lécezése, cserépfedés rögzítése, átszellőztetett tető"
-    },
-    "Keresztmetszet": {
+    "6838f727f1": {
       "label": "Keresztmetszet",
       "order": 1,
       "value": "30 × 50 mm"
     },
-    "Felületkezelés": {
+    "c31780e8c1": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4,0 m"
+    },
+    "2b62365c56": {
+      "label": "Faanyag",
+      "order": 3,
+      "value": "Fenyő (luc/erdei fenyő), légszárított"
+    },
+    "b7456021b2": {
       "label": "Felületkezelés",
       "order": 4,
       "value": "Nyomás alatt impregnált"
     },
-    "Nedvességtartalom": {
+    "e61efffb07": {
+      "label": "Felhasználás",
+      "order": 5,
+      "value": "Tetőszerkezet lécezése, cserépfedés rögzítése, átszellőztetett tető"
+    },
+    "16e09cd471": {
       "label": "Nedvességtartalom",
       "order": 6,
       "value": "Légszárított (irányadó, nem kemencés szárítás)"
+    },
+    "b0e3789a02": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "Szerkezeti felhasználásra alkalmas, válogatott anyag"
+    },
+    "ca5385e28b": {
+      "label": "Megjegyzés",
+      "order": null,
+      "value": "Bramac rendszerhez méretezett tetőléc"
     }
   },
   "shippingDetails": {
-    "weight": null,
     "length": 400,
-    "width": 30,
-    "height": null
+    "width": 30
   },
-  "variants": null,
-  "category": "csereplec-ellenlec",
-  "categorySlug": "csereplec-ellenlec"
+  "aggregateRating": null,
+  "image": "/images/products/bramac-csereplec-30x50-4m-koteg-500.avif",
+  "images": [
+    {
+      "src": "/images/products/bramac-csereplec-30x50-4m-koteg",
+      "alt": "Bramac cserépléc 30×50 mm, 4 m – légszárított, impregnált tetőléc közelről kötegben"
+    },
+    {
+      "src": "/images/products/bramac-csereplec-30x50-4m-csomag",
+      "alt": "Bramac 30×50 mm cserépléc – kötegelt, csomagolt kiszerelés oldalnézetből"
+    }
+  ],
+  "variants": [
+    {
+      "id": "v_814dae0e0abc24f0",
+      "title": "Alap",
+      "sku": "luc-csl-impreg-bramac-30x50-4m",
+      "variant_rank": 0,
+      "price": 1476,
+      "mprice": 369,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": 10,
+      "discountValidUntil": "2025-09-30T22:00:00.000Z",
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 1476,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

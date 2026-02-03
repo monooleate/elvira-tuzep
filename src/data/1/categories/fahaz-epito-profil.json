@@ -8,37 +8,37 @@
     "image": "/kategoriak/fahaz-epito-profil.jpg"
   },
   "description": "Prémium minőségű osztrák rönkházprofil (D-profil) és zsindelyprofil lucfenyőből és borovi fenyőből, közvetlenül a Pabst-Holz gyártótól. Tartós, esztétikus burkolatok faházakhoz, homlokzatokhoz, belső terekhez – készletről, kiváló árakon!",
+  "faqdesc": "",
   "faq": [
     {
-      "id": 1,
-      "answer": "A faház építő profil, más néven rönkház profil egy nútféderes burkolóelem, amely félköríves (D-profil) vagy zsindelyprofilú felületével a klasszikus rönkház hatását kelti. Rusztikus, természetközeli megjelenést biztosít homlokzatokon és belső falakon is.",
-      "question": "Mi az a faház építő profil (rönkház profil)?"
+      "id": "1",
+      "question": "Mi az a faház építő profil (rönkház profil)?",
+      "answer": "A faház építő profil, más néven rönkház profil egy nútféderes burkolóelem, amely félköríves (D-profil) vagy zsindelyprofilú felületével a klasszikus rönkház hatását kelti. Rusztikus, természetközeli megjelenést biztosít homlokzatokon és belső falakon is."
     },
     {
-      "id": 2,
-      "answer": "A leggyakoribb méretek 19×116 mm és 24×146 mm, jellemzően 4 méteres hosszban. A vastagabb (24 mm) profil nagyobb merevséget és jobb hőszigetelő képességet biztosít.",
-      "question": "Milyen méretekben kapható a rönkház profil?"
+      "id": "2",
+      "question": "Milyen méretekben kapható a rönkház profil?",
+      "answer": "A leggyakoribb méretek 19×116 mm és 24×146 mm, jellemzően 4 méteres hosszban. A vastagabb (24 mm) profil nagyobb merevséget és jobb hőszigetelő képességet biztosít."
     },
     {
-      "id": 3,
-      "answer": "A rönkház profil ideális homlokzatok, melléképületek, kerítések, kerti házak és beltéri díszfalak burkolására. Rusztikus, alpesi hatású megjelenése miatt egyre népszerűbb kültéri és beltéri felhasználásban egyaránt.",
-      "question": "Mire használható a faház építő profil?"
+      "id": "3",
+      "question": "Mire használható a faház építő profil?",
+      "answer": "A rönkház profil ideális homlokzatok, melléképületek, kerítések, kerti házak és beltéri díszfalak burkolására. Rusztikus, alpesi hatású megjelenése miatt egyre népszerűbb kültéri és beltéri felhasználásban egyaránt."
     },
     {
-      "id": 4,
-      "answer": "A rönkház profilt függőleges ellenlécezésre és vízszintes stafnira rögzítve kell felrakni, így biztosítható a szellőző légrés a burkolat mögött. Kültéri felhasználás esetén minden vágott felületet és véget impregnálni kell a tartósság érdekében.",
-      "question": "Hogyan kell felrakni a rönkház profilt?"
+      "id": "4",
+      "question": "Hogyan kell felrakni a rönkház profilt?",
+      "answer": "A rönkház profilt függőleges ellenlécezésre és vízszintes stafnira rögzítve kell felrakni, így biztosítható a szellőző légrés a burkolat mögött. Kültéri felhasználás esetén minden vágott felületet és véget impregnálni kell a tartósság érdekében."
     },
     {
-      "id": 5,
-      "answer": "A rönkház profil árát a vastagság (19 mm vagy 24 mm), a szélesség és a fafaj határozza meg. A vastagabb, 24 mm-es profil jellemzően drágább, de tartósabb és merevebb. Az aktuális árak az Elvira Tüzép weboldalán találhatók.",
-      "question": "Mennyibe kerül a rönkház profil?"
+      "id": "5",
+      "question": "Mennyibe kerül a rönkház profil?",
+      "answer": "A rönkház profil árát a vastagság (19 mm vagy 24 mm), a szélesség és a fafaj határozza meg. A vastagabb, 24 mm-es profil jellemzően drágább, de tartósabb és merevebb. Az aktuális árak az Elvira Tüzép weboldalán találhatók."
     },
     {
-      "id": 6,
-      "answer": "A <a href=\"/termekek/lamberia\"><b>lambéria</b></a> vékonyabb (12,5–19 mm) burkolóelem, amely falak és mennyezetek burkolására szolgál. A rönkház profil vastagabb (19–24 mm), félköríves vagy zsindelyprofilú, és kifejezetten rusztikus homlokzatokhoz, faházakhoz és díszfalakhoz ajánlott. Alternatív megoldás lehet a <a href=\"/termekek/hajopadlo\"><b>hajópadló</b></a>, ha erősebb padló- vagy falburkolatot keresünk.",
-      "question": "Mi a különbség a lambéria és a rönkház profil között?"
+      "id": "6",
+      "question": "Mi a különbség a lambéria és a rönkház profil között?",
+      "answer": "A <a href=\"/termekek/lamberia\"><b>lambéria</b></a> vékonyabb (12,5–19 mm) burkolóelem, amely falak és mennyezetek burkolására szolgál. A rönkház profil vastagabb (19–24 mm), félköríves vagy zsindelyprofilú, és kifejezetten rusztikus homlokzatokhoz, faházakhoz és díszfalakhoz ajánlott. Alternatív megoldás lehet a <a href=\"/termekek/hajopadlo\"><b>hajópadló</b></a>, ha erősebb padló- vagy falburkolatot keresünk."
     }
-  ],
-  "faqdesc": ""
+  ]
 }

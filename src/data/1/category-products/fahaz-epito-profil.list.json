@@ -2,76 +2,88 @@
   "categorySlug": "fahaz-epito-profil",
   "items": [
     {
+      "slug": "luc-ronkhaz-profil-19x116-abveh",
+      "categorySlug": "fahaz-epito-profil",
+      "name": "Luc rönkház profil /D/ 19x116mmx4m A-B minőség",
+      "description": "Belső vagy külső burkolatokhoz ideális, sima felületű, gyalult rönkházprofil lucfenyőből.",
+      "sku": "luc-rh-d-19x116-4m",
+      "image": "/termekek/luc-ronkhaz-19x116.jpg",
+      "images": [],
+      "priceFrom": null,
+      "priceTo": null,
+      "stock": 0,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-rh-d-19x116-4m"
+      ]
+    },
+    {
       "slug": "borovi-ronkhaz-profil-19x116-aben",
       "categorySlug": "fahaz-epito-profil",
       "name": "Borovi rönkház profil /D/ 19x116mmx4m A-B minőség",
+      "description": "Masszív, időtálló borovi rönkházprofil kültérre és beltérre – gyalult, sima felület, D-profil kialakítás.",
+      "sku": "borovi-rh-d-19x116-4m",
       "image": "/termekek/borovi-ronkhaz-19x116.jpg",
       "images": [],
-      "sku": "borovi-rh-d-19x116-4m",
       "priceFrom": null,
       "priceTo": null,
+      "stock": 0,
       "discountPercent": null,
       "discountValidUntil": null,
-      "stock": 0,
-      "inStock": false,
-      "hasVariants": false,
-      "variantCount": 0,
-      "ratingValue": 4.75,
-      "reviewCount": 8
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "borovi-rh-d-19x116-4m"
+      ]
     },
     {
       "slug": "borovi-ronkhaz-profil-24x146-aben",
       "categorySlug": "fahaz-epito-profil",
       "name": "Borovi rönkház profil /D/ 24x146mmx4m A-B minőség",
+      "description": "Időtálló borovi rönkházprofil 24x146 mm méretben – kültéri és beltéri burkolatokhoz, természetes D-profil kialakítással.",
+      "sku": "borovi-rh-d-24x146-4m",
       "image": "/termekek/borovi-ronkhaz-24x146.webp",
       "images": [],
-      "sku": "borovi-rh-d-24x146-4m",
       "priceFrom": null,
       "priceTo": null,
+      "stock": 0,
       "discountPercent": null,
       "discountValidUntil": null,
-      "stock": 0,
-      "inStock": false,
-      "hasVariants": false,
-      "variantCount": 0,
-      "ratingValue": 4.65,
-      "reviewCount": 7
-    },
-    {
-      "slug": "luc-ronkhaz-profil-19x116-abveh",
-      "categorySlug": "fahaz-epito-profil",
-      "name": "Luc rönkház profil /D/ 19x116mmx4m A-B minőség",
-      "image": "/termekek/luc-ronkhaz-19x116.jpg",
-      "images": [],
-      "sku": "luc-rh-d-19x116-4m",
-      "priceFrom": null,
-      "priceTo": null,
-      "discountPercent": null,
-      "discountValidUntil": null,
-      "stock": 0,
-      "inStock": false,
-      "hasVariants": false,
-      "variantCount": 0,
-      "ratingValue": 4.7,
-      "reviewCount": 20
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "borovi-rh-d-24x146-4m"
+      ]
     },
     {
       "slug": "luc-zsindely-profil-24x146-ab",
       "categorySlug": "fahaz-epito-profil",
       "name": "Luc zsindely profil 24x146mmx4m A-B minőség",
+      "description": "Lucfenyő zsindelyprofil 24x146 mm-es méretben, kültéri és beltéri burkolatokhoz, A-B minőségben.",
+      "sku": "luc-rh-zsindely-24x146-4m",
       "image": "/termekek/luc-zsindely-24x146.webp",
       "images": [],
-      "sku": "luc-rh-zsindely-24x146-4m",
       "priceFrom": null,
       "priceTo": null,
+      "stock": 0,
       "discountPercent": null,
       "discountValidUntil": null,
-      "stock": 0,
-      "inStock": false,
-      "hasVariants": false,
-      "variantCount": 0,
-      "ratingValue": 4.73,
-      "reviewCount": 5
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "luc-rh-zsindely-24x146-4m"
+      ]
     }
   ]
 }

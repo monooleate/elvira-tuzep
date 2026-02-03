@@ -1,4 +1,5 @@
 {
+  "categorySlug": "lamberia",
   "name": "Lambéria - Softline /E profil/ 14x121mmx4m AB-VEH minőség",
   "slug": "lamberia-softline-14x121-abveh",
   "meta": {
@@ -6,74 +7,60 @@
     "description": "Softline (E profilú) lambéria 14×121 mm-es méretben, válogatott AB-VEH minőségben. Elegáns megjelenésű lambéria belső burkoláshoz.",
     "image": "/termekek/lamberia-softline-14x121.png"
   },
-  "aggregateRating": {
-    "ratingValue": "4,5",
-    "reviewCount": 31
-  },
   "description": "Elegáns, gyalult felületű Softline profilú lambéria, ideális belső burkolatokhoz.",
-  "image": "/termekek/lamberia-softline-14x121.png",
-  "images": [],
   "longDescription": "A 14x121 mm-es méretű Softline (E profil) lambéria esztétikus, lekerekített élkialakítású burkolóanyag, amely tökéletes választás belső falak és mennyezetek burkolására. Az osztrák AB-VEH minőségű lucfenyőből készült termék sima, gyalult felülettel rendelkezik, így további megmunkálást nem igényel. A profil kialakítása megkönnyíti a szerelést, a természetes fa pedig meleg, otthonos hangulatot teremt. Kifejezetten ajánlott nappalikba, tetőterekbe, faházakba és irodai környezetbe.",
-  "longDescription2": null,
+  "longDescription2": "",
+  "longDescription3": "",
   "material": null,
   "audience": [],
   "blogtags": [
     "nevezéktan"
   ],
-  "sku": "luc-lam-sl-14x121-4m-abveh",
-  "price": 2415,
-  "mprice": null,
-  "m2price": 4990,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": 1,
   "specs": {
-    "Hossz": {
-      "label": "Hossz",
-      "order": 2,
-      "value": "4 m"
-    },
-    "Méret": {
+    "9146df105e": {
       "label": "Méret",
       "order": 1,
       "value": "14 x 121 mm"
     },
-    "Profil": {
-      "label": "Profil",
-      "order": 4,
-      "value": "E profil (Softline lekerekített lambéria)"
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
     },
-    "Fa fajta": {
+    "be340899f3": {
       "label": "Fa fajta",
       "order": 3,
       "value": "Luc fenyő"
     },
-    "Felület": {
+    "d339d90905": {
+      "label": "Profil",
+      "order": 4,
+      "value": "E profil (Softline lekerekített lambéria)"
+    },
+    "cffd8a903b": {
       "label": "Felület",
       "order": 5,
       "value": "Gyalult, sima"
     },
-    "Kezelés": {
-      "label": "Kezelés",
-      "order": 9,
-      "value": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
-    },
-    "Minőség": {
-      "label": "Minőség",
-      "order": 7,
-      "value": "AB-VEH (válogatott, burkolati minőség)"
-    },
-    "Származás": {
+    "0fa11b965d": {
       "label": "Származás",
       "order": 6,
       "value": "Ausztria"
     },
-    "Felhasználás": {
+    "4fb4367b23": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "AB-VEH (válogatott, burkolati minőség)"
+    },
+    "f5e3dd5b7b": {
       "label": "Felhasználás",
       "order": 8,
       "value": "Belső fal- és mennyezetburkolat"
+    },
+    "39cf78be3c": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kezeletlen, igény szerint lakkozható, pácolható vagy lazúrozható"
     }
   },
   "shippingDetails": {
@@ -82,7 +69,38 @@
     "width": 12,
     "height": 1
   },
-  "variants": null,
-  "category": "lamberia",
-  "categorySlug": "lamberia"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 31
+  },
+  "image": "/termekek/lamberia-softline-14x121.png",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_5f80c2ae43a5af2f",
+      "title": "Alap",
+      "sku": "luc-lam-sl-14x121-4m-abveh",
+      "variant_rank": 0,
+      "price": 2415,
+      "mprice": null,
+      "m2price": 4990,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 2415,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

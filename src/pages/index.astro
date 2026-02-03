@@ -12,11 +12,12 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import SpecialOffers, { buildSpecialOffersItemList } from '~/components/widgets/SpecialOffers.astro';
-import { computeDiscounted } from '~/lib/discounts';
+import SpecialOffers from '~/components/widgets/SpecialOffers.astro';
+import { buildSpecialOffersItemList } from '../lib/specialOffersSchema';
+import { fetchDiscountedProducts } from '~/lib/discounts';
 import CategoryGrid from '../components/widgets/CategoryGrid.astro';
 import MainCategoryGrid from '../components/widgets/Tabs.jsx';
-import { fetchCategoriesOnly, fetchDiscountedProducts } from '../lib/medusa-adapter'
+import { fetchCategoriesOnly } from '../lib/medusa-adapter'
 import MapWidget from '../components/widgets/MapWidget.astro';
 
 import heroImg from '../assets/images/elvira-tuzep-hero.png';
@@ -114,7 +115,7 @@ const schemaHome = [
 
 const productsData = await fetchCategoriesOnly()
 const discounted = await fetchDiscountedProducts();
-/* console.log(discounted); */
+
 const itemListJsonLd = buildSpecialOffersItemList(discounted);
 
 ---

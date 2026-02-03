@@ -1,4 +1,5 @@
 {
+  "categorySlug": "telitett-pallo",
   "name": "Telített palló 45×68 mm",
   "slug": "telitett-pallo-45x68",
   "meta": {
@@ -6,15 +7,10 @@
     "description": "Tartós, nyomás alatt impregnált telített palló 45×68 mm méretben. Ideális kültéri vázakhoz, keretekhez, szerkezeti elemekhez.",
     "image": "/termekek/telitett-pallo.webp"
   },
-  "aggregateRating": {
-    "ratingValue": 4.86,
-    "reviewCount": 51
-  },
   "description": "Nyomás alatt impregnált, tartós telített palló 45×68 mm méretben kültéri szerkezetekhez és keretépítéshez.",
-  "image": "/termekek/telitett-pallo.webp",
-  "images": [],
   "longDescription": "A 45×68 mm-es telített palló univerzális kültéri építőfa, amely kiváló tartóelem kerti szerkezetekhez, keretekhez és vázépítéshez. A nagynyomású impregnálás védi a fát nedvesség, gombák és rovarok ellen.",
   "longDescription2": "A 3600 mm-es hossz tetszőlegesen méretre vágható, így pontosan illeszthető bármely kültéri építési feladathoz. Stabil, jól terhelhető, és természetes megjelenésével bármilyen kerti struktúrába illeszkedik.",
+  "longDescription3": "",
   "material": "Nagy nyomáson telített borovi fenyő",
   "audience": [
     "kertépítők",
@@ -25,64 +21,81 @@
     "kertifa",
     "rúdfa"
   ],
-  "sku": "Telített palló 45×68 mm",
-  "price": 3460,
-  "mprice": null,
-  "m2price": null,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": 1,
   "specs": {
-    "Anyag": {
-      "label": "Anyag",
-      "order": 3,
-      "value": "Nagynyomáson telített borovi fenyő"
-    },
-    "Hossz": {
-      "label": "Hossz",
-      "order": 2,
-      "value": "3600 mm"
-    },
-    "Méret": {
+    "14c5fa67ad": {
       "label": "Méret",
       "order": 1,
       "value": "45×68 mm"
     },
-    "Tömeg": {
-      "label": "Tömeg",
-      "order": 6,
-      "value": "≈ 7–10 kg/db"
+    "4cf24452cb": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "3600 mm"
     },
-    "Kivitel": {
+    "b9319ea0b6": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyő"
+    },
+    "51fc2fb53c": {
       "label": "Kivitel",
       "order": 4,
       "value": "Gyalult, simított szerkezeti palló"
     },
-    "Megjegyzés": {
-      "label": "Megjegyzés",
-      "order": 8,
-      "value": "Méretre vágást vállalunk"
-    },
-    "Impregnálás": {
+    "8d571f0020": {
       "label": "Impregnálás",
       "order": 5,
       "value": "Nyomás alatti (réz-bázisú)"
     },
-    "Felhasználás": {
+    "bb29083b92": {
+      "label": "Tömeg",
+      "order": 6,
+      "value": "≈ 7–10 kg/db"
+    },
+    "bb95af6fa2": {
       "label": "Felhasználás",
       "order": 7,
       "value": "Kültéri tartószerkezet, keret, vázépítés"
+    },
+    "9ac752d0f9": {
+      "label": "Megjegyzés",
+      "order": 8,
+      "value": "Méretre vágást vállalunk"
     }
   },
-  "shippingDetails": {
-    "weight": null,
-    "length": null,
-    "width": null,
-    "height": null
+  "shippingDetails": null,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.86,
+    "reviewCount": 51
   },
-  "variants": null,
-  "category": "telitett-pallo",
-  "categorySlug": "telitett-pallo"
+  "image": "/termekek/telitett-pallo.webp",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_705fe91db9c090ff",
+      "title": "Alap",
+      "sku": "Telített palló 45×68 mm",
+      "variant_rank": 0,
+      "price": 3460,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 3460,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

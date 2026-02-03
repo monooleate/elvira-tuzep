@@ -1,4 +1,5 @@
 {
+  "categorySlug": "telitett-hegyzett-colop",
   "name": "Telített hegyezett cölöp Ø40mm",
   "slug": "telitett-hegyezett-colop-atmero-40",
   "meta": {
@@ -6,16 +7,10 @@
     "description": "Tartós, impregnált hegyezett cölöp 40 mm átmérővel. Ideális kerítéshez, növénytámasznak és kertépítéshez.",
     "image": "/termekek/hegyezett-colop-atmero-4.webp"
   },
-  "aggregateRating": {
-    "ratingValue": 4.86,
-    "reviewCount": 20
-  },
   "description": "Telített, impregnált hegyezett fa cölöp 40 mm átmérővel, kerítéshez és kertépítéshez.",
-  "image": "/termekek/hegyezett-colop-atmero-4.webp",
-  "images": [],
   "longDescription": "A telített hegyezett cölöp 40 mm-es átmérővel könnyű, mégis stabil megoldás kerti szerkezetekhez, támrendszerekhez vagy ideiglenes kerítésekhez. Nyomás alatti impregnálása véd a korhadás és a rovarok ellen, így hosszú élettartamot biztosít. A hegyezett vég megkönnyíti a leverést, a télített faanyag pedig minimális karbantartást igényel.",
   "longDescription2": "Alkalmazható szőlőkaróként, növénytámaszként vagy ideiglenes kerítésoszlopként. A zöldes árnyalatú impregnálás természetes hatású, és jól illeszkedik bármely kültéri környezethez.",
-  "longDescription3": "<div class=\"mb-6\">\n  <h3 class=\"text-xl font-semibold mb-3\">Körmart, telített cölöp Ø40 mm – könnyű kerti felhasználásra</h3>\n  <p>\n    A 40 mm átmérőjű körmart cölöp ideális választás <strong>kerti szegélyekhez, kisebb kerítésekhez, ágyásszegélyekhez,\n    jelölőoszlopokhoz és dekoratív kültéri elemekhez</strong>. Kis súlya miatt könnyen telepíthető, mégis stabil és tartós\n    megoldást nyújt a mindennapi használatra.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Északi fenyő – nagyobb sűrűség, hosszabb élettartam</h3>\n  <p>\n    A cölöp lassan növő északi borovi fenyőből készül, amelyek sűrű roststruktúrájuk miatt ellenállóbbak az időjárással\n    és nedvességgel szemben.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Háromlépcsős minőségellenőrzés</h3>\n  <ul class=\"list-disc ml-6\">\n    <li>Fakitermeléskor első válogatás</li>\n    <li>Üzemi osztályozás méret és minőség szerint</li>\n    <li>Végső ellenőrzés csomagolás előtt</li>\n  </ul>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Vákuum–nyomás–vákuum telítési technológia</h3>\n  <table class=\"table-auto w-full mt-3\">\n    <tbody>\n      <tr><td class=\"font-semibold p-2\">Előszárítás:</td><td class=\"p-2\">30% alatti nedvességre</td></tr>\n      <tr><td class=\"font-semibold p-2\">Elővákuum:</td><td class=\"p-2\">30 perc / 600 mm Hg</td></tr>\n      <tr><td class=\"font-semibold p-2\">Telítés:</td><td class=\"p-2\">90–120 perc, 12,8 bar</td></tr>\n      <tr><td class=\"font-semibold p-2\">Utóvákuum:</td><td class=\"p-2\">15 perc / 600 mm Hg</td></tr>\n    </tbody>\n  </table>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Favédelem és HC besorolás</h3>\n  <p>\n    Környezetbarát, vízbázisú <strong>Tanalith E</strong> védelemmel kezelve.  \n    EN 351-1 szabvány szerinti <strong>HC4</strong> kategória – közvetlenül földbe helyezhető.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Telepítési javaslat</h3>\n  <p>A stabil telepítéshez a cölöp hosszának kb. <strong>egyharmadát</strong> ajánlott a talajba helyezni.</p>\n</div>\n",
+  "longDescription3": "<div class=\"mb-6\">\n  <h3 class=\"text-xl font-semibold mb-3\">Körmart, telített cölöp Ø40 mm – könnyű kerti felhasználásra</h3>\n  <p>\n    A 40 mm átmérőjű körmart cölöp ideális választás <strong>kerti szegélyekhez, kisebb kerítésekhez, ágyásszegélyekhez,\n    jelölőoszlopokhoz és dekoratív kültéri elemekhez</strong>. Kis súlya miatt könnyen telepíthető, mégis stabil és tartós\n    megoldást nyújt a mindennapi használatra.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Északi fenyő – nagyobb sűrűség, hosszabb élettartam</h3>\n  <p>\n    A cölöp lassan növő északi borovi fenyőből készül, amelyek sűrű roststruktúrájuk miatt ellenállóbbak az időjárással\n    és nedvességgel szemben.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Háromlépcsős minőségellenőrzés</h3>\n  <ul class=\"list-disc ml-6\">\n    <li>Fakitermeléskor első válogatás</li>\n    <li>Üzemi osztályozás méret és minőség szerint</li>\n    <li>Végső ellenőrzés csomagolás előtt</li>\n  </ul>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Vákuum–nyomás–vákuum telítési technológia</h3>\n  <table class=\"table-auto w-full mt-3\">\n    <tbody>\n      <tr><td class=\"font-semibold p-2\">Előszárítás:</td><td class=\"p-2\">30% alatti nedvességre</td></tr>\n      <tr><td class=\"font-semibold p-2\">Elővákuum:</td><td class=\"p-2\">30 perc / 600 mm Hg</td></tr>\n      <tr><td class=\"font-semibold p-2\">Telítés:</td><td class=\"p-2\">90–120 perc, 12,8 bar</td></tr>\n      <tr><td class=\"font-semibold p-2\">Utóvákuum:</td><td class=\"p-2\">15 perc / 600 mm Hg</td></tr>\n    </tbody>\n  </table>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Favédelem és HC besorolás</h3>\n  <p>\n    Környezetbarát, vízbázisú <strong>Tanalith E</strong> védelemmel kezelve.  \n    EN 351-1 szabvány szerinti <strong>HC4</strong> kategória – közvetlenül földbe helyezhető.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Telepítési javaslat</h3>\n  <p>A stabil telepítéshez a cölöp hosszának kb. <strong>egyharmadát</strong> ajánlott a talajba helyezni.</p>\n</div>",
   "material": "Nagy nyomáson telített borovi fenyő",
   "audience": [
     "kertépítők",
@@ -26,73 +21,71 @@
     "kertifa",
     "hegyezett cölöp"
   ],
-  "sku": "HC4150",
-  "price": 875,
-  "mprice": null,
-  "m2price": null,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": null,
   "specs": {
-    "Anyag": {
-      "label": "Anyag",
-      "order": 3,
-      "value": "Nagynyomáson telített borovi fenyőfa"
-    },
-    "Hossz": {
-      "label": "Hossz",
-      "order": 2,
-      "value": "1000–2000 mm"
-    },
-    "Tömeg": {
-      "label": "Tömeg",
-      "order": 6,
-      "value": "≈ 2–4 kg/db"
-    },
-    "Kivitel": {
-      "label": "Kivitel",
-      "order": 4,
-      "value": "Egyik vége hegyezett, másik vége fózolt, körmart cölöp"
-    },
-    "Átmérő": {
+    "eb092684a1": {
       "label": "Átmérő",
       "order": 1,
       "value": "40 mm"
     },
-    "Megjegyzés": {
-      "label": "Megjegyzés",
-      "order": 8,
-      "value": "Könnyen leverhető, kis súlyú cölöp"
+    "0de241918d": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "1000–2000 mm"
     },
-    "Impregnálás": {
+    "7111b0284c": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyőfa"
+    },
+    "0f0116106c": {
+      "label": "Kivitel",
+      "order": 4,
+      "value": "Egyik vége hegyezett, másik vége fózolt, körmart cölöp"
+    },
+    "90118ebd54": {
       "label": "Impregnálás",
       "order": 5,
       "value": "Nyomás alatti (vízbázisú védőszerrel)"
     },
-    "Felhasználás": {
+    "8a62b170dd": {
+      "label": "Tömeg",
+      "order": 6,
+      "value": "≈ 2–4 kg/db"
+    },
+    "45266c0c96": {
       "label": "Felhasználás",
       "order": 7,
       "value": "Kertépítés, növénytámasz, ideiglenes kerítés"
+    },
+    "58706747f8": {
+      "label": "Megjegyzés",
+      "order": 8,
+      "value": "Könnyen leverhető, kis súlyú cölöp"
     }
   },
-  "shippingDetails": {
-    "weight": null,
-    "length": null,
-    "width": null,
-    "height": null
+  "shippingDetails": null,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.86,
+    "reviewCount": 20
   },
+  "image": "/termekek/hegyezett-colop-atmero-4.webp",
+  "images": [],
   "variants": [
     {
       "id": "variant_01K9SB1JE4KMH12ZYEME1E06TR",
       "title": "Ø40mm x 150 | hegyezett",
-      "variantType": null,
       "sku": "HC4150",
       "variant_rank": 0,
       "price": 875,
-      "stock": null,
-      "metadata": {},
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
       "weight": null,
       "length": null,
       "width": null,
@@ -101,12 +94,17 @@
     {
       "id": "variant_01K9SBBADXM9M8SZVRHBAG5VBC",
       "title": "Ø40mm x 200 | hegyezett",
-      "variantType": null,
       "sku": "HC4200",
       "variant_rank": 0,
       "price": 1430,
-      "stock": null,
-      "metadata": {},
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
       "weight": null,
       "length": null,
       "width": null,
@@ -115,31 +113,27 @@
     {
       "id": "variant_01K9Q4DRA3ECXW2E3A64WC9VSD",
       "title": "Telített hegyezett cölöp Ø40mm",
-      "variantType": null,
       "sku": "HC4100",
       "variant_rank": 0,
       "price": 719,
-      "stock": null,
-      "metadata": {
-        "mprice": null,
-        "m2price": null,
-        "m3price": null,
-        "palprice": null,
-        "inventory": 1,
-        "discountPrice": null,
-        "aggregateRating": {
-          "ratingValue": 4.86,
-          "reviewCount": 20
-        },
-        "discountPercent": null,
-        "discountValidUntil": null
-      },
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
       "weight": null,
       "length": 100,
       "width": 4,
       "height": 4
     }
   ],
-  "category": "telitett-hegyzett-colop",
-  "categorySlug": "telitett-hegyzett-colop"
+  "stock": 1,
+  "priceFrom": 719,
+  "priceTo": 1430,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

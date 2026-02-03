@@ -5,6 +5,8 @@
       "slug": "fenyo-pellet-15kg-enplus-a1",
       "categorySlug": "pellet",
       "name": "Prémium fenyő pellet – 15 kg zsák",
+      "description": "Prémium minőségű fenyő pellet, ENplus A1 tanúsítvánnyal. Alacsony hamu és nedvesség, tiszta égés, megbízható adagolhatóság pellet kazánokhoz és pellet kandallókhoz. Praktikus 15 kg-os zsákos kivitelben.",
+      "sku": "pellet-fenyo-15kg-enplus-a1",
       "image": "/images/products/fenyo-pellet-15kg-zsak-500.avif",
       "images": [
         {
@@ -24,17 +26,18 @@
           "alt": "Fenyő pellet – raklapos kiszerelés oldalnézetből, 70 zsák (~1050 kg)"
         }
       ],
-      "sku": "pellet-fenyo-15kg-enplus-a1",
       "priceFrom": 3800,
       "priceTo": null,
-      "discountPercent": 8,
-      "discountValidUntil": "2025-12-14T23:00:00.000Z",
       "stock": 1,
-      "inStock": true,
-      "hasVariants": false,
-      "variantCount": 0,
-      "ratingValue": 4.87,
-      "reviewCount": 52
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "pellet-fenyo-15kg-enplus-a1"
+      ]
     }
   ]
 }

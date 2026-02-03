@@ -1,24 +1,15 @@
 ---
+import { USE_API } from "~/lib/useApiFlag";
+export const prerender = !USE_API;
 import Layout from '../../../layouts/PageLayout.astro';
 import { fetchCategoriesOnly, fetchProductsByCategorySlug } from '../../../lib/medusa-adapter'
-import Metadata from '~/components/common/Metadata.astro';
-import DiscountCardClient from '~/components/widgets/DiscountCardClient';
-
-import { USE_API } from "~/lib/useApiFlag";
-
-export const prerender = !USE_API;
+import ProductCard from '~/components/widgets/ProductCard';
+import { fetchDiscountedProducts } from '~/lib/discounts';
 
 export async function getStaticPaths() {
-  if (USE_API) {
-    // SSR módban semmit sem kell visszaadni
-    return [];
-  }
-
-  // SSG módban lekéri a kategóriákat
+  if (USE_API) return [];
   const categories = await fetchCategoriesOnly();
-  return categories.map((cat) => ({
-    params: { kategoria: cat.slug },
-  }));
+  return categories.map((cat) => ({ params: { kategoria: cat.slug } }));
 }
 
 const { params } = Astro;
@@ -103,7 +94,20 @@ const faqSchema =
         }))
       };
 
-const products = currentCategory.products;
+const discountedAll = fetchDiscountedProducts(5000); // ne 20!
+const discountedBySlug = new Map(discountedAll.map((p:any) => [p.slug, p]));
+
+const products = (currentCategory.products ?? []).map((p:any) => {
+  const d = discountedBySlug.get(p.slug);
+  if (!d) return p;
+
+  return {
+    ...p,
+    hasDiscount: true,
+    discountPercent: d.discountPercent ?? p.discountPercent ?? null,
+    discountValidUntil: d.discountValidUntil ?? p.discountValidUntil ?? null,
+  };
+});
 const showDescription = !!currentCategory.description;
 
 const metadata = {
@@ -153,10 +157,6 @@ const id = 'faq-section'
             <a href="/termekek" class="hover:underline">Termékek</a> /
             <span class="font-medium text-gray-800 dark:text-gray-200">{currentCategory.category}</span>
           </nav>
-
-      <!--     <a href="/termekek" class="text-orange-500 hover:underline dark:text-blue-400">
-            ← Vissza a termékkategóriákhoz
-          </a> -->
         </div>
       </div>
 
@@ -170,7 +170,7 @@ const id = 'faq-section'
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {products.map((p, i) => (
-          <DiscountCardClient
+          <ProductCard
             key={(p.id as any) ?? p.sku ?? p.slug ?? i}
             product={p}
             currentCategorySlug={currentCategory.slug}
@@ -223,10 +223,7 @@ const id = 'faq-section'
       </summary>
 
       <div class="px-4 pb-4 pt-0 text-zinc-700 dark:text-zinc-300 leading-relaxed">
-        {/* Ha az answer tartalmazhat HTML-t, engedélyezd így: */}
         <div set:html={item.answer}></div>
-        {/* Ha biztosan plain text, akkor: */}
-        {/* <p>{item.answer}</p> */}
       </div>
     </details>
   ))}

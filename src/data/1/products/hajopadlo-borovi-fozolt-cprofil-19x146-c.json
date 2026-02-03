@@ -1,4 +1,5 @@
 {
+  "categorySlug": "hajopadlo",
   "name": "Hajópadló - Borovi Fózolt /C profil/ 19x146mmx4m C minőség",
   "slug": "hajopadlo-borovi-fozolt-cprofil-19x146-c",
   "meta": {
@@ -6,94 +7,80 @@
     "description": "Borovi fenyő hajópadló C profillal, 19x146mm-es méretben, C minőségben. Masszív, természetes fa burkolat műszaki célokra és melléképületekbe.",
     "image": "/termekek/hajopadlo-c-19x146.jpg"
   },
-  "aggregateRating": {
-    "ratingValue": "4,34",
-    "reviewCount": 28
-  },
   "description": "Borovi fenyő hajópadló 19x146mm méretben, C profil és C minőség – költséghatékony megoldás kevésbé igényes beltéri vagy műszaki felhasználásra.",
-  "image": "/termekek/hajopadlo-c-19x146.jpg",
-  "images": [],
   "longDescription": "Ez a borovi fenyőből készült hajópadló széles, 19x146mm-es méretű, C profillal és C minőségű besorolással. A borovi fenyő masszívabb, mint a luc, így a hibás, csomós, repedezett darabok is jól használhatók műszaki célra. A C minőségű hajópadlót olyan helyekre ajánljuk, ahol az esztétikai szempont nem elsődleges – például melléképületekbe, tárolókba, garázsba, alépítményekhez. A nút-féderes illesztés segíti a könnyű szerelést, míg a fózolt élkialakítás tagolt, rusztikus megjelenést biztosít. Gazdaságos választás természetes faalapú burkolathoz.",
-  "longDescription2": null,
+  "longDescription2": "",
+  "longDescription3": "",
   "material": null,
   "audience": [],
   "blogtags": [
     "nevezéktan"
   ],
-  "sku": "borovi-hp-c-19x146-4m-c",
-  "price": 2505,
-  "mprice": null,
-  "m2price": 4290,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": null,
   "specs": {
-    "Hossz": {
-      "label": "Hossz",
-      "order": 3,
-      "value": "4 m"
-    },
-    "Méret": {
-      "label": "Méret",
-      "order": 2,
-      "value": "19 x 146 mm"
-    },
-    "Profil": {
-      "label": "Profil",
-      "order": 5,
-      "value": "Fózolt / C profil"
-    },
-    "Fa fajta": {
-      "label": "Fa fajta",
-      "order": 4,
-      "value": "Borovi fenyő"
-    },
-    "Felület": {
-      "label": "Felület",
-      "order": 7,
-      "value": "Simára gyalult"
-    },
-    "Kezelés": {
-      "label": "Kezelés",
-      "order": 13,
-      "value": "Kezeletlen, szükség esetén csiszolható vagy felületkezelhető"
-    },
-    "Minőség": {
-      "label": "Minőség",
-      "order": 9,
-      "value": "C (műszaki minőség, esztétikai hibákkal, szerkezeti felhasználásra is alkalmas)"
-    },
-    "Tárolás": {
-      "label": "Tárolás",
-      "order": 12,
-      "value": "Száraz, jól szellőző helyen, nedvességtől védve"
-    },
-    "Rögzítés": {
-      "label": "Rögzítés",
-      "order": 11,
-      "value": "Szegelés vagy csavarozás"
-    },
-    "Származás": {
-      "label": "Származás",
-      "order": 8,
-      "value": "Ausztria"
-    },
-    "Terméktípus": {
+    "00eee700bc": {
       "label": "Terméktípus",
       "order": 1,
       "value": "Hajópadló"
     },
-    "Felhasználás": {
+    "b81a9e92d3": {
+      "label": "Méret",
+      "order": 2,
+      "value": "19 x 146 mm"
+    },
+    "e98090544e": {
+      "label": "Hossz",
+      "order": 3,
+      "value": "4 m"
+    },
+    "c7dea8076f": {
+      "label": "Fa fajta",
+      "order": 4,
+      "value": "Borovi fenyő"
+    },
+    "bc0f6f4117": {
+      "label": "Profil",
+      "order": 5,
+      "value": "Fózolt / C profil"
+    },
+    "00aa7d7393": {
+      "label": "Profil kialakítás",
+      "order": 6,
+      "value": "Nút-féderes, fózolt él (lecsapott él)"
+    },
+    "d7cf3c93ee": {
+      "label": "Felület",
+      "order": 7,
+      "value": "Simára gyalult"
+    },
+    "de9b257d3d": {
+      "label": "Származás",
+      "order": 8,
+      "value": "Ausztria"
+    },
+    "669c514d6e": {
+      "label": "Minőség",
+      "order": 9,
+      "value": "C (műszaki minőség, esztétikai hibákkal, szerkezeti felhasználásra is alkalmas)"
+    },
+    "b6d37e46b7": {
       "label": "Felhasználás",
       "order": 10,
       "value": "Garázs, melléképület, tároló, alépítmény, kevésbé látható burkolat"
     },
-    "Profil kialakítás": {
-      "label": "Profil kialakítás",
-      "order": 6,
-      "value": "Nút-féderes, fózolt él (lecsapott él)"
+    "2288a97a9d": {
+      "label": "Rögzítés",
+      "order": 11,
+      "value": "Szegelés vagy csavarozás"
+    },
+    "94aa9cbf28": {
+      "label": "Tárolás",
+      "order": 12,
+      "value": "Száraz, jól szellőző helyen, nedvességtől védve"
+    },
+    "542daba492": {
+      "label": "Kezelés",
+      "order": 13,
+      "value": "Kezeletlen, szükség esetén csiszolható vagy felületkezelhető"
     }
   },
   "shippingDetails": {
@@ -102,7 +89,38 @@
     "width": 14,
     "height": 1
   },
-  "variants": null,
-  "category": "hajopadlo",
-  "categorySlug": "hajopadlo"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.34,
+    "reviewCount": 28
+  },
+  "image": "/termekek/hajopadlo-c-19x146.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_9f5d8b4e1ca57b61",
+      "title": "Alap",
+      "sku": "borovi-hp-c-19x146-4m-c",
+      "variant_rank": 0,
+      "price": 2505,
+      "mprice": null,
+      "m2price": 4290,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 2505,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

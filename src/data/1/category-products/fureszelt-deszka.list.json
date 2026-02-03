@@ -5,6 +5,8 @@
       "slug": "fureszelt-deszka-25x100x4000",
       "categorySlug": "fureszelt-deszka",
       "name": "Fűrészelt deszka 25×100×4000 mm – colos deszka",
+      "description": "Fűrészelt, gyalulatlan fenyő deszka 25×100×4000 mm méretben. Klasszikus colos deszka légszáraz kivitelben, kedvező áron, széles körű építési és barkács felhasználásra.",
+      "sku": "D25100400",
       "image": "/images/products/deszka-25x100x4000-darab-500.avif",
       "images": [
         {
@@ -16,22 +18,25 @@
           "alt": "Fűrészelt deszka 25×100×4000 mm kötegben"
         }
       ],
-      "sku": "D25100400",
       "priceFrom": 1729,
       "priceTo": null,
+      "stock": 1,
       "discountPercent": null,
       "discountValidUntil": null,
-      "stock": 1,
-      "inStock": true,
-      "hasVariants": false,
-      "variantCount": 0,
-      "ratingValue": 4.51,
-      "reviewCount": 10
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "D25100400"
+      ]
     },
     {
       "slug": "zsaludeszka-25x150x4000",
       "categorySlug": "fureszelt-deszka",
       "name": "Zsaludeszka 25×150×4000 mm – colos deszka",
+      "description": "25×150×4000 mm gyalulatlan, fűrészelt fenyő deszka légszáraz kivitelben. Erős, tartós és gazdaságos építőanyag zsaluzáshoz, tetőszerkezetekhez és barkácsprojektekhez.",
+      "sku": "D251504000",
       "image": "/images/products/deszka-25x150x4000-darab-500.avif",
       "images": [
         {
@@ -43,17 +48,18 @@
           "alt": "25×150×4000 mm gyalulatlan fenyő deszka kötegben. Főleg, mint zsaludeszka használatos"
         }
       ],
-      "sku": "D251504000",
       "priceFrom": 2590,
       "priceTo": null,
+      "stock": 1,
       "discountPercent": null,
       "discountValidUntil": null,
-      "stock": 1,
-      "inStock": true,
-      "hasVariants": false,
-      "variantCount": 0,
-      "ratingValue": 4.56,
-      "reviewCount": 12
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "D251504000"
+      ]
     }
   ]
 }

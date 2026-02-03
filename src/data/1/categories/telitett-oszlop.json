@@ -8,42 +8,42 @@
     "image": "/kategoriak/telitett-oszlop.webp"
   },
   "description": "A telített oszlop nagyszilárdságú, nyomás alatt impregnált faanyag, amelyet leggyakrabban kerítésoszlopként, kapuoszlopként vagy szerkezeti tartóelemként használnak. A mélyen bejutó telítőanyag védelmet nyújt a nedvességgel, gombákkal és rovarokkal szemben, így a telített faoszlop hosszú távon stabil és megbízható megoldást jelent minden kültéri alkalmazásban.",
+  "faqdesc": "A telített oszlop – más néven nyomás alatt impregnált faoszlop vagy kerítésoszlop – tartós, kültéri felhasználásra tervezett faanyag. Az alábbi kérdések segítenek eligazodni a telített faanyag előnyei, élettartama, festése, ára és felhasználási területei között, legyen szó kerítésépítésről, kapuoszlopról vagy kerti tartószerkezetekről.",
   "faq": [
     {
-      "id": 1,
-      "answer": "A telített oszlop ideális kerítésoszlopnak, kapuoszlopnak vagy kerti szerkezeti tartónak. A nyomás alatt impregnált kezelésnek köszönhetően hosszú élettartamú és ellenáll a kültéri hatásoknak.",
-      "question": "Mire használható a telített oszlop?"
+      "id": "1",
+      "question": "Mire használható a telített oszlop?",
+      "answer": "A telített oszlop ideális kerítésoszlopnak, kapuoszlopnak vagy kerti szerkezeti tartónak. A nyomás alatt impregnált kezelésnek köszönhetően hosszú élettartamú és ellenáll a kültéri hatásoknak."
     },
     {
-      "id": 2,
-      "answer": "A nyomás alatt impregnált faoszlop mélyen átitatódik védőanyaggal, így belülről is védett. A kezeletlen fa csak rövid ideig tartós, míg a telített oszlop évekig megőrzi stabilitását és szerkezeti szilárdságát.",
-      "question": "Miben különbözik a telített oszlop a kezeletlen fától?"
+      "id": "2",
+      "question": "Miben különbözik a telített oszlop a kezeletlen fától?",
+      "answer": "A nyomás alatt impregnált faoszlop mélyen átitatódik védőanyaggal, így belülről is védett. A kezeletlen fa csak rövid ideig tartós, míg a telített oszlop évekig megőrzi stabilitását és szerkezeti szilárdságát."
     },
     {
-      "id": 3,
-      "answer": "Megfelelő beépítés és vízelvezetés mellett a telített oszlop akár 10–20 évig is ellenáll az időjárási hatásoknak. Földdel érintkezve is tovább bírja, mint a mártott vagy kezeletlen faoszlop.",
-      "question": "Milyen élettartamra számíthatok telített oszlop esetén?"
+      "id": "3",
+      "question": "Milyen élettartamra számíthatok telített oszlop esetén?",
+      "answer": "Megfelelő beépítés és vízelvezetés mellett a telített oszlop akár 10–20 évig is ellenáll az időjárási hatásoknak. Földdel érintkezve is tovább bírja, mint a mártott vagy kezeletlen faoszlop."
     },
     {
-      "id": 4,
-      "answer": "A telített oszlop rostjai már telítettek, ezért a vékonylazúr vagy olaj nem tud beszívódni. A felületkezeléshez fedőfesték vagy vastaglazúr ajánlott, amely védőréteget képez és esztétikus megjelenést ad.",
-      "question": "Hogyan festhető vagy kezelhető a telített oszlop?"
+      "id": "4",
+      "question": "Hogyan festhető vagy kezelhető a telített oszlop?",
+      "answer": "A telített oszlop rostjai már telítettek, ezért a vékonylazúr vagy olaj nem tud beszívódni. A felületkezeléshez fedőfesték vagy vastaglazúr ajánlott, amely védőréteget képez és esztétikus megjelenést ad."
     },
     {
-      "id": 5,
-      "answer": "A telített oszlop ára magasabb, mert a nyomás alatti impregnálás korszerűbb és időigényesebb eljárás. Az így kezelt faanyag tartósabb, megbízhatóbb és hosszabb élettartamú, ezért hosszú távon gazdaságosabb.",
-      "question": "Mennyibe kerül a telített oszlop, és miért drágább, mint a mártott?"
+      "id": "5",
+      "question": "Mennyibe kerül a telített oszlop, és miért drágább, mint a mártott?",
+      "answer": "A telített oszlop ára magasabb, mert a nyomás alatti impregnálás korszerűbb és időigényesebb eljárás. Az így kezelt faanyag tartósabb, megbízhatóbb és hosszabb élettartamú, ezért hosszú távon gazdaságosabb."
     },
     {
-      "id": 6,
-      "answer": "Igen, a telített oszlop biztonságosan alkalmazható játszótéri elemekhez és szerkezeti tartókhoz. A nyomás alatt impregnált faanyag ellenáll a nedvességnek és a biológiai károsítóknak.",
-      "question": "Használható-e a telített oszlop játszótéri szerkezetekhez?"
+      "id": "6",
+      "question": "Használható-e a telített oszlop játszótéri szerkezetekhez?",
+      "answer": "Igen, a telített oszlop biztonságosan alkalmazható játszótéri elemekhez és szerkezeti tartókhoz. A nyomás alatt impregnált faanyag ellenáll a nedvességnek és a biológiai károsítóknak."
     },
     {
-      "id": 7,
-      "answer": "A telített oszlop jellemzően 90×90 mm, 100×100 mm és 120×120 mm keresztmetszetben kapható, 2–3 m hosszúságban. Az Elvira Tüzép kínálatában többféle méret és kialakítás is elérhető.",
-      "question": "Milyen méretekben kapható a telített oszlop?"
+      "id": "7",
+      "question": "Milyen méretekben kapható a telített oszlop?",
+      "answer": "A telített oszlop jellemzően 90×90 mm, 100×100 mm és 120×120 mm keresztmetszetben kapható, 2–3 m hosszúságban. Az Elvira Tüzép kínálatában többféle méret és kialakítás is elérhető."
     }
-  ],
-  "faqdesc": "A telített oszlop – más néven nyomás alatt impregnált faoszlop vagy kerítésoszlop – tartós, kültéri felhasználásra tervezett faanyag. Az alábbi kérdések segítenek eligazodni a telített faanyag előnyei, élettartama, festése, ára és felhasználási területei között, legyen szó kerítésépítésről, kapuoszlopról vagy kerti tartószerkezetekről."
+  ]
 }

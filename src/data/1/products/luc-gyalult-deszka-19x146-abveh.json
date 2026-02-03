@@ -1,4 +1,5 @@
 {
+  "categorySlug": "gyalult-deszka",
   "name": "Gyalult deszka /AF profil/ 19x146mmx4m AB-VEH minőség",
   "slug": "luc-gyalult-deszka-19x146-abveh",
   "meta": {
@@ -6,74 +7,60 @@
     "description": "Széles, 4 oldalon gyalult és fózolt luc deszka (19×146 mm) osztrák importból, AB-VEH minőségben. Kiváló választás kerítésekhez, fafödémhez, bútorlaphoz.",
     "image": "/termekek/luc-gyalult-deszka-19x146.png"
   },
-  "aggregateRating": {
-    "ratingValue": "4,68",
-    "reviewCount": 12
-  },
   "description": "Széles, gyalult, 4 oldalon fózolt lucfenyő deszka – kiváló megoldás kültérre és beltérre egyaránt.",
-  "image": "/termekek/luc-gyalult-deszka-19x146.png",
-  "images": [],
   "longDescription": "A 19x146 mm-es lucfenyő gyalult deszka /AF profil/ prémium minőségű, osztrák importból származó faanyag. Négy oldalon gyalult és fózolt kivitele révén esztétikus és pontos illesztésű megoldást kínál kerítések, fafödémek, bútorlapok vagy egyéb belső burkolatok kivitelezésére. A fózolt élek elegáns megjelenést biztosítanak, így a termék további csiszolást vagy megmunkálást nem igényel. Kültéri használat esetén ajánlott vékonylazúros kezelést alkalmazni a hosszabb élettartam érdekében.",
-  "longDescription2": null,
+  "longDescription2": "",
+  "longDescription3": "",
   "material": null,
   "audience": [],
   "blogtags": [
     "nevezéktan"
   ],
-  "sku": "luc-gyd-19x146-4m",
-  "price": 3849,
-  "mprice": null,
-  "m2price": 6590,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": 1,
   "specs": {
-    "Hossz": {
-      "label": "Hossz",
-      "order": 2,
-      "value": "4 m"
-    },
-    "Méret": {
+    "ea5228abd7": {
       "label": "Méret",
       "order": 1,
       "value": "19 x 146 mm"
     },
-    "Profil": {
-      "label": "Profil",
-      "order": 4,
-      "value": "AF profil (gyalult, fózolt deszka)"
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
     },
-    "Fa fajta": {
+    "be340899f3": {
       "label": "Fa fajta",
       "order": 3,
       "value": "Luc fenyő"
     },
-    "Felület": {
+    "b74e6957c6": {
+      "label": "Profil",
+      "order": 4,
+      "value": "AF profil (gyalult, fózolt deszka)"
+    },
+    "6de4745e8d": {
       "label": "Felület",
       "order": 5,
       "value": "4 oldalon gyalult, fózolt"
     },
-    "Kezelés": {
-      "label": "Kezelés",
-      "order": 9,
-      "value": "Kültéri használat esetén vékonylazúrral kezelendő"
-    },
-    "Minőség": {
-      "label": "Minőség",
-      "order": 7,
-      "value": "AB-VEH (válogatott, építőipari)"
-    },
-    "Származás": {
+    "0fa11b965d": {
       "label": "Származás",
       "order": 6,
       "value": "Ausztria"
     },
-    "Felhasználás": {
+    "0bbf21e747": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "AB-VEH (válogatott, építőipari)"
+    },
+    "04b613f086": {
       "label": "Felhasználás",
       "order": 8,
       "value": "Fafödémek, oromszegély, polclap, kerítésléc"
+    },
+    "840ab5bcf4": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kültéri használat esetén vékonylazúrral kezelendő"
     }
   },
   "shippingDetails": {
@@ -82,7 +69,38 @@
     "width": 14,
     "height": 1
   },
-  "variants": null,
-  "category": "gyalult-deszka",
-  "categorySlug": "gyalult-deszka"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.68,
+    "reviewCount": 12
+  },
+  "image": "/termekek/luc-gyalult-deszka-19x146.png",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_e01e7e461b7fc023",
+      "title": "Alap",
+      "sku": "luc-gyd-19x146-4m",
+      "variant_rank": 0,
+      "price": 3849,
+      "mprice": null,
+      "m2price": 6590,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 3849,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

@@ -96,9 +96,9 @@
       "priceFrom": 1799,
       "priceTo": null,
       "stock": 1,
-      "discountPercent": 20,
-      "discountValidUntil": "2026-06-25",
-      "hasDiscount": true,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
       "variantTitles": [
         "Alap"
       ],

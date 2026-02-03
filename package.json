@@ -10,7 +10,9 @@
     "dev": "astro dev",
     "start": "astro dev",
     "generate:products": "node ./src/scripts/generate-products-json.mjs",
-    "prebuild": "npm run generate:products",
+    "catalog:json-to-sheets": "node ./src/scripts/json-to-sheets.mjs --input=src/data/products.json",
+    "catalog:sheets-to-json": "node src/scripts/sheets-to-json.mjs",
+    "prebuild": "npm run catalog:sheets-to-json",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -21,7 +23,8 @@
     "fix": "npm run fix:eslint && npm run fix:prettier",
     "fix:eslint": "eslint --fix .",
     "fix:prettier": "prettier -w .",
-    "optimize-images": "node optimize.mjs"
+    "optimize-images": "node optimize.mjs",
+    "migrate:products": "node ./src/scripts/migrate-products-json.mjs"
   },
   "dependencies": {
     "@astrojs/netlify": "^6.5.3",
@@ -42,6 +45,8 @@
     "embla-carousel": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "fuse.js": "^7.1.0",
+    "google-auth-library": "^10.5.0",
+    "google-spreadsheet": "^5.0.2",
     "googleapis": "^150.0.1",
     "html-escaper": "^3.0.3",
     "limax": "4.1.0",

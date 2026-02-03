@@ -8,37 +8,37 @@
     "image": "/images/products/deszka-25x150x4000-koteg-500.avif"
   },
   "description": "Fűrészelt, gyalulatlan deszka kínálatunk légszáraz kivitelben érhető el, amely ideális tetőszerkezetekhez, zsaluzáshoz, burkolatokhoz és egyéb építési munkákhoz. A gyalulatlan deszka természetes, masszív és kedvező árú faanyag, széles méretválasztékban, közvetlenül raktárról.",
+  "faqdesc": "A fűrészelt deszka (más néven gyalulatlan deszka vagy építő deszka) a leggyakrabban használt faanyag tetőszerkezetekhez, zsaluhoz és általános építési felhasználásra. A szélezetlen, légszáraz kivitel előnye, hogy kedvező áron nagy teherbírású, természetes alapanyaghoz juthatunk. Az alábbi gyakori kérdések segítenek eligazodni a deszka méretek, árak és felhasználási módok között.",
   "faq": [
     {
-      "id": 1,
-      "answer": "Kínálatunkban elsősorban 25 mm vastag (colos) gyalulatlan deszkák érhetők el 100 mm, 150 mm és 200 mm szélességben, jellemzően 4000 mm hosszúságban. Ezek a méretek a leggyakrabban használt zsaludeszka méretek. A 50 mm vastag anyag már palló kategóriába tartozik.",
-      "question": "Milyen méretekben kapható a fűrészelt deszka?"
+      "id": "1",
+      "question": "Milyen méretekben kapható a fűrészelt deszka?",
+      "answer": "Kínálatunkban elsősorban 25 mm vastag (colos) gyalulatlan deszkák érhetők el 100 mm, 150 mm és 200 mm szélességben, jellemzően 4000 mm hosszúságban. Ezek a méretek a leggyakrabban használt zsaludeszka méretek. A 50 mm vastag anyag már palló kategóriába tartozik."
     },
     {
-      "id": 2,
-      "answer": "A gyalult deszka sima, megmunkált felületű, inkább beltéri vagy látszó felhasználásra való. A <a href=\"/termekek/gyalult-deszka\"><b>gyalult deszka</b></a> esztétikusabb és méretpontosabb, ezért tartósabb szerkezetekhez ajánlott. A gyalulatlan (fűrészelt) deszka érdesebb felületű, gazdaságosabb és főként szerkezeti, építési célokra – például zsaluhoz, tetőszerkezethez vagy ideiglenes építményekhez – használják.",
-      "question": "Mi a különbség a gyalult és a gyalulatlan deszka között?"
+      "id": "2",
+      "question": "Mi a különbség a gyalult és a gyalulatlan deszka között?",
+      "answer": "A gyalult deszka sima, megmunkált felületű, inkább beltéri vagy látszó felhasználásra való. A <a href=\"/termekek/gyalult-deszka\"><b>gyalult deszka</b></a> esztétikusabb és méretpontosabb, ezért tartósabb szerkezetekhez ajánlott. A gyalulatlan (fűrészelt) deszka érdesebb felületű, gazdaságosabb és főként szerkezeti, építési célokra – például zsaluhoz, tetőszerkezethez vagy ideiglenes építményekhez – használják."
     },
     {
-      "id": 3,
-      "answer": "A fűrészelt deszka sokoldalúan felhasználható",
-      "question": "Mire használható a fűrészelt deszka?"
+      "id": "3",
+      "question": "Mire használható a fűrészelt deszka?",
+      "answer": "A fűrészelt deszka sokoldalúan felhasználható"
     },
     {
-      "id": 4,
-      "answer": "A deszka árát főként a vastagság (pl. 25 mm), a szélesség (100 mm, 150 mm, 200 mm) és a hossz (általában 4000 mm) határozza meg. Gyakran keresett méretek",
-      "question": "Mennyibe kerül egy deszka? Hogyan alakulnak a deszka árak?"
+      "id": "4",
+      "question": "Mennyibe kerül egy deszka? Hogyan alakulnak a deszka árak?",
+      "answer": "A deszka árát főként a vastagság (pl. 25 mm), a szélesség (100 mm, 150 mm, 200 mm) és a hossz (általában 4000 mm) határozza meg. Gyakran keresett méretek"
     },
     {
-      "id": 5,
-      "answer": "A szélezetlen deszka olyan gyalulatlan deszka, amelynek szélei nincsenek levágva, így kérges részeket is tartalmazhat. Elsősorban zsaluzáshoz, ideiglenes szerkezetekhez és olyan felhasználásokhoz ajánlott, ahol az esztétika nem elsődleges szempont.",
-      "question": "Mit jelent a szélezetlen deszka?"
+      "id": "5",
+      "question": "Mit jelent a szélezetlen deszka?",
+      "answer": "A szélezetlen deszka olyan gyalulatlan deszka, amelynek szélei nincsenek levágva, így kérges részeket is tartalmazhat. Elsősorban zsaluzáshoz, ideiglenes szerkezetekhez és olyan felhasználásokhoz ajánlott, ahol az esztétika nem elsődleges szempont."
     },
     {
-      "id": 6,
-      "answer": "A zsaludeszka a fűrészelt, gyalulatlan deszka egyik leggyakoribb felhasználási módja. Betonozási munkáknál a zsaluzat építéséhez használják, mert könnyen méretre vágható, masszív és kedvező árú faanyag. A 25 mm vastag, 150 mm széles colos deszka tipikus választás zsaluzáshoz.",
-      "question": "Mi az a zsaludeszka és mire használják?"
+      "id": "6",
+      "question": "Mi az a zsaludeszka és mire használják?",
+      "answer": "A zsaludeszka a fűrészelt, gyalulatlan deszka egyik leggyakoribb felhasználási módja. Betonozási munkáknál a zsaluzat építéséhez használják, mert könnyen méretre vágható, masszív és kedvező árú faanyag. A 25 mm vastag, 150 mm széles colos deszka tipikus választás zsaluzáshoz."
     }
-  ],
-  "faqdesc": "A fűrészelt deszka (más néven gyalulatlan deszka vagy építő deszka) a leggyakrabban használt faanyag tetőszerkezetekhez, zsaluhoz és általános építési felhasználásra. A szélezetlen, légszáraz kivitel előnye, hogy kedvező áron nagy teherbírású, természetes alapanyaghoz juthatunk. Az alábbi gyakori kérdések segítenek eligazodni a deszka méretek, árak és felhasználási módok között."
+  ]
 }

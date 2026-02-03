@@ -1,154 +1,59 @@
 ---
-import DiscountCard from '~/components/widgets/DiscountCardClient.tsx'
-
-const now = new Date();
-const { discounted = [] } = Astro.props
+import ProductCard from '~/components/widgets/ProductCard';
+import { getDiscountBadge, fetchDiscountedProducts } from '~/lib/discounts';
 
 
+// Akciós termékek lekérése
+const discounted = fetchDiscountedProducts(20);
 
+// Szűrés: csak érvényes akciók
+const activeDiscounted = discounted.filter((p: any) => {
+  if (!p) return false;
+  return getDiscountBadge(p).hasDiscount;
+});
 
-// ===== JSON-LD (ItemList) generálás az akciós termékekhez =====
-
-export function buildSpecialOffersItemList(discounted) {
-  if (!discounted || discounted.length === 0) return null;
-
-  // -----------------------------------------------------
-// 1) Shipping schema (HU)
-// -----------------------------------------------------
-const shippingDetailsHU = {
-  "@type": "OfferShippingDetails",
-  "shippingRate": {
-    "@type": "MonetaryAmount",
-    "value": 0,
-    "currency": "HUF"
-  },
-  "shippingDestination": {
-    "@type": "DefinedRegion",
-    "addressCountry": "HU"
-  },
-  "deliveryTime": {
-    "@type": "ShippingDeliveryTime",
-    "handlingTime": {
-      "@type": "QuantitativeValue",
-      "minValue": 0,
-      "maxValue": 0,
-      "unitCode": "d"
-    },
-    "transitTime": {
-      "@type": "QuantitativeValue",
-      "minValue": 0,
-      "maxValue": 4,
-      "unitCode": "d"
-    }
-  }
-};
-
-// -----------------------------------------------------
-// 2) Return policy schema (HU)
-// -----------------------------------------------------
-const merchantReturnPolicyHU = {
-  "@type": "MerchantReturnPolicy",
-  "applicableCountry": "HU",
-  "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-  "merchantReturnLink": "https://elviratuzep.hu/visszakuldes",
-  "returnMethod": "https://schema.org/ReturnInStore",
-  "returnFees": "https://schema.org/FreeReturn",
-  "returnShippingFeesAmount": {
-    "@type": "MonetaryAmount",
-    "value": "0",
-    "currency": "HUF"
-  },
-  "merchantReturnDays": 14,
-  "returnPolicySeasonalOverride": [],
-  "returnWindow": {
-    "@type": "QuantitativeValue",
-    "value": 14,
-    "unitCode": "DAY"
-  },
-  "itemCondition": "https://schema.org/NewCondition",
-  "restockingFee": {
-    "@type": "MonetaryAmount",
-    "value": "0",
-    "currency": "HUF"
-  },
-  "refundType": "https://schema.org/FullRefund",
-  "refundProcessingTime": {
-    "@type": "QuantitativeValue",
-    "value": 2,
-    "unitCode": "DAY"
-  }
-};
-
-  return {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Akciós termékeink",
-    "itemListOrder": "https://schema.org/ItemListOrderDescending",
-    "numberOfItems":  discounted.length,
-    "itemListElement": discounted.map((p, i) => ({
-      "@type": "ListItem",
-      "position": i + 1,
-      "item": {
-        "@type": "Product",
-        "@id": `https://elviratuzep.hu/termekek/${p.category}/${p.slug}#product`,
-        "url": `https://elviratuzep.hu/termekek/${p.category}/${p.slug}`,
-        "name": p.name,
-        "image": p.image,
-        "description": p.description || `${p.name} – kedvezményes ár a készlet erejéig.`,
-        "offers": {
-          "@type": "Offer",
-          "price": p.discountPrice ?? p.price,
-          "priceCurrency": "HUF",
-          "availability": "https://schema.org/InStock",
-          "shippingDetails": shippingDetailsHU,
-          "hasMerchantReturnPolicy": merchantReturnPolicyHU
-        }
-      }
-    }))
-  }
-}
-
+const count = activeDiscounted.length;
 ---
 
+{count > 0 && (
+  <section class="py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-10 text-center">
+        Akciós termékeink
+      </h2>
 
-{discounted.length > 0 && (
-<section class="py-16 bg-gray-50 dark:bg-gray-900">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-10 text-center">
-      Akciós termékeink
-    </h2>
-{discounted.length <= 3 && (
-  <div
-    class={`grid gap-6 ${
-      discounted.length === 1
-        ? "grid-cols-1 justify-items-center" // középre
-        : discounted.length === 2
-        ? "grid-cols-1 sm:grid-cols-2 justify-items-center gap-3"
-        : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
-    }`}
-  >
-    {discounted.map((product) => (
-      <div
-        class={discounted.length === 1 ? "max-w-[350px] w-full" : ""}
-      >
-        <DiscountCard product={product} />
-      </div>
-    ))}
-  </div>
-)}
+      {/* 🔹 1–3 TERMÉK: klasszikus grid */}
+      {count <= 3 && (
+        <div
+          class={`grid gap-6 mx-auto ${
+            count === 1
+              ? 'max-w-[400px] grid-cols-1'
+              : count === 2
+              ? 'max-w-3xl grid-cols-1 sm:grid-cols-2'
+              : 'max-w-6xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
+          }`}
+        >
+          {activeDiscounted.map((product) => (
+            <ProductCard product={product} client:load />
+          ))}
+        </div>
+      )}
 
-    {discounted.length > 3 && (
-  <div class="overflow-x-auto scroll-smooth max-w-4xl">
-  <div class="inline-flex min-w-[1100px] gap-4 px-1">
-    {discounted.map((product) => (
-      <div class="shrink-0 w-[350px]">
-        <DiscountCard product={product} />
-      </div>
-    ))}
-  </div>
-</div>
-)}
+      {/* 🔹 4+ TERMÉK: horizontális scroll */}
+      {count > 3 && (
+        <div class="relative">
+          <div class="overflow-x-auto scroll-smooth scrollbar-hide">
+            <div class="flex gap-6 pb-4">
+              {activeDiscounted.map((product) => (
+                <div class="flex-none w-[280px] sm:w-[320px]">
+                  <ProductCard product={product} client:load />
+                </div>
+              ))}
+            </div>
+          </div>
 
-  </div>
-</section>
+        </div>
+      )}
+    </div>
+  </section>
 )}

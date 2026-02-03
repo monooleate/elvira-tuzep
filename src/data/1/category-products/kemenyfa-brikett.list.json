@@ -5,6 +5,8 @@
       "slug": "pini-kay-brikett-tolgy",
       "categorySlug": "kemenyfa-brikett",
       "name": "Pini‑Kay keményfa brikett I. osztály",
+      "description": "Lyukas, hengeres keményfa brikett kizárólag tölgyfából, I. osztályú minőségben. Hosszú égés, magas hőérték, minimális hamu. Praktikus 10 kg-os csomagban (12 darab/csomag ; ~0.8 kg/darab)",
+      "sku": "brikett-pini-kay-tolgy",
       "image": "/termekek/pini-kay-brikett.jpg",
       "images": [
         {
@@ -32,22 +34,25 @@
           "alt": "Pini-Kay keményfa brikett I. osztály – felülnézetből, jól látható a lyukas (üreges) szerkezet"
         }
       ],
-      "sku": "brikett-pini-kay-tolgy",
       "priceFrom": 162,
       "priceTo": null,
+      "stock": 1,
       "discountPercent": 5,
       "discountValidUntil": "2026-02-14T23:00:00.000Z",
-      "stock": 1,
-      "inStock": true,
-      "hasVariants": false,
-      "variantCount": 0,
-      "ratingValue": 4.8,
-      "reviewCount": 52
+      "hasDiscount": true,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "brikett-pini-kay-tolgy"
+      ]
     },
     {
       "slug": "ruf-fabrikett-bukk",
       "categorySlug": "kemenyfa-brikett",
       "name": "RUF bükk fabrikett – kocka/hasáb",
+      "description": "RUF kocka brikett bükkfából - prémium minőségű fabrikett alacsony nedvességgel és hamuval, magas fűtőértékkel. Hosszú égés, tiszta tűz, praktikus 10 kg-os csomagban (10 darab / csomag ; ~1 kg / darab)",
+      "sku": "brikett-ruf-bukk",
       "image": "/images/products/ruf-fabrikett-bukk-darab-felul-500.avif",
       "images": [
         {
@@ -75,17 +80,18 @@
           "alt": "RUF brikett – raklapos kiszerelés, 96 csomag, raklap széléről nézve"
         }
       ],
-      "sku": "brikett-ruf-bukk",
       "priceFrom": 185,
       "priceTo": null,
-      "discountPercent": 5,
-      "discountValidUntil": "2025-10-17T22:00:00.000Z",
       "stock": 1,
-      "inStock": true,
-      "hasVariants": false,
-      "variantCount": 0,
-      "ratingValue": 4.97,
-      "reviewCount": 16
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Alap"
+      ],
+      "variantSkus": [
+        "brikett-ruf-bukk"
+      ]
     }
   ]
 }

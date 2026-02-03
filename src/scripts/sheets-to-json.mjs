@@ -5,7 +5,6 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import { JWT } from "google-auth-library";
-import zlib from "node:zlib";
 
 /* ================= ENV + AUTH ================= */
 
@@ -18,9 +17,7 @@ const SA_B64 = process.env.GOOGLE_SA_JSON_BASE64;
 if (!SHEET_ID) throw new Error("Missing env GOOGLE_SHEET_ID");
 if (!SA_B64) throw new Error("Missing env GOOGLE_SA_JSON_BASE64");
 
-const saJsonStr = zlib.gunzipSync(Buffer.from(SA_GZ_B64, "base64")).toString("utf8");
-const SA_JSON = JSON.parse(saJsonStr);
-
+const SA_JSON = JSON.parse(Buffer.from(SA_B64, "base64").toString("utf8"));
 const fixedKey = String(SA_JSON.private_key || "").replace(/\\n/g, "\n");
 
 const auth = new JWT({

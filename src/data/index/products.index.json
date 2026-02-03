@@ -262,9 +262,9 @@
     "priceFrom": 1799,
     "priceTo": null,
     "stock": 1,
-    "discountPercent": 20,
-    "discountValidUntil": "2026-06-25",
-    "hasDiscount": true,
+    "discountPercent": null,
+    "discountValidUntil": null,
+    "hasDiscount": false,
     "variantTitles": [
       "Alap"
     ],
@@ -325,9 +325,9 @@
     "priceFrom": 3199,
     "priceTo": null,
     "stock": 0,
-    "discountPercent": 15,
-    "discountValidUntil": "2026-06-25",
-    "hasDiscount": true,
+    "discountPercent": null,
+    "discountValidUntil": null,
+    "hasDiscount": false,
     "variantTitles": [
       "Alap"
     ],
@@ -1930,9 +1930,9 @@
     "priceFrom": 5.59,
     "priceTo": 63.23,
     "stock": 18,
-    "discountPercent": 15,
-    "discountValidUntil": "2026-06-25",
-    "hasDiscount": true,
+    "discountPercent": null,
+    "discountValidUntil": null,
+    "hasDiscount": false,
     "variantTitles": [
       "Ø4mm x 30",
       "Ø4mm x 35",

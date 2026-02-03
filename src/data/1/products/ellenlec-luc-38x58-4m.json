@@ -1,4 +1,5 @@
 {
+  "categorySlug": "csereplec-ellenlec",
   "name": "Ellenléc luc 38x58mmx4m I-II. osztály",
   "slug": "ellenlec-luc-38x58-4m",
   "meta": {
@@ -6,15 +7,10 @@
     "description": "Masszív, fűrészelt lucfenyő ellenléc 38x58 mm-es méretben, 4 m hosszban – osztrák I-II. osztályú faanyag tetőszellőztetéshez és lécezéshez.",
     "image": "/termekek/ellenlec-luc-38x58.webp"
   },
-  "aggregateRating": {
-    "ratingValue": "4,65",
-    "reviewCount": 3
-  },
   "description": "Fűrészelt lucfenyő ellenléc 38x58 mm méretben, 4 méteres hosszban – osztrák I-II. osztály, kiváló választás szellőző tetőszerkezethez.",
-  "image": "/termekek/ellenlec-luc-38x58.webp",
-  "images": [],
   "longDescription": "A 38x58 mm-es, 4 méteres fűrészelt lucfenyő ellenléc kifejezetten alkalmas tetőszerkezetek átszellőztetésének biztosítására. Az ellenléc szerepe, hogy megfelelő távolságot tartson a héjazat és az alátétszerkezet között, biztosítva ezzel a légáramlást. Az osztrák I-II. osztályú faanyag tartós, jól terhelhető, és könnyen rögzíthető.",
   "longDescription2": "Ez a fűrészelt, kezeletlen lucfa ellenléc ideális megoldás új építésű tetők esetén és felújításokhoz egyaránt. Szabványos méretének és stabil keresztmetszetének köszönhetően könnyen illeszthető a legtöbb tetőszerkezethez. Jó választás, ha fontos a szellőzés, a tartósság és a gazdaságos kivitelezés.",
+  "longDescription3": "",
   "material": null,
   "audience": [],
   "blogtags": [
@@ -22,52 +18,43 @@
     "ellenléc",
     "tetőszerkezet"
   ],
-  "sku": "luc-el-38x58-4m",
-  "price": 1999,
-  "mprice": 500,
-  "m2price": null,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": null,
   "specs": {
-    "Hossz": {
-      "label": "Hossz",
-      "order": 2,
-      "value": "4 m"
-    },
-    "Méret": {
+    "a689a4b9fa": {
       "label": "Méret",
       "order": 1,
       "value": "38 x 58 mm"
     },
-    "Típus": {
-      "label": "Típus",
-      "order": 4,
-      "value": "Fűrészelt ellenléc"
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
     },
-    "Fa fajta": {
+    "be340899f3": {
       "label": "Fa fajta",
       "order": 3,
       "value": "Luc fenyő"
     },
-    "Felület": {
+    "54ad623a93": {
+      "label": "Típus",
+      "order": 4,
+      "value": "Fűrészelt ellenléc"
+    },
+    "392a16a8bc": {
       "label": "Felület",
       "order": 5,
       "value": "Durván fűrészelt, kezeletlen"
     },
-    "Minőség": {
+    "5fd98f8686": {
       "label": "Minőség",
       "order": 6,
       "value": "I-II. osztály"
     },
-    "Származás": {
+    "82d331f781": {
       "label": "Származás",
       "order": 7,
       "value": "Ausztria"
     },
-    "Felhasználás": {
+    "2a0b6e3bdf": {
       "label": "Felhasználás",
       "order": 8,
       "value": "Ellenléc, tetőszellőzés, alátétszerkezet kialakítása"
@@ -79,7 +66,38 @@
     "width": 5,
     "height": 3
   },
-  "variants": null,
-  "category": "csereplec-ellenlec",
-  "categorySlug": "csereplec-ellenlec"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.65,
+    "reviewCount": 3
+  },
+  "image": "/termekek/ellenlec-luc-38x58.webp",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_357a10a2a980d058",
+      "title": "Alap",
+      "sku": "luc-el-38x58-4m",
+      "variant_rank": 0,
+      "price": 1999,
+      "mprice": 500,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 1999,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

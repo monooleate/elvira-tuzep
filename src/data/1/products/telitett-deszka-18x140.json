@@ -1,4 +1,5 @@
 {
+  "categorySlug": "telitett-deszka",
   "name": "Telített deszka 18×140 mm",
   "slug": "telitett-deszka-18x140",
   "meta": {
@@ -6,15 +7,10 @@
     "description": "Tartós, nyomás alatt impregnált telített deszka 18×140 mm méretben. Ideális kerítésekhez, burkolatokhoz, kültéri felületekhez.",
     "image": "/termekek/telitett-deszka.jpg"
   },
-  "aggregateRating": {
-    "ratingValue": 4.85,
-    "reviewCount": 44
-  },
   "description": "Nyomás alatt impregnált, tartós telített deszka 18×140 mm méretben kerítésekhez, burkolatokhoz és kerti szerkezetekhez.",
-  "image": "/termekek/telitett-deszka.jpg",
-  "images": [],
   "longDescription": "Az erős, mégis könnyű telített deszka 18×140 mm kiváló kerítésléchez, burkolatokhoz és díszítő elemekhez. Az impregnálás mély védelmet ad nedvesség, gombák és rovarok ellen.",
   "longDescription2": "A 3600 mm hosszú deszka jól megmunkálható, festhető, és méretre vágást vállalunk. Természetes, zöld árnyalata szépen illeszkedik bármilyen kerti felépítményhez.",
+  "longDescription3": "",
   "material": "Nagy nyomáson telített borovi fenyő",
   "audience": [
     "kertépítők",
@@ -25,64 +21,81 @@
     "kertifa",
     "rúdfa"
   ],
-  "sku": "Telített deszka 18×140 mm",
-  "price": 3060,
-  "mprice": null,
-  "m2price": null,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": 1,
   "specs": {
-    "Anyag": {
-      "label": "Anyag",
-      "order": 3,
-      "value": "Nagynyomáson telített borovi fenyő"
-    },
-    "Hossz": {
-      "label": "Hossz",
-      "order": 2,
-      "value": "3600 mm"
-    },
-    "Méret": {
+    "6ddf5056c5": {
       "label": "Méret",
       "order": 1,
       "value": "18×140 mm"
     },
-    "Tömeg": {
-      "label": "Tömeg",
-      "order": 6,
-      "value": "≈ 6–8 kg/db"
+    "4cf24452cb": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "3600 mm"
     },
-    "Kivitel": {
+    "b9319ea0b6": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyő"
+    },
+    "ffcf3ae616": {
       "label": "Kivitel",
       "order": 4,
       "value": "Gyalult, simított felület"
     },
-    "Megjegyzés": {
-      "label": "Megjegyzés",
-      "order": 8,
-      "value": "Méretre vágást vállalunk"
-    },
-    "Impregnálás": {
+    "4863e0a5cd": {
       "label": "Impregnálás",
       "order": 5,
       "value": "Nyomás alatti, zöld árnyalat"
     },
-    "Felhasználás": {
+    "4506ac0f7a": {
+      "label": "Tömeg",
+      "order": 6,
+      "value": "≈ 6–8 kg/db"
+    },
+    "294d982482": {
       "label": "Felhasználás",
       "order": 7,
       "value": "Kerítés, burkolat, díszítés"
+    },
+    "9ac752d0f9": {
+      "label": "Megjegyzés",
+      "order": 8,
+      "value": "Méretre vágást vállalunk"
     }
   },
-  "shippingDetails": {
-    "weight": null,
-    "length": null,
-    "width": null,
-    "height": null
+  "shippingDetails": null,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.85,
+    "reviewCount": 44
   },
-  "variants": null,
-  "category": "telitett-deszka",
-  "categorySlug": "telitett-deszka"
+  "image": "/termekek/telitett-deszka.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_dd780158b2854749",
+      "title": "Alap",
+      "sku": "Telített deszka 18×140 mm",
+      "variant_rank": 0,
+      "price": 3060,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 1,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 1,
+  "priceFrom": 3060,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

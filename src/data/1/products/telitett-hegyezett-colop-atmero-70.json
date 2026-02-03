@@ -1,4 +1,5 @@
 {
+  "categorySlug": "telitett-hegyzett-colop",
   "name": "Telített hegyezett cölöp Ø70mm",
   "slug": "telitett-hegyezett-colop-atmero-70",
   "meta": {
@@ -6,16 +7,10 @@
     "description": "Időtálló, telített hegyezett fa cölöp 70 mm átmérővel. Erős szerkezeti elem kültéri felhasználásra.",
     "image": "/termekek/hegyezett-colop-atmero-7.jpg"
   },
-  "aggregateRating": {
-    "ratingValue": 4.68,
-    "reviewCount": 63
-  },
   "description": "Erős, telített hegyezett cölöp 70 mm átmérővel, hosszú élettartamra tervezve.",
-  "image": "/termekek/hegyezett-colop-atmero-7.jpg",
-  "images": [],
   "longDescription": "A 70 mm-es hegyezett telített cölöp már komolyabb kerítések, kapuk és támfalak építéséhez is alkalmas. Erős tartást biztosít, miközben megőrzi a fa természetes megjelenését.",
   "longDescription2": "Kiváló választás, ha tartós és stabil faoszlopra van szükség kültéri építkezésekhez. A nyomás alatti télítés ellenáll a nedvességnek és rovaroknak.",
-  "longDescription3": "<div class=\"mb-6\">\n  <h3 class=\"text-xl font-semibold mb-3\">Körmart, telített cölöp Ø70 mm – erősebb kerítésekhez és tartós szerkezetekhez</h3>\n  <p>\n    A 70 mm-es átmérő már masszív tartást biztosít, ezért ajánlott <strong>erősebb kerítésekhez, kapukhoz, támfalakhoz,\n    játszóelemek alátámasztásához, komolyabb kerti építmények rögzítéséhez</strong>. Nagy stabilitású, hosszú élettartamú választás.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Északi fenyő maximális tartóssággal</h3>\n  <p>A sűrű szerkezetű, lassan növő északi borovi fenyő ideális alapanyag intenzívebb igénybevételhez is.</p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Háromszoros minőségellenőrzés</h3>\n  <ul class=\"list-disc ml-6\">\n    <li>Fakitermelési válogatás</li>\n    <li>Üzemi minősítés</li>\n    <li>Csomagolás előtti vizsgálat</li>\n  </ul>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Vákuum–nyomás–vákuum eljárás</h3>\n  <table class=\"table-auto w-full mt-3\">\n    <tbody>\n      <tr><td class=\"font-semibold p-2\">Előszárítás:</td><td class=\"p-2\">30% alatti nedvesség</td></tr>\n      <tr><td class=\"font-semibold p-2\">Elővákuum:</td><td class=\"p-2\">30 perc</td></tr>\n      <tr><td class=\"font-semibold p-2\">Nyomás alatti telítés:</td><td class=\"p-2\">12,8 bar</td></tr>\n      <tr><td class=\"font-semibold p-2\">Utóvákuum:</td><td class=\"p-2\">15 perc</td></tr>\n    </tbody>\n  </table>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Környezettudatos védelem</h3>\n  <p>\n    <strong>Tanalith E</strong> vízbázisú favédőszerrel telítve.  \n    <strong>HC4</strong> besorolás – közvetlen földbe helyezéshez.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Telepítés</h3>\n  <p>\n    A stabil rögzítés érdekében a teljes hossz kb. <strong>egyharmada</strong> kerüljön a talajba.\n  </p>\n</div>\n",
+  "longDescription3": "<div class=\"mb-6\">\n  <h3 class=\"text-xl font-semibold mb-3\">Körmart, telített cölöp Ø70 mm – erősebb kerítésekhez és tartós szerkezetekhez</h3>\n  <p>\n    A 70 mm-es átmérő már masszív tartást biztosít, ezért ajánlott <strong>erősebb kerítésekhez, kapukhoz, támfalakhoz,\n    játszóelemek alátámasztásához, komolyabb kerti építmények rögzítéséhez</strong>. Nagy stabilitású, hosszú élettartamú választás.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Északi fenyő maximális tartóssággal</h3>\n  <p>A sűrű szerkezetű, lassan növő északi borovi fenyő ideális alapanyag intenzívebb igénybevételhez is.</p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Háromszoros minőségellenőrzés</h3>\n  <ul class=\"list-disc ml-6\">\n    <li>Fakitermelési válogatás</li>\n    <li>Üzemi minősítés</li>\n    <li>Csomagolás előtti vizsgálat</li>\n  </ul>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Vákuum–nyomás–vákuum eljárás</h3>\n  <table class=\"table-auto w-full mt-3\">\n    <tbody>\n      <tr><td class=\"font-semibold p-2\">Előszárítás:</td><td class=\"p-2\">30% alatti nedvesség</td></tr>\n      <tr><td class=\"font-semibold p-2\">Elővákuum:</td><td class=\"p-2\">30 perc</td></tr>\n      <tr><td class=\"font-semibold p-2\">Nyomás alatti telítés:</td><td class=\"p-2\">12,8 bar</td></tr>\n      <tr><td class=\"font-semibold p-2\">Utóvákuum:</td><td class=\"p-2\">15 perc</td></tr>\n    </tbody>\n  </table>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Környezettudatos védelem</h3>\n  <p>\n    <strong>Tanalith E</strong> vízbázisú favédőszerrel telítve.  \n    <strong>HC4</strong> besorolás – közvetlen földbe helyezéshez.\n  </p>\n</div>\n\n<div class=\"mb-6\">\n  <h3 class=\"text-lg font-semibold mb-2\">Telepítés</h3>\n  <p>\n    A stabil rögzítés érdekében a teljes hossz kb. <strong>egyharmada</strong> kerüljön a talajba.\n  </p>\n</div>",
   "material": "Nagy nyomáson telített borovi fenyő",
   "audience": [
     "kertépítők",
@@ -26,50 +21,41 @@
     "kertifa",
     "hegyezett cölöp"
   ],
-  "sku": "HC7250",
-  "price": 3556,
-  "mprice": null,
-  "m2price": null,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": 0,
   "specs": {
-    "Anyag": {
-      "label": "Anyag",
-      "order": 3,
-      "value": "Nagynyomáson telített borovi fenyőfa"
-    },
-    "Hossz": {
-      "label": "Hossz",
-      "order": 2,
-      "value": "2500 mm"
-    },
-    "Tömeg": {
-      "label": "Tömeg",
-      "order": 5,
-      "value": "≈ 5–8 kg/db"
-    },
-    "Kivitel": {
-      "label": "Kivitel",
-      "order": 4,
-      "value": "Egyik vége hegyezett, másik vége fózolt, körmart cölöp"
-    },
-    "Átmérő": {
+    "db66f4373a": {
       "label": "Átmérő",
       "order": 1,
       "value": "70 mm"
     },
-    "Megjegyzés": {
-      "label": "Megjegyzés",
-      "order": 7,
-      "value": "Masszív kivitel, hosszú élettartam"
+    "38ed5ded74": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "2500 mm"
     },
-    "Felhasználás": {
+    "7111b0284c": {
+      "label": "Anyag",
+      "order": 3,
+      "value": "Nagynyomáson telített borovi fenyőfa"
+    },
+    "0f0116106c": {
+      "label": "Kivitel",
+      "order": 4,
+      "value": "Egyik vége hegyezett, másik vége fózolt, körmart cölöp"
+    },
+    "137a95597c": {
+      "label": "Tömeg",
+      "order": 5,
+      "value": "≈ 5–8 kg/db"
+    },
+    "80a31acdcc": {
       "label": "Felhasználás",
       "order": 6,
       "value": "Kerítés, támfal, kerti szerkezet, mezőgazdasági cél"
+    },
+    "9e20da1db9": {
+      "label": "Megjegyzés",
+      "order": 7,
+      "value": "Masszív kivitel, hosszú élettartam"
     }
   },
   "shippingDetails": {
@@ -78,7 +64,38 @@
     "width": 7,
     "height": 7
   },
-  "variants": null,
-  "category": "telitett-hegyzett-colop",
-  "categorySlug": "telitett-hegyzett-colop"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.68,
+    "reviewCount": 63
+  },
+  "image": "/termekek/hegyezett-colop-atmero-7.jpg",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_4d6b949f0b1b6453",
+      "title": "Alap",
+      "sku": "HC7250",
+      "variant_rank": 0,
+      "price": 3556,
+      "mprice": null,
+      "m2price": null,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 3556,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

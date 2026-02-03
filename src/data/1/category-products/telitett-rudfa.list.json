@@ -2,76 +2,120 @@
   "categorySlug": "telitett-rudfa",
   "items": [
     {
+      "slug": "telitett-rudfa-atmero-80",
+      "categorySlug": "telitett-rudfa",
+      "name": "Telített rúdfa Ø80mm",
+      "description": "Nyomás alatt impregnált, tartós telített rúdfa 80 mm átmérővel kerítésekhez és kerti szerkezetekhez.",
+      "sku": "RF08050",
+      "image": "/termekkep/rudfa-atmero-8.webp",
+      "images": [],
+      "priceFrom": 740,
+      "priceTo": 4530,
+      "stock": 1,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "hasDiscount": false,
+      "variantTitles": [
+        "Ø80mm x 50 | rúdfa",
+        "Ø80mm x 100 | rúdfa",
+        "Ø80mm x 200 | rúdfa",
+        "Ø80mm x 250 | rúdfa",
+        "Ø80mm x 300 | rúdfa"
+      ],
+      "variantSkus": [
+        "RF08050",
+        "RF08100",
+        "RF08200",
+        "RF08250",
+        "RF08300"
+      ]
+    },
+    {
       "slug": "telitett-rudfa-atmero-100",
       "categorySlug": "telitett-rudfa",
       "name": "Telített rúdfa Ø100mm",
-      "image": "/termekek/rudfa-atmero-10.webp",
-      "images": [],
+      "description": "Masszív, nyomás alatt impregnált telített rúdfa 100 mm átmérővel kültéri felhasználásra.",
       "sku": "RF10200",
+      "image": "/termekkep/rudfa-atmero-10.webp",
+      "images": [],
       "priceFrom": 1095,
       "priceTo": 12745,
+      "stock": 6,
       "discountPercent": null,
       "discountValidUntil": null,
-      "stock": 6,
-      "inStock": true,
-      "hasVariants": true,
-      "variantCount": 7,
-      "ratingValue": 4.79,
-      "reviewCount": 53
+      "hasDiscount": false,
+      "variantTitles": [
+        "Ø100mm x 50 | rúdfa",
+        "Ø100mm x 100 | rúdfa",
+        "Ø100mm x 150 | rúdfa",
+        "Ø100mm x 200 | rúdfa",
+        "Ø100mm x 250 | rúdfa",
+        "Ø100mm x 300 | rúdfa",
+        "Ø100mm x 400 | rúdfa"
+      ],
+      "variantSkus": [
+        "RF10050",
+        "RF10100",
+        "RF10150",
+        "RF10200",
+        "RF10250",
+        "RF10300",
+        "RF10400"
+      ]
     },
     {
       "slug": "telitett-rudfa-atmero-120",
       "categorySlug": "telitett-rudfa",
       "name": "Telített rúdfa Ø120mm",
-      "image": "/termekek/rudfa-atmero-12.webp",
-      "images": [],
+      "description": "Prémium minőségű, nyomás alatt impregnált telített rúdfa 120 mm átmérővel.",
       "sku": "RF12400",
+      "image": "/termekkep/rudfa-atmero-12.webp",
+      "images": [],
       "priceFrom": 3760,
       "priceTo": 18515,
+      "stock": 2,
       "discountPercent": null,
       "discountValidUntil": null,
-      "stock": 2,
-      "inStock": true,
-      "hasVariants": true,
-      "variantCount": 6,
-      "ratingValue": 4.84,
-      "reviewCount": 67
+      "hasDiscount": false,
+      "variantTitles": [
+        "Ø120mm x 50 | rúdfa",
+        "Ø120mm x 150 | rúdfa",
+        "Ø120mm x 200 | rúdfa",
+        "Ø120mm x 250 | rúdfa",
+        "Ø120mm x 300 | rúdfa",
+        "Ø120mm x 400 | rúdfa"
+      ],
+      "variantSkus": [
+        "RF1250",
+        "RF12150",
+        "RF12200",
+        "RF12250",
+        "RF12300",
+        "RF12400"
+      ]
     },
     {
       "slug": "telitett-rudfa-atmero-140",
       "categorySlug": "telitett-rudfa",
       "name": "Telített rúdfa Ø140mm",
-      "image": "/termekek/rudfa-atmero-14.webp",
-      "images": [],
+      "description": "Erős, nagyméretű nyomás alatt impregnált telített rúdfa 140 mm átmérővel.",
       "sku": "RF14300",
+      "image": "/termekkep/rudfa-atmero-14.webp",
+      "images": [],
       "priceFrom": 4065,
       "priceTo": 19583,
-      "discountPercent": null,
-      "discountValidUntil": null,
       "stock": 2,
-      "inStock": true,
-      "hasVariants": true,
-      "variantCount": 2,
-      "ratingValue": 4.88,
-      "reviewCount": 92
-    },
-    {
-      "slug": "telitett-rudfa-atmero-80",
-      "categorySlug": "telitett-rudfa",
-      "name": "Telített rúdfa Ø80mm",
-      "image": "/termekek/rudfa-atmero-8.webp",
-      "images": [],
-      "sku": "RF08050",
-      "priceFrom": 740,
-      "priceTo": 4530,
       "discountPercent": null,
       "discountValidUntil": null,
-      "stock": 1,
-      "inStock": true,
-      "hasVariants": true,
-      "variantCount": 5,
-      "ratingValue": 4.82,
-      "reviewCount": 41
+      "hasDiscount": false,
+      "variantTitles": [
+        "Ø140mm x 50 | rúdfa",
+        "Ø140mm x 300 | rúdfa"
+      ],
+      "variantSkus": [
+        "RF1450",
+        "RF14300"
+      ]
     }
   ]
 }

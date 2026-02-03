@@ -1,4 +1,5 @@
 {
+  "categorySlug": "lamberia",
   "name": "Lambéria /Fózolt - C profil/ 15x116mmx4m AB-VEH minőség",
   "slug": "lamberia-luc-fozolt-15x116-abveh",
   "meta": {
@@ -6,74 +7,60 @@
     "description": "Fózolt (C profilú) luc lambéria 15×116 mm-es méretben, AB-VEH minőségben. Erősebb, tartósabb fafajta beltéri falburkolathoz.",
     "image": "/termekek/lamberia-c-15x116-abveh.png"
   },
-  "aggregateRating": {
-    "ratingValue": "4,54",
-    "reviewCount": 10
-  },
   "description": "Erős, fózolt profilú luc lambéria belső falburkolatokhoz, válogatott AB-VEH minőségben.",
-  "image": "/termekek/lamberia-c-15x116-abveh.png",
-  "images": [],
   "longDescription": "A 15x116 mm-es fózolt (C profil) borovi lambéria különösen tartós és időtálló megoldást kínál belső fal- és mennyezetburkolatokhoz. A precízen gyalult felület, a profil kialakítása és a természetes színvilág elegáns, meleg hatást kelt. Az AB-VEH minőség garantálja az esztétikus megjelenést és a könnyű felhasználást.",
-  "longDescription2": null,
+  "longDescription2": "",
+  "longDescription3": "",
   "material": null,
   "audience": [],
   "blogtags": [
     "nevezéktan"
   ],
-  "sku": "luc-lam-c-15x116-4m-abveh",
-  "price": 2500,
-  "mprice": null,
-  "m2price": 5390,
-  "m3price": null,
-  "discountPrice": null,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "stock": null,
   "specs": {
-    "Hossz": {
-      "label": "Hossz",
-      "order": 2,
-      "value": "4 m"
-    },
-    "Méret": {
+    "cd3c5dd01f": {
       "label": "Méret",
       "order": 1,
       "value": "15 x 116 mm"
     },
-    "Profil": {
-      "label": "Profil",
-      "order": 4,
-      "value": "C profil (fózolt élű lambéria)"
+    "68161090e8": {
+      "label": "Hossz",
+      "order": 2,
+      "value": "4 m"
     },
-    "Fa fajta": {
+    "be340899f3": {
       "label": "Fa fajta",
       "order": 3,
       "value": "Luc fenyő"
     },
-    "Felület": {
+    "f573ed81fe": {
+      "label": "Profil",
+      "order": 4,
+      "value": "C profil (fózolt élű lambéria)"
+    },
+    "cffd8a903b": {
       "label": "Felület",
       "order": 5,
       "value": "Gyalult, sima"
     },
-    "Kezelés": {
-      "label": "Kezelés",
-      "order": 9,
-      "value": "Kezeletlen, lakkozásra, pácolásra vagy lazúrozásra előkészítve"
-    },
-    "Minőség": {
-      "label": "Minőség",
-      "order": 7,
-      "value": "AB-VEH (válogatott burkolati minőség)"
-    },
-    "Származás": {
+    "0fa11b965d": {
       "label": "Származás",
       "order": 6,
       "value": "Ausztria"
     },
-    "Felhasználás": {
+    "0ea8bf4d87": {
+      "label": "Minőség",
+      "order": 7,
+      "value": "AB-VEH (válogatott burkolati minőség)"
+    },
+    "f5e3dd5b7b": {
       "label": "Felhasználás",
       "order": 8,
       "value": "Belső fal- és mennyezetburkolat"
+    },
+    "481834b017": {
+      "label": "Kezelés",
+      "order": 9,
+      "value": "Kezeletlen, lakkozásra, pácolásra vagy lazúrozásra előkészítve"
     }
   },
   "shippingDetails": {
@@ -82,7 +69,38 @@
     "width": 11,
     "height": 1
   },
-  "variants": null,
-  "category": "lamberia",
-  "categorySlug": "lamberia"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.54,
+    "reviewCount": 10
+  },
+  "image": "/termekek/lamberia-c-15x116-abveh.png",
+  "images": [],
+  "variants": [
+    {
+      "id": "v_753f9afacaf35e7a",
+      "title": "Alap",
+      "sku": "luc-lam-c-15x116-4m-abveh",
+      "variant_rank": 0,
+      "price": 2500,
+      "mprice": null,
+      "m2price": 5390,
+      "m3price": null,
+      "palprice": null,
+      "discountPrice": null,
+      "discountPercent": null,
+      "discountValidUntil": null,
+      "stock": 0,
+      "weight": null,
+      "length": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "stock": 0,
+  "priceFrom": 2500,
+  "priceTo": null,
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }
