@@ -76,7 +76,7 @@ const schemaHome = [
     "@type": "LocalBusiness",
     "@id": "https://elviratuzep.hu/#store",
     "name": "Elvira Tüzép",
-    "image": "https://elviratuzep.hu/favicon.png",
+    "image": "https://elviratuzep.hu/images/tanalith-treating.jpg",
     "telephone": "+36 70 368 7809",
     "email": "info@elviratuzep.hu",
     "url": "https://elviratuzep.hu/",
@@ -113,6 +113,21 @@ const schemaHome = [
   }
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Mi a különbség a fűrészelt és a műszárított, gyalult építőfa között?', acceptedAnswer: { '@type': 'Answer', text: 'A fűrészelt építőfa érdes felületű, légszáraz vagy friss állapotban kerül forgalomba, és kedvezőbb árú. A műszárított, gyalult faanyag ezzel szemben kamrában szárított, sima felületű és mérettartó, így tartósabb és esztétikusabb szerkezetekhez ajánlott.' } },
+    { '@type': 'Question', name: 'Mekkora nedvességtartalommal kapható az építőfa?', acceptedAnswer: { '@type': 'Answer', text: 'A fűrészelt építőfa általában 15–20%-os légszáraz nedvességtartalommal bír, frissen fűrészelve pedig akár 30% fölött is lehet. A műszárított, gyalult faanyag viszont 10–14%-ra szárított, ezért kevésbé vetemedik és jobban tartja a méretét.' } },
+    { '@type': 'Question', name: 'Melyik építőfa a legjobb tetőszerkezethez?', acceptedAnswer: { '@type': 'Answer', text: 'Tetőszerkezethez és tartós szerkezeti elemekhez a műszárított, gyalult építőfa a legjobb választás, mert stabil és hosszú élettartamú. Ideiglenes szerkezetekhez, zsaluzathoz a kedvező árú fűrészelt fa is elegendő lehet.' } },
+    { '@type': 'Question', name: 'Melyik építőfa a kedvezőbb árban?', acceptedAnswer: { '@type': 'Answer', text: 'A fűrészelt építőfa a legolcsóbb megoldás, mivel nem esik át ipari szárításon és gyaluláson. A műszárított, gyalult faanyag prémium minőséget képvisel, ezért magasabb árkategóriába tartozik, de hosszabb távon jobban megéri.' } },
+    { '@type': 'Question', name: 'Mi a különbség a deszka és a palló között?', acceptedAnswer: { '@type': 'Answer', text: 'A deszka jellemzően 2–3 cm vastag, sokoldalúan használható burkolatokhoz és zsaluzathoz. A palló vastagabb (4 cm felett, gyakran 5 cm), nagyobb teherbírású, ezért padlók, födémek és tetővázak készítésénél alkalmazzák.' } },
+    { '@type': 'Question', name: 'Miért fontos a C24 minősítés a szerkezeti fenyőnél?', acceptedAnswer: { '@type': 'Answer', text: 'A C24 szilárdsági osztály garantálja, hogy a faanyag válogatott, mérettartó és biztonságosan méretezhető teherhordó szerkezetekhez. Tetőkhöz, födémekhez érdemes ilyen minősítést választani a hosszú távú stabilitás érdekében.' } },
+    { '@type': 'Question', name: 'Mire használják a lambériát és a hajópadlót?', acceptedAnswer: { '@type': 'Answer', text: 'A lambéria vékonyabb burkolat falakra és mennyezetre (beltér: 12,5–14 mm; kültér: 14–19 mm). A hajópadló vastagabb (15–28 mm), önhordó járófelület, padlókhoz, teraszokhoz és védett külső burkolatokhoz ajánlott.' } },
+    { '@type': 'Question', name: 'Mi az a rönkház profil és mire használják?', acceptedAnswer: { '@type': 'Answer', text: 'A rönkház profil (faház építő profil) félköríves vagy zsindelyprofilú burkolóelem. Vastagabb (19–24 mm), rusztikus megjelenést ad, és homlokzatok, melléképületek, kerítések vagy beltéri falak burkolására használják.' } },
+  ],
+};
+
 const productsData = await fetchCategoriesOnly()
 const discounted = await fetchDiscountedProducts();
 
@@ -131,12 +146,14 @@ const itemListJsonLd = buildSpecialOffersItemList(discounted);
     )}
 
     {itemListJsonLd && (
-      <script 
-        type="application/ld+json" 
-        slot="head" 
-        set:html={JSON.stringify(itemListJsonLd)} 
+      <script
+        type="application/ld+json"
+        slot="head"
+        set:html={JSON.stringify(itemListJsonLd)}
       />
     )}
+
+    <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqSchema)} />
 
   <!-- Hero Widget ******************* -->
 

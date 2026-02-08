@@ -55,6 +55,7 @@ export default function OfferModal({ product, unit, price, quantity, onClose }) 
 
     const formData = new URLSearchParams();
     formData.append('form-name', 'offer');
+    formData.append('bot-field', '');
     formData.append('name', name);
     formData.append('email', email);
     formData.append('phone', phone);
