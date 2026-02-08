@@ -6,10 +6,11 @@ import Content from '~/components/widgets/Content.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Breadcrumbs from '~/components/common/Breadcrumbs.astro';
 
 const metadata = {
-  title: 'Növénykarók és Szőlőkarók Telített Fából | Paradicsom, Szőlő, Gyümölcsfa | Elvira Tüzép',
-  description: 'Növénykarók és szőlőkarók telített fából: hegyezett cölöpök szőlőhöz, paradicsomhoz, gyümölcsfákhoz és kúszónövényekhez. Tanalith-kezelt, UC4 minősítés, 15-25 év élettartam. Országos szállítás!',
+  title: 'Szőlőkarók és Növénykarók Telített Fából | Elvira Tüzép',
+  description: 'Szőlőkarók és növénykarók telített fából. Hegyezett cölöpök szőlőhöz, paradicsomhoz, gyümölcsfákhoz. UC4, 15-25 év.',
   canonical: 'https://elviratuzep.hu/felhasznalasok/novenytamaszok',
   openGraph: {
     type: 'website',
@@ -46,6 +47,11 @@ const meretekFelhasznalashoz = [
 
 <Layout metadata={metadata}>
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+  <Breadcrumbs items={[
+    { label: 'Főoldal', href: '/' },
+    { label: 'Telített fa', href: '/telitett-fa' },
+    { label: 'Növénytámaszok' },
+  ]} />
 
   <Hero id="hero" tagline="Növénykarók és Szőlőkarók Telített Fából" title="Szőlőkarók és Növénykarók – Nyomás Alatt Impregnált, Évtizedekig Tartós Fa"
     actions={[

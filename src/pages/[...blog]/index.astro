@@ -13,6 +13,7 @@ import { findImage } from '~/utils/images';
 import type { MetaData } from '~/types';
 import RelatedPosts from '~/components/blog/RelatedPosts.astro';
 import BlogSidebar from '~/components/blog/BlogSidebar.astro';
+import Breadcrumbs from '~/components/common/Breadcrumbs.astro';
 
 export const prerender = true;
 
@@ -46,9 +47,53 @@ const metadata = merge(
 ) as MetaData;
 
 const calcSchemaHead = post?.calcSchema;
+
+// Auto-generate Article schema for all blog posts
+const siteUrl = 'https://elviratuzep.hu';
+const articleImageUrl = typeof image === 'string'
+  ? (image.startsWith('http') ? image : `${siteUrl}${image.startsWith('/') ? '' : '/'}${image}`)
+  : image?.src
+    ? (image.src.startsWith('http') ? image.src : `${siteUrl}${image.src.startsWith('/') ? '' : '/'}${image.src}`)
+    : `${siteUrl}/images/default.png`;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  'headline': post.title,
+  'description': post.excerpt || '',
+  'image': articleImageUrl,
+  'datePublished': post.publishDate ? new Date(post.publishDate).toISOString() : undefined,
+  'dateModified': post.updateDate ? new Date(post.updateDate).toISOString() : (post.publishDate ? new Date(post.publishDate).toISOString() : undefined),
+  'author': {
+    '@type': 'Person',
+    'name': post.author || 'Mészáros János',
+    'url': siteUrl,
+  },
+  'publisher': {
+    '@type': 'Organization',
+    '@id': 'https://gigawood.hu/#organization',
+    'name': 'Gigawood Kft.',
+    'logo': {
+      '@type': 'ImageObject',
+      'url': 'https://gigawood.hu/custom/megawood/image/cache/w220h100m00/GigaWood_logo_3_Vasvari_Design.png',
+    },
+  },
+  'mainEntityOfPage': {
+    '@type': 'WebPage',
+    '@id': typeof url === 'string' ? url : url?.toString(),
+  },
+  ...(post.category ? { 'articleSection': post.category.title } : {}),
+  ...(post.tags?.length ? { 'keywords': post.tags.map((t: any) => typeof t === 'string' ? t : t.title).join(', ') } : {}),
+  'inLanguage': 'hu',
+};
 ---
 
 <Layout metadata={metadata}>
+  <script
+    type="application/ld+json"
+    slot="head"
+    set:html={JSON.stringify(articleSchema)}
+  />
   {calcSchemaHead && (
     <script
       type="application/ld+json"
@@ -56,6 +101,12 @@ const calcSchemaHead = post?.calcSchema;
       set:html={calcSchemaHead}
     />
   )}
+  <Breadcrumbs items={[
+    { label: 'Főoldal', href: '/' },
+    { label: 'Tudástár', href: '/tudastar' },
+    ...(post.category ? [{ label: post.category.title, href: `/tudastar/kategoria/${post.category.slug}` }] : []),
+    { label: post.title },
+  ]} />
   <div class="flex flex-col lg:flex-row gap-8 px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-6xl">
     <!-- Sidebar bal oldalon (sticky, dark mode kompatibilis, mobilon felül) -->
     <div class="w-full lg:w-1/4 order-first lg:order-none">

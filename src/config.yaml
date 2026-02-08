@@ -9,7 +9,7 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: "ElviraTüzép | Tartós Szerkezeti Fa és Minőségi Tüzelőanyag"
+    default: "Elvira Tüzép | Szerkezeti Fa és Tüzelőanyag"
     template: ''
   description: 'Tartós fa, meleg otthon. Az Elvira Tüzép BSH gerendák, ragasztott faanyagok és minőségi brikettek forgalmazója. Fűtésre és építésre egy helyen.'
   robots:
@@ -23,8 +23,8 @@ metadata:
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@elviratuzep'
+    site: '@elviratuzep'
     cardType: summary_large_image
 
 i18n:

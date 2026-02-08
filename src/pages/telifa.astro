@@ -11,17 +11,37 @@ import UseCasesCards from '~/components/widgets/UseCasesCards.astro';
 
 import Features from '~/components/widgets/Features.astro';
 import Stats from '~/components/widgets/Stats.astro';
+import Breadcrumbs from '~/components/common/Breadcrumbs.astro';
 
 const metadata = {
   title: 'Nagynyomáson Kezelt Borovifa | Tartós és Biztonságos Faanyag',
-  description: 'Tanalith-kezelt telített borovifa B2B értékesítés. Gyermekbarát, környezetbarát, 15-25 év tartósság. Kerítésoszlopok, játszóterek, kerti építmények számára.',
+  description: 'Tanalith-kezelt telített borovifa. Gyermekbarát, környezetbarát, 15-25 év tartósság. Kerítések, játszóterek, kerti építmények.',
   ignoreTitleTemplate: true,
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Milyen hosszú az élettartama?', acceptedAnswer: { '@type': 'Answer', text: '15-25 év talajkontaktusban is, megfelelő beépítés és minimális karbantartás mellett. A védőszer mélyen behatol a rostokba.' } },
+    { '@type': 'Question', name: 'Biztonságos gyermekek számára?', acceptedAnswer: { '@type': 'Answer', text: 'Igen! A Tanalith kezelés nehézfém-mentes (nincs króm, arzén), EN 71-3 szabványnak megfelelő. Játszóterekhez is ajánlott.' } },
+    { '@type': 'Question', name: 'Mennyivel olcsóbb a keményfánál?', acceptedAnswer: { '@type': 'Answer', text: '40-60%-kal kedvezőbb kezdő beruházási költség. A teljes életciklus költség is alacsonyabb a keményfánál.' } },
+    { '@type': 'Question', name: 'Szükséges-e karbantartás?', acceptedAnswer: { '@type': 'Answer', text: 'Minimális. Esztétikai frissítéshez időszakos fedőfesték ajánlott. Vágott éleket impregnáló javítóanyaggal kell kezelni.' } },
+    { '@type': 'Question', name: 'Milyen méretekben elérhető?', acceptedAnswer: { '@type': 'Answer', text: 'Átmérő: 6-12 cm, hossz: 2,5-4 m. Körmart, hegyezett vég. Raklapos mennyiségben B2B partnereknek.' } },
+    { '@type': 'Question', name: 'Miben különbözik a mártott fától?', acceptedAnswer: { '@type': 'Answer', text: 'A telített fa mély védelmet nyújt (15-25 év), míg a mártott csak felületi (2-5 év). Hosszú távon a telített fa gazdaságosabb.' } },
+    { '@type': 'Question', name: 'Korrodálja a fém kötőelemeket?', acceptedAnswer: { '@type': 'Answer', text: 'Nem! A Tanalith rézmentes, így nem korrodálja a tűzihorganyzott csavarokat és bilincseket.' } },
+    { '@type': 'Question', name: 'Milyen területekre szállítotok?', acceptedAnswer: { '@type': 'Answer', text: 'Magyarország, Románia, Horvátország, Szlovákia. B2B raklapos mennyiségben kedvező szállítási feltételekkel.' } },
+  ],
+};
 ---
 
 <Layout metadata={metadata}>
-  
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+  <Breadcrumbs items={[
+    { label: 'Főoldal', href: '/' },
+    { label: 'Telített fa' },
+  ]} />
+
   <!-- HERO SECTION -->
   <Hero
       actions={[

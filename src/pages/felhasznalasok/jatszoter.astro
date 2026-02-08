@@ -7,10 +7,11 @@ import Steps from '~/components/widgets/Steps.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import PlaygroundTypes from '~/components/widgets/PlaygroundTypes.astro';
+import Breadcrumbs from '~/components/common/Breadcrumbs.astro';
 
 const metadata = {
-  title: 'Játszótér Építés Telített Fából | Gyermekbarát, Biztonságos | Elvira Tüzép',
-  description: 'Telített fa játszótér építéshez. Gyermekbarát Tanalith kezelés, EN 71-3 szabvány, nehézfém-mentes. Köztéri és kerti játszóterekhez. Hinták, mászókák, homokozók.',
+  title: 'Játszótér Építés Telített Fából | Elvira Tüzép',
+  description: 'Telített fa játszótérhez. Gyermekbarát Tanalith kezelés, EN 71-3 szabvány. Köztéri és kerti játszóterekhez.',
   canonical: 'https://elviratuzep.hu/felhasznalasok/jatszoter',
   openGraph: {
     type: 'website',
@@ -19,10 +20,31 @@ const metadata = {
     image: '~/assets/images/og-jatszoter.jpg',
   },
 };
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Biztonságos a telített fa gyerekeknek?', acceptedAnswer: { '@type': 'Answer', text: 'Igen! A Tanalith kezelés megfelel az EN 71-3 játékbiztonsági szabványnak. Nehézfém-mentes (nincs króm, arzén), a gyerekek bőre nyugodtan érintkezhet vele.' } },
+    { '@type': 'Question', name: 'Mennyire tartós a játszótéri fa?', acceptedAnswer: { '@type': 'Answer', text: 'A Tanalith-kezelt telített fa 15-25 évig megőrzi tartósságát kültéren, még földkontaktusban is. UC4 minősítéssel rendelkezik.' } },
+    { '@type': 'Question', name: 'Kell-e festeni a telített fát?', acceptedAnswer: { '@type': 'Answer', text: 'Nem kötelező, de ha szeretné színesre festeni, használjon nem vizes bázisú lazúrt vagy festéket. Várjon a telítés után 3-6 hónapot a festéssel.' } },
+    { '@type': 'Question', name: 'Milyen csavarokat használjak?', acceptedAnswer: { '@type': 'Answer', text: 'Rozsdamentes (A2 vagy A4) vagy horganyzott csavarokat. A telített fa NEM korrodálja a fémet, ellentétben a régi CCA-kezelt fával.' } },
+    { '@type': 'Question', name: 'Mekkora biztonsági zóna kell?', acceptedAnswer: { '@type': 'Answer', text: 'Minden játszóelem körül minimum 2 méter szabad terület ajánlott, hintáknál az ív irányában 3-4 méter.' } },
+    { '@type': 'Question', name: 'Köztéri játszótérhez milyen engedély kell?', acceptedAnswer: { '@type': 'Answer', text: 'A köztéri játszótereknek meg kell felelniük az EN 1176 szabványnak. Érdeklődjön az önkormányzatnál az engedélyezési feltételekről.' } },
+    { '@type': 'Question', name: 'Mi legyen a játszótér alatt?', acceptedAnswer: { '@type': 'Answer', text: 'Ütéscsillapító réteg kötelező: homok (min. 30 cm), fakéreg mulcs, vagy speciális gumilap. A fű és a beton NEM megfelelő!' } },
+    { '@type': 'Question', name: 'Megépíthetem magam a játszóteret?', acceptedAnswer: { '@type': 'Answer', text: 'Igen! A telített fa könnyen megmunkálható. Adunk tervrajzokat és tanácsokat is kérésre. Nagyobb projektekhez ajánlunk szakembert.' } },
+  ],
+};
 ---
 
 <Layout metadata={metadata}>
-  
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+  <Breadcrumbs items={[
+    { label: 'Főoldal', href: '/' },
+    { label: 'Telített fa', href: '/telitett-fa' },
+    { label: 'Játszótér építés' },
+  ]} />
+
   <!-- ============================================
        1. HERO SECTION
        ============================================ -->

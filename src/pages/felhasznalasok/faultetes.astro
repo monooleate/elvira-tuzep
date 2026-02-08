@@ -7,10 +7,11 @@ import Steps from '~/components/widgets/Steps.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import ProductSizes from '~/components/widgets/ProductSizes.astro';
+import Breadcrumbs from '~/components/common/Breadcrumbs.astro';
 
 const metadata = {
-  title: 'Faültetéshez Tartó Cölöp | Telített Hegyezett Cölöpök | Elvira Tüzép',
-  description: 'Telített fa tartó cölöpök faültetéshez. Hegyezett, nagynyomáson kezelt borovi cölöpök 15-25 év élettartammal. Szőlőkaró, gyümölcsfa támasz, facsemete rögzítés.',
+  title: 'Faültetéshez Tartó Cölöp | Telített Fa | Elvira Tüzép',
+  description: 'Telített fa cölöpök faültetéshez. Hegyezett borovi cölöpök 15-25 év élettartammal. Szőlőkaró, gyümölcsfa támasz.',
   canonical: 'https://elviratuzep.hu/felhasznalasok/faultetes',
   openGraph: {
     type: 'website',
@@ -19,10 +20,31 @@ const metadata = {
     image: '~/assets/images/og-faultetes.jpg',
   },
 };
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Melyik végével kell lefelé verni a cölöpöt?', acceptedAnswer: { '@type': 'Answer', text: 'A hegyezett végével lefelé – ez megkönnyíti a beverést. Ha nagyon kemény a talaj, előfúrás segíthet.' } },
+    { '@type': 'Question', name: 'Hány cölöp kell egy fához?', acceptedAnswer: { '@type': 'Answer', text: 'Kisebb csemetéhez 1-2 cölöp elegendő. Nagyobb fákhoz (3+ méter) 2-3 cölöp ajánlott háromszög alakban a nagyobb stabilitásért.' } },
+    { '@type': 'Question', name: 'Milyen mélyre kell verni?', acceptedAnswer: { '@type': 'Answer', text: 'A cölöp hosszának kb. 1/3-át (min. 50-60 cm) kell a földbe verni a stabil álláshoz.' } },
+    { '@type': 'Question', name: 'Meddig kell a fát támasztani?', acceptedAnswer: { '@type': 'Answer', text: 'Általában 2-3 évig, amíg a gyökérzet meg nem erősödik. Túl sokáig hagyva a fa "elkényelmesedik".' } },
+    { '@type': 'Question', name: 'Mivel kössem a fát a cölöphöz?', acceptedAnswer: { '@type': 'Answer', text: 'Puha fakötöző szalaggal, kókuszszalaggal vagy speciális fa-rögzítővel. Drót és műanyag zsineg sértheti a kérget!' } },
+    { '@type': 'Question', name: 'Használhatom szőlőhöz is?', acceptedAnswer: { '@type': 'Answer', text: 'Igen! A telített cölöpök kiválóan alkalmasak szőlőkarónak is – évtizedekig bírják a terhelést.' } },
+    { '@type': 'Question', name: 'Festhetem a telített fát?', acceptedAnswer: { '@type': 'Answer', text: 'Igen, de várjon 3-6 hónapot a telítés után, amíg a fa kiszárad. Használjon nem vizes bázisú festéket vagy lazúrt.' } },
+    { '@type': 'Question', name: 'Mi a különbség a mártott és a telített között?', acceptedAnswer: { '@type': 'Answer', text: 'A mártott fa csak felületileg védett (2-3 év), a telített fa mélyen átitatott (15-25 év). Földbe csak telített cölöpöt tegyen!' } },
+  ],
+};
 ---
 
 <Layout metadata={metadata}>
-  
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+  <Breadcrumbs items={[
+    { label: 'Főoldal', href: '/' },
+    { label: 'Telített fa', href: '/telitett-fa' },
+    { label: 'Faültetés' },
+  ]} />
+
   <!-- ============================================
        1. HERO SECTION
        ============================================ -->
