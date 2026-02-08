@@ -354,8 +354,8 @@
       "m3price": null,
       "palprice": null,
       "discountPrice": null,
-      "discountPercent": null,
-      "discountValidUntil": null,
+      "discountPercent": 20,
+      "discountValidUntil": "2026-05-05",
       "stock": 1,
       "weight": null,
       "length": null,
@@ -442,7 +442,7 @@
   "stock": 18,
   "priceFrom": 5.59,
   "priceTo": 63.23,
-  "discountPercent": null,
-  "discountValidUntil": null,
-  "hasDiscount": false
+  "discountPercent": 20,
+  "discountValidUntil": "2026-05-05",
+  "hasDiscount": true
 }

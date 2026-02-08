@@ -1,0 +1,522 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <!-- Wood gradient for stakes -->
+    <linearGradient id="stakeWood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8B6914"/>
+      <stop offset="25%" stop-color="#A0722D"/>
+      <stop offset="50%" stop-color="#B8862D"/>
+      <stop offset="75%" stop-color="#A0722D"/>
+      <stop offset="100%" stop-color="#7A5A10"/>
+    </linearGradient>
+    <linearGradient id="stakeWoodDark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6B4F0E"/>
+      <stop offset="50%" stop-color="#8B6914"/>
+      <stop offset="100%" stop-color="#6B4F0E"/>
+    </linearGradient>
+    <!-- Tomato gradients -->
+    <radialGradient id="tomatoGrad" cx="0.35" cy="0.35" r="0.65">
+      <stop offset="0%" stop-color="#FF5252"/>
+      <stop offset="40%" stop-color="#E53935"/>
+      <stop offset="100%" stop-color="#C62828"/>
+    </radialGradient>
+    <radialGradient id="tomatoGreen" cx="0.35" cy="0.35" r="0.65">
+      <stop offset="0%" stop-color="#81C784"/>
+      <stop offset="40%" stop-color="#66BB6A"/>
+      <stop offset="100%" stop-color="#43A047"/>
+    </radialGradient>
+    <radialGradient id="tomatoOrange" cx="0.35" cy="0.35" r="0.65">
+      <stop offset="0%" stop-color="#FFAB40"/>
+      <stop offset="40%" stop-color="#FF9100"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </radialGradient>
+    <!-- Leaf gradients -->
+    <linearGradient id="tLeafGrad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <linearGradient id="tLeafGrad2" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#66BB6A"/>
+      <stop offset="100%" stop-color="#388E3C"/>
+    </linearGradient>
+    <linearGradient id="tLeafDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#388E3C"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <!-- Soil gradient -->
+    <linearGradient id="soilGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#795548"/>
+      <stop offset="30%" stop-color="#6D4C41"/>
+      <stop offset="100%" stop-color="#4E342E"/>
+    </linearGradient>
+    <!-- Sky gradient -->
+    <linearGradient id="gardenSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E3F2FD"/>
+      <stop offset="100%" stop-color="#BBDEFB"/>
+    </linearGradient>
+    <!-- Raised bed wood -->
+    <linearGradient id="bedWood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A1887F"/>
+      <stop offset="50%" stop-color="#8D6E63"/>
+      <stop offset="100%" stop-color="#6D4C41"/>
+    </linearGradient>
+    <!-- Mulch -->
+    <linearGradient id="mulchGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5D4037"/>
+      <stop offset="100%" stop-color="#4E342E"/>
+    </linearGradient>
+    <!-- Twine color -->
+    <linearGradient id="twineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D7CCC8"/>
+      <stop offset="50%" stop-color="#BCAAA4"/>
+      <stop offset="100%" stop-color="#D7CCC8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky background -->
+  <rect x="0" y="0" width="800" height="500" fill="url(#gardenSky)"/>
+
+  <!-- Subtle clouds -->
+  <g opacity="0.4">
+    <ellipse cx="150" cy="60" rx="60" ry="20" fill="white"/>
+    <ellipse cx="180" cy="55" rx="40" ry="18" fill="white"/>
+    <ellipse cx="120" cy="55" rx="35" ry="15" fill="white"/>
+    <ellipse cx="600" cy="80" rx="55" ry="18" fill="white"/>
+    <ellipse cx="630" cy="75" rx="40" ry="16" fill="white"/>
+  </g>
+
+  <!-- Distant fence -->
+  <g opacity="0.25" stroke="#8D6E63" fill="none" stroke-width="2">
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="320" x2="800" y2="320"/>
+    <line x1="30" y1="280" x2="30" y2="330"/>
+    <line x1="100" y1="280" x2="100" y2="330"/>
+    <line x1="170" y1="280" x2="170" y2="330"/>
+    <line x1="240" y1="280" x2="240" y2="330"/>
+    <line x1="310" y1="280" x2="310" y2="330"/>
+    <line x1="380" y1="280" x2="380" y2="330"/>
+    <line x1="450" y1="280" x2="450" y2="330"/>
+    <line x1="520" y1="280" x2="520" y2="330"/>
+    <line x1="590" y1="280" x2="590" y2="330"/>
+    <line x1="660" y1="280" x2="660" y2="330"/>
+    <line x1="730" y1="280" x2="730" y2="330"/>
+  </g>
+
+  <!-- Background grass -->
+  <rect x="0" y="330" width="800" height="50" fill="#81C784" opacity="0.4"/>
+  <rect x="0" y="360" width="800" height="20" fill="#66BB6A" opacity="0.4"/>
+
+  <!-- Garden soil bed -->
+  <rect x="40" y="370" width="720" height="130" fill="url(#soilGrad)" rx="4"/>
+
+  <!-- Raised bed front boards -->
+  <rect x="35" y="370" width="730" height="18" fill="url(#bedWood)" rx="3"/>
+  <line x1="35" y1="378" x2="765" y2="378" stroke="#5D4037" stroke-width="0.5" opacity="0.4"/>
+  <!-- Bed side boards -->
+  <rect x="35" y="370" width="12" height="130" fill="#8D6E63" rx="2"/>
+  <rect x="753" y="370" width="12" height="130" fill="#8D6E63" rx="2"/>
+
+  <!-- Mulch texture on soil -->
+  <g opacity="0.3">
+    <ellipse cx="100" cy="420" rx="12" ry="3" fill="#3E2723"/>
+    <ellipse cx="200" cy="430" rx="10" ry="2.5" fill="#3E2723"/>
+    <ellipse cx="320" cy="415" rx="14" ry="3" fill="#3E2723"/>
+    <ellipse cx="440" cy="425" rx="11" ry="2.5" fill="#3E2723"/>
+    <ellipse cx="560" cy="420" rx="13" ry="3" fill="#3E2723"/>
+    <ellipse cx="660" cy="435" rx="10" ry="2.5" fill="#3E2723"/>
+    <ellipse cx="150" cy="440" rx="12" ry="2.5" fill="#3E2723"/>
+    <ellipse cx="380" cy="445" rx="14" ry="3" fill="#3E2723"/>
+    <ellipse cx="600" cy="445" rx="11" ry="2.5" fill="#3E2723"/>
+    <ellipse cx="720" cy="418" rx="10" ry="2.5" fill="#3E2723"/>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- PLANT 1 (leftmost) - Mature plant with red tomatoes -->
+  <!-- ============================================ -->
+  <g>
+    <!-- Stake -->
+    <rect x="128" y="120" width="16" height="260" fill="url(#stakeWood)" rx="2"/>
+    <polygon points="128,120 136,88 144,120" fill="url(#stakeWoodDark)"/>
+    <line x1="134" y1="128" x2="134" y2="378" stroke="#6B4F0E" stroke-width="0.5" opacity="0.3"/>
+    <line x1="139" y1="125" x2="139" y2="378" stroke="#6B4F0E" stroke-width="0.5" opacity="0.25"/>
+
+    <!-- Main stem -->
+    <path d="M136,378 Q132,340 136,300 Q140,260 134,220 Q138,180 136,145" stroke="#558B2F" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- Secondary stem branches -->
+    <path d="M136,320 Q120,300 105,295" stroke="#558B2F" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M134,260 Q150,240 165,235" stroke="#558B2F" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M136,200 Q118,185 108,180" stroke="#558B2F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M135,170 Q152,155 162,150" stroke="#558B2F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Twine ties -->
+    <g stroke="#BCAAA4" stroke-width="2" fill="none" opacity="0.8">
+      <path d="M128,180 Q125,175 130,172 Q140,170 144,175 Q148,178 144,180"/>
+      <path d="M128,260 Q125,255 130,252 Q140,250 144,255 Q148,258 144,260"/>
+      <path d="M128,330 Q125,325 130,322 Q140,320 144,325 Q148,328 144,330"/>
+    </g>
+
+    <!-- Leaves - compound tomato leaves -->
+    <!-- Left branch leaves -->
+    <g transform="translate(105,290)">
+      <path d="M0,0 Q-12,-8 -20,-5 Q-15,-2 -22,5 Q-14,2 -8,8 Q-10,2 0,0Z" fill="url(#tLeafGrad1)"/>
+      <path d="M0,0 Q-8,-14 -3,-20 Q0,-14 3,-20 Q8,-14 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q12,-8 20,-5 Q15,-2 22,5 Q14,2 8,8 Q10,2 0,0Z" fill="url(#tLeafDark)"/>
+    </g>
+    <!-- Right branch leaves -->
+    <g transform="translate(165,230)">
+      <path d="M0,0 Q-10,-12 -2,-18 Q0,-12 2,-18 Q10,-12 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q12,-6 18,-2 Q14,2 20,8 Q12,4 6,10 Q8,3 0,0Z" fill="url(#tLeafGrad1)"/>
+      <path d="M0,0 Q-12,-5 -18,0 Q-12,4 -6,10 Q-8,3 0,0Z" fill="url(#tLeafDark)"/>
+    </g>
+    <!-- Top leaves -->
+    <g transform="translate(108,175)">
+      <path d="M0,0 Q-10,-12 -3,-19 Q0,-13 3,-19 Q10,-12 0,0Z" fill="url(#tLeafGrad1)"/>
+      <path d="M0,0 Q-14,-4 -18,2 Q-12,4 -8,10 Q-10,3 0,0Z" fill="url(#tLeafGrad2)"/>
+    </g>
+    <g transform="translate(162,145)">
+      <path d="M0,0 Q-8,-12 -2,-18 Q0,-12 2,-18 Q8,-12 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q12,-4 17,1 Q12,4 7,10 Q9,3 0,0Z" fill="url(#tLeafGrad1)"/>
+    </g>
+    <!-- Leaf at top of plant -->
+    <g transform="translate(136,140)">
+      <path d="M0,0 Q-10,-14 -3,-22 Q0,-16 3,-22 Q10,-14 0,0Z" fill="#66BB6A"/>
+      <path d="M0,0 Q-14,-6 -20,-1 Q-14,2 -8,8 Q-10,2 0,0Z" fill="url(#tLeafGrad1)"/>
+      <path d="M0,0 Q14,-6 20,-1 Q14,2 8,8 Q10,2 0,0Z" fill="url(#tLeafGrad2)"/>
+    </g>
+
+    <!-- RED TOMATOES on plant 1 -->
+    <!-- Tomato cluster on left branch -->
+    <g transform="translate(95,305)">
+      <circle cx="0" cy="0" r="12" fill="url(#tomatoGrad)"/>
+      <circle cx="-3" cy="-4" r="4" fill="white" opacity="0.15"/>
+      <!-- Calyx -->
+      <path d="M-4,-11 L0,-14 L4,-11 L2,-10 L0,-12 L-2,-10Z" fill="#388E3C"/>
+    </g>
+    <g transform="translate(115,315)">
+      <circle cx="0" cy="0" r="10" fill="url(#tomatoGrad)"/>
+      <circle cx="-2" cy="-3" r="3" fill="white" opacity="0.15"/>
+      <path d="M-3,-9 L0,-12 L3,-9 L1,-8 L0,-10 L-1,-8Z" fill="#388E3C"/>
+    </g>
+
+    <!-- Tomato on right branch -->
+    <g transform="translate(170,248)">
+      <circle cx="0" cy="0" r="13" fill="url(#tomatoGrad)"/>
+      <circle cx="-3" cy="-4" r="4.5" fill="white" opacity="0.15"/>
+      <path d="M-5,-12 L0,-15 L5,-12 L3,-10 L0,-13 L-3,-10Z" fill="#388E3C"/>
+    </g>
+
+    <!-- Small green tomato near top -->
+    <g transform="translate(115,185)">
+      <circle cx="0" cy="0" r="8" fill="url(#tomatoGreen)"/>
+      <circle cx="-2" cy="-2" r="2.5" fill="white" opacity="0.12"/>
+      <path d="M-3,-7 L0,-10 L3,-7 L1,-6 L0,-8 L-1,-6Z" fill="#2E7D32"/>
+    </g>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- PLANT 2 - Tall mature plant -->
+  <!-- ============================================ -->
+  <g>
+    <!-- Stake -->
+    <rect x="305" y="105" width="18" height="275" fill="url(#stakeWood)" rx="2"/>
+    <polygon points="305,105 314,70 323,105" fill="url(#stakeWoodDark)"/>
+    <line x1="311" y1="112" x2="311" y2="378" stroke="#6B4F0E" stroke-width="0.5" opacity="0.3"/>
+    <line x1="317" y1="110" x2="317" y2="378" stroke="#6B4F0E" stroke-width="0.5" opacity="0.25"/>
+
+    <!-- Main stem -->
+    <path d="M314,378 Q310,340 314,290 Q318,240 312,190 Q316,150 314,115" stroke="#558B2F" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+    <!-- Branches -->
+    <path d="M314,340 Q295,320 280,318" stroke="#558B2F" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M312,290 Q330,270 345,265" stroke="#558B2F" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M314,240 Q296,225 282,222" stroke="#558B2F" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M312,190 Q330,175 342,170" stroke="#558B2F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M314,150 Q298,135 288,132" stroke="#558B2F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Twine ties -->
+    <g stroke="#BCAAA4" stroke-width="2" fill="none" opacity="0.8">
+      <path d="M305,160 Q302,155 307,152 Q317,150 323,155 Q327,158 323,160"/>
+      <path d="M305,240 Q302,235 307,232 Q317,230 323,235 Q327,238 323,240"/>
+      <path d="M305,320 Q302,315 307,312 Q317,310 323,315 Q327,318 323,320"/>
+    </g>
+
+    <!-- Leaves -->
+    <g transform="translate(275,312)">
+      <path d="M0,0 Q-12,-8 -20,-4 Q-14,0 -20,7 Q-12,3 -5,10 Q-8,2 0,0Z" fill="url(#tLeafGrad1)"/>
+      <path d="M0,0 Q-8,-14 -2,-21 Q0,-15 2,-21 Q8,-14 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q10,-6 16,-1 Q12,3 16,9 Q10,5 4,10 Q6,3 0,0Z" fill="url(#tLeafDark)"/>
+    </g>
+    <g transform="translate(348,260)">
+      <path d="M0,0 Q10,-12 3,-19 Q0,-13 -3,-19 Q-10,-12 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q14,-5 19,1 Q14,4 9,10 Q11,3 0,0Z" fill="url(#tLeafGrad1)"/>
+      <path d="M0,0 Q-14,-3 -19,3 Q-13,5 -7,11 Q-9,3 0,0Z" fill="url(#tLeafDark)"/>
+    </g>
+    <g transform="translate(278,216)">
+      <path d="M0,0 Q-10,-14 -3,-21 Q0,-15 3,-21 Q10,-14 0,0Z" fill="url(#tLeafGrad1)"/>
+      <path d="M0,0 Q-15,-5 -20,1 Q-14,4 -8,10 Q-10,3 0,0Z" fill="url(#tLeafGrad2)"/>
+    </g>
+    <g transform="translate(345,165)">
+      <path d="M0,0 Q-8,-12 -2,-18 Q0,-12 2,-18 Q8,-12 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q12,-5 18,0 Q13,3 8,9 Q10,3 0,0Z" fill="url(#tLeafGrad1)"/>
+    </g>
+    <g transform="translate(285,127)">
+      <path d="M0,0 Q-10,-14 -3,-21 Q0,-15 3,-21 Q10,-14 0,0Z" fill="#66BB6A"/>
+      <path d="M0,0 Q-14,-5 -19,1 Q-13,4 -7,10 Q-9,3 0,0Z" fill="url(#tLeafGrad1)"/>
+    </g>
+    <g transform="translate(314,110)">
+      <path d="M0,0 Q-10,-14 -3,-22 Q0,-16 3,-22 Q10,-14 0,0Z" fill="#66BB6A"/>
+      <path d="M0,0 Q12,-6 18,-1 Q12,3 6,8 Q8,2 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q-12,-6 -18,-1 Q-12,3 -6,8 Q-8,2 0,0Z" fill="url(#tLeafGrad1)"/>
+    </g>
+
+    <!-- RED TOMATOES - cluster on left branch -->
+    <g transform="translate(270,330)">
+      <circle cx="0" cy="0" r="13" fill="url(#tomatoGrad)"/>
+      <circle cx="-3" cy="-4" r="4.5" fill="white" opacity="0.15"/>
+      <path d="M-5,-12 L0,-15 L5,-12 L3,-10 L0,-13 L-3,-10Z" fill="#388E3C"/>
+    </g>
+    <g transform="translate(253,342)">
+      <circle cx="0" cy="0" r="11" fill="url(#tomatoGrad)"/>
+      <circle cx="-3" cy="-3" r="3.5" fill="white" opacity="0.15"/>
+      <path d="M-4,-10 L0,-13 L4,-10 L2,-8 L0,-11 L-2,-8Z" fill="#388E3C"/>
+    </g>
+    <g transform="translate(288,340)">
+      <circle cx="0" cy="0" r="10" fill="url(#tomatoGrad)"/>
+      <circle cx="-2" cy="-3" r="3" fill="white" opacity="0.15"/>
+      <path d="M-3,-9 L0,-12 L3,-9 L1,-7 L0,-10 L-1,-7Z" fill="#388E3C"/>
+    </g>
+
+    <!-- Right branch tomato -->
+    <g transform="translate(350,275)">
+      <circle cx="0" cy="0" r="14" fill="url(#tomatoGrad)"/>
+      <circle cx="-4" cy="-5" r="5" fill="white" opacity="0.15"/>
+      <path d="M-5,-13 L0,-16 L5,-13 L3,-11 L0,-14 L-3,-11Z" fill="#388E3C"/>
+    </g>
+    <g transform="translate(368,285)">
+      <circle cx="0" cy="0" r="11" fill="url(#tomatoGrad)"/>
+      <circle cx="-3" cy="-3" r="3.5" fill="white" opacity="0.15"/>
+      <path d="M-4,-10 L0,-13 L4,-10 L2,-8 L0,-11 L-2,-8Z" fill="#388E3C"/>
+    </g>
+
+    <!-- Orange ripening tomato -->
+    <g transform="translate(285,230)">
+      <circle cx="0" cy="0" r="10" fill="url(#tomatoOrange)"/>
+      <circle cx="-2" cy="-3" r="3" fill="white" opacity="0.12"/>
+      <path d="M-3,-9 L0,-12 L3,-9 L1,-7 L0,-10 L-1,-7Z" fill="#558B2F"/>
+    </g>
+
+    <!-- Green tomato -->
+    <g transform="translate(348,178)">
+      <circle cx="0" cy="0" r="9" fill="url(#tomatoGreen)"/>
+      <circle cx="-2" cy="-2" r="2.5" fill="white" opacity="0.1"/>
+      <path d="M-3,-8 L0,-11 L3,-8 L1,-6 L0,-9 L-1,-6Z" fill="#2E7D32"/>
+    </g>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- PLANT 3 - Medium plant -->
+  <!-- ============================================ -->
+  <g>
+    <!-- Stake -->
+    <rect x="485" y="115" width="16" height="265" fill="url(#stakeWood)" rx="2"/>
+    <polygon points="485,115 493,82 501,115" fill="url(#stakeWoodDark)"/>
+    <line x1="490" y1="122" x2="490" y2="378" stroke="#6B4F0E" stroke-width="0.5" opacity="0.3"/>
+    <line x1="496" y1="120" x2="496" y2="378" stroke="#6B4F0E" stroke-width="0.5" opacity="0.25"/>
+
+    <!-- Main stem -->
+    <path d="M493,378 Q489,340 493,290 Q497,245 491,200 Q495,165 493,130" stroke="#558B2F" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- Branches -->
+    <path d="M493,330 Q510,312 525,308" stroke="#558B2F" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M491,270 Q475,255 462,250" stroke="#558B2F" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M493,215 Q510,200 522,195" stroke="#558B2F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M491,168 Q476,155 466,150" stroke="#558B2F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Twine ties -->
+    <g stroke="#BCAAA4" stroke-width="2" fill="none" opacity="0.8">
+      <path d="M485,175 Q482,170 487,167 Q497,165 501,170 Q505,173 501,175"/>
+      <path d="M485,255 Q482,250 487,247 Q497,245 501,250 Q505,253 501,255"/>
+      <path d="M485,340 Q482,335 487,332 Q497,330 501,335 Q505,338 501,340"/>
+    </g>
+
+    <!-- Leaves -->
+    <g transform="translate(528,303)">
+      <path d="M0,0 Q10,-12 3,-19 Q0,-13 -3,-19 Q-10,-12 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q14,-5 19,1 Q14,4 9,10 Q11,3 0,0Z" fill="url(#tLeafGrad1)"/>
+      <path d="M0,0 Q-12,-5 -17,1 Q-12,4 -6,10 Q-8,3 0,0Z" fill="url(#tLeafDark)"/>
+    </g>
+    <g transform="translate(458,245)">
+      <path d="M0,0 Q-10,-14 -3,-21 Q0,-15 3,-21 Q10,-14 0,0Z" fill="url(#tLeafGrad1)"/>
+      <path d="M0,0 Q-14,-5 -19,1 Q-13,4 -7,10 Q-9,3 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q12,-3 16,3 Q11,5 6,11 Q8,3 0,0Z" fill="url(#tLeafDark)"/>
+    </g>
+    <g transform="translate(525,190)">
+      <path d="M0,0 Q8,-12 2,-18 Q0,-12 -2,-18 Q-8,-12 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q12,-4 17,1 Q12,4 7,9 Q9,3 0,0Z" fill="url(#tLeafGrad1)"/>
+    </g>
+    <g transform="translate(463,145)">
+      <path d="M0,0 Q-10,-14 -3,-21 Q0,-15 3,-21 Q10,-14 0,0Z" fill="#66BB6A"/>
+      <path d="M0,0 Q-14,-5 -19,1 Q-13,4 -7,10 Q-9,3 0,0Z" fill="url(#tLeafGrad1)"/>
+    </g>
+    <g transform="translate(493,125)">
+      <path d="M0,0 Q-10,-14 -3,-22 Q0,-16 3,-22 Q10,-14 0,0Z" fill="#66BB6A"/>
+      <path d="M0,0 Q12,-6 18,-1 Q12,3 6,8 Q8,2 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q-12,-6 -18,-1 Q-12,3 -6,8 Q-8,2 0,0Z" fill="url(#tLeafGrad1)"/>
+    </g>
+
+    <!-- RED TOMATOES -->
+    <!-- Right branch cluster -->
+    <g transform="translate(530,320)">
+      <circle cx="0" cy="0" r="12" fill="url(#tomatoGrad)"/>
+      <circle cx="-3" cy="-4" r="4" fill="white" opacity="0.15"/>
+      <path d="M-4,-11 L0,-14 L4,-11 L2,-9 L0,-12 L-2,-9Z" fill="#388E3C"/>
+    </g>
+    <g transform="translate(545,330)">
+      <circle cx="0" cy="0" r="10" fill="url(#tomatoGrad)"/>
+      <circle cx="-2" cy="-3" r="3" fill="white" opacity="0.15"/>
+      <path d="M-3,-9 L0,-12 L3,-9 L1,-7 L0,-10 L-1,-7Z" fill="#388E3C"/>
+    </g>
+
+    <!-- Left branch tomato -->
+    <g transform="translate(452,260)">
+      <circle cx="0" cy="0" r="13" fill="url(#tomatoGrad)"/>
+      <circle cx="-3" cy="-4" r="4.5" fill="white" opacity="0.15"/>
+      <path d="M-5,-12 L0,-15 L5,-12 L3,-10 L0,-13 L-3,-10Z" fill="#388E3C"/>
+    </g>
+    <g transform="translate(438,270)">
+      <circle cx="0" cy="0" r="10" fill="url(#tomatoGrad)"/>
+      <circle cx="-2" cy="-3" r="3" fill="white" opacity="0.15"/>
+      <path d="M-3,-9 L0,-12 L3,-9 L1,-7 L0,-10 L-1,-7Z" fill="#388E3C"/>
+    </g>
+
+    <!-- Green tomatoes near top -->
+    <g transform="translate(528,202)">
+      <circle cx="0" cy="0" r="8" fill="url(#tomatoGreen)"/>
+      <circle cx="-2" cy="-2" r="2.5" fill="white" opacity="0.1"/>
+      <path d="M-3,-7 L0,-10 L3,-7 L1,-5 L0,-8 L-1,-5Z" fill="#2E7D32"/>
+    </g>
+    <g transform="translate(540,210)">
+      <circle cx="0" cy="0" r="7" fill="url(#tomatoGreen)"/>
+      <circle cx="-1" cy="-2" r="2" fill="white" opacity="0.1"/>
+      <path d="M-2,-6 L0,-9 L2,-6 L1,-5 L0,-7 L-1,-5Z" fill="#2E7D32"/>
+    </g>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- PLANT 4 (rightmost) - Younger plant -->
+  <!-- ============================================ -->
+  <g>
+    <!-- Stake -->
+    <rect x="650" y="130" width="16" height="250" fill="url(#stakeWood)" rx="2"/>
+    <polygon points="650,130 658,98 666,130" fill="url(#stakeWoodDark)"/>
+    <line x1="655" y1="138" x2="655" y2="378" stroke="#6B4F0E" stroke-width="0.5" opacity="0.3"/>
+    <line x1="661" y1="135" x2="661" y2="378" stroke="#6B4F0E" stroke-width="0.5" opacity="0.25"/>
+
+    <!-- Main stem -->
+    <path d="M658,378 Q654,345 658,300 Q662,260 656,220 Q660,180 658,150" stroke="#558B2F" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <!-- Branches -->
+    <path d="M658,340 Q640,325 628,320" stroke="#558B2F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M656,280 Q675,265 688,260" stroke="#558B2F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M658,225 Q642,212 632,208" stroke="#558B2F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M656,180 Q672,168 682,164" stroke="#558B2F" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Twine ties -->
+    <g stroke="#BCAAA4" stroke-width="2" fill="none" opacity="0.8">
+      <path d="M650,195 Q647,190 652,187 Q662,185 666,190 Q670,193 666,195"/>
+      <path d="M650,290 Q647,285 652,282 Q662,280 666,285 Q670,288 666,290"/>
+      <path d="M650,350 Q647,345 652,342 Q662,340 666,345 Q670,348 666,350"/>
+    </g>
+
+    <!-- Leaves -->
+    <g transform="translate(624,314)">
+      <path d="M0,0 Q-10,-12 -3,-18 Q0,-12 3,-18 Q10,-12 0,0Z" fill="url(#tLeafGrad1)"/>
+      <path d="M0,0 Q-14,-4 -18,2 Q-12,5 -6,10 Q-8,3 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q10,-3 14,3 Q10,5 5,10 Q7,3 0,0Z" fill="url(#tLeafDark)"/>
+    </g>
+    <g transform="translate(692,255)">
+      <path d="M0,0 Q8,-12 2,-18 Q0,-12 -2,-18 Q-8,-12 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q14,-4 18,2 Q13,5 7,10 Q9,3 0,0Z" fill="url(#tLeafGrad1)"/>
+      <path d="M0,0 Q-12,-3 -16,3 Q-11,5 -5,10 Q-7,3 0,0Z" fill="url(#tLeafDark)"/>
+    </g>
+    <g transform="translate(628,202)">
+      <path d="M0,0 Q-10,-14 -3,-21 Q0,-15 3,-21 Q10,-14 0,0Z" fill="url(#tLeafGrad1)"/>
+      <path d="M0,0 Q-14,-4 -19,2 Q-13,5 -7,10 Q-9,3 0,0Z" fill="url(#tLeafGrad2)"/>
+    </g>
+    <g transform="translate(685,160)">
+      <path d="M0,0 Q8,-12 2,-18 Q0,-12 -2,-18 Q-8,-12 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q12,-4 17,1 Q12,4 7,9 Q9,3 0,0Z" fill="url(#tLeafGrad1)"/>
+    </g>
+    <g transform="translate(658,143)">
+      <path d="M0,0 Q-8,-12 -2,-19 Q0,-13 2,-19 Q8,-12 0,0Z" fill="#66BB6A"/>
+      <path d="M0,0 Q10,-5 15,0 Q10,3 5,7 Q7,2 0,0Z" fill="url(#tLeafGrad2)"/>
+      <path d="M0,0 Q-10,-5 -15,0 Q-10,3 -5,7 Q-7,2 0,0Z" fill="url(#tLeafGrad1)"/>
+    </g>
+
+    <!-- RED TOMATOES -->
+    <g transform="translate(620,330)">
+      <circle cx="0" cy="0" r="11" fill="url(#tomatoGrad)"/>
+      <circle cx="-3" cy="-3" r="3.5" fill="white" opacity="0.15"/>
+      <path d="M-4,-10 L0,-13 L4,-10 L2,-8 L0,-11 L-2,-8Z" fill="#388E3C"/>
+    </g>
+    <g transform="translate(608,340)">
+      <circle cx="0" cy="0" r="9" fill="url(#tomatoGrad)"/>
+      <circle cx="-2" cy="-2" r="3" fill="white" opacity="0.15"/>
+      <path d="M-3,-8 L0,-11 L3,-8 L1,-6 L0,-9 L-1,-6Z" fill="#388E3C"/>
+    </g>
+
+    <!-- Right branch tomatoes -->
+    <g transform="translate(695,268)">
+      <circle cx="0" cy="0" r="12" fill="url(#tomatoGrad)"/>
+      <circle cx="-3" cy="-4" r="4" fill="white" opacity="0.15"/>
+      <path d="M-4,-11 L0,-14 L4,-11 L2,-9 L0,-12 L-2,-9Z" fill="#388E3C"/>
+    </g>
+
+    <!-- Orange ripening -->
+    <g transform="translate(635,215)">
+      <circle cx="0" cy="0" r="9" fill="url(#tomatoOrange)"/>
+      <circle cx="-2" cy="-2" r="3" fill="white" opacity="0.12"/>
+      <path d="M-3,-8 L0,-11 L3,-8 L1,-6 L0,-9 L-1,-6Z" fill="#558B2F"/>
+    </g>
+
+    <!-- Green tomato -->
+    <g transform="translate(690,170)">
+      <circle cx="0" cy="0" r="7.5" fill="url(#tomatoGreen)"/>
+      <circle cx="-2" cy="-2" r="2" fill="white" opacity="0.1"/>
+      <path d="M-2,-6 L0,-9 L2,-6 L1,-5 L0,-7 L-1,-5Z" fill="#2E7D32"/>
+    </g>
+  </g>
+
+  <!-- Small yellow flowers scattered -->
+  <g>
+    <g transform="translate(140,160)">
+      <circle cx="0" cy="0" r="3" fill="#FDD835"/>
+      <circle cx="0" cy="0" r="1.5" fill="#F9A825"/>
+    </g>
+    <g transform="translate(320,135)">
+      <circle cx="0" cy="0" r="3" fill="#FDD835"/>
+      <circle cx="0" cy="0" r="1.5" fill="#F9A825"/>
+    </g>
+    <g transform="translate(498,140)">
+      <circle cx="0" cy="0" r="2.5" fill="#FDD835"/>
+      <circle cx="0" cy="0" r="1.2" fill="#F9A825"/>
+    </g>
+    <g transform="translate(660,160)">
+      <circle cx="0" cy="0" r="3" fill="#FDD835"/>
+      <circle cx="0" cy="0" r="1.5" fill="#F9A825"/>
+    </g>
+  </g>
+
+  <!-- Sun glow top-left -->
+  <radialGradient id="gardenSun" cx="0.12" cy="0.08" r="0.2">
+    <stop offset="0%" stop-color="#FFF9C4" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="#FFF9C4" stop-opacity="0"/>
+  </radialGradient>
+  <rect x="0" y="0" width="800" height="500" fill="url(#gardenSun)"/>
+
+  <!-- Drip irrigation lines (subtle detail) -->
+  <g stroke="#546E7A" stroke-width="1.5" fill="none" opacity="0.25">
+    <line x1="80" y1="395" x2="730" y2="395"/>
+    <!-- Drip emitters -->
+    <circle cx="136" cy="395" r="2" fill="#546E7A"/>
+    <circle cx="314" cy="395" r="2" fill="#546E7A"/>
+    <circle cx="493" cy="395" r="2" fill="#546E7A"/>
+    <circle cx="658" cy="395" r="2" fill="#546E7A"/>
+  </g>
+</svg>

@@ -53,47 +53,39 @@ export default function OfferModal({ product, unit, price, quantity, onClose }) 
 
     if (!validate()) return;
 
-    const payload = {
-      name,
-      email,
-      phone,
-      message,
-      quantity,
-      unit,
-      product: {
-        name: product.title || product.name,
-        slug: product.slug,
-        price: price,
-        unit: unit,
-        sku: product.sku,
-      },
-    };
+    const formData = new URLSearchParams();
+    formData.append('form-name', 'offer');
+    formData.append('name', name);
+    formData.append('email', email);
+    formData.append('phone', phone);
+    formData.append('message', message);
+    formData.append('quantity', String(quantity));
+    formData.append('unit', unit);
+    formData.append('product-name', product.title || product.name);
+    formData.append('product-slug', product.slug);
+    formData.append('product-price', String(price));
+    formData.append('product-sku', product.sku);
 
     try {
-      const response = await fetch('/api/offer', {
+      const response = await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formData.toString(),
       });
 
-      const result = await response.json();
-
-      if (response.ok && result.success) {
+      if (response.ok) {
         setSubmitted(true);
         if (typeof gtag === 'function') {
           gtag('event', 'ads_conversion_Ismer_s_1', {
-            // opcionálisan adhatsz át értéket is
-            // value: price || 0,
-            // currency: 'HUF'
             name: product.title || product.name,
             slug: product.slug,
             price: price,
             unit: unit,
             sku: product.sku,
           });
-  }
+        }
       } else {
-        setServerError(result.error || 'Ismeretlen hiba történt.');
+        setServerError('Hiba történt az elküldés során. Kérjük próbáld újra.');
       }
     } catch (err) {
       setServerError('Hálózati hiba: ' + err.message);

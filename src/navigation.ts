@@ -28,7 +28,7 @@ export const headerData = {
           text: 'Csiszolás',
           href: getPermalink('/szolgaltatasok/csiszolas')
         },
-               {
+        {
           text: 'Festés',
           href: getPermalink('/szolgaltatasok/festes')
         }
@@ -38,7 +38,12 @@ export const headerData = {
     {
       text: 'Tudástár',
       href: getPermalink('/tudastar'),
-      
+      links: [
+        {
+          text: 'Telített fa',
+          href: getPermalink('/telifa')
+        }
+      ]
     },
     {
       text: 'Kalkulátorok',

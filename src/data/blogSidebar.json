@@ -11,13 +11,21 @@
 
     ]
   },
-    {
+  {
     "category": "Tüzelőanyagok",
     "items": [
       { "title": "Környezetbarát fabrikett", "slug": "/tudastar/kornyezetbarat-brikett" },
       { "title": "Tüzifa mértékegységek", "slug": "/tudastar/tuzifa-mertekegysegek" },
       { "title": "Fapelletről", "slug": "/tudastar/fa-pellet" },
       { "title": "Pellet alomként", "slug": "/tudastar/pellet-alomkent" }
+    ]
+  },
+  {
+    "category": "Telített fa",
+    "items": [
+      { "title": "Mártott fa vs Telített fa", "slug": "/tudastar/martott-vs-telitett-fa-melyik-a-jobb" },
+      { "title": "Keményfa vs Telített fa", "slug": "/tudastar/kemenyfa-vs-telitett-fa-melyik-eri-meg" },
+      { "title": "Tanalith kezelés", "slug": "/tudastar/tanalith-kezeles-teljes-utmutato" }
     ]
   }
 ]

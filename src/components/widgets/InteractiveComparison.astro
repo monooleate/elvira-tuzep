@@ -1,0 +1,414 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={{ container: 'text-center mb-12' }} />
+
+  <!-- Tab Selector -->
+  <div class="flex justify-center mb-12">
+    <div class="inline-flex rounded-2xl bg-gray-100 dark:bg-gray-800 p-2 gap-2 shadow-lg">
+      <button
+        class="comparison-tab px-8 py-4 rounded-xl font-bold text-base transition-all duration-300 active"
+        data-comparison="hardwood"
+      >
+        🌳 Keményfa vs Telített
+      </button>
+      <button
+        class="comparison-tab px-8 py-4 rounded-xl font-bold text-base transition-all duration-300"
+        data-comparison="dipped"
+      >
+        💧 Mártott vs Telített
+      </button>
+    </div>
+  </div>
+
+  <div class="max-w-5xl mx-auto">
+    
+    <!-- HARDWOOD COMPARISON -->
+    <div id="hardwood-comparison" class="comparison-content">
+      
+      <!-- 2x2 Grid - 4 comparison boxes -->
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        
+        <!-- 1. Kezdő Beruházási Költség -->
+        <div class="comparison-box bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300" data-animate="true">
+          <h3 class="text-lg font-bold text-center mb-6 text-gray-900 dark:text-white">
+            💰 Kezdő Beruházási Költség
+          </h3>
+          
+          <!-- Two bars side by side -->
+          <div class="flex gap-4 items-end mb-6">
+            <!-- Keményfa Bar -->
+            <div class="flex-1">
+              <div class="relative h-40 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-amber-500 to-amber-400 transition-all duration-1000 ease-out flex items-end justify-center pb-3"
+                  data-height="100"
+                  style="height: 0%;"
+                >
+                  <span class="text-xl font-bold text-white drop-shadow-lg">100%</span>
+                </div>
+              </div>
+              <p class="text-center mt-2 text-xs font-medium text-gray-600 dark:text-gray-400">Keményfa</p>
+            </div>
+
+            <!-- Telített Bar -->
+            <div class="flex-1">
+              <div class="relative h-40 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-emerald-600 to-emerald-500 transition-all duration-1000 ease-out flex items-end justify-center pb-3 shadow-lg"
+                  data-height="45"
+                  style="height: 0%;"
+                >
+                  <span class="text-xl font-bold text-white drop-shadow-lg">45%</span>
+                </div>
+              </div>
+              <p class="text-center mt-2 text-xs font-bold text-emerald-600 dark:text-emerald-400">Telített Borovi</p>
+            </div>
+          </div>
+
+          <!-- Badge -->
+          <div class="text-center mb-4">
+            <span class="inline-block px-3 py-1.5 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-400 text-xs rounded-full font-bold">
+              🎉 55% OLCSÓBB!
+            </span>
+          </div>
+
+          <!-- Explanation -->
+          <div class="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 explanation-box opacity-0 transform translate-y-2">
+            <p class="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
+              A keményfa lassabban növő alapanyag. A borovi gyorsan növő → 
+              <strong class="text-blue-600 dark:text-blue-400">55%-kal kedvezőbb ár</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Élettartam -->
+        <div class="comparison-box bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300" data-animate="true">
+          <h3 class="text-lg font-bold text-center mb-6 text-gray-900 dark:text-white">
+            ⏳ Élettartam
+          </h3>
+          
+          <div class="flex gap-4 items-end mb-6">
+            <div class="flex-1">
+              <div class="relative h-40 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-amber-500 to-amber-400 transition-all duration-1000 ease-out flex items-end justify-center pb-3"
+                  data-height="100"
+                  style="height: 0%;"
+                >
+                  <span class="text-base font-bold text-white drop-shadow-lg">25-40</span>
+                </div>
+              </div>
+              <p class="text-center mt-2 text-xs font-medium text-gray-600 dark:text-gray-400">Keményfa</p>
+              <p class="text-center text-xs text-gray-500 dark:text-gray-500">év</p>
+            </div>
+
+            <div class="flex-1">
+              <div class="relative h-40 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-emerald-600 to-emerald-500 transition-all duration-1000 ease-out flex items-end justify-center pb-3"
+                  data-height="70"
+                  style="height: 0%;"
+                >
+                  <span class="text-base font-bold text-white drop-shadow-lg">15-25</span>
+                </div>
+              </div>
+              <p class="text-center mt-2 text-xs font-bold text-emerald-600 dark:text-emerald-400">Telített Borovi</p>
+              <p class="text-center text-xs font-medium text-emerald-600 dark:text-emerald-400">év</p>
+            </div>
+          </div>
+
+          <div class="text-center mb-4">
+            <span class="inline-block px-3 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-400 text-xs rounded-full font-medium">
+              UC4 minősítés
+            </span>
+          </div>
+
+          <div class="p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 explanation-box opacity-0 transform translate-y-2">
+            <p class="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
+              A keményfa hosszabb (25-40 év), de <strong class="text-purple-600 dark:text-purple-400">15-25 év</strong> 
+              a legtöbb projekthez bőven elég.
+            </p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <!-- Summary Box -->
+      <div class="bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-800 summary-box opacity-0 transform translate-y-4">
+        <div class="text-center">
+          <h4 class="text-xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">
+            🏆 A VÉGEREDMÉNY
+          </h4>
+          <p class="text-base text-gray-800 dark:text-gray-200 leading-relaxed">
+            A telített borovifa <strong>~50-60% megtakarítást</strong> jelent 20 év alatt! 
+            Ez magában foglalja a kezdő beruházást, szállítást, szerelést és minimális karbantartást. 
+            <strong class="text-emerald-600 dark:text-emerald-400">Hasonló tartósság, fele áron!</strong>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- DIPPED COMPARISON -->
+    <div id="dipped-comparison" class="comparison-content hidden">
+      
+      <!-- 2x2 Grid - 4 comparison boxes -->
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        
+        <!-- 1. Kezdő Beruházási Költség -->
+        <div class="comparison-box bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300" data-animate="true">
+          <h3 class="text-lg font-bold text-center mb-6 text-gray-900 dark:text-white">
+            💰 Kezdő Beruházási Költség
+          </h3>
+          
+          <div class="flex gap-4 items-end mb-6">
+            <!-- Mártott Bar -->
+            <div class="flex-1">
+              <div class="relative h-40 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-rose-500 to-rose-400 transition-all duration-1000 ease-out flex items-end justify-center pb-3"
+                  data-height="35"
+                  style="height: 0%;"
+                >
+                  <span class="text-xl font-bold text-white drop-shadow-lg">35%</span>
+                </div>
+              </div>
+              <p class="text-center mt-2 text-xs font-medium text-gray-600 dark:text-gray-400">Mártott Fa</p>
+            </div>
+
+            <!-- Telített Bar -->
+            <div class="flex-1">
+              <div class="relative h-40 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-emerald-600 to-emerald-500 transition-all duration-1000 ease-out flex items-end justify-center pb-3 shadow-lg"
+                  data-height="48"
+                  style="height: 0%;"
+                >
+                  <span class="text-xl font-bold text-white drop-shadow-lg">48%</span>
+                </div>
+              </div>
+              <p class="text-center mt-2 text-xs font-bold text-emerald-600 dark:text-emerald-400">Telített Borovi</p>
+            </div>
+          </div>
+
+          <div class="text-center mb-4">
+            <span class="inline-block px-3 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-400 text-xs rounded-full font-medium">
+              Kis többlet, nagy védelem
+            </span>
+          </div>
+
+          <div class="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 explanation-box opacity-0 transform translate-y-2">
+            <p class="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
+              Kis kezdeti többlet befektetés, de <strong class="text-blue-600 dark:text-blue-400">5x hosszabb élettartam</strong> 
+              és minimális karbantartás miatt hosszú távon sokkal gazdaságosabb.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Élettartam -->
+        <div class="comparison-box bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300" data-animate="true">
+          <h3 class="text-lg font-bold text-center mb-6 text-gray-900 dark:text-white">
+            ⏳ Élettartam
+          </h3>
+          
+          <div class="flex gap-4 items-end mb-6">
+            <div class="flex-1">
+              <div class="relative h-40 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-rose-500 to-rose-400 transition-all duration-1000 ease-out flex items-end justify-center pb-3"
+                  data-height="20"
+                  style="height: 0%;"
+                >
+                  <span class="text-base font-bold text-white drop-shadow-lg">2-5</span>
+                </div>
+              </div>
+              <p class="text-center mt-2 text-xs font-medium text-gray-600 dark:text-gray-400">Mártott Fa</p>
+              <p class="text-center text-xs text-gray-500 dark:text-gray-500">év</p>
+            </div>
+
+            <div class="flex-1">
+              <div class="relative h-40 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden">
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-emerald-600 to-emerald-500 transition-all duration-1000 ease-out flex items-end justify-center pb-3 shadow-lg"
+                  data-height="100"
+                  style="height: 0%;"
+                >
+                  <span class="text-base font-bold text-white drop-shadow-lg">15-25</span>
+                </div>
+              </div>
+              <p class="text-center mt-2 text-xs font-bold text-emerald-600 dark:text-emerald-400">Telített Borovi</p>
+              <p class="text-center text-xs font-medium text-emerald-600 dark:text-emerald-400">év</p>
+            </div>
+          </div>
+
+          <div class="text-center mb-4">
+            <span class="inline-block px-3 py-1.5 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-400 text-xs rounded-full font-bold">
+              5x HOSSZABB ÉLETTARTAM!
+            </span>
+          </div>
+
+          <div class="p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800 explanation-box opacity-0 transform translate-y-2">
+            <p class="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
+              A mártott fa csak <strong class="text-rose-600 dark:text-rose-400">felületi védelmet</strong> kap. 
+              A telített fa <strong class="text-emerald-600 dark:text-emerald-400">mély, tartós védelmet</strong> 
+              nyújt - akár 5x hosszabb élettartammal!
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Summary Box -->
+      <div class="bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-800 summary-box opacity-0 transform translate-y-4">
+        <div class="text-center">
+          <h4 class="text-xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">
+            🏆 A VÉGEREDMÉNY
+          </h4>
+          <p class="text-base text-gray-800 dark:text-gray-200 leading-relaxed">
+            Bár a mártott fa olcsóbb kezdetben, a <strong>telített borovifa 5× hosszabb élettartamot</strong> 
+            és <strong>85%-kal kevesebb karbantartást</strong> biztosít. 
+            20 év alatt <strong class="text-emerald-600 dark:text-emerald-400">~3.5× olcsóbb</strong> 
+            és sokkal kevesebb munka!
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</WidgetWrapper>
+
+<script is:inline>
+  function initInteractiveComparison() {
+    const root = document.getElementById('interactive-comparison');
+    if (!root) return;
+
+    // Ha már egyszer inicializáltuk, ne duplázzuk a listenereket
+    if (root.dataset.inited === "1") return;
+    root.dataset.inited = "1";
+
+    const tabs = root.querySelectorAll('.comparison-tab');
+    const contents = root.querySelectorAll('.comparison-content');
+
+    function setActiveTab(tab) {
+      const target = tab.getAttribute('data-comparison');
+
+      tabs.forEach(t => {
+        t.classList.remove('active', 'bg-white', 'dark:bg-gray-700', 'shadow-lg', 'text-primary-600', 'dark:text-primary-400', 'scale-105');
+        t.classList.add('text-gray-600', 'dark:text-gray-400', 'hover:bg-gray-200', 'dark:hover:bg-gray-700');
+      });
+
+      tab.classList.add('active', 'bg-white', 'dark:bg-gray-700', 'shadow-lg', 'text-primary-600', 'dark:text-primary-400', 'scale-105');
+      tab.classList.remove('text-gray-600', 'dark:text-gray-400');
+
+      contents.forEach(content => {
+        if (content.id === `${target}-comparison`) {
+          content.classList.remove('hidden');
+          animateBars(content);
+        } else {
+          content.classList.add('hidden');
+        }
+      });
+    }
+
+    // Event delegation: elég egy listener a root-ra (stabilabb navigációnál)
+    root.addEventListener('click', (e) => {
+      const btn = e.target.closest('.comparison-tab');
+      if (!btn) return;
+      setActiveTab(btn);
+    });
+
+    // --- Animációk (a te kódod, minimálisan igazítva) ---
+    function animateBars(container) {
+      const boxes = container.querySelectorAll('.comparison-box');
+
+      boxes.forEach((box, boxIndex) => {
+        setTimeout(() => {
+          const bars = box.querySelectorAll('[data-height]');
+          bars.forEach((bar, barIndex) => {
+            const targetHeight = bar.getAttribute('data-height');
+            setTimeout(() => {
+              bar.style.height = `${targetHeight}%`;
+            }, barIndex * 200);
+          });
+
+          const explanationBox = box.querySelector('.explanation-box');
+          if (explanationBox) {
+            setTimeout(() => {
+              explanationBox.classList.remove('opacity-0', 'translate-y-2');
+              explanationBox.classList.add('opacity-100', 'translate-y-0');
+            }, bars.length * 200 + 400);
+          }
+        }, boxIndex * 150);
+      });
+
+      const summaryBox = container.querySelector('.summary-box');
+      if (summaryBox) {
+        setTimeout(() => {
+          summaryBox.classList.remove('opacity-0', 'translate-y-4');
+          summaryBox.classList.add('opacity-100', 'translate-y-0');
+        }, boxes.length * 150 + 1000);
+      }
+    }
+
+    // Default: első tab aktív
+    if (tabs[0]) setActiveTab(tabs[0]);
+
+    // IntersectionObserver csak ezen root-on belül
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const visible = root.querySelector('.comparison-content:not(.hidden)');
+          if (visible) animateBars(visible);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    observer.observe(root);
+  }
+
+  // Első betöltés
+  document.addEventListener('DOMContentLoaded', initInteractiveComparison);
+
+  // Astro kliens oldali navigáció után is
+  document.addEventListener('astro:page-load', initInteractiveComparison);
+</script>
+<style>
+  .explanation-box,
+  .summary-box {
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .comparison-tab {
+    transition: all 0.3s ease-out;
+  }
+
+  .comparison-tab.active {
+    transform: scale(1.05);
+  }
+
+  .comparison-box {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  }
+
+  .comparison-box:hover {
+    transform: translateY(-2px);
+  }
+</style>
