@@ -1,0 +1,620 @@
+---
+title: "Mártott vs Telített Fa: Melyik a Jobb Választás?"
+excerpt: "Részletes összehasonlítás a mártott és telített fa között. Élettartam, költségek, karbantartás, alkalmazási területek - minden, amit tudnod kell a helyes döntéshez."
+image: "/blog/martottfa-telitettfa.svg"
+publishDate: 2026-01-21
+updateDate: 2026-01-21
+author: "Mészáros János"
+category: "Telifa"
+tags:
+  - telített fa
+  - kertifa
+  - mártott fa
+  - faanyag összehasonlítás
+  - kültéri fa
+  - tartósított fa
+  - kerítésoszlop
+  - faültetés
+  - tanalith
+metadata:
+  canonical: "https://elviratuzep.hu/blog/martott-vs-telitett-fa-melyik-a-jobb"
+  title: "Mártott vs Telített Fa Összehasonlítás | Melyik a Jobb?"
+  description: "Mártott vagy telített fa? Részletes összehasonlítás: élettartam (2-5 vs 15-25 év), költségek, karbantartás. Tudj meg mindent a helyes döntéshez!"
+  openGraph:
+    type: "article"
+---
+
+import { Image } from 'astro:assets';
+
+<div class="not-prose my-8 p-6 bg-amber-50 dark:bg-amber-900/20 rounded-2xl border border-amber-200 dark:border-amber-800">
+  <p class="text-sm text-amber-800 dark:text-amber-200">
+    ⚠️ <strong>Megjegyzés:</strong> A cikkben szereplő költségbecslések és arányok tájékoztató jellegűek. 
+    A tényleges árak régiónként, időszakonként és beszállítónként eltérhetnek. Kérjen aktuális árajánlatot!
+  </p>
+</div>
+
+export const comparisonData = {
+  lifespan: { dipped: 20, treated: 100 },
+  initialCost: { dipped: 35, treated: 48 },
+  maintenance: { dipped: 100, treated: 15 },
+  totalCost20yr: { dipped: 100, treated: 45 },
+};
+
+## Bevezetés: A Nagy Kérdés
+
+Ha kültéri faanyagot keresel - legyen szó **kerítésoszlopról**, **faültetés tartó cölöpről**, **játszótér elemről** vagy **kerti építményről** - biztosan találkoztál már ezzel a dilemmával:
+
+> **Mártott vagy telített fát válasszak?**
+
+A két technológia **drámaian különbözik** egymástól, és a rossz választás **több százezer forintba** kerülhet hosszú távon. Ebben a cikkben mindent megtudsz, amire szükséged van a helyes döntéshez.
+
+<div class="not-prose my-8 p-6 bg-gradient-to-r from-amber-50 to-emerald-50 dark:from-amber-900/20 dark:to-emerald-900/20 rounded-2xl border border-amber-200 dark:border-amber-800">
+  <p class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">⏱️ Olvasási idő: 4 perc</p>
+  <p class="text-gray-600 dark:text-gray-400">Amit megtanulsz: kezelési technológiák, élettartam különbségek, valós költségek, és hogy melyiket válaszd a te projektedhez.</p>
+</div>
+
+---
+
+## Mi a Különbség? Technológiai Alapok
+
+### 🟤 Mártott Fa (Dipping)
+
+A mártott fa kezelésnél a faanyagot egyszerűen **belemártják** egy védőszeres tartályba, majd kiveszik és szárítják.
+
+<div class="not-prose my-6 flex flex-col md:flex-row gap-6 items-center">
+  <div class="flex-1">
+    <div class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg border-l-4 border-amber-500">
+      <h4 class="font-bold text-amber-700 dark:text-amber-400 mb-3">Mártott Fa Jellemzői</h4>
+      <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+        <li>✓ Olcsó kezdő ár</li>
+        <li>✓ Gyors gyártás</li>
+        <li>✗ Csak felületi védelem (1-3mm)</li>
+        <li>✗ Védőszer kimosódik</li>
+        <li>✗ Évenkénti újrakezelés szükséges</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="flex-shrink-0">
+    <svg viewBox="0 0 200 200" class="w-48 h-48">
+      {/* Fa keresztmetszet - mártott */}
+      <circle cx="100" cy="100" r="80" fill="#D4A574" stroke="#8B6914" strokeWidth="3"/>
+      {/* Évgyűrűk */}
+      <circle cx="100" cy="100" r="60" fill="none" stroke="#C4956A" strokeWidth="1"/>
+      <circle cx="100" cy="100" r="40" fill="none" stroke="#C4956A" strokeWidth="1"/>
+      <circle cx="100" cy="100" r="20" fill="none" stroke="#C4956A" strokeWidth="1"/>
+      {/* Felületi védelem - vékony */}
+      <circle cx="100" cy="100" r="80" fill="none" stroke="#F59E0B" strokeWidth="6" strokeDasharray="8 4"/>
+      {/* Label */}
+      <text x="100" y="190" textAnchor="middle" class="text-xs font-semibold fill-amber-600">Mártott: 1-3mm védelem</text>
+    </svg>
+  </div>
+</div>
+
+**Hogyan működik?**
+1. Fa bemerítése védőszerbe (néhány perc)
+2. Csepegtetés, szárítás
+3. Kész termék
+
+**Eredmény:** A védőszer csak a **fa felszínén** marad, **nem hatol be** a rostokba.
+
+---
+
+### 🟢 Telített Fa (Vákuum-Nyomásos Kezelés)
+
+A telített fa gyártása során a faanyagot speciális **autoklávba** (nyomástartály) helyezik, ahol **vákuum** és **nagy nyomás** segítségével préselik be a védőszert a fa mélyére.
+
+<div class="not-prose my-6 flex flex-col md:flex-row gap-6 items-center">
+  <div class="flex-1">
+    <div class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg border-l-4 border-emerald-500">
+      <h4 class="font-bold text-emerald-700 dark:text-emerald-400 mb-3">Telített Fa Jellemzői</h4>
+      <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+        <li>✓ Mély védelem (teljes keresztmetszet)</li>
+        <li>✓ 15-25 év élettartam</li>
+        <li>✓ Minimális karbantartás</li>
+        <li>✓ UC4 minősítés (talajkontaktus)</li>
+        <li>✗ Magasabb kezdő ár</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="flex-shrink-0">
+    <svg viewBox="0 0 200 200" class="w-48 h-48">
+      {/* Fa keresztmetszet - telített */}
+      <circle cx="100" cy="100" r="80" fill="#059669" stroke="#047857" strokeWidth="3"/>
+      {/* Évgyűrűk - zöldben */}
+      <circle cx="100" cy="100" r="60" fill="none" stroke="#10B981" strokeWidth="2"/>
+      <circle cx="100" cy="100" r="40" fill="none" stroke="#10B981" strokeWidth="2"/>
+      <circle cx="100" cy="100" r="20" fill="none" stroke="#34D399" strokeWidth="2"/>
+      {/* Belsőfa mag */}
+      <circle cx="100" cy="100" r="15" fill="#D4A574"/>
+      {/* Label */}
+      <text x="100" y="190" textAnchor="middle" class="text-xs font-semibold fill-emerald-600">Telített: teljes védelem</text>
+    </svg>
+  </div>
+</div>
+
+**Hogyan működik?**
+1. Fa behelyezése autoklávba
+2. **Vákuum fázis:** levegő eltávolítása a sejtekből
+3. **Nyomásos telítés:** Tanalith védőszer bepréselése (8-12 bar)
+4. Rögzítés és kontrollált szárítás
+
+**Eredmény:** A védőszer a **fa teljes keresztmetszetébe** behatol, tartós védelmet nyújtva.
+
+---
+
+## Élettartam Összehasonlítás
+
+Ez a **legfontosabb különbség** a két technológia között:
+
+<div class="not-prose my-8">
+  <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl">
+    <h3 class="text-xl font-bold text-center mb-8 text-gray-800 dark:text-white">⏳ Élettartam Összehasonlítás</h3>
+    
+    <div class="flex gap-8 items-end justify-center mb-6">
+      {/* Mártott bar */}
+      <div class="flex flex-col items-center">
+        <div class="w-20 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden" style={{height: '200px'}}>
+          <div 
+            class="w-full bg-gradient-to-t from-amber-500 to-amber-400 flex items-end justify-center pb-2 transition-all duration-1000"
+            style={{height: '20%', marginTop: '80%'}}
+          >
+            <span class="text-white font-bold text-sm">2-5</span>
+          </div>
+        </div>
+        <p class="mt-3 text-sm font-medium text-gray-600 dark:text-gray-400">Mártott</p>
+        <p class="text-xs text-gray-500">év</p>
+      </div>
+      
+      {/* Telített bar */}
+      <div class="flex flex-col items-center">
+        <div class="w-20 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden" style={{height: '200px'}}>
+          <div 
+            class="w-full bg-gradient-to-t from-emerald-600 to-emerald-500 flex items-end justify-center pb-2 transition-all duration-1000"
+            style={{height: '100%'}}
+          >
+            <span class="text-white font-bold text-sm">15-25</span>
+          </div>
+        </div>
+        <p class="mt-3 text-sm font-medium text-emerald-600 dark:text-emerald-400 font-bold">Telített</p>
+        <p class="text-xs text-emerald-600 dark:text-emerald-400">év</p>
+      </div>
+    </div>
+    
+    <div class="text-center">
+      <span class="inline-block px-4 py-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-400 rounded-full font-bold">
+        🏆 5x HOSSZABB ÉLETTARTAM!
+      </span>
+    </div>
+  </div>
+</div>
+
+### Miért Ekkora a Különbség?
+
+| Tényező | Mártott Fa | Telített Fa |
+|---------|------------|-------------|
+| **Védelem mélysége** | 1-3 mm (felszín) | Teljes keresztmetszet |
+| **Védőszer kimosódás** | 1-2 év alatt jelentős | Minimális (kötődik a rostokhoz) |
+| **Repedéseknél** | Védtelen belső rész | Védett belső rész |
+| **Talajkontaktus** | Gyorsan korhad | 15-25 év |
+
+<div class="not-prose my-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl">
+  <p class="text-red-800 dark:text-red-200 font-medium">
+    ⚠️ <strong>Fontos:</strong> Ha a mártott fa megrepedezik (ami elkerülhetetlen kültéren), a védtelen belső rész szabaddá válik a gombák és rovarok számára. A telített fánál ez nem probléma, mert a védelem végig tart.
+  </p>
+</div>
+
+---
+
+## Költség Összehasonlítás: A Teljes Kép
+
+Sokan az **alacsonyabb kezdő ár** miatt választják a mártott fát. De nézzük meg a **teljes költséget** 20 év alatt:
+
+<div class="not-prose my-8">
+  <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl">
+    <h3 class="text-xl font-bold text-center mb-8 text-gray-800 dark:text-white">💰 Teljes Költség Összehasonlítás (50m kerítés, 20 év)</h3>
+    
+    <div class="grid md:grid-cols-2 gap-8 mb-8">
+      {/* Mártott költségek */}
+      <div class="bg-amber-50 dark:bg-amber-900/20 rounded-xl p-6 border border-amber-200 dark:border-amber-800">
+        <h4 class="font-bold text-amber-700 dark:text-amber-400 mb-4 text-lg">🟤 Mártott Fa</h4>
+        <div class="space-y-3 text-sm">
+          <div class="flex justify-between">
+            <span class="text-gray-600 dark:text-gray-400">Kezdő beruházás:</span>
+            <span class="font-semibold">1.0× (alap)</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-600 dark:text-gray-400">Évenkénti újrakezelés (19×):</span>
+            <span class="font-semibold">+1.4×</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-600 dark:text-gray-400">Teljes csere (4× a 20 év alatt):</span>
+            <span class="font-semibold">+4.0×</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-600 dark:text-gray-400">Munkaerő (cserék):</span>
+            <span class="font-semibold">+1.1×</span>
+          </div>
+          <hr class="border-amber-300 dark:border-amber-700"/>
+          <div class="flex justify-between text-lg">
+            <span class="font-bold text-amber-800 dark:text-amber-300">ÖSSZESEN:</span>
+            <span class="font-bold text-amber-800 dark:text-amber-300">~7.5× alap</span>
+          </div>
+        </div>
+      </div>
+      
+      {/* Telített költségek */}
+      <div class="bg-emerald-50 dark:bg-emerald-900/20 rounded-xl p-6 border border-emerald-200 dark:border-emerald-800">
+        <h4 class="font-bold text-emerald-700 dark:text-emerald-400 mb-4 text-lg">🟢 Telített Fa</h4>
+        <div class="space-y-3 text-sm">
+          <div class="flex justify-between">
+            <span class="text-gray-600 dark:text-gray-400">Kezdő beruházás:</span>
+            <span class="font-semibold">1.4× (alap)</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-600 dark:text-gray-400">Esztétikai festés (opcionális, 4×):</span>
+            <span class="font-semibold">+0.6×</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-600 dark:text-gray-400">Csere:</span>
+            <span class="font-semibold text-emerald-600">0</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-600 dark:text-gray-400">Munkaerő (cserék):</span>
+            <span class="font-semibold text-emerald-600">0</span>
+          </div>
+          <hr class="border-emerald-300 dark:border-emerald-700"/>
+          <div class="flex justify-between text-lg">
+            <span class="font-bold text-emerald-800 dark:text-emerald-300">ÖSSZESEN:</span>
+            <span class="font-bold text-emerald-800 dark:text-emerald-300">~2× alap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {/* Vizuális összehasonlítás */}
+    <div class="flex gap-6 items-end justify-center mb-6">
+      <div class="flex flex-col items-center">
+        <div class="w-24 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden" style={{height: '180px'}}>
+          <div 
+            class="w-full bg-gradient-to-t from-amber-500 to-amber-400 flex items-center justify-center"
+            style={{height: '100%'}}
+          >
+            <span class="text-white font-bold text-lg transform -rotate-90">7.5×</span>
+          </div>
+        </div>
+        <p class="mt-3 text-sm font-medium text-gray-600 dark:text-gray-400">Mártott</p>
+      </div>
+      
+      <div class="flex flex-col items-center">
+        <div class="w-24 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden" style={{height: '180px'}}>
+          <div 
+            class="w-full bg-gradient-to-t from-emerald-600 to-emerald-500 flex items-center justify-center"
+            style={{height: '27%', marginTop: '73%'}}
+          >
+            <span class="text-white font-bold text-sm">2×</span>
+          </div>
+        </div>
+        <p class="mt-3 text-sm font-bold text-emerald-600 dark:text-emerald-400">Telített</p>
+      </div>
+    </div>
+    
+    <div class="text-center">
+      <span class="inline-block px-6 py-3 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-400 rounded-full font-bold text-lg">
+        💰 ~3.5× OLCSÓBB 20 év alatt!
+      </span>
+    </div>
+  </div>
+</div>
+
+### A Rejtett Költségek
+
+A mártott fa "olcsóságának" valódi ára:
+
+1. **Évenkénti újrakezelés** - idő + anyag + munkaerő
+2. **Teljes csere 4-5 évente** - új fa + szerelés + régi elszállítása
+3. **Megbízhatatlanság** - váratlan javítások, sürgősségi cserék
+4. **Esztétikai romlás** - folyamatos "karbantartott" kinézet helyett "elhasználódott"
+
+<div class="not-prose my-6 p-4 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 rounded-xl">
+  <p class="text-emerald-800 dark:text-emerald-200 font-medium">
+    ✅ <strong>Számolj magad:</strong> Ha a mártott fa ~30%-kal olcsóbb, de 5 évente cserélni kell, akkor 20 év alatt 4× fizeted ki. A telített fa 0× cserével = masszív megtakarítás!
+  </p>
+</div>
+
+---
+
+## Karbantartási Igények
+
+<div class="not-prose my-8">
+  <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl">
+    <h3 class="text-xl font-bold text-center mb-8 text-gray-800 dark:text-white">🔧 Karbantartási Összehasonlítás</h3>
+    
+    <div class="flex gap-8 items-end justify-center mb-6">
+      {/* Mártott bar */}
+      <div class="flex flex-col items-center">
+        <div class="w-20 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden" style={{height: '180px'}}>
+          <div 
+            class="w-full bg-gradient-to-t from-amber-500 to-amber-400 flex items-center justify-center"
+            style={{height: '100%'}}
+          >
+            <span class="text-white font-bold text-xs text-center px-1">Évente újra</span>
+          </div>
+        </div>
+        <p class="mt-3 text-sm font-medium text-gray-600 dark:text-gray-400">Mártott</p>
+      </div>
+      
+      {/* Telített bar */}
+      <div class="flex flex-col items-center">
+        <div class="w-20 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden" style={{height: '180px'}}>
+          <div 
+            class="w-full bg-gradient-to-t from-emerald-600 to-emerald-500 flex items-center justify-center"
+            style={{height: '15%', marginTop: '85%'}}
+          >
+            <span class="text-white font-bold text-xs">Min.</span>
+          </div>
+        </div>
+        <p class="mt-3 text-sm font-bold text-emerald-600 dark:text-emerald-400">Telített</p>
+      </div>
+    </div>
+    
+    <div class="text-center">
+      <span class="inline-block px-4 py-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-400 rounded-full font-bold">
+        ✨ 85% KEVESEBB KARBANTARTÁS!
+      </span>
+    </div>
+  </div>
+</div>
+
+### Mártott Fa Karbantartása
+
+| Feladat | Gyakoriság | Idő | Költség/alkalom |
+|---------|------------|-----|-----------------|
+| Felületi kezelés újra | **Évente** | 4-6 óra | 15-25.000 Ft |
+| Állapotellenőrzés | Negyedévente | 1 óra | - |
+| Javítások, pótlások | Folyamatosan | Változó | Változó |
+| **Teljes csere** | **4-5 évente** | 1-2 nap | 70-100.000 Ft |
+
+### Telített Fa Karbantartása
+
+| Feladat | Gyakoriság | Idő | Költség/alkalom |
+|---------|------------|-----|-----------------|
+| Esztétikai festés (opcionális) | 5-7 évente | 2-3 óra | 10-15.000 Ft |
+| Vágott élek kezelése | Beépítéskor egyszer | 30 perc | 2-3.000 Ft |
+| Állapotellenőrzés | Évente | 30 perc | - |
+
+---
+
+## Alkalmazási Területek: Melyiket Mikor?
+
+### 🟤 Mártott Fa - Mikor Megfelelő?
+
+<div class="not-prose my-6 p-6 bg-amber-50 dark:bg-amber-900/20 rounded-xl border border-amber-200 dark:border-amber-800">
+  <h4 class="font-bold text-amber-800 dark:text-amber-300 mb-4">Mártott fa CSAK akkor ajánlott, ha:</h4>
+  <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+    <li>✓ Ideiglenes (1-3 éves) projekt</li>
+    <li>✓ Fedett, esőtől védett helyszín</li>
+    <li>✓ Nincs talajkontaktus</li>
+    <li>✓ Rendszeres karbantartás biztosított</li>
+    <li>✓ Alacsony költségvetés, rövid táv</li>
+  </ul>
+</div>
+
+**Példák:**
+- Ideiglenes kerítés építkezéshez
+- Fedett tároló polcok
+- Beltéri dekoráció (nem nedves)
+
+### 🟢 Telített Fa - Mikor Kötelező?
+
+<div class="not-prose my-6 p-6 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl border border-emerald-200 dark:border-emerald-800">
+  <h4 class="font-bold text-emerald-800 dark:text-emerald-300 mb-4">Telített fa KÖTELEZŐ, ha:</h4>
+  <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+    <li>✓ Talajkontaktus van (kerítésoszlop, cölöp)</li>
+    <li>✓ Állandó nedvességnek kitett</li>
+    <li>✓ Hosszú élettartam szükséges (5+ év)</li>
+    <li>✓ Gyermekek használják (játszótér)</li>
+    <li>✓ Minimális karbantartás a cél</li>
+    <li>✓ Professzionális projekt (B2B)</li>
+  </ul>
+</div>
+
+**Példák:**
+- **Faültetés tartó cölöpök** - földbe ásva
+- **Kerítésoszlopok** - talajkontaktusban
+- **Játszóterek** - gyermekbiztonság (EN 71-3)
+- **Kerti építmények** - pergola, lugas
+- **Közterületi projektek** - önkormányzati
+
+---
+
+## Gyermekbiztonság: Fontos Különbség!
+
+Ha **játszóteret**, **homokozót** vagy bármilyen **gyermekekkel érintkező** szerkezetet építesz:
+
+<div class="not-prose my-8 grid md:grid-cols-2 gap-6">
+  <div class="bg-red-50 dark:bg-red-900/20 rounded-xl p-6 border border-red-200 dark:border-red-800">
+    <h4 class="font-bold text-red-800 dark:text-red-300 mb-4 flex items-center gap-2">
+      <span class="text-2xl">⚠️</span> Mártott Fa
+    </h4>
+    <ul class="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
+      <li>• Védőszer kimosódik → gyerek érintkezhet vele</li>
+      <li>• Nincs EN 71-3 megfelelőség</li>
+      <li>• Durva felület → szálkaveszély</li>
+      <li>• Gyakori csere → instabil szerkezet</li>
+    </ul>
+    <p class="mt-4 font-bold text-red-600 dark:text-red-400">❌ NEM AJÁNLOTT gyermekeknek!</p>
+  </div>
+  
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 rounded-xl p-6 border border-emerald-200 dark:border-emerald-800">
+    <h4 class="font-bold text-emerald-800 dark:text-emerald-300 mb-4 flex items-center gap-2">
+      <span class="text-2xl">✅</span> Tanalith Telített Fa
+    </h4>
+    <ul class="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
+      <li>• Nehézfém-mentes (nincs króm, arzén)</li>
+      <li>• <strong>EN 71-3 megfelelőség</strong></li>
+      <li>• Simább felület → kevesebb szálka</li>
+      <li>• Stabil, tartós szerkezet</li>
+    </ul>
+    <p class="mt-4 font-bold text-emerald-600 dark:text-emerald-400">✅ BIZTONSÁGOS gyermekeknek!</p>
+  </div>
+</div>
+
+---
+
+## Összefoglaló Táblázat
+
+<div class="not-prose my-8 overflow-x-auto">
+  <table class="w-full text-sm">
+    <thead>
+      <tr class="bg-gray-100 dark:bg-slate-800">
+        <th class="p-4 text-left font-bold">Szempont</th>
+        <th class="p-4 text-center font-bold text-amber-600">🟤 Mártott</th>
+        <th class="p-4 text-center font-bold text-emerald-600">🟢 Telített</th>
+        <th class="p-4 text-center font-bold">Nyertes</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200 dark:divide-slate-700">
+      <tr>
+        <td class="p-4">Kezdő ár</td>
+        <td class="p-4 text-center">1× (alap)</td>
+        <td class="p-4 text-center">~1.4× (alap)</td>
+        <td class="p-4 text-center text-amber-600 font-bold">🟤</td>
+      </tr>
+      <tr class="bg-gray-50 dark:bg-slate-800/50">
+        <td class="p-4">Élettartam</td>
+        <td class="p-4 text-center">2-5 év</td>
+        <td class="p-4 text-center font-bold text-emerald-600">15-25 év</td>
+        <td class="p-4 text-center text-emerald-600 font-bold">🟢</td>
+      </tr>
+      <tr>
+        <td class="p-4">Karbantartás</td>
+        <td class="p-4 text-center">Évente</td>
+        <td class="p-4 text-center font-bold text-emerald-600">Minimális</td>
+        <td class="p-4 text-center text-emerald-600 font-bold">🟢</td>
+      </tr>
+      <tr class="bg-gray-50 dark:bg-slate-800/50">
+        <td class="p-4">Teljes költség (20 év)</td>
+        <td class="p-4 text-center">~7.5× alap</td>
+        <td class="p-4 text-center font-bold text-emerald-600">~2× alap</td>
+        <td class="p-4 text-center text-emerald-600 font-bold">🟢</td>
+      </tr>
+      <tr>
+        <td class="p-4">Talajkontaktus</td>
+        <td class="p-4 text-center text-red-500">Nem alkalmas</td>
+        <td class="p-4 text-center font-bold text-emerald-600">UC4 minősítés</td>
+        <td class="p-4 text-center text-emerald-600 font-bold">🟢</td>
+      </tr>
+      <tr class="bg-gray-50 dark:bg-slate-800/50">
+        <td class="p-4">Gyermekbiztonság</td>
+        <td class="p-4 text-center text-red-500">Nem ajánlott</td>
+        <td class="p-4 text-center font-bold text-emerald-600">EN 71-3 ✓</td>
+        <td class="p-4 text-center text-emerald-600 font-bold">🟢</td>
+      </tr>
+      <tr>
+        <td class="p-4 font-bold">ÖSSZESÍTÉS</td>
+        <td class="p-4 text-center font-bold text-amber-600">1 pont</td>
+        <td class="p-4 text-center font-bold text-emerald-600">5 pont</td>
+        <td class="p-4 text-center text-emerald-600 font-bold text-xl">🏆</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
+## Döntési Segédlet
+
+<div class="not-prose my-8">
+  <div class="bg-gradient-to-br from-emerald-50 to-blue-50 dark:from-emerald-900/20 dark:to-blue-900/20 rounded-2xl p-8 border border-emerald-200 dark:border-emerald-800">
+    <h3 class="text-2xl font-bold text-center mb-6 text-gray-800 dark:text-white">🎯 Melyiket Válaszd?</h3>
+    
+    <div class="space-y-4">
+      <div class="flex items-center gap-4 p-4 bg-white dark:bg-slate-800 rounded-xl">
+        <span class="text-3xl">🌳</span>
+        <div>
+          <p class="font-bold text-gray-800 dark:text-white">Faültetés cölöp?</p>
+          <p class="text-emerald-600 dark:text-emerald-400 font-semibold">→ TELÍTETT FA (talajkontaktus!)</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-4 p-4 bg-white dark:bg-slate-800 rounded-xl">
+        <span class="text-3xl">🏡</span>
+        <div>
+          <p class="font-bold text-gray-800 dark:text-white">Kerítésoszlop?</p>
+          <p class="text-emerald-600 dark:text-emerald-400 font-semibold">→ TELÍTETT FA (15-25 év, nincs csere)</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-4 p-4 bg-white dark:bg-slate-800 rounded-xl">
+        <span class="text-3xl">👶</span>
+        <div>
+          <p class="font-bold text-gray-800 dark:text-white">Játszótér, homokozó?</p>
+          <p class="text-emerald-600 dark:text-emerald-400 font-semibold">→ TANALITH TELÍTETT FA (EN 71-3, gyermekbiztos)</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-4 p-4 bg-white dark:bg-slate-800 rounded-xl">
+        <span class="text-3xl">🌿</span>
+        <div>
+          <p class="font-bold text-gray-800 dark:text-white">Pergola, kerti építmény?</p>
+          <p class="text-emerald-600 dark:text-emerald-400 font-semibold">→ TELÍTETT FA (időjárásálló, tartós)</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-4 p-4 bg-white dark:bg-slate-800 rounded-xl">
+        <span class="text-3xl">🚧</span>
+        <div>
+          <p class="font-bold text-gray-800 dark:text-white">Ideiglenes építkezési kerítés?</p>
+          <p class="text-amber-600 dark:text-amber-400 font-semibold">→ Mártott fa elfogadható (1-2 év)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+## Végső Tanács
+
+<div class="not-prose my-8 p-8 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl text-white">
+  <div class="text-center">
+    <h3 class="text-2xl font-bold mb-4">💡 A Legfontosabb Üzenet</h3>
+    <p class="text-lg mb-6 opacity-90">
+      A mártott fa csak <strong>látszólag olcsóbb</strong>. Ha a teljes életciklust nézzük, 
+      a <strong>telített fa 3-4x gazdaságosabb</strong>, és közben jóval kevesebb gondod van vele.
+    </p>
+    <p class="text-xl font-bold">
+      🏆 Professzionális projekthez mindig TELÍTETT fát válassz!
+    </p>
+  </div>
+</div>
+
+---
+
+## Kapcsolódó Cikkek
+
+- [Miért a Tanalith a Legjobb Faanyagvédő Szer?](./tanalith-kezeles-teljes-utmutato)
+- [Keményfa vs Telített Fa: Melyik Éri Meg?](./kemenyfa-vs-telitett-fa-melyik-eri-meg)
+
+---
+
+## Kérdésed Van?
+
+Ha még mindig bizonytalan vagy, **kérj szakértői tanácsot** - segítünk kiválasztani a projektedhez megfelelő faanyagot!
+
+<div class="not-prose my-8 flex flex-col sm:flex-row gap-4 justify-center">
+  <a 
+    href="/kapcsolat" 
+    class="inline-flex items-center justify-center px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl transition-colors shadow-lg hover:shadow-xl"
+  >
+    📧 Árajánlat Kérése
+  </a>
+  <a 
+    href="/termekek" 
+    class="inline-flex items-center justify-center px-8 py-4 bg-white dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700 text-gray-800 dark:text-white font-bold rounded-xl transition-colors shadow-lg hover:shadow-xl border border-gray-200 dark:border-slate-700"
+  >
+    🛒 Termékek Böngészése
+  </a>
+</div>

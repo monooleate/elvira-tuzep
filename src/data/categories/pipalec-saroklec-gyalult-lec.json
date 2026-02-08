@@ -1,0 +1,54 @@
+{
+  "maincategory": "Speciális lécek",
+  "category": "Pipaléc sarokléc gyalult léc",
+  "slug": "pipalec-saroklec-gyalult-lec",
+  "meta": {
+    "title": "Pipaléc Sarokléc Gyalult léc | Díszlécek és Építőlécek | Elvira Tüzép",
+    "description": "Borovi pipaléc, sarokléc, gyalult léc belsőépítészethez. Lambéria szegély, ajtószegély, parketta szegély, stafni – szárított gyalult kivitelben Érden.",
+    "image": "/kategoriak/specialis-lecek.webp"
+  },
+  "description": "A pipalécek, saroklécek és gyalult lécek precízen megmunkált, szárított faanyagok, amelyek ideálisak belsőépítészeti munkákhoz, lambéria és hajópadló felrakásához, kerítések készítéséhez és különböző szerkezeti munkálatokhoz. A borovi (erdeifenyő) alapanyagból készült lécek teljes keresztmetszetben szárítottak és négyszögre gyalultak, így stabil, mérettartó megoldást nyújtanak minden alkalmazáshoz.",
+  "faqdesc": "A pipalécek, saroklécek és gyalult lécek precízen megmunkált, szárított faanyagok, amelyek stabil és mérettartó megoldást nyújtanak belsőépítészethez és díszítéshez. Az alábbi gyakori kérdések segítenek eligazodni a lécek típusaiban, felhasználási területein és minőségi jellemzőiben.",
+  "faq": [
+    {
+      "id": "1",
+      "question": "Mi a különbség a gyalult léc és a fűrészelt léc között?",
+      "answer": "A gyalult léc szárított és négyszögre gyalult, sima felületű, míg a fűrészelt léc érdes felületű, nem gyalult. A gyalult léc mérettartóbb és esztétikusabb."
+    },
+    {
+      "id": "2",
+      "question": "Milyen méretekben kaphatók a gyalult lécek?",
+      "answer": "A leggyakoribb méretek: 1×2 cm, 1×3 cm, 2×2 cm, 2×3 cm, 2×4 cm, 3×3 cm, 4,5×4,5 cm. Hosszuk általában 200 cm, speciális igény esetén 250 cm is elérhető."
+    },
+    {
+      "id": "3",
+      "question": "Mire használható a pipaléc?",
+      "answer": "A pipaléc kerekített élű díszléc, amely lambéria és hajópadló szegélyezésére, ajtó- és ablakkeretek díszítésére, valamint dekoratív célokra használható."
+    },
+    {
+      "id": "4",
+      "question": "Mi az a sarokléc és mire való?",
+      "answer": "A sarokléc háromszög alakú vagy lekerekített profilú léc, amely falak és padlók, illetve falak és mennyezetek találkozásánál használatos átfedésre és esztétikus lezárásra."
+    },
+    {
+      "id": "5",
+      "question": "Milyen alapanyagból készülnek a lécek?",
+      "answer": "A lécek jellemzően borovi (erdeifenyő) alapanyagból készülnek, amely északi régióból származik, így sűrűbb szálszerkezetű és tartósabb."
+    },
+    {
+      "id": "6",
+      "question": "Szükséges-e impregnálni a gyalult léceket?",
+      "answer": "Beltéri használathoz nem szükséges, de kültéri vagy nedves környezetben ajánlott impregnálószerrel vagy olajjal kezelni a léceket a tartósság érdekében."
+    },
+    {
+      "id": "7",
+      "question": "Hogyan tárolják a gyalult léceket?",
+      "answer": "Száraz, fedett helyen, vízszintes helyzetben, keresztlécekkel támasztva érdemes tárolni, hogy ne görbüljenek el és ne nedvesedjenek vissza."
+    },
+    {
+      "id": "8",
+      "question": "Mi a különbség a pipaléc és az ajtószegély között?",
+      "answer": "A pipaléc kerek élű, általános díszléc, míg az ajtószegély speciális, aszimmetrikus profilú léc, amelyet kifejezetten ajtókeretek körbekerítésére terveztek."
+    }
+  ]
+}

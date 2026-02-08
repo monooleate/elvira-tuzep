@@ -1,0 +1,566 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import PlaygroundTypes from '~/components/widgets/PlaygroundTypes.astro';
+
+const metadata = {
+  title: 'Játszótér Építés Telített Fából | Gyermekbarát, Biztonságos | Elvira Tüzép',
+  description: 'Telített fa játszótér építéshez. Gyermekbarát Tanalith kezelés, EN 71-3 szabvány, nehézfém-mentes. Köztéri és kerti játszóterekhez. Hinták, mászókák, homokozók.',
+  canonical: 'https://elviratuzep.hu/felhasznalasok/jatszoter',
+  openGraph: {
+    type: 'website',
+    title: 'Játszótér Építés Telített Fából | Elvira Tüzép',
+    description: 'Biztonságos, tartós faanyag játszóterek építéséhez. Gyermekbarát, EN 71-3 tanúsítvánnyal.',
+    image: '~/assets/images/og-jatszoter.jpg',
+  },
+};
+---
+
+<Layout metadata={metadata}>
+  
+  <!-- ============================================
+       1. HERO SECTION
+       ============================================ -->
+  <Hero
+    id="hero"
+    tagline="🎠 Játszótér Építés"
+    title="Biztonságos Játszóterek – Gyermekbarát Telített Fából"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Árajánlat kérése',
+        href: '/kapcsolat',
+        icon: 'tabler:mail',
+      },
+      {
+        variant: 'secondary',
+        text: 'Miért biztonságos?',
+        href: '#biztonsag',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      <div class="space-y-3">
+        <p class="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-200">
+          <span class="text-purple-600 dark:text-purple-400 font-bold">Köztéri</span> és 
+          <span class="text-pink-600 dark:text-pink-400 font-bold">magánkerti játszóterek</span> 
+          építéséhez – tartós, biztonságos faanyag gyermekek számára.
+        </p>
+        
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-4 pb-4">
+          <div class="inline-flex items-center gap-2 bg-green-100 dark:bg-green-900/40 text-green-800 dark:text-green-300 px-4 py-2 rounded-full font-semibold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+            <span>EN 71-3 tanúsítvány</span>
+          </div>
+          
+          <div class="inline-flex items-center gap-2 bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 px-4 py-2 rounded-full font-semibold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Nehézfém-mentes</span>
+          </div>
+          
+          <div class="inline-flex items-center gap-2 bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 px-4 py-2 rounded-full font-semibold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>15-25 év élettartam</span>
+          </div>
+        </div>
+      </div>
+    </Fragment>
+
+  </Hero>
+
+  <!-- ============================================
+       2. BIZTONSÁG KIEMELÉS
+       ============================================ -->
+  <section id="biztonsag" class="py-12 md:py-16 bg-gradient-to-r from-green-50 via-white to-purple-50 dark:from-green-950/20 dark:via-slate-800 dark:to-purple-950/20">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <span class="inline-block bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 text-sm font-semibold px-4 py-1 rounded-full mb-4">
+          🛡️ Biztonság Mindenekelőtt
+        </span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          Miért Biztonságos a Tanalith-Kezelt Fa?
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          A gyermekek biztonsága a legfontosabb. A Tanalith kezelés megfelel a legszigorúbb európai szabványoknak.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- EN 71-3 -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg border-2 border-green-200 dark:border-green-800 hover:shadow-xl transition-shadow">
+          <div class="w-16 h-16 bg-green-100 dark:bg-green-900/50 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+            EN 71-3 Szabvány
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-3">
+            A játékok biztonságára vonatkozó európai szabvány. A Tanalith-kezelt fa <strong>megfelel ennek</strong>.
+          </p>
+          <span class="inline-block bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 text-sm font-semibold px-3 py-1 rounded-full">
+            ✓ Tanúsított
+          </span>
+        </div>
+
+        <!-- Nehézfém-mentes -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg border-2 border-purple-200 dark:border-purple-800 hover:shadow-xl transition-shadow">
+          <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900/50 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+            Nehézfém-Mentes
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-3">
+            <strong>Nincs króm, nincs arzén.</strong> A régi CCA kezeléssel ellentétben a Tanalith biztonságos.
+          </p>
+          <span class="inline-block bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 text-sm font-semibold px-3 py-1 rounded-full">
+            ✓ Króm- és arzénmentes
+          </span>
+        </div>
+
+        <!-- Bőrrel érintkezhet -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg border-2 border-pink-200 dark:border-pink-800 hover:shadow-xl transition-shadow">
+          <div class="w-16 h-16 bg-pink-100 dark:bg-pink-900/50 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-pink-600 dark:text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+            Gyermekbőrrel Érintkezhet
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-3">
+            A gyerekek nyugodtan <strong>megfoghatják, megmászhatják</strong> a faszerkezeteket.
+          </p>
+          <span class="inline-block bg-pink-100 dark:bg-pink-900/50 text-pink-700 dark:text-pink-300 text-sm font-semibold px-3 py-1 rounded-full">
+            ✓ Bőrbarát
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       3. JÁTSZÓTÉR TÍPUSOK
+       ============================================ -->
+  <PlaygroundTypes id="jatszoter-tipusok" />
+
+  <!-- ============================================
+       4. MIRE HASZNÁLHATÓ?
+       ============================================ -->
+  <Features
+    id="felhasznalasok"
+    title="Mit Építhet Belőle?"
+    subtitle="A telített fa tökéletes alapanyag minden játszótéri elemhez"
+    columns={3}
+    items={[
+      {
+        title: 'Hinták',
+        description: 'Hintaállványok erős, tartós vázszerkezete. Bírja a terhelést és az időjárást évtizedekig.',
+        icon: 'tabler:arrows-up-down',
+      },
+      {
+        title: 'Mászókák',
+        description: 'Mászófalak, tornyok váza. A gyerekek biztonságosan mászhatják meg.',
+        icon: 'tabler:ladder',
+      },
+      {
+        title: 'Homokozó Keret',
+        description: 'Rothadásmentes homokozó szegély, ami évekig tartós marad a nedves homokban is.',
+        icon: 'tabler:box',
+      },
+      {
+        title: 'Játékházak',
+        description: 'Faházikók, kalandvárak alapszerkezete. A gyerekek kedvenc rejtekhelye!',
+        icon: 'tabler:home',
+      },
+      {
+        title: 'Csúszdák Váza',
+        description: 'A csúszda felső platója és létrája biztonságos, stabil telített fából.',
+        icon: 'tabler:box',
+      },
+      {
+        title: 'Egyensúlyozó Elemek',
+        description: 'Gerendák, hídak, lépcsők – fejlesztik a gyerekek mozgáskoordinációját.',
+        icon: 'tabler:line-height',
+      },
+    ]}
+  />
+
+  <!-- ============================================
+       5. KÖZTÉRI VS KERTI
+       ============================================ -->
+  <Content
+    id="koztéri"
+    isReversed
+    title="Köztéri Játszóterek"
+    subtitle="Önkormányzatok, óvodák, iskolák, lakóparkok számára"
+    items={[
+      {
+        title: 'Szabványoknak megfelelő',
+        description: 'EN 1176 játszótéri szabványnak megfelelő építéshez alkalmas alapanyag.',
+      },
+      {
+        title: 'Vandálbiztos tartósság',
+        description: 'A telített fa ellenáll az időjárásnak és a fokozott igénybevételnek.',
+      },
+      {
+        title: 'Alacsony karbantartás',
+        description: 'Nem kell évente festeni, kezelni – évtizedekig megőrzi tulajdonságait.',
+      },
+    ]}
+    callToAction={{
+      text: 'Kérjen árajánlatot köztéri projektre →',
+      href: '#megrendeles',
+    }}
+    classes={{
+      container: 'bg-blue-50 dark:bg-blue-950/30',
+    }}
+  >
+    <Fragment slot="content">
+      <div class="bg-blue-100 dark:bg-blue-900/40 rounded-xl p-6 border-l-4 border-blue-500">
+        <h3 class="text-xl font-bold text-blue-800 dark:text-blue-200 mb-3">
+          🏛️ Ideális helyszínek
+        </h3>
+        <ul class="space-y-2 text-blue-700 dark:text-blue-300">
+          <li class="flex items-center gap-2">
+            <span class="text-blue-500">•</span> Óvodák, iskolák udvara
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-blue-500">•</span> Önkormányzati játszóterek
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-blue-500">•</span> Lakóparkok közös területei
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-blue-500">•</span> Éttermek, szállodák kertje
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-blue-500">•</span> Campingek, üdülők
+          </li>
+        </ul>
+      </div>
+    </Fragment>
+
+    <Fragment slot="image">
+      <img
+        src="/images/public-playground-500.avif"
+        alt="Köztéri játszótér"
+        class="w-full rounded-lg shadow-lg"
+      />
+    </Fragment>
+  </Content>
+
+  <Content
+    id="kerti"
+    title="Magánkerti Játszóterek"
+    subtitle="Családi házak kertjébe, hogy a gyerekek otthon is játszhassanak"
+    items={[
+      {
+        title: 'Egyedi méretben',
+        description: 'A kert méretéhez és a gyerekek korához igazítva tervezhető.',
+      },
+      {
+        title: 'Saját építés lehetősége',
+        description: 'Barkácsolók maguk is megépíthetik – mi az alapanyagot adjuk.',
+      },
+      {
+        title: 'Értéknövelő beruházás',
+        description: 'A kerti játszótér növeli az ingatlan értékét és a család életminőségét.',
+      },
+    ]}
+    callToAction={{
+      text: 'Családi játszótér anyagigény →',
+      href: '#megrendeles',
+    }}
+    classes={{
+      container: 'bg-pink-50 dark:bg-pink-950/30',
+    }}
+  >
+    <Fragment slot="content">
+      <div class="bg-pink-100 dark:bg-pink-900/40 rounded-xl p-6 border-l-4 border-pink-500">
+        <h3 class="text-xl font-bold text-pink-800 dark:text-pink-200 mb-3">
+          🏡 Népszerű kerti elemek
+        </h3>
+        <ul class="space-y-2 text-pink-700 dark:text-pink-300">
+          <li class="flex items-center gap-2">
+            <span class="text-pink-500">•</span> Hinta 1-2 üléssel
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-pink-500">•</span> Kis mászóka toronnyal
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-pink-500">•</span> Homokozó keret
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-pink-500">•</span> Játékház / faházikó
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-pink-500">•</span> Egyensúlyozó gerenda
+          </li>
+        </ul>
+      </div>
+    </Fragment>
+
+    <Fragment slot="image">
+      <img
+        src="/images/kamy-hippo-500.avif"
+        alt="Játszótorony felállítva egy mezőn"
+        class="w-full rounded-lg shadow-lg"
+      />
+
+    </Fragment>
+  </Content>
+
+  <!-- ============================================
+       6. AJÁNLOTT TERMÉKEK
+       ============================================ -->
+  <section class="py-12 md:py-16 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <span class="inline-block bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 text-sm font-semibold px-4 py-1 rounded-full mb-4">
+          📦 Ajánlott Termékek
+        </span>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          Játszótér Építéshez Ajánljuk
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- Rúdfa -->
+        <a href="/termekek/telitett-rudfa" class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border-2 border-transparent hover:border-purple-300 dark:hover:border-purple-700">
+          <div class="w-14 h-14 bg-purple-100 dark:bg-purple-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <span class="text-3xl">🪵</span>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+            Rúdfa / Oszlop
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            Hintaállványok, mászókák fő tartószerkezete. 8-14 cm átmérőben.
+          </p>
+          <span class="inline-flex items-center text-purple-600 dark:text-purple-400 font-semibold group-hover:gap-2 transition-all">
+            Böngészés 
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </span>
+        </a>
+
+        <!-- Hegyezett cölöp -->
+        <a href="/termekek/telitett-hegyzett-colop" class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border-2 border-transparent hover:border-emerald-300 dark:hover:border-emerald-700">
+          <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <span class="text-3xl">📍</span>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+            Hegyezett Cölöp
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            Földbe vert támaszok, kerítések, homokozó sarkok rögzítése.
+          </p>
+          <span class="inline-flex items-center text-emerald-600 dark:text-emerald-400 font-semibold group-hover:gap-2 transition-all">
+            Böngészés 
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </span>
+        </a>
+
+        <!-- Deszka -->
+        <a href="/termekek/telitett-deszka" class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border-2 border-transparent hover:border-amber-300 dark:hover:border-amber-700">
+          <div class="w-14 h-14 bg-amber-100 dark:bg-amber-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <span class="text-3xl">📐</span>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+            Telített Deszka
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            Padlózat, ülőlapok, korlátok, járófelületek burkolata.
+          </p>
+          <span class="inline-flex items-center text-amber-600 dark:text-amber-400 font-semibold group-hover:gap-2 transition-all">
+            Böngészés 
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="mt-8 text-center">
+        <a 
+          href="/termekek" 
+          class="inline-flex items-center gap-2 text-purple-600 dark:text-purple-400 font-semibold hover:text-purple-700 dark:hover:text-purple-300 transition-colors"
+        >
+          Összes telített fa termék megtekintése
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       7. ÉPÍTÉSI TIPPEK
+       ============================================ -->
+  <Steps
+    id="epitesi-tippek"
+    title="Játszótér Építési Tippek"
+    subtitle="Amit érdemes tudni az építés előtt"
+    items={[
+      {
+        title: '1. Tervezés',
+        description: 'Mérje fel a rendelkezésre álló helyet. Hagyjon biztonsági zónát (min. 2 m) minden elem körül.',
+        icon: 'tabler:ruler-measure',
+      },
+      {
+        title: '2. Alapozás',
+        description: 'A fő tartóoszlopokat betonozza be, vagy használjon földbe vert hegyezett cölöpöket.',
+        icon: 'tabler:anchor',
+      },
+      {
+        title: '3. Szerkezet építése',
+        description: 'Használjon rozsdamentes vagy horganyzott csavarokat – a telített fa nem korrodálja őket.',
+        icon: 'tabler:hammer',
+      },
+      {
+        title: '4. Felületkezelés',
+        description: 'A telített fa önmagában is tartós, de lazúrral még szebbé tehető. Várjon 3-6 hónapot a festéssel.',
+        icon: 'tabler:paint',
+      },
+      {
+        title: '5. Ütéscsillapítás',
+        description: 'A játszótér alá tegyen ütéscsillapító réteget: homok, fakéreg mulcs, vagy gumilap.',
+        icon: 'tabler:shield',
+      },
+    ]}
+  />
+
+  <!-- ============================================
+       8. GYIK
+       ============================================ -->
+  <FAQs
+    id="gyik"
+    title="Gyakran Ismételt Kérdések"
+    subtitle="Minden, amit a játszótér építésről tudni érdemes"
+    items={[
+      {
+        title: 'Biztonságos a telített fa gyerekeknek?',
+        description: 'Igen! A Tanalith kezelés megfelel az EN 71-3 játékbiztonsági szabványnak. Nehézfém-mentes (nincs króm, arzén), a gyerekek bőre nyugodtan érintkezhet vele.',
+      },
+      {
+        title: 'Mennyire tartós a játszótéri fa?',
+        description: 'A Tanalith-kezelt telített fa 15-25 évig megőrzi tartósságát kültéren, még földkontaktusban is. UC4 minősítéssel rendelkezik.',
+      },
+      {
+        title: 'Kell-e festeni a telített fát?',
+        description: 'Nem kötelező, de ha szeretné színesre festeni, használjon nem vizes bázisú lazúrt vagy festéket. Várjon a telítés után 3-6 hónapot a festéssel.',
+      },
+      {
+        title: 'Milyen csavarokat használjak?',
+        description: 'Rozsdamentes (A2 vagy A4) vagy horganyzott csavarokat. A telített fa NEM korrodálja a fémet, ellentétben a régi CCA-kezelt fával.',
+      },
+      {
+        title: 'Mekkora biztonsági zóna kell?',
+        description: 'Minden játszóelem körül minimum 2 méter szabad terület ajánlott, hintáknál az ív irányában 3-4 méter.',
+      },
+      {
+        title: 'Köztéri játszótérhez milyen engedély kell?',
+        description: 'A köztéri játszótereknek meg kell felelniük az EN 1176 szabványnak. Érdeklődjön az önkormányzatnál az engedélyezési feltételekről.',
+      },
+      {
+        title: 'Mi legyen a játszótér alatt?',
+        description: 'Ütéscsillapító réteg kötelező: homok (min. 30 cm), fakéreg mulcs, vagy speciális gumilap. A fű és a beton NEM megfelelő!',
+      },
+      {
+        title: 'Megépíthetem magam a játszóteret?',
+        description: 'Igen! A telített fa könnyen megmunkálható. Adunk tervrajzokat és tanácsokat is kérésre. Nagyobb projektekhez ajánlunk szakembert.',
+      },
+    ]}
+  />
+
+  <!-- ============================================
+       9. ORSZÁGOS SZÁLLÍTÁS BANNER
+       ============================================ -->
+  <section class="py-10 bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-800 dark:to-pink-800">
+    <div class="max-w-4xl mx-auto px-4 text-center text-white">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        🚚 Országos Kiszállítás Raklapon!
+      </h2>
+      <p class="text-lg opacity-90 mb-6">
+        Nagyobb játszótér projekt? Kiszállítjuk az összes faanyagot az ország bármely pontjára.
+      </p>
+      <a 
+        href="/orszagos-kiszallitas" 
+        class="inline-flex items-center gap-2 bg-white text-purple-600 font-bold px-6 py-3 rounded-xl hover:bg-purple-50 transition-colors"
+      >
+        Szállítási információk
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       10. CTA
+       ============================================ -->
+  <CallToAction
+    id="megrendeles"
+    title="Építsen Biztonságos Játszóteret!"
+    subtitle="Gyermekbarát, tartós, Tanalith-kezelt faanyagok"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Árajánlat kérése',
+        href: '/kapcsolat',
+        icon: 'tabler:mail',
+      },
+      {
+        variant: 'secondary',
+        text: 'Termékek böngészése',
+        href: '/telitett-fa',
+        icon: 'tabler:arrow-right',
+      },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      <div class="space-y-4">
+        <p class="text-xl">
+          <strong>Köztéri</strong> vagy <strong>kerti játszótér</strong> – mi adjuk a biztonságos alapanyagot!
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4 text-sm">
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            EN 71-3 tanúsítvány
+          </span>
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Nehézfém-mentes
+          </span>
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            15-25 év tartósság
+          </span>
+        </div>
+      </div>
+    </Fragment>
+  </CallToAction>
+
+</Layout>

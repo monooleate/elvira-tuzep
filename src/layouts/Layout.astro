@@ -40,6 +40,32 @@ const { language, textDirection } = I18N;
   </head>
 
   <body class="antialiased text-default bg-page tracking-tight">
+    <!-- CONTACT form – Netlify detektálja deploy-kor -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <!-- OFFER form – Netlify detektálja deploy-kor -->
+    <form name="offer" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="offer" />
+      <input type="hidden" name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <textarea name="message"></textarea>
+      <input type="text" name="quantity" />
+      <input type="text" name="unit" />
+      <input type="text" name="product-name" />
+      <input type="text" name="product-slug" />
+      <input type="text" name="product-price" />
+      <input type="text" name="product-sku" />
+    </form>
+
     <slot />
 
     <BasicScripts />

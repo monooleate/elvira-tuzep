@@ -1,0 +1,714 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Kert és Kerítések Telített Fából | Pergola, Kerítés, Támfal, Virágláda | Elvira Tüzép',
+  description: 'Telített fa kertépítéshez és kerítésépítéshez: pergolák, fakerítések, rúdfa kerítésoszlopok, támfalak, virágládák. Tanalith-kezelt, UC4 minősítés, 15-25 év tartósság. Országos szállítás!',
+  canonical: 'https://elviratuzep.hu/felhasznalasok/kert-es-keritesek',
+  openGraph: {
+    type: 'website',
+    title: 'Kert és Kerítések Telített Fából | Elvira Tüzép',
+    description: 'Pergolák, fakerítések, támfalak, virágládák telített borovifából. 15-25 év tartósság.',
+  },
+};
+
+// FAQ Schema (JSON-LD)
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Mennyi ideig tart a telített fa a kertben?',
+      acceptedAnswer: { '@type': 'Answer', text: '15-25 év, még közvetlen földkontaktusban is. A Tanalith kezelés és UC4 minősítés garantálja a tartósságot.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Melyik a jobb: rúdfa vagy szögletes oszlop?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Rúdfa: olcsóbb, erősebb, természetesebb hatás, földbe verhető. Szögletes: modernebb kinézet, könnyebb rögzítés. Mindkettő tartós telített változatban.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Kell-e betonozni a kerítésoszlopokat?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Hegyezett rúdfánál nem feltétlenül – elég leverni a földbe. Szögletes oszlopoknál vagy lazább talajnál ajánlott a betonozás.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Festhető a telített fa kerítés?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Igen! 3-6 hónap száradás után bármilyen kültéri lazúrral vagy festékkel kezelhető. Ne használjon vizes bázisú festéket közvetlenül.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Milyen vastagságú gerendát használjak pergolához?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Oszlopokhoz 10x10 vagy 12x12 cm, főgerendához 10x15 cm, keresztlécekhez 5x10 cm ajánlott.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Használható a telített fa virágládához?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Igen, de ajánlott fóliával bélelni a belsejét a nedvesség ellen. Így még tovább tart.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Építhető támfal betonozás nélkül?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Alacsonyabb (max 50 cm) támfalhoz igen, ha megfelelő a vízelvezetés. Magasabbhoz már alapozás szükséges.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Mennyibe kerül egy fakerítés?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Anyagköltség: kb. 5.000-15.000 Ft/folyóméter a választott megoldástól függően. Kérjen tőlünk árajánlatot!' },
+    },
+  ],
+};
+
+// Rúdfa méretek táblázat
+const rudfaMeretek = [
+  { atmero: '6-8', hossz: '200-250', hasznalat: 'Könnyű kerítés, ágyásszegély' },
+  { atmero: '8-10', hossz: '250-300', hasznalat: 'Standard kerítésoszlop' },
+  { atmero: '10-12', hossz: '250-350', hasznalat: 'Erős kerítés, kapuoszlop' },
+  { atmero: '12-14', hossz: '300-400', hasznalat: 'Kapuoszlop, sarokoszlop' },
+];
+---
+
+<Layout metadata={metadata}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+
+  <!-- ============================================
+       1. HERO
+       ============================================ -->
+  <Hero
+    id="hero"
+    tagline="Kert és Kerítések"
+    title="Kert és Kerítések Telített Fából – Évtizedekig Tartós Megoldások"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Árajánlat kérése',
+        href: '/kapcsolat',
+        icon: 'tabler:mail',
+      },
+      {
+        variant: 'secondary',
+        text: 'Termékek böngészése',
+        href: '/termekek',
+        icon: 'tabler:package',
+      },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      <div class="space-y-3">
+        <p class="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-100">
+          <span class="text-teal-600 dark:text-teal-400 font-bold">Pergolák</span>,
+          <span class="text-emerald-600 dark:text-emerald-400 font-bold">fakerítések</span>,
+          <span class="text-cyan-600 dark:text-cyan-400 font-bold">támfalak</span>,
+          <span class="text-amber-600 dark:text-amber-400 font-bold">virágládák</span> –
+          minden kültéri projekt alapanyaga egy helyen.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-4 pb-4">
+          <div class="inline-flex items-center gap-2 bg-teal-100 dark:bg-teal-900/60 text-teal-800 dark:text-teal-200 px-4 py-2 rounded-full font-semibold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>15-25 év tartósság</span>
+          </div>
+
+          <div class="inline-flex items-center gap-2 bg-emerald-100 dark:bg-emerald-900/60 text-emerald-800 dark:text-emerald-200 px-4 py-2 rounded-full font-semibold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+            <span>UC4 minősítés</span>
+          </div>
+
+          <div class="inline-flex items-center gap-2 bg-amber-100 dark:bg-amber-900/60 text-amber-800 dark:text-amber-200 px-4 py-2 rounded-full font-semibold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Festhető, lazúrozható</span>
+          </div>
+        </div>
+      </div>
+    </Fragment>
+  </Hero>
+
+  <!-- ============================================
+       2. MIÉRT TELÍTETT FA?
+       ============================================ -->
+  <section class="py-12 md:py-16 bg-gradient-to-r from-teal-50 via-white to-emerald-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <span class="inline-block bg-teal-100 dark:bg-teal-800/60 text-teal-700 dark:text-teal-200 text-sm font-semibold px-4 py-1 rounded-full mb-4">
+          Miért telített fa?
+        </span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          Az ideális alapanyag kertépítéshez és kerítésépítéshez
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          A Tanalith-kezelt, nyomás alatt impregnált fa az ideális választás minden kültéri építményhez – a pergoláktól a fakerítésekig.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+
+        <div class="bg-white dark:bg-slate-800/80 rounded-2xl p-6 shadow-lg border-2 border-teal-200 dark:border-teal-700 hover:shadow-xl transition-shadow">
+          <div class="w-16 h-16 bg-teal-100 dark:bg-teal-800/60 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-teal-600 dark:text-teal-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+            Időjárásálló
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Eső, hó, fagy, UV sugárzás – a telített fa mindennek ellenáll. <strong class="text-gray-800 dark:text-white">Nem reped, nem vetemedik.</strong>
+          </p>
+        </div>
+
+        <div class="bg-white dark:bg-slate-800/80 rounded-2xl p-6 shadow-lg border-2 border-emerald-200 dark:border-emerald-700 hover:shadow-xl transition-shadow">
+          <div class="w-16 h-16 bg-emerald-100 dark:bg-emerald-800/60 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-emerald-600 dark:text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+            Rovar- és gombaálló
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            A Tanalith kezelés védi a fát a farontó rovaroktól és gombáktól. <strong class="text-gray-800 dark:text-white">Nem rohad el.</strong>
+          </p>
+        </div>
+
+        <div class="bg-white dark:bg-slate-800/80 rounded-2xl p-6 shadow-lg border-2 border-cyan-200 dark:border-cyan-700 hover:shadow-xl transition-shadow">
+          <div class="w-16 h-16 bg-cyan-100 dark:bg-cyan-800/60 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-cyan-600 dark:text-cyan-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+            Festhető, lazúrozható
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Bármilyen színűre festheti. <strong class="text-gray-800 dark:text-white">3-6 hónap száradás után</strong> lazúrral vagy festékkel kezelhető.
+          </p>
+        </div>
+
+        <div class="bg-white dark:bg-slate-800/80 rounded-2xl p-6 shadow-lg border-2 border-amber-200 dark:border-amber-700 hover:shadow-xl transition-shadow">
+          <div class="w-16 h-16 bg-amber-100 dark:bg-amber-800/60 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-amber-600 dark:text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+            Kiváló ár-érték arány
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Hosszú távú befektetés – nem igényel gyakori cserét. <strong class="text-gray-800 dark:text-white">Olcsóbb, mint az alternatívák.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       3. MIT ÉPÍTHET BELŐLE?
+       ============================================ -->
+  <Features
+    id="projektek"
+    title="Mit építhet telített fából?"
+    subtitle="A kertépítéstől a kerítésépítésig – minden kültéri projekt megvalósítható"
+    columns={3}
+    items={[
+      {
+        title: 'Pergolák és lugasok',
+        description: 'Árnyékolt pihenőhelyek, futónövényeknek támasz. Romantikus kerti hangulat.',
+        icon: 'tabler:home-eco',
+      },
+      {
+        title: 'Rúdfa kerítések',
+        description: 'Természetes, rusztikus hatás. Rúdfa oszlopok és keresztrudak. Földbe verhető.',
+        icon: 'tabler:fence',
+      },
+      {
+        title: 'Léckerítések',
+        description: 'Függőleges lécek vagy vízszintes deszkák. Klasszikus vagy modern megjelenés.',
+        icon: 'tabler:layout-list',
+      },
+      {
+        title: 'Támfalak és szegélyek',
+        description: 'Lejtős terep rendezése, ágyások kialakítása. Földkontaktusban is tartós.',
+        icon: 'tabler:wall',
+      },
+      {
+        title: 'Virágládák és magaságyak',
+        description: 'Emelt ágyások, balkonládák, növénytartók. Kényelmes kertészkedés.',
+        icon: 'tabler:plant',
+      },
+      {
+        title: 'Teraszburkolat',
+        description: 'Fapadló, járda, ösvény. Csúszásmentes, természetes felület.',
+        icon: 'tabler:layout-board',
+      },
+    ]}
+  />
+
+  <!-- ============================================
+       4a. PERGOLA RÉSZLETEK
+       ============================================ -->
+  <Content
+    id="pergola"
+    isReversed
+    title="Pergolák és Lugasok"
+    subtitle="A kert lelke – árnyék, romantika, futónövények"
+    items={[
+      {
+        title: 'Erős tartószerkezet',
+        description: '10x10 vagy 12x12 cm-es oszlopok, keresztgerendák.',
+      },
+      {
+        title: 'Futónövényeknek ideális',
+        description: 'Szőlő, futórózsa, klemátisz – a telített fa bírja a terhelést.',
+      },
+      {
+        title: 'Szabadon tervezhető',
+        description: 'Bármilyen méretben, a kerthez igazítva.',
+      },
+    ]}
+    callToAction={{
+      text: 'Gerendák és oszlopok →',
+      href: '/termekek/telitett-oszlop',
+    }}
+    classes={{
+      container: 'bg-teal-50 dark:bg-slate-800/50',
+    }}
+  >
+    <Fragment slot="content">
+      <div class="bg-teal-100 dark:bg-teal-900/50 rounded-xl p-6 border-l-4 border-teal-500">
+        <h3 class="text-xl font-bold text-teal-800 dark:text-teal-100 mb-3">
+          📐 Pergola anyagszükséglet (3x4m)
+        </h3>
+        <ul class="space-y-2 text-teal-700 dark:text-teal-200">
+          <li class="flex items-center gap-2">
+            <span class="font-bold">4 db</span> oszlop 10x10x300 cm
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="font-bold">2 db</span> főgerenda 10x15x400 cm
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="font-bold">6-8 db</span> keresztléc 5x10x300 cm
+          </li>
+        </ul>
+      </div>
+    </Fragment>
+
+    <Fragment slot="image">
+      <img
+        src="/images/pergola-500.avif"
+        alt="Pergola telített fából kertben"
+        class="w-full rounded-lg shadow-lg"
+      />
+    </Fragment>
+  </Content>
+
+  <!-- ============================================
+       4b. KERÍTÉSEK ÉS RÚDFA
+       ============================================ -->
+  <Content
+    id="keritesek"
+    title="Fakerítések és Rúdfa"
+    subtitle="Tartós kerítés – a rusztikustól a modernig"
+    items={[
+      {
+        title: 'Hegyezett rúdfa',
+        description: 'Könnyen leverhető a földbe, nem kell betonozni. Természetes köralak, nincs gyenge pont.',
+      },
+      {
+        title: 'Szögletes oszlopok',
+        description: 'Betonozáshoz vagy fém talpra rögzítéshez. Modernebb megjelenés.',
+      },
+      {
+        title: 'Lécek és deszkák',
+        description: 'A kerítés látható része – klasszikus lécektől a széles deszkákig az intimitás érdekében.',
+      },
+    ]}
+    callToAction={{
+      text: 'Rúdfa termékek →',
+      href: '/termekek/telitett-rudfa',
+    }}
+    classes={{
+      container: 'bg-slate-100 dark:bg-slate-800/60',
+    }}
+  >
+    <Fragment slot="content">
+      <div class="bg-slate-200 dark:bg-slate-700 rounded-xl p-6 border-l-4 border-slate-400 dark:border-slate-500">
+        <h3 class="text-xl font-bold text-slate-800 dark:text-slate-100 mb-3">
+          📐 Kerítésoszlop kalkuláció
+        </h3>
+        <ul class="space-y-2 text-slate-700 dark:text-slate-200">
+          <li class="flex items-center gap-2">
+            <span class="font-bold text-slate-800 dark:text-white">Köztes oszlopok:</span> 2-2,5 méterenként
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="font-bold text-slate-800 dark:text-white">Sarokoszlop:</span> minden saroknál +1 db
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="font-bold text-slate-800 dark:text-white">Kapuoszlop:</span> 2 db (erősebb, vastagabb)
+          </li>
+        </ul>
+        <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+          Példa: 50 m kerítéshez ≈ 22-25 db oszlop szükséges
+        </p>
+      </div>
+    </Fragment>
+
+    <Fragment slot="image">
+      <img
+        src="/images/fence-pressure-treated-wood-500.avif"
+        alt="Fakerítés telített fából"
+        class="w-full rounded-lg shadow-lg"
+      />
+    </Fragment>
+  </Content>
+
+  <!-- ============================================
+       4c. RÚDFA MÉRETEK TÁBLÁZAT
+       ============================================ -->
+  <section id="rudfa" class="py-12 md:py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <span class="inline-block bg-amber-100 dark:bg-amber-800/60 text-amber-700 dark:text-amber-200 text-sm font-semibold px-4 py-1 rounded-full mb-4">
+          📏 Rúdfa méretek
+        </span>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          Melyik rúdfa méretet válasszam?
+        </h2>
+      </div>
+
+      <div class="overflow-x-auto rounded-xl shadow-lg">
+        <table class="w-full bg-white dark:bg-slate-800">
+          <thead>
+            <tr class="bg-slate-700 dark:bg-slate-700 text-white">
+              <th class="py-4 px-6 text-left font-bold">Átmérő (cm)</th>
+              <th class="py-4 px-6 text-left font-bold">Hossz (cm)</th>
+              <th class="py-4 px-6 text-left font-bold">Ajánlott használat</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rudfaMeretek.map((item, index) => (
+              <tr class={`border-b border-gray-100 dark:border-slate-700 ${index % 2 === 0 ? 'bg-gray-50 dark:bg-slate-800/80' : 'bg-white dark:bg-slate-800'}`}>
+                <td class="py-4 px-6">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-600 flex items-center justify-center font-bold text-slate-700 dark:text-slate-200">
+                      Ø{item.atmero.split('-')[0]}
+                    </span>
+                    <span class="text-gray-600 dark:text-gray-300">{item.atmero} cm</span>
+                  </span>
+                </td>
+                <td class="py-4 px-6 font-semibold text-gray-800 dark:text-gray-100">
+                  {item.hossz} cm
+                </td>
+                <td class="py-4 px-6 text-gray-600 dark:text-gray-300">
+                  {item.hasznalat}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-6 grid md:grid-cols-2 gap-4">
+        <div class="bg-amber-50 dark:bg-amber-900/40 rounded-xl p-4 border border-amber-200 dark:border-amber-700">
+          <h4 class="font-bold text-amber-800 dark:text-amber-200 mb-2">💡 Tipp: Átmérő választás</h4>
+          <p class="text-sm text-amber-700 dark:text-amber-300">
+            Sarokoszlopokhoz és kapuoszlopokhoz válasszon <strong class="text-amber-900 dark:text-amber-100">1-2 cm-rel vastagabbat</strong> mint a köztes oszlopokhoz.
+          </p>
+        </div>
+        <div class="bg-blue-50 dark:bg-blue-900/40 rounded-xl p-4 border border-blue-200 dark:border-blue-700">
+          <h4 class="font-bold text-blue-800 dark:text-blue-200 mb-2">💡 Tipp: Hossz választás</h4>
+          <p class="text-sm text-blue-700 dark:text-blue-300">
+            A földbe kerülő rész <strong class="text-blue-900 dark:text-blue-100">50-80 cm</strong> legyen. 150 cm magas kerítéshez 220-250 cm oszlop kell.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center">
+        <a
+          href=/termekek/telitett-rudfa"
+          class="inline-flex items-center gap-2 bg-slate-700 hover:bg-slate-600 dark:bg-slate-600 dark:hover:bg-slate-500 text-white font-bold px-6 py-3 rounded-xl transition-colors"
+        >
+          Rúdfa termékek böngészése
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       4d. TÁMFAL ÉS VIRÁGLÁDÁK
+       ============================================ -->
+  <Content
+    id="tamfal"
+    isReversed
+    title="Támfalak és Virágládák"
+    subtitle="Rendezett kert – szintkülönbség és emelt ágyások"
+    items={[
+      {
+        title: 'Földkontaktusban is tartós',
+        description: 'UC4 minősítés – akár betonozás nélkül is használható.',
+      },
+      {
+        title: 'Természetes megjelenés',
+        description: 'Belesimul a kertbe, nem olyan rideg mint a beton.',
+      },
+      {
+        title: 'Virágládák és magaságyak',
+        description: 'Építsen emelt ágyásokat vagy balkonládákat. Bélelje fóliával a belsejét.',
+      },
+    ]}
+    callToAction={{
+      text: 'Talpgerendák →',
+      href: '/termekek/telitett-rudfa',
+    }}
+    classes={{
+      container: 'bg-emerald-50 dark:bg-slate-800/50',
+    }}
+  >
+    <Fragment slot="content">
+      <div class="bg-emerald-100 dark:bg-emerald-900/50 rounded-xl p-6 border-l-4 border-emerald-500">
+        <h3 class="text-xl font-bold text-emerald-800 dark:text-emerald-100 mb-3">
+          💡 Támfal tippek
+        </h3>
+        <ul class="space-y-2 text-emerald-700 dark:text-emerald-200">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            50 cm felett dőlésszög vagy támaszt használjon
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Vízelvezetésről gondoskodjon (kavics, drén)
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Geotextília védi a fát a földtől
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Virágládákhoz páramentes fóliával bélelje a belsejét
+          </li>
+        </ul>
+      </div>
+    </Fragment>
+
+    <Fragment slot="image">
+      <img
+        src="/images/holder-posts.webp"
+        alt="Támfal telített fából kertben"
+        class="w-full rounded-lg shadow-lg"
+      />
+    </Fragment>
+  </Content>
+
+  <!-- ============================================
+       5. AJÁNLOTT TERMÉKEK
+       ============================================ -->
+  <section class="py-12 md:py-16 bg-gradient-to-br from-teal-50 to-amber-50 dark:from-slate-900 dark:to-slate-800">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <span class="inline-block bg-teal-100 dark:bg-teal-800/60 text-teal-700 dark:text-teal-200 text-sm font-semibold px-4 py-1 rounded-full mb-4">
+          📦 Ajánlott termékek
+        </span>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          Alapanyagok kertépítéshez és kerítésépítéshez
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-4">
+
+        <a href="/termekek/telitett-rudfa" class="group bg-white dark:bg-slate-800 rounded-2xl p-5 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border-2 border-amber-200 dark:border-amber-700">
+          <div class="w-12 h-12 bg-amber-100 dark:bg-amber-800/60 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+            <span class="text-2xl">🪵</span>
+          </div>
+          <h3 class="font-bold text-gray-900 dark:text-white mb-1">Rúdfa</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Kerítésoszlopok, rudak</p>
+          <span class="inline-block mt-2 text-xs font-semibold text-amber-600 dark:text-amber-400">⭐ Legnépszerűbb</span>
+        </a>
+
+        <a href="/termekek/telitett-oszlop" class="group bg-white dark:bg-slate-800 rounded-2xl p-5 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+          <div class="w-12 h-12 bg-slate-100 dark:bg-slate-700 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+            <span class="text-2xl">📍</span>
+          </div>
+          <h3 class="font-bold text-gray-900 dark:text-white mb-1">Oszlopok</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Szögletes, hegyezett</p>
+        </a>
+
+        <a href="/termekek/telitett-deszka" class="group bg-white dark:bg-slate-800 rounded-2xl p-5 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+          <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-800/60 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+            <span class="text-2xl">📐</span>
+          </div>
+          <h3 class="font-bold text-gray-900 dark:text-white mb-1">Deszkák</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Burkolat, kerítés, bútor</p>
+        </a>
+
+        <a href="/termekek" class="group bg-white dark:bg-slate-800 rounded-2xl p-5 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+          <div class="w-12 h-12 bg-teal-100 dark:bg-teal-800/60 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+            <span class="text-2xl">📦</span>
+          </div>
+          <h3 class="font-bold text-gray-900 dark:text-white mb-1">Összes termék</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Teljes kínálat böngészése</p>
+        </a>
+      </div>
+
+      <div class="mt-6 text-center">
+        <a href="/termekek" class="inline-flex items-center gap-2 text-teal-600 dark:text-teal-400 font-semibold hover:gap-3 transition-all">
+          Összes termék megtekintése
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       6. ÉPÍTÉSI TIPPEK
+       ============================================ -->
+  <Steps
+    id="tippek"
+    title="Építési tippek"
+    subtitle="Amit érdemes tudni a projekt megkezdése előtt"
+    items={[
+      {
+        title: '1. Tervezés és felmérés',
+        description: 'Rajzolja le a kertet, mérje fel a helyet. Gondoljon a vízelvezésre és a napsütés irányára. Jelölje ki az oszlopok helyét 2-2,5 méterenként.',
+        icon: 'tabler:ruler-measure',
+      },
+      {
+        title: '2. Alapozás és oszlopok',
+        description: 'Betonozza az oszlopokat, vagy verje le a hegyezett rúdfát a földbe. Támfalhoz kavicságyazatot készítsen.',
+        icon: 'tabler:anchor',
+      },
+      {
+        title: '3. Szerkezet építése',
+        description: 'Használjon rozsdamentes vagy horganyzott csavarokat. Rögzítse a keresztléceket, szerelje fel a léceket vagy deszkákat. Pergolánál a keresztgerendákat rögzítse.',
+        icon: 'tabler:hammer',
+      },
+      {
+        title: '4. Felületkezelés',
+        description: 'Nem kötelező, de lazúrral még szebb. Várjon 3-6 hónapot a festéssel!',
+        icon: 'tabler:paint',
+      },
+    ]}
+  />
+
+  <!-- ============================================
+       7. GYAKRAN ISMÉTELT KÉRDÉSEK
+       ============================================ -->
+  <FAQs
+    id="gyik"
+    title="Gyakran Ismételt Kérdések"
+    subtitle="Kert és kerítés telített fából – minden tudnivaló"
+    items={[
+      {
+        title: 'Mennyi ideig tart a telített fa a kertben?',
+        description: '15-25 év, még közvetlen földkontaktusban is. A Tanalith kezelés és UC4 minősítés garantálja a tartósságot.',
+      },
+      {
+        title: 'Melyik a jobb: rúdfa vagy szögletes oszlop?',
+        description: 'Rúdfa: olcsóbb, erősebb, természetesebb hatás, földbe verhető. Szögletes: modernebb kinézet, könnyebb rögzítés. Mindkettő tartós telített változatban.',
+      },
+      {
+        title: 'Kell-e betonozni a kerítésoszlopokat?',
+        description: 'Hegyezett rúdfánál nem feltétlenül – elég leverni a földbe. Szögletes oszlopoknál vagy lazább talajnál ajánlott a betonozás.',
+      },
+      {
+        title: 'Festhető a telített fa?',
+        description: 'Igen! 3-6 hónap száradás után bármilyen kültéri lazúrral vagy festékkel kezelhető. Ne használjon vizes bázisú festéket közvetlenül.',
+      },
+      {
+        title: 'Milyen vastagságú gerendát használjak pergolához?',
+        description: 'Oszlopokhoz 10x10 vagy 12x12 cm, főgerendához 10x15 cm, keresztlécekhez 5x10 cm ajánlott.',
+      },
+      {
+        title: 'Használható a telített fa virágládához?',
+        description: 'Igen, de ajánlott fóliával bélelni a belsejét a nedvesség ellen. Így még tovább tart.',
+      },
+      {
+        title: 'Építhető támfal betonozás nélkül?',
+        description: 'Alacsonyabb (max 50 cm) támfalhoz igen, ha megfelelő a vízelvezetés. Magasabbhoz már alapozás szükséges.',
+      },
+      {
+        title: 'Mennyibe kerül egy fakerítés?',
+        description: 'Anyagköltség: kb. 5.000-15.000 Ft/folyóméter a választott megoldástól függően. Kérjen tőlünk árajánlatot!',
+      },
+    ]}
+  />
+
+  <!-- ============================================
+       8. SZÁLLÍTÁS BANNER
+       ============================================ -->
+  <section class="py-10 bg-gradient-to-r from-teal-600 to-emerald-600 dark:from-teal-800 dark:to-emerald-800">
+    <div class="max-w-4xl mx-auto px-4 text-center text-white">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        🚚 Kiszállítjuk a Teljes Anyagszükségletet Raklapon!
+      </h2>
+      <p class="text-lg opacity-90 mb-6">
+        Kerti vagy kerítés projekt? Kiszállítjuk az összes faanyagot az ország bármely pontjára, egy szállítmányban.
+      </p>
+      <a
+        href="/orszagos-kiszallitas"
+        class="inline-flex items-center gap-2 bg-white text-teal-600 font-bold px-6 py-3 rounded-xl hover:bg-teal-50 transition-colors"
+      >
+        Szállítási információk
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       9. CTA
+       ============================================ -->
+  <CallToAction
+    id="megrendeles"
+    title="Tervezze Meg Álomkertjét és Kerítését!"
+    subtitle="Telített fa alapanyagok – tartós, szép, természetes"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Árajánlat kérése',
+        href: '/kapcsolat',
+        icon: 'tabler:mail',
+      },
+      {
+        variant: 'secondary',
+        text: 'Termékek böngészése',
+        href: '/termekek',
+        icon: 'tabler:arrow-right',
+      },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      <div class="space-y-4">
+        <p class="text-xl">
+          <strong>Pergola</strong> • <strong>Kerítés</strong> • <strong>Támfal</strong> • <strong>Virágláda</strong> • <strong>Terasz</strong>
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4 text-sm">
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            15-25 év tartósság
+          </span>
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            UC4 minősítés
+          </span>
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Országos szállítás
+          </span>
+        </div>
+      </div>
+    </Fragment>
+  </CallToAction>
+
+</Layout>

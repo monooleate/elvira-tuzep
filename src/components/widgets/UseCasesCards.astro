@@ -1,0 +1,443 @@
+---
+/**
+ * UseCasesCards.astro
+ * Mobil: carousel (autoplay + dots + swipe)
+ * Tablet: 2 oszlop (grid)
+ * Desktop: 4 oszlop (grid)
+ */
+
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+
+const {
+  id,
+  isDark = false,
+  classes = {},
+  useCases = [],
+} = Astro.props;
+
+const colorClasses = {
+  emerald: { dot: 'bg-emerald-500', badge: 'bg-emerald-500/90' },
+  purple: { dot: 'bg-purple-500', badge: 'bg-purple-500/90' },
+  teal: { dot: 'bg-teal-500', badge: 'bg-teal-500/90' },
+  slate: { dot: 'bg-slate-500', badge: 'bg-slate-500/90' },
+  amber: { dot: 'bg-amber-500', badge: 'bg-amber-500/90' },
+  blue: { dot: 'bg-blue-500', badge: 'bg-blue-500/90' },
+};
+
+const CLONE_COUNT = Math.min(3, useCases.length);
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`}>
+  <Headline
+    title="Mire Használható a Telített Borovifa?"
+    subtitle="Faültetéstől játszóterig – biztonságos, tartós megoldások minden kültéri alkalmazáshoz"
+    tagline="🪵 Felhasználási Területek"
+  />
+
+  <div class="mt-10">
+
+    <!-- ===================== -->
+    <!-- MOBIL CAROUSEL (md alatt) -->
+    <!-- ===================== -->
+    <div class="usecases-carousel md:hidden">
+      <div class="overflow-hidden">
+        <div class="cards-track flex gap-5 transition-transform duration-500 ease-out will-change-transform">
+          {useCases.map((item, index) => (
+            <a
+              href={item.href}
+              class="card flex-shrink-0 w-[280px] sm:w-[320px] group"
+              data-index={index}
+              aria-label={`${item.title} – ${item.subtitle}`}
+            >
+              <div class="card-shell ios-clip relative h-[380px] rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <!-- Háttérkép -->
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 will-change-transform group-hover:scale-110"
+                />
+
+                <!-- Gradient overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10"></div>
+
+                <!-- Ikon badge - jobb felső -->
+                <div class="absolute top-4 right-4">
+                  <div
+                    class={`w-14 h-14 ${colorClasses[item.color].badge} backdrop-blur-sm rounded-xl flex items-center justify-center text-3xl shadow-lg transition-transform duration-300 will-change-transform group-hover:scale-110 group-hover:rotate-6`}
+                  >
+                    {item.icon}
+                  </div>
+                </div>
+
+                <!-- Dekoratív szám - bal felső -->
+                <div class="absolute top-4 left-4 text-8xl font-black text-white/10 leading-none select-none">
+                  {index + 1}
+                </div>
+
+                <!-- Tartalom - alul -->
+                <div class="absolute bottom-0 left-0 right-0 p-5">
+                  <span
+                    class={`inline-block px-3 py-1 ${colorClasses[item.color].badge} backdrop-blur-sm rounded-full text-white text-xs font-semibold mb-2`}
+                  >
+                    {item.subtitle}
+                  </span>
+
+                  <h3 class="text-2xl font-bold text-white mb-2">
+                    {item.title}
+                  </h3>
+
+                  <p class="text-white/80 text-sm mb-3 line-clamp-2">
+                    {item.description}
+                  </p>
+
+                  <div class="flex flex-wrap gap-1 mb-4">
+                    {item.features.slice(0, 2).map((f) => (
+                      <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-white/20 backdrop-blur-sm rounded text-white text-xs">
+                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        {f}
+                      </span>
+                    ))}
+                  </div>
+
+                  <span class="inline-flex items-center gap-2 text-white font-semibold text-sm transition-all group-hover:gap-3">
+                    Böngésszen
+                    <svg
+                      class="w-4 h-4 transition-transform group-hover:translate-x-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </a>
+          ))}
+
+          <!-- Klónok a végtelen loophoz -->
+          {useCases.slice(0, CLONE_COUNT).map((item, index) => (
+            <a
+              href={item.href}
+              class="card card-clone flex-shrink-0 w-[280px] sm:w-[320px] group"
+              data-index={index}
+              aria-hidden="true"
+              tabindex="-1"
+            >
+              <div class="card-shell ios-clip relative h-[380px] rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <img
+                  src={item.image}
+                  alt=""
+                  loading="lazy"
+                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 will-change-transform group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10"></div>
+                <div class="absolute top-4 right-4">
+                  <div class={`w-14 h-14 ${colorClasses[item.color].badge} backdrop-blur-sm rounded-xl flex items-center justify-center text-3xl shadow-lg transition-transform duration-300 will-change-transform group-hover:scale-110 group-hover:rotate-6`}>
+                    {item.icon}
+                  </div>
+                </div>
+                <div class="absolute top-4 left-4 text-8xl font-black text-white/10 leading-none select-none">
+                  {index + 1}
+                </div>
+                <div class="absolute bottom-0 left-0 right-0 p-5">
+                  <span class={`inline-block px-3 py-1 ${colorClasses[item.color].badge} backdrop-blur-sm rounded-full text-white text-xs font-semibold mb-2`}>
+                    {item.subtitle}
+                  </span>
+                  <h3 class="text-2xl font-bold text-white mb-2">{item.title}</h3>
+                  <p class="text-white/80 text-sm mb-3 line-clamp-2">{item.description}</p>
+                  <div class="flex flex-wrap gap-1 mb-4">
+                    {item.features.slice(0, 2).map((f) => (
+                      <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-white/20 backdrop-blur-sm rounded text-white text-xs">
+                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        {f}
+                      </span>
+                    ))}
+                  </div>
+                  <span class="inline-flex items-center gap-2 text-white font-semibold text-sm transition-all group-hover:gap-3">
+                    Böngésszen
+                    <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Pöttyök (csak mobilon) -->
+      <div class="flex justify-center gap-2 mt-7">
+        {useCases.map((item, index) => (
+          <button
+            type="button"
+            class={`carousel-dot w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+              index === 0 ? `w-8 ${colorClasses[item.color].dot}` : 'bg-gray-300 dark:bg-slate-600 hover:bg-gray-400'
+            }`}
+            data-index={index}
+            data-color={item.color}
+            aria-label={item.title}
+          />
+        ))}
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- TABLET+ GRID (md-től) -->
+    <!-- ===================== -->
+    <div class="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+      {useCases.slice(0, 4).map((item, index) => (
+        <a
+          href={item.href}
+          class="group block rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+          aria-label={`${item.title} – ${item.subtitle}`}
+        >
+          <div class="card-shell ios-clip relative h-[340px] sm:h-[360px] lg:h-[380px] rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src={item.image}
+              alt={item.title}
+              loading="lazy"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 will-change-transform group-hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10"></div>
+
+            <div class="absolute top-4 right-4">
+              <div
+                class={`w-14 h-14 ${colorClasses[item.color].badge} backdrop-blur-sm rounded-xl flex items-center justify-center text-3xl shadow-lg transition-transform duration-300 will-change-transform group-hover:scale-110 group-hover:rotate-6`}
+              >
+                {item.icon}
+              </div>
+            </div>
+
+            <div class="absolute top-4 left-4 text-7xl sm:text-8xl font-black text-white/10 leading-none select-none">
+              {index + 1}
+            </div>
+
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <span class={`inline-block px-3 py-1 ${colorClasses[item.color].badge} backdrop-blur-sm rounded-full text-white text-xs font-semibold mb-2`}>
+                {item.subtitle}
+              </span>
+              <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">{item.title}</h3>
+              <p class="text-white/80 text-sm mb-3 line-clamp-2">{item.description}</p>
+
+              <div class="flex flex-wrap gap-1 mb-4">
+                {item.features.slice(0, 2).map((f) => (
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-white/20 backdrop-blur-sm rounded text-white text-xs">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    {f}
+                  </span>
+                ))}
+              </div>
+
+              <span class="inline-flex items-center gap-2 text-white font-semibold text-sm transition-all group-hover:gap-3">
+                Böngésszen
+                <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</WidgetWrapper>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* iOS / mobil “kerek sarok törés” fix transform + overflow esetén */
+  .ios-clip {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+            mask-image: radial-gradient(white, black);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+</style>
+
+<script is:inline>
+document.addEventListener('DOMContentLoaded', function() {
+  var carousel = document.querySelector('.usecases-carousel');
+  if (!carousel) return;
+
+  var track = carousel.querySelector('.cards-track');
+  var dots = carousel.querySelectorAll('.carousel-dot');
+  if (!track) return;
+
+  var dotColors = {
+    emerald: 'bg-emerald-500',
+    purple: 'bg-purple-500',
+    teal: 'bg-teal-500',
+    slate: 'bg-slate-500',
+    amber: 'bg-amber-500',
+    blue: 'bg-blue-500'
+  };
+
+  // csak mobilon fusson
+  var mq = window.matchMedia('(max-width: 767px)');
+
+  var total = dots.length; // ennyi “valódi” slide van
+  var current = 0;
+  var timer = null;
+
+  // ✅ TIMER: itt állítod az ugrás gyakoriságát (ms)
+  var autoplayDelay = 4000;
+
+  function getStepWidth() {
+    // kártya szélesség + gap (dinamikus, pontos)
+    var first = track.querySelector('.card');
+    if (!first) return 0;
+
+    var cardW = first.getBoundingClientRect().width;
+
+    var cs = window.getComputedStyle(track);
+    var gap = parseFloat(cs.columnGap || cs.gap || '0') || 0;
+
+    return cardW + gap;
+  }
+
+  function updateDots(index) {
+    var dotIndex = ((index % total) + total) % total;
+
+    dots.forEach(function(dot, i) {
+      var color = dot.dataset.color;
+      dot.className = 'carousel-dot w-2.5 h-2.5 rounded-full transition-all duration-300';
+
+      if (i === dotIndex) {
+        dot.classList.add('w-8', dotColors[color]);
+      } else {
+        dot.classList.add('bg-gray-300', 'dark:bg-slate-600', 'hover:bg-gray-400');
+      }
+    });
+  }
+
+  function goTo(index, animate) {
+    if (!mq.matches) return; // safety
+
+    if (animate === undefined) animate = true;
+
+    current = index;
+    var step = getStepWidth();
+    var offset = step * current;
+
+    track.style.transition = animate ? 'transform 0.5s ease-out' : 'none';
+    track.style.transform = 'translateX(-' + offset + 'px)';
+
+    updateDots(current);
+  }
+
+  function next() {
+    current++;
+    goTo(current, true);
+
+    // elértük a klón zónát: ugorjunk vissza 0-ra anim nélkül
+    if (current >= total) {
+      setTimeout(function() {
+        goTo(0, false);
+      }, 520);
+    }
+  }
+
+  function prev() {
+    current--;
+    if (current < 0) {
+      // ugorjunk a klón zónába, majd animáljunk vissza az utolsóra
+      goTo(total, false);
+      setTimeout(function() {
+        current = total - 1;
+        goTo(current, true);
+      }, 20);
+    } else {
+      goTo(current, true);
+    }
+  }
+
+  function startAutoplay() {
+    stopAutoplay();
+    timer = setInterval(next, autoplayDelay);
+  }
+
+  function stopAutoplay() {
+    if (timer) { clearInterval(timer); timer = null; }
+  }
+
+  function enable() {
+    // init
+    goTo(0, false);
+    startAutoplay();
+
+    // dot click
+    dots.forEach(function(dot, i) {
+      dot.addEventListener('click', function() {
+        current = i;
+        goTo(current, true);
+        startAutoplay();
+      });
+    });
+
+    // pause on hover (ha van)
+    carousel.addEventListener('mouseenter', stopAutoplay);
+    carousel.addEventListener('mouseleave', startAutoplay);
+
+    // touch swipe
+    var touchStartX = 0;
+    carousel.addEventListener('touchstart', function(e) {
+      touchStartX = e.touches[0].clientX;
+      stopAutoplay();
+    }, { passive: true });
+
+    carousel.addEventListener('touchend', function(e) {
+      var diff = touchStartX - e.changedTouches[0].clientX;
+      if (diff > 50) next();
+      else if (diff < -50) prev();
+      startAutoplay();
+    }, { passive: true });
+
+    window.addEventListener('resize', function() {
+      if (!mq.matches) return;
+      goTo(current, false);
+    });
+  }
+
+  // csak mobilon induljon
+  if (mq.matches) enable();
+
+  // ha átmész tablet/desktopra, álljon le (nincs “félrecsúszás”)
+  mq.addEventListener('change', function(e) {
+    if (e.matches) {
+      enable();
+    } else {
+      stopAutoplay();
+      track.style.transition = 'none';
+      track.style.transform = 'translateX(0px)';
+    }
+  });
+});
+</script>

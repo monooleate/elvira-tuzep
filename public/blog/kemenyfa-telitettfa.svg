@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- Hardwood grain pattern -->
+    <pattern id="hardwoodGrain" x="0" y="0" width="20" height="8" patternUnits="userSpaceOnUse">
+      <rect width="20" height="8" fill="#8B5E3C"/>
+      <path d="M0 4 Q5 2 10 4 T20 4" fill="none" stroke="#6D4528" stroke-width="0.8" opacity="0.6"/>
+      <path d="M0 7 Q5 5 10 7 T20 7" fill="none" stroke="#6D4528" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <!-- Treated wood grain pattern -->
+    <pattern id="treatedGrain" x="0" y="0" width="22" height="10" patternUnits="userSpaceOnUse">
+      <rect width="22" height="10" fill="#7BA88C"/>
+      <path d="M0 5 Q5 3 11 5 T22 5" fill="none" stroke="#5C8A6A" stroke-width="0.7" opacity="0.5"/>
+      <path d="M0 8 Q6 6 11 8 T22 8" fill="none" stroke="#5C8A6A" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFF7ED"/>
+      <stop offset="50%" stop-color="#F0FDF4"/>
+      <stop offset="100%" stop-color="#ECFDF5"/>
+    </linearGradient>
+    <!-- Hardwood plank gradient -->
+    <linearGradient id="hardwoodTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A0714F"/>
+      <stop offset="100%" stop-color="#8B5E3C"/>
+    </linearGradient>
+    <!-- Treated plank gradient -->
+    <linearGradient id="treatedTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8FBF9E"/>
+      <stop offset="100%" stop-color="#7BA88C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="16"/>
+  <rect width="800" height="400" fill="none" stroke="#E5E7EB" stroke-width="1" rx="16"/>
+
+  <!-- ===== LEFT SIDE: HARDWOOD ===== -->
+  <g transform="translate(60, 55)">
+    <!-- Section background card -->
+    <rect x="-20" y="-15" width="310" height="320" rx="12" fill="white" opacity="0.6" filter="url(#softShadow)"/>
+
+    <!-- Hardwood plank - 3D perspective -->
+    <!-- Side face -->
+    <path d="M30,60 L30,200 L50,215 L50,75 Z" fill="#6D4528" filter="url(#shadow)"/>
+    <!-- Bottom face -->
+    <path d="M30,200 L50,215 L250,215 L230,200 Z" fill="#7A5233"/>
+    <!-- Top face (main) -->
+    <rect x="30" y="60" width="200" height="140" rx="3" fill="url(#hardwoodGrain)" filter="url(#shadow)"/>
+    <!-- Top highlight -->
+    <rect x="30" y="60" width="200" height="140" rx="3" fill="url(#hardwoodTop)" opacity="0.3"/>
+    <!-- Dense grain lines on top -->
+    <g opacity="0.35">
+      <path d="M40 80 Q90 75 140 82 T230 78" fill="none" stroke="#5C3D1E" stroke-width="1.2"/>
+      <path d="M40 95 Q80 90 130 97 T230 93" fill="none" stroke="#5C3D1E" stroke-width="1"/>
+      <path d="M40 108 Q95 103 140 110 T230 106" fill="none" stroke="#5C3D1E" stroke-width="1.3"/>
+      <path d="M40 122 Q85 117 135 124 T230 120" fill="none" stroke="#5C3D1E" stroke-width="0.9"/>
+      <path d="M40 135 Q90 130 140 137 T230 133" fill="none" stroke="#5C3D1E" stroke-width="1.1"/>
+      <path d="M40 148 Q80 143 130 150 T230 146" fill="none" stroke="#5C3D1E" stroke-width="1"/>
+      <path d="M40 162 Q95 157 145 164 T230 160" fill="none" stroke="#5C3D1E" stroke-width="1.2"/>
+      <path d="M40 175 Q85 170 135 177 T230 173" fill="none" stroke="#5C3D1E" stroke-width="0.8"/>
+      <path d="M40 188 Q90 183 140 190 T230 186" fill="none" stroke="#5C3D1E" stroke-width="1"/>
+    </g>
+    <!-- Knot detail -->
+    <ellipse cx="160" cy="130" rx="12" ry="10" fill="#5C3D1E" opacity="0.3"/>
+    <ellipse cx="160" cy="130" rx="8" ry="6" fill="#4A2E14" opacity="0.2"/>
+
+    <!-- Price tag icon (expensive) -->
+    <g transform="translate(20, 235)">
+      <rect x="0" y="0" width="48" height="48" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+      <!-- Tag shape -->
+      <path d="M14 16 L30 16 L36 24 L30 32 L14 32 Z" fill="none" stroke="#B45309" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="31" cy="24" r="2" fill="#B45309"/>
+      <!-- Multiple dollar signs (expensive) -->
+      <text x="20" y="28" text-anchor="middle" font-size="10" font-weight="bold" fill="#B45309">$$$</text>
+    </g>
+
+    <!-- Clock icon (lifespan) -->
+    <g transform="translate(80, 235)">
+      <rect x="0" y="0" width="48" height="48" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+      <circle cx="24" cy="24" r="14" fill="none" stroke="#B45309" stroke-width="2"/>
+      <line x1="24" y1="24" x2="24" y2="15" stroke="#B45309" stroke-width="2" stroke-linecap="round"/>
+      <line x1="24" y1="24" x2="31" y2="24" stroke="#B45309" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="24" cy="24" r="2" fill="#B45309"/>
+    </g>
+
+    <!-- Weight icon (heavy) -->
+    <g transform="translate(140, 235)">
+      <rect x="0" y="0" width="48" height="48" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+      <!-- Dumbbell / heavy indicator -->
+      <rect x="10" y="20" width="8" height="8" rx="1" fill="#B45309"/>
+      <rect x="30" y="20" width="8" height="8" rx="1" fill="#B45309"/>
+      <rect x="17" y="22" width="14" height="4" rx="1" fill="#B45309"/>
+      <!-- Down arrow (heavy) -->
+      <path d="M24 34 L20 30 M24 34 L28 30" stroke="#B45309" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Amber accent bar at bottom -->
+    <rect x="20" y="295" width="230" height="4" rx="2" fill="#D97706" opacity="0.6"/>
+  </g>
+
+  <!-- ===== CENTER DIVIDER ===== -->
+  <g transform="translate(370, 80)">
+    <!-- VS circle -->
+    <circle cx="30" cy="120" r="36" fill="white" stroke="#CBD5E1" stroke-width="2" filter="url(#shadow)"/>
+    <circle cx="30" cy="120" r="30" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <!-- Lightning bolt divider -->
+    <path d="M30 90 L22 118 L32 114 L24 150" fill="none" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Vertical dashed line -->
+    <line x1="30" y1="0" x2="30" y2="75" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <line x1="30" y1="165" x2="30" y2="260" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="6 4"/>
+  </g>
+
+  <!-- ===== RIGHT SIDE: TREATED PINE ===== -->
+  <g transform="translate(470, 55)">
+    <!-- Section background card -->
+    <rect x="-20" y="-15" width="310" height="320" rx="12" fill="white" opacity="0.6" filter="url(#softShadow)"/>
+
+    <!-- Treated plank - 3D perspective -->
+    <!-- Side face -->
+    <path d="M30,60 L30,200 L50,215 L50,75 Z" fill="#5C8A6A" filter="url(#shadow)"/>
+    <!-- Bottom face -->
+    <path d="M30,200 L50,215 L250,215 L230,200 Z" fill="#689B79"/>
+    <!-- Top face (main) -->
+    <rect x="30" y="60" width="200" height="140" rx="3" fill="url(#treatedGrain)" filter="url(#shadow)"/>
+    <!-- Green tint overlay for treatment -->
+    <rect x="30" y="60" width="200" height="140" rx="3" fill="url(#treatedTop)" opacity="0.25"/>
+    <!-- Lighter grain lines -->
+    <g opacity="0.3">
+      <path d="M40 82 Q90 77 140 84 T230 80" fill="none" stroke="#3D6B4F" stroke-width="1"/>
+      <path d="M40 100 Q80 95 130 102 T230 98" fill="none" stroke="#3D6B4F" stroke-width="0.8"/>
+      <path d="M40 118 Q95 113 140 120 T230 116" fill="none" stroke="#3D6B4F" stroke-width="1.1"/>
+      <path d="M40 136 Q85 131 135 138 T230 134" fill="none" stroke="#3D6B4F" stroke-width="0.7"/>
+      <path d="M40 154 Q90 149 140 156 T230 152" fill="none" stroke="#3D6B4F" stroke-width="1"/>
+      <path d="M40 172 Q80 167 130 174 T230 170" fill="none" stroke="#3D6B4F" stroke-width="0.9"/>
+      <path d="M40 188 Q95 183 145 190 T230 186" fill="none" stroke="#3D6B4F" stroke-width="0.8"/>
+    </g>
+    <!-- Small Tanalith treatment marks -->
+    <g opacity="0.15">
+      <circle cx="80" cy="100" r="15" fill="#059669"/>
+      <circle cx="180" cy="150" r="12" fill="#059669"/>
+      <circle cx="120" cy="170" r="10" fill="#059669"/>
+    </g>
+
+    <!-- Price tag icon (affordable) -->
+    <g transform="translate(20, 235)">
+      <rect x="0" y="0" width="48" height="48" rx="10" fill="#D1FAE5" stroke="#059669" stroke-width="1.5"/>
+      <path d="M14 16 L30 16 L36 24 L30 32 L14 32 Z" fill="none" stroke="#047857" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="31" cy="24" r="2" fill="#047857"/>
+      <text x="20" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#047857">$</text>
+    </g>
+
+    <!-- Clock icon (long lifespan) -->
+    <g transform="translate(80, 235)">
+      <rect x="0" y="0" width="48" height="48" rx="10" fill="#D1FAE5" stroke="#059669" stroke-width="1.5"/>
+      <circle cx="24" cy="24" r="14" fill="none" stroke="#047857" stroke-width="2"/>
+      <line x1="24" y1="24" x2="24" y2="14" stroke="#047857" stroke-width="2" stroke-linecap="round"/>
+      <line x1="24" y1="24" x2="32" y2="28" stroke="#047857" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="24" cy="24" r="2" fill="#047857"/>
+      <!-- Checkmark overlay -->
+      <path d="M34 12 L37 15 L42 8" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Shield icon (protection) -->
+    <g transform="translate(140, 235)">
+      <rect x="0" y="0" width="48" height="48" rx="10" fill="#D1FAE5" stroke="#059669" stroke-width="1.5"/>
+      <path d="M24 10 L36 16 L36 28 Q36 36 24 40 Q12 36 12 28 L12 16 Z" fill="none" stroke="#047857" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M18 24 L22 28 L30 20" fill="none" stroke="#047857" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Emerald accent bar at bottom -->
+    <rect x="20" y="295" width="230" height="4" rx="2" fill="#059669" opacity="0.6"/>
+  </g>
+
+  <!-- Decorative corner accents -->
+  <circle cx="20" cy="20" r="4" fill="#D97706" opacity="0.2"/>
+  <circle cx="780" cy="20" r="4" fill="#059669" opacity="0.2"/>
+  <circle cx="20" cy="380" r="4" fill="#D97706" opacity="0.2"/>
+  <circle cx="780" cy="380" r="4" fill="#059669" opacity="0.2"/>
+</svg>

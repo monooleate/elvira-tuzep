@@ -5,7 +5,9 @@ import Button from '~/components/ui/Button.astro';
 const { inputs, textarea, disclaimer, button = 'Kapcsolatba lépek', description = '' } = Astro.props;
 ---
 
-<form method="POST" id="contact-form">
+<form method="POST" name="contact" id="contact-form" data-netlify="true" netlify-honeypot="bot-field" data-astro-reload>
+  <input type="hidden" name="form-name" value="contact" />
+  <p class="hidden"><label>Ne töltsd ki: <input name="bot-field" /></label></p>
   {
     inputs &&
       inputs.map(

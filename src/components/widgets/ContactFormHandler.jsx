@@ -10,33 +10,17 @@ export default function ContactFormHandler() {
       e.preventDefault();
       const formData = new FormData(form);
 
-      const data = {
-        name: formData.get('name') || '',
-        email: formData.get('email') || '',
-        phone: formData.get('phone') || '',
-        message: formData.get('message') || '',
-        quantity: '',
-        product: {
-          name: '',
-          slug: '',
-          price: '',
-          sku: '',
-        },
-      };
-
       try {
-        const res = await fetch('/api/offer', {
+        const res = await fetch('/', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data),
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString(),
         });
 
-        const result = await res.json();
-        if (res.ok && result.success) {
-          alert('Köszönjük, üzeneted elküldtük!');
-          form.reset();
+        if (res.ok) {
+          window.location.href = '/koszonjuk';
         } else {
-          alert(result.error || 'Hiba történt az elküldés során.');
+          alert('Hiba történt az elküldés során. Kérjük próbáld újra.');
         }
       } catch (err) {
         alert('Hálózati hiba: ' + err.message);

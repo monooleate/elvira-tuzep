@@ -1,0 +1,428 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Növénykarók és Szőlőkarók Telített Fából | Paradicsom, Szőlő, Gyümölcsfa | Elvira Tüzép',
+  description: 'Növénykarók és szőlőkarók telített fából: hegyezett cölöpök szőlőhöz, paradicsomhoz, gyümölcsfákhoz és kúszónövényekhez. Tanalith-kezelt, UC4 minősítés, 15-25 év élettartam. Országos szállítás!',
+  canonical: 'https://elviratuzep.hu/felhasznalasok/novenytamaszok',
+  openGraph: {
+    type: 'website',
+    title: 'Növénykarók és Szőlőkarók Telített Fából | Elvira Tüzép',
+    description: 'Hegyezett cölöpök és növénykarók telített borovifából szőlőhöz, paradicsomhoz, gyümölcsfákhoz. 15-25 év tartósság, UC4 minősítés.',
+    image: '~/assets/images/og-faultetes.jpg',
+  },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Mennyi ideig tart a telített fa szőlőkaró a földben?', acceptedAnswer: { '@type': 'Answer', text: 'A nyomás alatt impregnált (UC4) szőlőkaró 15-25 évig tart a földben, még állandó nedvesség mellett is. A kezeletlen fa karó 2-3 év alatt elrohad.' } },
+    { '@type': 'Question', name: 'Biztonságos a telített fa szőlőhöz és zöldségekhez?', acceptedAnswer: { '@type': 'Answer', text: 'Igen. A Tanalith kezelés nem tartalmaz krómot vagy arzént. Az impregnálószer a fa rostjaiba rögzül, nem mosódik ki. Biztonságos szőlészetben és konyhakertben is.' } },
+    { '@type': 'Question', name: 'Milyen méretű szőlőkarót válasszak?', acceptedAnswer: { '@type': 'Answer', text: 'Köztes karókhoz: Ø4 cm, 200-220 cm. Végoszlopokhoz: Ø5-6 cm, 250 cm. Ajánlott karótávolság: 4-6 méter.' } },
+    { '@type': 'Question', name: 'Hány szőlőkaró kell hektáronként?', acceptedAnswer: { '@type': 'Answer', text: '6 m-es karótávolsággal és 2,2 m sortávolsággal kb. 760 db/ha. 4 m-es karótávolsággal kb. 1.170 db/ha.' } },
+    { '@type': 'Question', name: 'Hogyan kell leveréni a karókat?', acceptedAnswer: { '@type': 'Answer', text: 'A hegyezett karókat fa kalapáccsal vagy cölöpverővel 50-60 cm mélyre verjük. Kemény talajnál előfúrás ajánlott. Betonozás nem szükséges.' } },
+    { '@type': 'Question', name: 'Használhatom ugyanazokat a paradicsom karókat több évig?', acceptedAnswer: { '@type': 'Answer', text: 'Igen! A telített fa karók 15+ éven át újrahasználhatók szezonról szezonra. Szezon végén kihúzhatók és szárazon tárolhatók.' } },
+    { '@type': 'Question', name: 'Mi a különbség a mártott és a nyomás alatt impregnált fa között?', acceptedAnswer: { '@type': 'Answer', text: 'A mártott fa csak felszínileg védett (2-3 év). A nyomás alatt impregnált fában a védőanyag mélyre hatol (15-25 év). Földbe ásott karókhoz kizárólag nyomás alatti impregnálást használjon!' } },
+    { '@type': 'Question', name: 'Szállítanak nagy mennyiséget is?', acceptedAnswer: { '@type': 'Answer', text: 'Igen! Raklapon szállítunk az ország bármely pontjára. Nagy rendelésekhez kedvezményes árakat kínálunk. Kérjen árajánlatot!' } },
+  ],
+};
+
+const meretekFelhasznalashoz = [
+  { hasznalat: 'Szőlő', atmero: '4-5', hossz: '200-250', melyseg: '50-60', megjegyzes: 'Legnépszerűbb – klasszikus szőlőkaró' },
+  { hasznalat: 'Paradicsom / zöldségek', atmero: '3-4', hossz: '100-150', melyseg: '30-40', megjegyzes: 'Vékony, könnyen kezelhető' },
+  { hasznalat: 'Fiatal gyümölcsfák', atmero: '5-6', hossz: '200-300', melyseg: '60-80', megjegyzes: 'Erős, az első 2-3 évre' },
+  { hasznalat: 'Díszcserjék', atmero: '4-5', hossz: '150-200', melyseg: '40-50', megjegyzes: 'Ideiglenes vagy állandó támasz' },
+  { hasznalat: 'Élő sövény', atmero: '3-4', hossz: '150-200', melyseg: '40-50', megjegyzes: 'Sorvezetés, rögzítés' },
+  { hasznalat: 'Bab / kúszónövények', atmero: '3-4', hossz: '200-250', melyseg: '40-50', megjegyzes: 'Zsinórral köthetők' },
+];
+---
+
+<Layout metadata={metadata}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+
+  <Hero id="hero" tagline="Növénykarók és Szőlőkarók Telített Fából" title="Szőlőkarók és Növénykarók – Nyomás Alatt Impregnált, Évtizedekig Tartós Fa"
+    actions={[
+      { variant: 'primary', text: 'Árajánlat kérése', href: '/kapcsolat', icon: 'tabler:mail' },
+      { variant: 'secondary', text: 'Ajánlott méretek', href: '#meretek', icon: 'tabler:ruler' },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      <div class="space-y-3">
+        <p class="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-200">
+          <span class="text-purple-600 dark:text-purple-400 font-bold">Szőlőkarók</span>,
+          <span class="text-red-600 dark:text-red-400 font-bold">paradicsom karók</span>,
+          <span class="text-emerald-600 dark:text-emerald-400 font-bold">gyümölcsfa támaszok</span> –
+          telített borovifából, nyomás alatt impregnálva, 15-25 év élettartammal.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-4 pb-4">
+          <div class="inline-flex items-center gap-2 bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 px-4 py-2 rounded-full font-semibold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            <span>15-25 év tartósság</span>
+          </div>
+          <div class="inline-flex items-center gap-2 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-300 px-4 py-2 rounded-full font-semibold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            <span>UC4 minősítés</span>
+          </div>
+          <div class="inline-flex items-center gap-2 bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 px-4 py-2 rounded-full font-semibold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>Hegyezett vég</span>
+          </div>
+          <div class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 px-4 py-2 rounded-full font-semibold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" /></svg>
+            <span>Kerek keresztmetszet</span>
+          </div>
+        </div>
+      </div>
+    </Fragment>
+  </Hero>
+
+  <!-- 2. PROBLÉMA ÉS MEGOLDÁS -->
+  <section class="py-12 md:py-16 bg-gradient-to-r from-red-50 via-white to-emerald-50 dark:from-slate-900 dark:via-slate-800 dark:to-emerald-950/20">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <span class="inline-block bg-purple-100 dark:bg-purple-800/60 text-purple-700 dark:text-purple-200 text-sm font-semibold px-4 py-1 rounded-full mb-4">Miért telített fa karókat?</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">A kezeletlen fa karók 2-3 év alatt elrohadnak. A mieink 15-25 évig tartanak.</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="bg-red-50 dark:bg-red-950/30 rounded-2xl p-6 border-2 border-red-200 dark:border-red-800">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+            </div>
+            <h3 class="text-xl font-bold text-red-800 dark:text-red-200">A kezeletlen karók problémája</h3>
+          </div>
+          <ul class="space-y-3 text-red-700 dark:text-red-300">
+            <li class="flex items-start gap-2"><span class="text-red-500 mt-1 font-bold">&#10007;</span><span>A kezeletlen fa karók 2-3 év alatt elrohadnak a földben</span></li>
+            <li class="flex items-start gap-2"><span class="text-red-500 mt-1 font-bold">&#10007;</span><span>Gyakori csere – plusz költség és munka</span></li>
+            <li class="flex items-start gap-2"><span class="text-red-500 mt-1 font-bold">&#10007;</span><span>A mártott fa csak felszínileg védett, hamar bomlik</span></li>
+            <li class="flex items-start gap-2"><span class="text-red-500 mt-1 font-bold">&#10007;</span><span>Fém karók drágák és korrodálódnak</span></li>
+            <li class="flex items-start gap-2"><span class="text-red-500 mt-1 font-bold">&#10007;</span><span>1 ha szőlőnél a karócsere évi több százezer Ft</span></li>
+          </ul>
+        </div>
+        <div class="bg-emerald-50 dark:bg-emerald-950/30 rounded-2xl p-6 border-2 border-emerald-200 dark:border-emerald-800">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 bg-emerald-500 rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            </div>
+            <h3 class="text-xl font-bold text-emerald-800 dark:text-emerald-200">Megoldás: nyomás alatt impregnált fa</h3>
+          </div>
+          <ul class="space-y-3 text-emerald-700 dark:text-emerald-300">
+            <li class="flex items-start gap-2"><span class="text-emerald-500 mt-1 font-bold">&#10003;</span><span><strong>15-25 évig tart</strong> a földben, rothadás nélkül</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-500 mt-1 font-bold">&#10003;</span><span>Nyomás alatti kezelés – <strong>mélyre hatoló védelem</strong></span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-500 mt-1 font-bold">&#10003;</span><span><strong>UC4</strong> minősítés – állandó földkontaktusra</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-500 mt-1 font-bold">&#10003;</span><span>Egyszer befektet, <strong>évtizedekig használja</strong></span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-500 mt-1 font-bold">&#10003;</span><span>Környezetbarát <strong>Tanalith, nehézfém-mentes</strong></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. FELHASZNÁLÁSI TERÜLETEK -->
+  <Features id="felhasznalasok" title="Növénykarók és Szőlőkarók Minden Igényre" subtitle="Telített fa – az univerzális megoldás növénytámasztásra a kertben és a szőlőben" columns={3}
+    items={[
+      { title: 'Szőlő', description: 'Tartós szőlőkarók szőlészethez. Ø4-5 cm, 200-250 cm. Évtizedekig bírja a lombozat és termés terhét.', icon: 'tabler:plant' },
+      { title: 'Paradicsom és zöldségek', description: 'Vékony karók (Ø3-4 cm) paradicsomhoz, paprikához, uborkához. 100-150 cm, könnyen kezelhető.', icon: 'tabler:salad' },
+      { title: 'Díszcserjék', description: 'Támasz fiatal cserjéknek, rózsáknak. Stabilizálja a növényt meggyökeresedésig. Ø4-5 cm.', icon: 'tabler:tree' },
+      { title: 'Fiatal gyümölcsfák', description: 'Erős karók (Ø5-6 cm) almafa, körtefa, cseresznye csemeték támasztásához az első 2-3 évben.', icon: 'tabler:apple' },
+      { title: 'Bab és kúszónövények', description: 'Magas karók (200-250 cm) babhoz, borsóhoz, uborkához. Zsinórral összekötve támasztószerkezet.', icon: 'tabler:plant-2' },
+      { title: 'Élő sövények', description: 'Karók frissen ültetett sövények sorvezetéséhez. Egyenes sort tartanak, amíg a növény megerősödik.', icon: 'tabler:line-height' },
+    ]}
+  >
+    <Fragment slot="bg"><div class="absolute inset-0 bg-purple-50 dark:bg-slate-900/50"></div></Fragment>
+  </Features>
+
+  <!-- 4. MÉRET TÁBLÁZAT -->
+  <section id="meretek" class="py-12 md:py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <span class="inline-block bg-purple-100 dark:bg-purple-800/60 text-purple-700 dark:text-purple-200 text-sm font-semibold px-4 py-1 rounded-full mb-4">📏 Méret útmutató</span>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Milyen méretű karót válasszak?</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Válassza ki a megfelelő méretet a támasztandó növény típusa alapján.</p>
+      </div>
+      <div class="overflow-x-auto rounded-xl shadow-lg">
+        <table class="w-full bg-white dark:bg-slate-800">
+          <thead>
+            <tr class="bg-purple-700 dark:bg-purple-800 text-white">
+              <th class="py-4 px-4 text-left font-bold">Felhasználás</th>
+              <th class="py-4 px-4 text-center font-bold">Átmérő (cm)</th>
+              <th class="py-4 px-4 text-center font-bold">Hossz (cm)</th>
+              <th class="py-4 px-4 text-center font-bold">Leásási mélység</th>
+              <th class="py-4 px-4 text-left font-bold hidden md:table-cell">Megjegyzés</th>
+            </tr>
+          </thead>
+          <tbody>
+            {meretekFelhasznalashoz.map((item, index) => (
+              <tr class={`border-b border-gray-100 dark:border-slate-700 ${index === 0 ? 'bg-purple-50 dark:bg-purple-950/20 font-semibold' : index % 2 === 0 ? 'bg-gray-50 dark:bg-slate-800/80' : 'bg-white dark:bg-slate-800'}`}>
+                <td class="py-4 px-4">
+                  <span class="flex items-center gap-2">
+                    {index === 0 && <span class="inline-block bg-purple-500 text-white text-xs font-bold px-2 py-0.5 rounded">TOP</span>}
+                    <span class="text-gray-800 dark:text-gray-100">{item.hasznalat}</span>
+                  </span>
+                </td>
+                <td class="py-4 px-4 text-center"><span class="text-gray-600 dark:text-gray-300">&empty;{item.atmero} cm</span></td>
+                <td class="py-4 px-4 text-center font-semibold text-gray-800 dark:text-gray-100">{item.hossz} cm</td>
+                <td class="py-4 px-4 text-center text-gray-600 dark:text-gray-300">{item.melyseg} cm</td>
+                <td class="py-4 px-4 text-gray-600 dark:text-gray-300 text-sm hidden md:table-cell">{item.megjegyzes}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-6 grid md:grid-cols-2 gap-4">
+        <div class="bg-purple-50 dark:bg-purple-900/40 rounded-xl p-4 border border-purple-200 dark:border-purple-700">
+          <h4 class="font-bold text-purple-800 dark:text-purple-200 mb-2">💡 Tipp: Átmérő választás</h4>
+          <p class="text-sm text-purple-700 dark:text-purple-300">Szőlőhöz az ideális átmérő <strong class="text-purple-900 dark:text-purple-100">4-5 cm</strong>. Vékonyabb eltörhet, vastagabb feleslegesen drága.</p>
+        </div>
+        <div class="bg-blue-50 dark:bg-blue-900/40 rounded-xl p-4 border border-blue-200 dark:border-blue-700">
+          <h4 class="font-bold text-blue-800 dark:text-blue-200 mb-2">💡 Tipp: Hossz választás</h4>
+          <p class="text-sm text-blue-700 dark:text-blue-300">Általános szabály: <strong class="text-blue-900 dark:text-blue-100">1/4 a földbe</strong>, 3/4 felül. 180 cm szőlőhöz min. 240 cm karó.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SZŐLŐ RÉSZLETEK -->
+  <Content id="szolo" isReversed title="Szőlőkarók – A Szőlészet #1 Befektetése" subtitle="Miért választják a magyar szőlészek a telített fa szőlőkarókat"
+    items={[
+      { title: 'Kiváló tartósság a földben', description: 'Nyomás alatt impregnált karók 15-25 évig tartanak nedves földben, szemben a kezeletlen fa 2-3 évével. 3.000-5.000 karós szőlőnél több százezer Ft megtakarítás.' },
+      { title: 'UC4 minősítés – állandó földkontaktus', description: 'Az UC4 garantálja az állandó föld- és vízérintkezést. Pont az a környezet, amiben egy szőlőkaró dolgozik.' },
+      { title: 'Ideális kordon- és spalérrendszerhez', description: 'Végoszlopok és köztes karók alkotják a spalérrendszer alapját. A huzal közöttük feszül, tartva a szőlőtőkéket.' },
+      { title: 'Környezetbarát Tanalith kezelés', description: 'Króm- és arzénmentes – biztonságos a talajra, nem befolyásolja a szőlő vagy a bor minőségét.' },
+    ]}
+    callToAction={{ text: 'Árajánlat szőlőkaróra →', href: '/kapcsolat' }}
+    classes={{ container: 'bg-purple-50 dark:bg-purple-950/20' }}
+  >
+    <Fragment slot="content">
+      <div class="bg-purple-100 dark:bg-purple-900/40 rounded-xl p-6 border-l-4 border-purple-500">
+        <h3 class="text-xl font-bold text-purple-800 dark:text-purple-200 mb-3">📐 Ajánlott méretek szőlőhöz</h3>
+        <div class="space-y-2 text-purple-700 dark:text-purple-300 text-sm">
+          <p><strong>Köztes karók:</strong> Ø4 cm x 200-220 cm</p>
+          <p><strong>Végoszlopok (horgony):</strong> Ø5-6 cm x 250 cm</p>
+          <p><strong>Sarokoszlopok:</strong> Ø6 cm x 250 cm (erősebb)</p>
+          <p><strong>Karók közötti távolság:</strong> 4-6 méter soronként</p>
+          <p><strong>Leásási mélység:</strong> 50-60 cm</p>
+        </div>
+      </div>
+    </Fragment>
+    <Fragment slot="image">
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <img src="/images/szolo-karo.svg" alt="Szőlőkarók telített fából szőlőültetvényben" class="w-full h-auto" loading="lazy" />
+      </div>
+    </Fragment>
+  </Content>
+
+  <!-- 6. KALKULÁTOR TÁBLÁZAT -->
+  <section id="kalkulator" class="py-12 md:py-16 bg-gradient-to-br from-violet-50 via-white to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <span class="inline-block bg-violet-100 dark:bg-violet-800/60 text-violet-700 dark:text-violet-200 text-sm font-semibold px-4 py-1 rounded-full mb-4">Kalkulátor</span>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Hány szőlőkaróra van szüksége?</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Gyorsan kiszámíthatja a szükséges karók számát a szőlő területe és az oszloptávolság alapján.</p>
+      </div>
+      <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 md:p-8 border-2 border-violet-200 dark:border-violet-700">
+        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">Gyors referencia: szőlőkarók hektáronként</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-6 text-center">Alapja: 1 hektár (10.000 m²), 2,2 m sortávolság.</p>
+        <div class="overflow-x-auto rounded-lg">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-violet-600 dark:bg-violet-700 text-white">
+                <th class="py-3 px-4 text-left">Karók távolsága</th>
+                <th class="py-3 px-4 text-center">Karó / sor (100m)</th>
+                <th class="py-3 px-4 text-center">Sorok / hektár</th>
+                <th class="py-3 px-4 text-center font-bold">Összesen / ha</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-100 dark:border-slate-700 bg-gray-50 dark:bg-slate-800/80">
+                <td class="py-3 px-4 font-semibold">4 m</td><td class="py-3 px-4 text-center">26</td><td class="py-3 px-4 text-center">~45</td><td class="py-3 px-4 text-center font-bold text-violet-700 dark:text-violet-300">~1.170</td>
+              </tr>
+              <tr class="border-b border-gray-100 dark:border-slate-700 bg-white dark:bg-slate-800">
+                <td class="py-3 px-4 font-semibold">5 m</td><td class="py-3 px-4 text-center">21</td><td class="py-3 px-4 text-center">~45</td><td class="py-3 px-4 text-center font-bold text-violet-700 dark:text-violet-300">~950</td>
+              </tr>
+              <tr class="border-b border-gray-100 dark:border-slate-700 bg-violet-50 dark:bg-violet-950/20">
+                <td class="py-3 px-4 font-semibold">6 m <span class="text-xs text-violet-600 dark:text-violet-400">(leggyakoribb)</span></td><td class="py-3 px-4 text-center">17</td><td class="py-3 px-4 text-center">~45</td><td class="py-3 px-4 text-center font-bold text-violet-700 dark:text-violet-300">~760</td>
+              </tr>
+              <tr class="bg-gray-50 dark:bg-slate-800/80">
+                <td class="py-3 px-4 font-semibold">8 m</td><td class="py-3 px-4 text-center">13</td><td class="py-3 px-4 text-center">~45</td><td class="py-3 px-4 text-center font-bold text-violet-700 dark:text-violet-300">~585</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mt-6 grid md:grid-cols-2 gap-4">
+          <div class="bg-violet-50 dark:bg-violet-900/30 rounded-lg p-4 border border-violet-200 dark:border-violet-700">
+            <h4 class="font-bold text-violet-800 dark:text-violet-200 mb-2">Számítási képlet</h4>
+            <p class="text-sm text-violet-700 dark:text-violet-300"><strong>Karók száma = (Sor hossza / Karótávolság + 1) × Sorok száma</strong></p>
+            <p class="text-xs text-violet-600 dark:text-violet-400 mt-1">+ 10% tartalék ajánlott esetleges cserékre</p>
+          </div>
+          <div class="bg-amber-50 dark:bg-amber-900/30 rounded-lg p-4 border border-amber-200 dark:border-amber-700">
+            <h4 class="font-bold text-amber-800 dark:text-amber-200 mb-2">Szakmai tipp</h4>
+            <p class="text-sm text-amber-700 dark:text-amber-300">Rendeljen <strong>10-15%-kal többet</strong> a számított igénynél. A tartalék karók tárolhatók és később felhasználhatók.</p>
+          </div>
+        </div>
+        <div class="mt-6 text-center">
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Pontos kalkuláció szükséges az Ön szőlőjéhez?</p>
+          <a href="/kapcsolat" class="inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-bold px-6 py-3 rounded-xl transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+            Ingyenes személyre szabott kalkuláció
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. PARADICSOM KARÓK -->
+  <Content id="paradicsom" title="Paradicsom Karók és Zöldség Támaszok" subtitle="Tartós támasz a konyhakertben – szezonról szezonra"
+    items={[
+      { title: '15+ év élettartam', description: 'A kezeletlen karó 1-2 szezon után elrohad, a telített fa karó 15+ évig tart. Egyszer befektet, több szezonban használja.' },
+      { title: 'Ideális méretek a kertbe', description: 'Ø3-4 cm, 100-150 cm hossz – könnyen kezelhető, tárolható, szállítható. Tökéletes paradicsomhoz, paprikához, padlizsánhoz.' },
+      { title: 'Sokoldalú felhasználás', description: 'Ugyanazok a karók szezonról szezonra, különböző zöldségekhez is. Szezon végén kihúzhatók és szárazon tárolhatók.' },
+    ]}
+    callToAction={{ text: 'Hegyezett cölöpök →', href: '/termekek/telitett-hegyzett-colop' }}
+    classes={{ container: 'bg-red-50 dark:bg-slate-800/50' }}
+  >
+    <Fragment slot="content">
+      <div class="bg-red-100 dark:bg-red-900/40 rounded-xl p-6 border-l-4 border-red-500">
+        <h3 class="text-xl font-bold text-red-800 dark:text-red-200 mb-3">Népszerű támasztási módszerek paradicsomhoz</h3>
+        <ul class="space-y-2 text-red-700 dark:text-red-300 text-sm">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span><strong>Egyedi karó:</strong> 1 karó növényenként, puha zsinórral kötve</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span><strong>V-rendszer (két karó):</strong> 2 karó V-alakban keresztezve – stabilabb</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span><strong>Spalérrendszer:</strong> karók a végeken + huzal – ideális hosszú sorokhoz</span>
+          </li>
+        </ul>
+      </div>
+    </Fragment>
+    <Fragment slot="image">
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <img src="/images/paradicsom-karo.svg" alt="Paradicsom karók telített fából a konyhakertben" class="w-full h-auto" loading="lazy" />
+      </div>
+    </Fragment>
+  </Content>
+
+  <!-- 8. AJÁNLOTT TERMÉKEK -->
+  <section class="py-12 md:py-16 bg-gradient-to-br from-purple-50 to-violet-50 dark:from-slate-900 dark:to-slate-800">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <span class="inline-block bg-purple-100 dark:bg-purple-800/60 text-purple-700 dark:text-purple-200 text-sm font-semibold px-4 py-1 rounded-full mb-4">📦 Ajánlott termékek</span>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Ideális termékek növénykarókhoz</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="/termekek/telitett-hegyzett-colop" class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border-2 border-purple-200 dark:border-purple-700">
+          <div class="w-14 h-14 bg-purple-100 dark:bg-purple-800/60 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <svg class="w-7 h-7 text-purple-600 dark:text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>
+          </div>
+          <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Hegyezett Cölöpök</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">Szőlőkarónak és növénykarónak tökéletes. Hegyezett vég, földbe verhető.</p>
+          <span class="inline-block text-xs font-semibold text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30 px-3 py-1 rounded-full">#1 szőlőhöz</span>
+        </a>
+        <a href="/termekek/telitett-rudfa" class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+          <div class="w-14 h-14 bg-amber-100 dark:bg-amber-800/60 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <svg class="w-7 h-7 text-amber-600 dark:text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </div>
+          <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Rúdfa</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">Kerek rudak telített borovifából, gyümölcsfa támaszhoz és spalérhoz ideális.</p>
+          <span class="inline-block text-xs font-semibold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30 px-3 py-1 rounded-full">Sokoldalú</span>
+        </a>
+        <a href="/termekek" class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+          <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-800/60 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <svg class="w-7 h-7 text-emerald-600 dark:text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
+          </div>
+          <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Összes Termék</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">Böngéssze teljes telített fa kínálatunkat.</p>
+          <span class="inline-block text-xs font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 px-3 py-1 rounded-full">Teljes kínálat</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. GYIK -->
+  <FAQs id="gyik" title="Gyakran Ismételt Kérdések – Növénykarók és Szőlőkarók" subtitle="Minden tudnivaló a telített fa karók használatáról"
+    items={[
+      { title: 'Mennyi ideig tart a telített fa szőlőkaró a földben?', description: 'A nyomás alatt impregnált (UC4) karó 15-25 évig tart, még állandó nedvesség mellett is. A kezeletlen fa 2-3 év alatt elrohad.' },
+      { title: 'Biztonságos a telített fa szőlőhöz és zöldségekhez?', description: 'Igen. A Tanalith kezelés króm- és arzénmentes. Az impregnálószer a rostokban rögzül, nem mosódik ki. Biztonságos szőlészetben és konyhakertben.' },
+      { title: 'Milyen méretű szőlőkarót válasszak?', description: 'Köztes karókhoz: Ø4 cm, 200-220 cm. Végoszlopokhoz: Ø5-6 cm, 250 cm. Karótávolság: 4-6 méter.' },
+      { title: 'Hány karó kell hektáronként?', description: '6 m karótávolsággal, 2,2 m sortávolsággal kb. 760 db/ha. 4 m-es karótávolsággal kb. 1.170 db/ha.' },
+      { title: 'Hogyan kell leveréni a karókat?', description: 'Hegyezett végüket a földbe verjük fa kalapáccsal vagy cölöpverővel, 50-60 cm mélyre. Kemény talajnál előfúrás. Betonozás nem kell.' },
+      { title: 'Használhatom a paradicsom karókat több évig?', description: 'Igen! 15+ éven át újrahasználhatók szezonról szezonra. Szezon végén kihúzhatók és szárazon tárolhatók.' },
+      { title: 'Mi a különbség a mártott és a nyomás alatti impregnálás között?', description: 'Mártott: csak felszíni védelem (2-3 év). Nyomás alatti: mélyre hatoló védelem (15-25 év). Földbe ásott karókhoz kizárólag nyomás alattit!' },
+      { title: 'Szállítanak nagy tételben is?', description: 'Igen! Raklapon, országszerte. Nagy rendelésekhez (több száz/ezer karó) kedvezményes árak. Kérjen árajánlatot!' },
+    ]}
+  />
+
+  <!-- 10. ÜLTETÉSI ÚTMUTATÓ -->
+  <Steps id="utmutato" title="Hogyan Ültesse a Karókat Helyesen" subtitle="Kövesse ezeket a lépéseket az optimális eredményért és a maximális élettartamért"
+    items={[
+      { title: '1. Válassza ki a megfelelő méretet', description: 'Lásd a mérettáblázatot fent. Szőlőhöz: Ø4-5 cm, 200-250 cm. Paradicsomhoz: Ø3-4 cm, 100-150 cm.', icon: 'tabler:ruler-measure' },
+      { title: '2. Jelölje ki a karók helyét', description: 'Használjon kifeszített zsinórt az egyenes sorvezetéshez. Jelölje meg minden pozíciót. Szőlőnél: 4-6 m karótávolság.', icon: 'tabler:map-pin' },
+      { title: '3. Verje le a karókat', description: 'A hegyezett végüket verje a földbe 50-60 cm mélyre. Használjon fa kalapácsot vagy cölöpverőt. Kemény talajnál előfúrás.', icon: 'tabler:hammer' },
+      { title: '4. Ellenőrizze a függőlegességet', description: 'Használjon függőónt vagy vízmértéket. A ferde karó nem tartja megfelelően a növényt.', icon: 'tabler:arrows-vertical' },
+      { title: '5. Kösse fel a növényeket', description: 'Rögzítse puha zsinórral, speciális szalaggal vagy rugalmas kötözővel. Ne szorítsa túl – a növénynek helye kell a növekedéshez.', icon: 'tabler:link' },
+      { title: '6. Feszítse ki a huzalt (szőlőhöz)', description: 'Spalérrendszerhez 2-3 sor horganyzott huzalt feszítsen a karók közé. Rögzítse szegekkel vagy kapcsokkal.', icon: 'tabler:line-height' },
+    ]}
+  />
+
+  <!-- 11. SZÁLLÍTÁS BANNER -->
+  <section class="py-10 bg-gradient-to-r from-purple-600 to-violet-600 dark:from-purple-800 dark:to-violet-800">
+    <div class="max-w-4xl mx-auto px-4 text-center text-white">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">🚚 Országos Kiszállítás Raklapon!</h2>
+      <p class="text-lg opacity-90 mb-2">Több hektáros szőlője van? Több száz vagy ezer karót szállítunk, bárhová az országban.</p>
+      <p class="text-base opacity-80 mb-6">Kedvezményes árak nagy tételre. Raklapos szállítás, 3-5 munkanap.</p>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="/orszagos-kiszallitas" class="inline-flex items-center gap-2 bg-white text-purple-600 font-bold px-6 py-3 rounded-xl hover:bg-purple-50 transition-colors">
+          Szállítási információk
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. CTA -->
+  <CallToAction id="megrendeles" title="Fektessen be Évtizedekig Tartós Karókba!"
+    actions={[
+      { variant: 'primary', text: 'Árajánlat kérése', href: '/kapcsolat', icon: 'tabler:mail' },
+      { variant: 'secondary', text: 'Termékek böngészése', href: '/termekek', icon: 'tabler:arrow-right' },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      <div class="space-y-4">
+        <p class="text-xl">
+          <strong>Szőlőkarók</strong> &bull; <strong>Paradicsom karók</strong> &bull; <strong>Gyümölcsfa támasz</strong> &bull; <strong>Kerti karók</strong>
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4 text-sm">
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            15-25 év tartósság
+          </span>
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            UC4 minősítés
+          </span>
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Tanalith kezelés
+          </span>
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Országos szállítás
+          </span>
+        </div>
+      </div>
+    </Fragment>
+  </CallToAction>
+
+</Layout>
