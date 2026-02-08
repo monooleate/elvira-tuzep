@@ -53,19 +53,27 @@ export default function OfferModal({ product, unit, price, quantity, onClose }) 
 
     if (!validate()) return;
 
+    // Összefűzzük a termékadatokat + megjegyzést egy olvasható szöveggé
+    const productName = product.title || product.name;
+    const fullMessage = [
+      `--- Termék adatok ---`,
+      `Termék: ${productName}`,
+      `Cikkszám: ${product.sku}`,
+      `Mennyiség: ${quantity} ${unit}`,
+      `Ár: ${price} Ft/${unit}`,
+      `Slug: ${product.slug}`,
+      ``,
+      `--- Ügyfél megjegyzés ---`,
+      message || '(nincs megjegyzés)',
+    ].join('\n');
+
     const formData = new URLSearchParams();
     formData.append('form-name', 'offer');
     formData.append('bot-field', '');
     formData.append('name', name);
     formData.append('email', email);
     formData.append('phone', phone);
-    formData.append('message', message);
-    formData.append('quantity', String(quantity));
-    formData.append('unit', unit);
-    formData.append('product-name', product.title || product.name);
-    formData.append('product-slug', product.slug);
-    formData.append('product-price', String(price));
-    formData.append('product-sku', product.sku);
+    formData.append('message', fullMessage);
 
     try {
       const response = await fetch('/', {
