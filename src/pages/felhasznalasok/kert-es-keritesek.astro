@@ -6,7 +6,6 @@ import Content from '~/components/widgets/Content.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Breadcrumbs from '~/components/common/Breadcrumbs.astro';
 
 const metadata = {
   title: 'Kert és Kerítések Telített Fából | Elvira Tüzép',
@@ -76,13 +75,12 @@ const rudfaMeretek = [
 ];
 ---
 
-<Layout metadata={metadata}>
+<Layout metadata={metadata} breadcrumb={[
+  { label: 'Főoldal', href: '/' },
+  { label: 'Telített fa', href: '/telifa' },
+  { label: 'Kert és kerítések' },
+]}>
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
-  <Breadcrumbs items={[
-    { label: 'Főoldal', href: '/' },
-    { label: 'Telített fa', href: '/telifa' },
-    { label: 'Kert és kerítések' },
-  ]} />
 
   <!-- ============================================
        1. HERO

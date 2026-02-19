@@ -7,7 +7,6 @@ import Steps from '~/components/widgets/Steps.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import PlaygroundTypes from '~/components/widgets/PlaygroundTypes.astro';
-import Breadcrumbs from '~/components/common/Breadcrumbs.astro';
 
 const metadata = {
   title: 'Játszótér Építés Telített Fából | Elvira Tüzép',
@@ -37,13 +36,12 @@ const faqSchema = {
 };
 ---
 
-<Layout metadata={metadata}>
+<Layout metadata={metadata} breadcrumb={[
+  { label: 'Főoldal', href: '/' },
+  { label: 'Telített fa', href: '/telifa' },
+  { label: 'Játszótér építés' },
+]}>
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
-  <Breadcrumbs items={[
-    { label: 'Főoldal', href: '/' },
-    { label: 'Telített fa', href: '/telifa' },
-    { label: 'Játszótér építés' },
-  ]} />
 
   <!-- ============================================
        1. HERO SECTION

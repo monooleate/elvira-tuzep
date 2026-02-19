@@ -9,22 +9,7 @@ export interface Props {
 }
 
 const { items } = Astro.props;
-
-const siteUrl = 'https://elviratuzep.hu';
-
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: items.map((item, index) => ({
-    '@type': 'ListItem',
-    position: index + 1,
-    name: item.label,
-    ...(item.href ? { item: item.href.startsWith('http') ? item.href : `${siteUrl}${item.href}` } : {}),
-  })),
-};
 ---
-
-<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} slot="head" />
 
 <nav aria-label="Breadcrumb" class="max-w-6xl mx-auto px-4 sm:px-6 pt-6 pb-2">
   <ol class="flex flex-wrap items-center gap-1 text-sm text-gray-500 dark:text-gray-400">
@@ -37,10 +22,10 @@ const breadcrumbSchema = {
         )}
         {item.href ? (
           <a href={item.href} class:list={[
-            "transition-colors",
-            index < items.length - 1
-              ? "hover:text-primary dark:hover:text-primary-400"
-              : "text-gray-700 dark:text-gray-300 font-medium hover:text-primary dark:hover:text-primary-400"
+            "transition-colors hover:underline",
+            index === items.length - 1
+              ? "text-primary-700 dark:text-primary-400 font-medium"
+              : "text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300"
           ]}>
             {item.label}
           </a>
