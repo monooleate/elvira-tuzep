@@ -10,7 +10,29 @@ export const headerData = {
     {
       text: 'Termékeink',
       href: getPermalink('/termekek'),
-      
+
+    },
+    {
+      text: 'Telített fa',
+      href: getPermalink('/telifa'),
+      links: [
+        {
+          text: 'Játszótér építés',
+          href: getPermalink('/felhasznalasok/jatszoter'),
+        },
+        {
+          text: 'Faültetés cölöpök',
+          href: getPermalink('/felhasznalasok/faultetes'),
+        },
+        {
+          text: 'Kert és kerítések',
+          href: getPermalink('/felhasznalasok/kert-es-keritesek'),
+        },
+        {
+          text: 'Növénytámaszok',
+          href: getPermalink('/felhasznalasok/novenytamaszok'),
+        },
+      ],
     },
     {
       text: 'Szolgáltatásaink',
@@ -38,12 +60,6 @@ export const headerData = {
     {
       text: 'Tudástár',
       href: getPermalink('/tudastar'),
-      links: [
-        {
-          text: 'Telített fa',
-          href: getPermalink('/telifa')
-        }
-      ]
     },
     {
       text: 'Kalkulátorok',
@@ -65,10 +81,6 @@ export const headerData = {
         
       ]
       
-    },
-    {
-      text: 'Kapcsolat',
-      href: '/kapcsolat',
     },
   ],
   actions: [{ text: 'Infó', href: '/kapcsolat' }],

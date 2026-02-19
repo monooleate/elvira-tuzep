@@ -14,8 +14,8 @@ import Stats from '~/components/widgets/Stats.astro';
 import Breadcrumbs from '~/components/common/Breadcrumbs.astro';
 
 const metadata = {
-  title: 'Nagynyomáson Kezelt Borovifa | Tartós és Biztonságos Faanyag',
-  description: 'Tanalith-kezelt telített borovifa. Gyermekbarát, környezetbarát, 15-25 év tartósság. Kerítések, játszóterek, kerti építmények.',
+  title: 'Telített fa – impregnált borovi | Elvira Tüzép',
+  description: 'Nagynyomáson telített borovi fenyő: cölöpök, deszkák, pallók, oszlopok. UC4 minősítés, 15-25 év élettartam. Országos szállítás.',
   ignoreTitleTemplate: true,
 };
 
@@ -24,7 +24,7 @@ const faqSchema = {
   '@type': 'FAQPage',
   mainEntity: [
     { '@type': 'Question', name: 'Milyen hosszú az élettartama?', acceptedAnswer: { '@type': 'Answer', text: '15-25 év talajkontaktusban is, megfelelő beépítés és minimális karbantartás mellett. A védőszer mélyen behatol a rostokba.' } },
-    { '@type': 'Question', name: 'Biztonságos gyermekek számára?', acceptedAnswer: { '@type': 'Answer', text: 'Igen! A Tanalith kezelés nehézfém-mentes (nincs króm, arzén), EN 71-3 szabványnak megfelelő. Játszóterekhez is ajánlott.' } },
+    { '@type': 'Question', name: 'Biztonságos gyermekek számára?', acceptedAnswer: { '@type': 'Answer', text: 'Igen! A Tanalith kezelés nehézfém-mentes (nincs króm, arzén), EN 71 szabványnak megfelelő. Játszóterekhez is ajánlott.' } },
     { '@type': 'Question', name: 'Mennyivel olcsóbb a keményfánál?', acceptedAnswer: { '@type': 'Answer', text: '40-60%-kal kedvezőbb kezdő beruházási költség. A teljes életciklus költség is alacsonyabb a keményfánál.' } },
     { '@type': 'Question', name: 'Szükséges-e karbantartás?', acceptedAnswer: { '@type': 'Answer', text: 'Minimális. Esztétikai frissítéshez időszakos fedőfesték ajánlott. Vágott éleket impregnáló javítóanyaggal kell kezelni.' } },
     { '@type': 'Question', name: 'Milyen méretekben elérhető?', acceptedAnswer: { '@type': 'Answer', text: 'Átmérő: 6-12 cm, hossz: 2,5-4 m. Körmart, hegyezett vég. Raklapos mennyiségben B2B partnereknek.' } },
@@ -39,7 +39,7 @@ const faqSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
   <Breadcrumbs items={[
     { label: 'Főoldal', href: '/' },
-    { label: 'Telített fa' },
+    { label: 'Telített fa', href: '/telifa' },
   ]} />
 
   <!-- HERO SECTION -->
@@ -148,8 +148,8 @@ const faqSchema = {
       {
         title: 'Gyermekjátszótér',
         subtitle: 'Biztonságos',
-        description: 'EN 71-3 szabvány, nehézfém-mentes. Köztéri és kerti használatra.',
-        features: ['Gyermekbarát', 'EN 71-3', 'Nehézfém-mentes'],
+        description: 'EN 71 szabvány, nehézfém-mentes. Köztéri és kerti használatra.',
+        features: ['Gyermekbarát', 'EN 71', 'Nehézfém-mentes'],
         href: '/felhasznalasok/jatszoter',
         image: '/images/jatszoter-500.avif',
         icon: '🎠',
@@ -204,7 +204,7 @@ const faqSchema = {
         icon: 'tabler:certificate',
       },
       {
-        title: 'EN 71-3 Szabvány',
+        title: 'EN 71 Szabvány',
         description: 'Játékbiztonsági megfelelés. Gyermekekkel érintkező környezetben is biztonságos.',
         icon: 'tabler:shield-check',
       },
@@ -367,7 +367,7 @@ const faqSchema = {
     items={[
       {
         title: 'Gyermekbarát és Biztonságos',
-        description: 'Nincs króm, nincs arzén. EN 71-3 szabványnak megfelelő, játszóterekhez is ajánlott.',
+        description: 'Nincs króm, nincs arzén. EN 71 szabványnak megfelelő, játszóterekhez is ajánlott.',
         icon: 'tabler:heart-handshake',
       },
       {
@@ -407,10 +407,10 @@ const faqSchema = {
           </div>
           <div>
             <h4 class="font-bold text-emerald-900 dark:text-emerald-100 mb-2">
-              🎓 EN 71-3 Szabványnak Megfelelő
+              🎓 EN 71 Szabványnak Megfelelő
             </h4>
             <p class="text-sm text-emerald-800 dark:text-emerald-200">
-              A Tanalith-kezelt fa megfelel az EN 71-3 játékbiztonsági szabványnak, 
+              A Tanalith-kezelt fa megfelel az EN 71 játékbiztonsági szabványnak, 
               így biztonságosan használható játszótereken, homokozókban és gyermekekkel érintkező környezetben.
             </p>
           </div>
@@ -441,7 +441,7 @@ const faqSchema = {
   <ContentSticky
     id="playground"
     title="Biztonságos Játszóterek Gyermekeknek"
-    subtitle="Tanalith gyermekbarát kezelés - EN 71-3 szabványnak megfelelő"
+    subtitle="Tanalith gyermekbarát kezelés - EN 71 szabványnak megfelelő"
     items={[
       {
         title: 'Nehézfém-Mentes Formula',
@@ -449,7 +449,7 @@ const faqSchema = {
         icon: 'tabler:shield-check',
       },
       {
-        title: 'EN 71-3 Játékbiztonsági Szabvány',
+        title: 'EN 71 Játékbiztonsági Szabvány',
         description: 'A telített borovifa megfelel az EU játékbiztonsági szabványnak, így köztereken, óvodákban, iskolákban is használható.',
         icon: 'tabler:certificate',
       },
@@ -587,7 +587,7 @@ const faqSchema = {
       },
       {
         title: 'Biztonságos gyermekek számára?',
-        description: 'Igen! A Tanalith kezelés nehézfém-mentes (nincs króm, arzén), EN 71-3 szabványnak megfelelő. Játszóterekhez is ajánlott.',
+        description: 'Igen! A Tanalith kezelés nehézfém-mentes (nincs króm, arzén), EN 71 szabványnak megfelelő. Játszóterekhez is ajánlott.',
         icon: 'tabler:users',
       },
       {
