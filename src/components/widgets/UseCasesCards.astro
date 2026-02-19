@@ -283,161 +283,170 @@ const CLONE_COUNT = Math.min(3, useCases.length);
 </style>
 
 <script is:inline>
-document.addEventListener('DOMContentLoaded', function() {
-  var carousel = document.querySelector('.usecases-carousel');
-  if (!carousel) return;
+(function() {
+  function initCarousel() {
+    var carousel = document.querySelector('.usecases-carousel');
+    if (!carousel) return;
 
-  var track = carousel.querySelector('.cards-track');
-  var dots = carousel.querySelectorAll('.carousel-dot');
-  if (!track) return;
+    var track = carousel.querySelector('.cards-track');
+    var dots = carousel.querySelectorAll('.carousel-dot');
+    if (!track) return;
 
-  var dotColors = {
-    emerald: 'bg-emerald-500',
-    purple: 'bg-purple-500',
-    teal: 'bg-teal-500',
-    slate: 'bg-slate-500',
-    amber: 'bg-amber-500',
-    blue: 'bg-blue-500'
-  };
-
-  // csak mobilon fusson
-  var mq = window.matchMedia('(max-width: 767px)');
-
-  var total = dots.length; // ennyi “valódi” slide van
-  var current = 0;
-  var timer = null;
-
-  // ✅ TIMER: itt állítod az ugrás gyakoriságát (ms)
-  var autoplayDelay = 4000;
-
-  function getStepWidth() {
-    // kártya szélesség + gap (dinamikus, pontos)
-    var first = track.querySelector('.card');
-    if (!first) return 0;
-
-    var cardW = first.getBoundingClientRect().width;
-
-    var cs = window.getComputedStyle(track);
-    var gap = parseFloat(cs.columnGap || cs.gap || '0') || 0;
-
-    return cardW + gap;
-  }
-
-  function updateDots(index) {
-    var dotIndex = ((index % total) + total) % total;
-
-    dots.forEach(function(dot, i) {
-      var color = dot.dataset.color;
-      dot.className = 'carousel-dot w-2.5 h-2.5 rounded-full transition-all duration-300';
-
-      if (i === dotIndex) {
-        dot.classList.add('w-8', dotColors[color]);
-      } else {
-        dot.classList.add('bg-gray-300', 'dark:bg-slate-600', 'hover:bg-gray-400');
-      }
-    });
-  }
-
-  function goTo(index, animate) {
-    if (!mq.matches) return; // safety
-
-    if (animate === undefined) animate = true;
-
-    current = index;
-    var step = getStepWidth();
-    var offset = step * current;
-
-    track.style.transition = animate ? 'transform 0.5s ease-out' : 'none';
-    track.style.transform = 'translateX(-' + offset + 'px)';
-
-    updateDots(current);
-  }
-
-  function next() {
-    current++;
-    goTo(current, true);
-
-    // elértük a klón zónát: ugorjunk vissza 0-ra anim nélkül
-    if (current >= total) {
-      setTimeout(function() {
-        goTo(0, false);
-      }, 520);
+    // Előző timer törlése (bfcache visszaállításkor fontos)
+    if (window.__usecasesTimer) {
+      clearInterval(window.__usecasesTimer);
+      window.__usecasesTimer = null;
     }
-  }
 
-  function prev() {
-    current--;
-    if (current < 0) {
-      // ugorjunk a klón zónába, majd animáljunk vissza az utolsóra
-      goTo(total, false);
-      setTimeout(function() {
-        current = total - 1;
-        goTo(current, true);
-      }, 20);
-    } else {
-      goTo(current, true);
+    // Reset pozíció
+    track.style.transition = 'none';
+    track.style.transform = 'translateX(0px)';
+
+    var dotColors = {
+      emerald: 'bg-emerald-500',
+      purple: 'bg-purple-500',
+      teal: 'bg-teal-500',
+      slate: 'bg-slate-500',
+      amber: 'bg-amber-500',
+      blue: 'bg-blue-500'
+    };
+
+    var mq = window.matchMedia('(max-width: 767px)');
+    var total = dots.length;
+    var current = 0;
+    var autoplayDelay = 4000;
+
+    function getStepWidth() {
+      var first = track.querySelector('.card');
+      if (!first) return 0;
+      var cardW = first.getBoundingClientRect().width;
+      var cs = window.getComputedStyle(track);
+      var gap = parseFloat(cs.columnGap || cs.gap || '0') || 0;
+      return cardW + gap;
     }
-  }
 
-  function startAutoplay() {
-    stopAutoplay();
-    timer = setInterval(next, autoplayDelay);
-  }
-
-  function stopAutoplay() {
-    if (timer) { clearInterval(timer); timer = null; }
-  }
-
-  function enable() {
-    // init
-    goTo(0, false);
-    startAutoplay();
-
-    // dot click
-    dots.forEach(function(dot, i) {
-      dot.addEventListener('click', function() {
-        current = i;
-        goTo(current, true);
-        startAutoplay();
+    function updateDots(index) {
+      var dotIndex = ((index % total) + total) % total;
+      dots.forEach(function(dot, i) {
+        var color = dot.dataset.color;
+        dot.className = 'carousel-dot w-2.5 h-2.5 rounded-full transition-all duration-300';
+        if (i === dotIndex) {
+          dot.classList.add('w-8', dotColors[color]);
+        } else {
+          dot.classList.add('bg-gray-300', 'dark:bg-slate-600', 'hover:bg-gray-400');
+        }
       });
-    });
+    }
 
-    // pause on hover (ha van)
-    carousel.addEventListener('mouseenter', stopAutoplay);
-    carousel.addEventListener('mouseleave', startAutoplay);
-
-    // touch swipe
-    var touchStartX = 0;
-    carousel.addEventListener('touchstart', function(e) {
-      touchStartX = e.touches[0].clientX;
-      stopAutoplay();
-    }, { passive: true });
-
-    carousel.addEventListener('touchend', function(e) {
-      var diff = touchStartX - e.changedTouches[0].clientX;
-      if (diff > 50) next();
-      else if (diff < -50) prev();
-      startAutoplay();
-    }, { passive: true });
-
-    window.addEventListener('resize', function() {
+    function goTo(index, animate) {
       if (!mq.matches) return;
-      goTo(current, false);
-    });
+      if (animate === undefined) animate = true;
+      current = index;
+      var step = getStepWidth();
+      var offset = step * current;
+      track.style.transition = animate ? 'transform 0.5s ease-out' : 'none';
+      track.style.transform = 'translateX(-' + offset + 'px)';
+      updateDots(current);
+    }
+
+    function next() {
+      current++;
+      goTo(current, true);
+      if (current >= total) {
+        setTimeout(function() { goTo(0, false); }, 520);
+      }
+    }
+
+    function prev() {
+      current--;
+      if (current < 0) {
+        goTo(total, false);
+        setTimeout(function() {
+          current = total - 1;
+          goTo(current, true);
+        }, 20);
+      } else {
+        goTo(current, true);
+      }
+    }
+
+    function startAutoplay() {
+      stopAutoplay();
+      window.__usecasesTimer = setInterval(next, autoplayDelay);
+    }
+
+    function stopAutoplay() {
+      if (window.__usecasesTimer) {
+        clearInterval(window.__usecasesTimer);
+        window.__usecasesTimer = null;
+      }
+    }
+
+    function enable() {
+      goTo(0, false);
+      startAutoplay();
+    }
+
+    // Eseménykezelőket csak egyszer kötjük (data attribútummal jelöljük)
+    if (!carousel.dataset.eventsbound) {
+      carousel.dataset.eventsbound = '1';
+
+      dots.forEach(function(dot, i) {
+        dot.addEventListener('click', function() {
+          current = i;
+          goTo(current, true);
+          startAutoplay();
+        });
+      });
+
+      carousel.addEventListener('mouseenter', stopAutoplay);
+      carousel.addEventListener('mouseleave', startAutoplay);
+
+      var touchStartX = 0;
+      carousel.addEventListener('touchstart', function(e) {
+        touchStartX = e.touches[0].clientX;
+        stopAutoplay();
+      }, { passive: true });
+
+      carousel.addEventListener('touchend', function(e) {
+        var diff = touchStartX - e.changedTouches[0].clientX;
+        if (diff > 50) next();
+        else if (diff < -50) prev();
+        startAutoplay();
+      }, { passive: true });
+
+      window.addEventListener('resize', function() {
+        if (!mq.matches) return;
+        goTo(current, false);
+      });
+
+      mq.addEventListener('change', function(e) {
+        if (e.matches) {
+          enable();
+        } else {
+          stopAutoplay();
+          track.style.transition = 'none';
+          track.style.transform = 'translateX(0px)';
+        }
+      });
+    }
+
+    // Indítás mobilon
+    if (mq.matches) enable();
   }
 
-  // csak mobilon induljon
-  if (mq.matches) enable();
+  // 1) Normál betöltés
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCarousel);
+  } else {
+    initCarousel();
+  }
 
-  // ha átmész tablet/desktopra, álljon le (nincs “félrecsúszás”)
-  mq.addEventListener('change', function(e) {
-    if (e.matches) {
-      enable();
-    } else {
-      stopAutoplay();
-      track.style.transition = 'none';
-      track.style.transform = 'translateX(0px)';
+  // 2) bfcache visszaállítás (előre/hátra navigáció)
+  window.addEventListener('pageshow', function(e) {
+    if (e.persisted) {
+      initCarousel();
     }
   });
-});
+})();
 </script>

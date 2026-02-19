@@ -128,7 +128,7 @@
   "stock": 1,
   "priceFrom": 5290,
   "priceTo": null,
-  "discountPercent": 10,
-  "discountValidUntil": "2026-02-14T23:00:00.000Z",
-  "hasDiscount": true
+  "discountPercent": null,
+  "discountValidUntil": null,
+  "hasDiscount": false
 }

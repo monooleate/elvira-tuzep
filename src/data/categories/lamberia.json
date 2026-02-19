@@ -3,12 +3,12 @@
   "category": "Lambéria",
   "slug": "lamberia",
   "meta": {
-    "title": "Lambéria | Elvira tüzép",
-    "description": "Luc és borovi lambéria falra, mennyezetre – osztrák prémium minőség, több méret és profil, bel- és kültérre is, kedvező áron!",
+    "title": "Lambéria – fenyő lambéria bel-kültérre | Elvira",
+    "description": "Fenyő lambéria falra és mennyezetre – softline, fózolt profil. Osztrák prémium, bel- és kültérre egyaránt.",
     "image": "/kategoriak/lamberia.webp"
   },
   "description": "Prémium minőségű lambéria kínálat lucfenyőből és borovi fenyőből, többféle profilban és méretben. A gondosan gyalult, illesztett lambéria elemek ideálisak fal- és mennyezetburkolatokhoz, belső terek meleg, természetes hangulatának megteremtéséhez, valamint külső homlokzatburkolatok kialakításához. Osztrák származású, AB minőségű termékeink esztétikus felületet, könnyű szerelhetőséget és hosszú élettartamot biztosítanak. Válasszon készletről elérhető méreteink közül kedvező áron, igény esetén egyedi megoldásokkal!",
-  "faqdesc": "",
+  "faqdesc": "A lambéria népszerű fal- és mennyezetburkoló faanyag, amely bel- és kültérre egyaránt használható. Az alábbi kérdések segítenek eligazodni a lambéria típusok, méretek, profilok és felszerelés kapcsán.",
   "faq": [
     {
       "id": "1",
@@ -18,7 +18,7 @@
     {
       "id": "2",
       "question": "Milyen típusai vannak a lambériának?",
-      "answer": "Két fő típusa van"
+      "answer": "Két fő típusa van: a <b>beltéri lambéria</b> (softline vagy fózolt profil, 12,5–14 mm vastag, sima felületű, falakra és mennyezetre) és a <b>kültéri lambéria</b> (vastagabb, 14–19 mm, időjárásálló, homlokzatokra és ereszekre). A beltéri változat vékonyabb és finomabb felületű, míg a kültéri vastagabb és tartósabb, gyakran borovi fenyőből készül a jobb időjárás-állóság érdekében."
     },
     {
       "id": "3",

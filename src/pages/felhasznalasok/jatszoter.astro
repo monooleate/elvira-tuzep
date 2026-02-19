@@ -11,12 +11,12 @@ import Breadcrumbs from '~/components/common/Breadcrumbs.astro';
 
 const metadata = {
   title: 'Játszótér Építés Telített Fából | Elvira Tüzép',
-  description: 'Telített fa játszótérhez. Gyermekbarát Tanalith kezelés, EN 71-3 szabvány. Köztéri és kerti játszóterekhez.',
+  description: 'Telített fa játszótérhez. Gyermekbarát Tanalith kezelés, EN 71 szabvány. Köztéri és kerti játszóterekhez.',
   canonical: 'https://elviratuzep.hu/felhasznalasok/jatszoter',
   openGraph: {
     type: 'website',
     title: 'Játszótér Építés Telített Fából | Elvira Tüzép',
-    description: 'Biztonságos, tartós faanyag játszóterek építéséhez. Gyermekbarát, EN 71-3 tanúsítvánnyal.',
+    description: 'Biztonságos, tartós faanyag játszóterek építéséhez. Gyermekbarát, EN 71 tanúsítvánnyal.',
     image: '~/assets/images/og-jatszoter.jpg',
   },
 };
@@ -25,7 +25,7 @@ const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
-    { '@type': 'Question', name: 'Biztonságos a telített fa gyerekeknek?', acceptedAnswer: { '@type': 'Answer', text: 'Igen! A Tanalith kezelés megfelel az EN 71-3 játékbiztonsági szabványnak. Nehézfém-mentes (nincs króm, arzén), a gyerekek bőre nyugodtan érintkezhet vele.' } },
+    { '@type': 'Question', name: 'Biztonságos a telített fa gyerekeknek?', acceptedAnswer: { '@type': 'Answer', text: 'Igen! A Tanalith kezelés megfelel az EN 71 játékbiztonsági szabványnak. Nehézfém-mentes (nincs króm, arzén), a gyerekek bőre nyugodtan érintkezhet vele.' } },
     { '@type': 'Question', name: 'Mennyire tartós a játszótéri fa?', acceptedAnswer: { '@type': 'Answer', text: 'A Tanalith-kezelt telített fa 15-25 évig megőrzi tartósságát kültéren, még földkontaktusban is. UC4 minősítéssel rendelkezik.' } },
     { '@type': 'Question', name: 'Kell-e festeni a telített fát?', acceptedAnswer: { '@type': 'Answer', text: 'Nem kötelező, de ha szeretné színesre festeni, használjon nem vizes bázisú lazúrt vagy festéket. Várjon a telítés után 3-6 hónapot a festéssel.' } },
     { '@type': 'Question', name: 'Milyen csavarokat használjak?', acceptedAnswer: { '@type': 'Answer', text: 'Rozsdamentes (A2 vagy A4) vagy horganyzott csavarokat. A telített fa NEM korrodálja a fémet, ellentétben a régi CCA-kezelt fával.' } },
@@ -41,7 +41,7 @@ const faqSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
   <Breadcrumbs items={[
     { label: 'Főoldal', href: '/' },
-    { label: 'Telített fa', href: '/telitett-fa' },
+    { label: 'Telített fa', href: '/telifa' },
     { label: 'Játszótér építés' },
   ]} />
 
@@ -80,7 +80,7 @@ const faqSchema = {
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
-            <span>EN 71-3 tanúsítvány</span>
+            <span>EN 71 tanúsítvány</span>
           </div>
           
           <div class="inline-flex items-center gap-2 bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 px-4 py-2 rounded-full font-semibold">
@@ -129,7 +129,7 @@ const faqSchema = {
             </svg>
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
-            EN 71-3 Szabvány
+            EN 71 Szabvány
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-3">
             A játékok biztonságára vonatkozó európai szabvány. A Tanalith-kezelt fa <strong>megfelel ennek</strong>.
@@ -194,32 +194,32 @@ const faqSchema = {
     items={[
       {
         title: 'Hinták',
-        description: 'Hintaállványok erős, tartós vázszerkezete. Bírja a terhelést és az időjárást évtizedekig.',
+        description: 'Hintaállványok erős, tartós vázszerkezete telített rúdfából vagy oszlopból. Bírja a dinamikus terhelést és az időjárást évtizedekig, karbantartás nélkül.',
         icon: 'tabler:arrows-up-down',
       },
       {
         title: 'Mászókák',
-        description: 'Mászófalak, tornyok váza. A gyerekek biztonságosan mászhatják meg.',
+        description: 'Mászófalak, tornyok és kombinált játszóelemek váza. A telített fa sima felülete szálkamentes, a gyerekek biztonságosan mászhatják meg.',
         icon: 'tabler:ladder',
       },
       {
         title: 'Homokozó Keret',
-        description: 'Rothadásmentes homokozó szegély, ami évekig tartós marad a nedves homokban is.',
+        description: 'Rothadásmentes homokozó szegély telített deszkából vagy pallóból, ami évekig tartós marad a nedves homokban is. Földkontaktusban is UC4 védett.',
         icon: 'tabler:box',
       },
       {
         title: 'Játékházak',
-        description: 'Faházikók, kalandvárak alapszerkezete. A gyerekek kedvenc rejtekhelye!',
+        description: 'Faházikók, kalandvárak alapszerkezete telített oszlopból és deszkából. A gyerekek kedvenc rejtekhelye, ami az időjárásnak is ellenáll.',
         icon: 'tabler:home',
       },
       {
         title: 'Csúszdák Váza',
-        description: 'A csúszda felső platója és létrája biztonságos, stabil telített fából.',
+        description: 'A csúszda felső platója és létrája biztonságos, stabil telített fából. A szerkezet tartósan bírja a napi igénybevételt.',
         icon: 'tabler:box',
       },
       {
         title: 'Egyensúlyozó Elemek',
-        description: 'Gerendák, hídak, lépcsők – fejlesztik a gyerekek mozgáskoordinációját.',
+        description: 'Gerendák, hídak, lépcsők telített fából – fejlesztik a gyerekek mozgáskoordinációját, miközben évtizedekig tartósak maradnak.',
         icon: 'tabler:line-height',
       },
     ]}
@@ -236,15 +236,15 @@ const faqSchema = {
     items={[
       {
         title: 'Szabványoknak megfelelő',
-        description: 'EN 1176 játszótéri szabványnak megfelelő építéshez alkalmas alapanyag.',
+        description: 'EN 1176 játszótéri szabványnak megfelelő építéshez alkalmas alapanyag. A Tanalith kezelés az EN 71 játékbiztonsági előírásoknak is megfelel.',
       },
       {
         title: 'Vandálbiztos tartósság',
-        description: 'A telített fa ellenáll az időjárásnak és a fokozott igénybevételnek.',
+        description: 'A telített fa ellenáll az időjárásnak és a fokozott igénybevételnek. Köztéri környezetben is megőrzi szerkezeti szilárdságát.',
       },
       {
         title: 'Alacsony karbantartás',
-        description: 'Nem kell évente festeni, kezelni – évtizedekig megőrzi tulajdonságait.',
+        description: 'Nem kell évente festeni, kezelni – évtizedekig megőrzi tulajdonságait. Az önkormányzatoknak ez jelentős költségmegtakarítást jelent.',
       },
     ]}
     callToAction={{
@@ -296,15 +296,15 @@ const faqSchema = {
     items={[
       {
         title: 'Egyedi méretben',
-        description: 'A kert méretéhez és a gyerekek korához igazítva tervezhető.',
+        description: 'A kert méretéhez és a gyerekek korához igazítva tervezhető. Kisebb kertbe kompakt hinta, nagyobb területre teljes játszóvár is építhető.',
       },
       {
         title: 'Saját építés lehetősége',
-        description: 'Barkácsolók maguk is megépíthetik – mi az alapanyagot adjuk.',
+        description: 'Barkácsolók maguk is megépíthetik – mi az alapanyagot és a szaktanácsot adjuk. A telített fa könnyen fúrható, csavarozható.',
       },
       {
         title: 'Értéknövelő beruházás',
-        description: 'A kerti játszótér növeli az ingatlan értékét és a család életminőségét.',
+        description: 'A kerti játszótér növeli az ingatlan értékét és a család életminőségét. A telített faanyag tartóssága miatt hosszú évekig örömet okoz.',
       },
     ]}
     callToAction={{
@@ -484,7 +484,7 @@ const faqSchema = {
     items={[
       {
         title: 'Biztonságos a telített fa gyerekeknek?',
-        description: 'Igen! A Tanalith kezelés megfelel az EN 71-3 játékbiztonsági szabványnak. Nehézfém-mentes (nincs króm, arzén), a gyerekek bőre nyugodtan érintkezhet vele.',
+        description: 'Igen! A Tanalith kezelés megfelel az EN 71 játékbiztonsági szabványnak. Nehézfém-mentes (nincs króm, arzén), a gyerekek bőre nyugodtan érintkezhet vele.',
       },
       {
         title: 'Mennyire tartós a játszótéri fa?',
@@ -570,7 +570,7 @@ const faqSchema = {
         <div class="flex flex-wrap items-center justify-center gap-4 text-sm">
           <span class="inline-flex items-center gap-1">
             <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            EN 71-3 tanúsítvány
+            EN 71 tanúsítvány
           </span>
           <span class="inline-flex items-center gap-1">
             <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
