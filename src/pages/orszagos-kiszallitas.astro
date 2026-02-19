@@ -22,8 +22,11 @@ const metadata = {
 };
 ---
 
-<Layout metadata={metadata}>
-  
+<Layout metadata={metadata} breadcrumb={[
+  { label: 'Főoldal', href: '/' },
+  { label: 'Országos kiszállítás', href: '/orszagos-kiszallitas' },
+]}>
+
   <!-- ============================================
        1. HERO SECTION
        ============================================ -->

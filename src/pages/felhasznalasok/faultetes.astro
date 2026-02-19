@@ -7,7 +7,6 @@ import Steps from '~/components/widgets/Steps.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import ProductSizes from '~/components/widgets/ProductSizes.astro';
-import Breadcrumbs from '~/components/common/Breadcrumbs.astro';
 
 const metadata = {
   title: 'Faültetéshez Tartó Cölöp | Telített Fa | Elvira Tüzép',
@@ -37,13 +36,12 @@ const faqSchema = {
 };
 ---
 
-<Layout metadata={metadata}>
+<Layout metadata={metadata} breadcrumb={[
+  { label: 'Főoldal', href: '/' },
+  { label: 'Telített fa', href: '/telifa' },
+  { label: 'Faültetés' },
+]}>
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
-  <Breadcrumbs items={[
-    { label: 'Főoldal', href: '/' },
-    { label: 'Telített fa', href: '/telifa' },
-    { label: 'Faültetés' },
-  ]} />
 
   <!-- ============================================
        1. HERO SECTION

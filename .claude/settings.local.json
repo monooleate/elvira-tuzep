@@ -3,7 +3,10 @@
     "allow": [
       "Bash(npm run build:*)",
       "Bash(node:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(npx astro build)",
+      "Bash(python3 -c:*)",
+      "Bash(npm run catalog:json-to-sheets-v2:*)"
     ]
   }
 }
