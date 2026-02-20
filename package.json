@@ -14,7 +14,7 @@
     "catalog:json-to-sheets-v2": "node ./src/scripts/json-to-sheets-v2.mjs",
     "catalog:sheets-to-json": "node src/scripts/sheets-to-json.mjs",
     "catalog:seo-overrides": "node src/scripts/seo-overrides.mjs",
-    "prebuild": "npm run catalog:sheets-to-json && npm run catalog:seo-overrides",
+    "prebuild": "npm run catalog:sheets-to-json",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
