@@ -6,7 +6,10 @@
       "Bash(grep:*)",
       "Bash(npx astro build)",
       "Bash(python3 -c:*)",
-      "Bash(npm run catalog:json-to-sheets-v2:*)"
+      "Bash(npm run catalog:json-to-sheets-v2:*)",
+      "WebFetch(domain:elviratuzep.hu)",
+      "Bash(Select-String -Pattern \"error|Error|fail|FAIL\")",
+      "Bash(Select-Object -Last 20)"
     ]
   }
 }
