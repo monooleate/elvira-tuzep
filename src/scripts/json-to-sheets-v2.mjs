@@ -184,20 +184,24 @@ async function getOrCreateSheet(doc, title, headers) {
     sheet = await doc.addSheet({ title, headerValues: headers });
     return sheet;
   }
-  await sheet.loadHeaderRow();
-  const existing = sheet.headerValues ?? [];
-  const same = headers.length === existing.length && headers.every((h, i) => h === existing[i]);
-  if (!same) {
+  // loadHeaderRow may fail if sheet was cleared – in that case just set headers
+  try {
+    await sheet.loadHeaderRow();
+    const existing = sheet.headerValues ?? [];
+    const same = headers.length === existing.length && headers.every((h, i) => h === existing[i]);
+    if (!same) {
+      await sheet.setHeaderRow(headers);
+    }
+  } catch {
     await sheet.setHeaderRow(headers);
   }
   return sheet;
 }
 
-async function wipeAllRows(sheet) {
-  const rows = await sheet.getRows();
-  for (let i = rows.length - 1; i >= 0; i--) {
-    await rows[i].delete();
-  }
+async function wipeAllRows(sheet, headers) {
+  // clear() is a single API call vs per-row delete (avoids rate limits)
+  await sheet.clear();
+  await sheet.setHeaderRow(headers);
 }
 
 async function addRowsInChunks(sheet, rows, chunkSize = 200) {
@@ -347,9 +351,9 @@ async function main() {
 
   // Wipe existing data
   console.log("🧹 Wiping existing rows...");
-  await wipeAllRows(shCategories);
-  await wipeAllRows(shProducts);
-  await wipeAllRows(shVariants);
+  await wipeAllRows(shCategories, SHEETS.Categories.headers);
+  await wipeAllRows(shProducts, SHEETS.Products.headers);
+  await wipeAllRows(shVariants, SHEETS.Variants.headers);
 
   // Upload
   console.log("📤 Uploading rows...");
