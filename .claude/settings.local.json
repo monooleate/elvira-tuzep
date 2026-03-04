@@ -9,7 +9,9 @@
       "Bash(npm run catalog:json-to-sheets-v2:*)",
       "WebFetch(domain:elviratuzep.hu)",
       "Bash(Select-String -Pattern \"error|Error|fail|FAIL\")",
-      "Bash(Select-Object -Last 20)"
+      "Bash(Select-Object -Last 20)",
+      "WebFetch(domain:matekmegoldasok.hu)",
+      "Bash(npx @astrojs/upgrade)"
     ]
   }
 }
